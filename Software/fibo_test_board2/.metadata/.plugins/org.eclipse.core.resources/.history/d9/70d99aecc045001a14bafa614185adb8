@@ -162,10 +162,10 @@ int main()
     init_fibo();
     print("Hello World\n\r");
 
-    printf("on lance le calul de fibo(%i)\n",N);
-    int r=fibo_compute(N);
+    print("on lance le calul de fibo\n");
+    int r=fibo_compute(2);
     printf("fini:%i\n",r);
-    printf("test=%i\n",fibo_sw(N,TRUE));
+    printf("test=%i\n",fibo_sw(2,TRUE));
     cleanup_platform();
     return 0;
 }
