@@ -116,8 +116,13 @@ enum{
 	AP_ALL=0x1F
 }ap_ctrl_T;
 
-
-
+inline int read_fibo_ap(void)
+{
+	return (XGpio_DiscreteRead(&fibo_Gpio,FIBO_APP_CHANNEL))& (AP_ALL);
+}
+inline void write_fibo_ap(int ap_ctrl){
+	XGpio_DiscreteWrite(&fibo_Gpio,FIBO_APP_CHANNEL,ap_ctrl);
+}
 int fibo_sw(int n , int plus_un){
 	int f_0=1;
 	int f_1=0;
@@ -129,13 +134,7 @@ int fibo_sw(int n , int plus_un){
 	}
 	return (plus_un)?f_0:f_1;
 }
-void write_fibo_ap(int ap_ctrl){
-	XGpio_DiscreteWrite(&fibo_Gpio,FIBO_APP_CHANNEL,ap_ctrl);
-}
-int read_fibo_ap(void)
-{
-	return (XGpio_DiscreteRead(&fibo_Gpio,FIBO_APP_CHANNEL))& (AP_ALL);
-}
+
 
 int fibo_compute(int n){
 	//*while(!(read_fibo_ap()&AP_READY));

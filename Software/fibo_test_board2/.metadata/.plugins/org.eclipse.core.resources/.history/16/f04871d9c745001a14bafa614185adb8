@@ -132,7 +132,7 @@ int fibo_sw(int n , int plus_un){
 void write_fibo_ap(int ap_ctrl){
 	XGpio_DiscreteWrite(&fibo_Gpio,FIBO_APP_CHANNEL,ap_ctrl);
 }
-int read_fibo_ap(void)
+inline int read_fibo_ap(void)
 {
 	return (XGpio_DiscreteRead(&fibo_Gpio,FIBO_APP_CHANNEL))& (AP_ALL);
 }

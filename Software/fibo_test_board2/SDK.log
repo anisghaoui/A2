@@ -1781,3 +1781,276 @@ con
 ----------------End of Script----------------
 
 14:31:49 INFO  : Launch script is exported to file 'C:\Users\Qlala\Documents\M2_SETI\A2\git\A2\Software\fibo_test_board2\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_fibo_test.elf_on_local.tcl'
+14:35:53 INFO  : Disconnected from the channel tcfchan#38.
+14:35:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248686847" && level==0} -index 1' command is executed.
+14:35:54 INFO  : 'fpga -state' command is executed.
+14:35:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:35:55 INFO  : Jtag cable 'Digilent Zed 210248686847' is selected.
+14:35:55 INFO  : 'jtag frequency' command is executed.
+14:35:55 INFO  : Sourcing of 'C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Software/fibo_test_board2/simple_processor_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:35:55 INFO  : Context for 'APU' is selected.
+14:35:55 INFO  : Hardware design information is loaded from 'C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Software/fibo_test_board2/simple_processor_wrapper_hw_platform_0/system.hdf'.
+14:35:55 INFO  : 'configparams force-mem-access 1' command is executed.
+14:35:55 INFO  : Context for 'APU' is selected.
+14:35:55 INFO  : 'stop' command is executed.
+14:35:55 INFO  : 'ps7_init' command is executed.
+14:35:55 INFO  : 'ps7_post_config' command is executed.
+14:35:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:35:55 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+14:35:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:35:55 INFO  : The application 'C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Software/fibo_test_board2/fibo_test/Debug/fibo_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:35:55 INFO  : 'configparams force-mem-access 0' command is executed.
+14:35:55 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Software/fibo_test_board2/simple_processor_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248686847"} -index 0
+loadhw -hw C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Software/fibo_test_board2/simple_processor_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248686847"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248686847"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248686847"} -index 0
+dow C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Software/fibo_test_board2/fibo_test/Debug/fibo_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:35:56 INFO  : Memory regions updated for context APU
+14:35:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:35:56 INFO  : 'con' command is executed.
+14:35:56 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248686847"} -index 0
+con
+----------------End of Script----------------
+
+14:35:56 INFO  : Launch script is exported to file 'C:\Users\Qlala\Documents\M2_SETI\A2\git\A2\Software\fibo_test_board2\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_fibo_test.elf_on_local.tcl'
+14:43:47 INFO  : Disconnected from the channel tcfchan#39.
+14:43:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248686847" && level==0} -index 1' command is executed.
+14:43:48 INFO  : 'fpga -state' command is executed.
+14:43:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:43:49 INFO  : Jtag cable 'Digilent Zed 210248686847' is selected.
+14:43:49 INFO  : 'jtag frequency' command is executed.
+14:43:49 INFO  : Sourcing of 'C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Software/fibo_test_board2/simple_processor_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:43:49 INFO  : Context for 'APU' is selected.
+14:43:49 INFO  : Hardware design information is loaded from 'C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Software/fibo_test_board2/simple_processor_wrapper_hw_platform_0/system.hdf'.
+14:43:49 INFO  : 'configparams force-mem-access 1' command is executed.
+14:43:49 INFO  : Context for 'APU' is selected.
+14:43:49 INFO  : 'stop' command is executed.
+14:43:49 INFO  : 'ps7_init' command is executed.
+14:43:49 INFO  : 'ps7_post_config' command is executed.
+14:43:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:43:49 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+14:43:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:43:50 INFO  : The application 'C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Software/fibo_test_board2/fibo_test/Debug/fibo_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:43:50 INFO  : 'configparams force-mem-access 0' command is executed.
+14:43:50 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Software/fibo_test_board2/simple_processor_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248686847"} -index 0
+loadhw -hw C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Software/fibo_test_board2/simple_processor_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248686847"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248686847"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248686847"} -index 0
+dow C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Software/fibo_test_board2/fibo_test/Debug/fibo_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:43:50 INFO  : Memory regions updated for context APU
+14:43:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:43:50 INFO  : 'con' command is executed.
+14:43:50 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248686847"} -index 0
+con
+----------------End of Script----------------
+
+14:43:50 INFO  : Launch script is exported to file 'C:\Users\Qlala\Documents\M2_SETI\A2\git\A2\Software\fibo_test_board2\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_fibo_test.elf_on_local.tcl'
+14:44:43 INFO  : Disconnected from the channel tcfchan#40.
+14:44:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248686847" && level==0} -index 1' command is executed.
+14:44:44 INFO  : 'fpga -state' command is executed.
+14:44:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:44:45 INFO  : Jtag cable 'Digilent Zed 210248686847' is selected.
+14:44:45 INFO  : 'jtag frequency' command is executed.
+14:44:45 INFO  : Sourcing of 'C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Software/fibo_test_board2/simple_processor_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:44:45 INFO  : Context for 'APU' is selected.
+14:44:45 INFO  : Hardware design information is loaded from 'C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Software/fibo_test_board2/simple_processor_wrapper_hw_platform_0/system.hdf'.
+14:44:45 INFO  : 'configparams force-mem-access 1' command is executed.
+14:44:45 INFO  : Context for 'APU' is selected.
+14:44:45 INFO  : 'stop' command is executed.
+14:44:45 INFO  : 'ps7_init' command is executed.
+14:44:45 INFO  : 'ps7_post_config' command is executed.
+14:44:45 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:44:45 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+14:44:45 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:44:46 INFO  : The application 'C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Software/fibo_test_board2/fibo_test/Debug/fibo_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:44:46 INFO  : 'configparams force-mem-access 0' command is executed.
+14:44:46 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Software/fibo_test_board2/simple_processor_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248686847"} -index 0
+loadhw -hw C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Software/fibo_test_board2/simple_processor_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248686847"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248686847"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248686847"} -index 0
+dow C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Software/fibo_test_board2/fibo_test/Debug/fibo_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:44:46 INFO  : Memory regions updated for context APU
+14:44:46 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:44:46 INFO  : 'con' command is executed.
+14:44:46 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248686847"} -index 0
+con
+----------------End of Script----------------
+
+14:44:46 INFO  : Launch script is exported to file 'C:\Users\Qlala\Documents\M2_SETI\A2\git\A2\Software\fibo_test_board2\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_fibo_test.elf_on_local.tcl'
+15:16:36 INFO  : Disconnected from the channel tcfchan#41.
+15:16:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248686847" && level==0} -index 1' command is executed.
+15:16:37 INFO  : 'fpga -state' command is executed.
+15:16:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:16:38 INFO  : Jtag cable 'Digilent Zed 210248686847' is selected.
+15:16:38 INFO  : 'jtag frequency' command is executed.
+15:16:38 INFO  : Sourcing of 'C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Software/fibo_test_board2/simple_processor_wrapper_hw_platform_0/ps7_init.tcl' is done.
+15:16:38 INFO  : Context for 'APU' is selected.
+15:16:38 INFO  : Hardware design information is loaded from 'C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Software/fibo_test_board2/simple_processor_wrapper_hw_platform_0/system.hdf'.
+15:16:38 INFO  : 'configparams force-mem-access 1' command is executed.
+15:16:38 INFO  : Context for 'APU' is selected.
+15:16:38 INFO  : 'stop' command is executed.
+15:16:38 INFO  : 'ps7_init' command is executed.
+15:16:38 INFO  : 'ps7_post_config' command is executed.
+15:16:38 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:16:38 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+15:16:38 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:16:39 INFO  : The application 'C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Software/fibo_test_board2/fibo_test/Debug/fibo_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:16:39 INFO  : 'configparams force-mem-access 0' command is executed.
+15:16:39 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Software/fibo_test_board2/simple_processor_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248686847"} -index 0
+loadhw -hw C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Software/fibo_test_board2/simple_processor_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248686847"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248686847"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248686847"} -index 0
+dow C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Software/fibo_test_board2/fibo_test/Debug/fibo_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:16:39 INFO  : Memory regions updated for context APU
+15:16:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:16:39 INFO  : 'con' command is executed.
+15:16:39 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248686847"} -index 0
+con
+----------------End of Script----------------
+
+15:16:39 INFO  : Launch script is exported to file 'C:\Users\Qlala\Documents\M2_SETI\A2\git\A2\Software\fibo_test_board2\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_fibo_test.elf_on_local.tcl'
+15:26:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:26:34 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248686847" && level==0} -index 1' command is executed.
+15:26:36 INFO  : FPGA configured successfully with bitstream "C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Software/fibo_test_board2/simple_processor_wrapper_hw_platform_0/simple_processor_wrapper.bit"
+15:27:07 INFO  : Disconnected from the channel tcfchan#42.
+15:27:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248686847" && level==0} -index 1' command is executed.
+15:27:08 INFO  : 'fpga -state' command is executed.
+15:27:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:27:09 INFO  : Jtag cable 'Digilent Zed 210248686847' is selected.
+15:27:09 INFO  : 'jtag frequency' command is executed.
+15:27:09 INFO  : Sourcing of 'C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Software/fibo_test_board2/simple_processor_wrapper_hw_platform_0/ps7_init.tcl' is done.
+15:27:09 INFO  : Context for 'APU' is selected.
+15:27:09 INFO  : Hardware design information is loaded from 'C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Software/fibo_test_board2/simple_processor_wrapper_hw_platform_0/system.hdf'.
+15:27:09 INFO  : 'configparams force-mem-access 1' command is executed.
+15:27:09 INFO  : Context for 'APU' is selected.
+15:27:09 INFO  : 'stop' command is executed.
+15:27:09 INFO  : 'ps7_init' command is executed.
+15:27:09 INFO  : 'ps7_post_config' command is executed.
+15:27:09 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:27:09 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+15:27:09 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:27:09 INFO  : The application 'C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Software/fibo_test_board2/fibo_test/Debug/fibo_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:27:09 INFO  : 'configparams force-mem-access 0' command is executed.
+15:27:09 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Software/fibo_test_board2/simple_processor_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248686847"} -index 0
+loadhw -hw C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Software/fibo_test_board2/simple_processor_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248686847"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248686847"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248686847"} -index 0
+dow C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Software/fibo_test_board2/fibo_test/Debug/fibo_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:27:10 INFO  : Memory regions updated for context APU
+15:27:10 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:27:10 INFO  : 'con' command is executed.
+15:27:10 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248686847"} -index 0
+con
+----------------End of Script----------------
+
+15:27:10 INFO  : Launch script is exported to file 'C:\Users\Qlala\Documents\M2_SETI\A2\git\A2\Software\fibo_test_board2\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_fibo_test.elf_on_local.tcl'
+15:27:19 INFO  : Disconnected from the channel tcfchan#43.
+15:27:20 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248686847" && level==0} -index 1' command is executed.
+15:27:20 INFO  : 'fpga -state' command is executed.
+15:27:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:27:20 INFO  : Jtag cable 'Digilent Zed 210248686847' is selected.
+15:27:20 INFO  : 'jtag frequency' command is executed.
+15:27:20 INFO  : Sourcing of 'C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Software/fibo_test_board2/simple_processor_wrapper_hw_platform_0/ps7_init.tcl' is done.
+15:27:20 INFO  : Context for 'APU' is selected.
+15:27:20 INFO  : Hardware design information is loaded from 'C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Software/fibo_test_board2/simple_processor_wrapper_hw_platform_0/system.hdf'.
+15:27:20 INFO  : 'configparams force-mem-access 1' command is executed.
+15:27:20 INFO  : Context for 'APU' is selected.
+15:27:21 INFO  : 'stop' command is executed.
+15:27:21 INFO  : 'ps7_init' command is executed.
+15:27:21 INFO  : 'ps7_post_config' command is executed.
+15:27:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:27:21 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+15:27:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:27:21 INFO  : The application 'C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Software/fibo_test_board2/fibo_test/Debug/fibo_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:27:21 INFO  : 'configparams force-mem-access 0' command is executed.
+15:27:21 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Software/fibo_test_board2/simple_processor_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248686847"} -index 0
+loadhw -hw C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Software/fibo_test_board2/simple_processor_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248686847"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248686847"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248686847"} -index 0
+dow C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Software/fibo_test_board2/fibo_test/Debug/fibo_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:27:21 INFO  : Memory regions updated for context APU
+15:27:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:27:22 INFO  : 'con' command is executed.
+15:27:22 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248686847"} -index 0
+con
+----------------End of Script----------------
+
+15:27:22 INFO  : Launch script is exported to file 'C:\Users\Qlala\Documents\M2_SETI\A2\git\A2\Software\fibo_test_board2\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_fibo_test.elf_on_local.tcl'
