@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="sobel.cpp" path="/home/nikkatsa/Working_Projects/Sobel_Filter_HLS_System/Sobel_Kernel_HLS/solution1/sobel.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="golden.grey" path="/home/nikkatsa/golden.grey"/>
+    <originFiles name="input.grey" path="/home/nikkatsa/input.grey"/>
+    <originFiles name="test_sobel.cpp" path="/home/nikkatsa/Working_Projects/Sobel_Filter_HLS_System/Sobel_Kernel_HLS/solution1/.tcls/test_sobel.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

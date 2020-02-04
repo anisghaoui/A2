@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Tue Jun 13 19:12:51 2017
+# Process ID: 12569
+# Current directory: /home/nikkatsa/Working_Projects/Sobel_Filter_HLS_System/Sobel_System/Sobel_system_ddr/Sobel_system_ddr.runs/synth_1
+# Command line: vivado -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
+# Log file: /home/nikkatsa/Working_Projects/Sobel_Filter_HLS_System/Sobel_System/Sobel_system_ddr/Sobel_system_ddr.runs/synth_1/design_1_wrapper.vds
+# Journal file: /home/nikkatsa/Working_Projects/Sobel_Filter_HLS_System/Sobel_System/Sobel_system_ddr/Sobel_system_ddr.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source design_1_wrapper.tcl -notrace
