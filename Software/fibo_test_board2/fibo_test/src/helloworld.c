@@ -118,12 +118,12 @@ enum{
 
 
 
-int fibo_sw(int n , int plus_un){
-	int f_0=1;
-	int f_1=0;
+long fibo_sw(long n , int plus_un){
+	long f_0=1;
+	long f_1=0;
 
-	for(int i=0;i<n;i++){
-		int t=f_0;
+	for(long i=0;i<n;i++){
+		long t=f_0;
 		f_0=f_1+f_0;
 		f_1=t;
 	}
@@ -137,7 +137,7 @@ int read_fibo_ap(void)
 	return (XGpio_DiscreteRead(&fibo_Gpio,FIBO_APP_CHANNEL))& (AP_ALL);
 }
 
-int fibo_compute(int n){
+long fibo_compute(long n){
 	//*while(!(read_fibo_ap()&AP_READY));
 	//quand on est pret
 	XGpio_SetDataDirection(&fibo_Gpio, FIBO_DATA_CHANNEL, 0x0);//on met la chaine de DATA en OUTPUT
@@ -159,7 +159,7 @@ int fibo_compute(int n){
 }
 
 
-#define N 30
+#define N 100
 int main()
 {
     init_platform();
@@ -168,8 +168,8 @@ int main()
 
     printf("on lance le calul de fibo(%i)\n",N);
     int r=fibo_compute(N);
-    printf("fini:%i\n",r);
-    printf("test=%i\n",fibo_sw(N,TRUE));
+    printf("fini:%lu\n",r);
+    printf("test=%lu\n",fibo_sw(N,TRUE));
     cleanup_platform();
     return 0;
 }

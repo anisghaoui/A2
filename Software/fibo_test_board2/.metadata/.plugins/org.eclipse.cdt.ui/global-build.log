@@ -77,3 +77,113 @@ make pre-build main-build
 a9-linaro-pre-build-step
 ' '
 make: Nothing to be done for 'main-build'.
+16:24:14 **** Incremental Build of configuration Debug for project fibo_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fibo_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: fibo_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../fibo_test_bsp/ps7_cortexa9_0/lib -o "fibo_test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: fibo_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size fibo_test.elf  |tee "fibo_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  60352	   2632	  23344	  86328	  15138	fibo_test.elf
+'Finished building: fibo_test.elf.size'
+' '
+16:26:58 **** Auto Build of configuration Debug for project fibo_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fibo_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: fibo_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../fibo_test_bsp/ps7_cortexa9_0/lib -o "fibo_test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: fibo_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size fibo_test.elf  |tee "fibo_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  60352	   2632	  23344	  86328	  15138	fibo_test.elf
+'Finished building: fibo_test.elf.size'
+' '
+16:27:02 **** Incremental Build of configuration Debug for project fibo_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+16:28:27 **** Auto Build of configuration Debug for project fibo_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fibo_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:171:20: warning: format '%lu' expects argument of type 'long unsigned int', but argument 2 has type 'int' [-Wformat=]
+     printf("fini:%lu\n",r);
+                  ~~^    ~
+                  %u
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: fibo_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../fibo_test_bsp/ps7_cortexa9_0/lib -o "fibo_test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: fibo_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size fibo_test.elf  |tee "fibo_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  60352	   2632	  23344	  86328	  15138	fibo_test.elf
+'Finished building: fibo_test.elf.size'
+' '
+16:28:30 **** Incremental Build of configuration Debug for project fibo_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+16:28:44 **** Incremental Build of configuration Debug for project fibo_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+16:34:21 **** Incremental Build of configuration Debug for project fibo_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fibo_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:171:20: warning: format '%lu' expects argument of type 'long unsigned int', but argument 2 has type 'int' [-Wformat=]
+     printf("fini:%lu\n",r);
+                  ~~^    ~
+                  %u
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: fibo_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../fibo_test_bsp/ps7_cortexa9_0/lib -o "fibo_test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: fibo_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size fibo_test.elf  |tee "fibo_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  60352	   2632	  23344	  86328	  15138	fibo_test.elf
+'Finished building: fibo_test.elf.size'
+' '
+16:34:37 **** Incremental Build of configuration Debug for project fibo_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
