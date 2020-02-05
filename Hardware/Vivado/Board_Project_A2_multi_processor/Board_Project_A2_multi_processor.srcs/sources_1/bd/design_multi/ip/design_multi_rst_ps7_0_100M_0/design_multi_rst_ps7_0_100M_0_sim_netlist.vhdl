@@ -1,10 +1,10 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.1.3 (win64) Build 2644227 Wed Sep  4 09:45:24 MDT 2019
--- Date        : Mon Feb  3 15:29:15 2020
+-- Date        : Mon Feb  3 15:29:14 2020
 -- Host        : Qlala-Blade running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Board_Project_A2_multi_processor/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_rst_ps7_0_100M_0/design_multi_rst_ps7_0_100M_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top design_multi_rst_ps7_0_100M_0 -prefix
+--               design_multi_rst_ps7_0_100M_0_ design_multi_rst_ps7_0_100M_0_sim_netlist.vhdl
 -- Design      : design_multi_rst_ps7_0_100M_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -25,8 +25,6 @@ entity design_multi_rst_ps7_0_100M_0_cdc_sync is
     aux_reset_in : in STD_LOGIC;
     slowest_sync_clk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_multi_rst_ps7_0_100M_0_cdc_sync : entity is "cdc_sync";
 end design_multi_rst_ps7_0_100M_0_cdc_sync;
 
 architecture STRUCTURE of design_multi_rst_ps7_0_100M_0_cdc_sync is
@@ -235,8 +233,6 @@ entity design_multi_rst_ps7_0_100M_0_upcnt_n is
     seq_cnt_en : in STD_LOGIC;
     slowest_sync_clk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_multi_rst_ps7_0_100M_0_upcnt_n : entity is "upcnt_n";
 end design_multi_rst_ps7_0_100M_0_upcnt_n;
 
 architecture STRUCTURE of design_multi_rst_ps7_0_100M_0_upcnt_n is
@@ -401,8 +397,6 @@ entity design_multi_rst_ps7_0_100M_0_lpf is
     ext_reset_in : in STD_LOGIC;
     aux_reset_in : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_multi_rst_ps7_0_100M_0_lpf : entity is "lpf";
 end design_multi_rst_ps7_0_100M_0_lpf;
 
 architecture STRUCTURE of design_multi_rst_ps7_0_100M_0_lpf is
@@ -584,8 +578,6 @@ entity design_multi_rst_ps7_0_100M_0_sequence_psr is
     lpf_int : in STD_LOGIC;
     slowest_sync_clk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_multi_rst_ps7_0_100M_0_sequence_psr : entity is "sequence_psr";
 end design_multi_rst_ps7_0_100M_0_sequence_psr;
 
 architecture STRUCTURE of design_multi_rst_ps7_0_100M_0_sequence_psr is
@@ -924,8 +916,6 @@ entity design_multi_rst_ps7_0_100M_0_proc_sys_reset is
   attribute C_NUM_PERP_ARESETN of design_multi_rst_ps7_0_100M_0_proc_sys_reset : entity is 1;
   attribute C_NUM_PERP_RST : integer;
   attribute C_NUM_PERP_RST of design_multi_rst_ps7_0_100M_0_proc_sys_reset : entity is 1;
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_multi_rst_ps7_0_100M_0_proc_sys_reset : entity is "proc_sys_reset";
 end design_multi_rst_ps7_0_100M_0_proc_sys_reset;
 
 architecture STRUCTURE of design_multi_rst_ps7_0_100M_0_proc_sys_reset is

@@ -1,10 +1,10 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.1.3 (win64) Build 2644227 Wed Sep  4 09:45:24 MDT 2019
--- Date        : Mon Feb  3 15:29:13 2020
+-- Date        : Mon Feb  3 15:29:12 2020
 -- Host        : Qlala-Blade running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Board_Project_A2_multi_processor/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_ilmb_v10_0/design_multi_ilmb_v10_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top design_multi_ilmb_v10_0 -prefix
+--               design_multi_ilmb_v10_0_ design_multi_ilmb_v10_0_sim_netlist.vhdl
 -- Design      : design_multi_ilmb_v10_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -50,8 +50,6 @@ entity design_multi_ilmb_v10_0_lmb_v10 is
   attribute C_LMB_DWIDTH of design_multi_ilmb_v10_0_lmb_v10 : entity is 32;
   attribute C_LMB_NUM_SLAVES : integer;
   attribute C_LMB_NUM_SLAVES of design_multi_ilmb_v10_0_lmb_v10 : entity is 1;
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_multi_ilmb_v10_0_lmb_v10 : entity is "lmb_v10";
 end design_multi_ilmb_v10_0_lmb_v10;
 
 architecture STRUCTURE of design_multi_ilmb_v10_0_lmb_v10 is

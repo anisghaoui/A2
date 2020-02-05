@@ -187,3 +187,241 @@ make pre-build main-build
 a9-linaro-pre-build-step
 ' '
 make: Nothing to be done for 'main-build'.
+09:40:06 **** Auto Build of configuration Debug for project fibo_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fibo_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:58:
+../../fibo_test_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:177:20: warning: format '%lu' expects argument of type 'long unsigned int', but argument 2 has type 'int' [-Wformat=]
+     printf("fini:%lu time=%.5f\n",r,elapsedInUs);
+                  ~~^              ~
+                  %u
+../src/helloworld.c:183:37: error: 'res' undeclared (first use in this function)
+     printf("test sw =%lu sw=%.5f\n",res,elapsedInUs);
+                                     ^~~
+../src/helloworld.c:183:37: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:179:9: warning: unused variable 'res_sw' [-Wunused-variable]
+     int res_sw=fibo_sw(N,TRUE);
+         ^~~~~~
+../src/helloworld.c:166:30: warning: unused variable 'ExecTimeInTicks' [-Wunused-variable]
+  XTime Start_Time, End_Time, ExecTimeInTicks;
+                              ^~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+09:40:26 **** Auto Build of configuration Debug for project fibo_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fibo_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:58:
+../../fibo_test_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:177:20: warning: format '%lu' expects argument of type 'long unsigned int', but argument 2 has type 'int' [-Wformat=]
+     printf("fini:%lu time=%.5f\n",r,elapsedInUs);
+                  ~~^              ~
+                  %u
+../src/helloworld.c:183:24: warning: format '%lu' expects argument of type 'long unsigned int', but argument 2 has type 'int' [-Wformat=]
+     printf("test sw =%lu sw=%.5f\n",res_sw,elapsedInUs);
+                      ~~^            ~~~~~~
+                      %u
+../src/helloworld.c:166:30: warning: unused variable 'ExecTimeInTicks' [-Wunused-variable]
+  XTime Start_Time, End_Time, ExecTimeInTicks;
+                              ^~~~~~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: fibo_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../fibo_test_bsp/ps7_cortexa9_0/lib -o "fibo_test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: fibo_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size fibo_test.elf  |tee "fibo_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  61400	   2632	  23344	  87376	  15550	fibo_test.elf
+'Finished building: fibo_test.elf.size'
+' '
+09:41:02 **** Auto Build of configuration Debug for project fibo_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fibo_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:58:
+../../fibo_test_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:166:30: warning: unused variable 'ExecTimeInTicks' [-Wunused-variable]
+  XTime Start_Time, End_Time, ExecTimeInTicks;
+                              ^~~~~~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: fibo_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../fibo_test_bsp/ps7_cortexa9_0/lib -o "fibo_test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: fibo_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size fibo_test.elf  |tee "fibo_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  61464	   2632	  23344	  87440	  15590	fibo_test.elf
+'Finished building: fibo_test.elf.size'
+' '
+09:41:06 **** Incremental Build of configuration Debug for project fibo_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+09:41:16 **** Incremental Build of configuration Debug for project fibo_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+10:02:19 **** Auto Build of configuration Debug for project fibo_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fibo_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:58:
+../../fibo_test_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+../src/helloworld.c: In function 'fibo_compute':
+../src/helloworld.c:142:30: warning: unused variable 'ExecTimeInTicks' [-Wunused-variable]
+  XTime Start_Time, End_Time, ExecTimeInTicks;
+                              ^~~~~~~~~~~~~~~
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:171:30: warning: unused variable 'ExecTimeInTicks' [-Wunused-variable]
+  XTime Start_Time, End_Time, ExecTimeInTicks;
+                              ^~~~~~~~~~~~~~~
+../src/helloworld.c: In function 'fibo_compute':
+../src/helloworld.c:155:3: warning: 'elapsedInUs' is used uninitialized in this function [-Wuninitialized]
+   printf("time=%.5f\n",elapsedInUs);
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: fibo_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../fibo_test_bsp/ps7_cortexa9_0/lib -o "fibo_test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: fibo_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size fibo_test.elf  |tee "fibo_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  61472	   2632	  23344	  87448	  15598	fibo_test.elf
+'Finished building: fibo_test.elf.size'
+' '
+10:02:37 **** Auto Build of configuration Debug for project fibo_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fibo_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:58:
+../../fibo_test_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+../src/helloworld.c: In function 'fibo_compute':
+../src/helloworld.c:142:30: warning: unused variable 'ExecTimeInTicks' [-Wunused-variable]
+  XTime Start_Time, End_Time, ExecTimeInTicks;
+                              ^~~~~~~~~~~~~~~
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:172:30: warning: unused variable 'ExecTimeInTicks' [-Wunused-variable]
+  XTime Start_Time, End_Time, ExecTimeInTicks;
+                              ^~~~~~~~~~~~~~~
+../src/helloworld.c:183:5: warning: 'elapsedInUs' is used uninitialized in this function [-Wuninitialized]
+     printf("fini:%lu time=%.5f\n",r,elapsedInUs);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: fibo_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../fibo_test_bsp/ps7_cortexa9_0/lib -o "fibo_test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: fibo_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size fibo_test.elf  |tee "fibo_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  61472	   2632	  23344	  87448	  15598	fibo_test.elf
+'Finished building: fibo_test.elf.size'
+' '
+10:02:48 **** Auto Build of configuration Debug for project fibo_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fibo_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:58:
+../../fibo_test_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+../src/helloworld.c: In function 'fibo_compute':
+../src/helloworld.c:142:30: warning: unused variable 'ExecTimeInTicks' [-Wunused-variable]
+  XTime Start_Time, End_Time, ExecTimeInTicks;
+                              ^~~~~~~~~~~~~~~
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:172:30: warning: unused variable 'ExecTimeInTicks' [-Wunused-variable]
+  XTime Start_Time, End_Time, ExecTimeInTicks;
+                              ^~~~~~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: fibo_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../fibo_test_bsp/ps7_cortexa9_0/lib -o "fibo_test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: fibo_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size fibo_test.elf  |tee "fibo_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  61536	   2632	  23344	  87512	  155d8	fibo_test.elf
+'Finished building: fibo_test.elf.size'
+' '
+10:03:01 **** Auto Build of configuration Debug for project fibo_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fibo_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:58:
+../../fibo_test_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: fibo_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../fibo_test_bsp/ps7_cortexa9_0/lib -o "fibo_test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: fibo_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size fibo_test.elf  |tee "fibo_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  61536	   2632	  23344	  87512	  155d8	fibo_test.elf
+'Finished building: fibo_test.elf.size'
+' '
+10:03:08 **** Incremental Build of configuration Debug for project fibo_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+10:11:54 **** Incremental Build of configuration Debug for project fibo_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.

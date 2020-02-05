@@ -26,6 +26,7 @@ vlib questa_lib/msim/axi_register_slice_v2_1_19
 vlib questa_lib/msim/fifo_generator_v13_2_4
 vlib questa_lib/msim/axi_data_fifo_v2_1_18
 vlib questa_lib/msim/axi_crossbar_v2_1_20
+vlib questa_lib/msim/axi_bram_ctrl_v4_1_1
 vlib questa_lib/msim/axi_protocol_converter_v2_1_19
 
 vmap xilinx_vip questa_lib/msim/xilinx_vip
@@ -53,6 +54,7 @@ vmap axi_register_slice_v2_1_19 questa_lib/msim/axi_register_slice_v2_1_19
 vmap fifo_generator_v13_2_4 questa_lib/msim/fifo_generator_v13_2_4
 vmap axi_data_fifo_v2_1_18 questa_lib/msim/axi_data_fifo_v2_1_18
 vmap axi_crossbar_v2_1_20 questa_lib/msim/axi_crossbar_v2_1_20
+vmap axi_bram_ctrl_v4_1_1 questa_lib/msim/axi_bram_ctrl_v4_1_1
 vmap axi_protocol_converter_v2_1_19 questa_lib/msim/axi_protocol_converter_v2_1_19
 
 vlog -work xilinx_vip -64 -sv -L axi_vip_v1_1_5 -L processing_system7_vip_v1_0_7 -L smartconnect_v1_0 -L xilinx_vip "+incdir+C:/Xilinx/Vivado/2019.1/data/xilinx_vip/include" \
@@ -265,12 +267,27 @@ vlog -work axi_crossbar_v2_1_20 -64 "+incdir+../../../../Board_Project_A2_multi_
 
 vlog -work xil_defaultlib -64 "+incdir+../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/ec67/hdl" "+incdir+../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/8c62/hdl" "+incdir+../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/c923" "+incdir+../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/1ddd/hdl/verilog" "+incdir+../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/b2d0/hdl/verilog" "+incdir+../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_processing_system7_0_0" "+incdir+C:/Xilinx/Vivado/2019.1/data/xilinx_vip/include" \
 "../../../bd/design_multi/ip/design_multi_xbar_0/sim/design_multi_xbar_0.v" \
+"../../../bd/design_multi/ip/design_multi_xbar_1/sim/design_multi_xbar_1.v" \
+"../../../bd/design_multi/ip/design_multi_axi_bram_ctrl_0_bram_0/sim/design_multi_axi_bram_ctrl_0_bram_0.v" \
+"../../../bd/design_multi/ip/design_multi_axi_bram_ctrl_0_bram_0_0/sim/design_multi_axi_bram_ctrl_0_bram_0_0.v" \
+
+vcom -work axi_bram_ctrl_v4_1_1 -64 -93 \
+"../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/70bf/hdl/axi_bram_ctrl_v4_1_rfs.vhd" \
+
+vcom -work xil_defaultlib -64 -93 \
+"../../../bd/design_multi/ip/design_multi_axi_bram_ctrl_0_1/sim/design_multi_axi_bram_ctrl_0_1.vhd" \
+
+vlog -work xil_defaultlib -64 "+incdir+../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/ec67/hdl" "+incdir+../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/8c62/hdl" "+incdir+../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/c923" "+incdir+../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/1ddd/hdl/verilog" "+incdir+../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/b2d0/hdl/verilog" "+incdir+../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_processing_system7_0_0" "+incdir+C:/Xilinx/Vivado/2019.1/data/xilinx_vip/include" \
+"../../../bd/design_multi/ip/design_multi_axi_crossbar_0_0/sim/design_multi_axi_crossbar_0_0.v" \
 
 vlog -work axi_protocol_converter_v2_1_19 -64 "+incdir+../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/ec67/hdl" "+incdir+../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/8c62/hdl" "+incdir+../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/c923" "+incdir+../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/1ddd/hdl/verilog" "+incdir+../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/b2d0/hdl/verilog" "+incdir+../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_processing_system7_0_0" "+incdir+C:/Xilinx/Vivado/2019.1/data/xilinx_vip/include" \
 "../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \
 
 vlog -work xil_defaultlib -64 "+incdir+../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/ec67/hdl" "+incdir+../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/8c62/hdl" "+incdir+../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/c923" "+incdir+../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/1ddd/hdl/verilog" "+incdir+../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/b2d0/hdl/verilog" "+incdir+../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_processing_system7_0_0" "+incdir+C:/Xilinx/Vivado/2019.1/data/xilinx_vip/include" \
+"../../../bd/design_multi/ip/design_multi_auto_pc_1/sim/design_multi_auto_pc_1.v" \
 "../../../bd/design_multi/ip/design_multi_auto_pc_0/sim/design_multi_auto_pc_0.v" \
+"../../../bd/design_multi/ip/design_multi_auto_pc_2/sim/design_multi_auto_pc_2.v" \
+"../../../bd/design_multi/ip/design_multi_auto_pc_3/sim/design_multi_auto_pc_3.v" \
 
 vlog -work xil_defaultlib \
 "glbl.v"

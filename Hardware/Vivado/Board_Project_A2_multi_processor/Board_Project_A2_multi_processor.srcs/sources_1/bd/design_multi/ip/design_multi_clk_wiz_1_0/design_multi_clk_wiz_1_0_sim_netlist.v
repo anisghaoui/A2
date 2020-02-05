@@ -1,7 +1,7 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.1.3 (win64) Build 2644227 Wed Sep  4 09:45:24 MDT 2019
-// Date        : Mon Feb  3 15:55:42 2020
+// Date        : Tue Feb  4 11:43:55 2020
 // Host        : Qlala-Blade running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
 //               C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_clk_wiz_1_0/design_multi_clk_wiz_1_0_sim_netlist.v
@@ -15,34 +15,34 @@
 (* NotValidForBitStream *)
 module design_multi_clk_wiz_1_0
    (clk_out1,
-    reset,
+    resetn,
     locked,
     clk_in1);
   output clk_out1;
-  input reset;
+  input resetn;
   output locked;
   input clk_in1;
 
   (* IBUF_LOW_PWR *) wire clk_in1;
   wire clk_out1;
   wire locked;
-  wire reset;
+  wire resetn;
 
   design_multi_clk_wiz_1_0_design_multi_clk_wiz_1_0_clk_wiz inst
        (.clk_in1(clk_in1),
         .clk_out1(clk_out1),
         .locked(locked),
-        .reset(reset));
+        .resetn(resetn));
 endmodule
 
 (* ORIG_REF_NAME = "design_multi_clk_wiz_1_0_clk_wiz" *) 
 module design_multi_clk_wiz_1_0_design_multi_clk_wiz_1_0_clk_wiz
    (clk_out1,
-    reset,
+    resetn,
     locked,
     clk_in1);
   output clk_out1;
-  input reset;
+  input resetn;
   output locked;
   input clk_in1;
 
@@ -53,7 +53,8 @@ module design_multi_clk_wiz_1_0_design_multi_clk_wiz_1_0_clk_wiz
   wire clkfbout_buf_design_multi_clk_wiz_1_0;
   wire clkfbout_design_multi_clk_wiz_1_0;
   wire locked;
-  wire reset;
+  wire reset_high;
+  wire resetn;
   wire NLW_mmcm_adv_inst_CLKFBOUTB_UNCONNECTED;
   wire NLW_mmcm_adv_inst_CLKFBSTOPPED_UNCONNECTED;
   wire NLW_mmcm_adv_inst_CLKINSTOPPED_UNCONNECTED;
@@ -171,7 +172,12 @@ module design_multi_clk_wiz_1_0_design_multi_clk_wiz_1_0_clk_wiz
         .PSEN(1'b0),
         .PSINCDEC(1'b0),
         .PWRDWN(1'b0),
-        .RST(reset));
+        .RST(reset_high));
+  LUT1 #(
+    .INIT(2'h1)) 
+    mmcm_adv_inst_i_1
+       (.I0(resetn),
+        .O(reset_high));
 endmodule
 `ifndef GLBL
 `define GLBL

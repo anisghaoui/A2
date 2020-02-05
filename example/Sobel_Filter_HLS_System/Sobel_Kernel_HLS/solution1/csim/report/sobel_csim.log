@@ -1,0 +1,16 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../.tcls/test_sobel.cpp in debug mode
+   Compiling ../../sobel.cpp in debug mode
+   Generating csim.exe
+Just read from input with start 0x601900
+Input has 467 zeros
+Just read from input with start 0x801900
+Golden has 187954 zeros
+Total time =  0.0287363 seconds
+Just read from input with start 0x701900
+Output has 187947 zeros
+PSNR of original Sobel and computed Sobel image: inf
+A visualization of the sobel filter can be found at output.grey, or you can run 'make image' to get the jpg
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

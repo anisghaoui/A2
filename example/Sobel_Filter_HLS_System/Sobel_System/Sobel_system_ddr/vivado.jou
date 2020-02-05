@@ -1,0 +1,29 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Sat May 20 18:52:55 2017
+# Process ID: 3648
+# Current directory: /home/nikkatsa/Documents/Sobel_system_ddr
+# Command line: vivado Sobel_system_ddr.xpr
+# Log file: /home/nikkatsa/Documents/Sobel_system_ddr/vivado.log
+# Journal file: /home/nikkatsa/Documents/Sobel_system_ddr/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project Sobel_system_ddr.xpr
+open_bd_design {/home/nikkatsa/Documents/Sobel_system_ddr/Sobel_system_ddr.srcs/sources_1/bd/design_1/design_1.bd}
+regenerate_bd_layout
+startgroup
+set_property -dict [list CONFIG.PCW_USE_FABRIC_INTERRUPT {1} CONFIG.PCW_IRQ_F2P_INTR {1}] [get_bd_cells processing_system7_0]
+endgroup
+connect_bd_net [get_bd_pins sobel_0/interrupt] [get_bd_pins processing_system7_0/IRQ_F2P]
+regenerate_bd_layout
+save_bd_design
+reset_run synth_1
+reset_run design_1_processing_system7_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+file mkdir /home/nikkatsa/Documents/Sobel_system_ddr/Sobel_system_ddr.sdk
+file copy -force /home/nikkatsa/Documents/Sobel_system_ddr/Sobel_system_ddr.runs/impl_1/design_1_wrapper.sysdef /home/nikkatsa/Documents/Sobel_system_ddr/Sobel_system_ddr.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace /home/nikkatsa/Documents/Sobel_system_ddr/Sobel_system_ddr.sdk -hwspec /home/nikkatsa/Documents/Sobel_system_ddr/Sobel_system_ddr.sdk/design_1_wrapper.hdf

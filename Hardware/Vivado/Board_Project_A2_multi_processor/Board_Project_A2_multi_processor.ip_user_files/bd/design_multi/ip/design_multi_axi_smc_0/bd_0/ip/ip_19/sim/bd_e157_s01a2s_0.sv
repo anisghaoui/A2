@@ -106,7 +106,7 @@ output wire m_sc_ar_send;
 (* X_INTERFACE_INFO = "xilinx.com:interface:sc:1.0 M_SC_AR RECV" *)
 input wire m_sc_ar_recv;
 (* X_INTERFACE_INFO = "xilinx.com:interface:sc:1.0 M_SC_AR PAYLD" *)
-output wire [137 : 0] m_sc_ar_payld;
+output wire [138 : 0] m_sc_ar_payld;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI ARID" *)
 input wire [0 : 0] s_axi_arid;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI ARADDR" *)
@@ -158,11 +158,11 @@ input wire s_axi_rready;
     .C_SC_ARUSER_WIDTH(0),
     .C_SC_AWUSER_WIDTH(0),
     .C_SC_BUSER_WIDTH(0),
-    .C_MSC_ROUTE_WIDTH(1),
+    .C_MSC_ROUTE_WIDTH(2),
     .C_SSC_ROUTE_WIDTH(2),
-    .C_AWPAYLD_WIDTH(138),
-    .C_ARPAYLD_WIDTH(138),
-    .C_WPAYLD_WIDTH(88),
+    .C_AWPAYLD_WIDTH(139),
+    .C_ARPAYLD_WIDTH(139),
+    .C_WPAYLD_WIDTH(89),
     .C_RPAYLD_WIDTH(84),
     .C_BPAYLD_WIDTH(6)
   ) inst (

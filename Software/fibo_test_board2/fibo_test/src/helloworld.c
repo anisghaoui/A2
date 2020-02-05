@@ -55,6 +55,7 @@
 #include "xparameters.h"
 #include "xgpio.h"
 #include "xil_printf.h"
+#include "xtime_l.h"
 
 /************************** Constant Definitions *****************************/
 
@@ -138,15 +139,21 @@ int read_fibo_ap(void)
 }
 
 long fibo_compute(long n){
+	XTime Start_Time, End_Time;
+	double elapsedInUs;
 	//*while(!(read_fibo_ap()&AP_READY));
 	//quand on est pret
 	XGpio_SetDataDirection(&fibo_Gpio, FIBO_DATA_CHANNEL, 0x0);//on met la chaine de DATA en OUTPUT
 	XGpio_DiscreteWrite(&fibo_Gpio, FIBO_DATA_CHANNEL, n);//et on ecris N
 
 	//on lance ensuite le calcul
+	XTime_GetTime((XTime *) &Start_Time);
 	write_fibo_ap(AP_START);
 	while(!(read_fibo_ap()&(AP_DONE)));
 	write_fibo_ap(AP_NONE);
+	XTime_GetTime((XTime *) &End_Time);
+	elapsedInUs = 1.0 * (End_Time - Start_Time) / (COUNTS_PER_SECOND/1000000);
+	 printf("time=%.5f\n",elapsedInUs);
 	//on attend le résultat
 	//while(!(read_fibo_ap()&(AP_DATA_VALID)));// printf("etat:%i\n",read_fibo_ap());
 	//on le lit
@@ -162,14 +169,25 @@ long fibo_compute(long n){
 #define N 100
 int main()
 {
+	XTime Start_Time, End_Time;
+
+	double elapsedInUs;
     init_platform();
     init_fibo();
     print("Hello World\n\r");
 
     printf("on lance le calul de fibo(%i)\n",N);
-    int r=fibo_compute(N);
-    printf("fini:%lu\n",r);
-    printf("test=%lu\n",fibo_sw(N,TRUE));
+    XTime_GetTime((XTime *) &Start_Time);
+    long unsigned int r=fibo_compute(N);
+    XTime_GetTime((XTime *) &End_Time);
+    elapsedInUs = 1.0 * (End_Time - Start_Time) / (COUNTS_PER_SECOND/1000000);
+    printf("fini:%lu time=%.5f\n",r,elapsedInUs);
+    XTime_GetTime((XTime *) &Start_Time);
+    long unsigned int res_sw=fibo_sw(N,TRUE);
+    XTime_GetTime((XTime *) &End_Time);
+    elapsedInUs = 1.0 * (End_Time - Start_Time) / (COUNTS_PER_SECOND/1000000);
+
+    printf("test sw =%lu sw=%.5f\n",res_sw,elapsedInUs);
     cleanup_platform();
     return 0;
 }

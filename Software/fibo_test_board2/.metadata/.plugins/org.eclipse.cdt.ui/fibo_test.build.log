@@ -1,8 +1,8 @@
-16:34:37 **** Incremental Build of configuration Debug for project fibo_test ****
+10:11:54 **** Incremental Build of configuration Debug for project fibo_test ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
 make: Nothing to be done for 'main-build'.
 
-16:34:37 Build Finished (took 301ms)
+10:11:54 Build Finished (took 245ms)
 

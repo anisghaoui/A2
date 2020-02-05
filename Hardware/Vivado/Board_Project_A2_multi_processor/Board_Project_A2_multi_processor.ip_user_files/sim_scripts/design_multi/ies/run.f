@@ -208,12 +208,27 @@
 -endlib
 -makelib ies_lib/xil_defaultlib \
   "../../../bd/design_multi/ip/design_multi_xbar_0/sim/design_multi_xbar_0.v" \
+  "../../../bd/design_multi/ip/design_multi_xbar_1/sim/design_multi_xbar_1.v" \
+  "../../../bd/design_multi/ip/design_multi_axi_bram_ctrl_0_bram_0/sim/design_multi_axi_bram_ctrl_0_bram_0.v" \
+  "../../../bd/design_multi/ip/design_multi_axi_bram_ctrl_0_bram_0_0/sim/design_multi_axi_bram_ctrl_0_bram_0_0.v" \
+-endlib
+-makelib ies_lib/axi_bram_ctrl_v4_1_1 \
+  "../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/70bf/hdl/axi_bram_ctrl_v4_1_rfs.vhd" \
+-endlib
+-makelib ies_lib/xil_defaultlib \
+  "../../../bd/design_multi/ip/design_multi_axi_bram_ctrl_0_1/sim/design_multi_axi_bram_ctrl_0_1.vhd" \
+-endlib
+-makelib ies_lib/xil_defaultlib \
+  "../../../bd/design_multi/ip/design_multi_axi_crossbar_0_0/sim/design_multi_axi_crossbar_0_0.v" \
 -endlib
 -makelib ies_lib/axi_protocol_converter_v2_1_19 \
   "../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \
 -endlib
 -makelib ies_lib/xil_defaultlib \
+  "../../../bd/design_multi/ip/design_multi_auto_pc_1/sim/design_multi_auto_pc_1.v" \
   "../../../bd/design_multi/ip/design_multi_auto_pc_0/sim/design_multi_auto_pc_0.v" \
+  "../../../bd/design_multi/ip/design_multi_auto_pc_2/sim/design_multi_auto_pc_2.v" \
+  "../../../bd/design_multi/ip/design_multi_auto_pc_3/sim/design_multi_auto_pc_3.v" \
 -endlib
 -makelib ies_lib/xil_defaultlib \
   glbl.v
