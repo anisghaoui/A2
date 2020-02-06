@@ -3,8 +3,8 @@
 // Tool Version: Vivado v.2019.1.3 (win64) Build 2644227 Wed Sep  4 09:45:24 MDT 2019
 // Date        : Wed Feb  5 16:25:36 2020
 // Host        : Qlala-Blade running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim
-//               C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_axi_bram_ctrl_1_bram_0/design_multi_axi_bram_ctrl_1_bram_0_sim_netlist.v
+// Command     : write_verilog -force -mode funcsim -rename_top design_multi_axi_bram_ctrl_1_bram_0 -prefix
+//               design_multi_axi_bram_ctrl_1_bram_0_ design_multi_axi_bram_ctrl_1_bram_0_sim_netlist.v
 // Design      : design_multi_axi_bram_ctrl_1_bram_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -224,7 +224,6 @@ module design_multi_axi_bram_ctrl_1_bram_0
         .web(web));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_generic_cstr" *) 
 module design_multi_axi_bram_ctrl_1_bram_0_blk_mem_gen_generic_cstr
    (douta,
     doutb,
@@ -318,7 +317,6 @@ module design_multi_axi_bram_ctrl_1_bram_0_blk_mem_gen_generic_cstr
         .web(web[3:2]));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_prim_width" *) 
 module design_multi_axi_bram_ctrl_1_bram_0_blk_mem_gen_prim_width
    (douta,
     doutb,
@@ -632,7 +630,6 @@ module design_multi_axi_bram_ctrl_1_bram_0_blk_mem_gen_prim_width__parameterized
         .web(web));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_prim_wrapper" *) 
 module design_multi_axi_bram_ctrl_1_bram_0_blk_mem_gen_prim_wrapper
    (douta,
     doutb,
@@ -1226,7 +1223,6 @@ module design_multi_axi_bram_ctrl_1_bram_0_blk_mem_gen_prim_wrapper__parameteriz
         .O(ram_rstram_b));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_top" *) 
 module design_multi_axi_bram_ctrl_1_bram_0_blk_mem_gen_top
    (douta,
     doutb,
@@ -1322,7 +1318,7 @@ endmodule
 (* C_WEA_WIDTH = "4" *) (* C_WEB_WIDTH = "4" *) (* C_WRITE_DEPTH_A = "2048" *) 
 (* C_WRITE_DEPTH_B = "2048" *) (* C_WRITE_MODE_A = "WRITE_FIRST" *) (* C_WRITE_MODE_B = "WRITE_FIRST" *) 
 (* C_WRITE_WIDTH_A = "32" *) (* C_WRITE_WIDTH_B = "32" *) (* C_XDEVICEFAMILY = "zynq" *) 
-(* ORIG_REF_NAME = "blk_mem_gen_v8_4_3" *) (* downgradeipidentifiedwarnings = "yes" *) 
+(* downgradeipidentifiedwarnings = "yes" *) 
 module design_multi_axi_bram_ctrl_1_bram_0_blk_mem_gen_v8_4_3
    (clka,
     rsta,
@@ -1608,7 +1604,6 @@ module design_multi_axi_bram_ctrl_1_bram_0_blk_mem_gen_v8_4_3
         .web(web));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_v8_4_3_synth" *) 
 module design_multi_axi_bram_ctrl_1_bram_0_blk_mem_gen_v8_4_3_synth
    (douta,
     doutb,

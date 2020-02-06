@@ -32,6 +32,8 @@ set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 set_property board_part em.avnet.com:zed:part0:1.4 [current_project]
+set_property ip_repo_paths c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/HLS [current_project]
+update_ip_catalog
 set_property ip_output_repo c:/A2_project/Board_Project_A2_multi_processor.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_ip -quiet C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_clk_wiz_1_0/design_multi_clk_wiz_1_0.xci

@@ -52,6 +52,7 @@
 #include "sleep.h"
 #include "xbram.h"
 #include "xtime_l.h"
+#include "xkmeans.h"
 
 //char* test=(char*)XPAR_PS7_DDR_0_S_AXI_BASEADDR;
 char* test=(char*)(XPAR_BRAM_0_BASEADDR);

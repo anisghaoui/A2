@@ -1,6 +1,25 @@
-17:42:01 **** Incremental Build of configuration Debug for project test_micro ****
+20:22:15 **** Auto Build of configuration Debug for project test_micro ****
 make all 
-make: Nothing to be done for 'all'.
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../test_micro_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'init_bram':
+../src/helloworld.c:57:8: warning: unused variable 'output' [-Wunused-variable]
+  char* output;
+        ^~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: test_micro.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_micro_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "test_micro.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test_micro.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size test_micro.elf  |tee "test_micro.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  67004	   2000	   3180	  72184	  119f8	test_micro.elf
+'Finished building: test_micro.elf.size'
+' '
 
-17:42:01 Build Finished (took 235ms)
+20:22:21 Build Finished (took 5s.728ms)
 

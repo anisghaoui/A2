@@ -268,7 +268,6 @@ vlog -work axi_crossbar_v2_1_20 -64 "+incdir+../../../../Board_Project_A2_multi_
 vlog -work xil_defaultlib -64 "+incdir+../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/ec67/hdl" "+incdir+../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/8c62/hdl" "+incdir+../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/c923" "+incdir+../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/1ddd/hdl/verilog" "+incdir+../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/b2d0/hdl/verilog" "+incdir+../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_processing_system7_0_0" "+incdir+C:/Xilinx/Vivado/2019.1/data/xilinx_vip/include" \
 "../../../bd/design_multi/ip/design_multi_xbar_0/sim/design_multi_xbar_0.v" \
 "../../../bd/design_multi/ip/design_multi_xbar_1/sim/design_multi_xbar_1.v" \
-"../../../bd/design_multi/ip/design_multi_axi_bram_ctrl_0_bram_0/sim/design_multi_axi_bram_ctrl_0_bram_0.v" \
 "../../../bd/design_multi/ip/design_multi_axi_bram_ctrl_0_bram_0_0/sim/design_multi_axi_bram_ctrl_0_bram_0_0.v" \
 
 vcom -work axi_bram_ctrl_v4_1_1 -64 -93 \
@@ -278,7 +277,57 @@ vcom -work xil_defaultlib -64 -93 \
 "../../../bd/design_multi/ip/design_multi_axi_bram_ctrl_0_1/sim/design_multi_axi_bram_ctrl_0_1.vhd" \
 
 vlog -work xil_defaultlib -64 "+incdir+../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/ec67/hdl" "+incdir+../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/8c62/hdl" "+incdir+../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/c923" "+incdir+../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/1ddd/hdl/verilog" "+incdir+../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/b2d0/hdl/verilog" "+incdir+../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_processing_system7_0_0" "+incdir+C:/Xilinx/Vivado/2019.1/data/xilinx_vip/include" \
-"../../../bd/design_multi/ip/design_multi_axi_crossbar_0_0/sim/design_multi_axi_crossbar_0_0.v" \
+"../../../bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/sim/bd_6f76.v" \
+"../../../bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_0/sim/bd_6f76_one_0.v" \
+
+vcom -work xil_defaultlib -64 -93 \
+"../../../bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_1/sim/bd_6f76_psr_aclk_0.vhd" \
+
+vlog -work xil_defaultlib -64 -sv -L axi_vip_v1_1_5 -L processing_system7_vip_v1_0_7 -L smartconnect_v1_0 -L xilinx_vip "+incdir+../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/ec67/hdl" "+incdir+../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/8c62/hdl" "+incdir+../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/c923" "+incdir+../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/1ddd/hdl/verilog" "+incdir+../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/b2d0/hdl/verilog" "+incdir+../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_processing_system7_0_0" "+incdir+C:/Xilinx/Vivado/2019.1/data/xilinx_vip/include" \
+"../../../bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_2/sim/bd_6f76_arsw_0.sv" \
+"../../../bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_3/sim/bd_6f76_rsw_0.sv" \
+"../../../bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_4/sim/bd_6f76_awsw_0.sv" \
+"../../../bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_5/sim/bd_6f76_wsw_0.sv" \
+"../../../bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_6/sim/bd_6f76_bsw_0.sv" \
+"../../../bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_7/sim/bd_6f76_s00mmu_0.sv" \
+"../../../bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_8/sim/bd_6f76_s00tr_0.sv" \
+"../../../bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_9/sim/bd_6f76_s00sic_0.sv" \
+"../../../bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_10/sim/bd_6f76_s00a2s_0.sv" \
+"../../../bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_11/sim/bd_6f76_sarn_0.sv" \
+"../../../bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_12/sim/bd_6f76_srn_0.sv" \
+"../../../bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_13/sim/bd_6f76_sawn_0.sv" \
+"../../../bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_14/sim/bd_6f76_swn_0.sv" \
+"../../../bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_15/sim/bd_6f76_sbn_0.sv" \
+"../../../bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_16/sim/bd_6f76_s01mmu_0.sv" \
+"../../../bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_17/sim/bd_6f76_s01tr_0.sv" \
+"../../../bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_18/sim/bd_6f76_s01sic_0.sv" \
+"../../../bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_19/sim/bd_6f76_s01a2s_0.sv" \
+"../../../bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_20/sim/bd_6f76_sarn_1.sv" \
+"../../../bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_21/sim/bd_6f76_srn_1.sv" \
+"../../../bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_22/sim/bd_6f76_sawn_1.sv" \
+"../../../bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_23/sim/bd_6f76_swn_1.sv" \
+"../../../bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_24/sim/bd_6f76_sbn_1.sv" \
+"../../../bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_25/sim/bd_6f76_m00s2a_0.sv" \
+"../../../bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_26/sim/bd_6f76_m00arn_0.sv" \
+"../../../bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_27/sim/bd_6f76_m00rn_0.sv" \
+"../../../bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_28/sim/bd_6f76_m00awn_0.sv" \
+"../../../bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_29/sim/bd_6f76_m00wn_0.sv" \
+"../../../bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_30/sim/bd_6f76_m00bn_0.sv" \
+"../../../bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_31/sim/bd_6f76_m00e_0.sv" \
+"../../../bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_32/sim/bd_6f76_m01s2a_0.sv" \
+"../../../bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_33/sim/bd_6f76_m01arn_0.sv" \
+"../../../bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_34/sim/bd_6f76_m01rn_0.sv" \
+"../../../bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_35/sim/bd_6f76_m01awn_0.sv" \
+"../../../bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_36/sim/bd_6f76_m01wn_0.sv" \
+"../../../bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_37/sim/bd_6f76_m01bn_0.sv" \
+"../../../bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_38/sim/bd_6f76_m01e_0.sv" \
+
+vcom -work xil_defaultlib -64 -93 \
+"../../../bd/design_multi/ip/design_multi_smartconnect_0_0/sim/design_multi_smartconnect_0_0.vhd" \
+"../../../bd/design_multi/ip/design_multi_axi_bram_ctrl_1_0/sim/design_multi_axi_bram_ctrl_1_0.vhd" \
+
+vlog -work xil_defaultlib -64 "+incdir+../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/ec67/hdl" "+incdir+../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/8c62/hdl" "+incdir+../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/c923" "+incdir+../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/1ddd/hdl/verilog" "+incdir+../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/b2d0/hdl/verilog" "+incdir+../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_processing_system7_0_0" "+incdir+C:/Xilinx/Vivado/2019.1/data/xilinx_vip/include" \
+"../../../bd/design_multi/ip/design_multi_axi_bram_ctrl_1_bram_0/sim/design_multi_axi_bram_ctrl_1_bram_0.v" \
 
 vlog -work axi_protocol_converter_v2_1_19 -64 "+incdir+../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/ec67/hdl" "+incdir+../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/8c62/hdl" "+incdir+../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/c923" "+incdir+../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/1ddd/hdl/verilog" "+incdir+../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/b2d0/hdl/verilog" "+incdir+../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_processing_system7_0_0" "+incdir+C:/Xilinx/Vivado/2019.1/data/xilinx_vip/include" \
 "../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \
@@ -287,7 +336,6 @@ vlog -work xil_defaultlib -64 "+incdir+../../../../Board_Project_A2_multi_proces
 "../../../bd/design_multi/ip/design_multi_auto_pc_1/sim/design_multi_auto_pc_1.v" \
 "../../../bd/design_multi/ip/design_multi_auto_pc_0/sim/design_multi_auto_pc_0.v" \
 "../../../bd/design_multi/ip/design_multi_auto_pc_2/sim/design_multi_auto_pc_2.v" \
-"../../../bd/design_multi/ip/design_multi_auto_pc_3/sim/design_multi_auto_pc_3.v" \
 
 vlog -work xil_defaultlib \
 "glbl.v"

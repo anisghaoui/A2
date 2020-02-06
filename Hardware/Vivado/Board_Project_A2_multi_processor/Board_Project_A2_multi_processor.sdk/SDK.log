@@ -448,3 +448,26 @@ con
 ----------------End of Script----------------
 
 17:42:16 INFO  : Launch script is exported to file 'C:\A2_project\Board_Project_A2_multi_processor.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_on_local.tcl'
+19:31:28 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1580927192712,  Project:1580916928583
+19:31:28 INFO  : Project design_multi_wrapper_hw_platform_0's source hardware specification located at C:/A2_project/Board_Project_A2_multi_processor.sdk/design_multi_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+19:31:34 INFO  : Copied contents of C:/A2_project/Board_Project_A2_multi_processor.sdk/design_multi_wrapper.hdf into \design_multi_wrapper_hw_platform_0\system.hdf.
+19:31:42 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+19:31:50 INFO  : 
+19:31:55 INFO  : 
+19:31:56 INFO  : Updating hardware inferred compiler options for test_micro.
+19:31:57 INFO  : Updating hardware inferred compiler options for test_zynq.
+19:31:57 INFO  : Clearing existing target manager status.
+19:31:57 INFO  : Closing and re-opening the MSS file of ther project test_zynq_bsp
+19:31:59 INFO  : Closing and re-opening the MSS file of ther project test_micro_bsp
+19:32:00 INFO  : Closing and re-opening the MSS file of ther project test_micro_bsp
+19:32:01 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+19:32:08 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+20:22:13 INFO  : Disconnected from the channel tcfchan#8.
+14:45:03 INFO  : Registering command handlers for SDK TCF services
+14:45:04 INFO  : Launching XSCT server: xsct.bat -interactive C:\A2_project\Board_Project_A2_multi_processor.sdk\temp_xsdb_launch_script.tcl
+14:45:09 INFO  : XSCT server has started successfully.
+14:45:09 INFO  : Successfully done setting XSCT server connection channel  
+14:45:12 INFO  : Processing command line option -hwspec C:/A2_project/Board_Project_A2_multi_processor.sdk/design_multi_wrapper.hdf.
+14:45:12 INFO  : Successfully done setting SDK workspace  
+14:45:13 INFO  : Checking for hwspec changes in the project design_multi_wrapper_hw_platform_0.

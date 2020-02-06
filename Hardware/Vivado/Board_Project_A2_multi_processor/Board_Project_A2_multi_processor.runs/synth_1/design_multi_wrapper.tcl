@@ -17,6 +17,7 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_param chipscope.maxJobs 2
 create_project -in_memory -part xc7z020clg484-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -29,6 +30,8 @@ set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 set_property board_part em.avnet.com:zed:part0:1.4 [current_project]
+set_property ip_repo_paths c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/HLS [current_project]
+update_ip_catalog
 set_property ip_output_repo c:/A2_project/Board_Project_A2_multi_processor.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_vhdl -library xil_defaultlib C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/hdl/design_multi_wrapper.vhd
@@ -123,9 +126,40 @@ set_property used_in_implementation false [get_files -all c:/A2_project/Board_Pr
 set_property used_in_implementation false [get_files -all c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_37/bd_6f76_m01bn_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_axi_bram_ctrl_1_0/design_multi_axi_bram_ctrl_1_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_axi_bram_ctrl_1_bram_0/design_multi_axi_bram_ctrl_1_bram_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_Kmeans_0_0/constraints/Kmeans_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_smartconnect_1_0/bd_0/ip/ip_1/bd_af27_psr_aclk_0_board.xdc]
+set_property used_in_implementation false [get_files -all c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_smartconnect_1_0/bd_0/ip/ip_1/bd_af27_psr_aclk_0.xdc]
+set_property used_in_implementation false [get_files -all c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_smartconnect_1_0/bd_0/ip/ip_2/bd_af27_arsw_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_smartconnect_1_0/bd_0/ip/ip_3/bd_af27_rsw_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_smartconnect_1_0/bd_0/ip/ip_4/bd_af27_awsw_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_smartconnect_1_0/bd_0/ip/ip_5/bd_af27_wsw_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_smartconnect_1_0/bd_0/ip/ip_6/bd_af27_bsw_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_smartconnect_1_0/bd_0/ip/ip_10/bd_af27_s00a2s_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_smartconnect_1_0/bd_0/ip/ip_11/bd_af27_sarn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_smartconnect_1_0/bd_0/ip/ip_12/bd_af27_srn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_smartconnect_1_0/bd_0/ip/ip_13/bd_af27_sawn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_smartconnect_1_0/bd_0/ip/ip_14/bd_af27_swn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_smartconnect_1_0/bd_0/ip/ip_15/bd_af27_sbn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_smartconnect_1_0/bd_0/ip/ip_19/bd_af27_s01a2s_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_smartconnect_1_0/bd_0/ip/ip_20/bd_af27_sarn_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_smartconnect_1_0/bd_0/ip/ip_21/bd_af27_srn_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_smartconnect_1_0/bd_0/ip/ip_22/bd_af27_sawn_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_smartconnect_1_0/bd_0/ip/ip_23/bd_af27_swn_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_smartconnect_1_0/bd_0/ip/ip_24/bd_af27_sbn_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_smartconnect_1_0/bd_0/ip/ip_25/bd_af27_m00s2a_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_smartconnect_1_0/bd_0/ip/ip_26/bd_af27_m00arn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_smartconnect_1_0/bd_0/ip/ip_27/bd_af27_m00rn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_smartconnect_1_0/bd_0/ip/ip_28/bd_af27_m00awn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_smartconnect_1_0/bd_0/ip/ip_29/bd_af27_m00wn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_smartconnect_1_0/bd_0/ip/ip_30/bd_af27_m00bn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_smartconnect_1_0/ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_xbar_3/design_multi_xbar_3_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_auto_pc_1/design_multi_auto_pc_1_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_auto_pc_0/design_multi_auto_pc_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_auto_pc_2/design_multi_auto_pc_2_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_s00_mmu_0/design_multi_s00_mmu_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_auto_pc_4/design_multi_auto_pc_4_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_auto_pc_3/design_multi_auto_pc_3_ooc.xdc]
 set_property used_in_implementation false [get_files -all C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/design_multi_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_microblaze_0_0/data/mb_bootloop_le.elf]
 

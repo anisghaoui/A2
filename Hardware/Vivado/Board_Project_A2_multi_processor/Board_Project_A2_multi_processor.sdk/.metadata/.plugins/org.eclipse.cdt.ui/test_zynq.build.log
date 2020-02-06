@@ -1,8 +1,72 @@
-17:42:00 **** Incremental Build of configuration Debug for project test_zynq ****
+15:23:22 **** Auto Build of configuration Debug for project test_zynq ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
-make: Nothing to be done for 'main-build'.
+'Building file: ../src/kmeans.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/kmeans.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test_zynq_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/kmeans.d" -MT"src/kmeans.o" -o "src/kmeans.o" "../src/kmeans.c"
+../src/kmeans.c: In function 'init_keamns':
+../src/kmeans.c:8:21: warning: passing argument 1 of 'XKmeans_Initialize' from incompatible pointer type [-Wincompatible-pointer-types]
+  XKmeans_Initialize(&km,id);
+                     ^~~
+In file included from ../src/kmeans.c:4:
+../../test_zynq_bsp/ps7_cortexa9_0/include/xkmeans.h:72:33: note: expected 'XKmeans *' {aka 'struct <anonymous> *'} but argument is of type 'XKmeans **' {aka 'struct <anonymous> **'}
+ int XKmeans_Initialize(XKmeans *InstancePtr, u16 DeviceId);
+                        ~~~~~~~~~^~~~~~~~~~~
+../src/kmeans.c:9:24: warning: passing argument 1 of 'XKmeans_CfgInitialize' from incompatible pointer type [-Wincompatible-pointer-types]
+  XKmeans_CfgInitialize(&km,&km_c);
+                        ^~~
+In file included from ../src/kmeans.c:4:
+../../test_zynq_bsp/ps7_cortexa9_0/include/xkmeans.h:74:36: note: expected 'XKmeans *' {aka 'struct <anonymous> *'} but argument is of type 'XKmeans **' {aka 'struct <anonymous> **'}
+ int XKmeans_CfgInitialize(XKmeans *InstancePtr, XKmeans_Config *ConfigPtr);
+                           ~~~~~~~~~^~~~~~~~~~~
+../src/kmeans.c:10:29: warning: passing argument 1 of 'XKmeans_DisableAutoRestart' from incompatible pointer type [-Wincompatible-pointer-types]
+  XKmeans_DisableAutoRestart(&km);
+                             ^~~
+In file included from ../src/kmeans.c:4:
+../../test_zynq_bsp/ps7_cortexa9_0/include/xkmeans.h:85:42: note: expected 'XKmeans *' {aka 'struct <anonymous> *'} but argument is of type 'XKmeans **' {aka 'struct <anonymous> **'}
+ void XKmeans_DisableAutoRestart(XKmeans *InstancePtr);
+                                 ~~~~~~~~~^~~~~~~~~~~
+../src/kmeans.c: In function 'kmeans_hw_call':
+../src/kmeans.c:24:36: warning: passing argument 1 of 'adress_conv' from incompatible pointer type [-Wincompatible-pointer-types]
+  XKmeans_Set_in_X(km_p,adress_conv(X));
+                                    ^
+../src/kmeans.c:14:23: note: expected 'char *' but argument is of type 'float *'
+ u32 adress_conv(char* addr){
+                 ~~~~~~^~~~
+../src/kmeans.c:25:36: warning: passing argument 1 of 'adress_conv' from incompatible pointer type [-Wincompatible-pointer-types]
+  XKmeans_Set_in_Y(km_p,adress_conv(Y));
+                                    ^
+../src/kmeans.c:14:23: note: expected 'char *' but argument is of type 'float *'
+ u32 adress_conv(char* addr){
+                 ~~~~~~^~~~
+../src/kmeans.c:26:41: warning: passing argument 1 of 'adress_conv' from incompatible pointer type [-Wincompatible-pointer-types]
+  XKmeans_Set_in_X_prot(km_p,adress_conv(X_prot));
+                                         ^~~~~~
+../src/kmeans.c:14:23: note: expected 'char *' but argument is of type 'float *'
+ u32 adress_conv(char* addr){
+                 ~~~~~~^~~~
+../src/kmeans.c:27:41: warning: passing argument 1 of 'adress_conv' from incompatible pointer type [-Wincompatible-pointer-types]
+  XKmeans_Set_in_Y_prot(km_p,adress_conv(Y_prot));
+                                         ^~~~~~
+../src/kmeans.c:14:23: note: expected 'char *' but argument is of type 'float *'
+ u32 adress_conv(char* addr){
+                 ~~~~~~^~~~
+../src/kmeans.c:28:44: warning: passing argument 1 of 'adress_conv' from incompatible pointer type [-Wincompatible-pointer-types]
+  XKmeans_Set_out_clusters(km_p,adress_conv(clusters));
+                                            ^~~~~~~~
+../src/kmeans.c:14:23: note: expected 'char *' but argument is of type 'float *'
+ u32 adress_conv(char* addr){
+                 ~~~~~~^~~~
+../src/kmeans.c:30:24: error: 'km' undeclared (first use in this function)
+  while(!XKmeans_IsIdle(km));
+                        ^~
+../src/kmeans.c:30:24: note: each undeclared identifier is reported only once for each function it appears in
+../src/kmeans.c:33:9: warning: implicit declaration of function 'Kmeans_IsDone'; did you mean 'XKmeans_IsDone'? [-Wimplicit-function-declaration]
+  while(!Kmeans_IsDone(km));
+         ^~~~~~~~~~~~~
+         XKmeans_IsDone
+make: *** [src/subdir.mk:29: src/kmeans.o] Error 1
 
-17:42:01 Build Finished (took 283ms)
+15:23:23 Build Finished (took 568ms)
 

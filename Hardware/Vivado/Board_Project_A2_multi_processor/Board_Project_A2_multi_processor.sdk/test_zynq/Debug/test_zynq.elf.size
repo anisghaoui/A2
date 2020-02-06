@@ -1,2 +1,2 @@
    text	   data	    bss	    dec	    hex	filename
-  73780	   2728	  23328	  99836	  185fc	test_zynq.elf
+  77392	   2736	  23328	 103456	  19420	test_zynq.elf

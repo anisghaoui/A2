@@ -1,0 +1,32 @@
+
+#include <stdio.h>
+#include "xparameters.h"
+#include "xkmeans.h"
+
+void init_keamns(XKmeans* km,u16 id){
+	XKmeans_Config km_c;
+	XKmeans_Initialize(&km,id);
+	XKmeans_CfgInitialize(&km,&km_c);
+	XKmeans_DisableAutoRestart(&km);
+
+}
+
+u32 adress_conv(char* addr){
+
+}
+
+void kmeans_hw(XKmeans* km,float X_prot[N_CENTERS],
+            float Y_prot[N_CENTERS],
+            float X[N_DATA],
+            float Y[N_DATA],
+            float* clusters){
+
+	XKmeans_Set_in_X(adress_conv(X));
+	XKmeans_Set_in_Y(adress_conv(Y));
+	XKmeans_Set_in_X_prot(adress_conv(X_prot));
+	XKmeans_Set_in_Y_prot(adress_conv(Y_prot));
+	XKmeans_Set_out_clusters(adress_conv(clusters));
+
+
+
+}

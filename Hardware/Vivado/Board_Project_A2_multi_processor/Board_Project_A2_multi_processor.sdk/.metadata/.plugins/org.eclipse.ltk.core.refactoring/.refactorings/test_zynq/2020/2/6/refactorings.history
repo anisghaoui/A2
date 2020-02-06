@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;test_zynq/src/kmeans&apos; to &apos;kmeans.c&apos;" description="Rename resource &apos;kmeans&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/kmeans" name="kmeans.c" stamp="1580996776679" updateReferences="true"/>
+</session>

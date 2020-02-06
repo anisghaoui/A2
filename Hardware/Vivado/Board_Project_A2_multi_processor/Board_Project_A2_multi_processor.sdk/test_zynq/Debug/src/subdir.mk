@@ -8,14 +8,17 @@ LD_SRCS += \
 
 C_SRCS += \
 ../src/helloworld.c \
+../src/kmeans.c \
 ../src/platform.c 
 
 OBJS += \
 ./src/helloworld.o \
+./src/kmeans.o \
 ./src/platform.o 
 
 C_DEPS += \
 ./src/helloworld.d \
+./src/kmeans.d \
 ./src/platform.d 
 
 

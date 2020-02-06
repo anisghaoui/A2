@@ -52,6 +52,7 @@
 #include "sleep.h"
 #include "xbram.h"
 
+
 char* init_bram(u32 id){
 	char* output;
 	XBram bram;

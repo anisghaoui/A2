@@ -1,10 +1,10 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.1.3 (win64) Build 2644227 Wed Sep  4 09:45:24 MDT 2019
--- Date        : Tue Feb  4 19:31:12 2020
+-- Date        : Tue Feb  4 19:31:11 2020
 -- Host        : Qlala-Blade running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode synth_stub
---               C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_xbar_1/design_multi_xbar_1_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub -rename_top design_multi_xbar_1 -prefix
+--               design_multi_xbar_1_ design_multi_xbar_1_stub.vhdl
 -- Design      : design_multi_xbar_1
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z020clg484-1

@@ -31,6 +31,25 @@
  
  
 /******************************************************************/
+/* Definitions for driver KMEANS */
+#define XPAR_XKMEANS_NUM_INSTANCES 1
+
+/* Definitions for peripheral KMEANS_0 */
+#define XPAR_KMEANS_0_DEVICE_ID 0
+#define XPAR_KMEANS_0_S_AXI_CTRL_BUS_BASEADDR 0x83C00000
+#define XPAR_KMEANS_0_S_AXI_CTRL_BUS_HIGHADDR 0x83C0FFFF
+
+
+/******************************************************************/
+
+/* Canonical definitions for peripheral KMEANS_0 */
+#define XPAR_XKMEANS_0_DEVICE_ID XPAR_KMEANS_0_DEVICE_ID
+#define XPAR_XKMEANS_0_S_AXI_CTRL_BUS_BASEADDR 0x83C00000
+#define XPAR_XKMEANS_0_S_AXI_CTRL_BUS_HIGHADDR 0x83C0FFFF
+
+
+/******************************************************************/
+
 /* Definitions for driver BRAM */
 #define XPAR_XBRAM_NUM_INSTANCES 2U
 
