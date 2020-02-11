@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="kmeans.c" path="/mnt/side_windows/UPSUD/A2/HLS/Kmeans_HLS/src/kmeans.c"/>
+    <originFiles name="kmeans.h" path="/mnt/side_windows/UPSUD/A2/HLS/Kmeans_HLS/src/kmeans.h"/>
+  </source>
+  <testbench>
+    <originFiles name="main_test.c" path="/mnt/side_windows/UPSUD/A2/HLS/Kmeans_HLS/src/main_test.c"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

@@ -1,0 +1,20 @@
+INFO: [HLS 200-10] Running '/mnt/side_windows/Vivado_linux/Vivado/2019.1/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'anis' on host 'port' (Linux_x86_64 version 5.3.0-28-generic) on Tue Feb 11 20:27:20 CET 2020
+INFO: [HLS 200-10] On os Ubuntu 18.04.4 LTS
+INFO: [HLS 200-10] In directory '/mnt/side_windows/UPSUD/A2/HLS/Kmeans_HLS/Kmeans_HLS/solution1/csim/build'
+../../../../src/main_test.c:37:62: warning: excess elements in array initializer
+                            6.9, 5.6, 7.7, 6.3, 6.7, 7.2, 6.2, 6.1, 6.4, 7.2,
+                                                                    ^~~
+../../../../src/main_test.c:53:62: warning: excess elements in array initializer
+                            3.2, 2.8, 2.8, 2.7, 3.3, 3.2, 2.8, 3.0, 2.8, 3.0,
+                                                                    ^~~
+2 warnings generated.
+../../../../src/main_test.c:37:62: warning: excess elements in array initializer
+                            6.9, 5.6, 7.7, 6.3, 6.7, 7.2, 6.2, 6.1, 6.4, 7.2,
+                                                                    ^~~
+../../../../src/main_test.c:53:62: warning: excess elements in array initializer
+                            3.2, 2.8, 2.8, 2.7, 3.3, 3.2, 2.8, 3.0, 2.8, 3.0,
+                                                                    ^~~
+2 warnings generated.
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_anis/135261581449241053895
+INFO: [APCC 202-1] APCC is done.

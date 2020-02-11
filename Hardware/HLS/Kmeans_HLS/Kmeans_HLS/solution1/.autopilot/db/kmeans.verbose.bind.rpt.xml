@@ -1,0 +1,55 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'kmeans'" level="0">
+<item name = "Date">Tue Feb 11 20:29:37 2020
+</item>
+<item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
+<item name = "Project">Kmeans_HLS</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z010i-clg225-1L</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00, 8.750, 1.25</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">127427, 129027, 127427, 129027, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- memcpy.X.in_X">129, 129, 3, 1, 1, 128, yes</column>
+<column name="- memcpy.Y.in_Y">129, 129, 3, 1, 1, 128, yes</column>
+<column name="- memcpy.X_prot.in_X_prot">5, 5, 2, 1, 1, 4, yes</column>
+<column name="- memcpy.Y_prot.in_Y_prot">5, 5, 2, 1, 1, 4, yes</column>
+<column name="- Loop 5">126990, 128590, 12699 ~ 12859, -, -, 10, no</column>
+<column name=" + classify_by_data">9088, 9088, 71, -, -, 128, no</column>
+<column name="  ++ classify_by_center">68, 68, 17, -, -, 4, no</column>
+<column name=" + centers_loop">3608, 3768, 902 ~ 942, -, -, 4, no</column>
+<column name="  ++ clustering">896, 896, 7, -, -, 128, no</column>
+<column name="- memcpy.out_cluster.cluster.gep">129, 129, 3, 1, 1, 128, yes</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>
