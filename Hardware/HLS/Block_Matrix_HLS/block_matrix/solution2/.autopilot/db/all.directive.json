@@ -1,0 +1,17 @@
+{"sourceFile": [{
+      "name": "",
+      "directive": [
+        {
+          "functionName": "multiply_block",
+          "label": "ii_loop",
+          "functionLabel": "",
+          "pragma": {"name": "PIPELINE"}
+        },
+        {
+          "functionName": "multiply_block",
+          "label": "multiply_block_label5",
+          "functionLabel": "",
+          "pragma": {"name": "UNROLL"}
+        }
+      ]
+    }]}

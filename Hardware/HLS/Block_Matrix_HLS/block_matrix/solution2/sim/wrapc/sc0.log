@@ -1,0 +1,21 @@
+   Build using "/mnt/side_windows/Vivado_linux/Vivado/2019.1/tps/lnx64/gcc-6.2.0/bin/g++"
+   Compiling apatb_multiply_block.cpp
+   Compiling (apcc) BMM_main.c_pre.c.tb.c
+INFO: [HLS 200-10] Running '/mnt/side_windows/Vivado_linux/Vivado/2019.1/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'anis' on host 'port' (Linux_x86_64 version 5.3.0-28-generic) on Sat Feb 15 16:19:05 CET 2020
+INFO: [HLS 200-10] On os Ubuntu 18.04.4 LTS
+INFO: [HLS 200-10] In directory '/mnt/side_windows/UPSUD/A2/HLS/Block_Matrix_HLS/block_matrix/solution2/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_anis/104021581779945993844
+INFO: [APCC 202-1] APCC is done.
+   Compiling (apcc) BMM_fonctions.c_pre.c.tb.c
+INFO: [HLS 200-10] Running '/mnt/side_windows/Vivado_linux/Vivado/2019.1/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'anis' on host 'port' (Linux_x86_64 version 5.3.0-28-generic) on Sat Feb 15 16:19:16 CET 2020
+INFO: [HLS 200-10] On os Ubuntu 18.04.4 LTS
+INFO: [HLS 200-10] In directory '/mnt/side_windows/UPSUD/A2/HLS/Block_Matrix_HLS/block_matrix/solution2/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_anis/104751581779956469041
+INFO: [APCC 202-1] APCC is done.
+   Generating cosim.tv.exe

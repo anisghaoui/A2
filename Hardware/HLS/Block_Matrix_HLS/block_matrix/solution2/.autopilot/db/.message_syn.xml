@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Messages>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_631" tag="SCHEDULE" content="Option &apos;relax_ii_for_timing&apos; is enabled, will increase II to preserve clock frequency constraints."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1312" tag="" content="Analyzing design file &apos;src/BMM_fonctions.c&apos; ..."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Linking Time (s): cpu = 00:00:07 ; elapsed = 00:00:17 . Memory (MB): peak = 836.230 ; gain = 128.000 ; free physical = 1103 ; free virtual = 8610"/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Checking Pragmas Time (s): cpu = 00:00:07 ; elapsed = 00:00:17 . Memory (MB): peak = 836.230 ; gain = 128.000 ; free physical = 1103 ; free virtual = 8610"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1467" tag="" content="Starting code transformations ..."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Standard Transforms Time (s): cpu = 00:00:08 ; elapsed = 00:00:19 . Memory (MB): peak = 836.230 ; gain = 128.000 ; free physical = 1074 ; free virtual = 8633"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1472" tag="" content="Checking synthesizability ..."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Checking Synthesizability Time (s): cpu = 00:00:08 ; elapsed = 00:00:19 . Memory (MB): peak = 836.230 ; gain = 128.000 ; free physical = 1074 ; free virtual = 8632"/>
+	<Message severity="INFO" prefix="[XFORM 203-502]" key="XFORM_AUTO_UNROLL_STATUS_246" tag="" content="Unrolling all sub-loops inside loop &apos;ii_loop&apos; (src/BMM_fonctions.c:35) in function &apos;multiply_block&apos; for pipelining."/>
+	<Message severity="INFO" prefix="[HLS 200-489]" key="HLS 200-489" tag="" content="Unrolling loop &apos;jj_loop&apos; (src/BMM_fonctions.c:36) in function &apos;multiply_block&apos; completely with a factor of 4."/>
+	<Message severity="INFO" prefix="[HLS 200-489]" key="HLS 200-489" tag="" content="Unrolling loop &apos;kk_loop&apos; (src/BMM_fonctions.c:37) in function &apos;multiply_block&apos; completely with a factor of 4."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Pre-synthesis Time (s): cpu = 00:00:09 ; elapsed = 00:00:20 . Memory (MB): peak = 836.230 ; gain = 128.000 ; free physical = 1053 ; free virtual = 8612"/>
+	<Message severity="INFO" prefix="[XFORM 203-541]" key="XFORM_LOOPFLAT_STATUS_218" tag="" content="Flattening a loop nest &apos;k_loop&apos; (src/BMM_fonctions.c:32:29) in function &apos;multiply_block&apos;."/>
+	<Message severity="INFO" prefix="[XFORM 203-541]" key="XFORM_LOOPFLAT_STATUS_218" tag="" content="Flattening a loop nest &apos;j_loop&apos; (src/BMM_fonctions.c:31:29) in function &apos;multiply_block&apos;."/>
+	<Message severity="INFO" prefix="[XFORM 203-541]" key="XFORM_LOOPFLAT_STATUS_218" tag="" content="Flattening a loop nest &apos;i_loop&apos; (src/BMM_fonctions.c:30:29) in function &apos;multiply_block&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Architecture Synthesis Time (s): cpu = 00:00:09 ; elapsed = 00:00:20 . Memory (MB): peak = 836.230 ; gain = 128.000 ; free physical = 1047 ; free virtual = 8608"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1317" tag="" content="Starting hardware synthesis ..."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1385" tag="" content="Synthesizing &apos;multiply_block&apos; ..."/>
+	<Message severity="WARNING" prefix="[SYN 201-107]" key="SYN_PORT_NAME_ILLEGAL_593" tag="" content="Renaming port name &apos;multiply_block/INPUT&apos; to &apos;multiply_block/INPUT_r&apos; to avoid the conflict with HDL keywords or other object names."/>
+	<Message severity="WARNING" prefix="[SYN 201-107]" key="SYN_PORT_NAME_ILLEGAL_593" tag="" content="Renaming port name &apos;multiply_block/OUTPUT&apos; to &apos;multiply_block/OUTPUT_r&apos; to avoid the conflict with HDL keywords or other object names."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;multiply_block&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;i_loop_k_loop_ii_loop&apos;."/>
+	<Message severity="WARNING" prefix="[SCHED 204-68]" key="SCHED_CARRIED_CONSTRAINT_NOT_MET_32" tag="LOOP,SDX_LOOP,SCHEDULE" content="The II Violation in module &apos;multiply_block&apos; (Loop: i_loop_k_loop_ii_loop): Unable to enforce a carried dependence constraint (II = 1, distance = 4, offset = 1)
+   between &apos;store&apos; operation (&apos;mC_addr_32_write_ln38&apos;, src/BMM_fonctions.c:38) of variable &apos;tmp_1_0_3&apos;, src/BMM_fonctions.c:38 on array &apos;mC&apos;, src/BMM_fonctions.c:19 and &apos;load&apos; operation (&apos;mC_load_16&apos;, src/BMM_fonctions.c:38) on array &apos;mC&apos;, src/BMM_fonctions.c:19."/>
+	<Message severity="WARNING" prefix="[SCHED 204-68]" key="SCHED_CARRIED_CONSTRAINT_NOT_MET_32" tag="LOOP,SDX_LOOP,SCHEDULE" content="The II Violation in module &apos;multiply_block&apos; (Loop: i_loop_k_loop_ii_loop): Unable to enforce a carried dependence constraint (II = 2, distance = 4, offset = 1)
+   between &apos;store&apos; operation (&apos;mC_addr_32_write_ln38&apos;, src/BMM_fonctions.c:38) of variable &apos;tmp_1_0_3&apos;, src/BMM_fonctions.c:38 on array &apos;mC&apos;, src/BMM_fonctions.c:19 and &apos;load&apos; operation (&apos;mC_load_16&apos;, src/BMM_fonctions.c:38) on array &apos;mC&apos;, src/BMM_fonctions.c:19."/>
+	<Message severity="WARNING" prefix="[SCHED 204-68]" key="SCHED_CARRIED_CONSTRAINT_NOT_MET_32" tag="LOOP,SDX_LOOP,SCHEDULE" content="The II Violation in module &apos;multiply_block&apos; (Loop: i_loop_k_loop_ii_loop): Unable to enforce a carried dependence constraint (II = 3, distance = 4, offset = 1)
+   between &apos;store&apos; operation (&apos;mC_addr_32_write_ln38&apos;, src/BMM_fonctions.c:38) of variable &apos;tmp_1_0_3&apos;, src/BMM_fonctions.c:38 on array &apos;mC&apos;, src/BMM_fonctions.c:19 and &apos;load&apos; operation (&apos;mC_load_16&apos;, src/BMM_fonctions.c:38) on array &apos;mC&apos;, src/BMM_fonctions.c:19."/>
+	<Message severity="WARNING" prefix="[SCHED 204-68]" key="SCHED_CARRIED_CONSTRAINT_NOT_MET_32" tag="LOOP,SDX_LOOP,SCHEDULE" content="The II Violation in module &apos;multiply_block&apos; (Loop: i_loop_k_loop_ii_loop): Unable to enforce a carried dependence constraint (II = 4, distance = 4, offset = 1)
+   between &apos;store&apos; operation (&apos;mC_addr_32_write_ln38&apos;, src/BMM_fonctions.c:38) of variable &apos;tmp_1_0_3&apos;, src/BMM_fonctions.c:38 on array &apos;mC&apos;, src/BMM_fonctions.c:19 and &apos;load&apos; operation (&apos;mC_load_16&apos;, src/BMM_fonctions.c:38) on array &apos;mC&apos;, src/BMM_fonctions.c:19."/>
+	<Message severity="WARNING" prefix="[SCHED 204-69]" key="SCHED_RESOURCE_CONSTRAINT_NOT_MET_38" tag="SDX_KERNEL,SCHEDULE" content="Unable to schedule &apos;load&apos; operation (&apos;mB_load_11&apos;, src/BMM_fonctions.c:32) on array &apos;mB&apos;, src/BMM_fonctions.c:18 due to limited memory ports. Please consider using a memory core with more ports or partitioning the array &apos;mB&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 8, Depth = 33."/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 21.79 seconds; current allocated memory: 98.605 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-434]" key="HLS 200-434" tag="SDX" content="Only 1 loops out of a total 5 loops have been pipelined in this design."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 1.07 seconds; current allocated memory: 103.419 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;multiply_block&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on port &apos;multiply_block/INPUT_r&apos; to &apos;m_axi&apos;."/>
+	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on port &apos;multiply_block/OUTPUT_r&apos; to &apos;m_axi&apos;."/>
+	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on port &apos;multiply_block/in_mA&apos; to &apos;s_axilite &amp; ap_none&apos;."/>
+	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on port &apos;multiply_block/in_mB&apos; to &apos;s_axilite &amp; ap_none&apos;."/>
+	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on port &apos;multiply_block/out_mC&apos; to &apos;s_axilite &amp; ap_none&apos;."/>
+	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on function &apos;multiply_block&apos; to &apos;s_axilite &amp; ap_ctrl_hs&apos;."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_851" tag="" content="Bundling port &apos;return&apos;, &apos;in_mA&apos;, &apos;in_mB&apos; and &apos;out_mC&apos; to AXI-Lite port CONTROL_BUS."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;multiply_block_fadd_32ns_32ns_32_5_full_dsp_1&apos;: 2 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;multiply_block_fmul_32ns_32ns_32_4_max_dsp_1&apos;: 2 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;multiply_block&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 1.01 seconds; current allocated memory: 110.429 MB."/>
+	<Message severity="INFO" prefix="[RTMG 210-278]" key="RTMG_278_1790" tag="" content="Implementing memory &apos;multiply_block_mA_ram (RAM)&apos; using block RAMs."/>
+	<Message severity="INFO" prefix="[RTMG 210-278]" key="RTMG_278_1790" tag="" content="Implementing memory &apos;multiply_block_mC_ram (RAM)&apos; using block RAMs."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished generating all RTL models Time (s): cpu = 00:00:14 ; elapsed = 00:00:28 . Memory (MB): peak = 900.230 ; gain = 192.000 ; free physical = 1026 ; free virtual = 8590"/>
+	<Message severity="INFO" prefix="[VHDL 208-304]" key="VHDL_304_1066" tag="" content="Generating VHDL RTL for multiply_block."/>
+	<Message severity="INFO" prefix="[VLOG 209-307]" key="VLOG_307_1067" tag="" content="Generating Verilog RTL for multiply_block."/>
+</Messages>
