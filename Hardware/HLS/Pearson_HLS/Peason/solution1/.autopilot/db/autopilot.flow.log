@@ -1,0 +1,1630 @@
+INFO-FLOW: Workspace /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1 opened at Mon Feb 17 15:38:07 CET 2020
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+WARNING: [HLS 200-40] Cannot find library '/mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/Zynq-7000/Zynq-7000.lib'.
+WARNING: [HLS 200-40] Cannot find library 'xilinx/Zynq-7000/Zynq-7000'.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/zynq/zynq 
+Execute       source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx.lib 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/plb46.lib 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/fsl.lib 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/axi4.lib 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/maxi.lib 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/saxilite.lib 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/dsp48.lib 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/xfft.lib 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/xfir.lib 
+Execute       source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Execute       source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute       source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/zynq/zynq.gen 
+Execute       source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
+Command         ap_source done; 0.21 sec.
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.33 sec.
+Command     ap_source done; 0.33 sec.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6 
+Execute       source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.lib 
+Execute       source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     set_part xc7z010i-clg225-1L 
+Execute       ap_part_info -name xc7z010i-clg225-1L -data single -quiet 
+Command       ap_part_info done; 0.54 sec.
+Execute       ap_part_info -name xc7z010i-clg225-1L -data info 
+Execute       add_library xilinx/zynq/zynq:xc7z010i:-clg225:-1L 
+Execute         get_default_platform 
+Execute         license_isbetapart xc7z010i 
+Command         license_isbetapart done; error code: 1; 
+Execute         open_platform DefaultPlatform 
+Execute         import_lib /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/zynq/zynq 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx.lib 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute               source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/plb46.lib 
+Execute               source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/fsl.lib 
+Execute               source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/axi4.lib 
+Execute               source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/maxi.lib 
+Execute               source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/saxilite.lib 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/dsp48.lib 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.lib 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/xfft.lib 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/xfir.lib 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute               source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute               source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute               source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute               source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/zynq/zynq.gen 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx.gen 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/plb46.gen 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/fsl.gen 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/axi4.gen 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute               source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/saxilite.gen 
+Execute               source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/maxi.gen 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
+Command             ap_source done; 0.11 sec.
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
+Command           ap_source done; 0.17 sec.
+Command         ap_source done; 0.17 sec.
+Execute         ap_part_info -data single -name xc7z010i-clg225-1L 
+Execute         ap_part_info -name xc7z010i-clg225-1L -data resources 
+Execute         ap_part_info -name xc7z010i-clg225-1L -data info 
+Execute         ap_part_info -name xc7z010i-clg225-1L -data info 
+Execute         config_chip_info -quiet -resource {SLICE 4400} {LUT 17600} {FF 35200} {DSP48E 80} {BRAM 120} {URAM 0} 
+Execute         ap_part_info -name xc7z010i-clg225-1L -data info 
+Execute         config_chip_info -quiet -speed slow 
+Command       add_library done; 0.25 sec.
+Execute       add_library xilinx/zynq/zynq_fpv6 
+Execute         get_default_platform 
+Execute         open_platform DefaultPlatform 
+Execute         import_lib /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.lib 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute               source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute               source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute                 source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute                 source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute               source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
+INFO: [HLS 200-10] Setting target device to 'xc7z010i-clg225-1L'
+Execute       ap_part_info -name xc7z010i-clg225-1L -data info 
+Execute       get_default_platform 
+Command     set_part done; 0.95 sec.
+Execute     ap_part_info -data single -name xc7z010i-clg225-1L 
+Execute     ap_part_info -name xc7z010i-clg225-1L -data resources 
+Execute     ap_part_info -name xc7z010i-clg225-1L -data info 
+Execute     ap_part_info -name xc7z010i-clg225-1L -data info 
+Execute     config_chip_info -quiet -resource {SLICE 4400} {LUT 17600} {FF 35200} {DSP48E 80} {BRAM 120} {URAM 0} 
+Execute     ap_part_info -name xc7z010i-clg225-1L -data info 
+Execute     config_chip_info -quiet -speed slow 
+Command   open_solution done; 1.44 sec.
+Execute   set_part xc7z010iclg225-1L 
+Execute     ap_part_info -name xc7z010iclg225-1L -data single -quiet 
+Execute     ap_part_info -name xc7z010iclg225-1L -data info 
+Execute     add_library xilinx/zynq/zynq:xc7z010i:-clg225:-1L 
+Execute       get_default_platform 
+Execute       license_isbetapart xc7z010i 
+Command       license_isbetapart done; error code: 1; 
+Execute       open_platform DefaultPlatform 
+Execute       import_lib /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/zynq/zynq 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx.lib 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/plb46.lib 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/fsl.lib 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/axi4.lib 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/maxi.lib 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/saxilite.lib 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/dsp48.lib 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.lib 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/xfft.lib 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/xfir.lib 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Execute       source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/zynq/zynq.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx.gen 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/plb46.gen 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/fsl.gen 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/axi4.gen 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/saxilite.gen 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/maxi.gen 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
+Command           ap_source done; 0.11 sec.
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
+Command         ap_source done; 0.19 sec.
+Command       ap_source done; 0.19 sec.
+Execute       ap_part_info -data single -name xc7z010i-clg225-1L 
+Execute       ap_part_info -name xc7z010i-clg225-1L -data resources 
+Execute       ap_part_info -name xc7z010i-clg225-1L -data info 
+Execute       ap_part_info -name xc7z010i-clg225-1L -data info 
+Execute       config_chip_info -quiet -resource {SLICE 4400} {LUT 17600} {FF 35200} {DSP48E 80} {BRAM 120} {URAM 0} 
+Execute       ap_part_info -name xc7z010i-clg225-1L -data info 
+Execute       config_chip_info -quiet -speed slow 
+Command     add_library done; 0.25 sec.
+Execute     add_library xilinx/zynq/zynq_fpv6 
+Execute       get_default_platform 
+Execute       open_platform DefaultPlatform 
+Execute       import_lib /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.lib 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute               source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute               source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Execute       source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     ap_part_info -name xc7z010i-clg225-1L -data info 
+Execute     get_default_platform 
+Command   set_part done; 0.38 sec.
+Execute   create_clock -period 10 -name default 
+Execute   source ./Peason/solution1/directives.tcl 
+Execute     set_directive_pipeline moyenne 
+INFO-FLOW: Setting directive 'PIPELINE' 
+Execute     set_directive_pipeline moyenneXY 
+INFO-FLOW: Setting directive 'PIPELINE' 
+INFO-FLOW: Setting directive 'PIPELINE' 
+Execute     set_directive_pipeline ecartType 
+INFO-FLOW: Setting directive 'PIPELINE' 
+INFO-FLOW: Setting directive 'PIPELINE' 
+INFO-FLOW: Setting directive 'PIPELINE' 
+Execute     set_directive_unroll pearson/copy_j 
+INFO-FLOW: Setting directive 'PIPELINE' 
+INFO-FLOW: Setting directive 'PIPELINE' 
+INFO-FLOW: Setting directive 'PIPELINE' 
+INFO-FLOW: Setting directive 'UNROLL' 
+Execute   csynth_design 
+Execute     get_config_compile -dump_cfg 
+Execute     get_config_compile -effort 
+Execute     get_config_compile -enable_clang39 
+Execute     get_config_compile -g 
+Execute     get_config_compile -ng 
+Execute     get_config_compile -opt_fp 
+Execute     get_config_compile -skip_cdt 
+Execute     get_config_compile -skip_syncheck 
+Execute     get_config_compile -skip_transform 
+Execute     get_config_compile -keep_printf 
+Execute     elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
+Execute       get_config_schedule -relax_ii_for_timing 
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+Execute       get_config_schedule -suppress_dependence_error_break 
+INFO: [HLS 200-10] Analyzing design file 'src/algo.c' ... 
+INFO-FLOW: Compiling one TU...
+Execute       is_m_axi_addr64 
+INFO-FLOW: Handling src/algo.c as C
+Execute       ap_part_info -name xc7z010i-clg225-1L -data info 
+Execute       is_encrypted src/algo.c 
+INFO-FLOW: Running: GCC PP
+INFO-FLOW: Source preprocessing
+Execute       clang  -fno-limit-debug-info -gcc-toolchain "/mnt/side_windows/Vivado_linux/Vivado/2019.1/lnx64/tools/gcc" -hls  -fno-exceptions  -D__llvm__  -E "src/algo.c"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89   -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/autopilot" -I "/mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  -o "/mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/algo.pp.0.c" 
+INFO-FLOW: exec /mnt/side_windows/Vivado_linux/Vivado/2019.1/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /mnt/side_windows/Vivado_linux/Vivado/2019.1/lnx64/tools/gcc -hls -fno-exceptions -D__llvm__ -E src/algo.c -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -std=gnu89 -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/autopilot -I /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/algo.pp.0.c
+Command       clang done; 2.48 sec.
+Execute       tidy_31 xilinx-xfmat-array-geometry /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/algo.pp.0.c std=gnu89 
+INFO-FLOW: exec /mnt/side_windows/Vivado_linux/Vivado/2019.1/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-xfmat-array-geometry -quiet -fix /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/algo.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0
+INFO-FLOW: Syntax Checking before pre-processing...
+Execute       clang -syntaxcheck -src /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/algo.pp.0.c  -fno-limit-debug-info -gcc-toolchain "/mnt/side_windows/Vivado_linux/Vivado/2019.1/lnx64/tools/gcc" -hls    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89   -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/autopilot" -I "/mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  "/mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/algo.pp.0.c"  -o "/mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/useless.bc"  
+INFO-FLOW: exec /mnt/side_windows/Vivado_linux/Vivado/2019.1/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /mnt/side_windows/Vivado_linux/Vivado/2019.1/lnx64/tools/gcc -hls -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -std=gnu89 -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/autopilot -I /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/algo.pp.0.c -o /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/useless.bc
+Command       clang done; 2.59 sec.
+INFO-FLOW: Done: GCC PP time: 5.2 seconds per iteration
+INFO-FLOW: Setting directive 'PIPELINE' 
+INFO-FLOW: Setting directive 'PIPELINE' 
+INFO-FLOW: Setting directive 'PIPELINE' 
+INFO-FLOW: Setting directive 'UNROLL' 
+Execute       source /mnt/side_windows/Vivado_linux/Vivado/2019.1/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute       source /mnt/side_windows/Vivado_linux/Vivado/2019.1/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/tps/tcl/tcllib1.11.1/try/try.tcl 
+INFO-FLOW: Setting directive 'PIPELINE' 
+INFO-FLOW: Setting directive 'PIPELINE' 
+INFO-FLOW: Setting directive 'PIPELINE' 
+INFO-FLOW: Setting directive 'UNROLL' 
+Execute       list_core -type functional_unit 
+Execute       tidy_31 xilinx-systemc-detector /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/algo.pp.0.c std=gnu89 -directive=/mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec /mnt/side_windows/Vivado_linux/Vivado/2019.1/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-systemc-detector -import-directive=/mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/.systemc_flag -quiet -fix-errors /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/algo.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0
+INFO-FLOW: Running: tidy-3.1 CDT preprocess
+Execute       tidy_31 xilinx-directive2pragma /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/algo.pp.0.c std=gnu89 -directive=/mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/all.directive.json 
+INFO-FLOW: exec /mnt/side_windows/Vivado_linux/Vivado/2019.1/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-directive2pragma -import-directive=/mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/all.directive.json -quiet -fix-errors /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/algo.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0
+Execute       get_config_dataflow -strict_mode 
+Execute       ap_eval exec -ignorestderr /mnt/side_windows/Vivado_linux/Vivado/2019.1/lnx64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=/mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/xilinx-dataflow-lawyer.algo.pp.0.c.diag.yml /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/algo.pp.0.c -- -std=gnu99 -fhls -ferror-limit=0 -fstrict-dataflow > /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/xilinx-dataflow-lawyer.algo.pp.0.c.out.log 2> /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/xilinx-dataflow-lawyer.algo.pp.0.c.err.log 
+Execute       tidy_31 -errorcheck xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/algo.pp.0.c std=gnu89 
+Execute         ap_eval exec -ignorestderr /mnt/side_windows/Vivado_linux/Vivado/2019.1/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -export-fixes=/mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/tidy-3.1.algo.pp.0.c.diag.yml -header-filter=.* -checks=-*,xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry -quiet -fix-errors /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/algo.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0 > /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/tidy-3.1.algo.pp.0.c.out.log 2> /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/tidy-3.1.algo.pp.0.c.err.log 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/tps/tcl/tcllib1.11.1/yaml/yaml.tcl 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/tps/tcl/tcllib1.11.1/cmdline/cmdline.tcl 
+Execute         ap_eval exec -ignorestderr /mnt/side_windows/Vivado_linux/Vivado/2019.1/lnx64/tools/clang-3.9-csynth/bin/xilinx-legacy-rewriter /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/algo.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0 > /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/xilinx-legacy-rewriter.algo.pp.0.c.out.log 2> /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/xilinx-legacy-rewriter.algo.pp.0.c.err.log 
+Command       tidy_31 done; 0.19 sec.
+INFO-FLOW: Done: tidy-3.1 CDT preprocess time: 0.3 seconds per iteration
+INFO-FLOW: Pragma Handling...
+Execute       tidy_31 xilinx-ssdm-intrinsics-arguments /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/algo.pragma.1.c std=gnu89 
+INFO-FLOW: exec /mnt/side_windows/Vivado_linux/Vivado/2019.1/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-ssdm-intrinsics-arguments -quiet -fix-errors /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/algo.pragma.1.c -- -std=gnu89 -fhls -ferror-limit=0
+Execute       ap_part_info -name xc7z010i-clg225-1L -data info 
+INFO-FLOW: Processing labels
+Execute       clang -src /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/algo.pragma.2.c  -fno-limit-debug-info -gcc-toolchain /mnt/side_windows/Vivado_linux/Vivado/2019.1/lnx64/tools/gcc -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "/mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/algo.pragma.2.c"    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89  -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/autopilot" -I "/mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o "/mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/algo.bc" 
+INFO-FLOW: exec /mnt/side_windows/Vivado_linux/Vivado/2019.1/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /mnt/side_windows/Vivado_linux/Vivado/2019.1/lnx64/tools/gcc -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/algo.pragma.2.c -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -std=gnu89 -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/autopilot -I /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/algo.bc
+Command       clang done; 2.29 sec.
+INFO-FLOW: Linking Debug ...
+Execute       llvm-ld /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/algo.g.bc -hls-opt -except-internalize pearson -L/mnt/side_windows/Vivado_linux/Vivado/2019.1/lnx64/lib -lhlsm -lhlsmc++ -o /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/a.g 
+Command       llvm-ld done; 1.16 sec.
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 836.230 ; gain = 128.000 ; free physical = 486 ; free virtual = 8224
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 836.230 ; gain = 128.000 ; free physical = 486 ; free virtual = 8224
+Execute       get_config_sdx -target 
+Execute       opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
+Execute         cleanup_all_models 
+INFO: [HLS 200-10] Starting code transformations ...
+Execute         transform -promote-dbg-pointer /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/a.pp.bc -o /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/a.pp.0.bc -f 
+Execute         llvm-ld /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/a.pp.0.bc -disable-opt -L/mnt/side_windows/Vivado_linux/Vivado/2019.1/lnx64/lib -lfloatconversion -o /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/a.g.0 
+Command         llvm-ld done; 1.3 sec.
+INFO-FLOW: Running Standard Transforms...
+Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -mem2reg -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -prune-eh -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top pearson -deadargelim -mem2reg -instcombine -dce -presyn-prepare -auto-rom-infer -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -func-inst -deadargelim -auto-shift-reg-idiom -promote-dbg-pointer -norm-name /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/a.g.0.bc -o /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/a.g.1.bc -f -phase std-opt 
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 836.230 ; gain = 128.000 ; free physical = 485 ; free virtual = 8223
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO-FLOW: Checking Synthesizability 1/2..
+Execute         transform -hls -syn-check -check-rec-only -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -function-uniquify -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce -pag -array-normalize -instcombine -dce -warn-fifo-pointer -array-seg-normalize -instcombine -dce -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -resolve-double-ptr -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -function-uniquify -directive-preproc -mem2reg -dse -dce -globaldce -check-dspbuiltin /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/a.g.1.bc -o /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/a.g.2.prechk.bc -f 
+INFO-FLOW: Checking Synthesizability 2/2..
+Execute         transform -syn-check /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/a.g.2.prechk.bc -o /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/a.g.2.bc -f -phase syn-check 
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 836.230 ; gain = 128.000 ; free physical = 485 ; free virtual = 8223
+INFO-FLOW: Compiler optimizing ...
+INFO-FLOW: Share syncheck's 1.bc for syn flow: copy /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/a.g.1.bc to /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/a.o.1.bc
+INFO-FLOW: Presyn 1...
+Execute         transform -hls -tmp /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db -interface-port-rename -type-info -function-uniquify -directive-preproc -mem2reg -dse -dce -disaggr -scalarrepl -norm-name -deadargelim -mem2reg -instcombine -dce -simplifycfg -auto-rom-infer -dce -function-uniquify -resource-proc -clib-intrinsic-prepare -dce -func-buffer -dce -pag -array-normalize -func-legal -instcombine -gvn -constprop -dce -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -ptrArgReplace -mem2reg -dce -array-seg-normalize -deadargelim -instcombine -dce -pointer-simplify -dce -port-alignment -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -find-region -instcombine -auto-loop-pipeline -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -auto-loop-unroll -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -auto-par -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -duplicate-dataflow-processes -globaldce -instcombine -array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -dce -global-constprop -deadargelim -mem2reg -simplifycfg -dce -merge-param -deadargelim -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -mem-intrinsic-preproc -dce -global-internalize -global-privatize -mem2reg -globaldce -promote-global-argument -ptrArgReplace -mem2reg -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -dce -norm-name -function-inline -complex-op-raise -inst-simplify -globaldce -func-inst -constprop -instcombine -simplifycfg -dce -func-legal -dce -loop-bound -arraycheck -bitwidthmin -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -loop-stream -instcombine -simplifycfg -dce -globaldce -duplicate-dataflow-processes -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -check-dataflow-syntax -legalize-stream-variable -legalize-global -extract-subproc -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -deadargelim -annotate-dataflow-channels -scalar-propagation -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -function-uniquify -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -norm-name /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/a.o.1.bc -o /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/a.o.1.tmp.bc -f 
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'ecartType' (src/algo.c:63).
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'moyenneXY' (src/algo.c:47).
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'moyenne' (src/algo.c:31).
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (src/algo.c:69) in function 'ecartType' completely with a factor of 20.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (src/algo.c:53) in function 'moyenneXY' completely with a factor of 20.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (src/algo.c:37) in function 'moyenne' completely with a factor of 20.
+Command         transform done; 0.19 sec.
+INFO-FLOW: Presyn 2...
+Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -auto-burst -norm-name /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/a.o.1.tmp.bc -o /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/a.o.2.bc -f -phase presyn 
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 836.230 ; gain = 128.000 ; free physical = 469 ; free virtual = 8208
+INFO-FLOW: Building ssdm...
+Execute         transform -hls -function-uniquify -auto-function-inline -globaldce -ptrArgReplace -mem2reg -dce -reset-lda -loop-simplify -indvars -licm -loop-dep -loop-bound -licm -loop-simplify -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg -loop-simplify -array-burst -promote-global-argument -dce -ptrLegalization -axi4-lower -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -disaggr -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -auto-rom-infer -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -cfgopt -simplifycfg -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -bitwidthmin -deadargelim -dce -canonicalize-dataflow -dce -scalar-propagation -deadargelim -globaldce -mem2reg -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable -deadargelim -inst-simplify -dce -gvn -mem2reg -instcombine -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -complex-op-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg -loop-simplify -mergereturn -inst-simplify -inst-rectify -dce -load-elim -bitop-lower -loop-rewind -pointer-simplify -dce -cfgopt -dce -loop-bound -loop-dep -read-loop-dep -dce -check-stream -norm-name -legalize -validate-dataflow -inst-clarity -bitwidth -dump-loop-dep-to-ir -check-all-ssdm -cdfg-build /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/a.o.2.bc -o /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
+INFO: [XFORM 203-811] Inferring bus burst read of length 40 on port 'mat' (src/algo.c:55:3).
+Command         transform done; 0.48 sec.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 836.230 ; gain = 128.000 ; free physical = 449 ; free virtual = 8190
+INFO-FLOW: Finish building internal data model.
+Command       opt_and_import_c done; 2.18 sec.
+Command     elaborate done; 11.34 sec.
+Execute     autosyn -from_csynth_design=1 
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO-FLOW: Synthesizing C/C++ design ...
+INFO: [HLS 200-10] Synthesizing 'pearson' ...
+Execute       ap_set_top_model pearson 
+Execute       get_model_list pearson -filter all-wo-channel -topdown 
+Execute       preproc_iomode -model pearson 
+Execute       preproc_iomode -model ecartType 
+Execute       preproc_iomode -model moyenneXY 
+Execute       preproc_iomode -model moyenne 
+Execute       get_model_list pearson -filter all-wo-channel 
+INFO-FLOW: Model list for configure: moyenne moyenneXY ecartType pearson
+INFO-FLOW: Configuring Module : moyenne ...
+Execute       set_default_model moyenne 
+Execute       apply_spec_resource_limit moyenne 
+INFO-FLOW: Configuring Module : moyenneXY ...
+Execute       set_default_model moyenneXY 
+Execute       apply_spec_resource_limit moyenneXY 
+INFO-FLOW: Configuring Module : ecartType ...
+Execute       set_default_model ecartType 
+Execute       apply_spec_resource_limit ecartType 
+INFO-FLOW: Configuring Module : pearson ...
+Execute       set_default_model pearson 
+Execute       apply_spec_resource_limit pearson 
+INFO-FLOW: Model list for preprocess: moyenne moyenneXY ecartType pearson
+INFO-FLOW: Preprocessing Module: moyenne ...
+Execute       set_default_model moyenne 
+Execute       cdfg_preprocess -model moyenne 
+Execute       rtl_gen_preprocess moyenne 
+INFO-FLOW: Preprocessing Module: moyenneXY ...
+Execute       set_default_model moyenneXY 
+Execute       cdfg_preprocess -model moyenneXY 
+Execute       rtl_gen_preprocess moyenneXY 
+INFO-FLOW: Preprocessing Module: ecartType ...
+Execute       set_default_model ecartType 
+Execute       cdfg_preprocess -model ecartType 
+Execute       rtl_gen_preprocess ecartType 
+INFO-FLOW: Preprocessing Module: pearson ...
+Execute       set_default_model pearson 
+Execute       cdfg_preprocess -model pearson 
+Execute       rtl_gen_preprocess pearson 
+WARNING: [SYN 201-107] Renaming port name 'pearson/INPUT' to 'pearson/INPUT_r' to avoid the conflict with HDL keywords or other object names.
+INFO-FLOW: Model list for synthesis: moyenne moyenneXY ecartType pearson
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'moyenne' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model moyenne 
+Execute       schedule -model moyenne 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'moyenne'.
+WARNING: [SCHED 204-69] Unable to schedule bus request on port 'mat' (src/algo.c:39) due to limited memory ports. Please consider using a memory core with more ports or partitioning the array.
+INFO: [SCHED 204-61] Discarding stage scheduling solution.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 20, Depth = 129.
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.59 sec.
+INFO: [HLS 200-111]  Elapsed time: 14.51 seconds; current allocated memory: 120.332 MB.
+Execute       syn_report -verbosereport -o /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/moyenne.verbose.sched.rpt 
+Command       syn_report done; 0.63 sec.
+Execute       db_write -o /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/moyenne.sched.adb -f 
+INFO-FLOW: Finish scheduling moyenne.
+Execute       set_default_model moyenne 
+Execute       bind -model moyenne 
+BIND OPTION: model=moyenne
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+Command       bind done; 0.23 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.95 seconds; current allocated memory: 121.545 MB.
+Execute       syn_report -verbosereport -o /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/moyenne.verbose.bind.rpt 
+Command       syn_report done; 0.3 sec.
+Execute       db_write -o /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/moyenne.bind.adb -f 
+INFO-FLOW: Finish binding moyenne.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'moyenneXY' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model moyenneXY 
+Execute       schedule -model moyenneXY 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'moyenneXY'.
+WARNING: [SCHED 204-69] Unable to schedule bus read on port 'mat' (src/algo.c:55) due to limited memory ports. Please consider using a memory core with more ports or partitioning the array.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 40, Depth = 131.
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.78 sec.
+INFO: [HLS 200-111]  Elapsed time: 1.16 seconds; current allocated memory: 122.292 MB.
+Execute       syn_report -verbosereport -o /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/moyenneXY.verbose.sched.rpt 
+Command       syn_report done; 0.57 sec.
+Execute       db_write -o /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/moyenneXY.sched.adb -f 
+INFO-FLOW: Finish scheduling moyenneXY.
+Execute       set_default_model moyenneXY 
+Execute       bind -model moyenneXY 
+BIND OPTION: model=moyenneXY
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+Command       bind done; 0.24 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.89 seconds; current allocated memory: 123.026 MB.
+Execute       syn_report -verbosereport -o /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/moyenneXY.verbose.bind.rpt 
+Command       syn_report done; 0.31 sec.
+Execute       db_write -o /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/moyenneXY.bind.adb -f 
+INFO-FLOW: Finish binding moyenneXY.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'ecartType' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model ecartType 
+Execute       schedule -model ecartType 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'ecartType'.
+WARNING: [SCHED 204-69] Unable to schedule bus request on port 'mat' (src/algo.c:71) due to limited memory ports. Please consider using a memory core with more ports or partitioning the array.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 20, Depth = 150.
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 1.04 sec.
+INFO: [HLS 200-111]  Elapsed time: 1.41 seconds; current allocated memory: 124.098 MB.
+Execute       syn_report -verbosereport -o /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/ecartType.verbose.sched.rpt 
+Command       syn_report done; 0.92 sec.
+Execute       db_write -o /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/ecartType.sched.adb -f 
+Command       db_write done; 0.11 sec.
+INFO-FLOW: Finish scheduling ecartType.
+Execute       set_default_model ecartType 
+Execute       bind -model ecartType 
+BIND OPTION: model=ecartType
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+Command       bind done; 0.29 sec.
+INFO: [HLS 200-111]  Elapsed time: 1.32 seconds; current allocated memory: 125.754 MB.
+Execute       syn_report -verbosereport -o /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/ecartType.verbose.bind.rpt 
+Command       syn_report done; 0.52 sec.
+Execute       db_write -o /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/ecartType.bind.adb -f 
+INFO-FLOW: Finish binding ecartType.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pearson' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model pearson 
+Execute       schedule -model pearson 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.71 seconds; current allocated memory: 127.185 MB.
+Execute       syn_report -verbosereport -o /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.verbose.sched.rpt 
+INFO: [HLS 200-434] Only 0 loops out of a total 1 loops have been pipelined in this design.
+Command       syn_report done; 0.17 sec.
+Execute       db_write -o /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.sched.adb -f 
+Command       db_write done; 0.12 sec.
+INFO-FLOW: Finish scheduling pearson.
+Execute       set_default_model pearson 
+Execute       bind -model pearson 
+BIND OPTION: model=pearson
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+Command       bind done; 0.76 sec.
+INFO: [HLS 200-111]  Elapsed time: 1.05 seconds; current allocated memory: 131.789 MB.
+Execute       syn_report -verbosereport -o /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.verbose.bind.rpt 
+Command       syn_report done; 0.37 sec.
+Execute       db_write -o /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.bind.adb -f 
+Command       db_write done; 0.14 sec.
+INFO-FLOW: Finish binding pearson.
+Execute       get_model_list pearson -filter all-wo-channel 
+INFO-FLOW: Preprocessing for RTLGen ...
+Execute       rtl_gen_preprocess moyenne 
+Execute       rtl_gen_preprocess moyenneXY 
+Execute       rtl_gen_preprocess ecartType 
+Execute       rtl_gen_preprocess pearson 
+INFO-FLOW: Model list for RTL generation: moyenne moyenneXY ecartType pearson
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'moyenne' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model moyenne -vendor xilinx -mg_file /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/moyenne.compgen.tcl 
+INFO: [RTGEN 206-100] Generating core module 'pearson_fadd_32ns_32ns_32_5_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'pearson_fdiv_32ns_32ns_32_16_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'moyenne'.
+INFO: [HLS 200-111]  Elapsed time: 0.6 seconds; current allocated memory: 133.715 MB.
+Execute       source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.rtl_wrap.cfg.tcl 
+Execute       gen_rtl moyenne -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/syn/systemc/moyenne -synmodules moyenne moyenneXY ecartType pearson 
+Execute       gen_rtl moyenne -style xilinx -f -lang vhdl -o /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/syn/vhdl/moyenne 
+Execute       gen_rtl moyenne -style xilinx -f -lang vlog -o /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/syn/verilog/moyenne 
+Execute       syn_report -csynth -model moyenne -o /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/syn/report/moyenne_csynth.rpt 
+Command       syn_report done; 0.14 sec.
+Execute       syn_report -rtlxml -model moyenne -o /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/syn/report/moyenne_csynth.xml 
+Execute       syn_report -verbosereport -model moyenne -o /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/moyenne.verbose.rpt 
+Command       syn_report done; 0.29 sec.
+Execute       db_write -model moyenne -f -o /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/moyenne.adb 
+Command       db_write done; 0.17 sec.
+Execute       gen_tb_info moyenne -p /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db -o /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/moyenne 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'moyenneXY' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model moyenneXY -vendor xilinx -mg_file /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/moyenneXY.compgen.tcl 
+INFO: [RTGEN 206-100] Generating core module 'pearson_fadd_32ns_32ns_32_5_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'pearson_fdiv_32ns_32ns_32_16_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'pearson_fmul_32ns_32ns_32_4_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'moyenneXY'.
+Command       create_rtl_model done; 0.12 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.95 seconds; current allocated memory: 138.379 MB.
+Execute       source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.rtl_wrap.cfg.tcl 
+Execute       gen_rtl moyenneXY -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/syn/systemc/moyenneXY -synmodules moyenne moyenneXY ecartType pearson 
+Execute       gen_rtl moyenneXY -style xilinx -f -lang vhdl -o /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/syn/vhdl/moyenneXY 
+Execute       gen_rtl moyenneXY -style xilinx -f -lang vlog -o /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/syn/verilog/moyenneXY 
+Execute       syn_report -csynth -model moyenneXY -o /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/syn/report/moyenneXY_csynth.rpt 
+Execute       syn_report -rtlxml -model moyenneXY -o /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/syn/report/moyenneXY_csynth.xml 
+Execute       syn_report -verbosereport -model moyenneXY -o /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/moyenneXY.verbose.rpt 
+Command       syn_report done; 0.3 sec.
+Execute       db_write -model moyenneXY -f -o /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/moyenneXY.adb 
+Command       db_write done; 0.14 sec.
+Execute       gen_tb_info moyenneXY -p /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db -o /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/moyenneXY 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'ecartType' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model ecartType -vendor xilinx -mg_file /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/ecartType.compgen.tcl 
+INFO: [RTGEN 206-100] Generating core module 'pearson_faddfsub_32ns_32ns_32_5_full_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'pearson_fdiv_32ns_32ns_32_16_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'pearson_fmul_32ns_32ns_32_4_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'pearson_fsqrt_32ns_32ns_32_12_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'ecartType'.
+Command       create_rtl_model done; 0.13 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.75 seconds; current allocated memory: 142.333 MB.
+Execute       source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.rtl_wrap.cfg.tcl 
+Execute       gen_rtl ecartType -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/syn/systemc/ecartType -synmodules moyenne moyenneXY ecartType pearson 
+Execute       gen_rtl ecartType -style xilinx -f -lang vhdl -o /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/syn/vhdl/ecartType 
+Execute       gen_rtl ecartType -style xilinx -f -lang vlog -o /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/syn/verilog/ecartType 
+Execute       syn_report -csynth -model ecartType -o /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/syn/report/ecartType_csynth.rpt 
+Command       syn_report done; 0.17 sec.
+Execute       syn_report -rtlxml -model ecartType -o /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/syn/report/ecartType_csynth.xml 
+Execute       syn_report -verbosereport -model ecartType -o /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/ecartType.verbose.rpt 
+Command       syn_report done; 0.6 sec.
+Execute       db_write -model ecartType -f -o /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/ecartType.adb 
+Command       db_write done; 0.3 sec.
+Execute       gen_tb_info ecartType -p /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db -o /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/ecartType 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pearson' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model pearson -vendor xilinx -mg_file /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.compgen.tcl 
+INFO: [RTGEN 206-500] Setting interface mode on port 'pearson/INPUT_r' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pearson/mat' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'pearson' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'return' and 'mat' to AXI-Lite port CONTROL_BUS.
+INFO: [RTGEN 206-100] Generating core module 'pearson_fdiv_32ns_32ns_32_16_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'pearson_fmul_32ns_32ns_32_4_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'pearson_fsub_32ns_32ns_32_5_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pearson'.
+Command       create_rtl_model done; 2.76 sec.
+INFO: [HLS 200-111]  Elapsed time: 4.1 seconds; current allocated memory: 159.440 MB.
+Execute       source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.rtl_wrap.cfg.tcl 
+Execute       gen_rtl pearson -istop -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/syn/systemc/pearson -synmodules moyenne moyenneXY ecartType pearson 
+Command       gen_rtl done; 0.18 sec.
+Execute       gen_rtl pearson -istop -style xilinx -f -lang vhdl -o /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/syn/vhdl/pearson 
+Command       gen_rtl done; 0.21 sec.
+Execute       gen_rtl pearson -istop -style xilinx -f -lang vlog -o /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/syn/verilog/pearson 
+Command       gen_rtl done; 0.11 sec.
+Execute       syn_report -csynth -model pearson -o /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/syn/report/pearson_csynth.rpt 
+Execute       syn_report -rtlxml -model pearson -o /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/syn/report/pearson_csynth.xml 
+Execute       syn_report -verbosereport -model pearson -o /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.verbose.rpt 
+Command       syn_report done; 0.34 sec.
+Execute       db_write -model pearson -f -o /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.adb 
+Command       db_write done; 0.36 sec.
+Execute       gen_tb_info pearson -p /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db -o /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson 
+Execute       export_constraint_db -f -tool general -o /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.constraint.tcl 
+Execute       syn_report -designview -model pearson -o /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.design.xml 
+Command       syn_report done; 0.33 sec.
+Execute       get_config_rtl -disable_wave_debug 
+Execute       syn_report -wcfg -model pearson -o /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson_dataflow_ana.wcfg 
+Execute       syn_report -protoinst -model pearson -o /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.protoinst 
+Execute       get_config_debug -directory 
+Execute       sc_get_clocks pearson 
+Execute       get_config_export -vivado_clock 
+Execute       sc_get_portdomain pearson 
+INFO-FLOW: Model list for RTL component generation: moyenne moyenneXY ecartType pearson
+INFO-FLOW: Handling components in module [moyenne] ... 
+Execute       source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/moyenne.compgen.tcl 
+INFO-FLOW: Found component pearson_fadd_32ns_32ns_32_5_full_dsp_1.
+INFO-FLOW: Append model pearson_fadd_32ns_32ns_32_5_full_dsp_1
+INFO-FLOW: Found component pearson_fdiv_32ns_32ns_32_16_1.
+INFO-FLOW: Append model pearson_fdiv_32ns_32ns_32_16_1
+INFO-FLOW: Handling components in module [moyenneXY] ... 
+Execute       source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/moyenneXY.compgen.tcl 
+INFO-FLOW: Found component pearson_fmul_32ns_32ns_32_4_max_dsp_1.
+INFO-FLOW: Append model pearson_fmul_32ns_32ns_32_4_max_dsp_1
+INFO-FLOW: Handling components in module [ecartType] ... 
+Execute       source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/ecartType.compgen.tcl 
+INFO-FLOW: Found component pearson_faddfsub_32ns_32ns_32_5_full_dsp_1.
+INFO-FLOW: Append model pearson_faddfsub_32ns_32ns_32_5_full_dsp_1
+INFO-FLOW: Found component pearson_fsqrt_32ns_32ns_32_12_1.
+INFO-FLOW: Append model pearson_fsqrt_32ns_32ns_32_12_1
+INFO-FLOW: Handling components in module [pearson] ... 
+Execute       source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.compgen.tcl 
+INFO-FLOW: Found component pearson_fsub_32ns_32ns_32_5_full_dsp_1.
+INFO-FLOW: Append model pearson_fsub_32ns_32ns_32_5_full_dsp_1
+INFO-FLOW: Found component pearson_CONTROL_BUS_s_axi.
+INFO-FLOW: Append model pearson_CONTROL_BUS_s_axi
+INFO-FLOW: Found component pearson_INPUT_r_m_axi.
+INFO-FLOW: Append model pearson_INPUT_r_m_axi
+INFO-FLOW: Append model moyenne
+INFO-FLOW: Append model moyenneXY
+INFO-FLOW: Append model ecartType
+INFO-FLOW: Append model pearson
+INFO-FLOW: Generating RTL model list ...
+INFO-FLOW: All models in this session: pearson_fadd_32ns_32ns_32_5_full_dsp_1 pearson_fdiv_32ns_32ns_32_16_1 pearson_fmul_32ns_32ns_32_4_max_dsp_1 pearson_faddfsub_32ns_32ns_32_5_full_dsp_1 pearson_fsqrt_32ns_32ns_32_12_1 pearson_fsub_32ns_32ns_32_5_full_dsp_1 pearson_CONTROL_BUS_s_axi pearson_INPUT_r_m_axi moyenne moyenneXY ecartType pearson
+INFO-FLOW: To file: write model pearson_fadd_32ns_32ns_32_5_full_dsp_1
+INFO-FLOW: To file: write model pearson_fdiv_32ns_32ns_32_16_1
+INFO-FLOW: To file: write model pearson_fmul_32ns_32ns_32_4_max_dsp_1
+INFO-FLOW: To file: write model pearson_faddfsub_32ns_32ns_32_5_full_dsp_1
+INFO-FLOW: To file: write model pearson_fsqrt_32ns_32ns_32_12_1
+INFO-FLOW: To file: write model pearson_fsub_32ns_32ns_32_5_full_dsp_1
+INFO-FLOW: To file: write model pearson_CONTROL_BUS_s_axi
+INFO-FLOW: To file: write model pearson_INPUT_r_m_axi
+INFO-FLOW: To file: write model moyenne
+INFO-FLOW: To file: write model moyenneXY
+INFO-FLOW: To file: write model ecartType
+INFO-FLOW: To file: write model pearson
+INFO-FLOW: Finished generating RTL model list.
+
+
+INFO-FLOW: RTL Generation done.
+INFO-FLOW: CAS Generation done.
+INFO-FLOW: CBC Generation done.
+INFO-FLOW: DBG:CMD: auto_generate_csynth_design
+INFO-FLOW: DBG:CMD:     auto_generate --sim-model -phase csynth_design -d /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1
+Execute       source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/global.setting.tcl
+Execute       source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/generic/autopilot/common.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/generic/autopilot/op.gen 
+Execute       source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/generic/autopilot/interface.gen 
+Execute       source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/zynq/zynq.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx.gen 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/plb46.gen 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/fsl.gen 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/axi4.gen 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/saxilite.gen 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/maxi.gen 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
+Command           ap_source done; 0.12 sec.
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
+Command         ap_source done; 0.19 sec.
+Command       ap_source done; 0.19 sec.
+Execute       source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
+INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=1 export=0 expOnly=0 dstVlogDir=syn/verilog
+Execute       source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
+Execute       ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
+Execute       source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/moyenne.compgen.tcl 
+Execute         ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
+Execute         ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
+Execute         ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
+Execute         ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
+Command       ap_source done; 0.11 sec.
+Execute       source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/moyenneXY.compgen.tcl 
+Execute         ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
+Execute         ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
+Execute       source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/ecartType.compgen.tcl 
+Execute         ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
+Execute         ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
+Execute         ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
+Execute         ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
+Execute       source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.compgen.tcl 
+Execute         ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
+Execute         ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
+Execute         source ./CONTROL_BUS.slave.tcl 
+Execute         is_m_axi_addr64 
+Execute         ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
+Execute         ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
+Command       ap_source done; 0.14 sec.
+INFO-FLOW: DBG:CMD:     auto_generate -export -impltomg_flag -rtl both -tool Vivado -pcore_version 1.00.a -phase csynth_design -d /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1
+Execute       source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/global.setting.tcl
+Execute       source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/generic/autopilot/common.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/generic/autopilot/op.gen 
+Execute       source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/generic/autopilot/interface.gen 
+Execute       source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/zynq/zynq.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx.gen 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/plb46.gen 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/fsl.gen 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/axi4.gen 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/saxilite.gen 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/maxi.gen 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
+Command           ap_source done; 0.13 sec.
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
+Command         ap_source done; 0.2 sec.
+Command       ap_source done; 0.2 sec.
+Execute       source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
+INFO-FLOW: DBG:CMD:       initCTypeInfo top_module=pearson xml_exists=0
+Execute       source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.rtl_wrap.cfg.tcl 
+Execute       source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.rtl_wrap.cfg.tcl 
+Execute       source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.rtl_wrap.cfg.tcl 
+Execute       source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.tbgen.tcl 
+Execute       source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       export_impl_rtl
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.verilog
+Execute       source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/moyenne.compgen.tcl 
+Execute         ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
+Execute         ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
+Execute         ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
+Execute         ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
+Command       ap_source done; 0.12 sec.
+Execute       source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/moyenneXY.compgen.tcl 
+Execute         ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
+Execute         ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
+Execute       source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/ecartType.compgen.tcl 
+Execute         ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
+Execute         ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
+Execute         ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
+Execute         ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
+Command       ap_source done; 0.33 sec.
+Execute       source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.compgen.tcl 
+Execute         ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
+Execute         ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
+Command       ap_source done; 0.13 sec.
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=1 expOnly=1 dstVlogDir=impl/.pcores/verilog
+Execute       source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/moyenne.compgen.tcl 
+Execute       source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/moyenneXY.compgen.tcl 
+Execute       source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/ecartType.compgen.tcl 
+Execute       source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.compgen.tcl 
+Execute         ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
+Execute         ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
+Execute         ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
+Execute         ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
+Execute         ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
+Execute         ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
+Execute         ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
+Execute         ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
+Execute         ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
+Execute         ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
+Execute         ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
+Execute         ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
+Execute         ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
+Execute         ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
+Execute       ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
+Execute       ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.pcores/verilog_sim
+Execute       source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/moyenne.compgen.tcl 
+Execute       source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/moyenneXY.compgen.tcl 
+Execute       source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/ecartType.compgen.tcl 
+Execute       source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.compgen.tcl 
+Execute       ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
+Execute       ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
+Execute       ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
+Execute       ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
+Execute       source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
+Execute       ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
+Execute       source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.constraint.tcl 
+Execute       source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       hasPcoreIpAdapter=false #gSsdmPorts=2
+INFO-FLOW: DBG:CMD: Skipping loadAnalyze_DB, #g_database=3
+INFO-FLOW: DBG:CMD:       generate_json is_phase_csynth=1 g_has_adaptors=false generate_bd_files=0 #modelList=12 #gSsdmPorts=2
+Execute       source /mnt/side_windows/Vivado_linux/Vivado/2019.1/tps/tcl/tcllib1.11.1/fileutil/fileutil.tcl 
+Execute       source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/global.setting.tcl 
+Execute       get_config_export -xo 
+Execute       source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.tbgen.tcl 
+Execute       source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.compgen.dataonly.tcl 
+Execute       source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.compgen.dataonly.tcl 
+Execute       source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.tbgen.tcl 
+Execute       source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.tbgen.tcl 
+Execute       source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/global.setting.tcl 
+Execute       get_config_sdx -target 
+Execute       source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.rtl_wrap.cfg.tcl 
+Execute       source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.compgen.dataonly.tcl 
+Execute       source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
+Execute       ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
+Execute       source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.constraint.tcl 
+Execute       sc_get_clocks pearson 
+Execute       ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
+Execute       ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
+Execute       source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/global.setting.tcl 
+Execute       get_config_debug -directory 
+Execute       source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/impl/misc/pearson_ap_fadd_3_full_dsp_32_ip.tcl 
+Execute       source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/impl/misc/pearson_ap_faddfsub_3_full_dsp_32_ip.tcl 
+Execute       source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/impl/misc/pearson_ap_fdiv_14_no_dsp_32_ip.tcl 
+Execute       source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/impl/misc/pearson_ap_fmul_2_max_dsp_32_ip.tcl 
+Execute       source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/impl/misc/pearson_ap_fsqrt_10_no_dsp_32_ip.tcl 
+Execute       source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/impl/misc/pearson_ap_fsub_3_full_dsp_32_ip.tcl 
+Execute       source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/moyenne.tbgen.tcl 
+Execute       source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/moyenneXY.tbgen.tcl 
+Execute       source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/ecartType.tbgen.tcl 
+Execute       source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.tbgen.tcl 
+Execute       get_config_sdx -target 
+Execute       get_config_sdx -profile 
+Execute       get_config_rtl -kernel_profile 
+Execute       get_config_rtl -stall_sig_gen 
+Execute       get_config_rtl -profile 
+INFO-FLOW: DBG:CMD: add_json_sdx_info kernel file does not exist, skipping opencl info: /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/kernel.internal.xml
+INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:27 ; elapsed = 00:00:33 . Memory (MB): peak = 900.230 ; gain = 192.000 ; free physical = 283 ; free virtual = 8101
+INFO: [VHDL 208-304] Generating VHDL RTL for pearson.
+INFO: [VLOG 209-307] Generating Verilog RTL for pearson.
+Command     autosyn done; 19.17 sec.
+Command   csynth_design done; 30.52 sec.
+Command ap_source done; 32.41 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1 opened at Mon Feb 17 15:39:07 CET 2020
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+WARNING: [HLS 200-40] Cannot find library '/mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/Zynq-7000/Zynq-7000.lib'.
+WARNING: [HLS 200-40] Cannot find library 'xilinx/Zynq-7000/Zynq-7000'.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/zynq/zynq 
+Execute       source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx.lib 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/plb46.lib 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/fsl.lib 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/axi4.lib 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/maxi.lib 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/saxilite.lib 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/dsp48.lib 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/xfft.lib 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/xfir.lib 
+Execute       source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Execute       source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute       source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/zynq/zynq.gen 
+Execute       source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
+Command         ap_source done; 0.12 sec.
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.2 sec.
+Command     ap_source done; 0.2 sec.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6 
+Execute       source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.lib 
+Execute       source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     set_part xc7z010i-clg225-1L 
+Execute       ap_part_info -name xc7z010i-clg225-1L -data single -quiet 
+Command       ap_part_info done; 0.39 sec.
+Execute       ap_part_info -name xc7z010i-clg225-1L -data info 
+Execute       add_library xilinx/zynq/zynq:xc7z010i:-clg225:-1L 
+Execute         get_default_platform 
+Execute         license_isbetapart xc7z010i 
+Command         license_isbetapart done; error code: 1; 
+Execute         open_platform DefaultPlatform 
+Execute         import_lib /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/zynq/zynq 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx.lib 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute               source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/plb46.lib 
+Execute               source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/fsl.lib 
+Execute               source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/axi4.lib 
+Execute               source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/maxi.lib 
+Execute               source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/saxilite.lib 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/dsp48.lib 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.lib 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/xfft.lib 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/xfir.lib 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute               source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute               source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute               source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute               source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/zynq/zynq.gen 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx.gen 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/plb46.gen 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/fsl.gen 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/axi4.gen 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute               source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/saxilite.gen 
+Execute               source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/maxi.gen 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
+Command             ap_source done; 0.11 sec.
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
+Command           ap_source done; 0.18 sec.
+Command         ap_source done; 0.18 sec.
+Execute         ap_part_info -data single -name xc7z010i-clg225-1L 
+Execute         ap_part_info -name xc7z010i-clg225-1L -data resources 
+Execute         ap_part_info -name xc7z010i-clg225-1L -data info 
+Execute         ap_part_info -name xc7z010i-clg225-1L -data info 
+Execute         config_chip_info -quiet -resource {SLICE 4400} {LUT 17600} {FF 35200} {DSP48E 80} {BRAM 120} {URAM 0} 
+Execute         ap_part_info -name xc7z010i-clg225-1L -data info 
+Execute         config_chip_info -quiet -speed slow 
+Command       add_library done; 0.23 sec.
+Execute       add_library xilinx/zynq/zynq_fpv6 
+Execute         get_default_platform 
+Execute         open_platform DefaultPlatform 
+Execute         import_lib /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.lib 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute               source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute               source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute                 source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute                 source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute               source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
+INFO: [HLS 200-10] Setting target device to 'xc7z010i-clg225-1L'
+Execute       ap_part_info -name xc7z010i-clg225-1L -data info 
+Execute       get_default_platform 
+Command     set_part done; 0.79 sec.
+Execute     ap_part_info -data single -name xc7z010i-clg225-1L 
+Execute     ap_part_info -name xc7z010i-clg225-1L -data resources 
+Execute     ap_part_info -name xc7z010i-clg225-1L -data info 
+Execute     ap_part_info -name xc7z010i-clg225-1L -data info 
+Execute     config_chip_info -quiet -resource {SLICE 4400} {LUT 17600} {FF 35200} {DSP48E 80} {BRAM 120} {URAM 0} 
+Execute     ap_part_info -name xc7z010i-clg225-1L -data info 
+Execute     config_chip_info -quiet -speed slow 
+Command   open_solution done; 1.1 sec.
+Execute   cosim_design -rtl vhdl 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/global.setting.tcl
+Execute     source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/generic/autopilot/common.gen 
+Execute       source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/generic/autopilot/op.gen 
+Execute     source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/generic/autopilot/interface.gen 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/zynq/zynq.gen 
+Execute       source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
+Command         ap_source done; 0.16 sec.
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.26 sec.
+Command     ap_source done; 0.26 sec.
+Execute     source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
+INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
+Execute     ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
+Execute     ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.rtl_wrap.cfg.tcl 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.tbgen.tcl 
+Execute     is_encrypted /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/src/main.c 
+Execute     is_encrypted /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/src/algo.h 
+Execute     is_encrypted /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/src/algo.c 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.tbgen.tcl 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.tbgen.tcl 
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+Execute     ap_part_info -name xc7z010i-clg225-1L -data info 
+INFO-FLOW: TB processing: /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/src/main.c /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/./sim/autowrap/testbench/main.c_pre.c
+Execute     tidy_31 xilinx-tb-xfmat /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/./sim/autowrap/testbench/main.c_pre.c std=gnu89 
+INFO-FLOW: exec /mnt/side_windows/Vivado_linux/Vivado/2019.1/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-tb-xfmat -quiet -fix-errors /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/./sim/autowrap/testbench/main.c_pre.c -- -std=gnu89 -fhls -ferror-limit=0
+Command     tidy_31 done; 0.3 sec.
+Execute     tidy_31 xilinx-tb31-process /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/./sim/autowrap/testbench/main.c_pre.c.tb.c std=gnu89 
+INFO-FLOW: exec /mnt/side_windows/Vivado_linux/Vivado/2019.1/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-tb31-process -quiet -fix-errors /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/./sim/autowrap/testbench/main.c_pre.c.tb.c -- -std=gnu89 -fhls -ferror-limit=0
+Command     tidy_31 done; 0.27 sec.
+Execute     ap_part_info -name xc7z010i-clg225-1L -data info 
+INFO-FLOW: TB processing: /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/src/algo.c /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/./sim/autowrap/testbench/algo.c_pre.c
+Execute     tidy_31 xilinx-tb-xfmat /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/./sim/autowrap/testbench/algo.c_pre.c std=gnu89 
+INFO-FLOW: exec /mnt/side_windows/Vivado_linux/Vivado/2019.1/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-tb-xfmat -quiet -fix-errors /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/./sim/autowrap/testbench/algo.c_pre.c -- -std=gnu89 -fhls -ferror-limit=0
+Execute     tidy_31 xilinx-tb31-process /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/./sim/autowrap/testbench/algo.c_pre.c.tb.c std=gnu89 
+INFO-FLOW: exec /mnt/side_windows/Vivado_linux/Vivado/2019.1/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-tb31-process -quiet -fix-errors /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/./sim/autowrap/testbench/algo.c_pre.c.tb.c -- -std=gnu89 -fhls -ferror-limit=0
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/./sim/autowrap/testbench/tb.status.tcl 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.rtl_wrap.cfg.tcl 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.rtl_wrap.cfg.tcl 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.rtl_wrap.cfg.tcl 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.tbgen.tcl 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.tbgen.tcl 
+WARNING: [COSIM 212-369] AXI_master port 'INPUT_r' has a depth of '40'. Insufficient depth may result in simulation mismatch or freeze.
+Execute     ap_part_info -name xc7z010i-clg225-1L -data info 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.rtl_wrap.cfg.tcl 
+Execute     source .run_sim.tcl 
+INFO: [COSIM 212-302] Starting C TB testing ... 
+Command     ap_source done; 0.65 sec.
+INFO: [COSIM 212-333] Generating C post check test bench ...
+Execute     ap_part_info -name xc7z010i-clg225-1L -data info 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.rtl_wrap.cfg.tcl 
+INFO: [COSIM 212-12] Generating RTL test bench ...
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.tbgen.tcl 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.tbgen.tcl 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.tbgen.tcl 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.tbgen.tcl 
+Execute     source ../tv/cdatafile/ref.tcl 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.tbgen.tcl 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.tbgen.tcl 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.tbgen.tcl 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.tbgen.tcl 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.tbgen.tcl 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.tbgen.tcl 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.tbgen.tcl 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.tbgen.tcl 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.tbgen.tcl 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.tbgen.tcl 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.tbgen.tcl 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.tbgen.tcl 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.tbgen.tcl 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.tbgen.tcl 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.tbgen.tcl 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.tbgen.tcl 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.tbgen.tcl 
+Execute     source ../tv/cdatafile/ref.tcl 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.tbgen.tcl 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.tbgen.tcl 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.tbgen.tcl 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.tbgen.tcl 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.tbgen.tcl 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.tbgen.tcl 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.tbgen.tcl 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.tbgen.tcl 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.tbgen.tcl 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.tbgen.tcl 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.tbgen.tcl 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.tbgen.tcl 
+Execute     ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
+Execute     ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+Execute     source .run_sim.tcl 
+Execute       source check_sim.tcl 
+Execute       source .sim.status.tcl 
+INFO: [COSIM 212-322] Starting VHDL simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+INFO: [COSIM 212-316] Starting C post checking ...
+Command     ap_source done; 161.56 sec.
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [COSIM 212-211] II is measurable only when transaction number is greater than 1 in RTL simulation. Otherwise, they will be marked as all NA. If user wants to calculate them, please make sure there are at least 2 transactions in RTL simulation.
+Command   cosim_design done; 332.77 sec.
+Command ap_source done; 333.88 sec.
+Execute cleanup_all 
+Command cleanup_all done; 0.2 sec.
+INFO-FLOW: Workspace /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1 opened at Mon Feb 17 15:45:39 CET 2020
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+WARNING: [HLS 200-40] Cannot find library '/mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/Zynq-7000/Zynq-7000.lib'.
+WARNING: [HLS 200-40] Cannot find library 'xilinx/Zynq-7000/Zynq-7000'.
+Execute     set_part xc7z010iclg225-1L 
+Execute       ap_part_info -name xc7z010iclg225-1L -data single -quiet 
+Command       ap_part_info done; 2.58 sec.
+Execute       ap_part_info -name xc7z010iclg225-1L -data info 
+Execute       add_library xilinx/zynq/zynq:xc7z010i:-clg225:-1L 
+Execute         get_default_platform 
+Execute         license_isbetapart xc7z010i 
+Command         license_isbetapart done; error code: 1; 
+Execute         open_platform DefaultPlatform 
+Execute         import_lib /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/zynq/zynq 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx.lib 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute               source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/plb46.lib 
+Execute               source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/fsl.lib 
+Execute               source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/axi4.lib 
+Execute               source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/maxi.lib 
+Execute               source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/saxilite.lib 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/dsp48.lib 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.lib 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/xfft.lib 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/xfir.lib 
+Command           ap_source done; 0.15 sec.
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute               source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute               source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Command           ap_source done; 0.11 sec.
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute               source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute               source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Command         import_lib done; 0.31 sec.
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/zynq/zynq.gen 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx.gen 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/plb46.gen 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/fsl.gen 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/axi4.gen 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute               source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/saxilite.gen 
+Execute               source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/maxi.gen 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
+Command             ap_source done; 0.11 sec.
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
+Command           ap_source done; 0.31 sec.
+Command         ap_source done; 0.31 sec.
+Execute         ap_part_info -data single -name xc7z010i-clg225-1L 
+Execute         ap_part_info -name xc7z010i-clg225-1L -data resources 
+Execute         ap_part_info -name xc7z010i-clg225-1L -data info 
+Execute         ap_part_info -name xc7z010i-clg225-1L -data info 
+Execute         config_chip_info -quiet -resource {SLICE 4400} {LUT 17600} {FF 35200} {DSP48E 80} {BRAM 120} {URAM 0} 
+Execute         ap_part_info -name xc7z010i-clg225-1L -data info 
+Execute         config_chip_info -quiet -speed slow 
+Command       add_library done; 0.66 sec.
+Execute       add_library xilinx/zynq/zynq_fpv6 
+Execute         get_default_platform 
+Execute         open_platform DefaultPlatform 
+Execute         import_lib /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.lib 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute               source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute               source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute                 source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute                 source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute               source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
+INFO: [HLS 200-10] Setting target device to 'xc7z010i-clg225-1L'
+Execute       ap_part_info -name xc7z010i-clg225-1L -data info 
+Execute       get_default_platform 
+Command     set_part done; 3.39 sec.
+Execute     ap_part_info -data single -name xc7z010iclg225-1L 
+Execute     ap_part_info -name xc7z010iclg225-1L -data resources 
+Execute     ap_part_info -name xc7z010iclg225-1L -data info 
+Execute     ap_part_info -name xc7z010iclg225-1L -data info 
+Execute     config_chip_info -quiet -resource {SLICE 4400} {LUT 17600} {FF 35200} {DSP48E 80} {BRAM 120} {URAM 0} 
+Execute     ap_part_info -name xc7z010iclg225-1L -data info 
+Execute     config_chip_info -quiet -speed slow 
+Command   open_solution done; 3.48 sec.
+Execute   export_design -flow syn -rtl vhdl -format ip_catalog 
+Execute     get_config_export -acc 
+Execute     get_config_export -clock_margin 
+Execute     get_config_export -custom_script 
+Execute     get_config_export -description 
+Execute     get_config_export -display_name 
+Execute     get_config_export -driver_input_dir 
+Execute     get_config_export -ipname 
+Execute     get_config_export -kernel_drc 
+Execute     get_config_export -library 
+Execute     get_config_export -qor_test 
+Execute     get_config_export -sdaccel 
+Execute     get_config_export -sim 
+Execute     get_config_export -taxonomy 
+Execute     get_config_export -use_ip 
+Execute     get_config_export -use_netlist 
+Execute     get_config_export -vendor 
+Execute     get_config_export -version 
+Execute     get_config_export -xo 
+Execute     config_export -format=ip_catalog -rtl=vhdl 
+INFO-FLOW: DBG:CMD: export_design_wrap: -format ip_catalog -flow syn -rtl vhdl
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/global.setting.tcl 
+Execute     get_config_export -vivado_clock 
+Execute     get_top 
+Execute     get_config_sdx -target 
+Execute     get_config_rtl -module_auto_prefix 
+Execute     get_config_sdx -target 
+Execute     get_config_sdx -target 
+INFO-FLOW: DBG:CMD:   auto_impl: pack: -export -tool vivado -rtl vhdl -sdx-target none
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/global.setting.tcl
+Execute     source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/generic/autopilot/common.gen 
+Execute       source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/generic/autopilot/op.gen 
+Execute     source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/generic/autopilot/interface.gen 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/zynq/zynq.gen 
+Execute       source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.14 sec.
+Command     ap_source done; 0.14 sec.
+Execute     source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
+INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
+Execute     ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
+Execute     ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/global.setting.tcl 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: automg_wrap -export -pcore_version 1.00.a -rtl vhdl -sdx-target none -tool Vivado -impltomg_flag
+INFO-FLOW: DBG:CMD:     auto_generate -export -pcore_version 1.00.a -rtl vhdl -sdx-target none -tool Vivado -impltomg_flag
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/global.setting.tcl
+Execute     source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/generic/autopilot/common.gen 
+Execute       source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/generic/autopilot/op.gen 
+Execute     source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/generic/autopilot/interface.gen 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/zynq/zynq.gen 
+Execute       source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.16 sec.
+Command     ap_source done; 0.16 sec.
+Execute     source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
+INFO-FLOW: DBG:CMD:       initCTypeInfo top_module=pearson xml_exists=1
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.rtl_wrap.cfg.tcl 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.rtl_wrap.cfg.tcl 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.rtl_wrap.cfg.tcl 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.tbgen.tcl 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       export_impl_rtl
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.verilog
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/moyenne.compgen.tcl 
+Execute       ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
+Execute       ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
+Execute       ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
+Execute       ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/moyenneXY.compgen.tcl 
+Execute       ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
+Execute       ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/ecartType.compgen.tcl 
+Execute       ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
+Execute       ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
+Execute       ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
+Execute       ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.compgen.tcl 
+Execute       ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
+Execute       ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=1 expOnly=1 dstVlogDir=impl/.pcores/verilog
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/moyenne.compgen.tcl 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/moyenneXY.compgen.tcl 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/ecartType.compgen.tcl 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.compgen.tcl 
+Execute       ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
+Execute       ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
+Execute       ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
+Execute       ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
+Execute       ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
+Execute       ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
+Execute       ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
+Execute       ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
+Execute       ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
+Execute       ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
+Execute       ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
+Execute       ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
+Execute       ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
+Execute       ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
+Execute     ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
+Execute     ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.pcores/verilog_sim
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/moyenne.compgen.tcl 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/moyenneXY.compgen.tcl 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/ecartType.compgen.tcl 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.compgen.tcl 
+Execute     ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
+Execute     ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
+Execute     ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
+Execute     ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/global.setting.tcl 
+Execute     ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
+Execute     ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.constraint.tcl 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       hasPcoreIpAdapter=false #gSsdmPorts=2
+INFO-FLOW: DBG:CMD:       copying IP vlog from /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/impl/verilog
+INFO-FLOW: DBG:CMD:       copying IP vhdl from /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/impl/vhdl
+INFO-FLOW: DBG:CMD:       copy ip_driver_dir 1_0 /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/driver
+INFO-FLOW: DBG:CMD:       generate_ip_script #gSsdmPorts=2
+Execute     ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
+Execute     ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
+Execute     ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
+Execute     ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.compgen.dataonly.tcl 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.compgen.dataonly.tcl 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.tbgen.tcl 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.tbgen.tcl 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/global.setting.tcl 
+Execute     get_config_sdx -target 
+Execute     get_config_debug -directory 
+INFO-FLOW: DBG:CMD:       generate_ip_auxiliary
+Execute     ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
+Execute     ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD:       prepArgInfo -> loadAnalyze_DB top_module=pearson
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.rtl_wrap.cfg.tcl 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.rtl_wrap.cfg.tcl 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.rtl_wrap.cfg.tcl 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.tbgen.tcl 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.tbgen.tcl 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_top_info
+INFO-FLOW: DBG:CMD:       prepArgInfo -> loadAnalyze_DB top_module=pearson
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.rtl_wrap.cfg.tcl 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.rtl_wrap.cfg.tcl 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.rtl_wrap.cfg.tcl 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.tbgen.tcl 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.tbgen.tcl 
+Execute     ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
+Execute     ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/global.setting.tcl 
+Execute     ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
+Execute     ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
+Execute     ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
+Execute     ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.tbgen.tcl 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.constraint.tcl 
+INFO-FLOW: DBG:CMD:       generate_ipi_example_script
+Execute     ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
+Execute     ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
+Execute     ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
+Execute     ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
+INFO-FLOW: DBG:CMD:       generate_syn_sh
+Execute     ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
+Execute     ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD:       generate_imp_constraints
+Execute     ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
+Execute     ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.constraint.tcl 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       copy-tb-files /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/impl/.vhdl/sim_tbs
+INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
+Execute     ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
+Execute     ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
+INFO-FLOW: DBG:CMD: read_platform_lib /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/global.setting.tcl
+Execute     source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/generic/autopilot/common.gen 
+Execute       source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/generic/autopilot/op.gen 
+Execute     source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/generic/autopilot/interface.gen 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/zynq/zynq.gen 
+Execute       source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.14 sec.
+Command     ap_source done; 0.14 sec.
+Execute     source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
+Execute     ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
+INFO-FLOW: DBG:CMD:     exec /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/impl/ip/pack.sh
+INFO-FLOW: DBG:CMD:   auto_impl: eval: -tool vivado -flow syn -rtl vhdl
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/global.setting.tcl
+Execute     source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/generic/autopilot/common.gen 
+Execute       source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/generic/autopilot/op.gen 
+Execute     source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/generic/autopilot/interface.gen 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/zynq/zynq.gen 
+Execute       source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Command         ap_source done; 0.13 sec.
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
+Command         ap_source done; 0.11 sec.
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.41 sec.
+Command     ap_source done; 0.42 sec.
+Execute     source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
+Execute     ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/global.setting.tcl 
+INFO: [IMPL 213-8] Starting RTL evaluation using Vivado ...
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: automg_wrap -rtl vhdl -tool Vivado -impltomg_flag
+INFO-FLOW: DBG:CMD:     auto_generate -rtl vhdl -tool Vivado -impltomg_flag
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/global.setting.tcl
+Execute     source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/generic/autopilot/common.gen 
+Execute       source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/generic/autopilot/op.gen 
+Execute     source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/generic/autopilot/interface.gen 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/zynq/zynq.gen 
+Execute       source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.16 sec.
+Command     ap_source done; 0.16 sec.
+Execute     source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.verilog
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/moyenne.compgen.tcl 
+Execute       ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
+Execute       ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
+Execute       ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
+Execute       ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/moyenneXY.compgen.tcl 
+Execute       ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
+Execute       ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/ecartType.compgen.tcl 
+Execute       ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
+Execute       ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
+Execute       ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
+Execute       ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.compgen.tcl 
+Execute       ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
+Execute       ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
+INFO-FLOW: DBG:CMD:       generate_syn_sh
+Execute     ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
+Execute     ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD:       generate_imp_constraints
+Execute     ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
+Execute     ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.constraint.tcl 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/pearson.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       copy-tb-files /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/impl/vhdl/sim_tbs
+INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
+Execute     ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
+Execute     ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
+INFO-FLOW: DBG:CMD: read_platform_lib /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/global.setting.tcl
+Execute     source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/generic/autopilot/common.gen 
+Execute       source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/generic/autopilot/op.gen 
+Execute     source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/generic/autopilot/interface.gen 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/zynq/zynq.gen 
+Execute       source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.14 sec.
+Command     ap_source done; 0.14 sec.
+Execute     source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
+Execute     ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
+Execute     get_config_export -vivado_report_level 
+Execute     get_config_export -vivado_ip_cache 
+Execute     get_config_export -vivado_enable_slr_assignment 
+Execute     ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
+Execute     ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
+Execute     get_config_export -vivado_bd_cell_properties 
+Execute     get_config_export -vivado_synth_design_args 
+Execute     source /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/.autopilot/db/global.setting.tcl 
+Execute     get_config_export -vivado_synth_strategy 
+Execute     get_config_export -vivado_synth_run_properties 
+INFO-FLOW: DBG:CMD: auto_impl: vhdl syn exec /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/impl/vhdl/implsyn.sh
+Command   export_design done; 605.02 sec.
+Command ap_source done; 608.61 sec.
+Execute cleanup_all 
+Command cleanup_all done; 0.2 sec.

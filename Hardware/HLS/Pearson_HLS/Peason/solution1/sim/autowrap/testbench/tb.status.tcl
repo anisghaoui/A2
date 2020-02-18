@@ -1,0 +1,1 @@
+set ::AESL_AUTOSIM::gTopFileName /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/./sim/autowrap/testbench/algo.c_pre.c.tb.c
