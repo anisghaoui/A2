@@ -1,0 +1,469 @@
+17:33:15 **** Auto Build of configuration Debug for project test_kmeans ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/block_matrix.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/block_matrix.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test_kmeans_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/block_matrix.d" -MT"src/block_matrix.o" -o "src/block_matrix.o" "../src/block_matrix.c"
+../src/block_matrix.c: In function 'block_matrix_test':
+../src/block_matrix.c:80:32: warning: passing argument 2 of 'multiply_block_hw_call' from incompatible pointer type [-Wincompatible-pointer-types]
+     multiply_block_hw_call(&MB,A, B, result);
+                                ^
+../src/block_matrix.c:26:57: note: expected 'type *' {aka 'float *'} but argument is of type 'type (*)[16]' {aka 'float (*)[16]'}
+ void multiply_block_hw_call(XMultiply_block* mb_p,type* mA, type* mB, type* result){
+                                                   ~~~~~~^~
+../src/block_matrix.c:80:35: warning: passing argument 3 of 'multiply_block_hw_call' from incompatible pointer type [-Wincompatible-pointer-types]
+     multiply_block_hw_call(&MB,A, B, result);
+                                   ^
+../src/block_matrix.c:26:67: note: expected 'type *' {aka 'float *'} but argument is of type 'type (*)[16]' {aka 'float (*)[16]'}
+ void multiply_block_hw_call(XMultiply_block* mb_p,type* mA, type* mB, type* result){
+                                                             ~~~~~~^~
+../src/block_matrix.c:80:38: warning: passing argument 4 of 'multiply_block_hw_call' from incompatible pointer type [-Wincompatible-pointer-types]
+     multiply_block_hw_call(&MB,A, B, result);
+                                      ^~~~~~
+../src/block_matrix.c:26:77: note: expected 'type *' {aka 'float *'} but argument is of type 'type (*)[16]' {aka 'float (*)[16]'}
+ void multiply_block_hw_call(XMultiply_block* mb_p,type* mA, type* mB, type* result){
+                                                                       ~~~~~~^~~~~~
+'Finished building: ../src/block_matrix.c'
+' '
+'Building file: ../src/busy_wait.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/busy_wait.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test_kmeans_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/busy_wait.d" -MT"src/busy_wait.o" -o "src/busy_wait.o" "../src/busy_wait.c"
+'Finished building: ../src/busy_wait.c'
+' '
+'Building file: ../src/hello_zynq.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/hello_zynq.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test_kmeans_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/hello_zynq.d" -MT"src/hello_zynq.o" -o "src/hello_zynq.o" "../src/hello_zynq.c"
+../src/hello_zynq.c:137:3: warning: "/*" within comment [-Wcomment]
+  //*((int*)(ConfigPtr->MemBaseAddress))=4;
+    
+../src/hello_zynq.c:64:12: warning: 'fil' defined but not used [-Wunused-variable]
+ static FIL fil;  // File object
+            ^~~
+'Finished building: ../src/hello_zynq.c'
+' '
+'Building file: ../src/kmeans.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/kmeans.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test_kmeans_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/kmeans.d" -MT"src/kmeans.o" -o "src/kmeans.o" "../src/kmeans.c"
+../src/kmeans.c: In function 'kmeans_test':
+../src/kmeans.c:87:22: warning: excess elements in array initializer
+                      6.3, 5.8, 7.1, 6.3, 6.5, 7.6, 4.9, 7.3, 6.7, 7.2,
+                      ^~~
+../src/kmeans.c:87:22: note: (near initialization for 'X')
+../src/kmeans.c:87:27: warning: excess elements in array initializer
+                      6.3, 5.8, 7.1, 6.3, 6.5, 7.6, 4.9, 7.3, 6.7, 7.2,
+                           ^~~
+../src/kmeans.c:87:27: note: (near initialization for 'X')
+../src/kmeans.c:87:32: warning: excess elements in array initializer
+                      6.3, 5.8, 7.1, 6.3, 6.5, 7.6, 4.9, 7.3, 6.7, 7.2,
+                                ^~~
+../src/kmeans.c:87:32: note: (near initialization for 'X')
+../src/kmeans.c:87:37: warning: excess elements in array initializer
+                      6.3, 5.8, 7.1, 6.3, 6.5, 7.6, 4.9, 7.3, 6.7, 7.2,
+                                     ^~~
+../src/kmeans.c:87:37: note: (near initialization for 'X')
+../src/kmeans.c:87:42: warning: excess elements in array initializer
+                      6.3, 5.8, 7.1, 6.3, 6.5, 7.6, 4.9, 7.3, 6.7, 7.2,
+                                          ^~~
+../src/kmeans.c:87:42: note: (near initialization for 'X')
+../src/kmeans.c:87:47: warning: excess elements in array initializer
+                      6.3, 5.8, 7.1, 6.3, 6.5, 7.6, 4.9, 7.3, 6.7, 7.2,
+                                               ^~~
+../src/kmeans.c:87:47: note: (near initialization for 'X')
+../src/kmeans.c:87:52: warning: excess elements in array initializer
+                      6.3, 5.8, 7.1, 6.3, 6.5, 7.6, 4.9, 7.3, 6.7, 7.2,
+                                                    ^~~
+../src/kmeans.c:87:52: note: (near initialization for 'X')
+../src/kmeans.c:87:57: warning: excess elements in array initializer
+                      6.3, 5.8, 7.1, 6.3, 6.5, 7.6, 4.9, 7.3, 6.7, 7.2,
+                                                         ^~~
+../src/kmeans.c:87:57: note: (near initialization for 'X')
+../src/kmeans.c:87:62: warning: excess elements in array initializer
+                      6.3, 5.8, 7.1, 6.3, 6.5, 7.6, 4.9, 7.3, 6.7, 7.2,
+                                                              ^~~
+../src/kmeans.c:87:62: note: (near initialization for 'X')
+../src/kmeans.c:87:67: warning: excess elements in array initializer
+                      6.3, 5.8, 7.1, 6.3, 6.5, 7.6, 4.9, 7.3, 6.7, 7.2,
+                                                                   ^~~
+../src/kmeans.c:87:67: note: (near initialization for 'X')
+../src/kmeans.c:88:22: warning: excess elements in array initializer
+                      6.5, 6.4, 6.8, 5.7, 5.8, 6.4, 6.5, 7.7, 7.7, 6.0,
+                      ^~~
+../src/kmeans.c:88:22: note: (near initialization for 'X')
+../src/kmeans.c:88:27: warning: excess elements in array initializer
+                      6.5, 6.4, 6.8, 5.7, 5.8, 6.4, 6.5, 7.7, 7.7, 6.0,
+                           ^~~
+../src/kmeans.c:88:27: note: (near initialization for 'X')
+../src/kmeans.c:88:32: warning: excess elements in array initializer
+                      6.5, 6.4, 6.8, 5.7, 5.8, 6.4, 6.5, 7.7, 7.7, 6.0,
+                                ^~~
+../src/kmeans.c:88:32: note: (near initialization for 'X')
+../src/kmeans.c:88:37: warning: excess elements in array initializer
+                      6.5, 6.4, 6.8, 5.7, 5.8, 6.4, 6.5, 7.7, 7.7, 6.0,
+                                     ^~~
+../src/kmeans.c:88:37: note: (near initialization for 'X')
+../src/kmeans.c:88:42: warning: excess elements in array initializer
+                      6.5, 6.4, 6.8, 5.7, 5.8, 6.4, 6.5, 7.7, 7.7, 6.0,
+                                          ^~~
+../src/kmeans.c:88:42: note: (near initialization for 'X')
+../src/kmeans.c:88:47: warning: excess elements in array initializer
+                      6.5, 6.4, 6.8, 5.7, 5.8, 6.4, 6.5, 7.7, 7.7, 6.0,
+                                               ^~~
+../src/kmeans.c:88:47: note: (near initialization for 'X')
+../src/kmeans.c:88:52: warning: excess elements in array initializer
+                      6.5, 6.4, 6.8, 5.7, 5.8, 6.4, 6.5, 7.7, 7.7, 6.0,
+                                                    ^~~
+../src/kmeans.c:88:52: note: (near initialization for 'X')
+../src/kmeans.c:88:57: warning: excess elements in array initializer
+                      6.5, 6.4, 6.8, 5.7, 5.8, 6.4, 6.5, 7.7, 7.7, 6.0,
+                                                         ^~~
+../src/kmeans.c:88:57: note: (near initialization for 'X')
+../src/kmeans.c:88:62: warning: excess elements in array initializer
+                      6.5, 6.4, 6.8, 5.7, 5.8, 6.4, 6.5, 7.7, 7.7, 6.0,
+                                                              ^~~
+../src/kmeans.c:88:62: note: (near initialization for 'X')
+../src/kmeans.c:88:67: warning: excess elements in array initializer
+                      6.5, 6.4, 6.8, 5.7, 5.8, 6.4, 6.5, 7.7, 7.7, 6.0,
+                                                                   ^~~
+../src/kmeans.c:88:67: note: (near initialization for 'X')
+../src/kmeans.c:89:22: warning: excess elements in array initializer
+                      6.9, 5.6, 7.7, 6.3, 6.7, 7.2, 6.2, 6.1, 6.4, 7.2,
+                      ^~~
+../src/kmeans.c:89:22: note: (near initialization for 'X')
+../src/kmeans.c:89:27: warning: excess elements in array initializer
+                      6.9, 5.6, 7.7, 6.3, 6.7, 7.2, 6.2, 6.1, 6.4, 7.2,
+                           ^~~
+../src/kmeans.c:89:27: note: (near initialization for 'X')
+../src/kmeans.c:89:32: warning: excess elements in array initializer
+                      6.9, 5.6, 7.7, 6.3, 6.7, 7.2, 6.2, 6.1, 6.4, 7.2,
+                                ^~~
+../src/kmeans.c:89:32: note: (near initialization for 'X')
+../src/kmeans.c:89:37: warning: excess elements in array initializer
+                      6.9, 5.6, 7.7, 6.3, 6.7, 7.2, 6.2, 6.1, 6.4, 7.2,
+                                     ^~~
+../src/kmeans.c:89:37: note: (near initialization for 'X')
+../src/kmeans.c:89:42: warning: excess elements in array initializer
+                      6.9, 5.6, 7.7, 6.3, 6.7, 7.2, 6.2, 6.1, 6.4, 7.2,
+                                          ^~~
+../src/kmeans.c:89:42: note: (near initialization for 'X')
+../src/kmeans.c:89:47: warning: excess elements in array initializer
+                      6.9, 5.6, 7.7, 6.3, 6.7, 7.2, 6.2, 6.1, 6.4, 7.2,
+                                               ^~~
+../src/kmeans.c:89:47: note: (near initialization for 'X')
+../src/kmeans.c:89:52: warning: excess elements in array initializer
+                      6.9, 5.6, 7.7, 6.3, 6.7, 7.2, 6.2, 6.1, 6.4, 7.2,
+                                                    ^~~
+../src/kmeans.c:89:52: note: (near initialization for 'X')
+../src/kmeans.c:89:57: warning: excess elements in array initializer
+                      6.9, 5.6, 7.7, 6.3, 6.7, 7.2, 6.2, 6.1, 6.4, 7.2,
+                                                         ^~~
+../src/kmeans.c:89:57: note: (near initialization for 'X')
+../src/kmeans.c:89:62: warning: excess elements in array initializer
+                      6.9, 5.6, 7.7, 6.3, 6.7, 7.2, 6.2, 6.1, 6.4, 7.2,
+                                                              ^~~
+../src/kmeans.c:89:62: note: (near initialization for 'X')
+../src/kmeans.c:89:67: warning: excess elements in array initializer
+                      6.9, 5.6, 7.7, 6.3, 6.7, 7.2, 6.2, 6.1, 6.4, 7.2,
+                                                                   ^~~
+../src/kmeans.c:89:67: note: (near initialization for 'X')
+../src/kmeans.c:90:22: warning: excess elements in array initializer
+                      7.4, 7.9, 6.4, 6.3, 6.1, 7.7, 6.3, 6.4, 6.0, 6.9,
+                      ^~~
+../src/kmeans.c:90:22: note: (near initialization for 'X')
+../src/kmeans.c:90:27: warning: excess elements in array initializer
+                      7.4, 7.9, 6.4, 6.3, 6.1, 7.7, 6.3, 6.4, 6.0, 6.9,
+                           ^~~
+../src/kmeans.c:90:27: note: (near initialization for 'X')
+../src/kmeans.c:90:32: warning: excess elements in array initializer
+                      7.4, 7.9, 6.4, 6.3, 6.1, 7.7, 6.3, 6.4, 6.0, 6.9,
+                                ^~~
+../src/kmeans.c:90:32: note: (near initialization for 'X')
+../src/kmeans.c:90:37: warning: excess elements in array initializer
+                      7.4, 7.9, 6.4, 6.3, 6.1, 7.7, 6.3, 6.4, 6.0, 6.9,
+                                     ^~~
+../src/kmeans.c:90:37: note: (near initialization for 'X')
+../src/kmeans.c:90:42: warning: excess elements in array initializer
+                      7.4, 7.9, 6.4, 6.3, 6.1, 7.7, 6.3, 6.4, 6.0, 6.9,
+                                          ^~~
+../src/kmeans.c:90:42: note: (near initialization for 'X')
+../src/kmeans.c:90:47: warning: excess elements in array initializer
+                      7.4, 7.9, 6.4, 6.3, 6.1, 7.7, 6.3, 6.4, 6.0, 6.9,
+                                               ^~~
+../src/kmeans.c:90:47: note: (near initialization for 'X')
+../src/kmeans.c:90:52: warning: excess elements in array initializer
+                      7.4, 7.9, 6.4, 6.3, 6.1, 7.7, 6.3, 6.4, 6.0, 6.9,
+                                                    ^~~
+../src/kmeans.c:90:52: note: (near initialization for 'X')
+../src/kmeans.c:90:57: warning: excess elements in array initializer
+                      7.4, 7.9, 6.4, 6.3, 6.1, 7.7, 6.3, 6.4, 6.0, 6.9,
+                                                         ^~~
+../src/kmeans.c:90:57: note: (near initialization for 'X')
+../src/kmeans.c:90:62: warning: excess elements in array initializer
+                      7.4, 7.9, 6.4, 6.3, 6.1, 7.7, 6.3, 6.4, 6.0, 6.9,
+                                                              ^~~
+../src/kmeans.c:90:62: note: (near initialization for 'X')
+../src/kmeans.c:90:67: warning: excess elements in array initializer
+                      7.4, 7.9, 6.4, 6.3, 6.1, 7.7, 6.3, 6.4, 6.0, 6.9,
+                                                                   ^~~
+../src/kmeans.c:90:67: note: (near initialization for 'X')
+../src/kmeans.c:91:22: warning: excess elements in array initializer
+                      6.7, 6.9, 5.8, 6.8, 6.7, 6.7, 6.3, 6.5, 6.2, 5.9
+                      ^~~
+../src/kmeans.c:91:22: note: (near initialization for 'X')
+../src/kmeans.c:91:27: warning: excess elements in array initializer
+                      6.7, 6.9, 5.8, 6.8, 6.7, 6.7, 6.3, 6.5, 6.2, 5.9
+                           ^~~
+../src/kmeans.c:91:27: note: (near initialization for 'X')
+../src/kmeans.c:91:32: warning: excess elements in array initializer
+                      6.7, 6.9, 5.8, 6.8, 6.7, 6.7, 6.3, 6.5, 6.2, 5.9
+                                ^~~
+../src/kmeans.c:91:32: note: (near initialization for 'X')
+../src/kmeans.c:91:37: warning: excess elements in array initializer
+                      6.7, 6.9, 5.8, 6.8, 6.7, 6.7, 6.3, 6.5, 6.2, 5.9
+                                     ^~~
+../src/kmeans.c:91:37: note: (near initialization for 'X')
+../src/kmeans.c:91:42: warning: excess elements in array initializer
+                      6.7, 6.9, 5.8, 6.8, 6.7, 6.7, 6.3, 6.5, 6.2, 5.9
+                                          ^~~
+../src/kmeans.c:91:42: note: (near initialization for 'X')
+../src/kmeans.c:91:47: warning: excess elements in array initializer
+                      6.7, 6.9, 5.8, 6.8, 6.7, 6.7, 6.3, 6.5, 6.2, 5.9
+                                               ^~~
+../src/kmeans.c:91:47: note: (near initialization for 'X')
+../src/kmeans.c:91:52: warning: excess elements in array initializer
+                      6.7, 6.9, 5.8, 6.8, 6.7, 6.7, 6.3, 6.5, 6.2, 5.9
+                                                    ^~~
+../src/kmeans.c:91:52: note: (near initialization for 'X')
+../src/kmeans.c:91:57: warning: excess elements in array initializer
+                      6.7, 6.9, 5.8, 6.8, 6.7, 6.7, 6.3, 6.5, 6.2, 5.9
+                                                         ^~~
+../src/kmeans.c:91:57: note: (near initialization for 'X')
+../src/kmeans.c:91:62: warning: excess elements in array initializer
+                      6.7, 6.9, 5.8, 6.8, 6.7, 6.7, 6.3, 6.5, 6.2, 5.9
+                                                              ^~~
+../src/kmeans.c:91:62: note: (near initialization for 'X')
+../src/kmeans.c:91:67: warning: excess elements in array initializer
+                      6.7, 6.9, 5.8, 6.8, 6.7, 6.7, 6.3, 6.5, 6.2, 5.9
+                                                                   ^~~
+../src/kmeans.c:91:67: note: (near initialization for 'X')
+../src/kmeans.c:103:22: warning: excess elements in array initializer
+                      3.3, 2.7, 3.0, 2.9, 3.0, 3.0, 2.5, 2.9, 2.5, 3.6,
+                      ^~~
+../src/kmeans.c:103:22: note: (near initialization for 'Y')
+../src/kmeans.c:103:27: warning: excess elements in array initializer
+                      3.3, 2.7, 3.0, 2.9, 3.0, 3.0, 2.5, 2.9, 2.5, 3.6,
+                           ^~~
+../src/kmeans.c:103:27: note: (near initialization for 'Y')
+../src/kmeans.c:103:32: warning: excess elements in array initializer
+                      3.3, 2.7, 3.0, 2.9, 3.0, 3.0, 2.5, 2.9, 2.5, 3.6,
+                                ^~~
+../src/kmeans.c:103:32: note: (near initialization for 'Y')
+../src/kmeans.c:103:37: warning: excess elements in array initializer
+                      3.3, 2.7, 3.0, 2.9, 3.0, 3.0, 2.5, 2.9, 2.5, 3.6,
+                                     ^~~
+../src/kmeans.c:103:37: note: (near initialization for 'Y')
+../src/kmeans.c:103:42: warning: excess elements in array initializer
+                      3.3, 2.7, 3.0, 2.9, 3.0, 3.0, 2.5, 2.9, 2.5, 3.6,
+                                          ^~~
+../src/kmeans.c:103:42: note: (near initialization for 'Y')
+../src/kmeans.c:103:47: warning: excess elements in array initializer
+                      3.3, 2.7, 3.0, 2.9, 3.0, 3.0, 2.5, 2.9, 2.5, 3.6,
+                                               ^~~
+../src/kmeans.c:103:47: note: (near initialization for 'Y')
+../src/kmeans.c:103:52: warning: excess elements in array initializer
+                      3.3, 2.7, 3.0, 2.9, 3.0, 3.0, 2.5, 2.9, 2.5, 3.6,
+                                                    ^~~
+../src/kmeans.c:103:52: note: (near initialization for 'Y')
+../src/kmeans.c:103:57: warning: excess elements in array initializer
+                      3.3, 2.7, 3.0, 2.9, 3.0, 3.0, 2.5, 2.9, 2.5, 3.6,
+                                                         ^~~
+../src/kmeans.c:103:57: note: (near initialization for 'Y')
+../src/kmeans.c:103:62: warning: excess elements in array initializer
+                      3.3, 2.7, 3.0, 2.9, 3.0, 3.0, 2.5, 2.9, 2.5, 3.6,
+                                                              ^~~
+../src/kmeans.c:103:62: note: (near initialization for 'Y')
+../src/kmeans.c:103:67: warning: excess elements in array initializer
+                      3.3, 2.7, 3.0, 2.9, 3.0, 3.0, 2.5, 2.9, 2.5, 3.6,
+                                                                   ^~~
+../src/kmeans.c:103:67: note: (near initialization for 'Y')
+../src/kmeans.c:104:22: warning: excess elements in array initializer
+                      3.2, 2.7, 3.0, 2.5, 2.8, 3.2, 3.0, 3.8, 2.6, 2.2,
+                      ^~~
+../src/kmeans.c:104:22: note: (near initialization for 'Y')
+../src/kmeans.c:104:27: warning: excess elements in array initializer
+                      3.2, 2.7, 3.0, 2.5, 2.8, 3.2, 3.0, 3.8, 2.6, 2.2,
+                           ^~~
+../src/kmeans.c:104:27: note: (near initialization for 'Y')
+../src/kmeans.c:104:32: warning: excess elements in array initializer
+                      3.2, 2.7, 3.0, 2.5, 2.8, 3.2, 3.0, 3.8, 2.6, 2.2,
+                                ^~~
+../src/kmeans.c:104:32: note: (near initialization for 'Y')
+../src/kmeans.c:104:37: warning: excess elements in array initializer
+                      3.2, 2.7, 3.0, 2.5, 2.8, 3.2, 3.0, 3.8, 2.6, 2.2,
+                                     ^~~
+../src/kmeans.c:104:37: note: (near initialization for 'Y')
+../src/kmeans.c:104:42: warning: excess elements in array initializer
+                      3.2, 2.7, 3.0, 2.5, 2.8, 3.2, 3.0, 3.8, 2.6, 2.2,
+                                          ^~~
+../src/kmeans.c:104:42: note: (near initialization for 'Y')
+../src/kmeans.c:104:47: warning: excess elements in array initializer
+                      3.2, 2.7, 3.0, 2.5, 2.8, 3.2, 3.0, 3.8, 2.6, 2.2,
+                                               ^~~
+../src/kmeans.c:104:47: note: (near initialization for 'Y')
+../src/kmeans.c:104:52: warning: excess elements in array initializer
+                      3.2, 2.7, 3.0, 2.5, 2.8, 3.2, 3.0, 3.8, 2.6, 2.2,
+                                                    ^~~
+../src/kmeans.c:104:52: note: (near initialization for 'Y')
+../src/kmeans.c:104:57: warning: excess elements in array initializer
+                      3.2, 2.7, 3.0, 2.5, 2.8, 3.2, 3.0, 3.8, 2.6, 2.2,
+                                                         ^~~
+../src/kmeans.c:104:57: note: (near initialization for 'Y')
+../src/kmeans.c:104:62: warning: excess elements in array initializer
+                      3.2, 2.7, 3.0, 2.5, 2.8, 3.2, 3.0, 3.8, 2.6, 2.2,
+                                                              ^~~
+../src/kmeans.c:104:62: note: (near initialization for 'Y')
+../src/kmeans.c:104:67: warning: excess elements in array initializer
+                      3.2, 2.7, 3.0, 2.5, 2.8, 3.2, 3.0, 3.8, 2.6, 2.2,
+                                                                   ^~~
+../src/kmeans.c:104:67: note: (near initialization for 'Y')
+../src/kmeans.c:105:22: warning: excess elements in array initializer
+                      3.2, 2.8, 2.8, 2.7, 3.3, 3.2, 2.8, 3.0, 2.8, 3.0,
+                      ^~~
+../src/kmeans.c:105:22: note: (near initialization for 'Y')
+../src/kmeans.c:105:27: warning: excess elements in array initializer
+                      3.2, 2.8, 2.8, 2.7, 3.3, 3.2, 2.8, 3.0, 2.8, 3.0,
+                           ^~~
+../src/kmeans.c:105:27: note: (near initialization for 'Y')
+../src/kmeans.c:105:32: warning: excess elements in array initializer
+                      3.2, 2.8, 2.8, 2.7, 3.3, 3.2, 2.8, 3.0, 2.8, 3.0,
+                                ^~~
+../src/kmeans.c:105:32: note: (near initialization for 'Y')
+../src/kmeans.c:105:37: warning: excess elements in array initializer
+                      3.2, 2.8, 2.8, 2.7, 3.3, 3.2, 2.8, 3.0, 2.8, 3.0,
+                                     ^~~
+../src/kmeans.c:105:37: note: (near initialization for 'Y')
+../src/kmeans.c:105:42: warning: excess elements in array initializer
+                      3.2, 2.8, 2.8, 2.7, 3.3, 3.2, 2.8, 3.0, 2.8, 3.0,
+                                          ^~~
+../src/kmeans.c:105:42: note: (near initialization for 'Y')
+../src/kmeans.c:105:47: warning: excess elements in array initializer
+                      3.2, 2.8, 2.8, 2.7, 3.3, 3.2, 2.8, 3.0, 2.8, 3.0,
+                                               ^~~
+../src/kmeans.c:105:47: note: (near initialization for 'Y')
+../src/kmeans.c:105:52: warning: excess elements in array initializer
+                      3.2, 2.8, 2.8, 2.7, 3.3, 3.2, 2.8, 3.0, 2.8, 3.0,
+                                                    ^~~
+../src/kmeans.c:105:52: note: (near initialization for 'Y')
+../src/kmeans.c:105:57: warning: excess elements in array initializer
+                      3.2, 2.8, 2.8, 2.7, 3.3, 3.2, 2.8, 3.0, 2.8, 3.0,
+                                                         ^~~
+../src/kmeans.c:105:57: note: (near initialization for 'Y')
+../src/kmeans.c:105:62: warning: excess elements in array initializer
+                      3.2, 2.8, 2.8, 2.7, 3.3, 3.2, 2.8, 3.0, 2.8, 3.0,
+                                                              ^~~
+../src/kmeans.c:105:62: note: (near initialization for 'Y')
+../src/kmeans.c:105:67: warning: excess elements in array initializer
+                      3.2, 2.8, 2.8, 2.7, 3.3, 3.2, 2.8, 3.0, 2.8, 3.0,
+                                                                   ^~~
+../src/kmeans.c:105:67: note: (near initialization for 'Y')
+../src/kmeans.c:106:22: warning: excess elements in array initializer
+                      2.8, 3.8, 2.8, 2.8, 2.6, 3.0, 3.4, 3.1, 3.0, 3.1,
+                      ^~~
+../src/kmeans.c:106:22: note: (near initialization for 'Y')
+../src/kmeans.c:106:27: warning: excess elements in array initializer
+                      2.8, 3.8, 2.8, 2.8, 2.6, 3.0, 3.4, 3.1, 3.0, 3.1,
+                           ^~~
+../src/kmeans.c:106:27: note: (near initialization for 'Y')
+../src/kmeans.c:106:32: warning: excess elements in array initializer
+                      2.8, 3.8, 2.8, 2.8, 2.6, 3.0, 3.4, 3.1, 3.0, 3.1,
+                                ^~~
+../src/kmeans.c:106:32: note: (near initialization for 'Y')
+../src/kmeans.c:106:37: warning: excess elements in array initializer
+                      2.8, 3.8, 2.8, 2.8, 2.6, 3.0, 3.4, 3.1, 3.0, 3.1,
+                                     ^~~
+../src/kmeans.c:106:37: note: (near initialization for 'Y')
+../src/kmeans.c:106:42: warning: excess elements in array initializer
+                      2.8, 3.8, 2.8, 2.8, 2.6, 3.0, 3.4, 3.1, 3.0, 3.1,
+                                          ^~~
+../src/kmeans.c:106:42: note: (near initialization for 'Y')
+../src/kmeans.c:106:47: warning: excess elements in array initializer
+                      2.8, 3.8, 2.8, 2.8, 2.6, 3.0, 3.4, 3.1, 3.0, 3.1,
+                                               ^~~
+../src/kmeans.c:106:47: note: (near initialization for 'Y')
+../src/kmeans.c:106:52: warning: excess elements in array initializer
+                      2.8, 3.8, 2.8, 2.8, 2.6, 3.0, 3.4, 3.1, 3.0, 3.1,
+                                                    ^~~
+../src/kmeans.c:106:52: note: (near initialization for 'Y')
+../src/kmeans.c:106:57: warning: excess elements in array initializer
+                      2.8, 3.8, 2.8, 2.8, 2.6, 3.0, 3.4, 3.1, 3.0, 3.1,
+                                                         ^~~
+../src/kmeans.c:106:57: note: (near initialization for 'Y')
+../src/kmeans.c:106:62: warning: excess elements in array initializer
+                      2.8, 3.8, 2.8, 2.8, 2.6, 3.0, 3.4, 3.1, 3.0, 3.1,
+                                                              ^~~
+../src/kmeans.c:106:62: note: (near initialization for 'Y')
+../src/kmeans.c:106:67: warning: excess elements in array initializer
+                      2.8, 3.8, 2.8, 2.8, 2.6, 3.0, 3.4, 3.1, 3.0, 3.1,
+                                                                   ^~~
+../src/kmeans.c:106:67: note: (near initialization for 'Y')
+../src/kmeans.c:107:22: warning: excess elements in array initializer
+                      3.1, 3.1, 2.7, 3.2, 3.3, 3.0, 2.5, 3.0, 3.4, 3.0
+                      ^~~
+../src/kmeans.c:107:22: note: (near initialization for 'Y')
+../src/kmeans.c:107:27: warning: excess elements in array initializer
+                      3.1, 3.1, 2.7, 3.2, 3.3, 3.0, 2.5, 3.0, 3.4, 3.0
+                           ^~~
+../src/kmeans.c:107:27: note: (near initialization for 'Y')
+../src/kmeans.c:107:32: warning: excess elements in array initializer
+                      3.1, 3.1, 2.7, 3.2, 3.3, 3.0, 2.5, 3.0, 3.4, 3.0
+                                ^~~
+../src/kmeans.c:107:32: note: (near initialization for 'Y')
+../src/kmeans.c:107:37: warning: excess elements in array initializer
+                      3.1, 3.1, 2.7, 3.2, 3.3, 3.0, 2.5, 3.0, 3.4, 3.0
+                                     ^~~
+../src/kmeans.c:107:37: note: (near initialization for 'Y')
+../src/kmeans.c:107:42: warning: excess elements in array initializer
+                      3.1, 3.1, 2.7, 3.2, 3.3, 3.0, 2.5, 3.0, 3.4, 3.0
+                                          ^~~
+../src/kmeans.c:107:42: note: (near initialization for 'Y')
+../src/kmeans.c:107:47: warning: excess elements in array initializer
+                      3.1, 3.1, 2.7, 3.2, 3.3, 3.0, 2.5, 3.0, 3.4, 3.0
+                                               ^~~
+../src/kmeans.c:107:47: note: (near initialization for 'Y')
+../src/kmeans.c:107:52: warning: excess elements in array initializer
+                      3.1, 3.1, 2.7, 3.2, 3.3, 3.0, 2.5, 3.0, 3.4, 3.0
+                                                    ^~~
+../src/kmeans.c:107:52: note: (near initialization for 'Y')
+../src/kmeans.c:107:57: warning: excess elements in array initializer
+                      3.1, 3.1, 2.7, 3.2, 3.3, 3.0, 2.5, 3.0, 3.4, 3.0
+                                                         ^~~
+../src/kmeans.c:107:57: note: (near initialization for 'Y')
+../src/kmeans.c:107:62: warning: excess elements in array initializer
+                      3.1, 3.1, 2.7, 3.2, 3.3, 3.0, 2.5, 3.0, 3.4, 3.0
+                                                              ^~~
+../src/kmeans.c:107:62: note: (near initialization for 'Y')
+../src/kmeans.c:107:67: warning: excess elements in array initializer
+                      3.1, 3.1, 2.7, 3.2, 3.3, 3.0, 2.5, 3.0, 3.4, 3.0
+                                                                   ^~~
+../src/kmeans.c:107:67: note: (near initialization for 'Y')
+'Finished building: ../src/kmeans.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test_kmeans_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: test_kmeans.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../test_kmeans_bsp/ps7_cortexa9_0/lib -o "test_kmeans.elf"  ./src/block_matrix.o ./src/busy_wait.o ./src/hello_zynq.o ./src/kmeans.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test_kmeans.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size test_kmeans.elf  |tee "test_kmeans.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  96612	   2640	  26176	 125428	  1e9f4	test_kmeans.elf
+'Finished building: test_kmeans.elf.size'
+' '
+
+17:33:17 Build Finished (took 1s.570ms)
+
