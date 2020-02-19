@@ -1,0 +1,13 @@
+kmeans_faddfsub_32ns_32ns_32_5_full_dsp_1
+kmeans_fdiv_32ns_32ns_32_16_1
+kmeans_sitofp_32ns_32_6_1
+kmeans_fptrunc_64ns_32_2_1
+kmeans_fpext_32ns_64_2_1
+kmeans_fcmp_32ns_32ns_1_2_1
+kmeans_dadd_64ns_64ns_64_5_full_dsp_1
+kmeans_mux_42_32_1_1
+kmeans_X
+kmeans_CONTROL_BUS_s_axi
+kmeans_INPUT_r_m_axi
+kmeans_OUTPUT_r_m_axi
+kmeans

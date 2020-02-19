@@ -1,0 +1,15 @@
+INFO: [HLS 200-10] Running '/mnt/side_windows/Vivado_linux/Vivado/2019.1/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'anis' on host 'port' (Linux_x86_64 version 5.3.0-28-generic) on Mon Feb 17 15:06:04 CET 2020
+INFO: [HLS 200-10] On os Ubuntu 18.04.4 LTS
+INFO: [HLS 200-10] In directory '/mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/csim/build'
+../../../../src/algo.c:14:6: warning: implicitly declaring library function 'memcpy' with type 'void *(void *, const void *, unsigned long)'
+        memcpy(&mat[i],&in_mat[i],N_ROWS*sizeof(float));
+        ^
+../../../../src/algo.c:14:6: note: please include the header <string.h> or explicitly provide a declaration for 'memcpy'
+1 warning generated.
+../../../../src/algo.c:14:6: warning: implicitly declaring library function 'memcpy' with type 'void *(void *, const void *, unsigned long)'
+        memcpy(&mat[i],&in_mat[i],N_ROWS*sizeof(float));
+        ^
+../../../../src/algo.c:14:6: note: please include the header <string.h> or explicitly provide a declaration for 'memcpy'
+1 warning generated.
+INFO: [APCC 202-1] APCC is done.

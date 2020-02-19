@@ -1,0 +1,12 @@
+pearson_fadd_32ns_32ns_32_5_full_dsp_1
+pearson_fdiv_32ns_32ns_32_16_1
+pearson_fmul_32ns_32ns_32_4_max_dsp_1
+pearson_faddfsub_32ns_32ns_32_5_full_dsp_1
+pearson_fsqrt_32ns_32ns_32_12_1
+pearson_fsub_32ns_32ns_32_5_full_dsp_1
+pearson_CONTROL_BUS_s_axi
+pearson_INPUT_r_m_axi
+moyenne
+moyenneXY
+ecartType
+pearson

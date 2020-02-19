@@ -1,0 +1,1537 @@
+
+
+================================================================
+== Vivado HLS Report for 'kmeans'
+================================================================
+* Date:           Tue Feb 11 20:29:37 2020
+
+* Version:        2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)
+* Project:        Kmeans_HLS
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z010i-clg225-1L
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     8.750|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +--------+--------+--------+--------+---------+
+    |     Latency     |     Interval    | Pipeline|
+    |   min  |   max  |   min  |   max  |   Type  |
+    +--------+--------+--------+--------+---------+
+    |  127427|  129027|  127427|  129027|   none  |
+    +--------+--------+--------+--------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------------------------------+--------+--------+---------------+-----------+-----------+------+----------+
+        |                                  |     Latency     |   Iteration   |  Initiation Interval  | Trip |          |
+        |             Loop Name            |   min  |   max  |    Latency    |  achieved |   target  | Count| Pipelined|
+        +----------------------------------+--------+--------+---------------+-----------+-----------+------+----------+
+        |- memcpy.X.in_X                   |     129|     129|              3|          1|          1|   128|    yes   |
+        |- memcpy.Y.in_Y                   |     129|     129|              3|          1|          1|   128|    yes   |
+        |- memcpy.X_prot.in_X_prot         |       5|       5|              2|          1|          1|     4|    yes   |
+        |- memcpy.Y_prot.in_Y_prot         |       5|       5|              2|          1|          1|     4|    yes   |
+        |- Loop 5                          |  126990|  128590| 12699 ~ 12859 |          -|          -|    10|    no    |
+        | + classify_by_data               |    9088|    9088|             71|          -|          -|   128|    no    |
+        |  ++ classify_by_center           |      68|      68|             17|          -|          -|     4|    no    |
+        | + centers_loop                   |    3608|    3768|   902 ~ 942   |          -|          -|     4|    no    |
+        |  ++ clustering                   |     896|     896|              7|          -|          -|   128|    no    |
+        |- memcpy.out_cluster.cluster.gep  |     129|     129|              3|          1|          1|   128|    yes   |
+        +----------------------------------+--------+--------+---------------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 3
+  * Pipeline-1: initiation interval (II) = 1, depth = 3
+  * Pipeline-2: initiation interval (II) = 1, depth = 2
+  * Pipeline-3: initiation interval (II) = 1, depth = 2
+  * Pipeline-4: initiation interval (II) = 1, depth = 3
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 120
+* Pipeline : 5
+  Pipeline-0 : II = 1, D = 3, States = { 9 10 11 }
+  Pipeline-1 : II = 1, D = 3, States = { 19 20 21 }
+  Pipeline-2 : II = 1, D = 2, States = { 29 30 }
+  Pipeline-3 : II = 1, D = 2, States = { 38 39 }
+  Pipeline-4 : II = 1, D = 3, States = { 113 114 115 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 12 10 
+10 --> 11 
+11 --> 9 
+12 --> 13 
+13 --> 14 
+14 --> 15 
+15 --> 16 
+16 --> 17 
+17 --> 18 
+18 --> 19 
+19 --> 22 20 
+20 --> 21 
+21 --> 19 
+22 --> 23 
+23 --> 24 
+24 --> 25 
+25 --> 26 
+26 --> 27 
+27 --> 28 
+28 --> 29 
+29 --> 30 
+30 --> 31 29 
+31 --> 32 
+32 --> 33 
+33 --> 34 
+34 --> 35 
+35 --> 36 
+36 --> 37 
+37 --> 38 
+38 --> 39 
+39 --> 40 38 
+40 --> 41 
+41 --> 42 113 
+42 --> 43 61 
+43 --> 44 
+44 --> 45 42 
+45 --> 46 
+46 --> 47 
+47 --> 48 
+48 --> 49 
+49 --> 50 
+50 --> 51 
+51 --> 52 
+52 --> 53 
+53 --> 54 
+54 --> 55 
+55 --> 56 
+56 --> 57 
+57 --> 58 
+58 --> 59 
+59 --> 60 
+60 --> 44 
+61 --> 62 41 
+62 --> 63 69 89 
+63 --> 64 
+64 --> 65 
+65 --> 66 
+66 --> 67 
+67 --> 68 
+68 --> 62 
+69 --> 70 
+70 --> 71 
+71 --> 72 
+72 --> 73 
+73 --> 74 
+74 --> 75 
+75 --> 76 
+76 --> 77 
+77 --> 78 
+78 --> 79 
+79 --> 80 
+80 --> 81 
+81 --> 82 
+82 --> 83 
+83 --> 84 
+84 --> 85 
+85 --> 86 
+86 --> 87 
+87 --> 88 
+88 --> 89 
+89 --> 90 
+90 --> 91 111 
+91 --> 92 
+92 --> 93 
+93 --> 94 
+94 --> 95 
+95 --> 96 
+96 --> 97 
+97 --> 98 
+98 --> 99 
+99 --> 100 
+100 --> 101 
+101 --> 102 
+102 --> 103 
+103 --> 104 
+104 --> 105 
+105 --> 106 
+106 --> 107 
+107 --> 108 
+108 --> 109 
+109 --> 110 
+110 --> 111 
+111 --> 112 
+112 --> 61 
+113 --> 116 114 
+114 --> 115 
+115 --> 113 
+116 --> 117 
+117 --> 118 
+118 --> 119 
+119 --> 120 
+120 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.00>
+ST_1 : Operation 121 [1/1] (1.00ns)   --->   "%out_cluster_read = call i32 @_ssdm_op_Read.s_axilite.i32(i32 %out_cluster)"   --->   Operation 121 'read' 'out_cluster_read' <Predicate = true> <Delay = 1.00> <Core = "s_axilite">   --->   Core 10 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 122 [1/1] (1.00ns)   --->   "%in_Y_read = call i32 @_ssdm_op_Read.s_axilite.i32(i32 %in_Y)"   --->   Operation 122 'read' 'in_Y_read' <Predicate = true> <Delay = 1.00> <Core = "s_axilite">   --->   Core 10 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 123 [1/1] (1.00ns)   --->   "%in_X_read = call i32 @_ssdm_op_Read.s_axilite.i32(i32 %in_X)"   --->   Operation 123 'read' 'in_X_read' <Predicate = true> <Delay = 1.00> <Core = "s_axilite">   --->   Core 10 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 124 [1/1] (1.00ns)   --->   "%in_Y_prot_read = call i32 @_ssdm_op_Read.s_axilite.i32(i32 %in_Y_prot)"   --->   Operation 124 'read' 'in_Y_prot_read' <Predicate = true> <Delay = 1.00> <Core = "s_axilite">   --->   Core 10 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 125 [1/1] (1.00ns)   --->   "%in_X_prot_read = call i32 @_ssdm_op_Read.s_axilite.i32(i32 %in_X_prot)"   --->   Operation 125 'read' 'in_X_prot_read' <Predicate = true> <Delay = 1.00> <Core = "s_axilite">   --->   Core 10 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 126 [1/1] (0.00ns)   --->   "%out_cluster9 = call i30 @_ssdm_op_PartSelect.i30.i32.i32.i32(i32 %out_cluster_read, i32 2, i32 31)"   --->   Operation 126 'partselect' 'out_cluster9' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 127 [1/1] (0.00ns)   --->   "%in_Y7 = call i30 @_ssdm_op_PartSelect.i30.i32.i32.i32(i32 %in_Y_read, i32 2, i32 31)"   --->   Operation 127 'partselect' 'in_Y7' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 128 [1/1] (0.00ns)   --->   "%in_X5 = call i30 @_ssdm_op_PartSelect.i30.i32.i32.i32(i32 %in_X_read, i32 2, i32 31)"   --->   Operation 128 'partselect' 'in_X5' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 129 [1/1] (0.00ns)   --->   "%in_Y_prot3 = call i30 @_ssdm_op_PartSelect.i30.i32.i32.i32(i32 %in_Y_prot_read, i32 2, i32 31)"   --->   Operation 129 'partselect' 'in_Y_prot3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 130 [1/1] (0.00ns)   --->   "%in_X_prot1 = call i30 @_ssdm_op_PartSelect.i30.i32.i32.i32(i32 %in_X_prot_read, i32 2, i32 31)"   --->   Operation 130 'partselect' 'in_X_prot1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 131 [1/1] (0.00ns)   --->   "%X = alloca [128 x float], align 16" [src/kmeans.c:18]   --->   Operation 131 'alloca' 'X' <Predicate = true> <Delay = 0.00> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 128> <RAM>
+ST_1 : Operation 132 [1/1] (0.00ns)   --->   "%Y = alloca [128 x float], align 16" [src/kmeans.c:19]   --->   Operation 132 'alloca' 'Y' <Predicate = true> <Delay = 0.00> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 128> <RAM>
+ST_1 : Operation 133 [1/1] (0.00ns)   --->   "%cluster = alloca [128 x i32], align 16" [src/kmeans.c:22]   --->   Operation 133 'alloca' 'cluster' <Predicate = true> <Delay = 0.00> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 128> <RAM>
+
+State 2 <SV = 1> <Delay = 8.75>
+ST_2 : Operation 134 [1/1] (0.00ns)   --->   "%empty_6 = zext i30 %in_X5 to i64"   --->   Operation 134 'zext' 'empty_6' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 135 [1/1] (0.00ns)   --->   "%INPUT_addr_1 = getelementptr float* %INPUT_r, i64 %empty_6"   --->   Operation 135 'getelementptr' 'INPUT_addr_1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 136 [7/7] (8.75ns)   --->   "%INPUT_addr_1_rd_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %INPUT_addr_1, i32 128)" [src/kmeans.c:25]   --->   Operation 136 'readreq' 'INPUT_addr_1_rd_req' <Predicate = true> <Delay = 8.75> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 3 <SV = 2> <Delay = 8.75>
+ST_3 : Operation 137 [6/7] (8.75ns)   --->   "%INPUT_addr_1_rd_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %INPUT_addr_1, i32 128)" [src/kmeans.c:25]   --->   Operation 137 'readreq' 'INPUT_addr_1_rd_req' <Predicate = true> <Delay = 8.75> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 4 <SV = 3> <Delay = 8.75>
+ST_4 : Operation 138 [5/7] (8.75ns)   --->   "%INPUT_addr_1_rd_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %INPUT_addr_1, i32 128)" [src/kmeans.c:25]   --->   Operation 138 'readreq' 'INPUT_addr_1_rd_req' <Predicate = true> <Delay = 8.75> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 5 <SV = 4> <Delay = 8.75>
+ST_5 : Operation 139 [4/7] (8.75ns)   --->   "%INPUT_addr_1_rd_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %INPUT_addr_1, i32 128)" [src/kmeans.c:25]   --->   Operation 139 'readreq' 'INPUT_addr_1_rd_req' <Predicate = true> <Delay = 8.75> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 6 <SV = 5> <Delay = 8.75>
+ST_6 : Operation 140 [3/7] (8.75ns)   --->   "%INPUT_addr_1_rd_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %INPUT_addr_1, i32 128)" [src/kmeans.c:25]   --->   Operation 140 'readreq' 'INPUT_addr_1_rd_req' <Predicate = true> <Delay = 8.75> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 7 <SV = 6> <Delay = 8.75>
+ST_7 : Operation 141 [2/7] (8.75ns)   --->   "%INPUT_addr_1_rd_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %INPUT_addr_1, i32 128)" [src/kmeans.c:25]   --->   Operation 141 'readreq' 'INPUT_addr_1_rd_req' <Predicate = true> <Delay = 8.75> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 8 <SV = 7> <Delay = 8.75>
+ST_8 : Operation 142 [1/1] (0.00ns)   --->   "%empty = zext i30 %out_cluster9 to i64"   --->   Operation 142 'zext' 'empty' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 143 [1/1] (0.00ns)   --->   "%OUTPUT_addr = getelementptr i32* %OUTPUT_r, i64 %empty"   --->   Operation 143 'getelementptr' 'OUTPUT_addr' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 144 [1/1] (0.00ns)   --->   "%empty_5 = zext i30 %in_Y7 to i64"   --->   Operation 144 'zext' 'empty_5' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 145 [1/1] (0.00ns)   --->   "%INPUT_addr = getelementptr float* %INPUT_r, i64 %empty_5"   --->   Operation 145 'getelementptr' 'INPUT_addr' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 146 [1/1] (0.00ns)   --->   "%empty_7 = zext i30 %in_Y_prot3 to i64"   --->   Operation 146 'zext' 'empty_7' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 147 [1/1] (0.00ns)   --->   "%INPUT_addr_2 = getelementptr float* %INPUT_r, i64 %empty_7"   --->   Operation 147 'getelementptr' 'INPUT_addr_2' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 148 [1/1] (0.00ns)   --->   "%empty_8 = zext i30 %in_X_prot1 to i64"   --->   Operation 148 'zext' 'empty_8' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 149 [1/1] (0.00ns)   --->   "%INPUT_addr_3 = getelementptr float* %INPUT_r, i64 %empty_8"   --->   Operation 149 'getelementptr' 'INPUT_addr_3' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 150 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %OUTPUT_r), !map !26"   --->   Operation 150 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 151 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %INPUT_r), !map !32"   --->   Operation 151 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 152 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([7 x i8]* @kmeans_str) nounwind"   --->   Operation 152 'spectopmodule' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 153 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32 0, [10 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [12 x i8]* @p_str2, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [src/kmeans.c:10]   --->   Operation 153 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 154 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* %INPUT_r, [6 x i8]* @p_str3, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [6 x i8]* @p_str4, [6 x i8]* @p_str5, [1 x i8]* @p_str1, i32 16, i32 16, i32 16, i32 16, [1 x i8]* @p_str1, [1 x i8]* @p_str1)" [src/kmeans.c:11]   --->   Operation 154 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 155 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32 %in_X_prot, [10 x i8]* @mode, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @bundle, [6 x i8]* @p_str5, [1 x i8]* @p_str1, i32 16, i32 16, i32 16, i32 16, [1 x i8]* @p_str1, [1 x i8]* @p_str1)" [src/kmeans.c:11]   --->   Operation 155 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 156 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32 %in_Y_prot, [10 x i8]* @mode3, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @bundle4, [6 x i8]* @p_str5, [1 x i8]* @p_str1, i32 16, i32 16, i32 16, i32 16, [1 x i8]* @p_str1, [1 x i8]* @p_str1)" [src/kmeans.c:12]   --->   Operation 156 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 157 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32 %in_X, [10 x i8]* @mode5, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @bundle6, [6 x i8]* @p_str5, [1 x i8]* @p_str1, i32 16, i32 16, i32 16, i32 16, [1 x i8]* @p_str1, [1 x i8]* @p_str1)" [src/kmeans.c:13]   --->   Operation 157 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 158 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32 %in_Y, [10 x i8]* @mode7, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @bundle8, [6 x i8]* @p_str5, [1 x i8]* @p_str1, i32 16, i32 16, i32 16, i32 16, [1 x i8]* @p_str1, [1 x i8]* @p_str1)" [src/kmeans.c:14]   --->   Operation 158 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 159 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %OUTPUT_r, [6 x i8]* @p_str3, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [7 x i8]* @p_str6, [6 x i8]* @p_str5, [1 x i8]* @p_str1, i32 16, i32 16, i32 16, i32 16, [1 x i8]* @p_str1, [1 x i8]* @p_str1)" [src/kmeans.c:15]   --->   Operation 159 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 160 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32 %out_cluster, [10 x i8]* @mode9, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @bundle10, [6 x i8]* @p_str5, [1 x i8]* @p_str1, i32 16, i32 16, i32 16, i32 16, [1 x i8]* @p_str1, [1 x i8]* @p_str1)" [src/kmeans.c:15]   --->   Operation 160 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 161 [1/7] (8.75ns)   --->   "%INPUT_addr_1_rd_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %INPUT_addr_1, i32 128)" [src/kmeans.c:25]   --->   Operation 161 'readreq' 'INPUT_addr_1_rd_req' <Predicate = true> <Delay = 8.75> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_8 : Operation 162 [1/1] (1.76ns)   --->   "br label %burst.rd.header" [src/kmeans.c:25]   --->   Operation 162 'br' <Predicate = true> <Delay = 1.76>
+
+State 9 <SV = 8> <Delay = 1.91>
+ST_9 : Operation 163 [1/1] (0.00ns)   --->   "%phi_ln25 = phi i8 [ 0, %0 ], [ %add_ln25, %burstread.region ]" [src/kmeans.c:25]   --->   Operation 163 'phi' 'phi_ln25' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 164 [1/1] (1.55ns)   --->   "%icmp_ln25 = icmp eq i8 %phi_ln25, -128" [src/kmeans.c:25]   --->   Operation 164 'icmp' 'icmp_ln25' <Predicate = true> <Delay = 1.55> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.95> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_9 : Operation 165 [1/1] (0.00ns)   --->   "%empty_9 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 128, i64 128, i64 128) nounwind"   --->   Operation 165 'speclooptripcount' 'empty_9' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 166 [1/1] (1.91ns)   --->   "%add_ln25 = add i8 %phi_ln25, 1" [src/kmeans.c:25]   --->   Operation 166 'add' 'add_ln25' <Predicate = true> <Delay = 1.91> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_9 : Operation 167 [1/1] (0.00ns)   --->   "br i1 %icmp_ln25, label %burst.rd.header7.preheader, label %burstread.region" [src/kmeans.c:25]   --->   Operation 167 'br' <Predicate = true> <Delay = 0.00>
+
+State 10 <SV = 9> <Delay = 8.75>
+ST_10 : Operation 168 [1/1] (8.75ns)   --->   "%INPUT_addr_1_read = call float @_ssdm_op_Read.m_axi.floatP(float* %INPUT_addr_1)" [src/kmeans.c:25]   --->   Operation 168 'read' 'INPUT_addr_1_read' <Predicate = (!icmp_ln25)> <Delay = 8.75> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 11 <SV = 10> <Delay = 3.25>
+ST_11 : Operation 169 [1/1] (0.00ns)   --->   "%burstread_rbegin = call i32 (...)* @_ssdm_op_SpecRegionBegin([17 x i8]* @burstread_OC_region_s) nounwind" [src/kmeans.c:25]   --->   Operation 169 'specregionbegin' 'burstread_rbegin' <Predicate = (!icmp_ln25)> <Delay = 0.00>
+ST_11 : Operation 170 [1/1] (0.00ns)   --->   "%empty_10 = call i32 (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, i32 0, [1 x i8]* @p_str11) nounwind" [src/kmeans.c:25]   --->   Operation 170 'specpipeline' 'empty_10' <Predicate = (!icmp_ln25)> <Delay = 0.00>
+ST_11 : Operation 171 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([14 x i8]* @memcpy_OC_X_OC_in_X_s)" [src/kmeans.c:25]   --->   Operation 171 'specloopname' <Predicate = (!icmp_ln25)> <Delay = 0.00>
+ST_11 : Operation 172 [1/1] (0.00ns)   --->   "%zext_ln25 = zext i8 %phi_ln25 to i64" [src/kmeans.c:25]   --->   Operation 172 'zext' 'zext_ln25' <Predicate = (!icmp_ln25)> <Delay = 0.00>
+ST_11 : Operation 173 [1/1] (0.00ns)   --->   "%X_addr = getelementptr [128 x float]* %X, i64 0, i64 %zext_ln25" [src/kmeans.c:25]   --->   Operation 173 'getelementptr' 'X_addr' <Predicate = (!icmp_ln25)> <Delay = 0.00>
+ST_11 : Operation 174 [1/1] (3.25ns)   --->   "store float %INPUT_addr_1_read, float* %X_addr, align 4" [src/kmeans.c:25]   --->   Operation 174 'store' <Predicate = (!icmp_ln25)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 128> <RAM>
+ST_11 : Operation 175 [1/1] (0.00ns)   --->   "%burstread_rend = call i32 (...)* @_ssdm_op_SpecRegionEnd([17 x i8]* @burstread_OC_region_s, i32 %burstread_rbegin) nounwind" [src/kmeans.c:25]   --->   Operation 175 'specregionend' 'burstread_rend' <Predicate = (!icmp_ln25)> <Delay = 0.00>
+ST_11 : Operation 176 [1/1] (0.00ns)   --->   "br label %burst.rd.header" [src/kmeans.c:25]   --->   Operation 176 'br' <Predicate = (!icmp_ln25)> <Delay = 0.00>
+
+State 12 <SV = 9> <Delay = 8.75>
+ST_12 : Operation 177 [7/7] (8.75ns)   --->   "%INPUT_addr_rd_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %INPUT_addr, i32 128)" [src/kmeans.c:26]   --->   Operation 177 'readreq' 'INPUT_addr_rd_req' <Predicate = true> <Delay = 8.75> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 13 <SV = 10> <Delay = 8.75>
+ST_13 : Operation 178 [6/7] (8.75ns)   --->   "%INPUT_addr_rd_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %INPUT_addr, i32 128)" [src/kmeans.c:26]   --->   Operation 178 'readreq' 'INPUT_addr_rd_req' <Predicate = true> <Delay = 8.75> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 14 <SV = 11> <Delay = 8.75>
+ST_14 : Operation 179 [5/7] (8.75ns)   --->   "%INPUT_addr_rd_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %INPUT_addr, i32 128)" [src/kmeans.c:26]   --->   Operation 179 'readreq' 'INPUT_addr_rd_req' <Predicate = true> <Delay = 8.75> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 15 <SV = 12> <Delay = 8.75>
+ST_15 : Operation 180 [4/7] (8.75ns)   --->   "%INPUT_addr_rd_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %INPUT_addr, i32 128)" [src/kmeans.c:26]   --->   Operation 180 'readreq' 'INPUT_addr_rd_req' <Predicate = true> <Delay = 8.75> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 16 <SV = 13> <Delay = 8.75>
+ST_16 : Operation 181 [3/7] (8.75ns)   --->   "%INPUT_addr_rd_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %INPUT_addr, i32 128)" [src/kmeans.c:26]   --->   Operation 181 'readreq' 'INPUT_addr_rd_req' <Predicate = true> <Delay = 8.75> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 17 <SV = 14> <Delay = 8.75>
+ST_17 : Operation 182 [2/7] (8.75ns)   --->   "%INPUT_addr_rd_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %INPUT_addr, i32 128)" [src/kmeans.c:26]   --->   Operation 182 'readreq' 'INPUT_addr_rd_req' <Predicate = true> <Delay = 8.75> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 18 <SV = 15> <Delay = 8.75>
+ST_18 : Operation 183 [1/7] (8.75ns)   --->   "%INPUT_addr_rd_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %INPUT_addr, i32 128)" [src/kmeans.c:26]   --->   Operation 183 'readreq' 'INPUT_addr_rd_req' <Predicate = true> <Delay = 8.75> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_18 : Operation 184 [1/1] (1.76ns)   --->   "br label %burst.rd.header7" [src/kmeans.c:26]   --->   Operation 184 'br' <Predicate = true> <Delay = 1.76>
+
+State 19 <SV = 16> <Delay = 1.91>
+ST_19 : Operation 185 [1/1] (0.00ns)   --->   "%phi_ln26 = phi i8 [ %add_ln26, %burstread.region1 ], [ 0, %burst.rd.header7.preheader ]" [src/kmeans.c:26]   --->   Operation 185 'phi' 'phi_ln26' <Predicate = true> <Delay = 0.00>
+ST_19 : Operation 186 [1/1] (1.55ns)   --->   "%icmp_ln26 = icmp eq i8 %phi_ln26, -128" [src/kmeans.c:26]   --->   Operation 186 'icmp' 'icmp_ln26' <Predicate = true> <Delay = 1.55> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.95> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_19 : Operation 187 [1/1] (0.00ns)   --->   "%empty_11 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 128, i64 128, i64 128) nounwind"   --->   Operation 187 'speclooptripcount' 'empty_11' <Predicate = true> <Delay = 0.00>
+ST_19 : Operation 188 [1/1] (1.91ns)   --->   "%add_ln26 = add i8 %phi_ln26, 1" [src/kmeans.c:26]   --->   Operation 188 'add' 'add_ln26' <Predicate = true> <Delay = 1.91> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_19 : Operation 189 [1/1] (0.00ns)   --->   "br i1 %icmp_ln26, label %burst.rd.header19.preheader, label %burstread.region1" [src/kmeans.c:26]   --->   Operation 189 'br' <Predicate = true> <Delay = 0.00>
+
+State 20 <SV = 17> <Delay = 8.75>
+ST_20 : Operation 190 [1/1] (8.75ns)   --->   "%INPUT_addr_read = call float @_ssdm_op_Read.m_axi.floatP(float* %INPUT_addr)" [src/kmeans.c:26]   --->   Operation 190 'read' 'INPUT_addr_read' <Predicate = (!icmp_ln26)> <Delay = 8.75> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 21 <SV = 18> <Delay = 3.25>
+ST_21 : Operation 191 [1/1] (0.00ns)   --->   "%burstread_rbegin1 = call i32 (...)* @_ssdm_op_SpecRegionBegin([17 x i8]* @burstread_OC_region_s) nounwind" [src/kmeans.c:26]   --->   Operation 191 'specregionbegin' 'burstread_rbegin1' <Predicate = (!icmp_ln26)> <Delay = 0.00>
+ST_21 : Operation 192 [1/1] (0.00ns)   --->   "%empty_12 = call i32 (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, i32 0, [1 x i8]* @p_str12) nounwind" [src/kmeans.c:26]   --->   Operation 192 'specpipeline' 'empty_12' <Predicate = (!icmp_ln26)> <Delay = 0.00>
+ST_21 : Operation 193 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([14 x i8]* @memcpy_OC_Y_OC_in_Y_s)" [src/kmeans.c:26]   --->   Operation 193 'specloopname' <Predicate = (!icmp_ln26)> <Delay = 0.00>
+ST_21 : Operation 194 [1/1] (0.00ns)   --->   "%zext_ln26 = zext i8 %phi_ln26 to i64" [src/kmeans.c:26]   --->   Operation 194 'zext' 'zext_ln26' <Predicate = (!icmp_ln26)> <Delay = 0.00>
+ST_21 : Operation 195 [1/1] (0.00ns)   --->   "%Y_addr = getelementptr [128 x float]* %Y, i64 0, i64 %zext_ln26" [src/kmeans.c:26]   --->   Operation 195 'getelementptr' 'Y_addr' <Predicate = (!icmp_ln26)> <Delay = 0.00>
+ST_21 : Operation 196 [1/1] (3.25ns)   --->   "store float %INPUT_addr_read, float* %Y_addr, align 4" [src/kmeans.c:26]   --->   Operation 196 'store' <Predicate = (!icmp_ln26)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 128> <RAM>
+ST_21 : Operation 197 [1/1] (0.00ns)   --->   "%burstread_rend16 = call i32 (...)* @_ssdm_op_SpecRegionEnd([17 x i8]* @burstread_OC_region_s, i32 %burstread_rbegin1) nounwind" [src/kmeans.c:26]   --->   Operation 197 'specregionend' 'burstread_rend16' <Predicate = (!icmp_ln26)> <Delay = 0.00>
+ST_21 : Operation 198 [1/1] (0.00ns)   --->   "br label %burst.rd.header7" [src/kmeans.c:26]   --->   Operation 198 'br' <Predicate = (!icmp_ln26)> <Delay = 0.00>
+
+State 22 <SV = 17> <Delay = 8.75>
+ST_22 : Operation 199 [1/1] (0.00ns)   --->   "%X_prot_3_1 = alloca float"   --->   Operation 199 'alloca' 'X_prot_3_1' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 200 [1/1] (0.00ns)   --->   "%X_prot_3_3 = alloca float"   --->   Operation 200 'alloca' 'X_prot_3_3' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 201 [1/1] (0.00ns)   --->   "%X_prot_3_4 = alloca float"   --->   Operation 201 'alloca' 'X_prot_3_4' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 202 [1/1] (0.00ns)   --->   "%X_prot_3_5 = alloca float"   --->   Operation 202 'alloca' 'X_prot_3_5' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 203 [7/7] (8.75ns)   --->   "%INPUT_addr_3_rd_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %INPUT_addr_3, i32 4)" [src/kmeans.c:27]   --->   Operation 203 'readreq' 'INPUT_addr_3_rd_req' <Predicate = true> <Delay = 8.75> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 23 <SV = 18> <Delay = 8.75>
+ST_23 : Operation 204 [6/7] (8.75ns)   --->   "%INPUT_addr_3_rd_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %INPUT_addr_3, i32 4)" [src/kmeans.c:27]   --->   Operation 204 'readreq' 'INPUT_addr_3_rd_req' <Predicate = true> <Delay = 8.75> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 24 <SV = 19> <Delay = 8.75>
+ST_24 : Operation 205 [5/7] (8.75ns)   --->   "%INPUT_addr_3_rd_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %INPUT_addr_3, i32 4)" [src/kmeans.c:27]   --->   Operation 205 'readreq' 'INPUT_addr_3_rd_req' <Predicate = true> <Delay = 8.75> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 25 <SV = 20> <Delay = 8.75>
+ST_25 : Operation 206 [4/7] (8.75ns)   --->   "%INPUT_addr_3_rd_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %INPUT_addr_3, i32 4)" [src/kmeans.c:27]   --->   Operation 206 'readreq' 'INPUT_addr_3_rd_req' <Predicate = true> <Delay = 8.75> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 26 <SV = 21> <Delay = 8.75>
+ST_26 : Operation 207 [3/7] (8.75ns)   --->   "%INPUT_addr_3_rd_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %INPUT_addr_3, i32 4)" [src/kmeans.c:27]   --->   Operation 207 'readreq' 'INPUT_addr_3_rd_req' <Predicate = true> <Delay = 8.75> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 27 <SV = 22> <Delay = 8.75>
+ST_27 : Operation 208 [2/7] (8.75ns)   --->   "%INPUT_addr_3_rd_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %INPUT_addr_3, i32 4)" [src/kmeans.c:27]   --->   Operation 208 'readreq' 'INPUT_addr_3_rd_req' <Predicate = true> <Delay = 8.75> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 28 <SV = 23> <Delay = 8.75>
+ST_28 : Operation 209 [1/7] (8.75ns)   --->   "%INPUT_addr_3_rd_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %INPUT_addr_3, i32 4)" [src/kmeans.c:27]   --->   Operation 209 'readreq' 'INPUT_addr_3_rd_req' <Predicate = true> <Delay = 8.75> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_28 : Operation 210 [1/1] (1.76ns)   --->   "br label %burst.rd.header19" [src/kmeans.c:27]   --->   Operation 210 'br' <Predicate = true> <Delay = 1.76>
+
+State 29 <SV = 24> <Delay = 1.65>
+ST_29 : Operation 211 [1/1] (0.00ns)   --->   "%phi_ln27 = phi i3 [ %add_ln27, %burstread.region_end ], [ 0, %burst.rd.header19.preheader ]" [src/kmeans.c:27]   --->   Operation 211 'phi' 'phi_ln27' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 212 [1/1] (1.13ns)   --->   "%icmp_ln27 = icmp eq i3 %phi_ln27, -4" [src/kmeans.c:27]   --->   Operation 212 'icmp' 'icmp_ln27' <Predicate = true> <Delay = 1.13> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.95> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_29 : Operation 213 [1/1] (1.65ns)   --->   "%add_ln27 = add i3 %phi_ln27, 1" [src/kmeans.c:27]   --->   Operation 213 'add' 'add_ln27' <Predicate = true> <Delay = 1.65> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_29 : Operation 214 [1/1] (0.00ns)   --->   "%burstread_rbegin2 = call i32 (...)* @_ssdm_op_SpecRegionBegin([17 x i8]* @burstread_OC_region_s) nounwind" [src/kmeans.c:27]   --->   Operation 214 'specregionbegin' 'burstread_rbegin2' <Predicate = (!icmp_ln27)> <Delay = 0.00>
+ST_29 : Operation 215 [1/1] (0.00ns)   --->   "%trunc_ln27 = trunc i3 %phi_ln27 to i2" [src/kmeans.c:27]   --->   Operation 215 'trunc' 'trunc_ln27' <Predicate = (!icmp_ln27)> <Delay = 0.00>
+ST_29 : Operation 216 [1/1] (1.30ns)   --->   "switch i2 %trunc_ln27, label %branch7 [
+    i2 0, label %burstread.region_begin.burstread.region_end_crit_edge
+    i2 1, label %branch5
+    i2 -2, label %branch6
+  ]" [src/kmeans.c:27]   --->   Operation 216 'switch' <Predicate = (!icmp_ln27)> <Delay = 1.30>
+ST_29 : Operation 217 [1/1] (0.00ns)   --->   "%burstread_rend28 = call i32 (...)* @_ssdm_op_SpecRegionEnd([17 x i8]* @burstread_OC_region_s, i32 %burstread_rbegin2) nounwind" [src/kmeans.c:27]   --->   Operation 217 'specregionend' 'burstread_rend28' <Predicate = (!icmp_ln27)> <Delay = 0.00>
+ST_29 : Operation 218 [1/1] (0.00ns)   --->   "br label %burst.rd.header19" [src/kmeans.c:27]   --->   Operation 218 'br' <Predicate = (!icmp_ln27)> <Delay = 0.00>
+
+State 30 <SV = 25> <Delay = 8.75>
+ST_30 : Operation 219 [1/1] (0.00ns)   --->   "%X_prot_3_1_load = load float* %X_prot_3_1"   --->   Operation 219 'load' 'X_prot_3_1_load' <Predicate = true> <Delay = 0.00>
+ST_30 : Operation 220 [1/1] (0.00ns)   --->   "%X_prot_3_3_load = load float* %X_prot_3_3"   --->   Operation 220 'load' 'X_prot_3_3_load' <Predicate = true> <Delay = 0.00>
+ST_30 : Operation 221 [1/1] (0.00ns)   --->   "%X_prot_3_4_load = load float* %X_prot_3_4"   --->   Operation 221 'load' 'X_prot_3_4_load' <Predicate = true> <Delay = 0.00>
+ST_30 : Operation 222 [1/1] (0.00ns)   --->   "%X_prot_3_5_load = load float* %X_prot_3_5"   --->   Operation 222 'load' 'X_prot_3_5_load' <Predicate = true> <Delay = 0.00>
+ST_30 : Operation 223 [1/1] (0.00ns)   --->   "%empty_13 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 4, i64 4, i64 4) nounwind"   --->   Operation 223 'speclooptripcount' 'empty_13' <Predicate = true> <Delay = 0.00>
+ST_30 : Operation 224 [1/1] (0.00ns)   --->   "br i1 %icmp_ln27, label %burst.rd.header31.preheader, label %burstread.region_begin" [src/kmeans.c:27]   --->   Operation 224 'br' <Predicate = true> <Delay = 0.00>
+ST_30 : Operation 225 [1/1] (0.00ns)   --->   "%empty_14 = call i32 (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, i32 0, [1 x i8]* @p_str13) nounwind" [src/kmeans.c:27]   --->   Operation 225 'specpipeline' 'empty_14' <Predicate = (!icmp_ln27)> <Delay = 0.00>
+ST_30 : Operation 226 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([24 x i8]* @memcpy_OC_X_prot_OC_s)" [src/kmeans.c:27]   --->   Operation 226 'specloopname' <Predicate = (!icmp_ln27)> <Delay = 0.00>
+ST_30 : Operation 227 [1/1] (8.75ns)   --->   "%X_prot_0 = call float @_ssdm_op_Read.m_axi.floatP(float* %INPUT_addr_3)" [src/kmeans.c:27]   --->   Operation 227 'read' 'X_prot_0' <Predicate = (!icmp_ln27)> <Delay = 8.75> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_30 : Operation 228 [1/1] (0.00ns)   --->   "store float %X_prot_0, float* %X_prot_3_4" [src/kmeans.c:27]   --->   Operation 228 'store' <Predicate = (!icmp_ln27 & trunc_ln27 == 2)> <Delay = 0.00>
+ST_30 : Operation 229 [1/1] (0.00ns)   --->   "br label %burstread.region_end" [src/kmeans.c:27]   --->   Operation 229 'br' <Predicate = (!icmp_ln27 & trunc_ln27 == 2)> <Delay = 0.00>
+ST_30 : Operation 230 [1/1] (0.00ns)   --->   "store float %X_prot_0, float* %X_prot_3_3" [src/kmeans.c:27]   --->   Operation 230 'store' <Predicate = (!icmp_ln27 & trunc_ln27 == 1)> <Delay = 0.00>
+ST_30 : Operation 231 [1/1] (0.00ns)   --->   "br label %burstread.region_end" [src/kmeans.c:27]   --->   Operation 231 'br' <Predicate = (!icmp_ln27 & trunc_ln27 == 1)> <Delay = 0.00>
+ST_30 : Operation 232 [1/1] (0.00ns)   --->   "store float %X_prot_0, float* %X_prot_3_1" [src/kmeans.c:27]   --->   Operation 232 'store' <Predicate = (!icmp_ln27 & trunc_ln27 == 0)> <Delay = 0.00>
+ST_30 : Operation 233 [1/1] (0.00ns)   --->   "br label %burstread.region_end" [src/kmeans.c:27]   --->   Operation 233 'br' <Predicate = (!icmp_ln27 & trunc_ln27 == 0)> <Delay = 0.00>
+ST_30 : Operation 234 [1/1] (0.00ns)   --->   "store float %X_prot_0, float* %X_prot_3_5" [src/kmeans.c:27]   --->   Operation 234 'store' <Predicate = (!icmp_ln27 & trunc_ln27 == 3)> <Delay = 0.00>
+ST_30 : Operation 235 [1/1] (0.00ns)   --->   "br label %burstread.region_end" [src/kmeans.c:27]   --->   Operation 235 'br' <Predicate = (!icmp_ln27 & trunc_ln27 == 3)> <Delay = 0.00>
+
+State 31 <SV = 26> <Delay = 8.75>
+ST_31 : Operation 236 [1/1] (0.00ns)   --->   "%Y_prot_3_1 = alloca float"   --->   Operation 236 'alloca' 'Y_prot_3_1' <Predicate = true> <Delay = 0.00>
+ST_31 : Operation 237 [1/1] (0.00ns)   --->   "%Y_prot_3_3 = alloca float"   --->   Operation 237 'alloca' 'Y_prot_3_3' <Predicate = true> <Delay = 0.00>
+ST_31 : Operation 238 [1/1] (0.00ns)   --->   "%Y_prot_3_4 = alloca float"   --->   Operation 238 'alloca' 'Y_prot_3_4' <Predicate = true> <Delay = 0.00>
+ST_31 : Operation 239 [1/1] (0.00ns)   --->   "%Y_prot_3_5 = alloca float"   --->   Operation 239 'alloca' 'Y_prot_3_5' <Predicate = true> <Delay = 0.00>
+ST_31 : Operation 240 [7/7] (8.75ns)   --->   "%INPUT_addr_2_rd_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %INPUT_addr_2, i32 4)" [src/kmeans.c:28]   --->   Operation 240 'readreq' 'INPUT_addr_2_rd_req' <Predicate = true> <Delay = 8.75> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 32 <SV = 27> <Delay = 8.75>
+ST_32 : Operation 241 [6/7] (8.75ns)   --->   "%INPUT_addr_2_rd_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %INPUT_addr_2, i32 4)" [src/kmeans.c:28]   --->   Operation 241 'readreq' 'INPUT_addr_2_rd_req' <Predicate = true> <Delay = 8.75> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 33 <SV = 28> <Delay = 8.75>
+ST_33 : Operation 242 [5/7] (8.75ns)   --->   "%INPUT_addr_2_rd_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %INPUT_addr_2, i32 4)" [src/kmeans.c:28]   --->   Operation 242 'readreq' 'INPUT_addr_2_rd_req' <Predicate = true> <Delay = 8.75> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 34 <SV = 29> <Delay = 8.75>
+ST_34 : Operation 243 [4/7] (8.75ns)   --->   "%INPUT_addr_2_rd_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %INPUT_addr_2, i32 4)" [src/kmeans.c:28]   --->   Operation 243 'readreq' 'INPUT_addr_2_rd_req' <Predicate = true> <Delay = 8.75> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 35 <SV = 30> <Delay = 8.75>
+ST_35 : Operation 244 [3/7] (8.75ns)   --->   "%INPUT_addr_2_rd_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %INPUT_addr_2, i32 4)" [src/kmeans.c:28]   --->   Operation 244 'readreq' 'INPUT_addr_2_rd_req' <Predicate = true> <Delay = 8.75> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 36 <SV = 31> <Delay = 8.75>
+ST_36 : Operation 245 [2/7] (8.75ns)   --->   "%INPUT_addr_2_rd_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %INPUT_addr_2, i32 4)" [src/kmeans.c:28]   --->   Operation 245 'readreq' 'INPUT_addr_2_rd_req' <Predicate = true> <Delay = 8.75> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 37 <SV = 32> <Delay = 8.75>
+ST_37 : Operation 246 [1/7] (8.75ns)   --->   "%INPUT_addr_2_rd_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %INPUT_addr_2, i32 4)" [src/kmeans.c:28]   --->   Operation 246 'readreq' 'INPUT_addr_2_rd_req' <Predicate = true> <Delay = 8.75> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_37 : Operation 247 [1/1] (1.76ns)   --->   "br label %burst.rd.header31" [src/kmeans.c:28]   --->   Operation 247 'br' <Predicate = true> <Delay = 1.76>
+
+State 38 <SV = 33> <Delay = 1.65>
+ST_38 : Operation 248 [1/1] (0.00ns)   --->   "%phi_ln28 = phi i3 [ %add_ln28, %burstread.region_end1 ], [ 0, %burst.rd.header31.preheader ]" [src/kmeans.c:28]   --->   Operation 248 'phi' 'phi_ln28' <Predicate = true> <Delay = 0.00>
+ST_38 : Operation 249 [1/1] (1.13ns)   --->   "%icmp_ln28 = icmp eq i3 %phi_ln28, -4" [src/kmeans.c:28]   --->   Operation 249 'icmp' 'icmp_ln28' <Predicate = true> <Delay = 1.13> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.95> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_38 : Operation 250 [1/1] (1.65ns)   --->   "%add_ln28 = add i3 %phi_ln28, 1" [src/kmeans.c:28]   --->   Operation 250 'add' 'add_ln28' <Predicate = true> <Delay = 1.65> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_38 : Operation 251 [1/1] (0.00ns)   --->   "%burstread_rbegin3 = call i32 (...)* @_ssdm_op_SpecRegionBegin([17 x i8]* @burstread_OC_region_s) nounwind" [src/kmeans.c:28]   --->   Operation 251 'specregionbegin' 'burstread_rbegin3' <Predicate = (!icmp_ln28)> <Delay = 0.00>
+ST_38 : Operation 252 [1/1] (0.00ns)   --->   "%trunc_ln28 = trunc i3 %phi_ln28 to i2" [src/kmeans.c:28]   --->   Operation 252 'trunc' 'trunc_ln28' <Predicate = (!icmp_ln28)> <Delay = 0.00>
+ST_38 : Operation 253 [1/1] (1.30ns)   --->   "switch i2 %trunc_ln28, label %branch15 [
+    i2 0, label %burstread.region_begin1.burstread.region_end1_crit_edge
+    i2 1, label %branch13
+    i2 -2, label %branch14
+  ]" [src/kmeans.c:28]   --->   Operation 253 'switch' <Predicate = (!icmp_ln28)> <Delay = 1.30>
+ST_38 : Operation 254 [1/1] (0.00ns)   --->   "%burstread_rend40 = call i32 (...)* @_ssdm_op_SpecRegionEnd([17 x i8]* @burstread_OC_region_s, i32 %burstread_rbegin3) nounwind" [src/kmeans.c:28]   --->   Operation 254 'specregionend' 'burstread_rend40' <Predicate = (!icmp_ln28)> <Delay = 0.00>
+ST_38 : Operation 255 [1/1] (0.00ns)   --->   "br label %burst.rd.header31" [src/kmeans.c:28]   --->   Operation 255 'br' <Predicate = (!icmp_ln28)> <Delay = 0.00>
+
+State 39 <SV = 34> <Delay = 8.75>
+ST_39 : Operation 256 [1/1] (0.00ns)   --->   "%Y_prot_3_1_load = load float* %Y_prot_3_1"   --->   Operation 256 'load' 'Y_prot_3_1_load' <Predicate = true> <Delay = 0.00>
+ST_39 : Operation 257 [1/1] (0.00ns)   --->   "%Y_prot_3_3_load = load float* %Y_prot_3_3"   --->   Operation 257 'load' 'Y_prot_3_3_load' <Predicate = true> <Delay = 0.00>
+ST_39 : Operation 258 [1/1] (0.00ns)   --->   "%Y_prot_3_4_load = load float* %Y_prot_3_4"   --->   Operation 258 'load' 'Y_prot_3_4_load' <Predicate = true> <Delay = 0.00>
+ST_39 : Operation 259 [1/1] (0.00ns)   --->   "%Y_prot_3_5_load = load float* %Y_prot_3_5"   --->   Operation 259 'load' 'Y_prot_3_5_load' <Predicate = true> <Delay = 0.00>
+ST_39 : Operation 260 [1/1] (0.00ns)   --->   "%empty_15 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 4, i64 4, i64 4) nounwind"   --->   Operation 260 'speclooptripcount' 'empty_15' <Predicate = true> <Delay = 0.00>
+ST_39 : Operation 261 [1/1] (0.00ns)   --->   "br i1 %icmp_ln28, label %burst.rd.end30.preheader, label %burstread.region_begin1" [src/kmeans.c:28]   --->   Operation 261 'br' <Predicate = true> <Delay = 0.00>
+ST_39 : Operation 262 [1/1] (0.00ns)   --->   "%empty_16 = call i32 (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, i32 0, [1 x i8]* @p_str14) nounwind" [src/kmeans.c:28]   --->   Operation 262 'specpipeline' 'empty_16' <Predicate = (!icmp_ln28)> <Delay = 0.00>
+ST_39 : Operation 263 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([24 x i8]* @memcpy_OC_Y_prot_OC_s)" [src/kmeans.c:28]   --->   Operation 263 'specloopname' <Predicate = (!icmp_ln28)> <Delay = 0.00>
+ST_39 : Operation 264 [1/1] (8.75ns)   --->   "%Y_prot_0 = call float @_ssdm_op_Read.m_axi.floatP(float* %INPUT_addr_2)" [src/kmeans.c:28]   --->   Operation 264 'read' 'Y_prot_0' <Predicate = (!icmp_ln28)> <Delay = 8.75> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_39 : Operation 265 [1/1] (0.00ns)   --->   "store float %Y_prot_0, float* %Y_prot_3_4" [src/kmeans.c:28]   --->   Operation 265 'store' <Predicate = (!icmp_ln28 & trunc_ln28 == 2)> <Delay = 0.00>
+ST_39 : Operation 266 [1/1] (0.00ns)   --->   "br label %burstread.region_end1" [src/kmeans.c:28]   --->   Operation 266 'br' <Predicate = (!icmp_ln28 & trunc_ln28 == 2)> <Delay = 0.00>
+ST_39 : Operation 267 [1/1] (0.00ns)   --->   "store float %Y_prot_0, float* %Y_prot_3_3" [src/kmeans.c:28]   --->   Operation 267 'store' <Predicate = (!icmp_ln28 & trunc_ln28 == 1)> <Delay = 0.00>
+ST_39 : Operation 268 [1/1] (0.00ns)   --->   "br label %burstread.region_end1" [src/kmeans.c:28]   --->   Operation 268 'br' <Predicate = (!icmp_ln28 & trunc_ln28 == 1)> <Delay = 0.00>
+ST_39 : Operation 269 [1/1] (0.00ns)   --->   "store float %Y_prot_0, float* %Y_prot_3_1" [src/kmeans.c:28]   --->   Operation 269 'store' <Predicate = (!icmp_ln28 & trunc_ln28 == 0)> <Delay = 0.00>
+ST_39 : Operation 270 [1/1] (0.00ns)   --->   "br label %burstread.region_end1" [src/kmeans.c:28]   --->   Operation 270 'br' <Predicate = (!icmp_ln28 & trunc_ln28 == 0)> <Delay = 0.00>
+ST_39 : Operation 271 [1/1] (0.00ns)   --->   "store float %Y_prot_0, float* %Y_prot_3_5" [src/kmeans.c:28]   --->   Operation 271 'store' <Predicate = (!icmp_ln28 & trunc_ln28 == 3)> <Delay = 0.00>
+ST_39 : Operation 272 [1/1] (0.00ns)   --->   "br label %burstread.region_end1" [src/kmeans.c:28]   --->   Operation 272 'br' <Predicate = (!icmp_ln28 & trunc_ln28 == 3)> <Delay = 0.00>
+
+State 40 <SV = 35> <Delay = 1.76>
+ST_40 : Operation 273 [1/1] (0.00ns)   --->   "%X_prot_3_7 = alloca float"   --->   Operation 273 'alloca' 'X_prot_3_7' <Predicate = true> <Delay = 0.00>
+ST_40 : Operation 274 [1/1] (0.00ns)   --->   "%X_prot_3_8 = alloca float"   --->   Operation 274 'alloca' 'X_prot_3_8' <Predicate = true> <Delay = 0.00>
+ST_40 : Operation 275 [1/1] (0.00ns)   --->   "%X_prot_3_9 = alloca float"   --->   Operation 275 'alloca' 'X_prot_3_9' <Predicate = true> <Delay = 0.00>
+ST_40 : Operation 276 [1/1] (0.00ns)   --->   "%X_prot_3_2 = alloca float"   --->   Operation 276 'alloca' 'X_prot_3_2' <Predicate = true> <Delay = 0.00>
+ST_40 : Operation 277 [1/1] (0.00ns)   --->   "%Y_prot_3_6 = alloca float"   --->   Operation 277 'alloca' 'Y_prot_3_6' <Predicate = true> <Delay = 0.00>
+ST_40 : Operation 278 [1/1] (0.00ns)   --->   "%Y_prot_3_7 = alloca float"   --->   Operation 278 'alloca' 'Y_prot_3_7' <Predicate = true> <Delay = 0.00>
+ST_40 : Operation 279 [1/1] (0.00ns)   --->   "%Y_prot_3_8 = alloca float"   --->   Operation 279 'alloca' 'Y_prot_3_8' <Predicate = true> <Delay = 0.00>
+ST_40 : Operation 280 [1/1] (0.00ns)   --->   "%Y_prot_3_2 = alloca float"   --->   Operation 280 'alloca' 'Y_prot_3_2' <Predicate = true> <Delay = 0.00>
+ST_40 : Operation 281 [1/1] (1.76ns)   --->   "store float %Y_prot_3_5_load, float* %Y_prot_3_2" [src/kmeans.c:36]   --->   Operation 281 'store' <Predicate = true> <Delay = 1.76>
+ST_40 : Operation 282 [1/1] (1.76ns)   --->   "store float %Y_prot_3_4_load, float* %Y_prot_3_8" [src/kmeans.c:36]   --->   Operation 282 'store' <Predicate = true> <Delay = 1.76>
+ST_40 : Operation 283 [1/1] (1.76ns)   --->   "store float %Y_prot_3_3_load, float* %Y_prot_3_7" [src/kmeans.c:36]   --->   Operation 283 'store' <Predicate = true> <Delay = 1.76>
+ST_40 : Operation 284 [1/1] (1.76ns)   --->   "store float %Y_prot_3_1_load, float* %Y_prot_3_6" [src/kmeans.c:36]   --->   Operation 284 'store' <Predicate = true> <Delay = 1.76>
+ST_40 : Operation 285 [1/1] (1.76ns)   --->   "store float %X_prot_3_5_load, float* %X_prot_3_2" [src/kmeans.c:36]   --->   Operation 285 'store' <Predicate = true> <Delay = 1.76>
+ST_40 : Operation 286 [1/1] (1.76ns)   --->   "store float %X_prot_3_4_load, float* %X_prot_3_9" [src/kmeans.c:36]   --->   Operation 286 'store' <Predicate = true> <Delay = 1.76>
+ST_40 : Operation 287 [1/1] (1.76ns)   --->   "store float %X_prot_3_3_load, float* %X_prot_3_8" [src/kmeans.c:36]   --->   Operation 287 'store' <Predicate = true> <Delay = 1.76>
+ST_40 : Operation 288 [1/1] (1.76ns)   --->   "store float %X_prot_3_1_load, float* %X_prot_3_7" [src/kmeans.c:36]   --->   Operation 288 'store' <Predicate = true> <Delay = 1.76>
+ST_40 : Operation 289 [1/1] (1.76ns)   --->   "br label %burst.rd.end30" [src/kmeans.c:36]   --->   Operation 289 'br' <Predicate = true> <Delay = 1.76>
+
+State 41 <SV = 36> <Delay = 8.75>
+ST_41 : Operation 290 [1/1] (0.00ns)   --->   "%it_0 = phi i4 [ 0, %burst.rd.end30.preheader ], [ %it, %burst.rd.end30.loopexit ]"   --->   Operation 290 'phi' 'it_0' <Predicate = true> <Delay = 0.00>
+ST_41 : Operation 291 [1/1] (1.30ns)   --->   "%icmp_ln36 = icmp eq i4 %it_0, -6" [src/kmeans.c:36]   --->   Operation 291 'icmp' 'icmp_ln36' <Predicate = true> <Delay = 1.30> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.95> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_41 : Operation 292 [1/1] (0.00ns)   --->   "%empty_17 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 10, i64 10, i64 10) nounwind"   --->   Operation 292 'speclooptripcount' 'empty_17' <Predicate = true> <Delay = 0.00>
+ST_41 : Operation 293 [1/1] (1.73ns)   --->   "%it = add i4 %it_0, 1" [src/kmeans.c:36]   --->   Operation 293 'add' 'it' <Predicate = true> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_41 : Operation 294 [1/1] (0.00ns)   --->   "br i1 %icmp_ln36, label %burst.wr.header.preheader, label %.preheader1.preheader" [src/kmeans.c:36]   --->   Operation 294 'br' <Predicate = true> <Delay = 0.00>
+ST_41 : Operation 295 [1/1] (1.76ns)   --->   "br label %.preheader1" [src/kmeans.c:38]   --->   Operation 295 'br' <Predicate = (!icmp_ln36)> <Delay = 1.76>
+ST_41 : Operation 296 [1/1] (8.75ns)   --->   "%OUTPUT_addr_wr_req = call i1 @_ssdm_op_WriteReq.m_axi.i32P(i32* %OUTPUT_addr, i32 128)" [src/kmeans.c:75]   --->   Operation 296 'writereq' 'OUTPUT_addr_wr_req' <Predicate = (icmp_ln36)> <Delay = 8.75> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_41 : Operation 297 [1/1] (1.76ns)   --->   "br label %burst.wr.header" [src/kmeans.c:75]   --->   Operation 297 'br' <Predicate = (icmp_ln36)> <Delay = 1.76>
+
+State 42 <SV = 37> <Delay = 3.25>
+ST_42 : Operation 298 [1/1] (0.00ns)   --->   "%j_0 = phi i8 [ %j, %classify_by_data_end ], [ 0, %.preheader1.preheader ]"   --->   Operation 298 'phi' 'j_0' <Predicate = true> <Delay = 0.00>
+ST_42 : Operation 299 [1/1] (1.55ns)   --->   "%icmp_ln38 = icmp eq i8 %j_0, -128" [src/kmeans.c:38]   --->   Operation 299 'icmp' 'icmp_ln38' <Predicate = true> <Delay = 1.55> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.95> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_42 : Operation 300 [1/1] (0.00ns)   --->   "%empty_18 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 128, i64 128, i64 128) nounwind"   --->   Operation 300 'speclooptripcount' 'empty_18' <Predicate = true> <Delay = 0.00>
+ST_42 : Operation 301 [1/1] (1.91ns)   --->   "%j = add i8 %j_0, 1" [src/kmeans.c:38]   --->   Operation 301 'add' 'j' <Predicate = true> <Delay = 1.91> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_42 : Operation 302 [1/1] (0.00ns)   --->   "br i1 %icmp_ln38, label %.preheader.preheader, label %classify_by_data_begin" [src/kmeans.c:38]   --->   Operation 302 'br' <Predicate = true> <Delay = 0.00>
+ST_42 : Operation 303 [1/1] (0.00ns)   --->   "%zext_ln45 = zext i8 %j_0 to i64" [src/kmeans.c:45]   --->   Operation 303 'zext' 'zext_ln45' <Predicate = (!icmp_ln38)> <Delay = 0.00>
+ST_42 : Operation 304 [1/1] (0.00ns)   --->   "%X_addr_1 = getelementptr inbounds [128 x float]* %X, i64 0, i64 %zext_ln45" [src/kmeans.c:45]   --->   Operation 304 'getelementptr' 'X_addr_1' <Predicate = (!icmp_ln38)> <Delay = 0.00>
+ST_42 : Operation 305 [2/2] (3.25ns)   --->   "%X_load_1 = load float* %X_addr_1, align 4" [src/kmeans.c:45]   --->   Operation 305 'load' 'X_load_1' <Predicate = (!icmp_ln38)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 128> <RAM>
+ST_42 : Operation 306 [1/1] (0.00ns)   --->   "%Y_addr_1 = getelementptr inbounds [128 x float]* %Y, i64 0, i64 %zext_ln45" [src/kmeans.c:45]   --->   Operation 306 'getelementptr' 'Y_addr_1' <Predicate = (!icmp_ln38)> <Delay = 0.00>
+ST_42 : Operation 307 [2/2] (3.25ns)   --->   "%Y_load_1 = load float* %Y_addr_1, align 4" [src/kmeans.c:45]   --->   Operation 307 'load' 'Y_load_1' <Predicate = (!icmp_ln38)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 128> <RAM>
+ST_42 : Operation 308 [1/1] (1.76ns)   --->   "br label %.preheader" [src/kmeans.c:56]   --->   Operation 308 'br' <Predicate = (icmp_ln38)> <Delay = 1.76>
+
+State 43 <SV = 38> <Delay = 3.25>
+ST_43 : Operation 309 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([17 x i8]* @p_str7) nounwind" [src/kmeans.c:39]   --->   Operation 309 'specloopname' <Predicate = true> <Delay = 0.00>
+ST_43 : Operation 310 [1/1] (0.00ns)   --->   "%tmp_3 = call i32 (...)* @_ssdm_op_SpecRegionBegin([17 x i8]* @p_str7) nounwind" [src/kmeans.c:39]   --->   Operation 310 'specregionbegin' 'tmp_3' <Predicate = true> <Delay = 0.00>
+ST_43 : Operation 311 [1/2] (3.25ns)   --->   "%X_load_1 = load float* %X_addr_1, align 4" [src/kmeans.c:45]   --->   Operation 311 'load' 'X_load_1' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 128> <RAM>
+ST_43 : Operation 312 [1/2] (3.25ns)   --->   "%Y_load_1 = load float* %Y_addr_1, align 4" [src/kmeans.c:45]   --->   Operation 312 'load' 'Y_load_1' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 128> <RAM>
+ST_43 : Operation 313 [1/1] (1.76ns)   --->   "br label %1" [src/kmeans.c:43]   --->   Operation 313 'br' <Predicate = true> <Delay = 1.76>
+
+State 44 <SV = 39> <Delay = 3.25>
+ST_44 : Operation 314 [1/1] (0.00ns)   --->   "%belonging_cluster_in = phi i3 [ 0, %classify_by_data_begin ], [ %i, %2 ]"   --->   Operation 314 'phi' 'belonging_cluster_in' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 315 [1/1] (0.00ns)   --->   "%min_distance_0 = phi float [ 9.999900e+04, %classify_by_data_begin ], [ %min_distance_1, %2 ]"   --->   Operation 315 'phi' 'min_distance_0' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 316 [1/1] (0.00ns)   --->   "%belonging_cluster_in_1 = phi i32 [ 0, %classify_by_data_begin ], [ %belonging_cluster_in_2, %2 ]"   --->   Operation 316 'phi' 'belonging_cluster_in_1' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 317 [1/1] (0.00ns)   --->   "%zext_ln43 = zext i3 %belonging_cluster_in to i32" [src/kmeans.c:43]   --->   Operation 317 'zext' 'zext_ln43' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 318 [1/1] (1.13ns)   --->   "%icmp_ln43 = icmp eq i3 %belonging_cluster_in, -4" [src/kmeans.c:43]   --->   Operation 318 'icmp' 'icmp_ln43' <Predicate = true> <Delay = 1.13> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.95> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_44 : Operation 319 [1/1] (0.00ns)   --->   "%empty_19 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 4, i64 4, i64 4) nounwind"   --->   Operation 319 'speclooptripcount' 'empty_19' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 320 [1/1] (1.65ns)   --->   "%i = add i3 %belonging_cluster_in, 1" [src/kmeans.c:43]   --->   Operation 320 'add' 'i' <Predicate = true> <Delay = 1.65> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_44 : Operation 321 [1/1] (0.00ns)   --->   "br i1 %icmp_ln43, label %classify_by_data_end, label %2" [src/kmeans.c:43]   --->   Operation 321 'br' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 322 [1/1] (0.00ns)   --->   "%X_prot_3_7_load = load float* %X_prot_3_7" [src/kmeans.c:45]   --->   Operation 322 'load' 'X_prot_3_7_load' <Predicate = (!icmp_ln43)> <Delay = 0.00>
+ST_44 : Operation 323 [1/1] (0.00ns)   --->   "%X_prot_3_8_load = load float* %X_prot_3_8" [src/kmeans.c:45]   --->   Operation 323 'load' 'X_prot_3_8_load' <Predicate = (!icmp_ln43)> <Delay = 0.00>
+ST_44 : Operation 324 [1/1] (0.00ns)   --->   "%X_prot_3_9_load = load float* %X_prot_3_9" [src/kmeans.c:45]   --->   Operation 324 'load' 'X_prot_3_9_load' <Predicate = (!icmp_ln43)> <Delay = 0.00>
+ST_44 : Operation 325 [1/1] (0.00ns)   --->   "%X_prot_3_2_load = load float* %X_prot_3_2" [src/kmeans.c:45]   --->   Operation 325 'load' 'X_prot_3_2_load' <Predicate = (!icmp_ln43)> <Delay = 0.00>
+ST_44 : Operation 326 [1/1] (0.00ns)   --->   "%Y_prot_3_6_load = load float* %Y_prot_3_6" [src/kmeans.c:45]   --->   Operation 326 'load' 'Y_prot_3_6_load' <Predicate = (!icmp_ln43)> <Delay = 0.00>
+ST_44 : Operation 327 [1/1] (0.00ns)   --->   "%Y_prot_3_7_load = load float* %Y_prot_3_7" [src/kmeans.c:45]   --->   Operation 327 'load' 'Y_prot_3_7_load' <Predicate = (!icmp_ln43)> <Delay = 0.00>
+ST_44 : Operation 328 [1/1] (0.00ns)   --->   "%Y_prot_3_8_load = load float* %Y_prot_3_8" [src/kmeans.c:45]   --->   Operation 328 'load' 'Y_prot_3_8_load' <Predicate = (!icmp_ln43)> <Delay = 0.00>
+ST_44 : Operation 329 [1/1] (0.00ns)   --->   "%Y_prot_3_2_load = load float* %Y_prot_3_2" [src/kmeans.c:45]   --->   Operation 329 'load' 'Y_prot_3_2_load' <Predicate = (!icmp_ln43)> <Delay = 0.00>
+ST_44 : Operation 330 [1/1] (0.00ns)   --->   "%trunc_ln45 = trunc i3 %belonging_cluster_in to i2" [src/kmeans.c:45]   --->   Operation 330 'trunc' 'trunc_ln45' <Predicate = (!icmp_ln43)> <Delay = 0.00>
+ST_44 : Operation 331 [1/1] (1.95ns)   --->   "%x1_assign = call float @_ssdm_op_Mux.ap_auto.4float.i2(float %X_prot_3_7_load, float %X_prot_3_8_load, float %X_prot_3_9_load, float %X_prot_3_2_load, i2 %trunc_ln45) nounwind" [src/kmeans.c:45]   --->   Operation 331 'mux' 'x1_assign' <Predicate = (!icmp_ln43)> <Delay = 1.95> <Core = "MuxnS">   --->   Core 31 'MuxnS' <Latency = 0> <II = 1> <Delay = 1.95> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
+ST_44 : Operation 332 [1/1] (1.95ns)   --->   "%y1_assign = call float @_ssdm_op_Mux.ap_auto.4float.i2(float %Y_prot_3_6_load, float %Y_prot_3_7_load, float %Y_prot_3_8_load, float %Y_prot_3_2_load, i2 %trunc_ln45) nounwind" [src/kmeans.c:45]   --->   Operation 332 'mux' 'y1_assign' <Predicate = (!icmp_ln43)> <Delay = 1.95> <Core = "MuxnS">   --->   Core 31 'MuxnS' <Latency = 0> <II = 1> <Delay = 1.95> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
+ST_44 : Operation 333 [1/1] (0.00ns)   --->   "%cluster_addr_1 = getelementptr inbounds [128 x i32]* %cluster, i64 0, i64 %zext_ln45" [src/kmeans.c:52]   --->   Operation 333 'getelementptr' 'cluster_addr_1' <Predicate = (icmp_ln43)> <Delay = 0.00>
+ST_44 : Operation 334 [1/1] (3.25ns)   --->   "store i32 %belonging_cluster_in_1, i32* %cluster_addr_1, align 4" [src/kmeans.c:52]   --->   Operation 334 'store' <Predicate = (icmp_ln43)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 128> <RAM>
+ST_44 : Operation 335 [1/1] (0.00ns)   --->   "%empty_21 = call i32 (...)* @_ssdm_op_SpecRegionEnd([17 x i8]* @p_str7, i32 %tmp_3) nounwind" [src/kmeans.c:53]   --->   Operation 335 'specregionend' 'empty_21' <Predicate = (icmp_ln43)> <Delay = 0.00>
+ST_44 : Operation 336 [1/1] (0.00ns)   --->   "br label %.preheader1" [src/kmeans.c:38]   --->   Operation 336 'br' <Predicate = (icmp_ln43)> <Delay = 0.00>
+
+State 45 <SV = 40> <Delay = 7.25>
+ST_45 : Operation 337 [5/5] (7.25ns)   --->   "%tmp_i = fsub float %x1_assign, %X_load_1" [src/kmeans.c:83->src/kmeans.c:45]   --->   Operation 337 'fsub' 'tmp_i' <Predicate = true> <Delay = 7.25> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_45 : Operation 338 [5/5] (7.25ns)   --->   "%tmp_7_i = fsub float %y1_assign, %Y_load_1" [src/kmeans.c:83->src/kmeans.c:45]   --->   Operation 338 'fsub' 'tmp_7_i' <Predicate = true> <Delay = 7.25> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 46 <SV = 41> <Delay = 7.25>
+ST_46 : Operation 339 [4/5] (7.25ns)   --->   "%tmp_i = fsub float %x1_assign, %X_load_1" [src/kmeans.c:83->src/kmeans.c:45]   --->   Operation 339 'fsub' 'tmp_i' <Predicate = true> <Delay = 7.25> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_46 : Operation 340 [4/5] (7.25ns)   --->   "%tmp_7_i = fsub float %y1_assign, %Y_load_1" [src/kmeans.c:83->src/kmeans.c:45]   --->   Operation 340 'fsub' 'tmp_7_i' <Predicate = true> <Delay = 7.25> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 47 <SV = 42> <Delay = 7.25>
+ST_47 : Operation 341 [3/5] (7.25ns)   --->   "%tmp_i = fsub float %x1_assign, %X_load_1" [src/kmeans.c:83->src/kmeans.c:45]   --->   Operation 341 'fsub' 'tmp_i' <Predicate = true> <Delay = 7.25> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_47 : Operation 342 [3/5] (7.25ns)   --->   "%tmp_7_i = fsub float %y1_assign, %Y_load_1" [src/kmeans.c:83->src/kmeans.c:45]   --->   Operation 342 'fsub' 'tmp_7_i' <Predicate = true> <Delay = 7.25> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 48 <SV = 43> <Delay = 7.25>
+ST_48 : Operation 343 [2/5] (7.25ns)   --->   "%tmp_i = fsub float %x1_assign, %X_load_1" [src/kmeans.c:83->src/kmeans.c:45]   --->   Operation 343 'fsub' 'tmp_i' <Predicate = true> <Delay = 7.25> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_48 : Operation 344 [2/5] (7.25ns)   --->   "%tmp_7_i = fsub float %y1_assign, %Y_load_1" [src/kmeans.c:83->src/kmeans.c:45]   --->   Operation 344 'fsub' 'tmp_7_i' <Predicate = true> <Delay = 7.25> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 49 <SV = 44> <Delay = 7.25>
+ST_49 : Operation 345 [1/5] (7.25ns)   --->   "%tmp_i = fsub float %x1_assign, %X_load_1" [src/kmeans.c:83->src/kmeans.c:45]   --->   Operation 345 'fsub' 'tmp_i' <Predicate = true> <Delay = 7.25> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_49 : Operation 346 [1/5] (7.25ns)   --->   "%tmp_7_i = fsub float %y1_assign, %Y_load_1" [src/kmeans.c:83->src/kmeans.c:45]   --->   Operation 346 'fsub' 'tmp_7_i' <Predicate = true> <Delay = 7.25> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 50 <SV = 45> <Delay = 4.43>
+ST_50 : Operation 347 [2/2] (4.43ns)   --->   "%x_assign = fpext float %tmp_i to double" [src/kmeans.c:83->src/kmeans.c:45]   --->   Operation 347 'fpext' 'x_assign' <Predicate = true> <Delay = 4.43> <Core = "Float2Double">   --->   Core 114 'Float2Double' <Latency = 1> <II = 1> <Delay = 4.43> <FuncUnit> <Opcode : 'fpext'> <InPorts = 1> <OutPorts = 1>
+ST_50 : Operation 348 [2/2] (4.43ns)   --->   "%x_assign_1 = fpext float %tmp_7_i to double" [src/kmeans.c:83->src/kmeans.c:45]   --->   Operation 348 'fpext' 'x_assign_1' <Predicate = true> <Delay = 4.43> <Core = "Float2Double">   --->   Core 114 'Float2Double' <Latency = 1> <II = 1> <Delay = 4.43> <FuncUnit> <Opcode : 'fpext'> <InPorts = 1> <OutPorts = 1>
+
+State 51 <SV = 46> <Delay = 4.43>
+ST_51 : Operation 349 [1/2] (4.43ns)   --->   "%x_assign = fpext float %tmp_i to double" [src/kmeans.c:83->src/kmeans.c:45]   --->   Operation 349 'fpext' 'x_assign' <Predicate = true> <Delay = 4.43> <Core = "Float2Double">   --->   Core 114 'Float2Double' <Latency = 1> <II = 1> <Delay = 4.43> <FuncUnit> <Opcode : 'fpext'> <InPorts = 1> <OutPorts = 1>
+ST_51 : Operation 350 [1/1] (0.00ns)   --->   "%p_Val2_s = bitcast double %x_assign to i64" [/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:475->/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:479->/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_copysign.h:12->/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_fabs.h:13->/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/c/fabsdouble.cpp:8->src/kmeans.c:83->src/kmeans.c:45]   --->   Operation 350 'bitcast' 'p_Val2_s' <Predicate = true> <Delay = 0.00>
+ST_51 : Operation 351 [1/1] (0.00ns)   --->   "%trunc_ln368 = trunc i64 %p_Val2_s to i63" [/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:495->/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:512->/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:526->/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_copysign.h:14->/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_fabs.h:13->/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/c/fabsdouble.cpp:8->src/kmeans.c:83->src/kmeans.c:45]   --->   Operation 351 'trunc' 'trunc_ln368' <Predicate = true> <Delay = 0.00>
+ST_51 : Operation 352 [1/2] (4.43ns)   --->   "%x_assign_1 = fpext float %tmp_7_i to double" [src/kmeans.c:83->src/kmeans.c:45]   --->   Operation 352 'fpext' 'x_assign_1' <Predicate = true> <Delay = 4.43> <Core = "Float2Double">   --->   Core 114 'Float2Double' <Latency = 1> <II = 1> <Delay = 4.43> <FuncUnit> <Opcode : 'fpext'> <InPorts = 1> <OutPorts = 1>
+ST_51 : Operation 353 [1/1] (0.00ns)   --->   "%p_Val2_1 = bitcast double %x_assign_1 to i64" [/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:475->/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:479->/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_copysign.h:12->/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_fabs.h:13->/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/c/fabsdouble.cpp:8->src/kmeans.c:83->src/kmeans.c:45]   --->   Operation 353 'bitcast' 'p_Val2_1' <Predicate = true> <Delay = 0.00>
+ST_51 : Operation 354 [1/1] (0.00ns)   --->   "%trunc_ln368_1 = trunc i64 %p_Val2_1 to i63" [/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:495->/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:512->/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:526->/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_copysign.h:14->/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_fabs.h:13->/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/c/fabsdouble.cpp:8->src/kmeans.c:83->src/kmeans.c:45]   --->   Operation 354 'trunc' 'trunc_ln368_1' <Predicate = true> <Delay = 0.00>
+
+State 52 <SV = 47> <Delay = 8.23>
+ST_52 : Operation 355 [1/1] (0.00ns)   --->   "%p_Result_s = call i64 @_ssdm_op_BitConcatenate.i64.i1.i63(i1 false, i63 %trunc_ln368)" [/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:495->/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:512->/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:526->/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_copysign.h:14->/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_fabs.h:13->/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/c/fabsdouble.cpp:8->src/kmeans.c:83->src/kmeans.c:45]   --->   Operation 355 'bitconcatenate' 'p_Result_s' <Predicate = true> <Delay = 0.00>
+ST_52 : Operation 356 [1/1] (0.00ns)   --->   "%bitcast_ln512 = bitcast i64 %p_Result_s to double" [/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:512->/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:526->/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_copysign.h:14->/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_fabs.h:13->/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/c/fabsdouble.cpp:8->src/kmeans.c:83->src/kmeans.c:45]   --->   Operation 356 'bitcast' 'bitcast_ln512' <Predicate = true> <Delay = 0.00>
+ST_52 : Operation 357 [1/1] (0.00ns)   --->   "%p_Result_1 = call i64 @_ssdm_op_BitConcatenate.i64.i1.i63(i1 false, i63 %trunc_ln368_1)" [/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:495->/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:512->/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:526->/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_copysign.h:14->/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_fabs.h:13->/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/c/fabsdouble.cpp:8->src/kmeans.c:83->src/kmeans.c:45]   --->   Operation 357 'bitconcatenate' 'p_Result_1' <Predicate = true> <Delay = 0.00>
+ST_52 : Operation 358 [1/1] (0.00ns)   --->   "%bitcast_ln512_1 = bitcast i64 %p_Result_1 to double" [/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:512->/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:526->/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_copysign.h:14->/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_fabs.h:13->/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/c/fabsdouble.cpp:8->src/kmeans.c:83->src/kmeans.c:45]   --->   Operation 358 'bitcast' 'bitcast_ln512_1' <Predicate = true> <Delay = 0.00>
+ST_52 : Operation 359 [5/5] (8.23ns)   --->   "%tmp_i_20 = fadd double %bitcast_ln512, %bitcast_ln512_1" [src/kmeans.c:83->src/kmeans.c:45]   --->   Operation 359 'dadd' 'tmp_i_20' <Predicate = true> <Delay = 8.23> <Core = "DAddSub">   --->   Core 115 'DAddSub' <Latency = 4> <II = 1> <Delay = 8.23> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+
+State 53 <SV = 48> <Delay = 8.23>
+ST_53 : Operation 360 [4/5] (8.23ns)   --->   "%tmp_i_20 = fadd double %bitcast_ln512, %bitcast_ln512_1" [src/kmeans.c:83->src/kmeans.c:45]   --->   Operation 360 'dadd' 'tmp_i_20' <Predicate = true> <Delay = 8.23> <Core = "DAddSub">   --->   Core 115 'DAddSub' <Latency = 4> <II = 1> <Delay = 8.23> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+
+State 54 <SV = 49> <Delay = 8.23>
+ST_54 : Operation 361 [3/5] (8.23ns)   --->   "%tmp_i_20 = fadd double %bitcast_ln512, %bitcast_ln512_1" [src/kmeans.c:83->src/kmeans.c:45]   --->   Operation 361 'dadd' 'tmp_i_20' <Predicate = true> <Delay = 8.23> <Core = "DAddSub">   --->   Core 115 'DAddSub' <Latency = 4> <II = 1> <Delay = 8.23> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+
+State 55 <SV = 50> <Delay = 8.23>
+ST_55 : Operation 362 [2/5] (8.23ns)   --->   "%tmp_i_20 = fadd double %bitcast_ln512, %bitcast_ln512_1" [src/kmeans.c:83->src/kmeans.c:45]   --->   Operation 362 'dadd' 'tmp_i_20' <Predicate = true> <Delay = 8.23> <Core = "DAddSub">   --->   Core 115 'DAddSub' <Latency = 4> <II = 1> <Delay = 8.23> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+
+State 56 <SV = 51> <Delay = 8.23>
+ST_56 : Operation 363 [1/5] (8.23ns)   --->   "%tmp_i_20 = fadd double %bitcast_ln512, %bitcast_ln512_1" [src/kmeans.c:83->src/kmeans.c:45]   --->   Operation 363 'dadd' 'tmp_i_20' <Predicate = true> <Delay = 8.23> <Core = "DAddSub">   --->   Core 115 'DAddSub' <Latency = 4> <II = 1> <Delay = 8.23> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+
+State 57 <SV = 52> <Delay = 5.20>
+ST_57 : Operation 364 [2/2] (5.20ns)   --->   "%distance = fptrunc double %tmp_i_20 to float" [src/kmeans.c:83->src/kmeans.c:45]   --->   Operation 364 'fptrunc' 'distance' <Predicate = true> <Delay = 5.20> <Core = "Double2Float">   --->   Core 123 'Double2Float' <Latency = 1> <II = 1> <Delay = 5.20> <FuncUnit> <Opcode : 'fptrunc'> <InPorts = 1> <OutPorts = 1>
+
+State 58 <SV = 53> <Delay = 5.20>
+ST_58 : Operation 365 [1/2] (5.20ns)   --->   "%distance = fptrunc double %tmp_i_20 to float" [src/kmeans.c:83->src/kmeans.c:45]   --->   Operation 365 'fptrunc' 'distance' <Predicate = true> <Delay = 5.20> <Core = "Double2Float">   --->   Core 123 'Double2Float' <Latency = 1> <II = 1> <Delay = 5.20> <FuncUnit> <Opcode : 'fptrunc'> <InPorts = 1> <OutPorts = 1>
+
+State 59 <SV = 54> <Delay = 5.43>
+ST_59 : Operation 366 [2/2] (5.43ns)   --->   "%tmp_7 = fcmp olt float %distance, %min_distance_0" [src/kmeans.c:46]   --->   Operation 366 'fcmp' 'tmp_7' <Predicate = true> <Delay = 5.43> <Core = "FCmp">   --->   Core 111 'FCmp' <Latency = 1> <II = 1> <Delay = 5.43> <FuncUnit> <Opcode : 'fcmp'> <InPorts = 2> <OutPorts = 1>
+
+State 60 <SV = 55> <Delay = 7.10>
+ST_60 : Operation 367 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([19 x i8]* @p_str8) nounwind" [src/kmeans.c:44]   --->   Operation 367 'specloopname' <Predicate = true> <Delay = 0.00>
+ST_60 : Operation 368 [1/1] (0.00ns)   --->   "%bitcast_ln46 = bitcast float %distance to i32" [src/kmeans.c:46]   --->   Operation 368 'bitcast' 'bitcast_ln46' <Predicate = true> <Delay = 0.00>
+ST_60 : Operation 369 [1/1] (0.00ns)   --->   "%tmp = call i8 @_ssdm_op_PartSelect.i8.i32.i32.i32(i32 %bitcast_ln46, i32 23, i32 30)" [src/kmeans.c:46]   --->   Operation 369 'partselect' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_60 : Operation 370 [1/1] (0.00ns)   --->   "%trunc_ln46 = trunc i32 %bitcast_ln46 to i23" [src/kmeans.c:46]   --->   Operation 370 'trunc' 'trunc_ln46' <Predicate = true> <Delay = 0.00>
+ST_60 : Operation 371 [1/1] (0.00ns)   --->   "%bitcast_ln46_1 = bitcast float %min_distance_0 to i32" [src/kmeans.c:46]   --->   Operation 371 'bitcast' 'bitcast_ln46_1' <Predicate = true> <Delay = 0.00>
+ST_60 : Operation 372 [1/1] (0.00ns)   --->   "%tmp_6 = call i8 @_ssdm_op_PartSelect.i8.i32.i32.i32(i32 %bitcast_ln46_1, i32 23, i32 30)" [src/kmeans.c:46]   --->   Operation 372 'partselect' 'tmp_6' <Predicate = true> <Delay = 0.00>
+ST_60 : Operation 373 [1/1] (0.00ns)   --->   "%trunc_ln46_1 = trunc i32 %bitcast_ln46_1 to i23" [src/kmeans.c:46]   --->   Operation 373 'trunc' 'trunc_ln46_1' <Predicate = true> <Delay = 0.00>
+ST_60 : Operation 374 [1/1] (1.55ns)   --->   "%icmp_ln46 = icmp ne i8 %tmp, -1" [src/kmeans.c:46]   --->   Operation 374 'icmp' 'icmp_ln46' <Predicate = true> <Delay = 1.55> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.95> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_60 : Operation 375 [1/1] (2.44ns)   --->   "%icmp_ln46_1 = icmp eq i23 %trunc_ln46, 0" [src/kmeans.c:46]   --->   Operation 375 'icmp' 'icmp_ln46_1' <Predicate = true> <Delay = 2.44> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.95> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_60 : Operation 376 [1/1] (0.00ns) (grouped into LUT with out node and_ln46_1)   --->   "%or_ln46 = or i1 %icmp_ln46_1, %icmp_ln46" [src/kmeans.c:46]   --->   Operation 376 'or' 'or_ln46' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_60 : Operation 377 [1/1] (1.55ns)   --->   "%icmp_ln46_2 = icmp ne i8 %tmp_6, -1" [src/kmeans.c:46]   --->   Operation 377 'icmp' 'icmp_ln46_2' <Predicate = true> <Delay = 1.55> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.95> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_60 : Operation 378 [1/1] (2.44ns)   --->   "%icmp_ln46_3 = icmp eq i23 %trunc_ln46_1, 0" [src/kmeans.c:46]   --->   Operation 378 'icmp' 'icmp_ln46_3' <Predicate = true> <Delay = 2.44> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.95> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_60 : Operation 379 [1/1] (0.00ns) (grouped into LUT with out node and_ln46_1)   --->   "%or_ln46_1 = or i1 %icmp_ln46_3, %icmp_ln46_2" [src/kmeans.c:46]   --->   Operation 379 'or' 'or_ln46_1' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_60 : Operation 380 [1/1] (0.00ns) (grouped into LUT with out node and_ln46_1)   --->   "%and_ln46 = and i1 %or_ln46, %or_ln46_1" [src/kmeans.c:46]   --->   Operation 380 'and' 'and_ln46' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_60 : Operation 381 [1/2] (5.43ns)   --->   "%tmp_7 = fcmp olt float %distance, %min_distance_0" [src/kmeans.c:46]   --->   Operation 381 'fcmp' 'tmp_7' <Predicate = true> <Delay = 5.43> <Core = "FCmp">   --->   Core 111 'FCmp' <Latency = 1> <II = 1> <Delay = 5.43> <FuncUnit> <Opcode : 'fcmp'> <InPorts = 2> <OutPorts = 1>
+ST_60 : Operation 382 [1/1] (0.97ns) (out node of the LUT)   --->   "%and_ln46_1 = and i1 %and_ln46, %tmp_7" [src/kmeans.c:46]   --->   Operation 382 'and' 'and_ln46_1' <Predicate = true> <Delay = 0.97> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_60 : Operation 383 [1/1] (0.69ns)   --->   "%min_distance_1 = select i1 %and_ln46_1, float %distance, float %min_distance_0" [src/kmeans.c:46]   --->   Operation 383 'select' 'min_distance_1' <Predicate = true> <Delay = 0.69> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_60 : Operation 384 [1/1] (0.69ns)   --->   "%belonging_cluster_in_2 = select i1 %and_ln46_1, i32 %zext_ln43, i32 %belonging_cluster_in_1" [src/kmeans.c:46]   --->   Operation 384 'select' 'belonging_cluster_in_2' <Predicate = true> <Delay = 0.69> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_60 : Operation 385 [1/1] (0.00ns)   --->   "br label %1" [src/kmeans.c:43]   --->   Operation 385 'br' <Predicate = true> <Delay = 0.00>
+
+State 61 <SV = 38> <Delay = 2.10>
+ST_61 : Operation 386 [1/1] (0.00ns)   --->   "%i_1 = phi i3 [ %i_2, %centers_loop_end ], [ 0, %.preheader.preheader ]"   --->   Operation 386 'phi' 'i_1' <Predicate = true> <Delay = 0.00>
+ST_61 : Operation 387 [1/1] (0.00ns)   --->   "%zext_ln56 = zext i3 %i_1 to i32" [src/kmeans.c:56]   --->   Operation 387 'zext' 'zext_ln56' <Predicate = true> <Delay = 0.00>
+ST_61 : Operation 388 [1/1] (1.13ns)   --->   "%icmp_ln56 = icmp eq i3 %i_1, -4" [src/kmeans.c:56]   --->   Operation 388 'icmp' 'icmp_ln56' <Predicate = true> <Delay = 1.13> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.95> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_61 : Operation 389 [1/1] (0.00ns)   --->   "%empty_22 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 4, i64 4, i64 4) nounwind"   --->   Operation 389 'speclooptripcount' 'empty_22' <Predicate = true> <Delay = 0.00>
+ST_61 : Operation 390 [1/1] (1.65ns)   --->   "%i_2 = add i3 %i_1, 1" [src/kmeans.c:56]   --->   Operation 390 'add' 'i_2' <Predicate = true> <Delay = 1.65> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_61 : Operation 391 [1/1] (0.00ns)   --->   "br i1 %icmp_ln56, label %burst.rd.end30.loopexit, label %centers_loop_begin" [src/kmeans.c:56]   --->   Operation 391 'br' <Predicate = true> <Delay = 0.00>
+ST_61 : Operation 392 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([13 x i8]* @p_str9) nounwind" [src/kmeans.c:57]   --->   Operation 392 'specloopname' <Predicate = (!icmp_ln56)> <Delay = 0.00>
+ST_61 : Operation 393 [1/1] (0.00ns)   --->   "%tmp_4 = call i32 (...)* @_ssdm_op_SpecRegionBegin([13 x i8]* @p_str9) nounwind" [src/kmeans.c:57]   --->   Operation 393 'specregionbegin' 'tmp_4' <Predicate = (!icmp_ln56)> <Delay = 0.00>
+ST_61 : Operation 394 [1/1] (1.76ns)   --->   "br label %3" [src/kmeans.c:62]   --->   Operation 394 'br' <Predicate = (!icmp_ln56)> <Delay = 1.76>
+ST_61 : Operation 395 [1/1] (0.00ns)   --->   "br label %burst.rd.end30"   --->   Operation 395 'br' <Predicate = (icmp_ln56)> <Delay = 0.00>
+
+State 62 <SV = 39> <Delay = 6.41>
+ST_62 : Operation 396 [1/1] (0.00ns)   --->   "%j_1 = phi i8 [ 0, %centers_loop_begin ], [ %j_2, %_ifconv ]"   --->   Operation 396 'phi' 'j_1' <Predicate = true> <Delay = 0.00>
+ST_62 : Operation 397 [1/1] (0.00ns)   --->   "%taille_assign = phi i32 [ 0, %centers_loop_begin ], [ %size_1, %_ifconv ]"   --->   Operation 397 'phi' 'taille_assign' <Predicate = true> <Delay = 0.00>
+ST_62 : Operation 398 [1/1] (0.00ns)   --->   "%somme_assign = phi float [ 0.000000e+00, %centers_loop_begin ], [ %X_clus_1, %_ifconv ]"   --->   Operation 398 'phi' 'somme_assign' <Predicate = true> <Delay = 0.00>
+ST_62 : Operation 399 [1/1] (0.00ns)   --->   "%somme_assign_1 = phi float [ 0.000000e+00, %centers_loop_begin ], [ %Y_clus_1, %_ifconv ]"   --->   Operation 399 'phi' 'somme_assign_1' <Predicate = true> <Delay = 0.00>
+ST_62 : Operation 400 [1/1] (1.55ns)   --->   "%icmp_ln62 = icmp eq i8 %j_1, -128" [src/kmeans.c:62]   --->   Operation 400 'icmp' 'icmp_ln62' <Predicate = true> <Delay = 1.55> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.95> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_62 : Operation 401 [1/1] (0.00ns)   --->   "%empty_23 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 128, i64 128, i64 128) nounwind"   --->   Operation 401 'speclooptripcount' 'empty_23' <Predicate = true> <Delay = 0.00>
+ST_62 : Operation 402 [1/1] (1.91ns)   --->   "%j_2 = add i8 %j_1, 1" [src/kmeans.c:62]   --->   Operation 402 'add' 'j_2' <Predicate = true> <Delay = 1.91> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_62 : Operation 403 [1/1] (0.00ns)   --->   "br i1 %icmp_ln62, label %4, label %_ifconv" [src/kmeans.c:62]   --->   Operation 403 'br' <Predicate = true> <Delay = 0.00>
+ST_62 : Operation 404 [1/1] (0.00ns)   --->   "%zext_ln63 = zext i8 %j_1 to i64" [src/kmeans.c:63]   --->   Operation 404 'zext' 'zext_ln63' <Predicate = (!icmp_ln62)> <Delay = 0.00>
+ST_62 : Operation 405 [1/1] (0.00ns)   --->   "%cluster_addr_2 = getelementptr inbounds [128 x i32]* %cluster, i64 0, i64 %zext_ln63" [src/kmeans.c:63]   --->   Operation 405 'getelementptr' 'cluster_addr_2' <Predicate = (!icmp_ln62)> <Delay = 0.00>
+ST_62 : Operation 406 [2/2] (3.25ns)   --->   "%cluster_load_1 = load i32* %cluster_addr_2, align 4" [src/kmeans.c:63]   --->   Operation 406 'load' 'cluster_load_1' <Predicate = (!icmp_ln62)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 128> <RAM>
+ST_62 : Operation 407 [1/1] (0.00ns)   --->   "%X_addr_2 = getelementptr inbounds [128 x float]* %X, i64 0, i64 %zext_ln63" [src/kmeans.c:65]   --->   Operation 407 'getelementptr' 'X_addr_2' <Predicate = (!icmp_ln62)> <Delay = 0.00>
+ST_62 : Operation 408 [2/2] (3.25ns)   --->   "%X_load = load float* %X_addr_2, align 4" [src/kmeans.c:65]   --->   Operation 408 'load' 'X_load' <Predicate = (!icmp_ln62)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 128> <RAM>
+ST_62 : Operation 409 [1/1] (0.00ns)   --->   "%Y_addr_2 = getelementptr inbounds [128 x float]* %Y, i64 0, i64 %zext_ln63" [src/kmeans.c:66]   --->   Operation 409 'getelementptr' 'Y_addr_2' <Predicate = (!icmp_ln62)> <Delay = 0.00>
+ST_62 : Operation 410 [2/2] (3.25ns)   --->   "%Y_load = load float* %Y_addr_2, align 4" [src/kmeans.c:66]   --->   Operation 410 'load' 'Y_load' <Predicate = (!icmp_ln62)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 128> <RAM>
+ST_62 : Operation 411 [1/1] (2.47ns)   --->   "%icmp_ln90 = icmp eq i32 %taille_assign, 0" [src/kmeans.c:90->src/kmeans.c:70]   --->   Operation 411 'icmp' 'icmp_ln90' <Predicate = (icmp_ln62)> <Delay = 2.47> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.95> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_62 : Operation 412 [1/1] (1.76ns)   --->   "br i1 %icmp_ln90, label %moy.exit_ifconv, label %5" [src/kmeans.c:90->src/kmeans.c:70]   --->   Operation 412 'br' <Predicate = (icmp_ln62)> <Delay = 1.76>
+ST_62 : Operation 413 [6/6] (6.41ns)   --->   "%tmp_i1 = sitofp i32 %taille_assign to float" [src/kmeans.c:92->src/kmeans.c:70]   --->   Operation 413 'sitofp' 'tmp_i1' <Predicate = (icmp_ln62 & !icmp_ln90)> <Delay = 6.41> <Core = "Int2Float">   --->   Core 112 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.41> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+
+State 63 <SV = 40> <Delay = 5.72>
+ST_63 : Operation 414 [1/2] (3.25ns)   --->   "%cluster_load_1 = load i32* %cluster_addr_2, align 4" [src/kmeans.c:63]   --->   Operation 414 'load' 'cluster_load_1' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 128> <RAM>
+ST_63 : Operation 415 [1/1] (2.47ns)   --->   "%icmp_ln63 = icmp eq i32 %cluster_load_1, %zext_ln56" [src/kmeans.c:63]   --->   Operation 415 'icmp' 'icmp_ln63' <Predicate = true> <Delay = 2.47> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.95> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_63 : Operation 416 [1/2] (3.25ns)   --->   "%X_load = load float* %X_addr_2, align 4" [src/kmeans.c:65]   --->   Operation 416 'load' 'X_load' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 128> <RAM>
+ST_63 : Operation 417 [1/2] (3.25ns)   --->   "%Y_load = load float* %Y_addr_2, align 4" [src/kmeans.c:66]   --->   Operation 417 'load' 'Y_load' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 128> <RAM>
+
+State 64 <SV = 41> <Delay = 7.25>
+ST_64 : Operation 418 [5/5] (7.25ns)   --->   "%X_clus = fadd float %somme_assign, %X_load" [src/kmeans.c:65]   --->   Operation 418 'fadd' 'X_clus' <Predicate = (icmp_ln63)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_64 : Operation 419 [5/5] (7.25ns)   --->   "%Y_clus = fadd float %somme_assign_1, %Y_load" [src/kmeans.c:66]   --->   Operation 419 'fadd' 'Y_clus' <Predicate = (icmp_ln63)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 65 <SV = 42> <Delay = 7.25>
+ST_65 : Operation 420 [4/5] (7.25ns)   --->   "%X_clus = fadd float %somme_assign, %X_load" [src/kmeans.c:65]   --->   Operation 420 'fadd' 'X_clus' <Predicate = (icmp_ln63)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_65 : Operation 421 [4/5] (7.25ns)   --->   "%Y_clus = fadd float %somme_assign_1, %Y_load" [src/kmeans.c:66]   --->   Operation 421 'fadd' 'Y_clus' <Predicate = (icmp_ln63)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 66 <SV = 43> <Delay = 7.25>
+ST_66 : Operation 422 [3/5] (7.25ns)   --->   "%X_clus = fadd float %somme_assign, %X_load" [src/kmeans.c:65]   --->   Operation 422 'fadd' 'X_clus' <Predicate = (icmp_ln63)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_66 : Operation 423 [3/5] (7.25ns)   --->   "%Y_clus = fadd float %somme_assign_1, %Y_load" [src/kmeans.c:66]   --->   Operation 423 'fadd' 'Y_clus' <Predicate = (icmp_ln63)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 67 <SV = 44> <Delay = 7.25>
+ST_67 : Operation 424 [2/5] (7.25ns)   --->   "%X_clus = fadd float %somme_assign, %X_load" [src/kmeans.c:65]   --->   Operation 424 'fadd' 'X_clus' <Predicate = (icmp_ln63)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_67 : Operation 425 [2/5] (7.25ns)   --->   "%Y_clus = fadd float %somme_assign_1, %Y_load" [src/kmeans.c:66]   --->   Operation 425 'fadd' 'Y_clus' <Predicate = (icmp_ln63)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 68 <SV = 45> <Delay = 7.95>
+ST_68 : Operation 426 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([11 x i8]* @p_str10) nounwind" [src/kmeans.c:62]   --->   Operation 426 'specloopname' <Predicate = true> <Delay = 0.00>
+ST_68 : Operation 427 [1/5] (7.25ns)   --->   "%X_clus = fadd float %somme_assign, %X_load" [src/kmeans.c:65]   --->   Operation 427 'fadd' 'X_clus' <Predicate = (icmp_ln63)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_68 : Operation 428 [1/5] (7.25ns)   --->   "%Y_clus = fadd float %somme_assign_1, %Y_load" [src/kmeans.c:66]   --->   Operation 428 'fadd' 'Y_clus' <Predicate = (icmp_ln63)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_68 : Operation 429 [1/1] (2.55ns)   --->   "%size = add nsw i32 %taille_assign, 1" [src/kmeans.c:67]   --->   Operation 429 'add' 'size' <Predicate = (icmp_ln63)> <Delay = 2.55> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_68 : Operation 430 [1/1] (0.69ns)   --->   "%size_1 = select i1 %icmp_ln63, i32 %size, i32 %taille_assign" [src/kmeans.c:63]   --->   Operation 430 'select' 'size_1' <Predicate = true> <Delay = 0.69> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_68 : Operation 431 [1/1] (0.69ns)   --->   "%X_clus_1 = select i1 %icmp_ln63, float %X_clus, float %somme_assign" [src/kmeans.c:63]   --->   Operation 431 'select' 'X_clus_1' <Predicate = true> <Delay = 0.69> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_68 : Operation 432 [1/1] (0.69ns)   --->   "%Y_clus_1 = select i1 %icmp_ln63, float %Y_clus, float %somme_assign_1" [src/kmeans.c:63]   --->   Operation 432 'select' 'Y_clus_1' <Predicate = true> <Delay = 0.69> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_68 : Operation 433 [1/1] (0.00ns)   --->   "br label %3" [src/kmeans.c:62]   --->   Operation 433 'br' <Predicate = true> <Delay = 0.00>
+
+State 69 <SV = 40> <Delay = 6.41>
+ST_69 : Operation 434 [5/6] (6.41ns)   --->   "%tmp_i1 = sitofp i32 %taille_assign to float" [src/kmeans.c:92->src/kmeans.c:70]   --->   Operation 434 'sitofp' 'tmp_i1' <Predicate = true> <Delay = 6.41> <Core = "Int2Float">   --->   Core 112 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.41> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+
+State 70 <SV = 41> <Delay = 6.41>
+ST_70 : Operation 435 [4/6] (6.41ns)   --->   "%tmp_i1 = sitofp i32 %taille_assign to float" [src/kmeans.c:92->src/kmeans.c:70]   --->   Operation 435 'sitofp' 'tmp_i1' <Predicate = true> <Delay = 6.41> <Core = "Int2Float">   --->   Core 112 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.41> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+
+State 71 <SV = 42> <Delay = 6.41>
+ST_71 : Operation 436 [3/6] (6.41ns)   --->   "%tmp_i1 = sitofp i32 %taille_assign to float" [src/kmeans.c:92->src/kmeans.c:70]   --->   Operation 436 'sitofp' 'tmp_i1' <Predicate = true> <Delay = 6.41> <Core = "Int2Float">   --->   Core 112 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.41> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+
+State 72 <SV = 43> <Delay = 6.41>
+ST_72 : Operation 437 [2/6] (6.41ns)   --->   "%tmp_i1 = sitofp i32 %taille_assign to float" [src/kmeans.c:92->src/kmeans.c:70]   --->   Operation 437 'sitofp' 'tmp_i1' <Predicate = true> <Delay = 6.41> <Core = "Int2Float">   --->   Core 112 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.41> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+
+State 73 <SV = 44> <Delay = 6.41>
+ST_73 : Operation 438 [1/6] (6.41ns)   --->   "%tmp_i1 = sitofp i32 %taille_assign to float" [src/kmeans.c:92->src/kmeans.c:70]   --->   Operation 438 'sitofp' 'tmp_i1' <Predicate = true> <Delay = 6.41> <Core = "Int2Float">   --->   Core 112 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.41> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+
+State 74 <SV = 45> <Delay = 6.07>
+ST_74 : Operation 439 [16/16] (6.07ns)   --->   "%moy = fdiv float %somme_assign, %tmp_i1" [src/kmeans.c:92->src/kmeans.c:70]   --->   Operation 439 'fdiv' 'moy' <Predicate = true> <Delay = 6.07> <Core = "FDiv">   --->   Core 107 'FDiv' <Latency = 15> <II = 1> <Delay = 6.07> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 75 <SV = 46> <Delay = 6.07>
+ST_75 : Operation 440 [15/16] (6.07ns)   --->   "%moy = fdiv float %somme_assign, %tmp_i1" [src/kmeans.c:92->src/kmeans.c:70]   --->   Operation 440 'fdiv' 'moy' <Predicate = true> <Delay = 6.07> <Core = "FDiv">   --->   Core 107 'FDiv' <Latency = 15> <II = 1> <Delay = 6.07> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 76 <SV = 47> <Delay = 6.07>
+ST_76 : Operation 441 [14/16] (6.07ns)   --->   "%moy = fdiv float %somme_assign, %tmp_i1" [src/kmeans.c:92->src/kmeans.c:70]   --->   Operation 441 'fdiv' 'moy' <Predicate = true> <Delay = 6.07> <Core = "FDiv">   --->   Core 107 'FDiv' <Latency = 15> <II = 1> <Delay = 6.07> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 77 <SV = 48> <Delay = 6.07>
+ST_77 : Operation 442 [13/16] (6.07ns)   --->   "%moy = fdiv float %somme_assign, %tmp_i1" [src/kmeans.c:92->src/kmeans.c:70]   --->   Operation 442 'fdiv' 'moy' <Predicate = true> <Delay = 6.07> <Core = "FDiv">   --->   Core 107 'FDiv' <Latency = 15> <II = 1> <Delay = 6.07> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 78 <SV = 49> <Delay = 6.07>
+ST_78 : Operation 443 [12/16] (6.07ns)   --->   "%moy = fdiv float %somme_assign, %tmp_i1" [src/kmeans.c:92->src/kmeans.c:70]   --->   Operation 443 'fdiv' 'moy' <Predicate = true> <Delay = 6.07> <Core = "FDiv">   --->   Core 107 'FDiv' <Latency = 15> <II = 1> <Delay = 6.07> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 79 <SV = 50> <Delay = 6.07>
+ST_79 : Operation 444 [11/16] (6.07ns)   --->   "%moy = fdiv float %somme_assign, %tmp_i1" [src/kmeans.c:92->src/kmeans.c:70]   --->   Operation 444 'fdiv' 'moy' <Predicate = true> <Delay = 6.07> <Core = "FDiv">   --->   Core 107 'FDiv' <Latency = 15> <II = 1> <Delay = 6.07> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 80 <SV = 51> <Delay = 6.07>
+ST_80 : Operation 445 [10/16] (6.07ns)   --->   "%moy = fdiv float %somme_assign, %tmp_i1" [src/kmeans.c:92->src/kmeans.c:70]   --->   Operation 445 'fdiv' 'moy' <Predicate = true> <Delay = 6.07> <Core = "FDiv">   --->   Core 107 'FDiv' <Latency = 15> <II = 1> <Delay = 6.07> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 81 <SV = 52> <Delay = 6.07>
+ST_81 : Operation 446 [9/16] (6.07ns)   --->   "%moy = fdiv float %somme_assign, %tmp_i1" [src/kmeans.c:92->src/kmeans.c:70]   --->   Operation 446 'fdiv' 'moy' <Predicate = true> <Delay = 6.07> <Core = "FDiv">   --->   Core 107 'FDiv' <Latency = 15> <II = 1> <Delay = 6.07> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 82 <SV = 53> <Delay = 6.07>
+ST_82 : Operation 447 [8/16] (6.07ns)   --->   "%moy = fdiv float %somme_assign, %tmp_i1" [src/kmeans.c:92->src/kmeans.c:70]   --->   Operation 447 'fdiv' 'moy' <Predicate = true> <Delay = 6.07> <Core = "FDiv">   --->   Core 107 'FDiv' <Latency = 15> <II = 1> <Delay = 6.07> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 83 <SV = 54> <Delay = 6.07>
+ST_83 : Operation 448 [7/16] (6.07ns)   --->   "%moy = fdiv float %somme_assign, %tmp_i1" [src/kmeans.c:92->src/kmeans.c:70]   --->   Operation 448 'fdiv' 'moy' <Predicate = true> <Delay = 6.07> <Core = "FDiv">   --->   Core 107 'FDiv' <Latency = 15> <II = 1> <Delay = 6.07> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 84 <SV = 55> <Delay = 6.07>
+ST_84 : Operation 449 [6/16] (6.07ns)   --->   "%moy = fdiv float %somme_assign, %tmp_i1" [src/kmeans.c:92->src/kmeans.c:70]   --->   Operation 449 'fdiv' 'moy' <Predicate = true> <Delay = 6.07> <Core = "FDiv">   --->   Core 107 'FDiv' <Latency = 15> <II = 1> <Delay = 6.07> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 85 <SV = 56> <Delay = 6.07>
+ST_85 : Operation 450 [5/16] (6.07ns)   --->   "%moy = fdiv float %somme_assign, %tmp_i1" [src/kmeans.c:92->src/kmeans.c:70]   --->   Operation 450 'fdiv' 'moy' <Predicate = true> <Delay = 6.07> <Core = "FDiv">   --->   Core 107 'FDiv' <Latency = 15> <II = 1> <Delay = 6.07> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 86 <SV = 57> <Delay = 6.07>
+ST_86 : Operation 451 [4/16] (6.07ns)   --->   "%moy = fdiv float %somme_assign, %tmp_i1" [src/kmeans.c:92->src/kmeans.c:70]   --->   Operation 451 'fdiv' 'moy' <Predicate = true> <Delay = 6.07> <Core = "FDiv">   --->   Core 107 'FDiv' <Latency = 15> <II = 1> <Delay = 6.07> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 87 <SV = 58> <Delay = 6.07>
+ST_87 : Operation 452 [3/16] (6.07ns)   --->   "%moy = fdiv float %somme_assign, %tmp_i1" [src/kmeans.c:92->src/kmeans.c:70]   --->   Operation 452 'fdiv' 'moy' <Predicate = true> <Delay = 6.07> <Core = "FDiv">   --->   Core 107 'FDiv' <Latency = 15> <II = 1> <Delay = 6.07> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 88 <SV = 59> <Delay = 6.07>
+ST_88 : Operation 453 [2/16] (6.07ns)   --->   "%moy = fdiv float %somme_assign, %tmp_i1" [src/kmeans.c:92->src/kmeans.c:70]   --->   Operation 453 'fdiv' 'moy' <Predicate = true> <Delay = 6.07> <Core = "FDiv">   --->   Core 107 'FDiv' <Latency = 15> <II = 1> <Delay = 6.07> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 89 <SV = 60> <Delay = 6.07>
+ST_89 : Operation 454 [1/16] (6.07ns)   --->   "%moy = fdiv float %somme_assign, %tmp_i1" [src/kmeans.c:92->src/kmeans.c:70]   --->   Operation 454 'fdiv' 'moy' <Predicate = (!icmp_ln90)> <Delay = 6.07> <Core = "FDiv">   --->   Core 107 'FDiv' <Latency = 15> <II = 1> <Delay = 6.07> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+ST_89 : Operation 455 [1/1] (1.76ns)   --->   "br label %moy.exit_ifconv" [src/kmeans.c:93->src/kmeans.c:70]   --->   Operation 455 'br' <Predicate = (!icmp_ln90)> <Delay = 1.76>
+ST_89 : Operation 456 [1/1] (0.00ns)   --->   "%trunc_ln70 = trunc i3 %i_1 to i2" [src/kmeans.c:70]   --->   Operation 456 'trunc' 'trunc_ln70' <Predicate = true> <Delay = 0.00>
+
+State 90 <SV = 61> <Delay = 6.41>
+ST_90 : Operation 457 [1/1] (0.00ns)   --->   "%X_prot_3_19 = phi float [ %moy, %5 ], [ 0.000000e+00, %4 ]"   --->   Operation 457 'phi' 'X_prot_3_19' <Predicate = true> <Delay = 0.00>
+ST_90 : Operation 458 [1/1] (0.00ns)   --->   "%X_prot_3_7_load_1 = load float* %X_prot_3_7" [src/kmeans.c:70]   --->   Operation 458 'load' 'X_prot_3_7_load_1' <Predicate = true> <Delay = 0.00>
+ST_90 : Operation 459 [1/1] (0.00ns)   --->   "%X_prot_3_8_load_1 = load float* %X_prot_3_8" [src/kmeans.c:70]   --->   Operation 459 'load' 'X_prot_3_8_load_1' <Predicate = true> <Delay = 0.00>
+ST_90 : Operation 460 [1/1] (0.00ns)   --->   "%X_prot_3_9_load_1 = load float* %X_prot_3_9" [src/kmeans.c:70]   --->   Operation 460 'load' 'X_prot_3_9_load_1' <Predicate = true> <Delay = 0.00>
+ST_90 : Operation 461 [1/1] (0.00ns)   --->   "%X_prot_3_2_load_1 = load float* %X_prot_3_2" [src/kmeans.c:70]   --->   Operation 461 'load' 'X_prot_3_2_load_1' <Predicate = true> <Delay = 0.00>
+ST_90 : Operation 462 [1/1] (0.95ns)   --->   "%icmp_ln70 = icmp eq i2 %trunc_ln70, -2" [src/kmeans.c:70]   --->   Operation 462 'icmp' 'icmp_ln70' <Predicate = true> <Delay = 0.95> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.95> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_90 : Operation 463 [1/1] (0.00ns) (grouped into LUT with out node X_prot_3_11)   --->   "%X_prot_3 = select i1 %icmp_ln70, float %X_prot_3_2_load_1, float %X_prot_3_19" [src/kmeans.c:70]   --->   Operation 463 'select' 'X_prot_3' <Predicate = true> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_90 : Operation 464 [1/1] (0.95ns)   --->   "%icmp_ln70_1 = icmp eq i2 %trunc_ln70, 1" [src/kmeans.c:70]   --->   Operation 464 'icmp' 'icmp_ln70_1' <Predicate = true> <Delay = 0.95> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.95> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_90 : Operation 465 [1/1] (0.69ns) (out node of the LUT)   --->   "%X_prot_3_11 = select i1 %icmp_ln70_1, float %X_prot_3_2_load_1, float %X_prot_3" [src/kmeans.c:70]   --->   Operation 465 'select' 'X_prot_3_11' <Predicate = true> <Delay = 0.69> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_90 : Operation 466 [1/1] (0.95ns)   --->   "%icmp_ln70_2 = icmp eq i2 %trunc_ln70, 0" [src/kmeans.c:70]   --->   Operation 466 'icmp' 'icmp_ln70_2' <Predicate = true> <Delay = 0.95> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.95> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_90 : Operation 467 [1/1] (0.69ns) (out node of the LUT)   --->   "%X_prot_3_12 = select i1 %icmp_ln70_2, float %X_prot_3_2_load_1, float %X_prot_3_11" [src/kmeans.c:70]   --->   Operation 467 'select' 'X_prot_3_12' <Predicate = true> <Delay = 0.69> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_90 : Operation 468 [1/1] (0.00ns) (grouped into LUT with out node X_prot_3_14)   --->   "%X_prot_3_13 = select i1 %icmp_ln70, float %X_prot_3_19, float %X_prot_3_9_load_1" [src/kmeans.c:70]   --->   Operation 468 'select' 'X_prot_3_13' <Predicate = true> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_90 : Operation 469 [1/1] (0.69ns) (out node of the LUT)   --->   "%X_prot_3_14 = select i1 %icmp_ln70_1, float %X_prot_3_9_load_1, float %X_prot_3_13" [src/kmeans.c:70]   --->   Operation 469 'select' 'X_prot_3_14' <Predicate = true> <Delay = 0.69> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_90 : Operation 470 [1/1] (0.69ns) (out node of the LUT)   --->   "%X_prot_3_15 = select i1 %icmp_ln70_2, float %X_prot_3_9_load_1, float %X_prot_3_14" [src/kmeans.c:70]   --->   Operation 470 'select' 'X_prot_3_15' <Predicate = true> <Delay = 0.69> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_90 : Operation 471 [1/1] (0.00ns) (grouped into LUT with out node X_prot_3_17)   --->   "%X_prot_3_16 = select i1 %icmp_ln70_1, float %X_prot_3_19, float %X_prot_3_8_load_1" [src/kmeans.c:70]   --->   Operation 471 'select' 'X_prot_3_16' <Predicate = true> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_90 : Operation 472 [1/1] (0.69ns) (out node of the LUT)   --->   "%X_prot_3_17 = select i1 %icmp_ln70_2, float %X_prot_3_8_load_1, float %X_prot_3_16" [src/kmeans.c:70]   --->   Operation 472 'select' 'X_prot_3_17' <Predicate = true> <Delay = 0.69> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_90 : Operation 473 [1/1] (0.69ns)   --->   "%X_prot_3_18 = select i1 %icmp_ln70_2, float %X_prot_3_19, float %X_prot_3_7_load_1" [src/kmeans.c:70]   --->   Operation 473 'select' 'X_prot_3_18' <Predicate = true> <Delay = 0.69> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_90 : Operation 474 [1/1] (1.76ns)   --->   "br i1 %icmp_ln90, label %centers_loop_end, label %6" [src/kmeans.c:90->src/kmeans.c:71]   --->   Operation 474 'br' <Predicate = true> <Delay = 1.76>
+ST_90 : Operation 475 [6/6] (6.41ns)   --->   "%tmp_i2 = sitofp i32 %taille_assign to float" [src/kmeans.c:92->src/kmeans.c:71]   --->   Operation 475 'sitofp' 'tmp_i2' <Predicate = (!icmp_ln90)> <Delay = 6.41> <Core = "Int2Float">   --->   Core 112 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.41> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+
+State 91 <SV = 62> <Delay = 6.41>
+ST_91 : Operation 476 [5/6] (6.41ns)   --->   "%tmp_i2 = sitofp i32 %taille_assign to float" [src/kmeans.c:92->src/kmeans.c:71]   --->   Operation 476 'sitofp' 'tmp_i2' <Predicate = true> <Delay = 6.41> <Core = "Int2Float">   --->   Core 112 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.41> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+
+State 92 <SV = 63> <Delay = 6.41>
+ST_92 : Operation 477 [4/6] (6.41ns)   --->   "%tmp_i2 = sitofp i32 %taille_assign to float" [src/kmeans.c:92->src/kmeans.c:71]   --->   Operation 477 'sitofp' 'tmp_i2' <Predicate = true> <Delay = 6.41> <Core = "Int2Float">   --->   Core 112 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.41> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+
+State 93 <SV = 64> <Delay = 6.41>
+ST_93 : Operation 478 [3/6] (6.41ns)   --->   "%tmp_i2 = sitofp i32 %taille_assign to float" [src/kmeans.c:92->src/kmeans.c:71]   --->   Operation 478 'sitofp' 'tmp_i2' <Predicate = true> <Delay = 6.41> <Core = "Int2Float">   --->   Core 112 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.41> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+
+State 94 <SV = 65> <Delay = 6.41>
+ST_94 : Operation 479 [2/6] (6.41ns)   --->   "%tmp_i2 = sitofp i32 %taille_assign to float" [src/kmeans.c:92->src/kmeans.c:71]   --->   Operation 479 'sitofp' 'tmp_i2' <Predicate = true> <Delay = 6.41> <Core = "Int2Float">   --->   Core 112 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.41> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+
+State 95 <SV = 66> <Delay = 6.41>
+ST_95 : Operation 480 [1/6] (6.41ns)   --->   "%tmp_i2 = sitofp i32 %taille_assign to float" [src/kmeans.c:92->src/kmeans.c:71]   --->   Operation 480 'sitofp' 'tmp_i2' <Predicate = true> <Delay = 6.41> <Core = "Int2Float">   --->   Core 112 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.41> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+
+State 96 <SV = 67> <Delay = 6.07>
+ST_96 : Operation 481 [16/16] (6.07ns)   --->   "%moy_1 = fdiv float %somme_assign_1, %tmp_i2" [src/kmeans.c:92->src/kmeans.c:71]   --->   Operation 481 'fdiv' 'moy_1' <Predicate = true> <Delay = 6.07> <Core = "FDiv">   --->   Core 107 'FDiv' <Latency = 15> <II = 1> <Delay = 6.07> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 97 <SV = 68> <Delay = 6.07>
+ST_97 : Operation 482 [15/16] (6.07ns)   --->   "%moy_1 = fdiv float %somme_assign_1, %tmp_i2" [src/kmeans.c:92->src/kmeans.c:71]   --->   Operation 482 'fdiv' 'moy_1' <Predicate = true> <Delay = 6.07> <Core = "FDiv">   --->   Core 107 'FDiv' <Latency = 15> <II = 1> <Delay = 6.07> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 98 <SV = 69> <Delay = 6.07>
+ST_98 : Operation 483 [14/16] (6.07ns)   --->   "%moy_1 = fdiv float %somme_assign_1, %tmp_i2" [src/kmeans.c:92->src/kmeans.c:71]   --->   Operation 483 'fdiv' 'moy_1' <Predicate = true> <Delay = 6.07> <Core = "FDiv">   --->   Core 107 'FDiv' <Latency = 15> <II = 1> <Delay = 6.07> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 99 <SV = 70> <Delay = 6.07>
+ST_99 : Operation 484 [13/16] (6.07ns)   --->   "%moy_1 = fdiv float %somme_assign_1, %tmp_i2" [src/kmeans.c:92->src/kmeans.c:71]   --->   Operation 484 'fdiv' 'moy_1' <Predicate = true> <Delay = 6.07> <Core = "FDiv">   --->   Core 107 'FDiv' <Latency = 15> <II = 1> <Delay = 6.07> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 100 <SV = 71> <Delay = 6.07>
+ST_100 : Operation 485 [12/16] (6.07ns)   --->   "%moy_1 = fdiv float %somme_assign_1, %tmp_i2" [src/kmeans.c:92->src/kmeans.c:71]   --->   Operation 485 'fdiv' 'moy_1' <Predicate = true> <Delay = 6.07> <Core = "FDiv">   --->   Core 107 'FDiv' <Latency = 15> <II = 1> <Delay = 6.07> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 101 <SV = 72> <Delay = 6.07>
+ST_101 : Operation 486 [11/16] (6.07ns)   --->   "%moy_1 = fdiv float %somme_assign_1, %tmp_i2" [src/kmeans.c:92->src/kmeans.c:71]   --->   Operation 486 'fdiv' 'moy_1' <Predicate = true> <Delay = 6.07> <Core = "FDiv">   --->   Core 107 'FDiv' <Latency = 15> <II = 1> <Delay = 6.07> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 102 <SV = 73> <Delay = 6.07>
+ST_102 : Operation 487 [10/16] (6.07ns)   --->   "%moy_1 = fdiv float %somme_assign_1, %tmp_i2" [src/kmeans.c:92->src/kmeans.c:71]   --->   Operation 487 'fdiv' 'moy_1' <Predicate = true> <Delay = 6.07> <Core = "FDiv">   --->   Core 107 'FDiv' <Latency = 15> <II = 1> <Delay = 6.07> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 103 <SV = 74> <Delay = 6.07>
+ST_103 : Operation 488 [9/16] (6.07ns)   --->   "%moy_1 = fdiv float %somme_assign_1, %tmp_i2" [src/kmeans.c:92->src/kmeans.c:71]   --->   Operation 488 'fdiv' 'moy_1' <Predicate = true> <Delay = 6.07> <Core = "FDiv">   --->   Core 107 'FDiv' <Latency = 15> <II = 1> <Delay = 6.07> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 104 <SV = 75> <Delay = 6.07>
+ST_104 : Operation 489 [8/16] (6.07ns)   --->   "%moy_1 = fdiv float %somme_assign_1, %tmp_i2" [src/kmeans.c:92->src/kmeans.c:71]   --->   Operation 489 'fdiv' 'moy_1' <Predicate = true> <Delay = 6.07> <Core = "FDiv">   --->   Core 107 'FDiv' <Latency = 15> <II = 1> <Delay = 6.07> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 105 <SV = 76> <Delay = 6.07>
+ST_105 : Operation 490 [7/16] (6.07ns)   --->   "%moy_1 = fdiv float %somme_assign_1, %tmp_i2" [src/kmeans.c:92->src/kmeans.c:71]   --->   Operation 490 'fdiv' 'moy_1' <Predicate = true> <Delay = 6.07> <Core = "FDiv">   --->   Core 107 'FDiv' <Latency = 15> <II = 1> <Delay = 6.07> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 106 <SV = 77> <Delay = 6.07>
+ST_106 : Operation 491 [6/16] (6.07ns)   --->   "%moy_1 = fdiv float %somme_assign_1, %tmp_i2" [src/kmeans.c:92->src/kmeans.c:71]   --->   Operation 491 'fdiv' 'moy_1' <Predicate = true> <Delay = 6.07> <Core = "FDiv">   --->   Core 107 'FDiv' <Latency = 15> <II = 1> <Delay = 6.07> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 107 <SV = 78> <Delay = 6.07>
+ST_107 : Operation 492 [5/16] (6.07ns)   --->   "%moy_1 = fdiv float %somme_assign_1, %tmp_i2" [src/kmeans.c:92->src/kmeans.c:71]   --->   Operation 492 'fdiv' 'moy_1' <Predicate = true> <Delay = 6.07> <Core = "FDiv">   --->   Core 107 'FDiv' <Latency = 15> <II = 1> <Delay = 6.07> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 108 <SV = 79> <Delay = 6.07>
+ST_108 : Operation 493 [4/16] (6.07ns)   --->   "%moy_1 = fdiv float %somme_assign_1, %tmp_i2" [src/kmeans.c:92->src/kmeans.c:71]   --->   Operation 493 'fdiv' 'moy_1' <Predicate = true> <Delay = 6.07> <Core = "FDiv">   --->   Core 107 'FDiv' <Latency = 15> <II = 1> <Delay = 6.07> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 109 <SV = 80> <Delay = 6.07>
+ST_109 : Operation 494 [3/16] (6.07ns)   --->   "%moy_1 = fdiv float %somme_assign_1, %tmp_i2" [src/kmeans.c:92->src/kmeans.c:71]   --->   Operation 494 'fdiv' 'moy_1' <Predicate = true> <Delay = 6.07> <Core = "FDiv">   --->   Core 107 'FDiv' <Latency = 15> <II = 1> <Delay = 6.07> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 110 <SV = 81> <Delay = 6.07>
+ST_110 : Operation 495 [2/16] (6.07ns)   --->   "%moy_1 = fdiv float %somme_assign_1, %tmp_i2" [src/kmeans.c:92->src/kmeans.c:71]   --->   Operation 495 'fdiv' 'moy_1' <Predicate = true> <Delay = 6.07> <Core = "FDiv">   --->   Core 107 'FDiv' <Latency = 15> <II = 1> <Delay = 6.07> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 111 <SV = 82> <Delay = 6.07>
+ST_111 : Operation 496 [1/16] (6.07ns)   --->   "%moy_1 = fdiv float %somme_assign_1, %tmp_i2" [src/kmeans.c:92->src/kmeans.c:71]   --->   Operation 496 'fdiv' 'moy_1' <Predicate = (!icmp_ln90)> <Delay = 6.07> <Core = "FDiv">   --->   Core 107 'FDiv' <Latency = 15> <II = 1> <Delay = 6.07> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+ST_111 : Operation 497 [1/1] (1.76ns)   --->   "br label %centers_loop_end" [src/kmeans.c:93->src/kmeans.c:71]   --->   Operation 497 'br' <Predicate = (!icmp_ln90)> <Delay = 1.76>
+ST_111 : Operation 498 [1/1] (1.76ns)   --->   "store float %X_prot_3_12, float* %X_prot_3_2" [src/kmeans.c:56]   --->   Operation 498 'store' <Predicate = true> <Delay = 1.76>
+ST_111 : Operation 499 [1/1] (1.76ns)   --->   "store float %X_prot_3_15, float* %X_prot_3_9" [src/kmeans.c:56]   --->   Operation 499 'store' <Predicate = true> <Delay = 1.76>
+ST_111 : Operation 500 [1/1] (1.76ns)   --->   "store float %X_prot_3_17, float* %X_prot_3_8" [src/kmeans.c:56]   --->   Operation 500 'store' <Predicate = true> <Delay = 1.76>
+ST_111 : Operation 501 [1/1] (1.76ns)   --->   "store float %X_prot_3_18, float* %X_prot_3_7" [src/kmeans.c:56]   --->   Operation 501 'store' <Predicate = true> <Delay = 1.76>
+
+State 112 <SV = 83> <Delay = 3.16>
+ST_112 : Operation 502 [1/1] (0.00ns)   --->   "%Y_prot_3_19 = phi float [ %moy_1, %6 ], [ 0.000000e+00, %moy.exit_ifconv ]"   --->   Operation 502 'phi' 'Y_prot_3_19' <Predicate = true> <Delay = 0.00>
+ST_112 : Operation 503 [1/1] (0.00ns)   --->   "%Y_prot_3_6_load_1 = load float* %Y_prot_3_6" [src/kmeans.c:71]   --->   Operation 503 'load' 'Y_prot_3_6_load_1' <Predicate = (!icmp_ln70_2)> <Delay = 0.00>
+ST_112 : Operation 504 [1/1] (0.00ns)   --->   "%Y_prot_3_7_load_1 = load float* %Y_prot_3_7" [src/kmeans.c:71]   --->   Operation 504 'load' 'Y_prot_3_7_load_1' <Predicate = true> <Delay = 0.00>
+ST_112 : Operation 505 [1/1] (0.00ns)   --->   "%Y_prot_3_8_load_1 = load float* %Y_prot_3_8" [src/kmeans.c:71]   --->   Operation 505 'load' 'Y_prot_3_8_load_1' <Predicate = true> <Delay = 0.00>
+ST_112 : Operation 506 [1/1] (0.00ns)   --->   "%Y_prot_3_2_load_1 = load float* %Y_prot_3_2" [src/kmeans.c:71]   --->   Operation 506 'load' 'Y_prot_3_2_load_1' <Predicate = true> <Delay = 0.00>
+ST_112 : Operation 507 [1/1] (0.00ns) (grouped into LUT with out node Y_prot_3_11)   --->   "%Y_prot_3 = select i1 %icmp_ln70, float %Y_prot_3_2_load_1, float %Y_prot_3_19" [src/kmeans.c:71]   --->   Operation 507 'select' 'Y_prot_3' <Predicate = (!icmp_ln70_1 & !icmp_ln70_2)> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_112 : Operation 508 [1/1] (0.69ns) (out node of the LUT)   --->   "%Y_prot_3_11 = select i1 %icmp_ln70_1, float %Y_prot_3_2_load_1, float %Y_prot_3" [src/kmeans.c:71]   --->   Operation 508 'select' 'Y_prot_3_11' <Predicate = (!icmp_ln70_2)> <Delay = 0.69> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_112 : Operation 509 [1/1] (0.69ns) (out node of the LUT)   --->   "%Y_prot_3_12 = select i1 %icmp_ln70_2, float %Y_prot_3_2_load_1, float %Y_prot_3_11" [src/kmeans.c:71]   --->   Operation 509 'select' 'Y_prot_3_12' <Predicate = true> <Delay = 0.69> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_112 : Operation 510 [1/1] (0.00ns) (grouped into LUT with out node Y_prot_3_14)   --->   "%Y_prot_3_13 = select i1 %icmp_ln70, float %Y_prot_3_19, float %Y_prot_3_8_load_1" [src/kmeans.c:71]   --->   Operation 510 'select' 'Y_prot_3_13' <Predicate = (!icmp_ln70_1 & !icmp_ln70_2)> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_112 : Operation 511 [1/1] (0.69ns) (out node of the LUT)   --->   "%Y_prot_3_14 = select i1 %icmp_ln70_1, float %Y_prot_3_8_load_1, float %Y_prot_3_13" [src/kmeans.c:71]   --->   Operation 511 'select' 'Y_prot_3_14' <Predicate = (!icmp_ln70_2)> <Delay = 0.69> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_112 : Operation 512 [1/1] (0.69ns) (out node of the LUT)   --->   "%Y_prot_3_15 = select i1 %icmp_ln70_2, float %Y_prot_3_8_load_1, float %Y_prot_3_14" [src/kmeans.c:71]   --->   Operation 512 'select' 'Y_prot_3_15' <Predicate = true> <Delay = 0.69> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_112 : Operation 513 [1/1] (0.00ns) (grouped into LUT with out node Y_prot_3_17)   --->   "%Y_prot_3_16 = select i1 %icmp_ln70_1, float %Y_prot_3_19, float %Y_prot_3_7_load_1" [src/kmeans.c:71]   --->   Operation 513 'select' 'Y_prot_3_16' <Predicate = (!icmp_ln70_2)> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_112 : Operation 514 [1/1] (0.69ns) (out node of the LUT)   --->   "%Y_prot_3_17 = select i1 %icmp_ln70_2, float %Y_prot_3_7_load_1, float %Y_prot_3_16" [src/kmeans.c:71]   --->   Operation 514 'select' 'Y_prot_3_17' <Predicate = true> <Delay = 0.69> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_112 : Operation 515 [1/1] (0.69ns)   --->   "%Y_prot_3_18 = select i1 %icmp_ln70_2, float %Y_prot_3_19, float %Y_prot_3_6_load_1" [src/kmeans.c:71]   --->   Operation 515 'select' 'Y_prot_3_18' <Predicate = true> <Delay = 0.69> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_112 : Operation 516 [1/1] (0.00ns)   --->   "%empty_24 = call i32 (...)* @_ssdm_op_SpecRegionEnd([13 x i8]* @p_str9, i32 %tmp_4) nounwind" [src/kmeans.c:72]   --->   Operation 516 'specregionend' 'empty_24' <Predicate = true> <Delay = 0.00>
+ST_112 : Operation 517 [1/1] (1.76ns)   --->   "store float %Y_prot_3_12, float* %Y_prot_3_2" [src/kmeans.c:56]   --->   Operation 517 'store' <Predicate = true> <Delay = 1.76>
+ST_112 : Operation 518 [1/1] (1.76ns)   --->   "store float %Y_prot_3_15, float* %Y_prot_3_8" [src/kmeans.c:56]   --->   Operation 518 'store' <Predicate = true> <Delay = 1.76>
+ST_112 : Operation 519 [1/1] (1.76ns)   --->   "store float %Y_prot_3_17, float* %Y_prot_3_7" [src/kmeans.c:56]   --->   Operation 519 'store' <Predicate = true> <Delay = 1.76>
+ST_112 : Operation 520 [1/1] (1.76ns)   --->   "store float %Y_prot_3_18, float* %Y_prot_3_6" [src/kmeans.c:56]   --->   Operation 520 'store' <Predicate = true> <Delay = 1.76>
+ST_112 : Operation 521 [1/1] (0.00ns)   --->   "br label %.preheader" [src/kmeans.c:56]   --->   Operation 521 'br' <Predicate = true> <Delay = 0.00>
+
+State 113 <SV = 37> <Delay = 3.25>
+ST_113 : Operation 522 [1/1] (0.00ns)   --->   "%phi_ln75 = phi i8 [ %add_ln75, %burstwrite.region ], [ 0, %burst.wr.header.preheader ]" [src/kmeans.c:75]   --->   Operation 522 'phi' 'phi_ln75' <Predicate = true> <Delay = 0.00>
+ST_113 : Operation 523 [1/1] (1.55ns)   --->   "%icmp_ln75 = icmp eq i8 %phi_ln75, -128" [src/kmeans.c:75]   --->   Operation 523 'icmp' 'icmp_ln75' <Predicate = true> <Delay = 1.55> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.95> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_113 : Operation 524 [1/1] (0.00ns)   --->   "%empty_25 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 128, i64 128, i64 128) nounwind"   --->   Operation 524 'speclooptripcount' 'empty_25' <Predicate = true> <Delay = 0.00>
+ST_113 : Operation 525 [1/1] (1.91ns)   --->   "%add_ln75 = add i8 %phi_ln75, 1" [src/kmeans.c:75]   --->   Operation 525 'add' 'add_ln75' <Predicate = true> <Delay = 1.91> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_113 : Operation 526 [1/1] (0.00ns)   --->   "br i1 %icmp_ln75, label %memcpy.tail, label %burstwrite.region" [src/kmeans.c:75]   --->   Operation 526 'br' <Predicate = true> <Delay = 0.00>
+ST_113 : Operation 527 [1/1] (0.00ns)   --->   "%zext_ln75 = zext i8 %phi_ln75 to i64" [src/kmeans.c:75]   --->   Operation 527 'zext' 'zext_ln75' <Predicate = (!icmp_ln75)> <Delay = 0.00>
+ST_113 : Operation 528 [1/1] (0.00ns)   --->   "%cluster_addr = getelementptr [128 x i32]* %cluster, i64 0, i64 %zext_ln75" [src/kmeans.c:75]   --->   Operation 528 'getelementptr' 'cluster_addr' <Predicate = (!icmp_ln75)> <Delay = 0.00>
+ST_113 : Operation 529 [2/2] (3.25ns)   --->   "%cluster_load = load i32* %cluster_addr, align 4" [src/kmeans.c:75]   --->   Operation 529 'load' 'cluster_load' <Predicate = (!icmp_ln75)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 128> <RAM>
+
+State 114 <SV = 38> <Delay = 3.25>
+ST_114 : Operation 530 [1/2] (3.25ns)   --->   "%cluster_load = load i32* %cluster_addr, align 4" [src/kmeans.c:75]   --->   Operation 530 'load' 'cluster_load' <Predicate = (!icmp_ln75)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 128> <RAM>
+
+State 115 <SV = 39> <Delay = 8.75>
+ST_115 : Operation 531 [1/1] (0.00ns)   --->   "%burstwrite_rbegin = call i32 (...)* @_ssdm_op_SpecRegionBegin([18 x i8]* @burstwrite_OC_region) nounwind" [src/kmeans.c:75]   --->   Operation 531 'specregionbegin' 'burstwrite_rbegin' <Predicate = (!icmp_ln75)> <Delay = 0.00>
+ST_115 : Operation 532 [1/1] (0.00ns)   --->   "%empty_26 = call i32 (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, i32 0, [1 x i8]* @p_str15) nounwind" [src/kmeans.c:75]   --->   Operation 532 'specpipeline' 'empty_26' <Predicate = (!icmp_ln75)> <Delay = 0.00>
+ST_115 : Operation 533 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([31 x i8]* @memcpy_OC_out_cluste)" [src/kmeans.c:75]   --->   Operation 533 'specloopname' <Predicate = (!icmp_ln75)> <Delay = 0.00>
+ST_115 : Operation 534 [1/1] (8.75ns)   --->   "call void @_ssdm_op_Write.m_axi.i32P(i32* %OUTPUT_addr, i32 %cluster_load, i4 -1)" [src/kmeans.c:75]   --->   Operation 534 'write' <Predicate = (!icmp_ln75)> <Delay = 8.75> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_115 : Operation 535 [1/1] (0.00ns)   --->   "%burstwrite_rend = call i32 (...)* @_ssdm_op_SpecRegionEnd([18 x i8]* @burstwrite_OC_region, i32 %burstwrite_rbegin) nounwind" [src/kmeans.c:75]   --->   Operation 535 'specregionend' 'burstwrite_rend' <Predicate = (!icmp_ln75)> <Delay = 0.00>
+ST_115 : Operation 536 [1/1] (0.00ns)   --->   "br label %burst.wr.header" [src/kmeans.c:75]   --->   Operation 536 'br' <Predicate = (!icmp_ln75)> <Delay = 0.00>
+
+State 116 <SV = 38> <Delay = 8.75>
+ST_116 : Operation 537 [5/5] (8.75ns)   --->   "%OUTPUT_addr_wr_resp = call i1 @_ssdm_op_WriteResp.m_axi.i32P(i32* %OUTPUT_addr)" [src/kmeans.c:75]   --->   Operation 537 'writeresp' 'OUTPUT_addr_wr_resp' <Predicate = true> <Delay = 8.75> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 117 <SV = 39> <Delay = 8.75>
+ST_117 : Operation 538 [4/5] (8.75ns)   --->   "%OUTPUT_addr_wr_resp = call i1 @_ssdm_op_WriteResp.m_axi.i32P(i32* %OUTPUT_addr)" [src/kmeans.c:75]   --->   Operation 538 'writeresp' 'OUTPUT_addr_wr_resp' <Predicate = true> <Delay = 8.75> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 118 <SV = 40> <Delay = 8.75>
+ST_118 : Operation 539 [3/5] (8.75ns)   --->   "%OUTPUT_addr_wr_resp = call i1 @_ssdm_op_WriteResp.m_axi.i32P(i32* %OUTPUT_addr)" [src/kmeans.c:75]   --->   Operation 539 'writeresp' 'OUTPUT_addr_wr_resp' <Predicate = true> <Delay = 8.75> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 119 <SV = 41> <Delay = 8.75>
+ST_119 : Operation 540 [2/5] (8.75ns)   --->   "%OUTPUT_addr_wr_resp = call i1 @_ssdm_op_WriteResp.m_axi.i32P(i32* %OUTPUT_addr)" [src/kmeans.c:75]   --->   Operation 540 'writeresp' 'OUTPUT_addr_wr_resp' <Predicate = true> <Delay = 8.75> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 120 <SV = 42> <Delay = 8.75>
+ST_120 : Operation 541 [1/5] (8.75ns)   --->   "%OUTPUT_addr_wr_resp = call i1 @_ssdm_op_WriteResp.m_axi.i32P(i32* %OUTPUT_addr)" [src/kmeans.c:75]   --->   Operation 541 'writeresp' 'OUTPUT_addr_wr_resp' <Predicate = true> <Delay = 8.75> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_120 : Operation 542 [1/1] (0.00ns)   --->   "ret void" [src/kmeans.c:76]   --->   Operation 542 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 1ns
+The critical path consists of the following:
+	s_axi read on port 'out_cluster' [8]  (1 ns)
+
+ <State 2>: 8.75ns
+The critical path consists of the following:
+	'getelementptr' operation ('INPUT_addr_1') [21]  (0 ns)
+	bus request on port 'INPUT_r' (src/kmeans.c:25) [42]  (8.75 ns)
+
+ <State 3>: 8.75ns
+The critical path consists of the following:
+	bus request on port 'INPUT_r' (src/kmeans.c:25) [42]  (8.75 ns)
+
+ <State 4>: 8.75ns
+The critical path consists of the following:
+	bus request on port 'INPUT_r' (src/kmeans.c:25) [42]  (8.75 ns)
+
+ <State 5>: 8.75ns
+The critical path consists of the following:
+	bus request on port 'INPUT_r' (src/kmeans.c:25) [42]  (8.75 ns)
+
+ <State 6>: 8.75ns
+The critical path consists of the following:
+	bus request on port 'INPUT_r' (src/kmeans.c:25) [42]  (8.75 ns)
+
+ <State 7>: 8.75ns
+The critical path consists of the following:
+	bus request on port 'INPUT_r' (src/kmeans.c:25) [42]  (8.75 ns)
+
+ <State 8>: 8.75ns
+The critical path consists of the following:
+	bus request on port 'INPUT_r' (src/kmeans.c:25) [42]  (8.75 ns)
+
+ <State 9>: 1.92ns
+The critical path consists of the following:
+	'phi' operation ('phi_ln25', src/kmeans.c:25) with incoming values : ('add_ln25', src/kmeans.c:25) [45]  (0 ns)
+	'add' operation ('add_ln25', src/kmeans.c:25) [48]  (1.92 ns)
+
+ <State 10>: 8.75ns
+The critical path consists of the following:
+	bus read on port 'INPUT_r' (src/kmeans.c:25) [55]  (8.75 ns)
+
+ <State 11>: 3.25ns
+The critical path consists of the following:
+	'getelementptr' operation ('X_addr', src/kmeans.c:25) [56]  (0 ns)
+	'store' operation ('store_ln25', src/kmeans.c:25) of variable 'INPUT_addr_1_read', src/kmeans.c:25 on array 'X', src/kmeans.c:18 [57]  (3.25 ns)
+
+ <State 12>: 8.75ns
+The critical path consists of the following:
+	bus request on port 'INPUT_r' (src/kmeans.c:26) [61]  (8.75 ns)
+
+ <State 13>: 8.75ns
+The critical path consists of the following:
+	bus request on port 'INPUT_r' (src/kmeans.c:26) [61]  (8.75 ns)
+
+ <State 14>: 8.75ns
+The critical path consists of the following:
+	bus request on port 'INPUT_r' (src/kmeans.c:26) [61]  (8.75 ns)
+
+ <State 15>: 8.75ns
+The critical path consists of the following:
+	bus request on port 'INPUT_r' (src/kmeans.c:26) [61]  (8.75 ns)
+
+ <State 16>: 8.75ns
+The critical path consists of the following:
+	bus request on port 'INPUT_r' (src/kmeans.c:26) [61]  (8.75 ns)
+
+ <State 17>: 8.75ns
+The critical path consists of the following:
+	bus request on port 'INPUT_r' (src/kmeans.c:26) [61]  (8.75 ns)
+
+ <State 18>: 8.75ns
+The critical path consists of the following:
+	bus request on port 'INPUT_r' (src/kmeans.c:26) [61]  (8.75 ns)
+
+ <State 19>: 1.92ns
+The critical path consists of the following:
+	'phi' operation ('phi_ln26', src/kmeans.c:26) with incoming values : ('add_ln26', src/kmeans.c:26) [64]  (0 ns)
+	'add' operation ('add_ln26', src/kmeans.c:26) [67]  (1.92 ns)
+
+ <State 20>: 8.75ns
+The critical path consists of the following:
+	bus read on port 'INPUT_r' (src/kmeans.c:26) [74]  (8.75 ns)
+
+ <State 21>: 3.25ns
+The critical path consists of the following:
+	'getelementptr' operation ('Y_addr', src/kmeans.c:26) [75]  (0 ns)
+	'store' operation ('store_ln26', src/kmeans.c:26) of variable 'INPUT_addr_read', src/kmeans.c:26 on array 'Y', src/kmeans.c:19 [76]  (3.25 ns)
+
+ <State 22>: 8.75ns
+The critical path consists of the following:
+	bus request on port 'INPUT_r' (src/kmeans.c:27) [84]  (8.75 ns)
+
+ <State 23>: 8.75ns
+The critical path consists of the following:
+	bus request on port 'INPUT_r' (src/kmeans.c:27) [84]  (8.75 ns)
+
+ <State 24>: 8.75ns
+The critical path consists of the following:
+	bus request on port 'INPUT_r' (src/kmeans.c:27) [84]  (8.75 ns)
+
+ <State 25>: 8.75ns
+The critical path consists of the following:
+	bus request on port 'INPUT_r' (src/kmeans.c:27) [84]  (8.75 ns)
+
+ <State 26>: 8.75ns
+The critical path consists of the following:
+	bus request on port 'INPUT_r' (src/kmeans.c:27) [84]  (8.75 ns)
+
+ <State 27>: 8.75ns
+The critical path consists of the following:
+	bus request on port 'INPUT_r' (src/kmeans.c:27) [84]  (8.75 ns)
+
+ <State 28>: 8.75ns
+The critical path consists of the following:
+	bus request on port 'INPUT_r' (src/kmeans.c:27) [84]  (8.75 ns)
+
+ <State 29>: 1.65ns
+The critical path consists of the following:
+	'phi' operation ('phi_ln27', src/kmeans.c:27) with incoming values : ('add_ln27', src/kmeans.c:27) [87]  (0 ns)
+	'add' operation ('add_ln27', src/kmeans.c:27) [94]  (1.65 ns)
+
+ <State 30>: 8.75ns
+The critical path consists of the following:
+	bus read on port 'INPUT_r' (src/kmeans.c:27) [100]  (8.75 ns)
+	'store' operation ('store_ln27', src/kmeans.c:27) of variable 'X_prot[0]', src/kmeans.c:27 on local variable 'X_prot[3]' [104]  (0 ns)
+
+ <State 31>: 8.75ns
+The critical path consists of the following:
+	bus request on port 'INPUT_r' (src/kmeans.c:28) [123]  (8.75 ns)
+
+ <State 32>: 8.75ns
+The critical path consists of the following:
+	bus request on port 'INPUT_r' (src/kmeans.c:28) [123]  (8.75 ns)
+
+ <State 33>: 8.75ns
+The critical path consists of the following:
+	bus request on port 'INPUT_r' (src/kmeans.c:28) [123]  (8.75 ns)
+
+ <State 34>: 8.75ns
+The critical path consists of the following:
+	bus request on port 'INPUT_r' (src/kmeans.c:28) [123]  (8.75 ns)
+
+ <State 35>: 8.75ns
+The critical path consists of the following:
+	bus request on port 'INPUT_r' (src/kmeans.c:28) [123]  (8.75 ns)
+
+ <State 36>: 8.75ns
+The critical path consists of the following:
+	bus request on port 'INPUT_r' (src/kmeans.c:28) [123]  (8.75 ns)
+
+ <State 37>: 8.75ns
+The critical path consists of the following:
+	bus request on port 'INPUT_r' (src/kmeans.c:28) [123]  (8.75 ns)
+
+ <State 38>: 1.65ns
+The critical path consists of the following:
+	'phi' operation ('phi_ln28', src/kmeans.c:28) with incoming values : ('add_ln28', src/kmeans.c:28) [126]  (0 ns)
+	'add' operation ('add_ln28', src/kmeans.c:28) [133]  (1.65 ns)
+
+ <State 39>: 8.75ns
+The critical path consists of the following:
+	bus read on port 'INPUT_r' (src/kmeans.c:28) [139]  (8.75 ns)
+	'store' operation ('store_ln28', src/kmeans.c:28) of variable 'Y_prot[0]', src/kmeans.c:28 on local variable 'Y_prot[3]' [143]  (0 ns)
+
+ <State 40>: 1.77ns
+The critical path consists of the following:
+	'alloca' operation ('X_prot[3]') [158]  (0 ns)
+	'store' operation ('store_ln36', src/kmeans.c:36) of variable 'X_prot_3_1_load' on local variable 'X_prot[3]' [173]  (1.77 ns)
+
+ <State 41>: 8.75ns
+The critical path consists of the following:
+	bus request on port 'OUTPUT_r' (src/kmeans.c:75) [355]  (8.75 ns)
+
+ <State 42>: 3.25ns
+The critical path consists of the following:
+	'phi' operation ('j') with incoming values : ('j', src/kmeans.c:38) [184]  (0 ns)
+	'getelementptr' operation ('X_addr_1', src/kmeans.c:45) [193]  (0 ns)
+	'load' operation ('x2', src/kmeans.c:45) on array 'X', src/kmeans.c:18 [194]  (3.25 ns)
+
+ <State 43>: 3.25ns
+The critical path consists of the following:
+	'load' operation ('x2', src/kmeans.c:45) on array 'X', src/kmeans.c:18 [194]  (3.25 ns)
+
+ <State 44>: 3.25ns
+The critical path consists of the following:
+	'phi' operation ('belonging_cluster_index') with incoming values : ('belonging_cluster_index', src/kmeans.c:46) [201]  (0 ns)
+	'store' operation ('store_ln52', src/kmeans.c:52) of variable 'belonging_cluster_index' on array 'cluster', src/kmeans.c:22 [254]  (3.25 ns)
+
+ <State 45>: 7.26ns
+The critical path consists of the following:
+	'fsub' operation ('tmp_i', src/kmeans.c:83->src/kmeans.c:45) [220]  (7.26 ns)
+
+ <State 46>: 7.26ns
+The critical path consists of the following:
+	'fsub' operation ('tmp_i', src/kmeans.c:83->src/kmeans.c:45) [220]  (7.26 ns)
+
+ <State 47>: 7.26ns
+The critical path consists of the following:
+	'fsub' operation ('tmp_i', src/kmeans.c:83->src/kmeans.c:45) [220]  (7.26 ns)
+
+ <State 48>: 7.26ns
+The critical path consists of the following:
+	'fsub' operation ('tmp_i', src/kmeans.c:83->src/kmeans.c:45) [220]  (7.26 ns)
+
+ <State 49>: 7.26ns
+The critical path consists of the following:
+	'fsub' operation ('tmp_i', src/kmeans.c:83->src/kmeans.c:45) [220]  (7.26 ns)
+
+ <State 50>: 4.44ns
+The critical path consists of the following:
+	'fpext' operation ('x', src/kmeans.c:83->src/kmeans.c:45) [221]  (4.44 ns)
+
+ <State 51>: 4.44ns
+The critical path consists of the following:
+	'fpext' operation ('x', src/kmeans.c:83->src/kmeans.c:45) [221]  (4.44 ns)
+
+ <State 52>: 8.23ns
+The critical path consists of the following:
+	'dadd' operation ('tmp_i_20', src/kmeans.c:83->src/kmeans.c:45) [232]  (8.23 ns)
+
+ <State 53>: 8.23ns
+The critical path consists of the following:
+	'dadd' operation ('tmp_i_20', src/kmeans.c:83->src/kmeans.c:45) [232]  (8.23 ns)
+
+ <State 54>: 8.23ns
+The critical path consists of the following:
+	'dadd' operation ('tmp_i_20', src/kmeans.c:83->src/kmeans.c:45) [232]  (8.23 ns)
+
+ <State 55>: 8.23ns
+The critical path consists of the following:
+	'dadd' operation ('tmp_i_20', src/kmeans.c:83->src/kmeans.c:45) [232]  (8.23 ns)
+
+ <State 56>: 8.23ns
+The critical path consists of the following:
+	'dadd' operation ('tmp_i_20', src/kmeans.c:83->src/kmeans.c:45) [232]  (8.23 ns)
+
+ <State 57>: 5.2ns
+The critical path consists of the following:
+	'fptrunc' operation ('distance', src/kmeans.c:83->src/kmeans.c:45) [233]  (5.2 ns)
+
+ <State 58>: 5.2ns
+The critical path consists of the following:
+	'fptrunc' operation ('distance', src/kmeans.c:83->src/kmeans.c:45) [233]  (5.2 ns)
+
+ <State 59>: 5.43ns
+The critical path consists of the following:
+	'fcmp' operation ('tmp_7', src/kmeans.c:46) [247]  (5.43 ns)
+
+ <State 60>: 7.11ns
+The critical path consists of the following:
+	'fcmp' operation ('tmp_7', src/kmeans.c:46) [247]  (5.43 ns)
+	'and' operation ('and_ln46_1', src/kmeans.c:46) [248]  (0.978 ns)
+	'select' operation ('min_distance', src/kmeans.c:46) [249]  (0.698 ns)
+
+ <State 61>: 2.11ns
+The critical path consists of the following:
+	'icmp' operation ('icmp_ln56', src/kmeans.c:56) [262]  (1.13 ns)
+	blocking operation 0.978 ns on control path)
+
+ <State 62>: 6.41ns
+The critical path consists of the following:
+	'phi' operation ('size') with incoming values : ('size', src/kmeans.c:63) [272]  (0 ns)
+	'sitofp' operation ('tmp_i1', src/kmeans.c:92->src/kmeans.c:70) [300]  (6.41 ns)
+
+ <State 63>: 5.73ns
+The critical path consists of the following:
+	'load' operation ('cluster_load_1', src/kmeans.c:63) on array 'cluster', src/kmeans.c:22 [283]  (3.25 ns)
+	'icmp' operation ('icmp_ln63', src/kmeans.c:63) [284]  (2.47 ns)
+
+ <State 64>: 7.26ns
+The critical path consists of the following:
+	'fadd' operation ('X_clus', src/kmeans.c:65) [287]  (7.26 ns)
+
+ <State 65>: 7.26ns
+The critical path consists of the following:
+	'fadd' operation ('X_clus', src/kmeans.c:65) [287]  (7.26 ns)
+
+ <State 66>: 7.26ns
+The critical path consists of the following:
+	'fadd' operation ('X_clus', src/kmeans.c:65) [287]  (7.26 ns)
+
+ <State 67>: 7.26ns
+The critical path consists of the following:
+	'fadd' operation ('X_clus', src/kmeans.c:65) [287]  (7.26 ns)
+
+ <State 68>: 7.95ns
+The critical path consists of the following:
+	'fadd' operation ('X_clus', src/kmeans.c:65) [287]  (7.26 ns)
+	'select' operation ('X_clus', src/kmeans.c:63) [293]  (0.698 ns)
+
+ <State 69>: 6.41ns
+The critical path consists of the following:
+	'sitofp' operation ('tmp_i1', src/kmeans.c:92->src/kmeans.c:70) [300]  (6.41 ns)
+
+ <State 70>: 6.41ns
+The critical path consists of the following:
+	'sitofp' operation ('tmp_i1', src/kmeans.c:92->src/kmeans.c:70) [300]  (6.41 ns)
+
+ <State 71>: 6.41ns
+The critical path consists of the following:
+	'sitofp' operation ('tmp_i1', src/kmeans.c:92->src/kmeans.c:70) [300]  (6.41 ns)
+
+ <State 72>: 6.41ns
+The critical path consists of the following:
+	'sitofp' operation ('tmp_i1', src/kmeans.c:92->src/kmeans.c:70) [300]  (6.41 ns)
+
+ <State 73>: 6.41ns
+The critical path consists of the following:
+	'sitofp' operation ('tmp_i1', src/kmeans.c:92->src/kmeans.c:70) [300]  (6.41 ns)
+
+ <State 74>: 6.08ns
+The critical path consists of the following:
+	'fdiv' operation ('moy', src/kmeans.c:92->src/kmeans.c:70) [301]  (6.08 ns)
+
+ <State 75>: 6.08ns
+The critical path consists of the following:
+	'fdiv' operation ('moy', src/kmeans.c:92->src/kmeans.c:70) [301]  (6.08 ns)
+
+ <State 76>: 6.08ns
+The critical path consists of the following:
+	'fdiv' operation ('moy', src/kmeans.c:92->src/kmeans.c:70) [301]  (6.08 ns)
+
+ <State 77>: 6.08ns
+The critical path consists of the following:
+	'fdiv' operation ('moy', src/kmeans.c:92->src/kmeans.c:70) [301]  (6.08 ns)
+
+ <State 78>: 6.08ns
+The critical path consists of the following:
+	'fdiv' operation ('moy', src/kmeans.c:92->src/kmeans.c:70) [301]  (6.08 ns)
+
+ <State 79>: 6.08ns
+The critical path consists of the following:
+	'fdiv' operation ('moy', src/kmeans.c:92->src/kmeans.c:70) [301]  (6.08 ns)
+
+ <State 80>: 6.08ns
+The critical path consists of the following:
+	'fdiv' operation ('moy', src/kmeans.c:92->src/kmeans.c:70) [301]  (6.08 ns)
+
+ <State 81>: 6.08ns
+The critical path consists of the following:
+	'fdiv' operation ('moy', src/kmeans.c:92->src/kmeans.c:70) [301]  (6.08 ns)
+
+ <State 82>: 6.08ns
+The critical path consists of the following:
+	'fdiv' operation ('moy', src/kmeans.c:92->src/kmeans.c:70) [301]  (6.08 ns)
+
+ <State 83>: 6.08ns
+The critical path consists of the following:
+	'fdiv' operation ('moy', src/kmeans.c:92->src/kmeans.c:70) [301]  (6.08 ns)
+
+ <State 84>: 6.08ns
+The critical path consists of the following:
+	'fdiv' operation ('moy', src/kmeans.c:92->src/kmeans.c:70) [301]  (6.08 ns)
+
+ <State 85>: 6.08ns
+The critical path consists of the following:
+	'fdiv' operation ('moy', src/kmeans.c:92->src/kmeans.c:70) [301]  (6.08 ns)
+
+ <State 86>: 6.08ns
+The critical path consists of the following:
+	'fdiv' operation ('moy', src/kmeans.c:92->src/kmeans.c:70) [301]  (6.08 ns)
+
+ <State 87>: 6.08ns
+The critical path consists of the following:
+	'fdiv' operation ('moy', src/kmeans.c:92->src/kmeans.c:70) [301]  (6.08 ns)
+
+ <State 88>: 6.08ns
+The critical path consists of the following:
+	'fdiv' operation ('moy', src/kmeans.c:92->src/kmeans.c:70) [301]  (6.08 ns)
+
+ <State 89>: 6.08ns
+The critical path consists of the following:
+	'fdiv' operation ('moy', src/kmeans.c:92->src/kmeans.c:70) [301]  (6.08 ns)
+
+ <State 90>: 6.41ns
+The critical path consists of the following:
+	'sitofp' operation ('tmp_i2', src/kmeans.c:92->src/kmeans.c:71) [324]  (6.41 ns)
+
+ <State 91>: 6.41ns
+The critical path consists of the following:
+	'sitofp' operation ('tmp_i2', src/kmeans.c:92->src/kmeans.c:71) [324]  (6.41 ns)
+
+ <State 92>: 6.41ns
+The critical path consists of the following:
+	'sitofp' operation ('tmp_i2', src/kmeans.c:92->src/kmeans.c:71) [324]  (6.41 ns)
+
+ <State 93>: 6.41ns
+The critical path consists of the following:
+	'sitofp' operation ('tmp_i2', src/kmeans.c:92->src/kmeans.c:71) [324]  (6.41 ns)
+
+ <State 94>: 6.41ns
+The critical path consists of the following:
+	'sitofp' operation ('tmp_i2', src/kmeans.c:92->src/kmeans.c:71) [324]  (6.41 ns)
+
+ <State 95>: 6.41ns
+The critical path consists of the following:
+	'sitofp' operation ('tmp_i2', src/kmeans.c:92->src/kmeans.c:71) [324]  (6.41 ns)
+
+ <State 96>: 6.08ns
+The critical path consists of the following:
+	'fdiv' operation ('moy', src/kmeans.c:92->src/kmeans.c:71) [325]  (6.08 ns)
+
+ <State 97>: 6.08ns
+The critical path consists of the following:
+	'fdiv' operation ('moy', src/kmeans.c:92->src/kmeans.c:71) [325]  (6.08 ns)
+
+ <State 98>: 6.08ns
+The critical path consists of the following:
+	'fdiv' operation ('moy', src/kmeans.c:92->src/kmeans.c:71) [325]  (6.08 ns)
+
+ <State 99>: 6.08ns
+The critical path consists of the following:
+	'fdiv' operation ('moy', src/kmeans.c:92->src/kmeans.c:71) [325]  (6.08 ns)
+
+ <State 100>: 6.08ns
+The critical path consists of the following:
+	'fdiv' operation ('moy', src/kmeans.c:92->src/kmeans.c:71) [325]  (6.08 ns)
+
+ <State 101>: 6.08ns
+The critical path consists of the following:
+	'fdiv' operation ('moy', src/kmeans.c:92->src/kmeans.c:71) [325]  (6.08 ns)
+
+ <State 102>: 6.08ns
+The critical path consists of the following:
+	'fdiv' operation ('moy', src/kmeans.c:92->src/kmeans.c:71) [325]  (6.08 ns)
+
+ <State 103>: 6.08ns
+The critical path consists of the following:
+	'fdiv' operation ('moy', src/kmeans.c:92->src/kmeans.c:71) [325]  (6.08 ns)
+
+ <State 104>: 6.08ns
+The critical path consists of the following:
+	'fdiv' operation ('moy', src/kmeans.c:92->src/kmeans.c:71) [325]  (6.08 ns)
+
+ <State 105>: 6.08ns
+The critical path consists of the following:
+	'fdiv' operation ('moy', src/kmeans.c:92->src/kmeans.c:71) [325]  (6.08 ns)
+
+ <State 106>: 6.08ns
+The critical path consists of the following:
+	'fdiv' operation ('moy', src/kmeans.c:92->src/kmeans.c:71) [325]  (6.08 ns)
+
+ <State 107>: 6.08ns
+The critical path consists of the following:
+	'fdiv' operation ('moy', src/kmeans.c:92->src/kmeans.c:71) [325]  (6.08 ns)
+
+ <State 108>: 6.08ns
+The critical path consists of the following:
+	'fdiv' operation ('moy', src/kmeans.c:92->src/kmeans.c:71) [325]  (6.08 ns)
+
+ <State 109>: 6.08ns
+The critical path consists of the following:
+	'fdiv' operation ('moy', src/kmeans.c:92->src/kmeans.c:71) [325]  (6.08 ns)
+
+ <State 110>: 6.08ns
+The critical path consists of the following:
+	'fdiv' operation ('moy', src/kmeans.c:92->src/kmeans.c:71) [325]  (6.08 ns)
+
+ <State 111>: 6.08ns
+The critical path consists of the following:
+	'fdiv' operation ('moy', src/kmeans.c:92->src/kmeans.c:71) [325]  (6.08 ns)
+
+ <State 112>: 3.17ns
+The critical path consists of the following:
+	'phi' operation ('moy') with incoming values : ('moy', src/kmeans.c:92->src/kmeans.c:71) [328]  (0 ns)
+	'select' operation ('Y_prot[3]', src/kmeans.c:71) [333]  (0 ns)
+	'select' operation ('Y_prot[3]', src/kmeans.c:71) [334]  (0.698 ns)
+	'select' operation ('Y_prot[3]', src/kmeans.c:71) [335]  (0.698 ns)
+	'store' operation ('store_ln56', src/kmeans.c:56) of variable 'Y_prot[3]', src/kmeans.c:71 on local variable 'Y_prot[3]' [343]  (1.77 ns)
+
+ <State 113>: 3.25ns
+The critical path consists of the following:
+	'phi' operation ('phi_ln75', src/kmeans.c:75) with incoming values : ('add_ln75', src/kmeans.c:75) [358]  (0 ns)
+	'getelementptr' operation ('cluster_addr', src/kmeans.c:75) [368]  (0 ns)
+	'load' operation ('cluster_load', src/kmeans.c:75) on array 'cluster', src/kmeans.c:22 [369]  (3.25 ns)
+
+ <State 114>: 3.25ns
+The critical path consists of the following:
+	'load' operation ('cluster_load', src/kmeans.c:75) on array 'cluster', src/kmeans.c:22 [369]  (3.25 ns)
+
+ <State 115>: 8.75ns
+The critical path consists of the following:
+	bus write on port 'OUTPUT_r' (src/kmeans.c:75) [370]  (8.75 ns)
+
+ <State 116>: 8.75ns
+The critical path consists of the following:
+	bus access on port 'OUTPUT_r' (src/kmeans.c:75) [374]  (8.75 ns)
+
+ <State 117>: 8.75ns
+The critical path consists of the following:
+	bus access on port 'OUTPUT_r' (src/kmeans.c:75) [374]  (8.75 ns)
+
+ <State 118>: 8.75ns
+The critical path consists of the following:
+	bus access on port 'OUTPUT_r' (src/kmeans.c:75) [374]  (8.75 ns)
+
+ <State 119>: 8.75ns
+The critical path consists of the following:
+	bus access on port 'OUTPUT_r' (src/kmeans.c:75) [374]  (8.75 ns)
+
+ <State 120>: 8.75ns
+The critical path consists of the following:
+	bus access on port 'OUTPUT_r' (src/kmeans.c:75) [374]  (8.75 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+	State 18
+	State 19
+	State 20
+	State 21
+	State 22
+	State 23
+	State 24
+	State 25
+	State 26
+	State 27
+	State 28
+	State 29
+	State 30
+	State 31
+	State 32
+	State 33
+	State 34
+	State 35
+	State 36
+	State 37
+	State 38
+	State 39
+	State 40
+	State 41
+	State 42
+	State 43
+	State 44
+	State 45
+	State 46
+	State 47
+	State 48
+	State 49
+	State 50
+	State 51
+	State 52
+	State 53
+	State 54
+	State 55
+	State 56
+	State 57
+	State 58
+	State 59
+	State 60
+	State 61
+	State 62
+	State 63
+	State 64
+	State 65
+	State 66
+	State 67
+	State 68
+	State 69
+	State 70
+	State 71
+	State 72
+	State 73
+	State 74
+	State 75
+	State 76
+	State 77
+	State 78
+	State 79
+	State 80
+	State 81
+	State 82
+	State 83
+	State 84
+	State 85
+	State 86
+	State 87
+	State 88
+	State 89
+	State 90
+	State 91
+	State 92
+	State 93
+	State 94
+	State 95
+	State 96
+	State 97
+	State 98
+	State 99
+	State 100
+	State 101
+	State 102
+	State 103
+	State 104
+	State 105
+	State 106
+	State 107
+	State 108
+	State 109
+	State 110
+	State 111
+	State 112
+	State 113
+	State 114
+	State 115
+	State 116
+	State 117
+	State 118
+	State 119
+	State 120
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

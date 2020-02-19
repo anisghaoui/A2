@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Webtalk v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Feb 15 15:33:14 2020
+# Process ID: 6411
+# Current directory: /mnt/side_windows/UPSUD/A2/HLS/Block_Matrix_HLS/block_matrix/solution1/sim/vhdl
+# Command line: wbtcv -mode batch -source /mnt/side_windows/UPSUD/A2/HLS/Block_Matrix_HLS/block_matrix/solution1/sim/vhdl/xsim.dir/multiply_block/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /mnt/side_windows/UPSUD/A2/HLS/Block_Matrix_HLS/block_matrix/solution1/sim/vhdl/webtalk.log
+# Journal file: /mnt/side_windows/UPSUD/A2/HLS/Block_Matrix_HLS/block_matrix/solution1/sim/vhdl/webtalk.jou
+#-----------------------------------------------------------
+source /mnt/side_windows/UPSUD/A2/HLS/Block_Matrix_HLS/block_matrix/solution1/sim/vhdl/xsim.dir/multiply_block/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sat Feb 15 15:33:15 2020...

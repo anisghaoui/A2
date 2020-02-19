@@ -1,0 +1,19 @@
+
+
+Implementation tool: Xilinx Vivado v.2019.1
+Project:             Kmeans_HLS
+Solution:            solution1
+Device target:       xc7z010i-clg225-1L
+Report date:         Tue Feb 11 20:35:40 CET 2020
+
+#=== Post-Synthesis Resource usage ===
+SLICE:            0
+LUT:           3570
+FF:            5049
+DSP:              7
+BRAM:             5
+SRL:            104
+#=== Final timing ===
+CP required:    10.000
+CP achieved post-synthesis:    8.254
+Timing met
