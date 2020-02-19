@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1580925605">
+<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1581413520">
   <File Type="PA-TCL" Name="design_multi_wrapper.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="design_multi_wrapper_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="design_multi_wrapper_reports.tcl"/>
@@ -46,14 +46,9 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
     <Step Id="synth_design"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="design_multi_clk_wiz_1_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_multi_dlmb_bram_if_cntlr_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_multi_xbar_3"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_multi_axi_smc_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_multi_smartconnect_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_multi_processing_system7_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_multi_s00_mmu_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_multi_smartconnect_1_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_multi_Kmeans_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_multi_auto_pc_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_multi_microblaze_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_multi_xbar_5"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_multi_xbar_6"/>
 </GenRun>

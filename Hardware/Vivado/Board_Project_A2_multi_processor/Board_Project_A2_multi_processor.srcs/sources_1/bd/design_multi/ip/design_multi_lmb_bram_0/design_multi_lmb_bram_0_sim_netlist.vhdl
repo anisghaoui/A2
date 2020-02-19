@@ -1,11 +1,11 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.1.3 (win64) Build 2644227 Wed Sep  4 09:45:24 MDT 2019
--- Date        : Mon Feb  3 15:32:08 2020
+-- Date        : Wed Feb  5 16:25:36 2020
 -- Host        : Qlala-Blade running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim -rename_top design_multi_lmb_bram_0 -prefix
---               design_multi_lmb_bram_0_ design_multi_lmb_bram_0_sim_netlist.vhdl
--- Design      : design_multi_lmb_bram_0
+--               design_multi_lmb_bram_0_ design_multi_axi_bram_ctrl_1_bram_0_sim_netlist.vhdl
+-- Design      : design_multi_axi_bram_ctrl_1_bram_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
 -- Device      : xc7z020clg484-1
@@ -1247,7 +1247,7 @@ entity design_multi_lmb_bram_0_blk_mem_gen_v8_4_3 is
   attribute C_INITB_VAL : string;
   attribute C_INITB_VAL of design_multi_lmb_bram_0_blk_mem_gen_v8_4_3 : entity is "0";
   attribute C_INIT_FILE : string;
-  attribute C_INIT_FILE of design_multi_lmb_bram_0_blk_mem_gen_v8_4_3 : entity is "design_multi_lmb_bram_0.mem";
+  attribute C_INIT_FILE of design_multi_lmb_bram_0_blk_mem_gen_v8_4_3 : entity is "NONE";
   attribute C_INIT_FILE_NAME : string;
   attribute C_INIT_FILE_NAME of design_multi_lmb_bram_0_blk_mem_gen_v8_4_3 : entity is "no_coe_file_loaded";
   attribute C_INTERFACE_TYPE : integer;
@@ -1489,7 +1489,7 @@ entity design_multi_lmb_bram_0 is
   attribute NotValidForBitStream : boolean;
   attribute NotValidForBitStream of design_multi_lmb_bram_0 : entity is true;
   attribute CHECK_LICENSE_TYPE : string;
-  attribute CHECK_LICENSE_TYPE of design_multi_lmb_bram_0 : entity is "design_multi_lmb_bram_0,blk_mem_gen_v8_4_3,{}";
+  attribute CHECK_LICENSE_TYPE of design_multi_lmb_bram_0 : entity is "design_multi_axi_bram_ctrl_1_bram_0,blk_mem_gen_v8_4_3,{}";
   attribute downgradeipidentifiedwarnings : string;
   attribute downgradeipidentifiedwarnings of design_multi_lmb_bram_0 : entity is "yes";
   attribute x_core_info : string;
@@ -1597,7 +1597,7 @@ architecture STRUCTURE of design_multi_lmb_bram_0 is
   attribute C_INITB_VAL : string;
   attribute C_INITB_VAL of U0 : label is "0";
   attribute C_INIT_FILE : string;
-  attribute C_INIT_FILE of U0 : label is "design_multi_lmb_bram_0.mem";
+  attribute C_INIT_FILE of U0 : label is "NONE";
   attribute C_INIT_FILE_NAME : string;
   attribute C_INIT_FILE_NAME of U0 : label is "no_coe_file_loaded";
   attribute C_INTERFACE_TYPE : integer;

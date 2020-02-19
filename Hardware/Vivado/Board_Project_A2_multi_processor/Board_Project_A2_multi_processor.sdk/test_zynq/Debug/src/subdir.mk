@@ -7,19 +7,19 @@ LD_SRCS += \
 ../src/lscript.ld 
 
 C_SRCS += \
-../src/helloworld.c \
 ../src/kmeans.c \
-../src/platform.c 
+../src/platform.c \
+../src/zynq_hello.c 
 
 OBJS += \
-./src/helloworld.o \
 ./src/kmeans.o \
-./src/platform.o 
+./src/platform.o \
+./src/zynq_hello.o 
 
 C_DEPS += \
-./src/helloworld.d \
 ./src/kmeans.d \
-./src/platform.d 
+./src/platform.d \
+./src/zynq_hello.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes

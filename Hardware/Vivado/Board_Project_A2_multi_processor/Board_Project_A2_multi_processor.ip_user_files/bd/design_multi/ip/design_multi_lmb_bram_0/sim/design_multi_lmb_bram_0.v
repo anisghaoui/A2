@@ -123,7 +123,7 @@ output wire rstb_busy;
     .C_PRIM_TYPE(1),
     .C_LOAD_INIT_FILE(0),
     .C_INIT_FILE_NAME("no_coe_file_loaded"),
-    .C_INIT_FILE("design_multi_lmb_bram_0.mem"),
+    .C_INIT_FILE("NONE"),
     .C_USE_DEFAULT_DATA(0),
     .C_DEFAULT_DATA("0"),
     .C_HAS_RSTA(1),

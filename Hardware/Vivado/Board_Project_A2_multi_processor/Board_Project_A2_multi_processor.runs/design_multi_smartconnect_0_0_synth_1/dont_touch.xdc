@@ -103,27 +103,6 @@
 # IP: c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_31/bd_6f76_m00e_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_32/bd_6f76_m01s2a_0.xci
-# DONT_TOUCH constraint suppressed by (parent) sub-design file.
-
-# IP: c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_33/bd_6f76_m01arn_0.xci
-# DONT_TOUCH constraint suppressed by (parent) sub-design file.
-
-# IP: c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_34/bd_6f76_m01rn_0.xci
-# DONT_TOUCH constraint suppressed by (parent) sub-design file.
-
-# IP: c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_35/bd_6f76_m01awn_0.xci
-# DONT_TOUCH constraint suppressed by (parent) sub-design file.
-
-# IP: c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_36/bd_6f76_m01wn_0.xci
-# DONT_TOUCH constraint suppressed by (parent) sub-design file.
-
-# IP: c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_37/bd_6f76_m01bn_0.xci
-# DONT_TOUCH constraint suppressed by (parent) sub-design file.
-
-# IP: c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_38/bd_6f76_m01e_0.xci
-# DONT_TOUCH constraint suppressed by (parent) sub-design file.
-
 # XDC: c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_smartconnect_0_0/ooc.xdc
 # XDC: The top module name and the constraint reference have the same name: 'design_multi_smartconnect_0_0'. Do not add the DONT_TOUCH constraint.
 set_property DONT_TOUCH TRUE [get_cells inst -quiet] -quiet
@@ -179,18 +158,6 @@ set_property DONT_TOUCH TRUE [get_cells inst -quiet] -quiet
 # XDC: c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_29/bd_6f76_m00wn_0_ooc.xdc
 
 # XDC: c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_30/bd_6f76_m00bn_0_ooc.xdc
-
-# XDC: c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_32/bd_6f76_m01s2a_0_ooc.xdc
-
-# XDC: c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_33/bd_6f76_m01arn_0_ooc.xdc
-
-# XDC: c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_34/bd_6f76_m01rn_0_ooc.xdc
-
-# XDC: c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_35/bd_6f76_m01awn_0_ooc.xdc
-
-# XDC: c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_36/bd_6f76_m01wn_0_ooc.xdc
-
-# XDC: c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_37/bd_6f76_m01bn_0_ooc.xdc
 
 # IP: C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_smartconnect_0_0/design_multi_smartconnect_0_0.xci
 # IP: The module: 'design_multi_smartconnect_0_0' is the root of the design. Do not add the DONT_TOUCH constraint.
@@ -294,27 +261,6 @@ set_property DONT_TOUCH TRUE [get_cells inst -quiet] -quiet
 # IP: c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_31/bd_6f76_m00e_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_32/bd_6f76_m01s2a_0.xci
-# DONT_TOUCH constraint suppressed by (parent) sub-design file.
-
-# IP: c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_33/bd_6f76_m01arn_0.xci
-# DONT_TOUCH constraint suppressed by (parent) sub-design file.
-
-# IP: c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_34/bd_6f76_m01rn_0.xci
-# DONT_TOUCH constraint suppressed by (parent) sub-design file.
-
-# IP: c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_35/bd_6f76_m01awn_0.xci
-# DONT_TOUCH constraint suppressed by (parent) sub-design file.
-
-# IP: c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_36/bd_6f76_m01wn_0.xci
-# DONT_TOUCH constraint suppressed by (parent) sub-design file.
-
-# IP: c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_37/bd_6f76_m01bn_0.xci
-# DONT_TOUCH constraint suppressed by (parent) sub-design file.
-
-# IP: c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_38/bd_6f76_m01e_0.xci
-# DONT_TOUCH constraint suppressed by (parent) sub-design file.
-
 # XDC: c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_smartconnect_0_0/ooc.xdc
 # XDC: The top module name and the constraint reference have the same name: 'design_multi_smartconnect_0_0'. Do not add the DONT_TOUCH constraint.
 #dup# set_property DONT_TOUCH TRUE [get_cells inst -quiet] -quiet
@@ -370,15 +316,3 @@ set_property DONT_TOUCH TRUE [get_cells inst -quiet] -quiet
 # XDC: c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_29/bd_6f76_m00wn_0_ooc.xdc
 
 # XDC: c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_30/bd_6f76_m00bn_0_ooc.xdc
-
-# XDC: c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_32/bd_6f76_m01s2a_0_ooc.xdc
-
-# XDC: c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_33/bd_6f76_m01arn_0_ooc.xdc
-
-# XDC: c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_34/bd_6f76_m01rn_0_ooc.xdc
-
-# XDC: c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_35/bd_6f76_m01awn_0_ooc.xdc
-
-# XDC: c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_36/bd_6f76_m01wn_0_ooc.xdc
-
-# XDC: c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_37/bd_6f76_m01bn_0_ooc.xdc

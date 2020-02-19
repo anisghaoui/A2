@@ -13,7 +13,7 @@ ps7_init
 ps7_post_config
 configparams mdm-detect-bscan-mask 2
 targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248686847"} -index 1
-dow C:/A2_project/Board_Project_A2_multi_processor.sdk/test_micro/Debug/test_micro.elf
+dow C:/A2_project/Board_Project_A2_multi_processor.sdk/hello_world_micro/Debug/hello_world_micro.elf
 targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248686847"} -index 0
 dow C:/A2_project/Board_Project_A2_multi_processor.sdk/test_zynq/Debug/test_zynq.elf
 configparams force-mem-access 0

@@ -63,25 +63,6 @@ ENTITY design_multi_microblaze_0_0 IS
     Interrupt : IN STD_LOGIC;
     Interrupt_Address : IN STD_LOGIC_VECTOR(0 TO 31);
     Interrupt_Ack : OUT STD_LOGIC_VECTOR(0 TO 1);
-    Instr_Addr : OUT STD_LOGIC_VECTOR(0 TO 31);
-    Instr : IN STD_LOGIC_VECTOR(0 TO 31);
-    IFetch : OUT STD_LOGIC;
-    I_AS : OUT STD_LOGIC;
-    IReady : IN STD_LOGIC;
-    IWAIT : IN STD_LOGIC;
-    ICE : IN STD_LOGIC;
-    IUE : IN STD_LOGIC;
-    Data_Addr : OUT STD_LOGIC_VECTOR(0 TO 31);
-    Data_Read : IN STD_LOGIC_VECTOR(0 TO 31);
-    Data_Write : OUT STD_LOGIC_VECTOR(0 TO 31);
-    D_AS : OUT STD_LOGIC;
-    Read_Strobe : OUT STD_LOGIC;
-    Write_Strobe : OUT STD_LOGIC;
-    DReady : IN STD_LOGIC;
-    DWait : IN STD_LOGIC;
-    DCE : IN STD_LOGIC;
-    DUE : IN STD_LOGIC;
-    Byte_Enable : OUT STD_LOGIC_VECTOR(0 TO 3);
     M_AXI_DP_AWADDR : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
     M_AXI_DP_AWPROT : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
     M_AXI_DP_AWVALID : OUT STD_LOGIC;
@@ -912,27 +893,6 @@ ARCHITECTURE design_multi_microblaze_0_0_arch OF design_multi_microblaze_0_0 IS
   ATTRIBUTE X_INTERFACE_PARAMETER OF M_AXI_DP_AWADDR: SIGNAL IS "XIL_INTERFACENAME M_AXI_DP, ID_WIDTH 0, READ_WRITE_MODE READ_WRITE, SUPPORTS_NARROW_BURST 0, HAS_BURST 0, HAS_LOCK 0, DATA_WIDTH 32, ADDR_WIDTH 32, NUM_READ_OUTSTANDING 1, NUM_WRITE_OUTSTANDING 1, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, MAX_BURST_LENGTH 1, PROTOCOL AXI4LITE, FREQ_HZ 100000000, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, HAS_PROT 1, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, PHASE 0.0, CLK_DOMAIN /clk_wiz_1_clk_o" & 
 "ut1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0";
   ATTRIBUTE X_INTERFACE_INFO OF M_AXI_DP_AWADDR: SIGNAL IS "xilinx.com:interface:aximm:1.0 M_AXI_DP AWADDR";
-  ATTRIBUTE X_INTERFACE_INFO OF Byte_Enable: SIGNAL IS "xilinx.com:interface:lmb:1.0 DLMB BE";
-  ATTRIBUTE X_INTERFACE_INFO OF DUE: SIGNAL IS "xilinx.com:interface:lmb:1.0 DLMB UE";
-  ATTRIBUTE X_INTERFACE_INFO OF DCE: SIGNAL IS "xilinx.com:interface:lmb:1.0 DLMB CE";
-  ATTRIBUTE X_INTERFACE_INFO OF DWait: SIGNAL IS "xilinx.com:interface:lmb:1.0 DLMB WAIT";
-  ATTRIBUTE X_INTERFACE_INFO OF DReady: SIGNAL IS "xilinx.com:interface:lmb:1.0 DLMB READY";
-  ATTRIBUTE X_INTERFACE_INFO OF Write_Strobe: SIGNAL IS "xilinx.com:interface:lmb:1.0 DLMB WRITESTROBE";
-  ATTRIBUTE X_INTERFACE_INFO OF Read_Strobe: SIGNAL IS "xilinx.com:interface:lmb:1.0 DLMB READSTROBE";
-  ATTRIBUTE X_INTERFACE_INFO OF D_AS: SIGNAL IS "xilinx.com:interface:lmb:1.0 DLMB ADDRSTROBE";
-  ATTRIBUTE X_INTERFACE_INFO OF Data_Write: SIGNAL IS "xilinx.com:interface:lmb:1.0 DLMB WRITEDBUS";
-  ATTRIBUTE X_INTERFACE_INFO OF Data_Read: SIGNAL IS "xilinx.com:interface:lmb:1.0 DLMB READDBUS";
-  ATTRIBUTE X_INTERFACE_PARAMETER OF Data_Addr: SIGNAL IS "XIL_INTERFACENAME DLMB, ADDR_WIDTH 32, DATA_WIDTH 32, READ_WRITE_MODE READ_WRITE";
-  ATTRIBUTE X_INTERFACE_INFO OF Data_Addr: SIGNAL IS "xilinx.com:interface:lmb:1.0 DLMB ABUS";
-  ATTRIBUTE X_INTERFACE_INFO OF IUE: SIGNAL IS "xilinx.com:interface:lmb:1.0 ILMB UE";
-  ATTRIBUTE X_INTERFACE_INFO OF ICE: SIGNAL IS "xilinx.com:interface:lmb:1.0 ILMB CE";
-  ATTRIBUTE X_INTERFACE_INFO OF IWAIT: SIGNAL IS "xilinx.com:interface:lmb:1.0 ILMB WAIT";
-  ATTRIBUTE X_INTERFACE_INFO OF IReady: SIGNAL IS "xilinx.com:interface:lmb:1.0 ILMB READY";
-  ATTRIBUTE X_INTERFACE_INFO OF I_AS: SIGNAL IS "xilinx.com:interface:lmb:1.0 ILMB ADDRSTROBE";
-  ATTRIBUTE X_INTERFACE_INFO OF IFetch: SIGNAL IS "xilinx.com:interface:lmb:1.0 ILMB READSTROBE";
-  ATTRIBUTE X_INTERFACE_INFO OF Instr: SIGNAL IS "xilinx.com:interface:lmb:1.0 ILMB READDBUS";
-  ATTRIBUTE X_INTERFACE_PARAMETER OF Instr_Addr: SIGNAL IS "XIL_INTERFACENAME ILMB, ADDR_WIDTH 32, DATA_WIDTH 32, READ_WRITE_MODE READ_ONLY";
-  ATTRIBUTE X_INTERFACE_INFO OF Instr_Addr: SIGNAL IS "xilinx.com:interface:lmb:1.0 ILMB ABUS";
   ATTRIBUTE X_INTERFACE_INFO OF Interrupt_Ack: SIGNAL IS "xilinx.com:interface:mbinterrupt:1.0 INTERRUPT ACK";
   ATTRIBUTE X_INTERFACE_INFO OF Interrupt_Address: SIGNAL IS "xilinx.com:interface:mbinterrupt:1.0 INTERRUPT ADDRESS";
   ATTRIBUTE X_INTERFACE_PARAMETER OF Interrupt: SIGNAL IS "XIL_INTERFACENAME INTERRUPT, SENSITIVITY LEVEL_HIGH, LOW_LATENCY 1";
@@ -980,9 +940,9 @@ BEGIN
       C_M_AXI_IP_DATA_WIDTH => 32,
       C_M_AXI_IP_ADDR_WIDTH => 32,
       C_M_AXI_I_BUS_EXCEPTION => 0,
-      C_D_LMB => 1,
+      C_D_LMB => 0,
       C_D_AXI => 1,
-      C_I_LMB => 1,
+      C_I_LMB => 0,
       C_I_AXI => 0,
       C_USE_MSR_INSTR => 1,
       C_USE_PCMP_INSTR => 1,
@@ -1067,8 +1027,8 @@ BEGIN
       C_S14_AXIS_DATA_WIDTH => 32,
       C_M15_AXIS_DATA_WIDTH => 32,
       C_S15_AXIS_DATA_WIDTH => 32,
-      C_ICACHE_BASEADDR => X"0000000080000000",
-      C_ICACHE_HIGHADDR => X"000000009fffffff",
+      C_ICACHE_BASEADDR => X"0000000000000000",
+      C_ICACHE_HIGHADDR => X"000000001fffffff",
       C_USE_ICACHE => 1,
       C_ALLOW_ICACHE_WR => 1,
       C_ADDR_TAG_BITS => 17,
@@ -1088,8 +1048,8 @@ BEGIN
       C_M_AXI_IC_WUSER_WIDTH => 1,
       C_M_AXI_IC_RUSER_WIDTH => 1,
       C_M_AXI_IC_BUSER_WIDTH => 1,
-      C_DCACHE_BASEADDR => X"0000000080000000",
-      C_DCACHE_HIGHADDR => X"000000009fffffff",
+      C_DCACHE_BASEADDR => X"0000000000000000",
+      C_DCACHE_HIGHADDR => X"000000001fffffff",
       C_USE_DCACHE => 1,
       C_ALLOW_DCACHE_WR => 1,
       C_DCACHE_ADDR_TAG => 17,
@@ -1131,14 +1091,11 @@ BEGIN
       Pause => '0',
       Non_Secure => X"0",
       LOCKSTEP_Slave_In => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 4096)),
-      Instr_Addr => Instr_Addr,
-      Instr => Instr,
-      IFetch => IFetch,
-      I_AS => I_AS,
-      IReady => IReady,
-      IWAIT => IWAIT,
-      ICE => ICE,
-      IUE => IUE,
+      Instr => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 32)),
+      IReady => '0',
+      IWAIT => '0',
+      ICE => '0',
+      IUE => '0',
       M_AXI_IP_AWREADY => '0',
       M_AXI_IP_WREADY => '0',
       M_AXI_IP_BID => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 1)),
@@ -1150,17 +1107,11 @@ BEGIN
       M_AXI_IP_RRESP => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 2)),
       M_AXI_IP_RLAST => '0',
       M_AXI_IP_RVALID => '0',
-      Data_Addr => Data_Addr,
-      Data_Read => Data_Read,
-      Data_Write => Data_Write,
-      D_AS => D_AS,
-      Read_Strobe => Read_Strobe,
-      Write_Strobe => Write_Strobe,
-      DReady => DReady,
-      DWait => DWait,
-      DCE => DCE,
-      DUE => DUE,
-      Byte_Enable => Byte_Enable,
+      Data_Read => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 32)),
+      DReady => '0',
+      DWait => '0',
+      DCE => '0',
+      DUE => '0',
       M_AXI_DP_AWADDR => M_AXI_DP_AWADDR,
       M_AXI_DP_AWPROT => M_AXI_DP_AWPROT,
       M_AXI_DP_AWVALID => M_AXI_DP_AWVALID,

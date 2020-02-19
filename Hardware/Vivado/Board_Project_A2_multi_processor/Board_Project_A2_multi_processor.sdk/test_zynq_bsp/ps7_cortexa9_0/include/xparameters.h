@@ -27,7 +27,6 @@
 #define PLATFORM_ZYNQ
  
 /* Definitions for sleep timer configuration */
-#define XSLEEP_TIMER_IS_DEFAULT_TIMER
  
  
 /******************************************************************/
@@ -51,7 +50,7 @@
 /******************************************************************/
 
 /* Definitions for driver BRAM */
-#define XPAR_XBRAM_NUM_INSTANCES 2U
+#define XPAR_XBRAM_NUM_INSTANCES 1U
 
 /* Definitions for peripheral AXI_BRAM_CTRL_0 */
 #define XPAR_AXI_BRAM_CTRL_0_DEVICE_ID 0U
@@ -69,24 +68,6 @@
 #define XPAR_AXI_BRAM_CTRL_0_S_AXI_HIGHADDR 0x50001FFFU
 #define XPAR_AXI_BRAM_CTRL_0_S_AXI_CTRL_BASEADDR 0xFFFFFFFFU  
 #define XPAR_AXI_BRAM_CTRL_0_S_AXI_CTRL_HIGHADDR 0xFFFFFFFFU  
-
-
-/* Definitions for peripheral AXI_BRAM_CTRL_1 */
-#define XPAR_AXI_BRAM_CTRL_1_DEVICE_ID 1U
-#define XPAR_AXI_BRAM_CTRL_1_DATA_WIDTH 32U
-#define XPAR_AXI_BRAM_CTRL_1_ECC 0U
-#define XPAR_AXI_BRAM_CTRL_1_FAULT_INJECT 0U
-#define XPAR_AXI_BRAM_CTRL_1_CE_FAILING_REGISTERS 0U
-#define XPAR_AXI_BRAM_CTRL_1_UE_FAILING_REGISTERS 0U
-#define XPAR_AXI_BRAM_CTRL_1_ECC_STATUS_REGISTERS 0U
-#define XPAR_AXI_BRAM_CTRL_1_CE_COUNTER_WIDTH 0U
-#define XPAR_AXI_BRAM_CTRL_1_ECC_ONOFF_REGISTER 0U
-#define XPAR_AXI_BRAM_CTRL_1_ECC_ONOFF_RESET_VALUE 0U
-#define XPAR_AXI_BRAM_CTRL_1_WRITE_ACCESS 0U
-#define XPAR_AXI_BRAM_CTRL_1_S_AXI_BASEADDR 0x42000000U
-#define XPAR_AXI_BRAM_CTRL_1_S_AXI_HIGHADDR 0x42001FFFU
-#define XPAR_AXI_BRAM_CTRL_1_S_AXI_CTRL_BASEADDR 0xFFFFFFFFU  
-#define XPAR_AXI_BRAM_CTRL_1_S_AXI_CTRL_HIGHADDR 0xFFFFFFFFU  
 
 
 /******************************************************************/
@@ -107,23 +88,6 @@
 #define XPAR_BRAM_0_HIGHADDR 0x50001FFFU
 #define XPAR_BRAM_0_CTRL_BASEADDR 0xFFFFFFFFU  
 #define XPAR_BRAM_0_CTRL_HIGHADDR 0xFFFFFFFEU  
-
-/* Canonical definitions for peripheral AXI_BRAM_CTRL_1 */
-#define XPAR_BRAM_1_DEVICE_ID XPAR_AXI_BRAM_CTRL_1_DEVICE_ID
-#define XPAR_BRAM_1_DATA_WIDTH 32U
-#define XPAR_BRAM_1_ECC 0U
-#define XPAR_BRAM_1_FAULT_INJECT 0U
-#define XPAR_BRAM_1_CE_FAILING_REGISTERS 0U
-#define XPAR_BRAM_1_UE_FAILING_REGISTERS 0U
-#define XPAR_BRAM_1_ECC_STATUS_REGISTERS 0U
-#define XPAR_BRAM_1_CE_COUNTER_WIDTH 0U
-#define XPAR_BRAM_1_ECC_ONOFF_REGISTER 0U
-#define XPAR_BRAM_1_ECC_ONOFF_RESET_VALUE 0U
-#define XPAR_BRAM_1_WRITE_ACCESS 0U
-#define XPAR_BRAM_1_BASEADDR 0x42000000U
-#define XPAR_BRAM_1_HIGHADDR 0x42001FFFU
-#define XPAR_BRAM_1_CTRL_BASEADDR 0xFFFFFFFFU  
-#define XPAR_BRAM_1_CTRL_HIGHADDR 0xFFFFFFFEU  
 
 
 /******************************************************************/
@@ -576,4 +540,11 @@
 
 /******************************************************************/
 
+/* Xilinx FAT File System Library (XilFFs) User Settings */
+#define FILE_SYSTEM_INTERFACE_SD
+#define FILE_SYSTEM_USE_MKFS
+#define FILE_SYSTEM_NUM_LOGIC_VOL 2
+#define FILE_SYSTEM_USE_STRFUNC 0
+#define FILE_SYSTEM_SET_FS_RPATH 0
+#define FILE_SYSTEM_WORD_ACCESS
 #endif  /* end of protection macro */

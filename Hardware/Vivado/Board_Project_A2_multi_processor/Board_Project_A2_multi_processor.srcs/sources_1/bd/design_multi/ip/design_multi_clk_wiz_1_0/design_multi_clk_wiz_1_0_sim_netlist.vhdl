@@ -3,8 +3,8 @@
 -- Tool Version: Vivado v.2019.1.3 (win64) Build 2644227 Wed Sep  4 09:45:24 MDT 2019
 -- Date        : Wed Feb  5 19:01:48 2020
 -- Host        : Qlala-Blade running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_clk_wiz_1_0/design_multi_clk_wiz_1_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top design_multi_clk_wiz_1_0 -prefix
+--               design_multi_clk_wiz_1_0_ design_multi_clk_wiz_1_0_sim_netlist.vhdl
 -- Design      : design_multi_clk_wiz_1_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -22,8 +22,6 @@ entity design_multi_clk_wiz_1_0_design_multi_clk_wiz_1_0_clk_wiz is
     locked : out STD_LOGIC;
     clk_in1 : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_multi_clk_wiz_1_0_design_multi_clk_wiz_1_0_clk_wiz : entity is "design_multi_clk_wiz_1_0_clk_wiz";
 end design_multi_clk_wiz_1_0_design_multi_clk_wiz_1_0_clk_wiz;
 
 architecture STRUCTURE of design_multi_clk_wiz_1_0_design_multi_clk_wiz_1_0_clk_wiz is

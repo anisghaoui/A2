@@ -1,0 +1,50 @@
+#include <stdio.h>
+#include "platform.h"
+#include "xparameters.h"
+#include "xil_printf.h"
+#include "sleep.h"
+//#include "xbram.h"
+
+
+/*
+char* init_bram(u32 id){
+	char* output;
+	XBram bram;
+	XBram_Config * ConfigPtr=XBram_LookupConfig(id);
+	if(ConfigPtr==NULL){
+		printf("bram_init failure\n");
+	}
+
+	if(XBram_CfgInitialize(&bram,ConfigPtr,ConfigPtr->CtrlBaseAddress)!=XST_SUCCESS){
+		printf("bram_init failure\n");
+	}
+	printf("bram:%i\n",ConfigPtr->WriteAccess);
+	int Status = XBram_SelfTest(&bram, 0);
+	if (Status != XST_SUCCESS) {
+		printf("bram_init failure\n");
+	}
+	printf("bram_addr=%x\n",ConfigPtr->MemBaseAddress);
+	//Xil_Out32(ConfigPtr->MemBaseAddress,4);
+	//*((int*)(ConfigPtr->MemBaseAddress))=4;
+	//printf("read=%x\n",(int)Xil_In32(ConfigPtr->MemBaseAddress));
+
+	return (char*)ConfigPtr->MemBaseAddress;
+
+}
+*/
+int main()
+{
+    init_platform();
+
+    print("micro:Hello World\n\r");
+    //char* test=init_bram(XPAR_BRAM_0_DEVICE_ID);
+    char* test=0x84000000;
+    sleep(10);
+    while(1){
+    	printf("d=%s\n",test);
+    	sleep(1);
+    }
+
+    cleanup_platform();
+    return 0;
+}

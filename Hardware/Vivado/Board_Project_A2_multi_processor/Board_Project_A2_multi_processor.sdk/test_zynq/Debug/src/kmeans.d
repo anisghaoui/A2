@@ -12,7 +12,8 @@ src/kmeans.o src/kmeans.o: ../src/kmeans.c \
  ../../test_zynq_bsp/ps7_cortexa9_0/include/xpseudo_asm.h \
  ../../test_zynq_bsp/ps7_cortexa9_0/include/xreg_cortexa9.h \
  ../../test_zynq_bsp/ps7_cortexa9_0/include/xpseudo_asm_gcc.h \
- ../../test_zynq_bsp/ps7_cortexa9_0/include/xkmeans_hw.h
+ ../../test_zynq_bsp/ps7_cortexa9_0/include/xkmeans_hw.h \
+ ../../test_zynq_bsp/ps7_cortexa9_0/include/sleep.h
 
 ../../test_zynq_bsp/ps7_cortexa9_0/include/xparameters.h:
 
@@ -41,3 +42,5 @@ src/kmeans.o src/kmeans.o: ../src/kmeans.c \
 ../../test_zynq_bsp/ps7_cortexa9_0/include/xpseudo_asm_gcc.h:
 
 ../../test_zynq_bsp/ps7_cortexa9_0/include/xkmeans_hw.h:
+
+../../test_zynq_bsp/ps7_cortexa9_0/include/sleep.h:

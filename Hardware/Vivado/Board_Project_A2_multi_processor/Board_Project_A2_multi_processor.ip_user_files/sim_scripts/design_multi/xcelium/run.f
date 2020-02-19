@@ -101,90 +101,6 @@
 -makelib xcelium_lib/xil_defaultlib \
   "../../../bd/design_multi/ip/design_multi_rst_clk_wiz_1_100M_0/sim/design_multi_rst_clk_wiz_1_100M_0.vhd" \
 -endlib
--makelib xcelium_lib/xil_defaultlib \
-  "../../../bd/design_multi/ip/design_multi_axi_smc_0/bd_0/sim/bd_e157.v" \
--endlib
--makelib xcelium_lib/xlconstant_v1_1_6 \
-  "../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/66e7/hdl/xlconstant_v1_1_vl_rfs.v" \
--endlib
--makelib xcelium_lib/xil_defaultlib \
-  "../../../bd/design_multi/ip/design_multi_axi_smc_0/bd_0/ip/ip_0/sim/bd_e157_one_0.v" \
--endlib
--makelib xcelium_lib/xil_defaultlib \
-  "../../../bd/design_multi/ip/design_multi_axi_smc_0/bd_0/ip/ip_1/sim/bd_e157_psr_aclk_0.vhd" \
--endlib
--makelib xcelium_lib/smartconnect_v1_0 -sv \
-  "../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/1ddd/hdl/sc_util_v1_0_vl_rfs.sv" \
-  "../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/c012/hdl/sc_switchboard_v1_0_vl_rfs.sv" \
--endlib
--makelib xcelium_lib/xil_defaultlib -sv \
-  "../../../bd/design_multi/ip/design_multi_axi_smc_0/bd_0/ip/ip_2/sim/bd_e157_arsw_0.sv" \
-  "../../../bd/design_multi/ip/design_multi_axi_smc_0/bd_0/ip/ip_3/sim/bd_e157_rsw_0.sv" \
-  "../../../bd/design_multi/ip/design_multi_axi_smc_0/bd_0/ip/ip_4/sim/bd_e157_awsw_0.sv" \
-  "../../../bd/design_multi/ip/design_multi_axi_smc_0/bd_0/ip/ip_5/sim/bd_e157_wsw_0.sv" \
-  "../../../bd/design_multi/ip/design_multi_axi_smc_0/bd_0/ip/ip_6/sim/bd_e157_bsw_0.sv" \
--endlib
--makelib xcelium_lib/smartconnect_v1_0 -sv \
-  "../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/f85e/hdl/sc_mmu_v1_0_vl_rfs.sv" \
--endlib
--makelib xcelium_lib/xil_defaultlib -sv \
-  "../../../bd/design_multi/ip/design_multi_axi_smc_0/bd_0/ip/ip_7/sim/bd_e157_s00mmu_0.sv" \
--endlib
--makelib xcelium_lib/smartconnect_v1_0 -sv \
-  "../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/ca72/hdl/sc_transaction_regulator_v1_0_vl_rfs.sv" \
--endlib
--makelib xcelium_lib/xil_defaultlib -sv \
-  "../../../bd/design_multi/ip/design_multi_axi_smc_0/bd_0/ip/ip_8/sim/bd_e157_s00tr_0.sv" \
--endlib
--makelib xcelium_lib/smartconnect_v1_0 -sv \
-  "../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/7de4/hdl/sc_si_converter_v1_0_vl_rfs.sv" \
--endlib
--makelib xcelium_lib/xil_defaultlib -sv \
-  "../../../bd/design_multi/ip/design_multi_axi_smc_0/bd_0/ip/ip_9/sim/bd_e157_s00sic_0.sv" \
--endlib
--makelib xcelium_lib/smartconnect_v1_0 -sv \
-  "../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/b89e/hdl/sc_axi2sc_v1_0_vl_rfs.sv" \
--endlib
--makelib xcelium_lib/xil_defaultlib -sv \
-  "../../../bd/design_multi/ip/design_multi_axi_smc_0/bd_0/ip/ip_10/sim/bd_e157_s00a2s_0.sv" \
--endlib
--makelib xcelium_lib/smartconnect_v1_0 -sv \
-  "../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/b2d0/hdl/sc_node_v1_0_vl_rfs.sv" \
--endlib
--makelib xcelium_lib/xil_defaultlib -sv \
-  "../../../bd/design_multi/ip/design_multi_axi_smc_0/bd_0/ip/ip_11/sim/bd_e157_sarn_0.sv" \
-  "../../../bd/design_multi/ip/design_multi_axi_smc_0/bd_0/ip/ip_12/sim/bd_e157_srn_0.sv" \
-  "../../../bd/design_multi/ip/design_multi_axi_smc_0/bd_0/ip/ip_13/sim/bd_e157_sawn_0.sv" \
-  "../../../bd/design_multi/ip/design_multi_axi_smc_0/bd_0/ip/ip_14/sim/bd_e157_swn_0.sv" \
-  "../../../bd/design_multi/ip/design_multi_axi_smc_0/bd_0/ip/ip_15/sim/bd_e157_sbn_0.sv" \
-  "../../../bd/design_multi/ip/design_multi_axi_smc_0/bd_0/ip/ip_16/sim/bd_e157_s01mmu_0.sv" \
-  "../../../bd/design_multi/ip/design_multi_axi_smc_0/bd_0/ip/ip_17/sim/bd_e157_s01tr_0.sv" \
-  "../../../bd/design_multi/ip/design_multi_axi_smc_0/bd_0/ip/ip_18/sim/bd_e157_s01sic_0.sv" \
-  "../../../bd/design_multi/ip/design_multi_axi_smc_0/bd_0/ip/ip_19/sim/bd_e157_s01a2s_0.sv" \
-  "../../../bd/design_multi/ip/design_multi_axi_smc_0/bd_0/ip/ip_20/sim/bd_e157_sarn_1.sv" \
-  "../../../bd/design_multi/ip/design_multi_axi_smc_0/bd_0/ip/ip_21/sim/bd_e157_srn_1.sv" \
--endlib
--makelib xcelium_lib/smartconnect_v1_0 -sv \
-  "../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/7005/hdl/sc_sc2axi_v1_0_vl_rfs.sv" \
--endlib
--makelib xcelium_lib/xil_defaultlib -sv \
-  "../../../bd/design_multi/ip/design_multi_axi_smc_0/bd_0/ip/ip_22/sim/bd_e157_m00s2a_0.sv" \
-  "../../../bd/design_multi/ip/design_multi_axi_smc_0/bd_0/ip/ip_23/sim/bd_e157_m00arn_0.sv" \
-  "../../../bd/design_multi/ip/design_multi_axi_smc_0/bd_0/ip/ip_24/sim/bd_e157_m00rn_0.sv" \
-  "../../../bd/design_multi/ip/design_multi_axi_smc_0/bd_0/ip/ip_25/sim/bd_e157_m00awn_0.sv" \
-  "../../../bd/design_multi/ip/design_multi_axi_smc_0/bd_0/ip/ip_26/sim/bd_e157_m00wn_0.sv" \
-  "../../../bd/design_multi/ip/design_multi_axi_smc_0/bd_0/ip/ip_27/sim/bd_e157_m00bn_0.sv" \
--endlib
--makelib xcelium_lib/smartconnect_v1_0 -sv \
-  "../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/b387/hdl/sc_exit_v1_0_vl_rfs.sv" \
--endlib
--makelib xcelium_lib/xil_defaultlib -sv \
-  "../../../bd/design_multi/ip/design_multi_axi_smc_0/bd_0/ip/ip_28/sim/bd_e157_m00e_0.sv" \
--endlib
--makelib xcelium_lib/xil_defaultlib \
-  "../../../bd/design_multi/ip/design_multi_axi_smc_0/sim/design_multi_axi_smc_0.vhd" \
-  "../../../bd/design_multi/sim/design_multi.vhd" \
--endlib
 -makelib xcelium_lib/generic_baseblocks_v2_1_0 \
   "../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v" \
 -endlib
@@ -219,10 +135,19 @@
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
   "../../../bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/sim/bd_6f76.v" \
+-endlib
+-makelib xcelium_lib/xlconstant_v1_1_6 \
+  "../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/66e7/hdl/xlconstant_v1_1_vl_rfs.v" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib \
   "../../../bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_0/sim/bd_6f76_one_0.v" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
   "../../../bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_1/sim/bd_6f76_psr_aclk_0.vhd" \
+-endlib
+-makelib xcelium_lib/smartconnect_v1_0 -sv \
+  "../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/1ddd/hdl/sc_util_v1_0_vl_rfs.sv" \
+  "../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/c012/hdl/sc_switchboard_v1_0_vl_rfs.sv" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib -sv \
   "../../../bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_2/sim/bd_6f76_arsw_0.sv" \
@@ -230,10 +155,35 @@
   "../../../bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_4/sim/bd_6f76_awsw_0.sv" \
   "../../../bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_5/sim/bd_6f76_wsw_0.sv" \
   "../../../bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_6/sim/bd_6f76_bsw_0.sv" \
+-endlib
+-makelib xcelium_lib/smartconnect_v1_0 -sv \
+  "../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/f85e/hdl/sc_mmu_v1_0_vl_rfs.sv" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib -sv \
   "../../../bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_7/sim/bd_6f76_s00mmu_0.sv" \
+-endlib
+-makelib xcelium_lib/smartconnect_v1_0 -sv \
+  "../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/ca72/hdl/sc_transaction_regulator_v1_0_vl_rfs.sv" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib -sv \
   "../../../bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_8/sim/bd_6f76_s00tr_0.sv" \
+-endlib
+-makelib xcelium_lib/smartconnect_v1_0 -sv \
+  "../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/7de4/hdl/sc_si_converter_v1_0_vl_rfs.sv" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib -sv \
   "../../../bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_9/sim/bd_6f76_s00sic_0.sv" \
+-endlib
+-makelib xcelium_lib/smartconnect_v1_0 -sv \
+  "../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/b89e/hdl/sc_axi2sc_v1_0_vl_rfs.sv" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib -sv \
   "../../../bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_10/sim/bd_6f76_s00a2s_0.sv" \
+-endlib
+-makelib xcelium_lib/smartconnect_v1_0 -sv \
+  "../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/b2d0/hdl/sc_node_v1_0_vl_rfs.sv" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib -sv \
   "../../../bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_11/sim/bd_6f76_sarn_0.sv" \
   "../../../bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_12/sim/bd_6f76_srn_0.sv" \
   "../../../bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_13/sim/bd_6f76_sawn_0.sv" \
@@ -248,27 +198,129 @@
   "../../../bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_22/sim/bd_6f76_sawn_1.sv" \
   "../../../bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_23/sim/bd_6f76_swn_1.sv" \
   "../../../bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_24/sim/bd_6f76_sbn_1.sv" \
+-endlib
+-makelib xcelium_lib/smartconnect_v1_0 -sv \
+  "../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/7005/hdl/sc_sc2axi_v1_0_vl_rfs.sv" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib -sv \
   "../../../bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_25/sim/bd_6f76_m00s2a_0.sv" \
   "../../../bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_26/sim/bd_6f76_m00arn_0.sv" \
   "../../../bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_27/sim/bd_6f76_m00rn_0.sv" \
   "../../../bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_28/sim/bd_6f76_m00awn_0.sv" \
   "../../../bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_29/sim/bd_6f76_m00wn_0.sv" \
   "../../../bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_30/sim/bd_6f76_m00bn_0.sv" \
+-endlib
+-makelib xcelium_lib/smartconnect_v1_0 -sv \
+  "../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/b387/hdl/sc_exit_v1_0_vl_rfs.sv" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib -sv \
   "../../../bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_31/sim/bd_6f76_m00e_0.sv" \
-  "../../../bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_32/sim/bd_6f76_m01s2a_0.sv" \
-  "../../../bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_33/sim/bd_6f76_m01arn_0.sv" \
-  "../../../bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_34/sim/bd_6f76_m01rn_0.sv" \
-  "../../../bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_35/sim/bd_6f76_m01awn_0.sv" \
-  "../../../bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_36/sim/bd_6f76_m01wn_0.sv" \
-  "../../../bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_37/sim/bd_6f76_m01bn_0.sv" \
-  "../../../bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_38/sim/bd_6f76_m01e_0.sv" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
   "../../../bd/design_multi/ip/design_multi_smartconnect_0_0/sim/design_multi_smartconnect_0_0.vhd" \
-  "../../../bd/design_multi/ip/design_multi_axi_bram_ctrl_1_0/sim/design_multi_axi_bram_ctrl_1_0.vhd" \
+-endlib
+-makelib xcelium_lib/xbip_utils_v3_0_10 \
+  "../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/1123/hdl/xbip_utils_v3_0_vh_rfs.vhd" \
+-endlib
+-makelib xcelium_lib/axi_utils_v2_0_6 \
+  "../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/1971/hdl/axi_utils_v2_0_vh_rfs.vhd" \
+-endlib
+-makelib xcelium_lib/xbip_pipe_v3_0_6 \
+  "../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/7468/hdl/xbip_pipe_v3_0_vh_rfs.vhd" \
+-endlib
+-makelib xcelium_lib/xbip_dsp48_wrapper_v3_0_4 \
+  "../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/cdbf/hdl/xbip_dsp48_wrapper_v3_0_vh_rfs.vhd" \
+-endlib
+-makelib xcelium_lib/xbip_dsp48_addsub_v3_0_6 \
+  "../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/910d/hdl/xbip_dsp48_addsub_v3_0_vh_rfs.vhd" \
+-endlib
+-makelib xcelium_lib/xbip_dsp48_multadd_v3_0_6 \
+  "../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/b0ac/hdl/xbip_dsp48_multadd_v3_0_vh_rfs.vhd" \
+-endlib
+-makelib xcelium_lib/xbip_bram18k_v3_0_6 \
+  "../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/d367/hdl/xbip_bram18k_v3_0_vh_rfs.vhd" \
+-endlib
+-makelib xcelium_lib/mult_gen_v12_0_15 \
+  "../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/d4d2/hdl/mult_gen_v12_0_vh_rfs.vhd" \
+-endlib
+-makelib xcelium_lib/floating_point_v7_1_8 \
+  "../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/83a3/hdl/floating_point_v7_1_vh_rfs.vhd" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
-  "../../../bd/design_multi/ip/design_multi_axi_bram_ctrl_1_bram_0/sim/design_multi_axi_bram_ctrl_1_bram_0.v" \
+  "../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/520a/hdl/vhdl/distance.vhd" \
+  "../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/520a/hdl/vhdl/Kmeans_CTRL_BUS_s_axi.vhd" \
+  "../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/520a/hdl/vhdl/Kmeans_dadd_64ns_64ns_64_5_full_dsp_1.vhd" \
+  "../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/520a/hdl/vhdl/Kmeans_fadd_32ns_32ns_32_5_full_dsp_1.vhd" \
+  "../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/520a/hdl/vhdl/Kmeans_fcmp_32ns_32ns_1_2_1.vhd" \
+  "../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/520a/hdl/vhdl/Kmeans_fdiv_32ns_32ns_32_16_1.vhd" \
+  "../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/520a/hdl/vhdl/Kmeans_fpext_32ns_64_2_1.vhd" \
+  "../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/520a/hdl/vhdl/Kmeans_fptrunc_64ns_32_2_1.vhd" \
+  "../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/520a/hdl/vhdl/Kmeans_fsub_32ns_32ns_32_5_full_dsp_1.vhd" \
+  "../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/520a/hdl/vhdl/Kmeans_INPUT_r_m_axi.vhd" \
+  "../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/520a/hdl/vhdl/Kmeans_OUTPUT_r_m_axi.vhd" \
+  "../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/520a/hdl/vhdl/Kmeans_sitofp_32ns_32_6_1.vhd" \
+  "../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/520a/hdl/vhdl/Kmeans_X.vhd" \
+  "../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/520a/hdl/vhdl/moy.vhd" \
+  "../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/520a/hdl/vhdl/Kmeans.vhd" \
+  "../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/520a/hdl/ip/Kmeans_ap_dadd_3_full_dsp_64.vhd" \
+  "../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/520a/hdl/ip/Kmeans_ap_fadd_3_full_dsp_32.vhd" \
+  "../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/520a/hdl/ip/Kmeans_ap_fcmp_0_no_dsp_32.vhd" \
+  "../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/520a/hdl/ip/Kmeans_ap_fdiv_14_no_dsp_32.vhd" \
+  "../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/520a/hdl/ip/Kmeans_ap_fpext_0_no_dsp_32.vhd" \
+  "../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/520a/hdl/ip/Kmeans_ap_fptrunc_0_no_dsp_64.vhd" \
+  "../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/520a/hdl/ip/Kmeans_ap_fsub_3_full_dsp_32.vhd" \
+  "../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/520a/hdl/ip/Kmeans_ap_sitofp_4_no_dsp_32.vhd" \
+  "../../../bd/design_multi/ip/design_multi_Kmeans_0_0/sim/design_multi_Kmeans_0_0.vhd" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/design_multi/ip/design_multi_smartconnect_1_0/bd_0/sim/bd_af27.v" \
+  "../../../bd/design_multi/ip/design_multi_smartconnect_1_0/bd_0/ip/ip_0/sim/bd_af27_one_0.v" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/design_multi/ip/design_multi_smartconnect_1_0/bd_0/ip/ip_1/sim/bd_af27_psr_aclk_0.vhd" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib -sv \
+  "../../../bd/design_multi/ip/design_multi_smartconnect_1_0/bd_0/ip/ip_2/sim/bd_af27_arsw_0.sv" \
+  "../../../bd/design_multi/ip/design_multi_smartconnect_1_0/bd_0/ip/ip_3/sim/bd_af27_rsw_0.sv" \
+  "../../../bd/design_multi/ip/design_multi_smartconnect_1_0/bd_0/ip/ip_4/sim/bd_af27_awsw_0.sv" \
+  "../../../bd/design_multi/ip/design_multi_smartconnect_1_0/bd_0/ip/ip_5/sim/bd_af27_wsw_0.sv" \
+  "../../../bd/design_multi/ip/design_multi_smartconnect_1_0/bd_0/ip/ip_6/sim/bd_af27_bsw_0.sv" \
+  "../../../bd/design_multi/ip/design_multi_smartconnect_1_0/bd_0/ip/ip_7/sim/bd_af27_s00mmu_0.sv" \
+  "../../../bd/design_multi/ip/design_multi_smartconnect_1_0/bd_0/ip/ip_8/sim/bd_af27_s00tr_0.sv" \
+  "../../../bd/design_multi/ip/design_multi_smartconnect_1_0/bd_0/ip/ip_9/sim/bd_af27_s00sic_0.sv" \
+  "../../../bd/design_multi/ip/design_multi_smartconnect_1_0/bd_0/ip/ip_10/sim/bd_af27_s00a2s_0.sv" \
+  "../../../bd/design_multi/ip/design_multi_smartconnect_1_0/bd_0/ip/ip_11/sim/bd_af27_sarn_0.sv" \
+  "../../../bd/design_multi/ip/design_multi_smartconnect_1_0/bd_0/ip/ip_12/sim/bd_af27_srn_0.sv" \
+  "../../../bd/design_multi/ip/design_multi_smartconnect_1_0/bd_0/ip/ip_13/sim/bd_af27_sawn_0.sv" \
+  "../../../bd/design_multi/ip/design_multi_smartconnect_1_0/bd_0/ip/ip_14/sim/bd_af27_swn_0.sv" \
+  "../../../bd/design_multi/ip/design_multi_smartconnect_1_0/bd_0/ip/ip_15/sim/bd_af27_sbn_0.sv" \
+  "../../../bd/design_multi/ip/design_multi_smartconnect_1_0/bd_0/ip/ip_16/sim/bd_af27_s01mmu_0.sv" \
+  "../../../bd/design_multi/ip/design_multi_smartconnect_1_0/bd_0/ip/ip_17/sim/bd_af27_s01tr_0.sv" \
+  "../../../bd/design_multi/ip/design_multi_smartconnect_1_0/bd_0/ip/ip_18/sim/bd_af27_s01sic_0.sv" \
+  "../../../bd/design_multi/ip/design_multi_smartconnect_1_0/bd_0/ip/ip_19/sim/bd_af27_s01a2s_0.sv" \
+  "../../../bd/design_multi/ip/design_multi_smartconnect_1_0/bd_0/ip/ip_20/sim/bd_af27_sarn_1.sv" \
+  "../../../bd/design_multi/ip/design_multi_smartconnect_1_0/bd_0/ip/ip_21/sim/bd_af27_srn_1.sv" \
+  "../../../bd/design_multi/ip/design_multi_smartconnect_1_0/bd_0/ip/ip_22/sim/bd_af27_sawn_1.sv" \
+  "../../../bd/design_multi/ip/design_multi_smartconnect_1_0/bd_0/ip/ip_23/sim/bd_af27_swn_1.sv" \
+  "../../../bd/design_multi/ip/design_multi_smartconnect_1_0/bd_0/ip/ip_24/sim/bd_af27_sbn_1.sv" \
+  "../../../bd/design_multi/ip/design_multi_smartconnect_1_0/bd_0/ip/ip_25/sim/bd_af27_m00s2a_0.sv" \
+  "../../../bd/design_multi/ip/design_multi_smartconnect_1_0/bd_0/ip/ip_26/sim/bd_af27_m00arn_0.sv" \
+  "../../../bd/design_multi/ip/design_multi_smartconnect_1_0/bd_0/ip/ip_27/sim/bd_af27_m00rn_0.sv" \
+  "../../../bd/design_multi/ip/design_multi_smartconnect_1_0/bd_0/ip/ip_28/sim/bd_af27_m00awn_0.sv" \
+  "../../../bd/design_multi/ip/design_multi_smartconnect_1_0/bd_0/ip/ip_29/sim/bd_af27_m00wn_0.sv" \
+  "../../../bd/design_multi/ip/design_multi_smartconnect_1_0/bd_0/ip/ip_30/sim/bd_af27_m00bn_0.sv" \
+  "../../../bd/design_multi/ip/design_multi_smartconnect_1_0/bd_0/ip/ip_31/sim/bd_af27_m00e_0.sv" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/design_multi/ip/design_multi_smartconnect_1_0/sim/design_multi_smartconnect_1_0.vhd" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/design_multi/ip/design_multi_xbar_3/sim/design_multi_xbar_3.v" \
+  "../../../bd/design_multi/ip/design_multi_axi_bram_ctrl_0_bram_1/sim/design_multi_axi_bram_ctrl_0_bram_1.v" \
+  "../../../bd/design_multi/ip/design_multi_xbar_5/sim/design_multi_xbar_5.v" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/design_multi/sim/design_multi.vhd" \
 -endlib
 -makelib xcelium_lib/axi_protocol_converter_v2_1_19 \
   "../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \
@@ -277,6 +329,15 @@
   "../../../bd/design_multi/ip/design_multi_auto_pc_1/sim/design_multi_auto_pc_1.v" \
   "../../../bd/design_multi/ip/design_multi_auto_pc_0/sim/design_multi_auto_pc_0.v" \
   "../../../bd/design_multi/ip/design_multi_auto_pc_2/sim/design_multi_auto_pc_2.v" \
+-endlib
+-makelib xcelium_lib/axi_mmu_v2_1_17 \
+  "../../../../Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/b5b8/hdl/axi_mmu_v2_1_vl_rfs.v" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/design_multi/ip/design_multi_s00_mmu_0/sim/design_multi_s00_mmu_0.v" \
+  "../../../bd/design_multi/ip/design_multi_auto_pc_4/sim/design_multi_auto_pc_4.v" \
+  "../../../bd/design_multi/ip/design_multi_auto_pc_3/sim/design_multi_auto_pc_3.v" \
+  "../../../bd/design_multi/ip/design_multi_auto_pc_5/sim/design_multi_auto_pc_5.v" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
   glbl.v

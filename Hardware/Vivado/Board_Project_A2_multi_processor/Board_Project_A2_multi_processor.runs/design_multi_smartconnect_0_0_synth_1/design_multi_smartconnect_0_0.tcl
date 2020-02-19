@@ -63,12 +63,6 @@ set_property used_in_implementation false [get_files -all c:/A2_project/Board_Pr
 set_property used_in_implementation false [get_files -all c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_28/bd_6f76_m00awn_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_29/bd_6f76_m00wn_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_30/bd_6f76_m00bn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_32/bd_6f76_m01s2a_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_33/bd_6f76_m01arn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_34/bd_6f76_m01rn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_35/bd_6f76_m01awn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_36/bd_6f76_m01wn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_37/bd_6f76_m01bn_0_ooc.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the

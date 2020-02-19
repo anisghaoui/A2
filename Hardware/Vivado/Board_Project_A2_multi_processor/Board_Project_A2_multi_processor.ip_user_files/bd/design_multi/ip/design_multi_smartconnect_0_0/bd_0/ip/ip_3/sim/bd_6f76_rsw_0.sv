@@ -80,8 +80,8 @@ input wire [3 : 0] s_sc_send;
 input wire [3 : 0] s_sc_req;
 (* X_INTERFACE_INFO = "xilinx.com:interface:sc:1.0 S00_SC INFO [1:0] [1:0], xilinx.com:interface:sc:1.0 S01_SC INFO [1:0] [3:2]" *)
 input wire [3 : 0] s_sc_info;
-(* X_INTERFACE_INFO = "xilinx.com:interface:sc:1.0 S00_SC PAYLD [52:0] [52:0], xilinx.com:interface:sc:1.0 S01_SC PAYLD [52:0] [105:53]" *)
-input wire [105 : 0] s_sc_payld;
+(* X_INTERFACE_INFO = "xilinx.com:interface:sc:1.0 S00_SC PAYLD [53:0] [53:0], xilinx.com:interface:sc:1.0 S01_SC PAYLD [53:0] [107:54]" *)
+input wire [107 : 0] s_sc_payld;
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME S00_SC, BRIDGES M00_SC:M01_SC:M02_SC:M03_SC:M04_SC:M05_SC:M06_SC:M07_SC:M08_SC:M09_SC:M10_SC:M11_SC:M12_SC:M13_SC:M14_SC:M15_SC, XIL_INTERFACENAME S01_SC, BRIDGES M00_SC:M01_SC:M02_SC:M03_SC:M04_SC:M05_SC:M06_SC:M07_SC:M08_SC:M09_SC:M10_SC:M11_SC:M12_SC:M13_SC:M14_SC:M15_SC" *)
 (* X_INTERFACE_INFO = "xilinx.com:interface:sc:1.0 S00_SC RECV [1:0] [1:0], xilinx.com:interface:sc:1.0 S01_SC RECV [1:0] [3:2]" *)
 output wire [3 : 0] s_sc_recv;
@@ -93,11 +93,11 @@ output wire [3 : 0] m_sc_send;
 output wire [3 : 0] m_sc_req;
 (* X_INTERFACE_INFO = "xilinx.com:interface:sc:1.0 M00_SC INFO [1:0] [1:0], xilinx.com:interface:sc:1.0 M01_SC INFO [1:0] [3:2]" *)
 output wire [3 : 0] m_sc_info;
-(* X_INTERFACE_INFO = "xilinx.com:interface:sc:1.0 M00_SC PAYLD [52:0] [52:0], xilinx.com:interface:sc:1.0 M01_SC PAYLD [52:0] [105:53]" *)
-output wire [105 : 0] m_sc_payld;
+(* X_INTERFACE_INFO = "xilinx.com:interface:sc:1.0 M00_SC PAYLD [53:0] [53:0], xilinx.com:interface:sc:1.0 M01_SC PAYLD [53:0] [107:54]" *)
+output wire [107 : 0] m_sc_payld;
 
   sc_switchboard_v1_0_6_top #(
-    .C_PAYLD_WIDTH(53),
+    .C_PAYLD_WIDTH(54),
     .K_MAX_INFO_WIDTH(1),
     .C_S_PIPELINES(0),
     .C_M_PIPELINES(1),
@@ -105,11 +105,11 @@ output wire [105 : 0] m_sc_payld;
     .C_NUM_SI(2),
     .C_NUM_MI(2),
     .C_TESTING_MODE(0),
-    .C_CONNECTIVITY(4'B1111)
+    .C_CONNECTIVITY(4'B0011)
   ) inst (
     .aclk(aclk),
     .aclken(aclken),
-    .connectivity(4'B1111),
+    .connectivity(4'B0011),
     .s_sc_send(s_sc_send),
     .s_sc_req(s_sc_req),
     .s_sc_info(s_sc_info),

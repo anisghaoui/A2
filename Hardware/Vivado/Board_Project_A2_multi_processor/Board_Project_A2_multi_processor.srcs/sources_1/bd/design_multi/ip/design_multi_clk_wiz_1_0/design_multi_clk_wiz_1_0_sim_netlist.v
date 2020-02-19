@@ -3,8 +3,8 @@
 // Tool Version: Vivado v.2019.1.3 (win64) Build 2644227 Wed Sep  4 09:45:24 MDT 2019
 // Date        : Wed Feb  5 19:01:48 2020
 // Host        : Qlala-Blade running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim
-//               C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_clk_wiz_1_0/design_multi_clk_wiz_1_0_sim_netlist.v
+// Command     : write_verilog -force -mode funcsim -rename_top design_multi_clk_wiz_1_0 -prefix
+//               design_multi_clk_wiz_1_0_ design_multi_clk_wiz_1_0_sim_netlist.v
 // Design      : design_multi_clk_wiz_1_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -39,7 +39,6 @@ module design_multi_clk_wiz_1_0
         .resetn(resetn));
 endmodule
 
-(* ORIG_REF_NAME = "design_multi_clk_wiz_1_0_clk_wiz" *) 
 module design_multi_clk_wiz_1_0_design_multi_clk_wiz_1_0_clk_wiz
    (AXI_clk,
     hls_clk,

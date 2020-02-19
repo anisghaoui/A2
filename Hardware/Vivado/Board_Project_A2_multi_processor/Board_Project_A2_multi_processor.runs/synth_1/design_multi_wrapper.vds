@@ -2,8 +2,8 @@
 # Vivado v2019.1.3 (64-bit)
 # SW Build 2644227 on Wed Sep  4 09:45:24 MDT 2019
 # IP Build 2633630 on Wed Sep  4 12:30:14 MDT 2019
-# Start of session at: Wed Feb  5 19:08:02 2020
-# Process ID: 17348
+# Start of session at: Tue Feb 11 10:33:22 2020
+# Process ID: 12432
 # Current directory: C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1
 # Command line: vivado.exe -log design_multi_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_multi_wrapper.tcl
 # Log file: C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/design_multi_wrapper.vds
@@ -13,87 +13,107 @@ source design_multi_wrapper.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/HLS'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
-add_files: Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 455.508 ; gain = 77.430
+add_files: Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 433.570 ; gain = 55.102
 Command: synth_design -top design_multi_wrapper -part xc7z020clg484-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Device 21-403] Loading part xc7z020clg484-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 11156 
+INFO: Helper process launched with PID 5076 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 920.281 ; gain = 176.551
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 898.598 ; gain = 176.535
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'design_multi_wrapper' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/hdl/design_multi_wrapper.vhd:42]
-INFO: [Synth 8-3491] module 'design_multi' declared at 'C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:6800' bound to instance 'design_multi_i' of component 'design_multi' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/hdl/design_multi_wrapper.vhd:71]
-INFO: [Synth 8-638] synthesizing module 'design_multi' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:6832]
-INFO: [Synth 8-3491] module 'design_multi_Kmeans_0_0' declared at 'C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-17348-Qlala-Blade/realtime/design_multi_Kmeans_0_0_stub.vhdl:5' bound to instance 'Kmeans_0' of component 'design_multi_Kmeans_0_0' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:8650]
-INFO: [Synth 8-638] synthesizing module 'design_multi_Kmeans_0_0' [C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-17348-Qlala-Blade/realtime/design_multi_Kmeans_0_0_stub.vhdl:101]
-INFO: [Synth 8-3491] module 'design_multi_axi_bram_ctrl_0_1' declared at 'C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-17348-Qlala-Blade/realtime/design_multi_axi_bram_ctrl_0_1_stub.vhdl:5' bound to instance 'axi_bram_ctrl_0' of component 'design_multi_axi_bram_ctrl_0_1' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:8743]
-INFO: [Synth 8-638] synthesizing module 'design_multi_axi_bram_ctrl_0_1' [C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-17348-Qlala-Blade/realtime/design_multi_axi_bram_ctrl_0_1_stub.vhdl:51]
-INFO: [Synth 8-3491] module 'design_multi_axi_bram_ctrl_0_bram_0_0' declared at 'C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-17348-Qlala-Blade/realtime/design_multi_axi_bram_ctrl_0_bram_0_0_stub.vhdl:5' bound to instance 'axi_bram_ctrl_0_bram_0' of component 'design_multi_axi_bram_ctrl_0_bram_0_0' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:8786]
-INFO: [Synth 8-638] synthesizing module 'design_multi_axi_bram_ctrl_0_bram_0_0' [C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-17348-Qlala-Blade/realtime/design_multi_axi_bram_ctrl_0_bram_0_0_stub.vhdl:18]
-INFO: [Synth 8-3491] module 'design_multi_axi_bram_ctrl_1_0' declared at 'C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-17348-Qlala-Blade/realtime/design_multi_axi_bram_ctrl_1_0_stub.vhdl:5' bound to instance 'axi_bram_ctrl_1' of component 'design_multi_axi_bram_ctrl_1_0' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:8797]
-INFO: [Synth 8-638] synthesizing module 'design_multi_axi_bram_ctrl_1_0' [C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-17348-Qlala-Blade/realtime/design_multi_axi_bram_ctrl_1_0_stub.vhdl:51]
-INFO: [Synth 8-3491] module 'design_multi_axi_bram_ctrl_1_bram_0' declared at 'C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-17348-Qlala-Blade/realtime/design_multi_axi_bram_ctrl_1_bram_0_stub.vhdl:5' bound to instance 'axi_bram_ctrl_1_bram' of component 'design_multi_axi_bram_ctrl_1_bram_0' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:8840]
-INFO: [Synth 8-638] synthesizing module 'design_multi_axi_bram_ctrl_1_bram_0' [C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-17348-Qlala-Blade/realtime/design_multi_axi_bram_ctrl_1_bram_0_stub.vhdl:27]
-INFO: [Synth 8-3491] module 'design_multi_axi_gpio_0_0' declared at 'C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-17348-Qlala-Blade/realtime/design_multi_axi_gpio_0_0_stub.vhdl:5' bound to instance 'axi_gpio_0' of component 'design_multi_axi_gpio_0_0' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:8860]
-INFO: [Synth 8-638] synthesizing module 'design_multi_axi_gpio_0_0' [C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-17348-Qlala-Blade/realtime/design_multi_axi_gpio_0_0_stub.vhdl:32]
-INFO: [Synth 8-638] synthesizing module 'design_multi_axi_interconnect_0_0' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:3592]
-INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_8Q66QQ' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:180]
-INFO: [Synth 8-3491] module 'design_multi_auto_pc_3' declared at 'C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-17348-Qlala-Blade/realtime/design_multi_auto_pc_3_stub.vhdl:5' bound to instance 'auto_pc' of component 'design_multi_auto_pc_3' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:364]
-INFO: [Synth 8-638] synthesizing module 'design_multi_auto_pc_3' [C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-17348-Qlala-Blade/realtime/design_multi_auto_pc_3_stub.vhdl:71]
-INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_8Q66QQ' (1#1) [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:180]
-INFO: [Synth 8-638] synthesizing module 'm01_couplers_imp_2BHB36' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:909]
-INFO: [Synth 8-256] done synthesizing module 'm01_couplers_imp_2BHB36' (2#1) [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:909]
-INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_LKOZ5' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:2548]
-INFO: [Synth 8-3491] module 'design_multi_auto_pc_4' declared at 'C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-17348-Qlala-Blade/realtime/design_multi_auto_pc_4_stub.vhdl:5' bound to instance 'auto_pc' of component 'design_multi_auto_pc_4' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:2789]
-INFO: [Synth 8-638] synthesizing module 'design_multi_auto_pc_4' [C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-17348-Qlala-Blade/realtime/design_multi_auto_pc_4_stub.vhdl:90]
-INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_LKOZ5' (3#1) [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:2548]
-INFO: [Synth 8-3491] module 'design_multi_xbar_3' declared at 'C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-17348-Qlala-Blade/realtime/design_multi_xbar_3_stub.vhdl:5' bound to instance 'xbar' of component 'design_multi_xbar_3' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:4195]
-INFO: [Synth 8-638] synthesizing module 'design_multi_xbar_3' [C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-17348-Qlala-Blade/realtime/design_multi_xbar_3_stub.vhdl:89]
-INFO: [Synth 8-256] done synthesizing module 'design_multi_axi_interconnect_0_0' (4#1) [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:3592]
-INFO: [Synth 8-3491] module 'design_multi_axi_smc_0' declared at 'C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-17348-Qlala-Blade/realtime/design_multi_axi_smc_0_stub.vhdl:5' bound to instance 'axi_smc' of component 'design_multi_axi_smc_0' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:8985]
-INFO: [Synth 8-638] synthesizing module 'design_multi_axi_smc_0' [C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-17348-Qlala-Blade/realtime/design_multi_axi_smc_0_stub.vhdl:127]
-INFO: [Synth 8-3491] module 'design_multi_clk_wiz_1_0' declared at 'C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-17348-Qlala-Blade/realtime/design_multi_clk_wiz_1_0_stub.vhdl:5' bound to instance 'clk_wiz_1' of component 'design_multi_clk_wiz_1_0' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:9104]
-INFO: [Synth 8-638] synthesizing module 'design_multi_clk_wiz_1_0' [C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-17348-Qlala-Blade/realtime/design_multi_clk_wiz_1_0_stub.vhdl:16]
-INFO: [Synth 8-3491] module 'design_multi_mdm_1_0' declared at 'C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-17348-Qlala-Blade/realtime/design_multi_mdm_1_0_stub.vhdl:5' bound to instance 'mdm_1' of component 'design_multi_mdm_1_0' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:9112]
-INFO: [Synth 8-638] synthesizing module 'design_multi_mdm_1_0' [C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-17348-Qlala-Blade/realtime/design_multi_mdm_1_0_stub.vhdl:41]
-INFO: [Synth 8-3491] module 'design_multi_microblaze_0_0' declared at 'C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-17348-Qlala-Blade/realtime/design_multi_microblaze_0_0_stub.vhdl:5' bound to instance 'microblaze_0' of component 'design_multi_microblaze_0_0' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:9145]
-INFO: [Synth 8-638] synthesizing module 'design_multi_microblaze_0_0' [C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-17348-Qlala-Blade/realtime/design_multi_microblaze_0_0_stub.vhdl:137]
-INFO: [Synth 8-3491] module 'design_multi_microblaze_0_axi_intc_0' declared at 'C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-17348-Qlala-Blade/realtime/design_multi_microblaze_0_axi_intc_0_stub.vhdl:5' bound to instance 'microblaze_0_axi_intc' of component 'design_multi_microblaze_0_axi_intc_0' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:9305]
-INFO: [Synth 8-638] synthesizing module 'design_multi_microblaze_0_axi_intc_0' [C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-17348-Qlala-Blade/realtime/design_multi_microblaze_0_axi_intc_0_stub.vhdl:36]
-INFO: [Synth 8-638] synthesizing module 'design_multi_microblaze_0_axi_periph_0' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:4475]
+INFO: [Synth 8-3491] module 'design_multi' declared at 'C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:10917' bound to instance 'design_multi_i' of component 'design_multi' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/hdl/design_multi_wrapper.vhd:71]
+INFO: [Synth 8-638] synthesizing module 'design_multi' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:10949]
+INFO: [Synth 8-3491] module 'design_multi_Kmeans_0_0' declared at 'C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-12432-Qlala-Blade/realtime/design_multi_Kmeans_0_0_stub.vhdl:5' bound to instance 'Kmeans_0' of component 'design_multi_Kmeans_0_0' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:12451]
+INFO: [Synth 8-638] synthesizing module 'design_multi_Kmeans_0_0' [C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-12432-Qlala-Blade/realtime/design_multi_Kmeans_0_0_stub.vhdl:101]
+INFO: [Synth 8-3491] module 'design_multi_axi_bram_ctrl_0_1' declared at 'C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-12432-Qlala-Blade/realtime/design_multi_axi_bram_ctrl_0_1_stub.vhdl:5' bound to instance 'axi_bram_ctrl_0' of component 'design_multi_axi_bram_ctrl_0_1' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:12544]
+INFO: [Synth 8-638] synthesizing module 'design_multi_axi_bram_ctrl_0_1' [C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-12432-Qlala-Blade/realtime/design_multi_axi_bram_ctrl_0_1_stub.vhdl:51]
+INFO: [Synth 8-3491] module 'design_multi_axi_bram_ctrl_0_bram_0_0' declared at 'C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-12432-Qlala-Blade/realtime/design_multi_axi_bram_ctrl_0_bram_0_0_stub.vhdl:5' bound to instance 'axi_bram_ctrl_0_bram_0' of component 'design_multi_axi_bram_ctrl_0_bram_0_0' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:12587]
+INFO: [Synth 8-638] synthesizing module 'design_multi_axi_bram_ctrl_0_bram_0_0' [C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-12432-Qlala-Blade/realtime/design_multi_axi_bram_ctrl_0_bram_0_0_stub.vhdl:18]
+INFO: [Synth 8-3491] module 'design_multi_axi_gpio_0_0' declared at 'C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-12432-Qlala-Blade/realtime/design_multi_axi_gpio_0_0_stub.vhdl:5' bound to instance 'axi_gpio_0' of component 'design_multi_axi_gpio_0_0' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:12598]
+INFO: [Synth 8-638] synthesizing module 'design_multi_axi_gpio_0_0' [C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-12432-Qlala-Blade/realtime/design_multi_axi_gpio_0_0_stub.vhdl:32]
+INFO: [Synth 8-638] synthesizing module 'design_multi_axi_interconnect_0_0' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:5566]
+INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_8Q66QQ' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:1012]
+INFO: [Synth 8-3491] module 'design_multi_auto_pc_3' declared at 'C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-12432-Qlala-Blade/realtime/design_multi_auto_pc_3_stub.vhdl:5' bound to instance 'auto_pc' of component 'design_multi_auto_pc_3' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:1196]
+INFO: [Synth 8-638] synthesizing module 'design_multi_auto_pc_3' [C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-12432-Qlala-Blade/realtime/design_multi_auto_pc_3_stub.vhdl:71]
+INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_8Q66QQ' (1#1) [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:1012]
+INFO: [Synth 8-638] synthesizing module 'm01_couplers_imp_2BHB36' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:1960]
+INFO: [Synth 8-256] done synthesizing module 'm01_couplers_imp_2BHB36' (2#1) [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:1960]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_LKOZ5' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:4136]
+INFO: [Synth 8-3491] module 'design_multi_auto_pc_4' declared at 'C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-12432-Qlala-Blade/realtime/design_multi_auto_pc_4_stub.vhdl:5' bound to instance 'auto_pc' of component 'design_multi_auto_pc_4' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:4377]
+INFO: [Synth 8-638] synthesizing module 'design_multi_auto_pc_4' [C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-12432-Qlala-Blade/realtime/design_multi_auto_pc_4_stub.vhdl:90]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_LKOZ5' (3#1) [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:4136]
+INFO: [Synth 8-3491] module 'design_multi_xbar_3' declared at 'C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-12432-Qlala-Blade/realtime/design_multi_xbar_3_stub.vhdl:5' bound to instance 'xbar' of component 'design_multi_xbar_3' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:6187]
+INFO: [Synth 8-638] synthesizing module 'design_multi_xbar_3' [C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-12432-Qlala-Blade/realtime/design_multi_xbar_3_stub.vhdl:89]
+INFO: [Synth 8-256] done synthesizing module 'design_multi_axi_interconnect_0_0' (4#1) [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:5566]
+INFO: [Synth 8-638] synthesizing module 'design_multi_axi_interconnect_1_0' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:6533]
+INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_1WXI7G5' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:201]
+INFO: [Synth 8-3491] module 'design_multi_auto_pc_5' declared at 'C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-12432-Qlala-Blade/realtime/design_multi_auto_pc_5_stub.vhdl:5' bound to instance 'auto_pc' of component 'design_multi_auto_pc_5' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:444]
+INFO: [Synth 8-638] synthesizing module 'design_multi_auto_pc_5' [C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-12432-Qlala-Blade/realtime/design_multi_auto_pc_5_stub.vhdl:90]
+INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_1WXI7G5' (5#1) [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:201]
+INFO: [Synth 8-638] synthesizing module 'm01_couplers_imp_1UE1HBP' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:1749]
+INFO: [Synth 8-256] done synthesizing module 'm01_couplers_imp_1UE1HBP' (6#1) [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:1749]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_1RLHXWM' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:3753]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_1RLHXWM' (7#1) [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:3753]
+INFO: [Synth 8-638] synthesizing module 's01_couplers_imp_1V6EQZQ' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:4959]
+INFO: [Synth 8-256] done synthesizing module 's01_couplers_imp_1V6EQZQ' (8#1) [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:4959]
+INFO: [Synth 8-3491] module 'design_multi_xbar_5' declared at 'C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-12432-Qlala-Blade/realtime/design_multi_xbar_5_stub.vhdl:5' bound to instance 'xbar' of component 'design_multi_xbar_5' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:7406]
+INFO: [Synth 8-638] synthesizing module 'design_multi_xbar_5' [C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-12432-Qlala-Blade/realtime/design_multi_xbar_5_stub.vhdl:89]
+INFO: [Synth 8-256] done synthesizing module 'design_multi_axi_interconnect_1_0' (9#1) [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:6533]
+INFO: [Synth 8-638] synthesizing module 'design_multi_axi_interconnect_2_0' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:7718]
+INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_2U4XXP' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:617]
+INFO: [Synth 8-3491] module 'design_multi_auto_pc_6' declared at 'C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-12432-Qlala-Blade/realtime/design_multi_auto_pc_6_stub.vhdl:5' bound to instance 'auto_pc' of component 'design_multi_auto_pc_6' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:860]
+INFO: [Synth 8-638] synthesizing module 'design_multi_auto_pc_6' [C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-12432-Qlala-Blade/realtime/design_multi_auto_pc_6_stub.vhdl:90]
+INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_2U4XXP' (10#1) [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:617]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_6HLCF2' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:3946]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_6HLCF2' (11#1) [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:3946]
+INFO: [Synth 8-638] synthesizing module 's01_couplers_imp_2X68U' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:5152]
+INFO: [Synth 8-256] done synthesizing module 's01_couplers_imp_2X68U' (12#1) [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:5152]
+INFO: [Synth 8-3491] module 'design_multi_xbar_6' declared at 'C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-12432-Qlala-Blade/realtime/design_multi_xbar_6_stub.vhdl:5' bound to instance 'xbar' of component 'design_multi_xbar_6' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:8351]
+INFO: [Synth 8-638] synthesizing module 'design_multi_xbar_6' [C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-12432-Qlala-Blade/realtime/design_multi_xbar_6_stub.vhdl:89]
+INFO: [Synth 8-256] done synthesizing module 'design_multi_axi_interconnect_2_0' (13#1) [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:7718]
+INFO: [Synth 8-3491] module 'design_multi_clk_wiz_1_0' declared at 'C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-12432-Qlala-Blade/realtime/design_multi_clk_wiz_1_0_stub.vhdl:5' bound to instance 'clk_wiz_1' of component 'design_multi_clk_wiz_1_0' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:13006]
+INFO: [Synth 8-638] synthesizing module 'design_multi_clk_wiz_1_0' [C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-12432-Qlala-Blade/realtime/design_multi_clk_wiz_1_0_stub.vhdl:16]
+INFO: [Synth 8-3491] module 'design_multi_mdm_1_0' declared at 'C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-12432-Qlala-Blade/realtime/design_multi_mdm_1_0_stub.vhdl:5' bound to instance 'mdm_1' of component 'design_multi_mdm_1_0' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:13014]
+INFO: [Synth 8-638] synthesizing module 'design_multi_mdm_1_0' [C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-12432-Qlala-Blade/realtime/design_multi_mdm_1_0_stub.vhdl:41]
+INFO: [Synth 8-3491] module 'design_multi_microblaze_0_0' declared at 'C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-12432-Qlala-Blade/realtime/design_multi_microblaze_0_0_stub.vhdl:5' bound to instance 'microblaze_0' of component 'design_multi_microblaze_0_0' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:13047]
+INFO: [Synth 8-638] synthesizing module 'design_multi_microblaze_0_0' [C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-12432-Qlala-Blade/realtime/design_multi_microblaze_0_0_stub.vhdl:118]
+INFO: [Synth 8-3491] module 'design_multi_microblaze_0_axi_intc_0' declared at 'C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-12432-Qlala-Blade/realtime/design_multi_microblaze_0_axi_intc_0_stub.vhdl:5' bound to instance 'microblaze_0_axi_intc' of component 'design_multi_microblaze_0_axi_intc_0' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:13188]
+INFO: [Synth 8-638] synthesizing module 'design_multi_microblaze_0_axi_intc_0' [C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-12432-Qlala-Blade/realtime/design_multi_microblaze_0_axi_intc_0_stub.vhdl:36]
+INFO: [Synth 8-638] synthesizing module 'design_multi_microblaze_0_axi_periph_0' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:8592]
 INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_1IRIX95' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:57]
-INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_1IRIX95' (5#1) [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:57]
-INFO: [Synth 8-638] synthesizing module 'm01_couplers_imp_1MCGH7D' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:772]
-INFO: [Synth 8-256] done synthesizing module 'm01_couplers_imp_1MCGH7D' (6#1) [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:772]
-INFO: [Synth 8-638] synthesizing module 'm02_couplers_imp_1T992L5' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:1263]
-INFO: [Synth 8-3491] module 'design_multi_auto_pc_2' declared at 'C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-17348-Qlala-Blade/realtime/design_multi_auto_pc_2_stub.vhdl:5' bound to instance 'auto_pc' of component 'design_multi_auto_pc_2' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:1431]
-INFO: [Synth 8-638] synthesizing module 'design_multi_auto_pc_2' [C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-17348-Qlala-Blade/realtime/design_multi_auto_pc_2_stub.vhdl:65]
-INFO: [Synth 8-256] done synthesizing module 'm02_couplers_imp_1T992L5' (7#1) [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:1263]
-INFO: [Synth 8-638] synthesizing module 'm03_couplers_imp_1XY4AZD' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:1731]
-INFO: [Synth 8-256] done synthesizing module 'm03_couplers_imp_1XY4AZD' (8#1) [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:1731]
-INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_1NZVBBE' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:2400]
-INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_1NZVBBE' (9#1) [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:2400]
-INFO: [Synth 8-3491] module 'design_multi_s00_mmu_0' declared at 'C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-17348-Qlala-Blade/realtime/design_multi_s00_mmu_0_stub.vhdl:5' bound to instance 's00_mmu' of component 'design_multi_s00_mmu_0' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:5142]
-INFO: [Synth 8-638] synthesizing module 'design_multi_s00_mmu_0' [C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-17348-Qlala-Blade/realtime/design_multi_s00_mmu_0_stub.vhdl:51]
-INFO: [Synth 8-3491] module 'design_multi_xbar_1' declared at 'C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-17348-Qlala-Blade/realtime/design_multi_xbar_1_stub.vhdl:5' bound to instance 'xbar' of component 'design_multi_xbar_1' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:5185]
-INFO: [Synth 8-638] synthesizing module 'design_multi_xbar_1' [C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-17348-Qlala-Blade/realtime/design_multi_xbar_1_stub.vhdl:51]
-INFO: [Synth 8-256] done synthesizing module 'design_multi_microblaze_0_axi_periph_0' (10#1) [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:4475]
-INFO: [Synth 8-638] synthesizing module 'microblaze_0_local_memory_imp_EIOXIU' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:1821]
-INFO: [Synth 8-3491] module 'design_multi_dlmb_bram_if_cntlr_0' declared at 'C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-17348-Qlala-Blade/realtime/design_multi_dlmb_bram_if_cntlr_0_stub.vhdl:5' bound to instance 'dlmb_bram_if_cntlr' of component 'design_multi_dlmb_bram_if_cntlr_0' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:2035]
-INFO: [Synth 8-638] synthesizing module 'design_multi_dlmb_bram_if_cntlr_0' [C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-17348-Qlala-Blade/realtime/design_multi_dlmb_bram_if_cntlr_0_stub.vhdl:31]
-INFO: [Synth 8-3491] module 'design_multi_dlmb_v10_0' declared at 'C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-17348-Qlala-Blade/realtime/design_multi_dlmb_v10_0_stub.vhdl:5' bound to instance 'dlmb_v10' of component 'design_multi_dlmb_v10_0' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:2089]
-INFO: [Synth 8-638] synthesizing module 'design_multi_dlmb_v10_0' [C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-17348-Qlala-Blade/realtime/design_multi_dlmb_v10_0_stub.vhdl:36]
-INFO: [Synth 8-3491] module 'design_multi_ilmb_bram_if_cntlr_0' declared at 'C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-17348-Qlala-Blade/realtime/design_multi_ilmb_bram_if_cntlr_0_stub.vhdl:5' bound to instance 'ilmb_bram_if_cntlr' of component 'design_multi_ilmb_bram_if_cntlr_0' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:2117]
-INFO: [Synth 8-638] synthesizing module 'design_multi_ilmb_bram_if_cntlr_0' [C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-17348-Qlala-Blade/realtime/design_multi_ilmb_bram_if_cntlr_0_stub.vhdl:31]
-INFO: [Synth 8-3491] module 'design_multi_ilmb_v10_0' declared at 'C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-17348-Qlala-Blade/realtime/design_multi_ilmb_v10_0_stub.vhdl:5' bound to instance 'ilmb_v10' of component 'design_multi_ilmb_v10_0' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:2171]
-INFO: [Synth 8-638] synthesizing module 'design_multi_ilmb_v10_0' [C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-17348-Qlala-Blade/realtime/design_multi_ilmb_v10_0_stub.vhdl:36]
-INFO: [Synth 8-3491] module 'design_multi_lmb_bram_0' declared at 'C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-17348-Qlala-Blade/realtime/design_multi_lmb_bram_0_stub.vhdl:5' bound to instance 'lmb_bram' of component 'design_multi_lmb_bram_0' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:2199]
-INFO: [Synth 8-638] synthesizing module 'design_multi_lmb_bram_0' [C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-17348-Qlala-Blade/realtime/design_multi_lmb_bram_0_stub.vhdl:27]
-INFO: [Synth 8-256] done synthesizing module 'microblaze_0_local_memory_imp_EIOXIU' (11#1) [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:1821]
-INFO: [Synth 8-3491] module 'design_multi_microblaze_0_xlconcat_0' declared at 'c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_microblaze_0_xlconcat_0/synth/design_multi_microblaze_0_xlconcat_0.v:58' bound to instance 'microblaze_0_xlconcat' of component 'design_multi_microblaze_0_xlconcat_0' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:9478]
+INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_1IRIX95' (14#1) [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:57]
+INFO: [Synth 8-638] synthesizing module 'm01_couplers_imp_1MCGH7D' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:1604]
+INFO: [Synth 8-256] done synthesizing module 'm01_couplers_imp_1MCGH7D' (15#1) [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:1604]
+INFO: [Synth 8-638] synthesizing module 'm02_couplers_imp_1T992L5' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:2326]
+INFO: [Synth 8-3491] module 'design_multi_auto_pc_2' declared at 'C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-12432-Qlala-Blade/realtime/design_multi_auto_pc_2_stub.vhdl:5' bound to instance 'auto_pc' of component 'design_multi_auto_pc_2' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:2494]
+INFO: [Synth 8-638] synthesizing module 'design_multi_auto_pc_2' [C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-12432-Qlala-Blade/realtime/design_multi_auto_pc_2_stub.vhdl:65]
+INFO: [Synth 8-256] done synthesizing module 'm02_couplers_imp_1T992L5' (16#1) [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:2326]
+INFO: [Synth 8-638] synthesizing module 'm03_couplers_imp_1XY4AZD' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:2794]
+INFO: [Synth 8-256] done synthesizing module 'm03_couplers_imp_1XY4AZD' (17#1) [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:2794]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_1NZVBBE' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:3606]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_1NZVBBE' (18#1) [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:3606]
+INFO: [Synth 8-3491] module 'design_multi_s00_mmu_0' declared at 'C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-12432-Qlala-Blade/realtime/design_multi_s00_mmu_0_stub.vhdl:5' bound to instance 's00_mmu' of component 'design_multi_s00_mmu_0' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:9259]
+INFO: [Synth 8-638] synthesizing module 'design_multi_s00_mmu_0' [C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-12432-Qlala-Blade/realtime/design_multi_s00_mmu_0_stub.vhdl:51]
+INFO: [Synth 8-3491] module 'design_multi_xbar_1' declared at 'C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-12432-Qlala-Blade/realtime/design_multi_xbar_1_stub.vhdl:5' bound to instance 'xbar' of component 'design_multi_xbar_1' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:9302]
+INFO: [Synth 8-638] synthesizing module 'design_multi_xbar_1' [C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-12432-Qlala-Blade/realtime/design_multi_xbar_1_stub.vhdl:51]
+INFO: [Synth 8-256] done synthesizing module 'design_multi_microblaze_0_axi_periph_0' (19#1) [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:8592]
+INFO: [Synth 8-638] synthesizing module 'microblaze_0_local_memory_imp_EIOXIU' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:2889]
+INFO: [Synth 8-3491] module 'design_multi_dlmb_bram_if_cntlr_0' declared at 'C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-12432-Qlala-Blade/realtime/design_multi_dlmb_bram_if_cntlr_0_stub.vhdl:5' bound to instance 'dlmb_bram_if_cntlr' of component 'design_multi_dlmb_bram_if_cntlr_0' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:3111]
+INFO: [Synth 8-638] synthesizing module 'design_multi_dlmb_bram_if_cntlr_0' [C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-12432-Qlala-Blade/realtime/design_multi_dlmb_bram_if_cntlr_0_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'design_multi_dlmb_v10_0' declared at 'C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-12432-Qlala-Blade/realtime/design_multi_dlmb_v10_0_stub.vhdl:5' bound to instance 'dlmb_v10' of component 'design_multi_dlmb_v10_0' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:3165]
+INFO: [Synth 8-638] synthesizing module 'design_multi_dlmb_v10_0' [C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-12432-Qlala-Blade/realtime/design_multi_dlmb_v10_0_stub.vhdl:36]
+INFO: [Synth 8-3491] module 'design_multi_ilmb_bram_if_cntlr_0' declared at 'C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-12432-Qlala-Blade/realtime/design_multi_ilmb_bram_if_cntlr_0_stub.vhdl:5' bound to instance 'ilmb_bram_if_cntlr' of component 'design_multi_ilmb_bram_if_cntlr_0' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:3258]
+INFO: [Synth 8-638] synthesizing module 'design_multi_ilmb_bram_if_cntlr_0' [C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-12432-Qlala-Blade/realtime/design_multi_ilmb_bram_if_cntlr_0_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'design_multi_ilmb_v10_0' declared at 'C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-12432-Qlala-Blade/realtime/design_multi_ilmb_v10_0_stub.vhdl:5' bound to instance 'ilmb_v10' of component 'design_multi_ilmb_v10_0' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:3312]
+INFO: [Synth 8-638] synthesizing module 'design_multi_ilmb_v10_0' [C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-12432-Qlala-Blade/realtime/design_multi_ilmb_v10_0_stub.vhdl:36]
+INFO: [Synth 8-3491] module 'design_multi_lmb_bram_0' declared at 'C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-12432-Qlala-Blade/realtime/design_multi_lmb_bram_0_stub.vhdl:5' bound to instance 'lmb_bram' of component 'design_multi_lmb_bram_0' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:3405]
+INFO: [Synth 8-638] synthesizing module 'design_multi_lmb_bram_0' [C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-12432-Qlala-Blade/realtime/design_multi_lmb_bram_0_stub.vhdl:27]
+INFO: [Synth 8-256] done synthesizing module 'microblaze_0_local_memory_imp_EIOXIU' (20#1) [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:2889]
+INFO: [Synth 8-3491] module 'design_multi_microblaze_0_xlconcat_0' declared at 'c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_microblaze_0_xlconcat_0/synth/design_multi_microblaze_0_xlconcat_0.v:58' bound to instance 'microblaze_0_xlconcat' of component 'design_multi_microblaze_0_xlconcat_0' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:13366]
 INFO: [Synth 8-6157] synthesizing module 'design_multi_microblaze_0_xlconcat_0' [c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_microblaze_0_xlconcat_0/synth/design_multi_microblaze_0_xlconcat_0.v:58]
 INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_3_xlconcat' [c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/442e/hdl/xlconcat_v2_1_vl_rfs.v:14]
 	Parameter IN0_WIDTH bound to: 1 - type: integer 
@@ -130,38 +150,36 @@ INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_3_xlconcat' [c:/A2_proje
 	Parameter IN31_WIDTH bound to: 1 - type: integer 
 	Parameter dout_width bound to: 2 - type: integer 
 	Parameter NUM_PORTS bound to: 2 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_3_xlconcat' (12#1) [c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/442e/hdl/xlconcat_v2_1_vl_rfs.v:14]
-INFO: [Synth 8-6155] done synthesizing module 'design_multi_microblaze_0_xlconcat_0' (13#1) [c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_microblaze_0_xlconcat_0/synth/design_multi_microblaze_0_xlconcat_0.v:58]
-INFO: [Synth 8-3491] module 'design_multi_processing_system7_0_0' declared at 'C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-17348-Qlala-Blade/realtime/design_multi_processing_system7_0_0_stub.vhdl:5' bound to instance 'processing_system7_0' of component 'design_multi_processing_system7_0_0' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:9484]
-INFO: [Synth 8-638] synthesizing module 'design_multi_processing_system7_0_0' [C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-17348-Qlala-Blade/realtime/design_multi_processing_system7_0_0_stub.vhdl:247]
-INFO: [Synth 8-638] synthesizing module 'design_multi_ps7_0_axi_periph_0' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:5465]
-INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_Z7SUCK' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:493]
-INFO: [Synth 8-3491] module 'design_multi_auto_pc_0' declared at 'C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-17348-Qlala-Blade/realtime/design_multi_auto_pc_0_stub.vhdl:5' bound to instance 'auto_pc' of component 'design_multi_auto_pc_0' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:665]
-INFO: [Synth 8-638] synthesizing module 'design_multi_auto_pc_0' [C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-17348-Qlala-Blade/realtime/design_multi_auto_pc_0_stub.vhdl:67]
-INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_Z7SUCK' (14#1) [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:493]
-INFO: [Synth 8-638] synthesizing module 'm01_couplers_imp_TCH10K' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:1096]
-INFO: [Synth 8-256] done synthesizing module 'm01_couplers_imp_TCH10K' (15#1) [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:1096]
-INFO: [Synth 8-638] synthesizing module 'm02_couplers_imp_MEGE90' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:1572]
-INFO: [Synth 8-256] done synthesizing module 'm02_couplers_imp_MEGE90' (16#1) [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:1572]
-INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_RO19IV' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:2960]
-INFO: [Synth 8-3491] module 'design_multi_auto_pc_1' declared at 'C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-17348-Qlala-Blade/realtime/design_multi_auto_pc_1_stub.vhdl:5' bound to instance 'auto_pc' of component 'design_multi_auto_pc_1' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:3201]
-INFO: [Synth 8-638] synthesizing module 'design_multi_auto_pc_1' [C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-17348-Qlala-Blade/realtime/design_multi_auto_pc_1_stub.vhdl:90]
-INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_RO19IV' (17#1) [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:2960]
-INFO: [Synth 8-638] synthesizing module 's01_couplers_imp_WCWHX3' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:3371]
-INFO: [Synth 8-256] done synthesizing module 's01_couplers_imp_WCWHX3' (18#1) [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:3371]
-INFO: [Synth 8-3491] module 'design_multi_xbar_0' declared at 'C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-17348-Qlala-Blade/realtime/design_multi_xbar_0_stub.vhdl:5' bound to instance 'xbar' of component 'design_multi_xbar_0' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:6420]
-INFO: [Synth 8-638] synthesizing module 'design_multi_xbar_0' [C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-17348-Qlala-Blade/realtime/design_multi_xbar_0_stub.vhdl:85]
-INFO: [Synth 8-256] done synthesizing module 'design_multi_ps7_0_axi_periph_0' (19#1) [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:5465]
-INFO: [Synth 8-3491] module 'design_multi_rst_clk_wiz_1_100M_0' declared at 'C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-17348-Qlala-Blade/realtime/design_multi_rst_clk_wiz_1_100M_0_stub.vhdl:5' bound to instance 'rst_clk_wiz_1_100M' of component 'design_multi_rst_clk_wiz_1_100M_0' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:9898]
-INFO: [Synth 8-638] synthesizing module 'design_multi_rst_clk_wiz_1_100M_0' [C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-17348-Qlala-Blade/realtime/design_multi_rst_clk_wiz_1_100M_0_stub.vhdl:21]
-INFO: [Synth 8-3491] module 'design_multi_rst_ps7_0_100M_0' declared at 'C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-17348-Qlala-Blade/realtime/design_multi_rst_ps7_0_100M_0_stub.vhdl:5' bound to instance 'rst_ps7_0_100M' of component 'design_multi_rst_ps7_0_100M_0' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:9911]
-INFO: [Synth 8-638] synthesizing module 'design_multi_rst_ps7_0_100M_0' [C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-17348-Qlala-Blade/realtime/design_multi_rst_ps7_0_100M_0_stub.vhdl:21]
-INFO: [Synth 8-3491] module 'design_multi_smartconnect_0_0' declared at 'C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-17348-Qlala-Blade/realtime/design_multi_smartconnect_0_0_stub.vhdl:5' bound to instance 'smartconnect_0' of component 'design_multi_smartconnect_0_0' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:9924]
-INFO: [Synth 8-638] synthesizing module 'design_multi_smartconnect_0_0' [C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-17348-Qlala-Blade/realtime/design_multi_smartconnect_0_0_stub.vhdl:131]
-INFO: [Synth 8-3491] module 'design_multi_smartconnect_1_0' declared at 'C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-17348-Qlala-Blade/realtime/design_multi_smartconnect_1_0_stub.vhdl:5' bound to instance 'smartconnect_1' of component 'design_multi_smartconnect_1_0' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:10047]
-INFO: [Synth 8-638] synthesizing module 'design_multi_smartconnect_1_0' [C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-17348-Qlala-Blade/realtime/design_multi_smartconnect_1_0_stub.vhdl:112]
-INFO: [Synth 8-256] done synthesizing module 'design_multi' (20#1) [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:6832]
-INFO: [Synth 8-256] done synthesizing module 'design_multi_wrapper' (21#1) [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/hdl/design_multi_wrapper.vhd:42]
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_3_xlconcat' (21#1) [c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ipshared/442e/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'design_multi_microblaze_0_xlconcat_0' (22#1) [c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_microblaze_0_xlconcat_0/synth/design_multi_microblaze_0_xlconcat_0.v:58]
+INFO: [Synth 8-3491] module 'design_multi_processing_system7_0_0' declared at 'C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-12432-Qlala-Blade/realtime/design_multi_processing_system7_0_0_stub.vhdl:5' bound to instance 'processing_system7_0' of component 'design_multi_processing_system7_0_0' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:13372]
+INFO: [Synth 8-638] synthesizing module 'design_multi_processing_system7_0_0' [C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-12432-Qlala-Blade/realtime/design_multi_processing_system7_0_0_stub.vhdl:247]
+INFO: [Synth 8-638] synthesizing module 'design_multi_ps7_0_axi_periph_0' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:9582]
+INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_Z7SUCK' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:1325]
+INFO: [Synth 8-3491] module 'design_multi_auto_pc_0' declared at 'C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-12432-Qlala-Blade/realtime/design_multi_auto_pc_0_stub.vhdl:5' bound to instance 'auto_pc' of component 'design_multi_auto_pc_0' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:1497]
+INFO: [Synth 8-638] synthesizing module 'design_multi_auto_pc_0' [C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-12432-Qlala-Blade/realtime/design_multi_auto_pc_0_stub.vhdl:67]
+INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_Z7SUCK' (23#1) [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:1325]
+INFO: [Synth 8-638] synthesizing module 'm01_couplers_imp_TCH10K' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:2159]
+INFO: [Synth 8-256] done synthesizing module 'm01_couplers_imp_TCH10K' (24#1) [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:2159]
+INFO: [Synth 8-638] synthesizing module 'm02_couplers_imp_MEGE90' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:2635]
+INFO: [Synth 8-256] done synthesizing module 'm02_couplers_imp_MEGE90' (25#1) [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:2635]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_RO19IV' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:4548]
+INFO: [Synth 8-3491] module 'design_multi_auto_pc_1' declared at 'C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-12432-Qlala-Blade/realtime/design_multi_auto_pc_1_stub.vhdl:5' bound to instance 'auto_pc' of component 'design_multi_auto_pc_1' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:4789]
+INFO: [Synth 8-638] synthesizing module 'design_multi_auto_pc_1' [C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-12432-Qlala-Blade/realtime/design_multi_auto_pc_1_stub.vhdl:90]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_RO19IV' (26#1) [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:4548]
+INFO: [Synth 8-638] synthesizing module 's01_couplers_imp_WCWHX3' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:5341]
+INFO: [Synth 8-256] done synthesizing module 's01_couplers_imp_WCWHX3' (27#1) [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:5341]
+INFO: [Synth 8-3491] module 'design_multi_xbar_0' declared at 'C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-12432-Qlala-Blade/realtime/design_multi_xbar_0_stub.vhdl:5' bound to instance 'xbar' of component 'design_multi_xbar_0' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:10537]
+INFO: [Synth 8-638] synthesizing module 'design_multi_xbar_0' [C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-12432-Qlala-Blade/realtime/design_multi_xbar_0_stub.vhdl:85]
+INFO: [Synth 8-256] done synthesizing module 'design_multi_ps7_0_axi_periph_0' (28#1) [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:9582]
+INFO: [Synth 8-3491] module 'design_multi_rst_clk_wiz_1_100M_0' declared at 'C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-12432-Qlala-Blade/realtime/design_multi_rst_clk_wiz_1_100M_0_stub.vhdl:5' bound to instance 'rst_clk_wiz_1_100M' of component 'design_multi_rst_clk_wiz_1_100M_0' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:13792]
+INFO: [Synth 8-638] synthesizing module 'design_multi_rst_clk_wiz_1_100M_0' [C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-12432-Qlala-Blade/realtime/design_multi_rst_clk_wiz_1_100M_0_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'design_multi_rst_ps7_0_100M_0' declared at 'C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-12432-Qlala-Blade/realtime/design_multi_rst_ps7_0_100M_0_stub.vhdl:5' bound to instance 'rst_ps7_0_100M' of component 'design_multi_rst_ps7_0_100M_0' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:13805]
+INFO: [Synth 8-638] synthesizing module 'design_multi_rst_ps7_0_100M_0' [C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-12432-Qlala-Blade/realtime/design_multi_rst_ps7_0_100M_0_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'design_multi_smartconnect_0_0' declared at 'C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-12432-Qlala-Blade/realtime/design_multi_smartconnect_0_0_stub.vhdl:5' bound to instance 'smartconnect_0' of component 'design_multi_smartconnect_0_0' [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:13818]
+INFO: [Synth 8-638] synthesizing module 'design_multi_smartconnect_0_0' [C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/.Xil/Vivado-12432-Qlala-Blade/realtime/design_multi_smartconnect_0_0_stub.vhdl:131]
+INFO: [Synth 8-256] done synthesizing module 'design_multi' (29#1) [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/synth/design_multi.vhd:10949]
+INFO: [Synth 8-256] done synthesizing module 'design_multi_wrapper' (30#1) [C:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/hdl/design_multi_wrapper.vhd:42]
 WARNING: [Synth 8-3331] design s01_couplers_imp_WCWHX3 has unconnected port M_ACLK
 WARNING: [Synth 8-3331] design s01_couplers_imp_WCWHX3 has unconnected port M_ARESETN
 WARNING: [Synth 8-3331] design s01_couplers_imp_WCWHX3 has unconnected port S_ACLK
@@ -238,22 +256,33 @@ WARNING: [Synth 8-3331] design m00_couplers_imp_1IRIX95 has unconnected port M_A
 WARNING: [Synth 8-3331] design m00_couplers_imp_1IRIX95 has unconnected port M_ARESETN
 WARNING: [Synth 8-3331] design m00_couplers_imp_1IRIX95 has unconnected port S_ACLK
 WARNING: [Synth 8-3331] design m00_couplers_imp_1IRIX95 has unconnected port S_ARESETN
-WARNING: [Synth 8-3331] design s00_couplers_imp_LKOZ5 has unconnected port M_ACLK
-WARNING: [Synth 8-3331] design s00_couplers_imp_LKOZ5 has unconnected port M_ARESETN
-WARNING: [Synth 8-3331] design m01_couplers_imp_2BHB36 has unconnected port M_ACLK
-WARNING: [Synth 8-3331] design m01_couplers_imp_2BHB36 has unconnected port M_ARESETN
-WARNING: [Synth 8-3331] design m01_couplers_imp_2BHB36 has unconnected port S_ACLK
-WARNING: [Synth 8-3331] design m01_couplers_imp_2BHB36 has unconnected port S_ARESETN
-WARNING: [Synth 8-3331] design m00_couplers_imp_8Q66QQ has unconnected port M_ACLK
-WARNING: [Synth 8-3331] design m00_couplers_imp_8Q66QQ has unconnected port M_ARESETN
-WARNING: [Synth 8-3331] design design_multi_axi_interconnect_0_0 has unconnected port M00_ACLK
-WARNING: [Synth 8-3331] design design_multi_axi_interconnect_0_0 has unconnected port M00_ARESETN
-WARNING: [Synth 8-3331] design design_multi_axi_interconnect_0_0 has unconnected port M01_ACLK
-WARNING: [Synth 8-3331] design design_multi_axi_interconnect_0_0 has unconnected port M01_ARESETN
-WARNING: [Synth 8-3331] design design_multi_axi_interconnect_0_0 has unconnected port S00_ACLK
-WARNING: [Synth 8-3331] design design_multi_axi_interconnect_0_0 has unconnected port S00_ARESETN
+WARNING: [Synth 8-3331] design s01_couplers_imp_2X68U has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design s01_couplers_imp_2X68U has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design s01_couplers_imp_2X68U has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design s01_couplers_imp_2X68U has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design s00_couplers_imp_6HLCF2 has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_6HLCF2 has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design s00_couplers_imp_6HLCF2 has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_6HLCF2 has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m00_couplers_imp_2U4XXP has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m00_couplers_imp_2U4XXP has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m00_couplers_imp_2U4XXP has unconnected port M_AXI_bid[5]
+WARNING: [Synth 8-3331] design m00_couplers_imp_2U4XXP has unconnected port M_AXI_bid[4]
+WARNING: [Synth 8-3331] design m00_couplers_imp_2U4XXP has unconnected port M_AXI_bid[3]
+WARNING: [Synth 8-3331] design m00_couplers_imp_2U4XXP has unconnected port M_AXI_bid[2]
+WARNING: [Synth 8-3331] design m00_couplers_imp_2U4XXP has unconnected port M_AXI_bid[1]
+WARNING: [Synth 8-3331] design m00_couplers_imp_2U4XXP has unconnected port M_AXI_rid[5]
+WARNING: [Synth 8-3331] design m00_couplers_imp_2U4XXP has unconnected port M_AXI_rid[4]
+WARNING: [Synth 8-3331] design m00_couplers_imp_2U4XXP has unconnected port M_AXI_rid[3]
+WARNING: [Synth 8-3331] design m00_couplers_imp_2U4XXP has unconnected port M_AXI_rid[2]
+WARNING: [Synth 8-3331] design m00_couplers_imp_2U4XXP has unconnected port M_AXI_rid[1]
+WARNING: [Synth 8-3331] design design_multi_axi_interconnect_2_0 has unconnected port M00_ACLK
+WARNING: [Synth 8-3331] design design_multi_axi_interconnect_2_0 has unconnected port M00_ARESETN
+WARNING: [Synth 8-3331] design design_multi_axi_interconnect_2_0 has unconnected port S00_ACLK
+WARNING: [Synth 8-3331] design design_multi_axi_interconnect_2_0 has unconnected port S00_ARESETN
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1004.371 ; gain = 260.641
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 987.398 ; gain = 265.336
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -266,10 +295,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1004.371 ; gain = 260.641
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 987.398 ; gain = 265.336
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1004.371 ; gain = 260.641
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 987.398 ; gain = 265.336
 ---------------------------------------------------------------------------------
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
@@ -287,12 +316,12 @@ Parsing XDC File [c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/
 Finished Parsing XDC File [c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_dlmb_v10_0/design_multi_dlmb_v10_0/design_multi_ilmb_v10_0_in_context.xdc] for cell 'design_multi_i/microblaze_0_local_memory/dlmb_v10'
 Parsing XDC File [c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_ilmb_v10_0/design_multi_ilmb_v10_0/design_multi_ilmb_v10_0_in_context.xdc] for cell 'design_multi_i/microblaze_0_local_memory/ilmb_v10'
 Finished Parsing XDC File [c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_ilmb_v10_0/design_multi_ilmb_v10_0/design_multi_ilmb_v10_0_in_context.xdc] for cell 'design_multi_i/microblaze_0_local_memory/ilmb_v10'
-Parsing XDC File [c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_dlmb_bram_if_cntlr_0/design_multi_dlmb_bram_if_cntlr_0/design_multi_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'design_multi_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
-Finished Parsing XDC File [c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_dlmb_bram_if_cntlr_0/design_multi_dlmb_bram_if_cntlr_0/design_multi_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'design_multi_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Parsing XDC File [c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_dlmb_bram_if_cntlr_0/design_multi_dlmb_bram_if_cntlr_0/design_multi_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'design_multi_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Finished Parsing XDC File [c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_dlmb_bram_if_cntlr_0/design_multi_dlmb_bram_if_cntlr_0/design_multi_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'design_multi_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
 Parsing XDC File [c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_ilmb_bram_if_cntlr_0/design_multi_ilmb_bram_if_cntlr_0/design_multi_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'design_multi_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
 Finished Parsing XDC File [c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_ilmb_bram_if_cntlr_0/design_multi_ilmb_bram_if_cntlr_0/design_multi_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'design_multi_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
-Parsing XDC File [c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_lmb_bram_0/design_multi_lmb_bram_0/design_multi_lmb_bram_0_in_context.xdc] for cell 'design_multi_i/microblaze_0_local_memory/lmb_bram'
-Finished Parsing XDC File [c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_lmb_bram_0/design_multi_lmb_bram_0/design_multi_lmb_bram_0_in_context.xdc] for cell 'design_multi_i/microblaze_0_local_memory/lmb_bram'
+Parsing XDC File [c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_lmb_bram_0/design_multi_lmb_bram_0/design_multi_axi_bram_ctrl_1_bram_0_in_context.xdc] for cell 'design_multi_i/microblaze_0_local_memory/lmb_bram'
+Finished Parsing XDC File [c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_lmb_bram_0/design_multi_lmb_bram_0/design_multi_axi_bram_ctrl_1_bram_0_in_context.xdc] for cell 'design_multi_i/microblaze_0_local_memory/lmb_bram'
 Parsing XDC File [c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_microblaze_0_axi_intc_0/design_multi_microblaze_0_axi_intc_0/design_multi_microblaze_0_axi_intc_0_in_context.xdc] for cell 'design_multi_i/microblaze_0_axi_intc'
 Finished Parsing XDC File [c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_microblaze_0_axi_intc_0/design_multi_microblaze_0_axi_intc_0/design_multi_microblaze_0_axi_intc_0_in_context.xdc] for cell 'design_multi_i/microblaze_0_axi_intc'
 Parsing XDC File [c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_mdm_1_0/design_multi_mdm_1_0/design_multi_mdm_1_0_in_context.xdc] for cell 'design_multi_i/mdm_1'
@@ -301,8 +330,6 @@ Parsing XDC File [c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/
 Finished Parsing XDC File [c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_clk_wiz_1_0/design_multi_clk_wiz_1_0/design_multi_clk_wiz_1_0_in_context.xdc] for cell 'design_multi_i/clk_wiz_1'
 Parsing XDC File [c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_rst_clk_wiz_1_100M_0/design_multi_rst_clk_wiz_1_100M_0/design_multi_rst_ps7_0_100M_0_in_context.xdc] for cell 'design_multi_i/rst_clk_wiz_1_100M'
 Finished Parsing XDC File [c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_rst_clk_wiz_1_100M_0/design_multi_rst_clk_wiz_1_100M_0/design_multi_rst_ps7_0_100M_0_in_context.xdc] for cell 'design_multi_i/rst_clk_wiz_1_100M'
-Parsing XDC File [c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_axi_smc_0/design_multi_axi_smc_0/design_multi_axi_smc_0_in_context.xdc] for cell 'design_multi_i/axi_smc'
-Finished Parsing XDC File [c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_axi_smc_0/design_multi_axi_smc_0/design_multi_axi_smc_0_in_context.xdc] for cell 'design_multi_i/axi_smc'
 Parsing XDC File [c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_xbar_0/design_multi_xbar_0/design_multi_xbar_0_in_context.xdc] for cell 'design_multi_i/ps7_0_axi_periph/xbar'
 Finished Parsing XDC File [c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_xbar_0/design_multi_xbar_0/design_multi_xbar_0_in_context.xdc] for cell 'design_multi_i/ps7_0_axi_periph/xbar'
 Parsing XDC File [c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_xbar_1/design_multi_xbar_1/design_multi_xbar_1_in_context.xdc] for cell 'design_multi_i/microblaze_0_axi_periph/xbar'
@@ -313,16 +340,14 @@ Parsing XDC File [c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/
 Finished Parsing XDC File [c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_axi_bram_ctrl_0_1/design_multi_axi_bram_ctrl_0_1/design_multi_axi_bram_ctrl_1_0_in_context.xdc] for cell 'design_multi_i/axi_bram_ctrl_0'
 Parsing XDC File [c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_smartconnect_0_0/design_multi_smartconnect_0_0/design_multi_smartconnect_0_0_in_context.xdc] for cell 'design_multi_i/smartconnect_0'
 Finished Parsing XDC File [c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_smartconnect_0_0/design_multi_smartconnect_0_0/design_multi_smartconnect_0_0_in_context.xdc] for cell 'design_multi_i/smartconnect_0'
-Parsing XDC File [c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_axi_bram_ctrl_1_0/design_multi_axi_bram_ctrl_1_0/design_multi_axi_bram_ctrl_1_0_in_context.xdc] for cell 'design_multi_i/axi_bram_ctrl_1'
-Finished Parsing XDC File [c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_axi_bram_ctrl_1_0/design_multi_axi_bram_ctrl_1_0/design_multi_axi_bram_ctrl_1_0_in_context.xdc] for cell 'design_multi_i/axi_bram_ctrl_1'
-Parsing XDC File [c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_axi_bram_ctrl_1_bram_0/design_multi_axi_bram_ctrl_1_bram_0/design_multi_axi_bram_ctrl_1_bram_0_in_context.xdc] for cell 'design_multi_i/axi_bram_ctrl_1_bram'
-Finished Parsing XDC File [c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_axi_bram_ctrl_1_bram_0/design_multi_axi_bram_ctrl_1_bram_0/design_multi_axi_bram_ctrl_1_bram_0_in_context.xdc] for cell 'design_multi_i/axi_bram_ctrl_1_bram'
 Parsing XDC File [c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_Kmeans_0_0/design_multi_Kmeans_0_0/design_multi_Kmeans_0_0_in_context.xdc] for cell 'design_multi_i/Kmeans_0'
 Finished Parsing XDC File [c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_Kmeans_0_0/design_multi_Kmeans_0_0/design_multi_Kmeans_0_0_in_context.xdc] for cell 'design_multi_i/Kmeans_0'
-Parsing XDC File [c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_smartconnect_1_0/design_multi_smartconnect_1_0/design_multi_smartconnect_1_0_in_context.xdc] for cell 'design_multi_i/smartconnect_1'
-Finished Parsing XDC File [c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_smartconnect_1_0/design_multi_smartconnect_1_0/design_multi_smartconnect_1_0_in_context.xdc] for cell 'design_multi_i/smartconnect_1'
 Parsing XDC File [c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_xbar_3/design_multi_xbar_3/design_multi_xbar_3_in_context.xdc] for cell 'design_multi_i/axi_interconnect_0/xbar'
 Finished Parsing XDC File [c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_xbar_3/design_multi_xbar_3/design_multi_xbar_3_in_context.xdc] for cell 'design_multi_i/axi_interconnect_0/xbar'
+Parsing XDC File [c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_xbar_5/design_multi_xbar_5/design_multi_xbar_5_in_context.xdc] for cell 'design_multi_i/axi_interconnect_1/xbar'
+Finished Parsing XDC File [c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_xbar_5/design_multi_xbar_5/design_multi_xbar_5_in_context.xdc] for cell 'design_multi_i/axi_interconnect_1/xbar'
+Parsing XDC File [c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_xbar_6/design_multi_xbar_6/design_multi_xbar_6_in_context.xdc] for cell 'design_multi_i/axi_interconnect_2/xbar'
+Finished Parsing XDC File [c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_xbar_6/design_multi_xbar_6/design_multi_xbar_6_in_context.xdc] for cell 'design_multi_i/axi_interconnect_2/xbar'
 Parsing XDC File [c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_auto_pc_1/design_multi_auto_pc_1/design_multi_auto_pc_1_in_context.xdc] for cell 'design_multi_i/ps7_0_axi_periph/s00_couplers/auto_pc'
 Finished Parsing XDC File [c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_auto_pc_1/design_multi_auto_pc_1/design_multi_auto_pc_1_in_context.xdc] for cell 'design_multi_i/ps7_0_axi_periph/s00_couplers/auto_pc'
 Parsing XDC File [c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_auto_pc_0/design_multi_auto_pc_0/design_multi_auto_pc_0_in_context.xdc] for cell 'design_multi_i/ps7_0_axi_periph/m00_couplers/auto_pc'
@@ -335,27 +360,30 @@ Parsing XDC File [c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/
 Finished Parsing XDC File [c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_auto_pc_4/design_multi_auto_pc_4/design_multi_auto_pc_1_in_context.xdc] for cell 'design_multi_i/axi_interconnect_0/s00_couplers/auto_pc'
 Parsing XDC File [c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_auto_pc_3/design_multi_auto_pc_3/design_multi_auto_pc_3_in_context.xdc] for cell 'design_multi_i/axi_interconnect_0/m00_couplers/auto_pc'
 Finished Parsing XDC File [c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_auto_pc_3/design_multi_auto_pc_3/design_multi_auto_pc_3_in_context.xdc] for cell 'design_multi_i/axi_interconnect_0/m00_couplers/auto_pc'
+Parsing XDC File [c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_auto_pc_5/design_multi_auto_pc_5/design_multi_auto_pc_5_in_context.xdc] for cell 'design_multi_i/axi_interconnect_1/m00_couplers/auto_pc'
+Finished Parsing XDC File [c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_auto_pc_5/design_multi_auto_pc_5/design_multi_auto_pc_5_in_context.xdc] for cell 'design_multi_i/axi_interconnect_1/m00_couplers/auto_pc'
+Parsing XDC File [c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_auto_pc_6/design_multi_auto_pc_6/design_multi_auto_pc_5_in_context.xdc] for cell 'design_multi_i/axi_interconnect_2/m00_couplers/auto_pc'
+Finished Parsing XDC File [c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_auto_pc_6/design_multi_auto_pc_6/design_multi_auto_pc_5_in_context.xdc] for cell 'design_multi_i/axi_interconnect_2/m00_couplers/auto_pc'
 Parsing XDC File [C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/dont_touch.xdc]
 Finished Parsing XDC File [C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1128.762 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1118.297 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.157 . Memory (MB): peak = 1128.762 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.154 . Memory (MB): peak = 1118.297 ; gain = 0.000
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'design_multi_i/axi_bram_ctrl_0_bram_0' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
-WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'design_multi_i/axi_bram_ctrl_1_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'design_multi_i/microblaze_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1128.770 ; gain = 385.039
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1118.301 ; gain = 396.238
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1128.770 ; gain = 385.039
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1118.301 ; gain = 396.238
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -637,29 +665,31 @@ Applied set_property DONT_TOUCH = true for design_multi_i/microblaze_0_xlconcat.
 Applied set_property DONT_TOUCH = true for design_multi_i/mdm_1. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_multi_i/clk_wiz_1. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_multi_i/rst_clk_wiz_1_100M. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for design_multi_i/axi_smc. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_multi_i/ps7_0_axi_periph/xbar. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_multi_i/microblaze_0_axi_periph/xbar. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_multi_i/axi_bram_ctrl_0_bram_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_multi_i/axi_bram_ctrl_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_multi_i/smartconnect_0. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for design_multi_i/axi_bram_ctrl_1. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for design_multi_i/axi_bram_ctrl_1_bram. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_multi_i/Kmeans_0. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for design_multi_i/smartconnect_1. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_multi_i/axi_interconnect_0/xbar. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_multi_i/axi_interconnect_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_multi_i/axi_interconnect_1/xbar. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_multi_i/axi_interconnect_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_multi_i/axi_interconnect_2/xbar. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_multi_i/axi_interconnect_2. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_multi_i/ps7_0_axi_periph/s00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_multi_i/ps7_0_axi_periph/m00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_multi_i/microblaze_0_axi_periph/m02_couplers/auto_pc. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_multi_i/microblaze_0_axi_periph/s00_mmu. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_multi_i/axi_interconnect_0/s00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_multi_i/axi_interconnect_0/m00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_multi_i/axi_interconnect_1/m00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_multi_i/axi_interconnect_2/m00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1128.770 ; gain = 385.039
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1118.301 ; gain = 396.238
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1128.770 ; gain = 385.039
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1118.301 ; gain = 396.238
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -694,19 +724,8 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
-WARNING: [Synth 8-3331] design design_multi_ps7_0_axi_periph_0 has unconnected port M00_ACLK
-WARNING: [Synth 8-3331] design design_multi_ps7_0_axi_periph_0 has unconnected port M00_ARESETN
-WARNING: [Synth 8-3331] design design_multi_ps7_0_axi_periph_0 has unconnected port M01_ACLK
-WARNING: [Synth 8-3331] design design_multi_ps7_0_axi_periph_0 has unconnected port M01_ARESETN
-WARNING: [Synth 8-3331] design design_multi_ps7_0_axi_periph_0 has unconnected port M02_ACLK
-WARNING: [Synth 8-3331] design design_multi_ps7_0_axi_periph_0 has unconnected port M02_ARESETN
-WARNING: [Synth 8-3331] design design_multi_ps7_0_axi_periph_0 has unconnected port S00_ACLK
-WARNING: [Synth 8-3331] design design_multi_ps7_0_axi_periph_0 has unconnected port S00_ARESETN
-WARNING: [Synth 8-3331] design design_multi_ps7_0_axi_periph_0 has unconnected port S01_ACLK
-WARNING: [Synth 8-3331] design design_multi_ps7_0_axi_periph_0 has unconnected port S01_ARESETN
-INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1128.770 ; gain = 385.039
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1118.301 ; gain = 396.238
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -728,16 +747,15 @@ INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'design_multi_i/c
 INFO: [Synth 8-5578] Moved timing constraint from pin 'design_multi_i/clk_wiz_1/hls_clk' to pin 'design_multi_i/clk_wiz_1/bbstub_hls_clk/O'
 INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'design_multi_i/clk_wiz_1/clk_in1' to 'design_multi_i/processing_system7_0/bbstub_FCLK_CLK0/O'
 INFO: [Synth 8-5578] Moved timing constraint from pin 'design_multi_i/axi_bram_ctrl_0/bram_clk_a' to pin 'design_multi_i/axi_bram_ctrl_0/bbstub_bram_clk_a/O'
-INFO: [Synth 8-5578] Moved timing constraint from pin 'design_multi_i/axi_bram_ctrl_1/bram_clk_a' to pin 'design_multi_i/axi_bram_ctrl_1/bbstub_bram_clk_a/O'
-INFO: [Synth 8-5819] Moved 10 constraints on hierarchical pins to their respective driving/loading pins
+INFO: [Synth 8-5819] Moved 9 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 1128.770 ; gain = 385.039
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1118.301 ; gain = 396.238
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 1128.770 ; gain = 385.039
+Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1118.301 ; gain = 396.238
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -749,7 +767,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 1128.770 ; gain = 385.039
+Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1118.301 ; gain = 396.238
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -773,7 +791,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 1128.770 ; gain = 385.039
+Finished IO Insertion : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1118.301 ; gain = 396.238
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -786,7 +804,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 1128.770 ; gain = 385.039
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1118.301 ; gain = 396.238
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -798,25 +816,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 1128.770 ; gain = 385.039
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1118.301 ; gain = 396.238
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 1128.770 ; gain = 385.039
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1118.301 ; gain = 396.238
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 1128.770 ; gain = 385.039
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1118.301 ; gain = 396.238
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 1128.770 ; gain = 385.039
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1118.301 ; gain = 396.238
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -829,28 +847,28 @@ Report BlackBoxes:
 |1     |design_multi_xbar_3                   |         1|
 |2     |design_multi_auto_pc_3                |         1|
 |3     |design_multi_auto_pc_4                |         1|
-|4     |design_multi_s00_mmu_0                |         1|
-|5     |design_multi_xbar_1                   |         1|
-|6     |design_multi_auto_pc_2                |         1|
-|7     |design_multi_xbar_0                   |         1|
-|8     |design_multi_auto_pc_0                |         1|
-|9     |design_multi_auto_pc_1                |         1|
-|10    |design_multi_Kmeans_0_0               |         1|
-|11    |design_multi_axi_bram_ctrl_0_1        |         1|
-|12    |design_multi_axi_bram_ctrl_0_bram_0_0 |         1|
-|13    |design_multi_axi_bram_ctrl_1_0        |         1|
-|14    |design_multi_axi_bram_ctrl_1_bram_0   |         1|
-|15    |design_multi_axi_gpio_0_0             |         1|
-|16    |design_multi_axi_smc_0                |         1|
-|17    |design_multi_clk_wiz_1_0              |         1|
-|18    |design_multi_mdm_1_0                  |         1|
-|19    |design_multi_microblaze_0_0           |         1|
-|20    |design_multi_microblaze_0_axi_intc_0  |         1|
-|21    |design_multi_processing_system7_0_0   |         1|
-|22    |design_multi_rst_clk_wiz_1_100M_0     |         1|
-|23    |design_multi_rst_ps7_0_100M_0         |         1|
-|24    |design_multi_smartconnect_0_0         |         1|
-|25    |design_multi_smartconnect_1_0         |         1|
+|4     |design_multi_xbar_5                   |         1|
+|5     |design_multi_auto_pc_5                |         1|
+|6     |design_multi_xbar_6                   |         1|
+|7     |design_multi_auto_pc_6                |         1|
+|8     |design_multi_s00_mmu_0                |         1|
+|9     |design_multi_xbar_1                   |         1|
+|10    |design_multi_auto_pc_2                |         1|
+|11    |design_multi_xbar_0                   |         1|
+|12    |design_multi_auto_pc_0                |         1|
+|13    |design_multi_auto_pc_1                |         1|
+|14    |design_multi_Kmeans_0_0               |         1|
+|15    |design_multi_axi_bram_ctrl_0_1        |         1|
+|16    |design_multi_axi_bram_ctrl_0_bram_0_0 |         1|
+|17    |design_multi_axi_gpio_0_0             |         1|
+|18    |design_multi_clk_wiz_1_0              |         1|
+|19    |design_multi_mdm_1_0                  |         1|
+|20    |design_multi_microblaze_0_0           |         1|
+|21    |design_multi_microblaze_0_axi_intc_0  |         1|
+|22    |design_multi_processing_system7_0_0   |         1|
+|23    |design_multi_rst_clk_wiz_1_100M_0     |         1|
+|24    |design_multi_rst_ps7_0_100M_0         |         1|
+|25    |design_multi_smartconnect_0_0         |         1|
 |26    |design_multi_dlmb_bram_if_cntlr_0     |         1|
 |27    |design_multi_dlmb_v10_0               |         1|
 |28    |design_multi_ilmb_bram_if_cntlr_0     |         1|
@@ -863,35 +881,35 @@ Report Cell Usage:
 |      |Cell                                         |Count |
 +------+---------------------------------------------+------+
 |1     |design_multi_Kmeans_0_0_bbox_0               |     1|
-|2     |design_multi_auto_pc_0_bbox_23               |     1|
-|3     |design_multi_auto_pc_1_bbox_24               |     1|
-|4     |design_multi_auto_pc_2_bbox_14               |     1|
-|5     |design_multi_auto_pc_3_bbox_6                |     1|
-|6     |design_multi_auto_pc_4_bbox_7                |     1|
-|7     |design_multi_axi_bram_ctrl_0_1_bbox_1        |     1|
-|8     |design_multi_axi_bram_ctrl_0_bram_0_0_bbox_2 |     1|
-|9     |design_multi_axi_bram_ctrl_1_0_bbox_3        |     1|
-|10    |design_multi_axi_bram_ctrl_1_bram_0_bbox_4   |     1|
-|11    |design_multi_axi_gpio_0_0_bbox_5             |     1|
-|12    |design_multi_axi_smc_0_bbox_9                |     1|
-|13    |design_multi_clk_wiz_1_0_bbox_10             |     1|
-|14    |design_multi_dlmb_bram_if_cntlr_0_bbox_17    |     1|
-|15    |design_multi_dlmb_v10_0_bbox_18              |     1|
-|16    |design_multi_ilmb_bram_if_cntlr_0_bbox_19    |     1|
-|17    |design_multi_ilmb_v10_0_bbox_20              |     1|
-|18    |design_multi_lmb_bram_0_bbox_21              |     1|
-|19    |design_multi_mdm_1_0_bbox_11                 |     1|
-|20    |design_multi_microblaze_0_0_bbox_12          |     1|
-|21    |design_multi_microblaze_0_axi_intc_0_bbox_13 |     1|
-|22    |design_multi_processing_system7_0_0_bbox_22  |     1|
-|23    |design_multi_rst_clk_wiz_1_100M_0_bbox_26    |     1|
-|24    |design_multi_rst_ps7_0_100M_0_bbox_27        |     1|
-|25    |design_multi_s00_mmu_0_bbox_15               |     1|
-|26    |design_multi_smartconnect_0_0_bbox_28        |     1|
-|27    |design_multi_smartconnect_1_0_bbox_29        |     1|
-|28    |design_multi_xbar_0_bbox_25                  |     1|
-|29    |design_multi_xbar_1_bbox_16                  |     1|
-|30    |design_multi_xbar_3_bbox_8                   |     1|
+|2     |design_multi_auto_pc_0_bbox_24               |     1|
+|3     |design_multi_auto_pc_1_bbox_25               |     1|
+|4     |design_multi_auto_pc_2_bbox_15               |     1|
+|5     |design_multi_auto_pc_3_bbox_4                |     1|
+|6     |design_multi_auto_pc_4_bbox_5                |     1|
+|7     |design_multi_auto_pc_5_bbox_7                |     1|
+|8     |design_multi_auto_pc_6_bbox_9                |     1|
+|9     |design_multi_axi_bram_ctrl_0_1_bbox_1        |     1|
+|10    |design_multi_axi_bram_ctrl_0_bram_0_0_bbox_2 |     1|
+|11    |design_multi_axi_gpio_0_0_bbox_3             |     1|
+|12    |design_multi_clk_wiz_1_0_bbox_11             |     1|
+|13    |design_multi_dlmb_bram_if_cntlr_0_bbox_18    |     1|
+|14    |design_multi_dlmb_v10_0_bbox_19              |     1|
+|15    |design_multi_ilmb_bram_if_cntlr_0_bbox_20    |     1|
+|16    |design_multi_ilmb_v10_0_bbox_21              |     1|
+|17    |design_multi_lmb_bram_0_bbox_22              |     1|
+|18    |design_multi_mdm_1_0_bbox_12                 |     1|
+|19    |design_multi_microblaze_0_0_bbox_13          |     1|
+|20    |design_multi_microblaze_0_axi_intc_0_bbox_14 |     1|
+|21    |design_multi_processing_system7_0_0_bbox_23  |     1|
+|22    |design_multi_rst_clk_wiz_1_100M_0_bbox_27    |     1|
+|23    |design_multi_rst_ps7_0_100M_0_bbox_28        |     1|
+|24    |design_multi_s00_mmu_0_bbox_16               |     1|
+|25    |design_multi_smartconnect_0_0_bbox_29        |     1|
+|26    |design_multi_xbar_0_bbox_26                  |     1|
+|27    |design_multi_xbar_1_bbox_17                  |     1|
+|28    |design_multi_xbar_3_bbox_6                   |     1|
+|29    |design_multi_xbar_5_bbox_8                   |     1|
+|30    |design_multi_xbar_6_bbox_10                  |     1|
 |31    |IBUF                                         |     8|
 |32    |OBUF                                         |     8|
 +------+---------------------------------------------+------+
@@ -900,39 +918,43 @@ Report Instance Areas:
 +------+------------------------------+---------------------------------------+------+
 |      |Instance                      |Module                                 |Cells |
 +------+------------------------------+---------------------------------------+------+
-|1     |top                           |                                       |  6303|
-|2     |  design_multi_i              |design_multi                           |  6287|
+|1     |top                           |                                       |  6351|
+|2     |  design_multi_i              |design_multi                           |  6335|
 |3     |    axi_interconnect_0        |design_multi_axi_interconnect_0_0      |   873|
 |4     |      m00_couplers            |m00_couplers_imp_8Q66QQ                |   177|
 |5     |      s00_couplers            |s00_couplers_imp_LKOZ5                 |   254|
-|6     |    microblaze_0_axi_periph   |design_multi_microblaze_0_axi_periph_0 |   828|
-|7     |      m02_couplers            |m02_couplers_imp_1T992L5               |   191|
-|8     |    microblaze_0_xlconcat     |design_multi_microblaze_0_xlconcat_0   |     0|
-|9     |    ps7_0_axi_periph          |design_multi_ps7_0_axi_periph_0        |  1035|
-|10    |      m00_couplers            |m00_couplers_imp_Z7SUCK                |   153|
-|11    |      s00_couplers            |s00_couplers_imp_RO19IV                |   254|
-|12    |    microblaze_0_local_memory |microblaze_0_local_memory_imp_EIOXIU   |   496|
+|6     |    axi_interconnect_1        |design_multi_axi_interconnect_1_0      |   617|
+|7     |      m00_couplers            |m00_couplers_imp_1WXI7G5               |   197|
+|8     |    axi_interconnect_2        |design_multi_axi_interconnect_2_0      |   451|
+|9     |      m00_couplers            |m00_couplers_imp_2U4XXP                |   197|
+|10    |    microblaze_0_axi_periph   |design_multi_microblaze_0_axi_periph_0 |   828|
+|11    |      m02_couplers            |m02_couplers_imp_1T992L5               |   191|
+|12    |    microblaze_0_xlconcat     |design_multi_microblaze_0_xlconcat_0   |     0|
+|13    |    ps7_0_axi_periph          |design_multi_ps7_0_axi_periph_0        |  1035|
+|14    |      m00_couplers            |m00_couplers_imp_Z7SUCK                |   153|
+|15    |      s00_couplers            |s00_couplers_imp_RO19IV                |   254|
+|16    |    microblaze_0_local_memory |microblaze_0_local_memory_imp_EIOXIU   |   496|
 +------+------------------------------+---------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 1128.770 ; gain = 385.039
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1118.301 ; gain = 396.238
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 24 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:35 . Memory (MB): peak = 1128.770 ; gain = 260.641
-Synthesis Optimization Complete : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 1128.770 ; gain = 385.039
+Synthesis finished with 0 errors, 0 critical warnings and 62 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:29 . Memory (MB): peak = 1118.301 ; gain = 265.336
+Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1118.301 ; gain = 396.238
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1129.941 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1118.301 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-130 Infos, 103 Warnings, 0 Critical Warnings and 0 Errors encountered.
+147 Infos, 102 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:48 ; elapsed = 00:00:52 . Memory (MB): peak = 1129.941 ; gain = 674.434
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1129.941 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1118.301 ; gain = 684.730
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1118.301 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'C:/A2_project/Board_Project_A2_multi_processor.runs/synth_1/design_multi_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_multi_wrapper_utilization_synth.rpt -pb design_multi_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Feb  5 19:09:25 2020...
+INFO: [Common 17-206] Exiting Vivado at Tue Feb 11 10:34:25 2020...
