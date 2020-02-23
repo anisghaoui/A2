@@ -155,7 +155,7 @@ int main()
 	//memset(test,5,100);
 	//test_file_system();
 	print("Zynq:Go\n\r");
-
+	//kmeans_test();
 	block_matrix_test();
 	 printf("fin kmeans\n");
     /*while(1){

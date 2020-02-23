@@ -13,7 +13,8 @@ src/block_matrix.o src/block_matrix.o: ../src/block_matrix.c \
  ../../test_kmeans_bsp/ps7_cortexa9_0/include/xpseudo_asm.h \
  ../../test_kmeans_bsp/ps7_cortexa9_0/include/xreg_cortexa9.h \
  ../../test_kmeans_bsp/ps7_cortexa9_0/include/xpseudo_asm_gcc.h \
- ../../test_kmeans_bsp/ps7_cortexa9_0/include/xmultiply_block_hw.h
+ ../../test_kmeans_bsp/ps7_cortexa9_0/include/xmultiply_block_hw.h \
+ ../../test_kmeans_bsp/ps7_cortexa9_0/include/sleep.h
 
 ../src/block_matrix.h:
 
@@ -44,3 +45,5 @@ src/block_matrix.o src/block_matrix.o: ../src/block_matrix.c \
 ../../test_kmeans_bsp/ps7_cortexa9_0/include/xpseudo_asm_gcc.h:
 
 ../../test_kmeans_bsp/ps7_cortexa9_0/include/xmultiply_block_hw.h:
+
+../../test_kmeans_bsp/ps7_cortexa9_0/include/sleep.h:

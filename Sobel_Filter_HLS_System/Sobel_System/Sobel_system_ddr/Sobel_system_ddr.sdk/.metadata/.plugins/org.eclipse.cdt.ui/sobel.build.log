@@ -1,4 +1,4 @@
-19:35:31 **** Auto Build of configuration Debug for project sobel ****
+20:04:20 **** Auto Build of configuration Debug for project sobel ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
@@ -24,5 +24,5 @@ arm-none-eabi-size sobel.elf  |tee "sobel.elf.size"
 'Finished building: sobel.elf.size'
 ' '
 
-19:35:38 Build Finished (took 6s.502ms)
+20:04:21 Build Finished (took 1s.855ms)
 

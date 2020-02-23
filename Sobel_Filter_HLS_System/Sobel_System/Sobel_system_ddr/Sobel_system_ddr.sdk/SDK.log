@@ -340,3 +340,9 @@ ERROR: [Hsi 55-1452] Error: running open_sw_design.
 Reason: ERROR: [Common 17-55] 'get_property' expects at least one object.
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
 
+20:02:54 INFO  : Registering command handlers for SDK TCF services
+20:02:57 INFO  : Launching XSCT server: xsct.bat -interactive E:\Users\Qlala\Documents\A2\A2\Sobel_Filter_HLS_System\Sobel_System\Sobel_system_ddr\Sobel_system_ddr.sdk\temp_xsdb_launch_script.tcl
+20:03:06 INFO  : XSCT server has started successfully.
+20:03:36 INFO  : Successfully done setting XSCT server connection channel  
+20:03:36 INFO  : Successfully done setting SDK workspace  
+20:03:36 INFO  : Processing command line option -hwspec E:/Users/Qlala/Documents/A2/A2/Sobel_Filter_HLS_System/Sobel_System/Sobel_system_ddr/Sobel_system_ddr.sdk/design_1_wrapper.hdf.

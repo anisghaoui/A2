@@ -17,6 +17,7 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_param chipscope.maxJobs 2
 create_project -in_memory -part xc7z020clg484-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -75,6 +76,10 @@ set_property used_in_synthesis false [get_files -all e:/A2Proj/Vivado/Demo_IP_HL
 set_property used_in_implementation false [get_files -all e:/A2Proj/Vivado/Demo_IP_HLS/Demo_IP_HLS/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ip/design_IP_auto_cc_3/design_IP_auto_cc_3_clocks.xdc]
 set_property used_in_implementation false [get_files -all e:/A2Proj/Vivado/Demo_IP_HLS/Demo_IP_HLS/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ip/design_IP_auto_cc_3/design_IP_auto_cc_3_ooc.xdc]
 set_property used_in_implementation false [get_files -all e:/A2Proj/Vivado/Demo_IP_HLS/Demo_IP_HLS/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ip/design_IP_auto_pc_0/design_IP_auto_pc_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/A2Proj/Vivado/Demo_IP_HLS/Demo_IP_HLS/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ip/design_IP_s00_mmu_0/design_IP_s00_mmu_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/A2Proj/Vivado/Demo_IP_HLS/Demo_IP_HLS/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ip/design_IP_s01_mmu_0/design_IP_s01_mmu_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/A2Proj/Vivado/Demo_IP_HLS/Demo_IP_HLS/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ip/design_IP_s02_mmu_0/design_IP_s02_mmu_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/A2Proj/Vivado/Demo_IP_HLS/Demo_IP_HLS/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ip/design_IP_s03_mmu_0/design_IP_s03_mmu_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all e:/A2Proj/Vivado/Demo_IP_HLS/Demo_IP_HLS/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ip/design_IP_auto_pc_1/design_IP_auto_pc_1_ooc.xdc]
 set_property used_in_synthesis false [get_files -all e:/A2Proj/Vivado/Demo_IP_HLS/Demo_IP_HLS/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ip/design_IP_auto_cc_4/design_IP_auto_cc_4_clocks.xdc]
 set_property used_in_implementation false [get_files -all e:/A2Proj/Vivado/Demo_IP_HLS/Demo_IP_HLS/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ip/design_IP_auto_cc_4/design_IP_auto_cc_4_clocks.xdc]

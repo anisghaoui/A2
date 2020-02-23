@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1497370264">
-  <File Type="BITSTR-NKY" Name="design_1_wrapper.nky"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="BITSTR-NKY" Name="design_1_wrapper.nky"/>
+  <File Type="BG-DRC" Name="design_1_wrapper.drc"/>
   <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="design_1_wrapper_methodology_drc_routed.pb"/>
   <File Type="BITSTR-SYSDEF" Name="design_1_wrapper.sysdef"/>
-  <File Type="BG-DRC" Name="design_1_wrapper.drc"/>
   <File Type="BG-BGN" Name="design_1_wrapper.bgn"/>
   <File Type="ROUTE-METHODOLOGY-DRC" Name="design_1_wrapper_methodology_drc_routed.rpt"/>
   <File Type="BITSTR-MMI" Name="design_1_wrapper.mmi"/>
@@ -15,8 +15,8 @@
   <File Type="BG-BIT" Name="design_1_wrapper.bit"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="design_1_wrapper_postroute_physopt_bb.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="design_1_wrapper_postroute_physopt.dcp"/>
-  <File Type="RDI-RDI" Name="design_1_wrapper.vdi"/>
   <File Type="ROUTE-CLK" Name="design_1_wrapper_clock_utilization_routed.rpt"/>
+  <File Type="RDI-RDI" Name="design_1_wrapper.vdi"/>
   <File Type="ROUTE-TIMING-RPX" Name="design_1_wrapper_timing_summary_routed.rpx"/>
   <File Type="ROUTE-TIMING-PB" Name="design_1_wrapper_timing_summary_routed.pb"/>
   <File Type="ROUTE-TIMINGSUMMARY" Name="design_1_wrapper_timing_summary_routed.rpt"/>
@@ -24,8 +24,8 @@
   <File Type="ROUTE-STATUS" Name="design_1_wrapper_route_status.rpt"/>
   <File Type="ROUTE-PWR-RPX" Name="design_1_wrapper_power_routed.rpx"/>
   <File Type="ROUTE-PWR-SUM" Name="design_1_wrapper_power_summary_routed.pb"/>
-  <File Type="PA-TCL" Name="design_1_wrapper.tcl"/>
   <File Type="ROUTE-PWR" Name="design_1_wrapper_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="design_1_wrapper.tcl"/>
   <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="design_1_wrapper_methodology_drc_routed.rpx"/>
   <File Type="ROUTE-DRC-RPX" Name="design_1_wrapper_drc_routed.rpx"/>
   <File Type="ROUTE-DRC-PB" Name="design_1_wrapper_drc_routed.pb"/>

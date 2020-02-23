@@ -3,13 +3,13 @@
 #include <time.h>
 #include "xparameters.h"
 #include "xmultiply_block.h"
+#include "sleep.h"
 
 
+void init_multiply_block_ip(XMultiply_block* mb,XMultiply_block_Config* mb_c){
 
-void init_multiply_block_ip(XMultiply_block* mb,u16 id){
-	XMultiply_block_Config mb_c;
-	int status=XMultiply_block_Initialize(mb,id);
-	XMultiply_block_CfgInitialize(mb,&mb_c);
+	//int status=XMultiply_block_Initialize(mb,id);
+	int status=XMultiply_block_CfgInitialize(mb,mb_c);
 	XMultiply_block_DisableAutoRestart(mb);
 	XMultiply_block_InterruptGlobalDisable(mb);
 	XMultiply_block_InterruptDisable(mb, 1);
@@ -17,7 +17,7 @@ void init_multiply_block_ip(XMultiply_block* mb,u16 id){
 		printf("Multiply Block: init_failed\n");
 	}
 	printf("idle=%lx,ready=%lx,done=%lx\n",XMultiply_block_IsIdle(mb),XMultiply_block_IsReady(mb),XMultiply_block_IsDone(mb));
-
+	printf("succes\n");
 }
 
 
@@ -29,33 +29,40 @@ void multiply_block_hw_call(XMultiply_block* mb_p,type* mA, type* mB, type* resu
 	XMultiply_block_Set_in_mA(mb_p, (u32)mA);
 	XMultiply_block_Set_in_mB(mb_p, (u32)mB);
 	XMultiply_block_Set_out_mC(mb_p, (u32)result);
-
-
+	printf("in out set:\n");
+	printf("ma:%li=>%li,mb:%li=>%li,mc:%li=>%li\n",(u32)mA,XMultiply_block_Get_in_mA(mb_p),(u32)mB,XMultiply_block_Get_in_mB(mb_p),(u32)result,XMultiply_block_Get_out_mC(mb_p));
+	printf("waiting ready\n");
 	while(!XMultiply_block_IsReady(mb_p));
-	//while(!XKmeans_IsIdle(km_p));
+	printf("multiply is ready\n");
+	XMultiply_block_DisableAutoRestart(mb_p);
 	XMultiply_block_Start(mb_p);
-	printf("waiting résult\n");
-	while(!XMultiply_block_IsDone(mb_p)){}
+	//printf("waiting résult\n");
+	while(!XMultiply_block_IsDone(mb_p)){
 		//sleep(1);
 		//printf("status:idle=%lx,ready=%lx,done=%lx\n",XMultiply_block_IsIdle(mb_p),XMultiply_block_IsReady(mb_p),XMultiply_block_IsDone(mb_p));
-	//}
+	}
+	printf("finished\n");
+	printf("status:idle=%lx,ready=%lx,done=%lx\n",XMultiply_block_IsIdle(mb_p),XMultiply_block_IsReady(mb_p),XMultiply_block_IsDone(mb_p));
 	//les résultat sont au bonne endroit
 	return;
 
 }
 
 
+type A[M][P];
+type B[P][N];
+type result[M][N];
 
 int block_matrix_test()
 {
 	XMultiply_block MB;
-	printf("init multiply block\n");
-	init_multiply_block_ip(&MB,XPAR_MULTIPLY_BLOCK_0_DEVICE_ID);
+	XMultiply_block_Config mb_c ={0,XPAR_MULTIPLY_BLOCK_0_S_AXI_CONTROL_BUS_BASEADDR};
+	printf("init multiply block2\n");
+	init_multiply_block_ip(&MB,&mb_c);
+	printf("init data\n");
 	int i,j,k;
-    type A[M][P];
-    type B[P][N];
-    type result[M][N];
-    printf("init data\n");
+
+
     for ( i = 0; i < M; i++) ///0, 1,2,3,4,5,6,7...
         for ( j = 0; j < P; ++j)
         {
@@ -71,13 +78,13 @@ int block_matrix_test()
    for ( i = 0; i < M; i++) /// 0,0,0,0,0,0,
         for ( k = 0; k < N; ++k)
         {
-            result[i][k] = 0;
+            result[i][k] = 0.1;
         }
 
 
     //clock_t T1 = clock();
     printf("testing block matrix ip\n");
-    multiply_block_hw_call(&MB,A, B, result);
+    multiply_block_hw_call(&MB,(float*)A, (float*)B, (float*)result);
     //clock_t T2 = clock();
 
     for (i = 0; i < M; i++) { // should print the same sume value of each line

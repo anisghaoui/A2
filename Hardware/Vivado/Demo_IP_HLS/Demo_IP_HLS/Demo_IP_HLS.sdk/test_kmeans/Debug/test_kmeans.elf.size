@@ -1,2 +1,2 @@
    text	   data	    bss	    dec	    hex	filename
-  96612	   2640	  26176	 125428	  1e9f4	test_kmeans.elf
+  96780	   2624	  29248	 128652	  1f68c	test_kmeans.elf

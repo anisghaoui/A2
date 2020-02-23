@@ -11,11 +11,14 @@
 #define N_DATA 100
 #define N_CENTERS 8
 
-void init_keamns(XKmeans* km,u16 id){
-	XKmeans_Config km_c;
-	int status=XKmeans_Initialize(km,id);
-	XKmeans_CfgInitialize(km,&km_c);
+void init_keamns(XKmeans* km,XKmeans_Config* km_c){
+
+	//int status=XKmeans_Initialize(km,id);
+	int status=XKmeans_CfgInitialize(km,km_c);
 	//XKmeans_DisableAutoRestart(km);
+	XKmeans_DisableAutoRestart(km);
+	XKmeans_InterruptGlobalDisable(km);
+	XKmeans_InterruptDisable(km, 1);
 	if(status!=XST_SUCCESS){
 		printf("kmeans: init_failed\n");
 	}
@@ -45,8 +48,8 @@ void kmeans_hw_call(XKmeans* km_p,
 	XKmeans_Start(km_p);
 	printf("waiting résult\n");
 	while(!XKmeans_IsDone(km_p)){
-		sleep(1);
 		printf("status:idle=%lx,ready=%lx,done=%lx\n",XKmeans_IsIdle(km_p),XKmeans_IsReady(km_p),XKmeans_IsDone(km_p));
+		sleep(1);
 	}
 	//les résultat sont au bonne endroit
 	return;
@@ -58,6 +61,11 @@ void kmeans_hw_call(XKmeans* km_p,
 
 char wrong_results(float* clusters, float* golden)
 {
+	for (int i = 0; i < N_DATA; ++i)
+	{
+		printf("%f => %f\n",clusters[i],golden[i]);
+	}
+
 	for (int i = 0; i < N_DATA; ++i)
 	{
 		if(clusters[i] != golden[i])
@@ -132,7 +140,8 @@ int kmeans_test()
 	}
 	printf("init Kmeans\n");
 	XKmeans km;
-	init_keamns(&km,XPAR_KMEANS_0_DEVICE_ID);
+	XKmeans_Config km_c={0,XPAR_KMEANS_0_S_AXI_CONTROL_BUS_BASEADDR};;
+	init_keamns(&km,&km_c);
 	printf("kmeans initied\n");
 	kmeans_hw_call(&km,X_prot, Y_prot, X, Y, clusters);
 	// Kmeans call
