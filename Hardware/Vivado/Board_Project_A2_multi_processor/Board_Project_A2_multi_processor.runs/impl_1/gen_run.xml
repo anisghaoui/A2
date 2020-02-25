@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1581413522">
+<GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1582634643">
   <File Type="BITSTR-BMM" Name="design_multi_wrapper_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="design_multi_wrapper_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="design_multi_wrapper_timing_summary_init.rpt"/>
@@ -118,5 +118,5 @@
   <BlockFileSet Type="BlockSrcs" Name="design_multi_processing_system7_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_multi_microblaze_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_multi_xbar_5"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_multi_xbar_6"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_multi_xbar_0"/>
 </GenRun>

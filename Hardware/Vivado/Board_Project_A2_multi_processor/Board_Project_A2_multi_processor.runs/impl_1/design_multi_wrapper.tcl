@@ -67,11 +67,11 @@ set rc [catch {
   create_msg_db write_bitstream.pb
   set_param chipscope.maxJobs 2
   open_checkpoint design_multi_wrapper_routed.dcp
-  set_property webtalk.parent_dir C:/A2_project/Board_Project_A2_multi_processor.cache/wt [current_project]
+  set_property webtalk.parent_dir C:/A2_project/Vivado/Board_Project_A2_multi_processor/Board_Project_A2_multi_processor.cache/wt [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
-  add_files c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_microblaze_0_0/data/mb_bootloop_le.elf
-  set_property SCOPED_TO_REF design_multi [get_files -all c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_microblaze_0_0/data/mb_bootloop_le.elf]
-  set_property SCOPED_TO_CELLS microblaze_0 [get_files -all c:/A2_project/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_microblaze_0_0/data/mb_bootloop_le.elf]
+  add_files c:/A2_project/Vivado/Board_Project_A2_multi_processor/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_microblaze_0_0/data/mb_bootloop_le.elf
+  set_property SCOPED_TO_REF design_multi [get_files -all c:/A2_project/Vivado/Board_Project_A2_multi_processor/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_microblaze_0_0/data/mb_bootloop_le.elf]
+  set_property SCOPED_TO_CELLS microblaze_0 [get_files -all c:/A2_project/Vivado/Board_Project_A2_multi_processor/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_microblaze_0_0/data/mb_bootloop_le.elf]
   catch { write_mem_info -force design_multi_wrapper.mmi }
   catch { write_bmm -force design_multi_wrapper_bd.bmm }
   write_bitstream -force design_multi_wrapper.bit 
