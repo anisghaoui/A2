@@ -74,7 +74,10 @@ La partie HLS consiste à analyser les implémentations C/C++ proposées par la 
 
 % Parler du fait qu'on choisit d'implémenter la totalité dun algo ,  parole d'AUDREY
 \section{Conception Synthèse Haut Niveau}
-IP sera encapsulée en elle-même. Ce qui fait que l'implémentation matérielle n'aura aucun contrôle sur ce qui se passe dans l'IP.
+Cette conception dite HLS consiste à convertir un code C/C++ en une implémentation RTL d'un code VHDL ou Verilog. La difficulté de cette étape est de comprendre que tout ce qui est en C/C++ n'est pas forcement implémentable ou mal effectué par le trans-compilateur. En effet, on tente de passer d'un schéma de flot de contrôle vers un schéma de flot de données. Par exemple, le fonctions récursives sont simplement impossibles à implémenter matériellement. Certains algorithmes itératif à critères d'arrêt dynamique doivent subir une reconversion. Au final, le but est de générer une IP matérielle dite HLS et quelle soit implémentable par l'équipe gérant le matériel.
+
+\subsection{Conception d'une IP avec directives}
+Une IP sera encapsulée en elle-même. Ce qui fait que l'implémentation matérielle n'aura aucun contrôle sur ce qui se passe dans l'IP.
 Afin de pouvoir optimiser l'IP HLS créée, il faut dans un premier temps faire une analyse des dépendances pendant l'exécution de l'algorithme. Cette analyse est faite en 2 temps: 
 \begin{itemize}
 \item En premier, automatiquement par Vivado HLS qui possède des outils permettant de détecter des dépendances, d'essayer de les corriger/éliminer ou de suggérer à l'utilisateur d'utiliser les directives proposées.
@@ -83,14 +86,34 @@ Afin de pouvoir optimiser l'IP HLS créée, il faut dans un premier temps faire 
  Les directives les plus intéressantes, pour les algorithmes demandant plusieurs itérations et ayant une implémentation séquentielle tel que Kmeans, sont \texttt{FLATTEN}, \texttt{PIPELINE} et \texttt{UNROLL}.
  
 \paragraph{Flatten} : Elle consiste à essayer de simplement aplatir la boucle en la rendant en une simple suite d'instructions. Ceci permettra de concevoir un flot de donnée matériel en RTL. Cette directive n'est possible que si toutes les boucles internes peuvent être aplaties et donc qu'il n'y ait pas de dépendances en données.
-\paragraph{Pipeline} : Applicable aux boucles, fonctions et opérateurs, cette directive divise les opérations en plusieurs étages successifs de conception simple qui à chaque cycle effectuent une opération en 1 cycle. Le pipeline est très efficace pour diminuer la latence des opérateurs mais occupent une plus grande surface sur le FPGA contrairement à une version multi-cycles.
+\paragraph{Pipeline} : Applicable aux boucles, fonctions et opérateurs, cette directive divise les opérations en plusieurs étages successifs de conception simple qui à chaque cycle effectuent une opération en 1 cycle. Le pipeline est très efficace pour diminuer la latence des opérateurs mais occupe une plus grande surface sur le FPGA contrairement à une version multi-cycles.
 
 \paragraph{Unroll} : Quand un calcul dans une boucle possède des dépendances de données et une latence plus grande que la durée d'une itération, il est conseillé de dérouler la boucle d'un facteur. par exemple au lieu de traiter les données 1 à 1, on peut traiter n à n. Cette directive peut occuper beaucoup plus de surface FPGA. Il faut donc l'utiliser uniquement quand le nombre d'itération est faible.
 
-Une fois un opérateur/fonction optimisé, il faut analyser le nombre d'accès mémoire qu'il effectue en lecture/écriture. Si un port ne fourni qu'un port d'accès, une seule lecture/écriture peut être fait en même temps dans le même cycle (en prenant en compte que la lecture prend deux cycles selon HLS). Il existe plusieurs stratagèmes pour
+Une fois un opérateur/fonction optimisé(e), il faut analyser le nombre d'accès mémoire qu'il effectue en lecture/écriture. Si une mémoire ne fournit qu'un port d'accès, une seule lecture/écriture peut être fait en même temps dans le même cycle (en prenant en compte que la lecture prend deux cycles selon HLS). Il existe plusieurs stratagèmes pour contrer cela. HLS propose \footnote{\href{https://japan.xilinx.com/html\_docs/xilinx2017\_4/sdaccel\_doc/okr1504034364623.html}{Xilinx Pragma}} :
+\paragraph{Map} : Permet d'agréger différents blocs mémoires en un seul afin de réduire l'usage des ressources RAM.
+\paragraph{Partition} : Au contraire, cette directive permet de diviser un tableau en plusieurs sous tableau et donc blocs mémoires voir même registre afin d'augmenter le débit lecture/écriture au prix d'une coût matériel plus élevé.
+\paragraph{Reshape} : Permet de redimensionner un bloc mémoire d'un certain facteur de manière entier ou cyclique afin d'avoir un bon compromis entre les deux directives précédentes.
+
+\subsection{Interfaçage d'une IP avec Axi/Axilite}
+Il est possible d'interfacer une IP matériellement grâce à une panoplie de pointeurs bas niveau. Cette démarche permet d'avoir un contrôle très fin sur les adresses auxquelles le matériel accèdent. Mais par contre, complexifie tellement la gestion matérielle qu'elle devient très chronophage voir impossible pour un humain. Il est donc nécessaire de d'utiliser les interfaces fournis par Xilinx pour la carte ZedBoard, les \textit{Axi} et \textit{Axilite}. Il suffit de définir les ports entrées/sorties de l'IP HLS en tant que maître dans un port Axi et leur données une profondeur (la longueur de la mémoire FIFO). Aussi, il faut définir la fonction \textit{Top-level} comme étant apte à contrôler le bus et donc à recevoir les signaux de synchronisation depuis un CPU (soft ou hard) via l'interface \textit{Axilite}.
+
+\subsection{Approche d'implémentation des algorithmes}
+Afin de pourvoir transcrire les algorithmes discutés avec l'équipe logicielle, il d'abord effectuer une analyse de faisabilité en HLS. Car, on implémente pas un algorithme qui ne vaut pas le coût d'être accéléré. Ensuite, on procède à une analyse des besoins matériels pour en déduire les points d'apparition de goulots. Choisir entre la réinterprétation de l'algorithme ou la fragmentation en opérateurs.
+
+Dans la première, on doit réétudier le processus de l'algorithme. Puis, décider si celui-ci est modifiable sans corrompre les résultats ou bien possède une autre implémentation qui puisse satisfaire au mieux les contraintes matérielles. Deux exemples : l'estimation du nombre $\pi$ par la méthode Monte-Carlo qui ne peut être effectué simplement car la fonction \texttt{rand()} n'existe pas en matériel. Il faut alors concevoir un générateur de nombre aléatoire matériel qu'il soit à base d'oscillateur en anneau ou autre. Un deuxième exemple est de modifier le critère d'arrêt de K-means i.e. changer la boucle \texttt{while} qui est d'une durée d'exécution indéterminé en boucle \texttt{for} qui elle est finie en terme de nombre d'itérations.
+
 
 
 \section{Implémentation matérielle}
+
+% études des ports et connexions 
+
+% instantiation micro blaze
+
+% mémoire partagée problème et solution
+
+% Implémentation de l'IP
 
 \section{Conclusion}
 

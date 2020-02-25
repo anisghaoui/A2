@@ -2,5 +2,8 @@
 \BOOKMARK [1][-]{section.2}{M\351thodologie et approche}{}% 2
 \BOOKMARK [1][-]{section.3}{Conception logicielle embarqu\351e}{}% 3
 \BOOKMARK [1][-]{section.4}{Conception Synth\350se Haut Niveau}{}% 4
-\BOOKMARK [1][-]{section.5}{Impl\351mentation mat\351rielle}{}% 5
-\BOOKMARK [1][-]{section.6}{Conclusion}{}% 6
+\BOOKMARK [2][-]{subsection.4.1}{Conception d'une IP avec directives}{section.4}% 5
+\BOOKMARK [2][-]{subsection.4.2}{Interfa\347age d'une IP avec Axi/Axilite}{section.4}% 6
+\BOOKMARK [2][-]{subsection.4.3}{Approche d'impl\351mentation des algorithmes}{section.4}% 7
+\BOOKMARK [1][-]{section.5}{Impl\351mentation mat\351rielle}{}% 8
+\BOOKMARK [1][-]{section.6}{Conclusion}{}% 9
