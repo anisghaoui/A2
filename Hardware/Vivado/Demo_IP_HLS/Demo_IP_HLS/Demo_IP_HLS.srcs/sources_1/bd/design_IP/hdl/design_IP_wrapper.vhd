@@ -1,8 +1,8 @@
 --Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2019.1.3 (win64) Build 2644227 Wed Sep  4 09:45:24 MDT 2019
---Date        : Sun Feb 23 21:00:57 2020
---Host        : Qlala running 64-bit major release  (build 9200)
+--Date        : Tue Feb 25 10:41:14 2020
+--Host        : Qlala-Blade running 64-bit major release  (build 9200)
 --Command     : generate_target design_IP_wrapper.bd
 --Design      : design_IP_wrapper
 --Purpose     : IP block netlist

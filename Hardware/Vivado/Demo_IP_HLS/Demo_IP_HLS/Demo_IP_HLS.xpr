@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="40" Path="E:/A2Proj/Vivado/Demo_IP_HLS/Demo_IP_HLS/Demo_IP_HLS.xpr">
+<Project Version="7" Minor="40" Path="C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS/Demo_IP_HLS.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="2128e537fc964661bc406d08c08655ef"/>
