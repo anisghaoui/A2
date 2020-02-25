@@ -31,7 +31,8 @@ int main(int argc, char const *argv[])
 	};
 
 	//algorithm call
-	float result =	pearson(Mat);
+	float result =	0;
+	pearson(Mat,&result);
 
 	printf("Le coefficient de Pearson vaut: %lf\n\n GOLDEN VALUE = -0.577739\n\n", result);
 

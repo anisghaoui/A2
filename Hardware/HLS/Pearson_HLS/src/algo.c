@@ -2,10 +2,11 @@
 #include <string.h>
 
 
-float pearson(float mat[N_ROWS][N_COLS])
+void pearson(float mat[N_ROWS][N_COLS],float *result)
 {
 #pragma HLS INTERFACE s_axilite port=return bundle=CONTROL_BUS
 #pragma HLS INTERFACE m_axi depth=40 port=mat offset=slave bundle=INPUT
+#pragma HLS INTERFACE m_axi port=result offset=slave bundle=OUTPUT
 	int i;
 	int j;
 	float moyX;
@@ -15,16 +16,15 @@ float pearson(float mat[N_ROWS][N_COLS])
 	float moyXY;
 	float coeffPearson = 0.0;
 	// pipeline the internal functions
-	loop_on_table:for (j = 0; j < N_ROWS; j++)
-	{
-		moyX = moyenne(mat, 0);
-		moyY = moyenne(mat, 1);
-		moyXY = moyenneXY(mat, 0, 1);
-		ectX = ecartType(mat, 0, moyX);
-		ectY = ecartType(mat, 1, moyY);
-		coeffPearson = (moyXY - moyX * moyY) / (ectX * ectY);
-	}
-	return coeffPearson;
+
+	moyX = moyenne(mat, 0);
+	moyY = moyenne(mat, 1);
+	moyXY = moyenneXY(mat, 0, 1);
+	ectX = ecartType(mat, 0, moyX);
+	ectY = ecartType(mat, 1, moyY);
+	coeffPearson = (moyXY - moyX * moyY) / (ectX * ectY);
+
+	*result = coeffPearson;
 }
 
 

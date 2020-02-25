@@ -7,7 +7,7 @@
 #define N_COLS 2
 #define N_ROWS 20
 
-float pearson(float mat[N_ROWS][N_COLS]);
+void pearson(float mat[N_ROWS][N_COLS],float * result);
 
 float moyenne(float mat[N_ROWS][N_COLS],  int col);
 float moyenneXY(float mat[N_ROWS][N_COLS], int colX, int colY);
