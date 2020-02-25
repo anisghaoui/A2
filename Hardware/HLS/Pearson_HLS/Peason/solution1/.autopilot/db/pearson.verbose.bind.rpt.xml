@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'pearson'" level="0">
-<item name = "Date">Mon Feb 17 15:38:28 2020
+<item name = "Date">Tue Feb 25 22:04:43 2020
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">Peason</item>
@@ -24,21 +24,20 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">, min, max, min, max, Type</keys>
-<column name="">15781, 15781, 15781, 15781, none</column>
+<column name="">755, 755, 755, 755, none</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="7">Instance, Module, min, max, min, max, Type</keys>
-<column name="grp_ecartType_fu_96">ecartType, 149, 149, 20, 20, function</column>
-<column name="grp_moyenne_fu_107">moyenne, 128, 128, 20, 20, function</column>
-<column name="grp_moyenneXY_fu_117">moyenneXY, 130, 130, 40, 40, function</column>
+<column name="grp_ecartType_fu_100">ecartType, 149, 149, 20, 20, function</column>
+<column name="grp_moyenne_fu_111">moyenne, 128, 128, 20, 20, function</column>
+<column name="grp_moyenneXY_fu_121">moyenneXY, 130, 130, 40, 40, function</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- loop_on_table">15780, 15780, 789, -, -, 20, no</column>
 </table>
 </item>
 </section>

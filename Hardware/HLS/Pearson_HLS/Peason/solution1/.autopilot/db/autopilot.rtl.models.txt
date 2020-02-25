@@ -6,6 +6,7 @@ pearson_fsqrt_32ns_32ns_32_12_1
 pearson_fsub_32ns_32ns_32_5_full_dsp_1
 pearson_CONTROL_BUS_s_axi
 pearson_INPUT_r_m_axi
+pearson_OUTPUT_r_m_axi
 moyenne
 moyenneXY
 ecartType

@@ -1598,13 +1598,13 @@ extern char *stpncpy (char *__restrict __dest,
 typedef float type;
 
 
-void multiply_block(type mA[32][32], type mB[32][32], type result[32][32]);
+void multiply_block_32(type mA[32][32], type mB[32][32], type result[32][32]);
 # 4 "src/BMM_fonctions.c" 2
 
 
 
 
-void multiply_block(type in_mA[32][32], type in_mB[32][32], type out_mC[32][32]) {_ssdm_SpecArrayDimSize(in_mA, 32);_ssdm_SpecArrayDimSize(in_mB, 32);_ssdm_SpecArrayDimSize(out_mC, 32);
+void multiply_block_32(type in_mA[32][32], type in_mB[32][32], type out_mC[32][32]) {_ssdm_SpecArrayDimSize(in_mA, 32);_ssdm_SpecArrayDimSize(in_mB, 32);_ssdm_SpecArrayDimSize(out_mC, 32);
 
 _ssdm_op_SpecInterface(0, "s_axilite", 0, 0, "", 0, 0, "CONTROL_BUS", "", "", 0, 0, 0, 0, "", "");
 _ssdm_op_SpecInterface(in_mA, "m_axi", 0, 0, "", 0, 0, "INPUT", "slave", "", 16, 16, 16, 16, "", "");

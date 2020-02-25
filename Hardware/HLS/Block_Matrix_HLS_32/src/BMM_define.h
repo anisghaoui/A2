@@ -13,6 +13,6 @@
 typedef float type;
 
 
-void multiply_block(type mA[M][P], type mB[P][N], type result[M][N]);
+void multiply_block_32(type mA[M][P], type mB[P][N], type result[M][N]);
 
 #endif // DEFINE_H_INCLUDED

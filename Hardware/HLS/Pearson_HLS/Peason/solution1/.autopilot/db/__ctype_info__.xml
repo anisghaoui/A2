@@ -10,7 +10,7 @@
 <InvalidType>0</InvalidType>
 </RtlPorts>
 <RtlPorts>
-<name>ap_return</name>
+<name>OUTPUT_r</name>
 <CType>
 <TypeName>float</TypeName>
 <TypeWidth>32</TypeWidth>

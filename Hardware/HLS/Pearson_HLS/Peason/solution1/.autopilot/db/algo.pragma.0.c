@@ -1806,7 +1806,7 @@ enum
 
 
 
-float pearson(float mat[20][2]);
+void pearson(float mat[20][2],float * result);
 
 float moyenne(float mat[20][2], int col);
 float moyenneXY(float mat[20][2], int colX, int colY);
@@ -2087,10 +2087,11 @@ extern char *stpncpy (char *__restrict __dest,
 # 3 "src/algo.c" 2
 
 
-float pearson(float mat[20][2])
+void pearson(float mat[20][2],float *result)
 {_ssdm_SpecArrayDimSize(mat, 20);
 #pragma HLS INTERFACE s_axilite port=return bundle=CONTROL_BUS
 #pragma HLS INTERFACE m_axi depth=40 port=&mat offset=slave bundle=INPUT
+#pragma HLS INTERFACE m_axi port=&result offset=slave bundle=OUTPUT
  int i;
  int j;
  float moyX;
@@ -2100,16 +2101,15 @@ float pearson(float mat[20][2])
  float moyXY;
  float coeffPearson = 0.0;
 
- loop_on_table:for (j = 0; j < 20; j++)
- {
-  moyX = moyenne(mat, 0);
-  moyY = moyenne(mat, 1);
-  moyXY = moyenneXY(mat, 0, 1);
-  ectX = ecartType(mat, 0, moyX);
-  ectY = ecartType(mat, 1, moyY);
-  coeffPearson = (moyXY - moyX * moyY) / (ectX * ectY);
- }
- return coeffPearson;
+
+ moyX = moyenne(mat, 0);
+ moyY = moyenne(mat, 1);
+ moyXY = moyenneXY(mat, 0, 1);
+ ectX = ecartType(mat, 0, moyX);
+ ectY = ecartType(mat, 1, moyY);
+ coeffPearson = (moyXY - moyX * moyY) / (ectX * ectY);
+
+ *result = coeffPearson;
 }
 
 

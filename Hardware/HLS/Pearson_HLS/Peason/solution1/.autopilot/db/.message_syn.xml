@@ -2,24 +2,25 @@
 <Messages>
 	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_631" tag="SCHEDULE" content="Option &apos;relax_ii_for_timing&apos; is enabled, will increase II to preserve clock frequency constraints."/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1312" tag="" content="Analyzing design file &apos;src/algo.c&apos; ..."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Linking Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 836.230 ; gain = 128.000 ; free physical = 486 ; free virtual = 8224"/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Checking Pragmas Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 836.230 ; gain = 128.000 ; free physical = 486 ; free virtual = 8224"/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Linking Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 836.230 ; gain = 128.000 ; free physical = 1732 ; free virtual = 7467"/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Checking Pragmas Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 836.230 ; gain = 128.000 ; free physical = 1732 ; free virtual = 7467"/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1467" tag="" content="Starting code transformations ..."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Standard Transforms Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 836.230 ; gain = 128.000 ; free physical = 485 ; free virtual = 8223"/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Standard Transforms Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 836.230 ; gain = 128.000 ; free physical = 1746 ; free virtual = 7448"/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1472" tag="" content="Checking synthesizability ..."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Checking Synthesizability Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 836.230 ; gain = 128.000 ; free physical = 485 ; free virtual = 8223"/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Checking Synthesizability Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 836.230 ; gain = 128.000 ; free physical = 1731 ; free virtual = 7433"/>
 	<Message severity="INFO" prefix="[XFORM 203-502]" key="XFORM_AUTO_UNROLL_STATUS_250" tag="" content="Unrolling all loops for pipelining in function &apos;ecartType&apos; (src/algo.c:63)."/>
 	<Message severity="INFO" prefix="[XFORM 203-502]" key="XFORM_AUTO_UNROLL_STATUS_250" tag="" content="Unrolling all loops for pipelining in function &apos;moyenneXY&apos; (src/algo.c:47)."/>
 	<Message severity="INFO" prefix="[XFORM 203-502]" key="XFORM_AUTO_UNROLL_STATUS_250" tag="" content="Unrolling all loops for pipelining in function &apos;moyenne&apos; (src/algo.c:31)."/>
 	<Message severity="INFO" prefix="[HLS 200-489]" key="HLS 200-489" tag="" content="Unrolling loop &apos;Loop-1&apos; (src/algo.c:69) in function &apos;ecartType&apos; completely with a factor of 20."/>
 	<Message severity="INFO" prefix="[HLS 200-489]" key="HLS 200-489" tag="" content="Unrolling loop &apos;Loop-1&apos; (src/algo.c:53) in function &apos;moyenneXY&apos; completely with a factor of 20."/>
 	<Message severity="INFO" prefix="[HLS 200-489]" key="HLS 200-489" tag="" content="Unrolling loop &apos;Loop-1&apos; (src/algo.c:37) in function &apos;moyenne&apos; completely with a factor of 20."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Pre-synthesis Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 836.230 ; gain = 128.000 ; free physical = 469 ; free virtual = 8208"/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Pre-synthesis Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 836.230 ; gain = 128.000 ; free physical = 1708 ; free virtual = 7426"/>
 	<Message severity="INFO" prefix="[XFORM 203-811]" key="XFORM_BUS_BURST_INFER_STATUS_265" tag="AXI,SDX_AXI" content="Inferring bus burst read of length 40 on port &apos;mat&apos; (src/algo.c:55:3)."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Architecture Synthesis Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 836.230 ; gain = 128.000 ; free physical = 449 ; free virtual = 8190"/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Architecture Synthesis Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 836.230 ; gain = 128.000 ; free physical = 1720 ; free virtual = 7445"/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1317" tag="" content="Starting hardware synthesis ..."/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1385" tag="" content="Synthesizing &apos;pearson&apos; ..."/>
 	<Message severity="WARNING" prefix="[SYN 201-107]" key="SYN_PORT_NAME_ILLEGAL_593" tag="" content="Renaming port name &apos;pearson/INPUT&apos; to &apos;pearson/INPUT_r&apos; to avoid the conflict with HDL keywords or other object names."/>
+	<Message severity="WARNING" prefix="[SYN 201-107]" key="SYN_PORT_NAME_ILLEGAL_593" tag="" content="Renaming port name &apos;pearson/OUTPUT&apos; to &apos;pearson/OUTPUT_r&apos; to avoid the conflict with HDL keywords or other object names."/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
 	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;moyenne&apos;"/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
@@ -29,13 +30,13 @@
 	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_39" tag="" content="Discarding stage scheduling solution."/>
 	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 20, Depth = 129."/>
 	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 14.51 seconds; current allocated memory: 120.332 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 18.94 seconds; current allocated memory: 119.866 MB."/>
 	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
 	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
 	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
 	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
 	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.95 seconds; current allocated memory: 121.545 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.72 seconds; current allocated memory: 121.109 MB."/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
 	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;moyenneXY&apos;"/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
@@ -44,13 +45,13 @@
 	<Message severity="WARNING" prefix="[SCHED 204-69]" key="SCHED_RESOURCE_CONSTRAINT_NOT_MET_38" tag="SDX_KERNEL,SCHEDULE" content="Unable to schedule bus read on port &apos;mat&apos; (src/algo.c:55) due to limited memory ports. Please consider using a memory core with more ports or partitioning the array."/>
 	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 40, Depth = 131."/>
 	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 1.16 seconds; current allocated memory: 122.292 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 1.04 seconds; current allocated memory: 121.797 MB."/>
 	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
 	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
 	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
 	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
 	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.89 seconds; current allocated memory: 123.026 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.7 seconds; current allocated memory: 122.528 MB."/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
 	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;ecartType&apos;"/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
@@ -59,33 +60,32 @@
 	<Message severity="WARNING" prefix="[SCHED 204-69]" key="SCHED_RESOURCE_CONSTRAINT_NOT_MET_38" tag="SDX_KERNEL,SCHEDULE" content="Unable to schedule bus request on port &apos;mat&apos; (src/algo.c:71) due to limited memory ports. Please consider using a memory core with more ports or partitioning the array."/>
 	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 20, Depth = 150."/>
 	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 1.41 seconds; current allocated memory: 124.098 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 1.24 seconds; current allocated memory: 123.618 MB."/>
 	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
 	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
 	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
 	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
 	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 1.32 seconds; current allocated memory: 125.754 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.91 seconds; current allocated memory: 125.268 MB."/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
 	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;pearson&apos;"/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
 	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
 	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.71 seconds; current allocated memory: 127.185 MB."/>
-	<Message severity="INFO" prefix="[HLS 200-434]" key="HLS 200-434" tag="SDX" content="Only 0 loops out of a total 1 loops have been pipelined in this design."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.55 seconds; current allocated memory: 126.721 MB."/>
 	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
 	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
 	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
 	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
 	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 1.05 seconds; current allocated memory: 131.789 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.68 seconds; current allocated memory: 130.991 MB."/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;moyenne&apos;"/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
 	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;pearson_fadd_32ns_32ns_32_5_full_dsp_1&apos;: 1 instance(s)."/>
 	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;pearson_fdiv_32ns_32ns_32_16_1&apos;: 1 instance(s)."/>
 	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;moyenne&apos;."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.6 seconds; current allocated memory: 133.715 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.46 seconds; current allocated memory: 132.902 MB."/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;moyenneXY&apos;"/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
@@ -93,7 +93,7 @@
 	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;pearson_fdiv_32ns_32ns_32_16_1&apos;: 1 instance(s)."/>
 	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;pearson_fmul_32ns_32ns_32_4_max_dsp_1&apos;: 1 instance(s)."/>
 	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;moyenneXY&apos;."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.95 seconds; current allocated memory: 138.379 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.89 seconds; current allocated memory: 137.591 MB."/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;ecartType&apos;"/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
@@ -102,20 +102,22 @@
 	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;pearson_fmul_32ns_32ns_32_4_max_dsp_1&apos;: 1 instance(s)."/>
 	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;pearson_fsqrt_32ns_32ns_32_12_1&apos;: 1 instance(s)."/>
 	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;ecartType&apos;."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.75 seconds; current allocated memory: 142.333 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.6 seconds; current allocated memory: 141.553 MB."/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;pearson&apos;"/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
 	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on port &apos;pearson/INPUT_r&apos; to &apos;m_axi&apos;."/>
+	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on port &apos;pearson/OUTPUT_r&apos; to &apos;m_axi&apos;."/>
 	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on port &apos;pearson/mat&apos; to &apos;s_axilite &amp; ap_none&apos;."/>
+	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on port &apos;pearson/result&apos; to &apos;s_axilite &amp; ap_none&apos;."/>
 	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on function &apos;pearson&apos; to &apos;s_axilite &amp; ap_ctrl_hs&apos;."/>
-	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_851" tag="" content="Bundling port &apos;return&apos; and &apos;mat&apos; to AXI-Lite port CONTROL_BUS."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_851" tag="" content="Bundling port &apos;return&apos;, &apos;mat&apos; to AXI-Lite port CONTROL_BUS."/>
 	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;pearson_fdiv_32ns_32ns_32_16_1&apos;: 1 instance(s)."/>
 	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;pearson_fmul_32ns_32ns_32_4_max_dsp_1&apos;: 1 instance(s)."/>
 	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;pearson_fsub_32ns_32ns_32_5_full_dsp_1&apos;: 1 instance(s)."/>
 	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;pearson&apos;."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 4.1 seconds; current allocated memory: 159.440 MB."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished generating all RTL models Time (s): cpu = 00:00:27 ; elapsed = 00:00:33 . Memory (MB): peak = 900.230 ; gain = 192.000 ; free physical = 283 ; free virtual = 8101"/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 4.44 seconds; current allocated memory: 160.171 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished generating all RTL models Time (s): cpu = 00:00:27 ; elapsed = 00:00:37 . Memory (MB): peak = 900.230 ; gain = 192.000 ; free physical = 1618 ; free virtual = 7394"/>
 	<Message severity="INFO" prefix="[VHDL 208-304]" key="VHDL_304_1066" tag="" content="Generating VHDL RTL for pearson."/>
 	<Message severity="INFO" prefix="[VLOG 209-307]" key="VLOG_307_1067" tag="" content="Generating Verilog RTL for pearson."/>
 </Messages>

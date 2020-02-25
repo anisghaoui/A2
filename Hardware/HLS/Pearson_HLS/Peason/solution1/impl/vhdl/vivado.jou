@@ -2,11 +2,11 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Mon Feb 17 15:47:17 2020
-# Process ID: 20389
-# Current directory: /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/impl/vhdl
+# Start of session at: Tue Feb 25 22:06:47 2020
+# Process ID: 9164
+# Current directory: /home/anis/A2/Hardware/HLS/Pearson_HLS/Peason/solution1/impl/vhdl
 # Command line: vivado -notrace -mode batch -source run_vivadosyn.tcl
-# Log file: /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/impl/vhdl/vivado.log
-# Journal file: /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/impl/vhdl/vivado.jou
+# Log file: /home/anis/A2/Hardware/HLS/Pearson_HLS/Peason/solution1/impl/vhdl/vivado.log
+# Journal file: /home/anis/A2/Hardware/HLS/Pearson_HLS/Peason/solution1/impl/vhdl/vivado.jou
 #-----------------------------------------------------------
 source run_vivadosyn.tcl -notrace

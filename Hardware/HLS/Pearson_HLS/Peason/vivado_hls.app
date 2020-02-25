@@ -1,4 +1,4 @@
-<project xmlns="com.autoesl.autopilot.project" top="pearson" name="Peason">
+<project xmlns="com.autoesl.autopilot.project" name="Peason" top="pearson">
     <includePaths/>
     <libraryPaths/>
     <Simulation>
@@ -6,8 +6,8 @@
     </Simulation>
     <files xmlns="">
         <file name="../../src/main.c" sc="0" tb="1" cflags=" -Wno-unknown-pragmas" csimflags=" -Wno-unknown-pragmas" blackbox="false"/>
-        <file name="src/algo.h" sc="0" tb="false" cflags="" csimflags="" blackbox="false"/>
         <file name="src/algo.c" sc="0" tb="false" cflags="" csimflags="" blackbox="false"/>
+        <file name="src/algo.h" sc="0" tb="false" cflags="" csimflags="" blackbox="false"/>
     </files>
     <solutions xmlns="">
         <solution name="solution1" status="active"/>

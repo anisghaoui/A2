@@ -15,6 +15,7 @@
 
 char wrong_results(int clusters[], int golden[]);
 
+void print(int * clusters, int* golden);
 
 int main()
 {
@@ -87,6 +88,7 @@ int main()
 	if (wrong_results(clusters, golden)) printf("\n\nWrong results\n");
 	else printf("\n\nCorrect results\n");
 
+	print(clusters,golden);
 	free(X_prot);
 	free(Y_prot);
 	free(clusters);
@@ -94,6 +96,14 @@ int main()
 	return 0;
 }
 
+
+void print(int * clusters, int* golden)
+{
+	for (int i = 0; i < N_DATA; ++i)
+	{
+		printf("%d\t%d\n",clusters[i],golden[i]);
+	}
+}
 
 char wrong_results(int clusters[], int golden[])
 {

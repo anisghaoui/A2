@@ -166,6 +166,17 @@ proc create_root_design { parentCell } {
    CONFIG.PROTOCOL {AXI4} \
    ] $m_axi_INPUT_r
 
+  set m_axi_OUTPUT_r [ create_bd_intf_port -mode Master -vlnv xilinx.com:interface:aximm_rtl:1.0 m_axi_OUTPUT_r ]
+  set_property -dict [ list \
+   CONFIG.ADDR_WIDTH {32} \
+   CONFIG.DATA_WIDTH {32} \
+   CONFIG.FREQ_HZ {100000000.0} \
+   CONFIG.HAS_BURST {0} \
+   CONFIG.NUM_READ_OUTSTANDING {16} \
+   CONFIG.NUM_WRITE_OUTSTANDING {16} \
+   CONFIG.PROTOCOL {AXI4} \
+   ] $m_axi_OUTPUT_r
+
   set s_axi_CONTROL_BUS [ create_bd_intf_port -mode Slave -vlnv xilinx.com:interface:aximm_rtl:1.0 s_axi_CONTROL_BUS ]
   set_property -dict [ list \
    CONFIG.ADDR_WIDTH {12} \
@@ -212,6 +223,7 @@ proc create_root_design { parentCell } {
 
   # Create interface connections
   connect_bd_intf_net -intf_net hls_inst_m_axi_INPUT_r [get_bd_intf_ports m_axi_INPUT_r] [get_bd_intf_pins hls_inst/m_axi_INPUT_r]
+  connect_bd_intf_net -intf_net hls_inst_m_axi_OUTPUT_r [get_bd_intf_ports m_axi_OUTPUT_r] [get_bd_intf_pins hls_inst/m_axi_OUTPUT_r]
   connect_bd_intf_net -intf_net s_axi_CONTROL_BUS_0_1 [get_bd_intf_ports s_axi_CONTROL_BUS] [get_bd_intf_pins hls_inst/s_axi_CONTROL_BUS]
 
   # Create port connections
@@ -221,6 +233,7 @@ proc create_root_design { parentCell } {
 
   # Create address segments
   create_bd_addr_seg -range 0x00010000 -offset 0x44A00000 [get_bd_addr_spaces hls_inst/Data_m_axi_INPUT_r] [get_bd_addr_segs m_axi_INPUT_r/Reg] SEG_m_axi_INPUT_r_Reg
+  create_bd_addr_seg -range 0x00010000 -offset 0x44A00000 [get_bd_addr_spaces hls_inst/Data_m_axi_OUTPUT_r] [get_bd_addr_segs m_axi_OUTPUT_r/Reg] SEG_m_axi_OUTPUT_r_Reg
   create_bd_addr_seg -range 0x00001000 -offset 0x00000000 [get_bd_addr_spaces s_axi_CONTROL_BUS] [get_bd_addr_segs hls_inst/s_axi_CONTROL_BUS/Reg] SEG_hls_inst_Reg
 
 

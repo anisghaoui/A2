@@ -81,7 +81,7 @@ float distance (float x1, float y1, float x2, float y2)
 {
 	//Calcul de la distance euclidienne entre deux points
 	float distance = fabs(x1 - x2)  + fabs(y1 - y2);
-	// float distance = sqrtf((x1 - x2) * (x1 - x2) + (y1 - y2) * (y1 - y2));
+	 //float distance = sqrtf((x1 - x2) * (x1 - x2) + (y1 - y2) * (y1 - y2));
 	return distance;
 }
 

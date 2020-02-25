@@ -24,7 +24,7 @@ set_property target_language $language [current_project]
 set bd_design_name bd_0
 set bd_inst_name hls_inst
 set clock_freq_hz [expr {floor(1000 / $target_clk_period_ns) * 1000000}]
-set ip_vlnv xilinx.com:hls:multiply_block:1.0
+set ip_vlnv xilinx.com:hls:multiply_block_32:1.0
 set ip_repo_path {../ip}
 set assign_slr ""
 set bd_cell_properties {}

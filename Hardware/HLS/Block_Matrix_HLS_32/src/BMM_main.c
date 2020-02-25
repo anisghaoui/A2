@@ -32,7 +32,7 @@ int main()
 
 
     clock_t T1 = clock();
-    multiply_block(A, B, result);
+    multiply_block_32(A, B, result);
     clock_t T2 = clock();
 
     for (i = 0; i < M; i++) { // should print the same sume value of each line

@@ -76,3 +76,83 @@ INFO: [VLOG 209-307] Generating Verilog RTL for multiply_block.
 Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+WARNING: [HLS 200-40] Cannot find library '/mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/Zynq-7000/Zynq-7000.lib'.
+WARNING: [HLS 200-40] Cannot find library 'xilinx/Zynq-7000/Zynq-7000'.
+INFO: [HLS 200-10] Setting target device to 'xc7z010i-clg225-1L'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'src/BMM_fonctions.c' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:09 ; elapsed = 00:00:21 . Memory (MB): peak = 836.230 ; gain = 128.000 ; free physical = 234 ; free virtual = 6194
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:09 ; elapsed = 00:00:21 . Memory (MB): peak = 836.230 ; gain = 128.000 ; free physical = 234 ; free virtual = 6194
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:11 ; elapsed = 00:00:23 . Memory (MB): peak = 836.230 ; gain = 128.000 ; free physical = 200 ; free virtual = 6199
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:11 ; elapsed = 00:00:23 . Memory (MB): peak = 836.230 ; gain = 128.000 ; free physical = 199 ; free virtual = 6197
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'ii_loop' (src/BMM_fonctions.c:35) in function 'multiply_block_32' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'jj_loop' (src/BMM_fonctions.c:38) in function 'multiply_block_32' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'kk_loop' (src/BMM_fonctions.c:39) in function 'multiply_block_32' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-5' (src/BMM_fonctions.c:47) in function 'multiply_block_32' completely with a factor of 32.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:12 ; elapsed = 00:00:24 . Memory (MB): peak = 836.230 ; gain = 128.000 ; free physical = 176 ; free virtual = 6158
+INFO: [XFORM 203-541] Flattening a loop nest 'k_loop' (src/BMM_fonctions.c:32:29) in function 'multiply_block_32'.
+INFO: [XFORM 203-541] Flattening a loop nest 'j_loop' (src/BMM_fonctions.c:31:29) in function 'multiply_block_32'.
+INFO: [XFORM 203-541] Flattening a loop nest 'i_loop' (src/BMM_fonctions.c:30:29) in function 'multiply_block_32'.
+INFO: [HLS 200-444] Inferring multiple bus burst write of a total cumulative length 32 on port 'OUTPUT' (src/BMM_fonctions.c:49:1). These data requests might be further partitioned to multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:13 ; elapsed = 00:00:26 . Memory (MB): peak = 836.230 ; gain = 128.000 ; free physical = 194 ; free virtual = 6146
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'multiply_block_32' ...
+WARNING: [SYN 201-107] Renaming port name 'multiply_block_32/INPUT' to 'multiply_block_32/INPUT_r' to avoid the conflict with HDL keywords or other object names.
+WARNING: [SYN 201-107] Renaming port name 'multiply_block_32/OUTPUT' to 'multiply_block_32/OUTPUT_r' to avoid the conflict with HDL keywords or other object names.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'multiply_block_32' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'i_loop_k_loop_ii_loop'.
+WARNING: [SCHED 204-68] The II Violation in module 'multiply_block_32' (Loop: i_loop_k_loop_ii_loop): Unable to enforce a carried dependence constraint (II = 1, distance = 4, offset = 1)
+   between 'store' operation ('mC_addr_4_write_ln40', src/BMM_fonctions.c:40) of variable 'tmp_1_0_3', src/BMM_fonctions.c:40 on array 'mC', src/BMM_fonctions.c:19 and 'load' operation ('mC_load_32', src/BMM_fonctions.c:40) on array 'mC', src/BMM_fonctions.c:19.
+WARNING: [SCHED 204-68] The II Violation in module 'multiply_block_32' (Loop: i_loop_k_loop_ii_loop): Unable to enforce a carried dependence constraint (II = 2, distance = 4, offset = 1)
+   between 'store' operation ('mC_addr_4_write_ln40', src/BMM_fonctions.c:40) of variable 'tmp_1_0_3', src/BMM_fonctions.c:40 on array 'mC', src/BMM_fonctions.c:19 and 'load' operation ('mC_load_32', src/BMM_fonctions.c:40) on array 'mC', src/BMM_fonctions.c:19.
+WARNING: [SCHED 204-68] The II Violation in module 'multiply_block_32' (Loop: i_loop_k_loop_ii_loop): Unable to enforce a carried dependence constraint (II = 3, distance = 4, offset = 1)
+   between 'store' operation ('mC_addr_4_write_ln40', src/BMM_fonctions.c:40) of variable 'tmp_1_0_3', src/BMM_fonctions.c:40 on array 'mC', src/BMM_fonctions.c:19 and 'load' operation ('mC_load_32', src/BMM_fonctions.c:40) on array 'mC', src/BMM_fonctions.c:19.
+WARNING: [SCHED 204-68] The II Violation in module 'multiply_block_32' (Loop: i_loop_k_loop_ii_loop): Unable to enforce a carried dependence constraint (II = 4, distance = 4, offset = 1)
+   between 'store' operation ('mC_addr_4_write_ln40', src/BMM_fonctions.c:40) of variable 'tmp_1_0_3', src/BMM_fonctions.c:40 on array 'mC', src/BMM_fonctions.c:19 and 'load' operation ('mC_load_32', src/BMM_fonctions.c:40) on array 'mC', src/BMM_fonctions.c:19.
+WARNING: [SCHED 204-69] Unable to schedule 'load' operation ('mB_load_11', src/BMM_fonctions.c:32) on array 'mB', src/BMM_fonctions.c:18 due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'mB'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 8, Depth = 33.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 28.9 seconds; current allocated memory: 103.601 MB.
+INFO: [HLS 200-434] Only 1 loops out of a total 39 loops have been pipelined in this design.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 3.18 seconds; current allocated memory: 108.858 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'multiply_block_32' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'multiply_block_32/INPUT_r' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'multiply_block_32/OUTPUT_r' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'multiply_block_32/in_mA' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'multiply_block_32/in_mB' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'multiply_block_32/out_mC' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'multiply_block_32' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'return', 'in_mA', 'in_mB' and 'out_mC' to AXI-Lite port CONTROL_BUS.
+INFO: [RTGEN 206-100] Generating core module 'multiply_block_32_fadd_32ns_32ns_32_5_full_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'multiply_block_32_fmul_32ns_32ns_32_4_max_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'multiply_block_32'.
+INFO: [HLS 200-111]  Elapsed time: 1.66 seconds; current allocated memory: 116.878 MB.
+INFO: [RTMG 210-278] Implementing memory 'multiply_block_32_mA_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'multiply_block_32_mC_ram (RAM)' using block RAMs.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:22 ; elapsed = 00:00:41 . Memory (MB): peak = 900.230 ; gain = 192.000 ; free physical = 142 ; free virtual = 6130
+INFO: [VHDL 208-304]==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================

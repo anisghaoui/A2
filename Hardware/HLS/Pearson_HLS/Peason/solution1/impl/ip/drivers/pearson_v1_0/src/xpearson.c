@@ -73,15 +73,6 @@ void XPearson_DisableAutoRestart(XPearson *InstancePtr) {
     XPearson_WriteReg(InstancePtr->Control_bus_BaseAddress, XPEARSON_CONTROL_BUS_ADDR_AP_CTRL, 0);
 }
 
-u32 XPearson_Get_return(XPearson *InstancePtr) {
-    u32 Data;
-
-    Xil_AssertNonvoid(InstancePtr != NULL);
-    Xil_AssertNonvoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
-
-    Data = XPearson_ReadReg(InstancePtr->Control_bus_BaseAddress, XPEARSON_CONTROL_BUS_ADDR_AP_RETURN);
-    return Data;
-}
 void XPearson_Set_mat(XPearson *InstancePtr, u32 Data) {
     Xil_AssertVoid(InstancePtr != NULL);
     Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
@@ -96,6 +87,23 @@ u32 XPearson_Get_mat(XPearson *InstancePtr) {
     Xil_AssertNonvoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
 
     Data = XPearson_ReadReg(InstancePtr->Control_bus_BaseAddress, XPEARSON_CONTROL_BUS_ADDR_MAT_DATA);
+    return Data;
+}
+
+void XPearson_Set_result(XPearson *InstancePtr, u32 Data) {
+    Xil_AssertVoid(InstancePtr != NULL);
+    Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
+
+    XPearson_WriteReg(InstancePtr->Control_bus_BaseAddress, XPEARSON_CONTROL_BUS_ADDR_RESULT_DATA, Data);
+}
+
+u32 XPearson_Get_result(XPearson *InstancePtr) {
+    u32 Data;
+
+    Xil_AssertNonvoid(InstancePtr != NULL);
+    Xil_AssertNonvoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
+
+    Data = XPearson_ReadReg(InstancePtr->Control_bus_BaseAddress, XPEARSON_CONTROL_BUS_ADDR_RESULT_DATA);
     return Data;
 }
 

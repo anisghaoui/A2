@@ -20,7 +20,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/impl/vhdl/project.runs/bd_0_hls_inst_0_synth_1'
+HD_PWD='/home/anis/A2/Hardware/HLS/Pearson_HLS/Peason/solution1/impl/vhdl/project.runs/bd_0_hls_inst_0_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

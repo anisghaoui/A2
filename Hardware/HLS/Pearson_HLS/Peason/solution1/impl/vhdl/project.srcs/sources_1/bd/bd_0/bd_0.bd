@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x635B0ABDF42EEE1E",
+      "boundary_crc": "0x4C78F7F390BF4467",
       "device": "xc7z010iclg225-1L",
       "name": "bd_0",
       "synth_flow_mode": "Hierarchical",
@@ -13,6 +13,129 @@
     },
     "interface_ports": {
       "m_axi_INPUT_r": {
+        "mode": "Master",
+        "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
+        "parameters": {
+          "ADDR_WIDTH": {
+            "value": "32"
+          },
+          "ARUSER_WIDTH": {
+            "value": "0",
+            "value_src": "auto_prop"
+          },
+          "AWUSER_WIDTH": {
+            "value": "0",
+            "value_src": "auto_prop"
+          },
+          "BUSER_WIDTH": {
+            "value": "0",
+            "value_src": "auto_prop"
+          },
+          "CLK_DOMAIN": {
+            "value": "bd_0_ap_clk_0",
+            "value_src": "default"
+          },
+          "DATA_WIDTH": {
+            "value": "32"
+          },
+          "FREQ_HZ": {
+            "value": "100000000.0"
+          },
+          "HAS_BRESP": {
+            "value": "1",
+            "value_src": "const_prop"
+          },
+          "HAS_BURST": {
+            "value": "0"
+          },
+          "HAS_CACHE": {
+            "value": "1",
+            "value_src": "const_prop"
+          },
+          "HAS_LOCK": {
+            "value": "1",
+            "value_src": "const_prop"
+          },
+          "HAS_PROT": {
+            "value": "1",
+            "value_src": "const_prop"
+          },
+          "HAS_QOS": {
+            "value": "1",
+            "value_src": "const_prop"
+          },
+          "HAS_REGION": {
+            "value": "1",
+            "value_src": "const_prop"
+          },
+          "HAS_RRESP": {
+            "value": "1",
+            "value_src": "const_prop"
+          },
+          "HAS_WSTRB": {
+            "value": "1",
+            "value_src": "const_prop"
+          },
+          "ID_WIDTH": {
+            "value": "0",
+            "value_src": "auto_prop"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "MAX_BURST_LENGTH": {
+            "value": "256",
+            "value_src": "const_prop"
+          },
+          "NUM_READ_OUTSTANDING": {
+            "value": "16"
+          },
+          "NUM_READ_THREADS": {
+            "value": "1",
+            "value_src": "default"
+          },
+          "NUM_WRITE_OUTSTANDING": {
+            "value": "16"
+          },
+          "NUM_WRITE_THREADS": {
+            "value": "1",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default"
+          },
+          "PROTOCOL": {
+            "value": "AXI4"
+          },
+          "READ_WRITE_MODE": {
+            "value": "READ_WRITE",
+            "value_src": "const_prop"
+          },
+          "RUSER_BITS_PER_BYTE": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "RUSER_WIDTH": {
+            "value": "0",
+            "value_src": "auto_prop"
+          },
+          "SUPPORTS_NARROW_BURST": {
+            "value": "0",
+            "value_src": "const_prop"
+          },
+          "WUSER_BITS_PER_BYTE": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "WUSER_WIDTH": {
+            "value": "0",
+            "value_src": "auto_prop"
+          }
+        }
+      },
+      "m_axi_OUTPUT_r": {
         "mode": "Master",
         "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
         "parameters": {
@@ -244,7 +367,7 @@
         "direction": "I",
         "parameters": {
           "ASSOCIATED_BUSIF": {
-            "value": "m_axi_INPUT_r:s_axi_CONTROL_BUS",
+            "value": "m_axi_INPUT_r:m_axi_OUTPUT_r:s_axi_CONTROL_BUS",
             "value_src": "default"
           },
           "ASSOCIATED_RESET": {
@@ -310,6 +433,12 @@
           "hls_inst/m_axi_INPUT_r"
         ]
       },
+      "hls_inst_m_axi_OUTPUT_r": {
+        "interface_ports": [
+          "m_axi_OUTPUT_r",
+          "hls_inst/m_axi_OUTPUT_r"
+        ]
+      },
       "s_axi_CONTROL_BUS_0_1": {
         "interface_ports": [
           "s_axi_CONTROL_BUS",
@@ -362,6 +491,16 @@
                 "usage": "register"
               }
             }
+          },
+          "m_axi_OUTPUT_r": {
+            "address_blocks": {
+              "Reg": {
+                "base_address": "0",
+                "range": "64K",
+                "width": "32",
+                "usage": "register"
+              }
+            }
           }
         }
       },
@@ -373,6 +512,17 @@
             "segments": {
               "SEG_m_axi_INPUT_r_Reg": {
                 "address_block": "/m_axi_INPUT_r/Reg",
+                "offset": "0x44A00000",
+                "range": "64K"
+              }
+            }
+          },
+          "Data_m_axi_OUTPUT_r": {
+            "range": "4G",
+            "width": "32",
+            "segments": {
+              "SEG_m_axi_OUTPUT_r_Reg": {
+                "address_block": "/m_axi_OUTPUT_r/Reg",
                 "offset": "0x44A00000",
                 "range": "64K"
               }

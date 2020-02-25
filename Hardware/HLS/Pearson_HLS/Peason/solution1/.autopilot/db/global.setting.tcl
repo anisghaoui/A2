@@ -42,7 +42,7 @@ set SCTraceOption all
 set TargetInfo xc7z010i:-clg225:-1L
 set SourceFiles {sc {} c ../../src/algo.c}
 set SourceFlags {sc {} c {{}}}
-set DirectiveFile /mnt/side_windows/UPSUD/A2/HLS/Pearson_HLS/Peason/solution1/solution1.directive
+set DirectiveFile /home/anis/A2/Hardware/HLS/Pearson_HLS/Peason/solution1/solution1.directive
 set TBFiles {verilog ../../src/main.c bc ../../src/main.c vhdl ../../src/main.c sc ../../src/main.c cas ../../src/main.c c {}}
 set SpecLanguage C
 set TVInFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}

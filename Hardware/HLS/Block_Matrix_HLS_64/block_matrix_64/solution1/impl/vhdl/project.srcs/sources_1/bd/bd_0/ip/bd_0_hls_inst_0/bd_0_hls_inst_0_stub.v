@@ -1,7 +1,7 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
-// Date        : Tue Feb 25 19:35:14 2020
+// Date        : Tue Feb 25 21:38:46 2020
 // Host        : port running 64-bit Ubuntu 18.04.4 LTS
 // Command     : write_verilog -force -mode synth_stub
 //               /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_64/block_matrix_64/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/bd_0_hls_inst_0_stub.v
@@ -13,7 +13,7 @@
 // This empty module with port declaration file causes synthesis tools to infer a black box for IP.
 // The synthesis directives are for Synopsys Synplify support to prevent IO buffer insertion.
 // Please paste the declaration into a Verilog source file or add the file as an additional source.
-(* x_core_info = "multiply_block,Vivado 2019.1" *)
+(* x_core_info = "multiply_block_64,Vivado 2019.1" *)
 module bd_0_hls_inst_0(s_axi_CONTROL_BUS_AWADDR, 
   s_axi_CONTROL_BUS_AWVALID, s_axi_CONTROL_BUS_AWREADY, s_axi_CONTROL_BUS_WDATA, 
   s_axi_CONTROL_BUS_WSTRB, s_axi_CONTROL_BUS_WVALID, s_axi_CONTROL_BUS_WREADY, 

@@ -4,16 +4,16 @@ Implementation tool: Xilinx Vivado v.2019.1
 Project:             Peason
 Solution:            solution1
 Device target:       xc7z010i-clg225-1L
-Report date:         Mon Feb 17 15:55:46 CET 2020
+Report date:         Tue Feb 25 22:17:07 CET 2020
 
 #=== Post-Synthesis Resource usage ===
 SLICE:            0
-LUT:           9410
-FF:           11908
+LUT:           9825
+FF:           12451
 DSP:             19
-BRAM:             1
-SRL:            673
+BRAM:             2
+SRL:            709
 #=== Final timing ===
 CP required:    10.000
-CP achieved post-synthesis:    8.741
+CP achieved post-synthesis:    8.894
 Timing met

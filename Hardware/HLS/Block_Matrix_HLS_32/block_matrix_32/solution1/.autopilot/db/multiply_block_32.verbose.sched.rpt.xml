@@ -1,0 +1,84 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'multiply_block_32'" level="0">
+<item name = "Date">Tue Feb 25 21:01:42 2020
+</item>
+<item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
+<item name = "Project">block_matrix_32</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z010i-clg225-1L</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00, 8.750, 1.25</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">55266, 55266, 55266, 55266, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- multiply_block_label0">10272, 10272, 321, -, -, 32, no</column>
+<column name=" + memcpy_">319, 319, 10, -, -, 32, no</column>
+<column name="- multiply_block_label1">10272, 10272, 321, -, -, 32, no</column>
+<column name=" + memcpy_">319, 319, 10, -, -, 32, no</column>
+<column name="- multiply_block_label2">10272, 10272, 321, -, -, 32, no</column>
+<column name=" + memcpy_">319, 319, 10, -, -, 32, no</column>
+<column name="- i_loop_k_loop_ii_loop">16408, 16408, 33, 8, 1, 2048, yes</column>
+<column name="- memcpy_">95, 95, 3, -, -, 32, no</column>
+<column name="- memcpy_">255, 255, 8, -, -, 32, no</column>
+<column name="- memcpy_">255, 255, 8, -, -, 32, no</column>
+<column name="- memcpy_">255, 255, 8, -, -, 32, no</column>
+<column name="- memcpy_">255, 255, 8, -, -, 32, no</column>
+<column name="- memcpy_">255, 255, 8, -, -, 32, no</column>
+<column name="- memcpy_">255, 255, 8, -, -, 32, no</column>
+<column name="- memcpy_">255, 255, 8, -, -, 32, no</column>
+<column name="- memcpy_">255, 255, 8, -, -, 32, no</column>
+<column name="- memcpy_">255, 255, 8, -, -, 32, no</column>
+<column name="- memcpy_">255, 255, 8, -, -, 32, no</column>
+<column name="- memcpy_">255, 255, 8, -, -, 32, no</column>
+<column name="- memcpy_">255, 255, 8, -, -, 32, no</column>
+<column name="- memcpy_">255, 255, 8, -, -, 32, no</column>
+<column name="- memcpy_">255, 255, 8, -, -, 32, no</column>
+<column name="- memcpy_">255, 255, 8, -, -, 32, no</column>
+<column name="- memcpy_">255, 255, 8, -, -, 32, no</column>
+<column name="- memcpy_">255, 255, 8, -, -, 32, no</column>
+<column name="- memcpy_">255, 255, 8, -, -, 32, no</column>
+<column name="- memcpy_">255, 255, 8, -, -, 32, no</column>
+<column name="- memcpy_">255, 255, 8, -, -, 32, no</column>
+<column name="- memcpy_">255, 255, 8, -, -, 32, no</column>
+<column name="- memcpy_">255, 255, 8, -, -, 32, no</column>
+<column name="- memcpy_">255, 255, 8, -, -, 32, no</column>
+<column name="- memcpy_">255, 255, 8, -, -, 32, no</column>
+<column name="- memcpy_">255, 255, 8, -, -, 32, no</column>
+<column name="- memcpy_">255, 255, 8, -, -, 32, no</column>
+<column name="- memcpy_">255, 255, 8, -, -, 32, no</column>
+<column name="- memcpy_">255, 255, 8, -, -, 32, no</column>
+<column name="- memcpy_">255, 255, 8, -, -, 32, no</column>
+<column name="- memcpy_">255, 255, 8, -, -, 32, no</column>
+<column name="- memcpy_">255, 255, 8, -, -, 32, no</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

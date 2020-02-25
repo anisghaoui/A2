@@ -23,7 +23,7 @@
   </clockList>
   <config>
             
-    <schedule model="multiply_block"/>
+    <schedule model="multiply_block_32"/>
             
     <config_export format="ip_catalog" rtl="vhdl"/>
         

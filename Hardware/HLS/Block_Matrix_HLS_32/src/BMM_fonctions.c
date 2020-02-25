@@ -5,7 +5,7 @@
 
 
 
-void multiply_block(type in_mA[M][P], type in_mB[P][N], type out_mC[M][N]) {
+void multiply_block_32(type in_mA[M][P], type in_mB[P][N], type out_mC[M][N]) {
 
 #pragma HLS INTERFACE s_axilite port=return bundle=CONTROL_BUS
 #pragma HLS INTERFACE m_axi port=in_mA offset=slave bundle=INPUT

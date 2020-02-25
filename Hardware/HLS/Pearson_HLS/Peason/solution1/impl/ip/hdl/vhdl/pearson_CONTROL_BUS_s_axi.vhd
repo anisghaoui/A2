@@ -36,8 +36,8 @@ port (
     ap_done               :in   STD_LOGIC;
     ap_ready              :in   STD_LOGIC;
     ap_idle               :in   STD_LOGIC;
-    ap_return             :in   STD_LOGIC_VECTOR(31 downto 0);
-    mat                   :out  STD_LOGIC_VECTOR(31 downto 0)
+    mat                   :out  STD_LOGIC_VECTOR(31 downto 0);
+    result                :out  STD_LOGIC_VECTOR(31 downto 0)
 );
 end entity pearson_CONTROL_BUS_s_axi;
 
@@ -60,10 +60,11 @@ end entity pearson_CONTROL_BUS_s_axi;
 --        bit 0  - Channel 0 (ap_done)
 --        bit 1  - Channel 1 (ap_ready)
 --        others - reserved
--- 0x10 : Data signal of ap_return
---        bit 31~0 - ap_return[31:0] (Read)
--- 0x18 : Data signal of mat
+-- 0x10 : Data signal of mat
 --        bit 31~0 - mat[31:0] (Read/Write)
+-- 0x14 : reserved
+-- 0x18 : Data signal of result
+--        bit 31~0 - result[31:0] (Read/Write)
 -- 0x1c : reserved
 -- (SC = Self Clear, COR = Clear on Read, TOW = Toggle on Write, COH = Clear on Handshake)
 
@@ -72,13 +73,14 @@ architecture behave of pearson_CONTROL_BUS_s_axi is
     signal wstate  : states := wrreset;
     signal rstate  : states := rdreset;
     signal wnext, rnext: states;
-    constant ADDR_AP_CTRL     : INTEGER := 16#00#;
-    constant ADDR_GIE         : INTEGER := 16#04#;
-    constant ADDR_IER         : INTEGER := 16#08#;
-    constant ADDR_ISR         : INTEGER := 16#0c#;
-    constant ADDR_AP_RETURN_0 : INTEGER := 16#10#;
-    constant ADDR_MAT_DATA_0  : INTEGER := 16#18#;
-    constant ADDR_MAT_CTRL    : INTEGER := 16#1c#;
+    constant ADDR_AP_CTRL       : INTEGER := 16#00#;
+    constant ADDR_GIE           : INTEGER := 16#04#;
+    constant ADDR_IER           : INTEGER := 16#08#;
+    constant ADDR_ISR           : INTEGER := 16#0c#;
+    constant ADDR_MAT_DATA_0    : INTEGER := 16#10#;
+    constant ADDR_MAT_CTRL      : INTEGER := 16#14#;
+    constant ADDR_RESULT_DATA_0 : INTEGER := 16#18#;
+    constant ADDR_RESULT_CTRL   : INTEGER := 16#1c#;
     constant ADDR_BITS         : INTEGER := 5;
 
     signal waddr               : UNSIGNED(ADDR_BITS-1 downto 0);
@@ -101,8 +103,8 @@ architecture behave of pearson_CONTROL_BUS_s_axi is
     signal int_gie             : STD_LOGIC := '0';
     signal int_ier             : UNSIGNED(1 downto 0) := (others => '0');
     signal int_isr             : UNSIGNED(1 downto 0) := (others => '0');
-    signal int_ap_return       : UNSIGNED(31 downto 0);
     signal int_mat             : UNSIGNED(31 downto 0) := (others => '0');
+    signal int_result          : UNSIGNED(31 downto 0) := (others => '0');
 
 
 begin
@@ -224,10 +226,10 @@ begin
                         rdata_data <= (1 => int_ier(1), 0 => int_ier(0), others => '0');
                     when ADDR_ISR =>
                         rdata_data <= (1 => int_isr(1), 0 => int_isr(0), others => '0');
-                    when ADDR_AP_RETURN_0 =>
-                        rdata_data <= RESIZE(int_ap_return(31 downto 0), 32);
                     when ADDR_MAT_DATA_0 =>
                         rdata_data <= RESIZE(int_mat(31 downto 0), 32);
+                    when ADDR_RESULT_DATA_0 =>
+                        rdata_data <= RESIZE(int_result(31 downto 0), 32);
                     when others =>
                         rdata_data <= (others => '0');
                     end case;
@@ -240,6 +242,7 @@ begin
     interrupt            <= int_gie and (int_isr(0) or int_isr(1));
     ap_start             <= int_ap_start;
     mat                  <= STD_LOGIC_VECTOR(int_mat);
+    result               <= STD_LOGIC_VECTOR(int_result);
 
     process (ACLK)
     begin
@@ -369,11 +372,9 @@ begin
     process (ACLK)
     begin
         if (ACLK'event and ACLK = '1') then
-            if (ARESET = '1') then
-                int_ap_return <= (others => '0');
-            elsif (ACLK_EN = '1') then
-                if (ap_done = '1') then
-                    int_ap_return <= UNSIGNED(ap_return);
+            if (ACLK_EN = '1') then
+                if (w_hs = '1' and waddr = ADDR_MAT_DATA_0) then
+                    int_mat(31 downto 0) <= (UNSIGNED(WDATA(31 downto 0)) and wmask(31 downto 0)) or ((not wmask(31 downto 0)) and int_mat(31 downto 0));
                 end if;
             end if;
         end if;
@@ -383,8 +384,8 @@ begin
     begin
         if (ACLK'event and ACLK = '1') then
             if (ACLK_EN = '1') then
-                if (w_hs = '1' and waddr = ADDR_MAT_DATA_0) then
-                    int_mat(31 downto 0) <= (UNSIGNED(WDATA(31 downto 0)) and wmask(31 downto 0)) or ((not wmask(31 downto 0)) and int_mat(31 downto 0));
+                if (w_hs = '1' and waddr = ADDR_RESULT_DATA_0) then
+                    int_result(31 downto 0) <= (UNSIGNED(WDATA(31 downto 0)) and wmask(31 downto 0)) or ((not wmask(31 downto 0)) and int_result(31 downto 0));
                 end if;
             end if;
         end if;

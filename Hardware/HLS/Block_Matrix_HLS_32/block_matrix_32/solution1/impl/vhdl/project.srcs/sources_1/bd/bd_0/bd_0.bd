@@ -422,7 +422,7 @@
     },
     "components": {
       "hls_inst": {
-        "vlnv": "xilinx.com:hls:multiply_block:1.0",
+        "vlnv": "xilinx.com:hls:multiply_block_32:1.0",
         "xci_name": "bd_0_hls_inst_0"
       }
     },

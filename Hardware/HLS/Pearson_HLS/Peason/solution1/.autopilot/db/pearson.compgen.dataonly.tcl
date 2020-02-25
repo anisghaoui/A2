@@ -6,15 +6,15 @@ ap_start { }
 ap_done { }
 ap_ready { }
 ap_idle { }
-ap_return { 
-	dir o
+mat { 
+	dir I
 	width 32
 	depth 1
-	mode ap_ctrl_hs
+	mode ap_none
 	offset 16
-	offset_end 0
+	offset_end 23
 }
-mat { 
+result { 
 	dir I
 	width 32
 	depth 1

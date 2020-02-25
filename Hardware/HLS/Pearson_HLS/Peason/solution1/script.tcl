@@ -5,12 +5,13 @@
 ############################################################
 open_project Peason
 set_top pearson
-add_files src/algo.c
 add_files src/algo.h
-add_files -tb src/main.c
+add_files src/algo.c
+add_files -tb src/main.c -cflags "-Wno-unknown-pragmas" -csimflags "-Wno-unknown-pragmas"
 open_solution "solution1"
-set_part {xc7z010iclg225-1L}
+set_part {xc7z010i-clg225-1L}
 create_clock -period 10 -name default
+config_export -format ip_catalog -rtl vhdl
 source "./Peason/solution1/directives.tcl"
 csim_design -O
 csynth_design

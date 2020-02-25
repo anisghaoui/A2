@@ -35,7 +35,7 @@ update_ip_catalog
 set_property ip_output_repo /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_64/block_matrix_64/solution1/impl/vhdl/project.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_ip -quiet /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_64/block_matrix_64/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/bd_0_hls_inst_0.xci
-set_property used_in_implementation false [get_files -all /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_64/block_matrix_64/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/constraints/multiply_block_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_64/block_matrix_64/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/constraints/multiply_block_64_ooc.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the

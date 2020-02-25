@@ -21,19 +21,20 @@
 //        bit 0  - Channel 0 (ap_done)
 //        bit 1  - Channel 1 (ap_ready)
 //        others - reserved
-// 0x10 : Data signal of ap_return
-//        bit 31~0 - ap_return[31:0] (Read)
-// 0x18 : Data signal of mat
+// 0x10 : Data signal of mat
 //        bit 31~0 - mat[31:0] (Read/Write)
+// 0x14 : reserved
+// 0x18 : Data signal of result
+//        bit 31~0 - result[31:0] (Read/Write)
 // 0x1c : reserved
 // (SC = Self Clear, COR = Clear on Read, TOW = Toggle on Write, COH = Clear on Handshake)
 
-#define XPEARSON_CONTROL_BUS_ADDR_AP_CTRL   0x00
-#define XPEARSON_CONTROL_BUS_ADDR_GIE       0x04
-#define XPEARSON_CONTROL_BUS_ADDR_IER       0x08
-#define XPEARSON_CONTROL_BUS_ADDR_ISR       0x0c
-#define XPEARSON_CONTROL_BUS_ADDR_AP_RETURN 0x10
-#define XPEARSON_CONTROL_BUS_BITS_AP_RETURN 32
-#define XPEARSON_CONTROL_BUS_ADDR_MAT_DATA  0x18
-#define XPEARSON_CONTROL_BUS_BITS_MAT_DATA  32
+#define XPEARSON_CONTROL_BUS_ADDR_AP_CTRL     0x00
+#define XPEARSON_CONTROL_BUS_ADDR_GIE         0x04
+#define XPEARSON_CONTROL_BUS_ADDR_IER         0x08
+#define XPEARSON_CONTROL_BUS_ADDR_ISR         0x0c
+#define XPEARSON_CONTROL_BUS_ADDR_MAT_DATA    0x10
+#define XPEARSON_CONTROL_BUS_BITS_MAT_DATA    32
+#define XPEARSON_CONTROL_BUS_ADDR_RESULT_DATA 0x18
+#define XPEARSON_CONTROL_BUS_BITS_RESULT_DATA 32
 

@@ -5,9 +5,6 @@
     <downStreamTool>
         <DownStreamTool name=""/>
     </downStreamTool>
-    <clockList>
-        <clock name="default" period="10"/>
-    </clockList>
     <config>
         <schedule model="pearson"/>
         <config_export format="ip_catalog" rtl="vhdl"/>
@@ -15,6 +12,8 @@
     <UIConfigurations>
         <UIAutosynConf hideTrivialOp="true" isBasedOnBoard="false" isSolutionDirty="false" isStopAskAgain="false" showDetailDesignViewer="false">
             <Platform>xilinx/Zynq-7000/Zynq-7000</Platform>
+            <Platform>xilinx/zynq/zynq</Platform>
+            <Platform>xilinx/zynq/zynq_fpv6</Platform>
             <customLibs/>
         </UIAutosynConf>
         <UIIPPackagerConf AskAgain="true" DescriptionButton="false" LibraryButton="false" RTLLanguage="verilog" UseNetList="none" VendorButton="false" VersionButton="false" evaluateRTL="false" setup="false">
@@ -57,6 +56,9 @@
             <Rtl active="true" name="vhdl"/>
         </SimFlow>
     </Simulation>
+    <clockList>
+        <clock default="false" name="default" period="10"/>
+    </clockList>
     <name>
         <value string="solution1"/>
     </name>
@@ -68,8 +70,8 @@
     </targetInfo>
     <libraryList>
         <library name="DefaultPlatform" value="xilinx/Zynq-7000/Zynq-7000"/>
-        <library value="xilinx/zynq/zynq" name="DefaultPlatform"/>
-        <library value="xilinx/zynq/zynq_fpv6" name="DefaultPlatform"/>
+        <library name="DefaultPlatform" value="xilinx/zynq/zynq"/>
+        <library name="DefaultPlatform" value="xilinx/zynq/zynq_fpv6"/>
     </libraryList>
 </solution>
 

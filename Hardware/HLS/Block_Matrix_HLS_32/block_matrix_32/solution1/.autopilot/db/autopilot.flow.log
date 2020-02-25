@@ -1,11 +1,11 @@
-INFO-FLOW: Workspace /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1 opened at Tue Feb 25 19:03:29 CET 2020
+INFO-FLOW: Workspace /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1 opened at Tue Feb 25 21:01:16 CET 2020
 Execute     config_clock -quiet -name default -period 10 -default=false 
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 WARNING: [HLS 200-40] Cannot find library '/mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/Zynq-7000/Zynq-7000.lib'.
 WARNING: [HLS 200-40] Cannot find library 'xilinx/Zynq-7000/Zynq-7000'.
 Execute     set_part xc7z010iclg225-1L 
 Execute       ap_part_info -name xc7z010iclg225-1L -data single -quiet 
-Command       ap_part_info done; 1.91 sec.
+Command       ap_part_info done; 2.06 sec.
 Execute       ap_part_info -name xc7z010iclg225-1L -data info 
 Execute       add_library xilinx/zynq/zynq:xc7z010i:-clg225:-1L 
 Execute         get_default_platform 
@@ -24,7 +24,7 @@ Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/t
 Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.lib 
 Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/xfft.lib 
 Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/xfir.lib 
-Command           ap_source done; 0.12 sec.
+Command           ap_source done; 0.15 sec.
 Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
 Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
 Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
@@ -38,7 +38,7 @@ Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/t
 Execute               source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
 Execute               source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
 Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
-Command         import_lib done; 0.27 sec.
+Command         import_lib done; 0.3 sec.
 Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/zynq/zynq.gen 
 Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx.gen 
 Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/plb46.gen 
@@ -49,14 +49,16 @@ Execute               source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common
 Execute               source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/maxi.gen 
 Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
 Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Command             ap_source done; 0.11 sec.
 Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
+Command             ap_source done; 0.12 sec.
 Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
 Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
-Command             ap_source done; 0.15 sec.
+Command             ap_source done; 0.18 sec.
 Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
 Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
-Command           ap_source done; 0.39 sec.
-Command         ap_source done; 0.39 sec.
+Command           ap_source done; 0.62 sec.
+Command         ap_source done; 0.62 sec.
 Execute         ap_part_info -data single -name xc7z010i-clg225-1L 
 Execute         ap_part_info -name xc7z010i-clg225-1L -data resources 
 Execute         ap_part_info -name xc7z010i-clg225-1L -data info 
@@ -64,7 +66,7 @@ Execute         ap_part_info -name xc7z010i-clg225-1L -data info
 Execute         config_chip_info -quiet -resource {SLICE 4400} {LUT 17600} {FF 35200} {DSP48E 80} {BRAM 120} {URAM 0} 
 Execute         ap_part_info -name xc7z010i-clg225-1L -data info 
 Execute         config_chip_info -quiet -speed slow 
-Command       add_library done; 0.77 sec.
+Command       add_library done; 1.06 sec.
 Execute       add_library xilinx/zynq/zynq_fpv6 
 Execute         get_default_platform 
 Execute         open_platform DefaultPlatform 
@@ -82,7 +84,7 @@ Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/tec
 INFO: [HLS 200-10] Setting target device to 'xc7z010i-clg225-1L'
 Execute       ap_part_info -name xc7z010i-clg225-1L -data info 
 Execute       get_default_platform 
-Command     set_part done; 2.9 sec.
+Command     set_part done; 3.24 sec.
 Execute     ap_part_info -data single -name xc7z010iclg225-1L 
 Execute     ap_part_info -name xc7z010iclg225-1L -data resources 
 Execute     ap_part_info -name xc7z010iclg225-1L -data info 
@@ -90,7 +92,9 @@ Execute     ap_part_info -name xc7z010iclg225-1L -data info
 Execute     config_chip_info -quiet -resource {SLICE 4400} {LUT 17600} {FF 35200} {DSP48E 80} {BRAM 120} {URAM 0} 
 Execute     ap_part_info -name xc7z010iclg225-1L -data info 
 Execute     config_chip_info -quiet -speed slow 
-Command   open_solution done; 3 sec.
+Execute     config_export -format=ip_catalog 
+Execute     config_export -rtl=vhdl 
+Command   open_solution done; 3.37 sec.
 Execute   set_part xc7z010iclg225-1L 
 Execute     ap_part_info -name xc7z010iclg225-1L -data single -quiet 
 Execute     ap_part_info -name xc7z010iclg225-1L -data info 
@@ -137,11 +141,10 @@ Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/tec
 Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
 Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
 Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
-Command           ap_source done; 0.12 sec.
 Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
 Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
-Command         ap_source done; 0.18 sec.
-Command       ap_source done; 0.18 sec.
+Command         ap_source done; 0.14 sec.
+Command       ap_source done; 0.14 sec.
 Execute       ap_part_info -data single -name xc7z010i-clg225-1L 
 Execute       ap_part_info -name xc7z010i-clg225-1L -data resources 
 Execute       ap_part_info -name xc7z010i-clg225-1L -data info 
@@ -149,7 +152,7 @@ Execute       ap_part_info -name xc7z010i-clg225-1L -data info
 Execute       config_chip_info -quiet -resource {SLICE 4400} {LUT 17600} {FF 35200} {DSP48E 80} {BRAM 120} {URAM 0} 
 Execute       ap_part_info -name xc7z010i-clg225-1L -data info 
 Execute       config_chip_info -quiet -speed slow 
-Command     add_library done; 0.23 sec.
+Command     add_library done; 0.16 sec.
 Execute     add_library xilinx/zynq/zynq_fpv6 
 Execute       get_default_platform 
 Execute       open_platform DefaultPlatform 
@@ -166,10 +169,11 @@ Execute       source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technol
 Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
 Execute     ap_part_info -name xc7z010i-clg225-1L -data info 
 Execute     get_default_platform 
-Command   set_part done; 0.39 sec.
+Command   set_part done; 0.27 sec.
 Execute   create_clock -period 10 -name default 
 Execute     config_clock -quiet -name default -period 10 -default=false 
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute   config_export -format ip_catalog -rtl vhdl 
 Execute   csynth_design 
 Execute     get_config_compile -dump_cfg 
 Execute     get_config_compile -effort 
@@ -195,15 +199,15 @@ INFO-FLOW: Running: GCC PP
 INFO-FLOW: Source preprocessing
 Execute       clang  -fno-limit-debug-info -gcc-toolchain "/mnt/side_windows/Vivado_linux/Vivado/2019.1/lnx64/tools/gcc" -hls  -fno-exceptions  -D__llvm__  -E "src/BMM_fonctions.c"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89   -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/autopilot" -I "/mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  -o "/home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/BMM_fonctions.pp.0.c" 
 INFO-FLOW: exec /mnt/side_windows/Vivado_linux/Vivado/2019.1/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /mnt/side_windows/Vivado_linux/Vivado/2019.1/lnx64/tools/gcc -hls -fno-exceptions -D__llvm__ -E src/BMM_fonctions.c -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -std=gnu89 -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/autopilot -I /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/BMM_fonctions.pp.0.c
-Command       clang done; 3.89 sec.
+Command       clang done; 5.61 sec.
 Execute       tidy_31 xilinx-xfmat-array-geometry /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/BMM_fonctions.pp.0.c std=gnu89 
 INFO-FLOW: exec /mnt/side_windows/Vivado_linux/Vivado/2019.1/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-xfmat-array-geometry -quiet -fix /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/BMM_fonctions.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0
-Command       tidy_31 done; 0.72 sec.
+Command       tidy_31 done; 0.73 sec.
 INFO-FLOW: Syntax Checking before pre-processing...
 Execute       clang -syntaxcheck -src /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/BMM_fonctions.pp.0.c  -fno-limit-debug-info -gcc-toolchain "/mnt/side_windows/Vivado_linux/Vivado/2019.1/lnx64/tools/gcc" -hls    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89   -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/autopilot" -I "/mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  "/home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/BMM_fonctions.pp.0.c"  -o "/home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/useless.bc"  
 INFO-FLOW: exec /mnt/side_windows/Vivado_linux/Vivado/2019.1/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /mnt/side_windows/Vivado_linux/Vivado/2019.1/lnx64/tools/gcc -hls -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -std=gnu89 -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/autopilot -I /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/BMM_fonctions.pp.0.c -o /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/useless.bc
-Command       clang done; 2.91 sec.
-INFO-FLOW: Done: GCC PP time: 7.5 seconds per iteration
+Command       clang done; 2.66 sec.
+INFO-FLOW: Done: GCC PP time: 9 seconds per iteration
 Execute       source /mnt/side_windows/Vivado_linux/Vivado/2019.1/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
 Execute       source /mnt/side_windows/Vivado_linux/Vivado/2019.1/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
 Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/tps/tcl/tcllib1.11.1/try/try.tcl 
@@ -215,15 +219,15 @@ Execute       tidy_31 xilinx-directive2pragma /home/anis/A2/Hardware/HLS/Block_M
 INFO-FLOW: exec /mnt/side_windows/Vivado_linux/Vivado/2019.1/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-directive2pragma -import-directive=/home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/all.directive.json -quiet -fix-errors /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/BMM_fonctions.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0
 Execute       get_config_dataflow -strict_mode 
 Execute       ap_eval exec -ignorestderr /mnt/side_windows/Vivado_linux/Vivado/2019.1/lnx64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=/home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/xilinx-dataflow-lawyer.BMM_fonctions.pp.0.c.diag.yml /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/BMM_fonctions.pp.0.c -- -std=gnu99 -fhls -ferror-limit=0 -fstrict-dataflow > /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/xilinx-dataflow-lawyer.BMM_fonctions.pp.0.c.out.log 2> /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/xilinx-dataflow-lawyer.BMM_fonctions.pp.0.c.err.log 
-Command       ap_eval done; 0.43 sec.
+Command       ap_eval done; 0.39 sec.
 Execute       tidy_31 -errorcheck xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/BMM_fonctions.pp.0.c std=gnu89 
 Execute         ap_eval exec -ignorestderr /mnt/side_windows/Vivado_linux/Vivado/2019.1/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -export-fixes=/home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/tidy-3.1.BMM_fonctions.pp.0.c.diag.yml -header-filter=.* -checks=-*,xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry -quiet -fix-errors /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/BMM_fonctions.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0 > /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/tidy-3.1.BMM_fonctions.pp.0.c.out.log 2> /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/tidy-3.1.BMM_fonctions.pp.0.c.err.log 
 Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/tps/tcl/tcllib1.11.1/yaml/yaml.tcl 
 Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/tps/tcl/tcllib1.11.1/cmdline/cmdline.tcl 
 Execute         ap_eval exec -ignorestderr /mnt/side_windows/Vivado_linux/Vivado/2019.1/lnx64/tools/clang-3.9-csynth/bin/xilinx-legacy-rewriter /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/BMM_fonctions.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0 > /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/xilinx-legacy-rewriter.BMM_fonctions.pp.0.c.out.log 2> /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/xilinx-legacy-rewriter.BMM_fonctions.pp.0.c.err.log 
-Command         ap_eval done; 0.48 sec.
-Command       tidy_31 done; 0.6 sec.
-INFO-FLOW: Done: tidy-3.1 CDT preprocess time: 1.1 seconds per iteration
+Command         ap_eval done; 0.43 sec.
+Command       tidy_31 done; 0.57 sec.
+INFO-FLOW: Done: tidy-3.1 CDT preprocess time: 1 seconds per iteration
 INFO-FLOW: Pragma Handling...
 Execute       tidy_31 xilinx-ssdm-intrinsics-arguments /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/BMM_fonctions.pragma.1.c std=gnu89 
 INFO-FLOW: exec /mnt/side_windows/Vivado_linux/Vivado/2019.1/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-ssdm-intrinsics-arguments -quiet -fix-errors /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/BMM_fonctions.pragma.1.c -- -std=gnu89 -fhls -ferror-limit=0
@@ -231,190 +235,192 @@ Execute       ap_part_info -name xc7z010i-clg225-1L -data info
 INFO-FLOW: Processing labels
 Execute       clang -src /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/BMM_fonctions.pragma.2.c  -fno-limit-debug-info -gcc-toolchain /mnt/side_windows/Vivado_linux/Vivado/2019.1/lnx64/tools/gcc -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "/home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/BMM_fonctions.pragma.2.c"    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89  -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/autopilot" -I "/mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o "/home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/BMM_fonctions.bc" 
 INFO-FLOW: exec /mnt/side_windows/Vivado_linux/Vivado/2019.1/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /mnt/side_windows/Vivado_linux/Vivado/2019.1/lnx64/tools/gcc -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/BMM_fonctions.pragma.2.c -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -std=gnu89 -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/autopilot -I /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/BMM_fonctions.bc
-Command       clang done; 2.44 sec.
+Command       clang done; 2.13 sec.
 INFO-FLOW: Linking Debug ...
-Execute       llvm-ld /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/BMM_fonctions.g.bc -hls-opt -except-internalize multiply_block -L/mnt/side_windows/Vivado_linux/Vivado/2019.1/lnx64/lib -lhlsm -lhlsmc++ -o /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/a.g 
-Command       llvm-ld done; 1.75 sec.
-INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:10 ; elapsed = 00:00:20 . Memory (MB): peak = 836.230 ; gain = 128.000 ; free physical = 1099 ; free virtual = 7776
-INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:10 ; elapsed = 00:00:20 . Memory (MB): peak = 836.230 ; gain = 128.000 ; free physical = 1099 ; free virtual = 7776
+Execute       llvm-ld /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/BMM_fonctions.g.bc -hls-opt -except-internalize multiply_block_32 -L/mnt/side_windows/Vivado_linux/Vivado/2019.1/lnx64/lib -lhlsm -lhlsmc++ -o /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/a.g 
+Command       llvm-ld done; 1.9 sec.
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:09 ; elapsed = 00:00:21 . Memory (MB): peak = 836.230 ; gain = 128.000 ; free physical = 234 ; free virtual = 6194
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:09 ; elapsed = 00:00:21 . Memory (MB): peak = 836.230 ; gain = 128.000 ; free physical = 234 ; free virtual = 6194
 Execute       get_config_sdx -target 
 Execute       opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
 Execute         cleanup_all_models 
 INFO: [HLS 200-10] Starting code transformations ...
 Execute         transform -promote-dbg-pointer /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/a.pp.bc -o /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/a.pp.0.bc -f 
-Command         transform done; 0.28 sec.
+Command         transform done; 0.2 sec.
 Execute         llvm-ld /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/a.pp.0.bc -disable-opt -L/mnt/side_windows/Vivado_linux/Vivado/2019.1/lnx64/lib -lfloatconversion -o /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/a.g.0 
-Command         llvm-ld done; 1.48 sec.
+Command         llvm-ld done; 1.68 sec.
 INFO-FLOW: Running Standard Transforms...
-Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -mem2reg -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -prune-eh -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top multiply_block -deadargelim -mem2reg -instcombine -dce -presyn-prepare -auto-rom-infer -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -func-inst -deadargelim -auto-shift-reg-idiom -promote-dbg-pointer -norm-name /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/a.g.0.bc -o /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/a.g.1.bc -f -phase std-opt 
-INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:12 ; elapsed = 00:00:21 . Memory (MB): peak = 836.230 ; gain = 128.000 ; free physical = 1114 ; free virtual = 7823
+Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -mem2reg -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -prune-eh -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top multiply_block_32 -deadargelim -mem2reg -instcombine -dce -presyn-prepare -auto-rom-infer -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -func-inst -deadargelim -auto-shift-reg-idiom -promote-dbg-pointer -norm-name /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/a.g.0.bc -o /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/a.g.1.bc -f -phase std-opt 
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:11 ; elapsed = 00:00:23 . Memory (MB): peak = 836.230 ; gain = 128.000 ; free physical = 200 ; free virtual = 6199
 INFO: [HLS 200-10] Checking synthesizability ...
 INFO-FLOW: Checking Synthesizability 1/2..
 Execute         transform -hls -syn-check -check-rec-only -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -function-uniquify -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce -pag -array-normalize -instcombine -dce -warn-fifo-pointer -array-seg-normalize -instcombine -dce -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -resolve-double-ptr -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -function-uniquify -directive-preproc -mem2reg -dse -dce -globaldce -check-dspbuiltin /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/a.g.1.bc -o /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/a.g.2.prechk.bc -f 
+Command         transform done; 0.13 sec.
 INFO-FLOW: Checking Synthesizability 2/2..
 Execute         transform -syn-check /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/a.g.2.prechk.bc -o /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/a.g.2.bc -f -phase syn-check 
-INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:12 ; elapsed = 00:00:22 . Memory (MB): peak = 836.230 ; gain = 128.000 ; free physical = 1114 ; free virtual = 7823
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:11 ; elapsed = 00:00:23 . Memory (MB): peak = 836.230 ; gain = 128.000 ; free physical = 199 ; free virtual = 6197
 INFO-FLOW: Compiler optimizing ...
 INFO-FLOW: Share syncheck's 1.bc for syn flow: copy /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/a.g.1.bc to /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/a.o.1.bc
 INFO-FLOW: Presyn 1...
 Execute         transform -hls -tmp /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db -interface-port-rename -type-info -function-uniquify -directive-preproc -mem2reg -dse -dce -disaggr -scalarrepl -norm-name -deadargelim -mem2reg -instcombine -dce -simplifycfg -auto-rom-infer -dce -function-uniquify -resource-proc -clib-intrinsic-prepare -dce -func-buffer -dce -pag -array-normalize -func-legal -instcombine -gvn -constprop -dce -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -ptrArgReplace -mem2reg -dce -array-seg-normalize -deadargelim -instcombine -dce -pointer-simplify -dce -port-alignment -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -find-region -instcombine -auto-loop-pipeline -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -auto-loop-unroll -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -auto-par -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -duplicate-dataflow-processes -globaldce -instcombine -array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -dce -global-constprop -deadargelim -mem2reg -simplifycfg -dce -merge-param -deadargelim -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -mem-intrinsic-preproc -dce -global-internalize -global-privatize -mem2reg -globaldce -promote-global-argument -ptrArgReplace -mem2reg -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -dce -norm-name -function-inline -complex-op-raise -inst-simplify -globaldce -func-inst -constprop -instcombine -simplifycfg -dce -func-legal -dce -loop-bound -arraycheck -bitwidthmin -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -loop-stream -instcombine -simplifycfg -dce -globaldce -duplicate-dataflow-processes -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -check-dataflow-syntax -legalize-stream-variable -legalize-global -extract-subproc -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -deadargelim -annotate-dataflow-channels -scalar-propagation -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -function-uniquify -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -norm-name /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/a.o.1.bc -o /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/a.o.1.tmp.bc -f 
-INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'ii_loop' (src/BMM_fonctions.c:35) in function 'multiply_block' for pipelining.
-INFO: [HLS 200-489] Unrolling loop 'jj_loop' (src/BMM_fonctions.c:38) in function 'multiply_block' completely with a factor of 4.
-INFO: [HLS 200-489] Unrolling loop 'kk_loop' (src/BMM_fonctions.c:39) in function 'multiply_block' completely with a factor of 4.
-INFO: [HLS 200-489] Unrolling loop 'Loop-5' (src/BMM_fonctions.c:47) in function 'multiply_block' completely with a factor of 32.
-Command         transform done; 0.71 sec.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'ii_loop' (src/BMM_fonctions.c:35) in function 'multiply_block_32' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'jj_loop' (src/BMM_fonctions.c:38) in function 'multiply_block_32' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'kk_loop' (src/BMM_fonctions.c:39) in function 'multiply_block_32' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-5' (src/BMM_fonctions.c:47) in function 'multiply_block_32' completely with a factor of 32.
+Command         transform done; 0.55 sec.
 INFO-FLOW: Presyn 2...
 Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -auto-burst -norm-name /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/a.o.1.tmp.bc -o /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/a.o.2.bc -f -phase presyn 
-Command         transform done; 0.34 sec.
-INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:13 ; elapsed = 00:00:23 . Memory (MB): peak = 836.230 ; gain = 128.000 ; free physical = 1080 ; free virtual = 7804
+Command         transform done; 0.42 sec.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:12 ; elapsed = 00:00:24 . Memory (MB): peak = 836.230 ; gain = 128.000 ; free physical = 176 ; free virtual = 6158
 INFO-FLOW: Building ssdm...
 Execute         transform -hls -function-uniquify -auto-function-inline -globaldce -ptrArgReplace -mem2reg -dce -reset-lda -loop-simplify -indvars -licm -loop-dep -loop-bound -licm -loop-simplify -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg -loop-simplify -array-burst -promote-global-argument -dce -ptrLegalization -axi4-lower -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -disaggr -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -auto-rom-infer -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -cfgopt -simplifycfg -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -bitwidthmin -deadargelim -dce -canonicalize-dataflow -dce -scalar-propagation -deadargelim -globaldce -mem2reg -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable -deadargelim -inst-simplify -dce -gvn -mem2reg -instcombine -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -complex-op-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg -loop-simplify -mergereturn -inst-simplify -inst-rectify -dce -load-elim -bitop-lower -loop-rewind -pointer-simplify -dce -cfgopt -dce -loop-bound -loop-dep -read-loop-dep -dce -check-stream -norm-name -legalize -validate-dataflow -inst-clarity -bitwidth -dump-loop-dep-to-ir -check-all-ssdm -cdfg-build /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/a.o.2.bc -o /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
-INFO: [XFORM 203-541] Flattening a loop nest 'k_loop' (src/BMM_fonctions.c:32:29) in function 'multiply_block'.
-INFO: [XFORM 203-541] Flattening a loop nest 'j_loop' (src/BMM_fonctions.c:31:29) in function 'multiply_block'.
-INFO: [XFORM 203-541] Flattening a loop nest 'i_loop' (src/BMM_fonctions.c:30:29) in function 'multiply_block'.
+INFO: [XFORM 203-541] Flattening a loop nest 'k_loop' (src/BMM_fonctions.c:32:29) in function 'multiply_block_32'.
+INFO: [XFORM 203-541] Flattening a loop nest 'j_loop' (src/BMM_fonctions.c:31:29) in function 'multiply_block_32'.
+INFO: [XFORM 203-541] Flattening a loop nest 'i_loop' (src/BMM_fonctions.c:30:29) in function 'multiply_block_32'.
 INFO: [HLS 200-444] Inferring multiple bus burst write of a total cumulative length 32 on port 'OUTPUT' (src/BMM_fonctions.c:49:1). These data requests might be further partitioned to multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.
-Command         transform done; 1.63 sec.
-INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:14 ; elapsed = 00:00:24 . Memory (MB): peak = 836.230 ; gain = 128.000 ; free physical = 1087 ; free virtual = 7813
+Command         transform done; 2.13 sec.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:13 ; elapsed = 00:00:26 . Memory (MB): peak = 836.230 ; gain = 128.000 ; free physical = 194 ; free virtual = 6146
 INFO-FLOW: Finish building internal data model.
-Command       opt_and_import_c done; 4.66 sec.
-Command     elaborate done; 17.64 sec.
+Command       opt_and_import_c done; 5.23 sec.
+Command     elaborate done; 19.46 sec.
 Execute     autosyn -from_csynth_design=1 
 INFO: [HLS 200-10] Starting hardware synthesis ...
 INFO-FLOW: Synthesizing C/C++ design ...
-INFO: [HLS 200-10] Synthesizing 'multiply_block' ...
-Execute       ap_set_top_model multiply_block 
-Execute       get_model_list multiply_block -filter all-wo-channel -topdown 
-Execute       preproc_iomode -model multiply_block 
-Execute       get_model_list multiply_block -filter all-wo-channel 
-INFO-FLOW: Model list for configure: multiply_block
-INFO-FLOW: Configuring Module : multiply_block ...
-Execute       set_default_model multiply_block 
-Execute       apply_spec_resource_limit multiply_block 
-INFO-FLOW: Model list for preprocess: multiply_block
-INFO-FLOW: Preprocessing Module: multiply_block ...
-Execute       set_default_model multiply_block 
-Execute       cdfg_preprocess -model multiply_block 
-Command       cdfg_preprocess done; 0.12 sec.
-Execute       rtl_gen_preprocess multiply_block 
-WARNING: [SYN 201-107] Renaming port name 'multiply_block/INPUT' to 'multiply_block/INPUT_r' to avoid the conflict with HDL keywords or other object names.
-WARNING: [SYN 201-107] Renaming port name 'multiply_block/OUTPUT' to 'multiply_block/OUTPUT_r' to avoid the conflict with HDL keywords or other object names.
-INFO-FLOW: Model list for synthesis: multiply_block
+INFO: [HLS 200-10] Synthesizing 'multiply_block_32' ...
+Execute       ap_set_top_model multiply_block_32 
+Execute       get_model_list multiply_block_32 -filter all-wo-channel -topdown 
+Execute       preproc_iomode -model multiply_block_32 
+Execute       get_model_list multiply_block_32 -filter all-wo-channel 
+INFO-FLOW: Model list for configure: multiply_block_32
+INFO-FLOW: Configuring Module : multiply_block_32 ...
+Execute       set_default_model multiply_block_32 
+Execute       apply_spec_resource_limit multiply_block_32 
+INFO-FLOW: Model list for preprocess: multiply_block_32
+INFO-FLOW: Preprocessing Module: multiply_block_32 ...
+Execute       set_default_model multiply_block_32 
+Execute       cdfg_preprocess -model multiply_block_32 
+Command       cdfg_preprocess done; 0.13 sec.
+Execute       rtl_gen_preprocess multiply_block_32 
+WARNING: [SYN 201-107] Renaming port name 'multiply_block_32/INPUT' to 'multiply_block_32/INPUT_r' to avoid the conflict with HDL keywords or other object names.
+WARNING: [SYN 201-107] Renaming port name 'multiply_block_32/OUTPUT' to 'multiply_block_32/OUTPUT_r' to avoid the conflict with HDL keywords or other object names.
+INFO-FLOW: Model list for synthesis: multiply_block_32
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'multiply_block' 
+INFO: [HLS 200-42] -- Implementing module 'multiply_block_32' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
-Execute       set_default_model multiply_block 
-Execute       schedule -model multiply_block 
+Execute       set_default_model multiply_block_32 
+Execute       schedule -model multiply_block_32 
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining loop 'i_loop_k_loop_ii_loop'.
-WARNING: [SCHED 204-68] The II Violation in module 'multiply_block' (Loop: i_loop_k_loop_ii_loop): Unable to enforce a carried dependence constraint (II = 1, distance = 4, offset = 1)
+WARNING: [SCHED 204-68] The II Violation in module 'multiply_block_32' (Loop: i_loop_k_loop_ii_loop): Unable to enforce a carried dependence constraint (II = 1, distance = 4, offset = 1)
    between 'store' operation ('mC_addr_4_write_ln40', src/BMM_fonctions.c:40) of variable 'tmp_1_0_3', src/BMM_fonctions.c:40 on array 'mC', src/BMM_fonctions.c:19 and 'load' operation ('mC_load_32', src/BMM_fonctions.c:40) on array 'mC', src/BMM_fonctions.c:19.
-WARNING: [SCHED 204-68] The II Violation in module 'multiply_block' (Loop: i_loop_k_loop_ii_loop): Unable to enforce a carried dependence constraint (II = 2, distance = 4, offset = 1)
+WARNING: [SCHED 204-68] The II Violation in module 'multiply_block_32' (Loop: i_loop_k_loop_ii_loop): Unable to enforce a carried dependence constraint (II = 2, distance = 4, offset = 1)
    between 'store' operation ('mC_addr_4_write_ln40', src/BMM_fonctions.c:40) of variable 'tmp_1_0_3', src/BMM_fonctions.c:40 on array 'mC', src/BMM_fonctions.c:19 and 'load' operation ('mC_load_32', src/BMM_fonctions.c:40) on array 'mC', src/BMM_fonctions.c:19.
-WARNING: [SCHED 204-68] The II Violation in module 'multiply_block' (Loop: i_loop_k_loop_ii_loop): Unable to enforce a carried dependence constraint (II = 3, distance = 4, offset = 1)
+WARNING: [SCHED 204-68] The II Violation in module 'multiply_block_32' (Loop: i_loop_k_loop_ii_loop): Unable to enforce a carried dependence constraint (II = 3, distance = 4, offset = 1)
    between 'store' operation ('mC_addr_4_write_ln40', src/BMM_fonctions.c:40) of variable 'tmp_1_0_3', src/BMM_fonctions.c:40 on array 'mC', src/BMM_fonctions.c:19 and 'load' operation ('mC_load_32', src/BMM_fonctions.c:40) on array 'mC', src/BMM_fonctions.c:19.
-WARNING: [SCHED 204-68] The II Violation in module 'multiply_block' (Loop: i_loop_k_loop_ii_loop): Unable to enforce a carried dependence constraint (II = 4, distance = 4, offset = 1)
+WARNING: [SCHED 204-68] The II Violation in module 'multiply_block_32' (Loop: i_loop_k_loop_ii_loop): Unable to enforce a carried dependence constraint (II = 4, distance = 4, offset = 1)
    between 'store' operation ('mC_addr_4_write_ln40', src/BMM_fonctions.c:40) of variable 'tmp_1_0_3', src/BMM_fonctions.c:40 on array 'mC', src/BMM_fonctions.c:19 and 'load' operation ('mC_load_32', src/BMM_fonctions.c:40) on array 'mC', src/BMM_fonctions.c:19.
 WARNING: [SCHED 204-69] Unable to schedule 'load' operation ('mB_load_11', src/BMM_fonctions.c:32) on array 'mB', src/BMM_fonctions.c:18 due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'mB'.
 INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 8, Depth = 33.
 INFO: [SCHED 204-11] Finished scheduling.
-Command       schedule done; 2.44 sec.
-INFO: [HLS 200-111]  Elapsed time: 26.8 seconds; current allocated memory: 103.418 MB.
-Execute       syn_report -verbosereport -o /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block.verbose.sched.rpt 
+Command       schedule done; 2.52 sec.
+INFO: [HLS 200-111]  Elapsed time: 28.9 seconds; current allocated memory: 103.601 MB.
+Execute       syn_report -verbosereport -o /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block_32.verbose.sched.rpt 
 INFO: [HLS 200-434] Only 1 loops out of a total 39 loops have been pipelined in this design.
-Command       syn_report done; 1.46 sec.
-Execute       db_write -o /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block.sched.adb -f 
-Command       db_write done; 0.26 sec.
-INFO-FLOW: Finish scheduling multiply_block.
-Execute       set_default_model multiply_block 
-Execute       bind -model multiply_block 
-BIND OPTION: model=multiply_block
+Command       syn_report done; 2.02 sec.
+Execute       db_write -o /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block_32.sched.adb -f 
+Command       db_write done; 0.3 sec.
+INFO-FLOW: Finish scheduling multiply_block_32.
+Execute       set_default_model multiply_block_32 
+Execute       bind -model multiply_block_32 
+BIND OPTION: model=multiply_block_32
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-Command       bind done; 0.91 sec.
-INFO: [HLS 200-111]  Elapsed time: 2.64 seconds; current allocated memory: 108.678 MB.
-Execute       syn_report -verbosereport -o /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block.verbose.bind.rpt 
-Command       syn_report done; 1.1 sec.
-Execute       db_write -o /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block.bind.adb -f 
-Command       db_write done; 0.18 sec.
-INFO-FLOW: Finish binding multiply_block.
-Execute       get_model_list multiply_block -filter all-wo-channel 
+Command       bind done; 0.86 sec.
+INFO: [HLS 200-111]  Elapsed time: 3.18 seconds; current allocated memory: 108.858 MB.
+Execute       syn_report -verbosereport -o /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block_32.verbose.bind.rpt 
+Command       syn_report done; 1 sec.
+Execute       db_write -o /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block_32.bind.adb -f 
+Command       db_write done; 0.17 sec.
+INFO-FLOW: Finish binding multiply_block_32.
+Execute       get_model_list multiply_block_32 -filter all-wo-channel 
 INFO-FLOW: Preprocessing for RTLGen ...
-Execute       rtl_gen_preprocess multiply_block 
-INFO-FLOW: Model list for RTL generation: multiply_block
+Execute       rtl_gen_preprocess multiply_block_32 
+INFO-FLOW: Model list for RTL generation: multiply_block_32
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'multiply_block' 
+INFO: [HLS 200-10] -- Generating RTL for module 'multiply_block_32' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 Execute       get_config_rtl -module_prefix 
 Execute       get_config_rtl -module_auto_prefix 
-Execute       create_rtl_model multiply_block -vendor xilinx -mg_file /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block.compgen.tcl 
-INFO: [RTGEN 206-500] Setting interface mode on port 'multiply_block/INPUT_r' to 'm_axi'.
-INFO: [RTGEN 206-500] Setting interface mode on port 'multiply_block/OUTPUT_r' to 'm_axi'.
-INFO: [RTGEN 206-500] Setting interface mode on port 'multiply_block/in_mA' to 's_axilite & ap_none'.
-INFO: [RTGEN 206-500] Setting interface mode on port 'multiply_block/in_mB' to 's_axilite & ap_none'.
-INFO: [RTGEN 206-500] Setting interface mode on port 'multiply_block/out_mC' to 's_axilite & ap_none'.
-INFO: [RTGEN 206-500] Setting interface mode on function 'multiply_block' to 's_axilite & ap_ctrl_hs'.
+Execute       create_rtl_model multiply_block_32 -vendor xilinx -mg_file /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block_32.compgen.tcl 
+INFO: [RTGEN 206-500] Setting interface mode on port 'multiply_block_32/INPUT_r' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'multiply_block_32/OUTPUT_r' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'multiply_block_32/in_mA' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'multiply_block_32/in_mB' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'multiply_block_32/out_mC' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'multiply_block_32' to 's_axilite & ap_ctrl_hs'.
 INFO: [RTGEN 206-100] Bundling port 'return', 'in_mA', 'in_mB' and 'out_mC' to AXI-Lite port CONTROL_BUS.
-INFO: [RTGEN 206-100] Generating core module 'multiply_block_fadd_32ns_32ns_32_5_full_dsp_1': 2 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'multiply_block_fmul_32ns_32ns_32_4_max_dsp_1': 2 instance(s).
-INFO: [RTGEN 206-100] Finished creating RTL model for 'multiply_block'.
-Command       create_rtl_model done; 0.59 sec.
-INFO: [HLS 200-111]  Elapsed time: 1.87 seconds; current allocated memory: 116.745 MB.
-Execute       source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block.rtl_wrap.cfg.tcl 
-Execute       gen_rtl multiply_block -istop -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/syn/systemc/multiply_block -synmodules multiply_block 
-Execute       gen_rtl multiply_block -istop -style xilinx -f -lang vhdl -o /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/syn/vhdl/multiply_block 
-Command       gen_rtl done; 0.55 sec.
-Execute       gen_rtl multiply_block -istop -style xilinx -f -lang vlog -o /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/syn/verilog/multiply_block 
-Command       gen_rtl done; 0.26 sec.
-Execute       syn_report -csynth -model multiply_block -o /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/syn/report/multiply_block_csynth.rpt 
-Command       syn_report done; 0.19 sec.
-Execute       syn_report -rtlxml -model multiply_block -o /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/syn/report/multiply_block_csynth.xml 
+INFO: [RTGEN 206-100] Generating core module 'multiply_block_32_fadd_32ns_32ns_32_5_full_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'multiply_block_32_fmul_32ns_32ns_32_4_max_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'multiply_block_32'.
+Command       create_rtl_model done; 0.48 sec.
+INFO: [HLS 200-111]  Elapsed time: 1.66 seconds; current allocated memory: 116.878 MB.
+Execute       source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block_32.rtl_wrap.cfg.tcl 
+Execute       gen_rtl multiply_block_32 -istop -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/syn/systemc/multiply_block_32 -synmodules multiply_block_32 
+Execute       gen_rtl multiply_block_32 -istop -style xilinx -f -lang vhdl -o /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/syn/vhdl/multiply_block_32 
+Command       gen_rtl done; 0.43 sec.
+Execute       gen_rtl multiply_block_32 -istop -style xilinx -f -lang vlog -o /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/syn/verilog/multiply_block_32 
+Command       gen_rtl done; 0.19 sec.
+Execute       syn_report -csynth -model multiply_block_32 -o /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/syn/report/multiply_block_32_csynth.rpt 
 Command       syn_report done; 0.18 sec.
-Execute       syn_report -verbosereport -model multiply_block -o /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block.verbose.rpt 
-Command       syn_report done; 1.34 sec.
-Execute       db_write -model multiply_block -f -o /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block.adb 
-Command       db_write done; 0.72 sec.
-Execute       gen_tb_info multiply_block -p /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db -o /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block 
-Execute       export_constraint_db -f -tool general -o /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block.constraint.tcl 
-Execute       syn_report -designview -model multiply_block -o /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block.design.xml 
-Command       syn_report done; 0.47 sec.
+Execute       syn_report -rtlxml -model multiply_block_32 -o /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/syn/report/multiply_block_32_csynth.xml 
+Command       syn_report done; 0.18 sec.
+Execute       syn_report -verbosereport -model multiply_block_32 -o /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block_32.verbose.rpt 
+Command       syn_report done; 1.16 sec.
+Execute       db_write -model multiply_block_32 -f -o /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block_32.adb 
+Command       db_write done; 0.69 sec.
+Execute       gen_tb_info multiply_block_32 -p /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db -o /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block_32 
+Command       gen_tb_info done; 0.45 sec.
+Execute       export_constraint_db -f -tool general -o /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block_32.constraint.tcl 
+Execute       syn_report -designview -model multiply_block_32 -o /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block_32.design.xml 
+Command       syn_report done; 0.42 sec.
 Execute       get_config_rtl -disable_wave_debug 
-Execute       syn_report -wcfg -model multiply_block -o /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block_dataflow_ana.wcfg 
-Execute       syn_report -protoinst -model multiply_block -o /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block.protoinst 
+Execute       syn_report -wcfg -model multiply_block_32 -o /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block_32_dataflow_ana.wcfg 
+Execute       syn_report -protoinst -model multiply_block_32 -o /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block_32.protoinst 
 Execute       get_config_debug -directory 
-Execute       sc_get_clocks multiply_block 
+Execute       sc_get_clocks multiply_block_32 
 Execute       get_config_export -vivado_clock 
-Execute       sc_get_portdomain multiply_block 
-INFO-FLOW: Model list for RTL component generation: multiply_block
-INFO-FLOW: Handling components in module [multiply_block] ... 
-Execute       source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block.compgen.tcl 
-INFO-FLOW: Found component multiply_block_fadd_32ns_32ns_32_5_full_dsp_1.
-INFO-FLOW: Append model multiply_block_fadd_32ns_32ns_32_5_full_dsp_1
-INFO-FLOW: Found component multiply_block_fmul_32ns_32ns_32_4_max_dsp_1.
-INFO-FLOW: Append model multiply_block_fmul_32ns_32ns_32_4_max_dsp_1
-INFO-FLOW: Found component multiply_block_mA.
-INFO-FLOW: Append model multiply_block_mA
-INFO-FLOW: Found component multiply_block_mC.
-INFO-FLOW: Append model multiply_block_mC
-INFO-FLOW: Found component multiply_block_CONTROL_BUS_s_axi.
-INFO-FLOW: Append model multiply_block_CONTROL_BUS_s_axi
-INFO-FLOW: Found component multiply_block_INPUT_r_m_axi.
-INFO-FLOW: Append model multiply_block_INPUT_r_m_axi
-INFO-FLOW: Found component multiply_block_OUTPUT_r_m_axi.
-INFO-FLOW: Append model multiply_block_OUTPUT_r_m_axi
-INFO-FLOW: Append model multiply_block
+Execute       sc_get_portdomain multiply_block_32 
+INFO-FLOW: Model list for RTL component generation: multiply_block_32
+INFO-FLOW: Handling components in module [multiply_block_32] ... 
+Execute       source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block_32.compgen.tcl 
+INFO-FLOW: Found component multiply_block_32_fadd_32ns_32ns_32_5_full_dsp_1.
+INFO-FLOW: Append model multiply_block_32_fadd_32ns_32ns_32_5_full_dsp_1
+INFO-FLOW: Found component multiply_block_32_fmul_32ns_32ns_32_4_max_dsp_1.
+INFO-FLOW: Append model multiply_block_32_fmul_32ns_32ns_32_4_max_dsp_1
+INFO-FLOW: Found component multiply_block_32_mA.
+INFO-FLOW: Append model multiply_block_32_mA
+INFO-FLOW: Found component multiply_block_32_mC.
+INFO-FLOW: Append model multiply_block_32_mC
+INFO-FLOW: Found component multiply_block_32_CONTROL_BUS_s_axi.
+INFO-FLOW: Append model multiply_block_32_CONTROL_BUS_s_axi
+INFO-FLOW: Found component multiply_block_32_INPUT_r_m_axi.
+INFO-FLOW: Append model multiply_block_32_INPUT_r_m_axi
+INFO-FLOW: Found component multiply_block_32_OUTPUT_r_m_axi.
+INFO-FLOW: Append model multiply_block_32_OUTPUT_r_m_axi
+INFO-FLOW: Append model multiply_block_32
 INFO-FLOW: Generating RTL model list ...
-INFO-FLOW: All models in this session: multiply_block_fadd_32ns_32ns_32_5_full_dsp_1 multiply_block_fmul_32ns_32ns_32_4_max_dsp_1 multiply_block_mA multiply_block_mC multiply_block_CONTROL_BUS_s_axi multiply_block_INPUT_r_m_axi multiply_block_OUTPUT_r_m_axi multiply_block
-INFO-FLOW: To file: write model multiply_block_fadd_32ns_32ns_32_5_full_dsp_1
-INFO-FLOW: To file: write model multiply_block_fmul_32ns_32ns_32_4_max_dsp_1
-INFO-FLOW: To file: write model multiply_block_mA
-INFO-FLOW: To file: write model multiply_block_mC
-INFO-FLOW: To file: write model multiply_block_CONTROL_BUS_s_axi
-INFO-FLOW: To file: write model multiply_block_INPUT_r_m_axi
-INFO-FLOW: To file: write model multiply_block_OUTPUT_r_m_axi
-INFO-FLOW: To file: write model multiply_block
+INFO-FLOW: All models in this session: multiply_block_32_fadd_32ns_32ns_32_5_full_dsp_1 multiply_block_32_fmul_32ns_32ns_32_4_max_dsp_1 multiply_block_32_mA multiply_block_32_mC multiply_block_32_CONTROL_BUS_s_axi multiply_block_32_INPUT_r_m_axi multiply_block_32_OUTPUT_r_m_axi multiply_block_32
+INFO-FLOW: To file: write model multiply_block_32_fadd_32ns_32ns_32_5_full_dsp_1
+INFO-FLOW: To file: write model multiply_block_32_fmul_32ns_32ns_32_4_max_dsp_1
+INFO-FLOW: To file: write model multiply_block_32_mA
+INFO-FLOW: To file: write model multiply_block_32_mC
+INFO-FLOW: To file: write model multiply_block_32_CONTROL_BUS_s_axi
+INFO-FLOW: To file: write model multiply_block_32_INPUT_r_m_axi
+INFO-FLOW: To file: write model multiply_block_32_OUTPUT_r_m_axi
+INFO-FLOW: To file: write model multiply_block_32
 INFO-FLOW: Finished generating RTL model list.
 
 
@@ -427,9 +433,8 @@ Execute       source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix
 INFO-FLOW: DBG:CMD: read_platform_lib /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/global.setting.tcl
 Execute       source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/generic/autopilot/common.gen 
 Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/generic/autopilot/APCoreGen.gen 
-Command         ap_source done; 0.12 sec.
-Command       ap_source done; 0.51 sec.
 Execute       source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/generic/autopilot/op.gen 
+Command       ap_source done; 0.14 sec.
 Execute       source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/generic/autopilot/op_simcore.gen 
 Execute       source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/generic/autopilot/interface.gen 
 Execute       source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/global.setting.tcl 
@@ -448,8 +453,8 @@ Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/tec
 Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
 Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
 Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
-Command         ap_source done; 0.16 sec.
-Command       ap_source done; 0.16 sec.
+Command         ap_source done; 0.15 sec.
+Command       ap_source done; 0.15 sec.
 Execute       source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
 Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
 INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
@@ -459,15 +464,15 @@ Execute       ap_part_info -name xc7z010i-clg225-1L -data names -quiet
 Execute       ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
 Execute       source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/global.setting.tcl 
 Execute       source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/global.setting.tcl 
-Execute       source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block.compgen.tcl 
+Execute       source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block_32.compgen.tcl 
 Execute         ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
 Execute         ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
 Execute         ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
 Execute         ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
-INFO: [RTMG 210-278] Implementing memory 'multiply_block_mA_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'multiply_block_32_mA_ram (RAM)' using block RAMs.
 Execute         ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
 Execute         ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
-INFO: [RTMG 210-278] Implementing memory 'multiply_block_mC_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'multiply_block_32_mC_ram (RAM)' using block RAMs.
 Execute         ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
 Execute         ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
 Execute         source ./CONTROL_BUS.slave.tcl 
@@ -476,7 +481,7 @@ Execute         ap_part_info -name xc7z010i-clg225-1L -data names -quiet
 Execute         ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
 Execute         ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
 Execute         ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
-Command       ap_source done; 0.33 sec.
+Command       ap_source done; 0.3 sec.
 INFO-FLOW: DBG:CMD:     auto_generate -export -impltomg_flag -rtl both -tool Vivado -pcore_version 1.00.a -phase csynth_design -d /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1
 Execute       source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/global.setting.tcl 
 INFO-FLOW: DBG:CMD: read_platform_lib /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/global.setting.tcl
@@ -499,30 +504,30 @@ Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/tec
 Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
 Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
 Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
-Command           ap_source done; 0.12 sec.
+Command           ap_source done; 0.15 sec.
 Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
 Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
-Command         ap_source done; 0.18 sec.
-Command       ap_source done; 0.18 sec.
+Command         ap_source done; 0.24 sec.
+Command       ap_source done; 0.24 sec.
 Execute       source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
 Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
-INFO-FLOW: DBG:CMD:       initCTypeInfo top_module=multiply_block xml_exists=0
-Execute       source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block.rtl_wrap.cfg.tcl 
-Execute       source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block.rtl_wrap.cfg.tcl 
-Execute       source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block.rtl_wrap.cfg.tcl 
-Execute       source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block.tbgen.tcl 
-Execute       source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       initCTypeInfo top_module=multiply_block_32 xml_exists=0
+Execute       source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block_32.rtl_wrap.cfg.tcl 
+Execute       source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block_32.rtl_wrap.cfg.tcl 
+Execute       source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block_32.rtl_wrap.cfg.tcl 
+Execute       source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block_32.tbgen.tcl 
+Execute       source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block_32.tbgen.tcl 
 INFO-FLOW: DBG:CMD:       export_impl_rtl
 INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.verilog
 Execute       source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/global.setting.tcl 
-Execute       source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block.compgen.tcl 
+Execute       source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block_32.compgen.tcl 
 Execute         ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
 Execute         ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
 Execute         ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
 Execute         ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
 INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=1 expOnly=1 dstVlogDir=impl/.pcores/verilog
 Execute       source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/global.setting.tcl 
-Execute       source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block.compgen.tcl 
+Execute       source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block_32.compgen.tcl 
 Execute         ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
 Execute         ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
 Execute         ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
@@ -539,7 +544,7 @@ Execute       ap_part_info -name xc7z010i-clg225-1L -data names -quiet
 Execute       ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
 INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.pcores/verilog_sim
 Execute       source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/global.setting.tcl 
-Execute       source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block.compgen.tcl 
+Execute       source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block_32.compgen.tcl 
 Execute       ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
 Execute       ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
 Execute       ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
@@ -547,8 +552,8 @@ Execute       ap_part_info -name xc7z010i-clg225-1L -data info -quiet
 Execute       source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/global.setting.tcl 
 Execute       ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
 Execute       ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
-Execute       source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block.constraint.tcl 
-Execute       source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block.tbgen.tcl 
+Execute       source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block_32.constraint.tcl 
+Execute       source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block_32.tbgen.tcl 
 INFO-FLOW: DBG:CMD:       hasPcoreIpAdapter=false #gSsdmPorts=0
 INFO-FLOW: DBG:CMD: Skipping loadAnalyze_DB, #g_database=5
 INFO-FLOW: DBG:CMD:       generate_json is_phase_csynth=1 g_has_adaptors=false generate_bd_files=0 #modelList=8 #gSsdmPorts=0
@@ -556,27 +561,27 @@ Execute       source /mnt/side_windows/Vivado_linux/Vivado/2019.1/tps/tcl/tcllib
 Execute       source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/global.setting.tcl 
 Execute       source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/global.setting.tcl 
 Execute       get_config_export -xo 
-Execute       source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block.tbgen.tcl 
-Execute       source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block.compgen.dataonly.tcl 
-Execute       source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block.compgen.dataonly.tcl 
-Execute       source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block.tbgen.tcl 
-Execute       source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block.tbgen.tcl 
+Execute       source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block_32.tbgen.tcl 
+Execute       source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block_32.compgen.dataonly.tcl 
+Execute       source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block_32.compgen.dataonly.tcl 
+Execute       source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block_32.tbgen.tcl 
+Execute       source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block_32.tbgen.tcl 
 Execute       source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/global.setting.tcl 
 Execute       get_config_sdx -target 
-Execute       source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block.rtl_wrap.cfg.tcl 
-Execute       source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block.compgen.dataonly.tcl 
+Execute       source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block_32.rtl_wrap.cfg.tcl 
+Execute       source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block_32.compgen.dataonly.tcl 
 Execute       source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/global.setting.tcl 
 Execute       ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
 Execute       ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
-Execute       source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block.constraint.tcl 
-Execute       sc_get_clocks multiply_block 
+Execute       source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block_32.constraint.tcl 
+Execute       sc_get_clocks multiply_block_32 
 Execute       ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
 Execute       ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
 Execute       source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/global.setting.tcl 
 Execute       get_config_debug -directory 
-Execute       source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/impl/misc/multiply_block_ap_fadd_3_full_dsp_32_ip.tcl 
-Execute       source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/impl/misc/multiply_block_ap_fmul_2_max_dsp_32_ip.tcl 
-Execute       source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block.tbgen.tcl 
+Execute       source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/impl/misc/multiply_block_32_ap_fadd_3_full_dsp_32_ip.tcl 
+Execute       source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/impl/misc/multiply_block_32_ap_fmul_2_max_dsp_32_ip.tcl 
+Execute       source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block_32.tbgen.tcl 
 Execute       get_config_sdx -target 
 Execute       get_config_sdx -profile 
 Execute       get_config_rtl -kernel_profile 
@@ -584,22 +589,78 @@ Execute       get_config_rtl -stall_sig_gen
 Execute       get_config_rtl -profile 
 INFO-FLOW: DBG:CMD: add_json_sdx_info kernel file does not exist, skipping opencl info: /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/kernel.internal.xml
 INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
-INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:25 ; elapsed = 00:00:38 . Memory (MB): peak = 900.230 ; gain = 192.000 ; free physical = 1013 ; free virtual = 7762
-INFO: [VHDL 208-304] Generating VHDL RTL for multiply_block.
-INFO: [VLOG 209-307] Generating Verilog RTL for multiply_block.
-Command     autosyn done; 14.22 sec.
-Command   csynth_design done; 31.87 sec.
-Command ap_source done; 35.29 sec.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:22 ; elapsed = 00:00:41 . Memory (MB): peak = 900.230 ; gain = 192.000 ; free physical = 142 ; free virtual = 6130
+INFO: [VHDL 208-304] Generating VHDL RTL for multiply_block_32.
+INFO: [VLOG 209-307] Generating Verilog RTL for multiply_block_32.
+Command     autosyn done; 14.58 sec.
+Command   csynth_design done; 34.04 sec.
+Command ap_source done; 37.73 sec.
 Execute cleanup_all 
-INFO-FLOW: Workspace /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1 opened at Tue Feb 25 19:05:21 CET 2020
+INFO-FLOW: Workspace /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1 opened at Tue Feb 25 21:02:20 CET 2020
 Execute     config_clock -quiet -name default -period 10 -default=false 
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 WARNING: [HLS 200-40] Cannot find library '/mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/Zynq-7000/Zynq-7000.lib'.
 WARNING: [HLS 200-40] Cannot find library 'xilinx/Zynq-7000/Zynq-7000'.
-Execute     set_part xc7z010iclg225-1L 
-Execute       ap_part_info -name xc7z010iclg225-1L -data single -quiet 
-Command       ap_part_info done; 0.9 sec.
-Execute       ap_part_info -name xc7z010iclg225-1L -data info 
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/zynq/zynq 
+Execute       source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx.lib 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/plb46.lib 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/fsl.lib 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/axi4.lib 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/maxi.lib 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/saxilite.lib 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/dsp48.lib 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/xfft.lib 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/xfir.lib 
+Execute       source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Execute       source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute       source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/zynq/zynq.gen 
+Execute       source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
+Command         ap_source done; 0.16 sec.
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.23 sec.
+Command     ap_source done; 0.23 sec.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6 
+Execute       source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.lib 
+Execute       source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     set_part xc7z010i-clg225-1L 
+Execute       ap_part_info -name xc7z010i-clg225-1L -data single -quiet 
+Command       ap_part_info done; 1.3 sec.
+Execute       ap_part_info -name xc7z010i-clg225-1L -data info 
 Execute       add_library xilinx/zynq/zynq:xc7z010i:-clg225:-1L 
 Execute         get_default_platform 
 Execute         license_isbetapart xc7z010i 
@@ -643,11 +704,10 @@ Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/t
 Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
 Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
 Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
-Command             ap_source done; 0.16 sec.
 Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
 Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
-Command           ap_source done; 0.23 sec.
-Command         ap_source done; 0.23 sec.
+Command           ap_source done; 0.14 sec.
+Command         ap_source done; 0.14 sec.
 Execute         ap_part_info -data single -name xc7z010i-clg225-1L 
 Execute         ap_part_info -name xc7z010i-clg225-1L -data resources 
 Execute         ap_part_info -name xc7z010i-clg225-1L -data info 
@@ -655,7 +715,7 @@ Execute         ap_part_info -name xc7z010i-clg225-1L -data info
 Execute         config_chip_info -quiet -resource {SLICE 4400} {LUT 17600} {FF 35200} {DSP48E 80} {BRAM 120} {URAM 0} 
 Execute         ap_part_info -name xc7z010i-clg225-1L -data info 
 Execute         config_chip_info -quiet -speed slow 
-Command       add_library done; 0.34 sec.
+Command       add_library done; 0.24 sec.
 Execute       add_library xilinx/zynq/zynq_fpv6 
 Execute         get_default_platform 
 Execute         open_platform DefaultPlatform 
@@ -673,15 +733,17 @@ Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/tec
 INFO: [HLS 200-10] Setting target device to 'xc7z010i-clg225-1L'
 Execute       ap_part_info -name xc7z010i-clg225-1L -data info 
 Execute       get_default_platform 
-Command     set_part done; 1.41 sec.
-Execute     ap_part_info -data single -name xc7z010iclg225-1L 
-Execute     ap_part_info -name xc7z010iclg225-1L -data resources 
-Execute     ap_part_info -name xc7z010iclg225-1L -data info 
-Execute     ap_part_info -name xc7z010iclg225-1L -data info 
+Command     set_part done; 1.65 sec.
+Execute     ap_part_info -data single -name xc7z010i-clg225-1L 
+Execute     ap_part_info -name xc7z010i-clg225-1L -data resources 
+Execute     ap_part_info -name xc7z010i-clg225-1L -data info 
+Execute     ap_part_info -name xc7z010i-clg225-1L -data info 
 Execute     config_chip_info -quiet -resource {SLICE 4400} {LUT 17600} {FF 35200} {DSP48E 80} {BRAM 120} {URAM 0} 
-Execute     ap_part_info -name xc7z010iclg225-1L -data info 
+Execute     ap_part_info -name xc7z010i-clg225-1L -data info 
 Execute     config_chip_info -quiet -speed slow 
-Command   open_solution done; 1.44 sec.
+Execute     config_export -format=ip_catalog 
+Execute     config_export -rtl=vhdl 
+Command   open_solution done; 1.99 sec.
 Execute   export_design -flow syn -rtl vhdl -format ip_catalog 
 Execute     get_config_export -acc 
 Execute     get_config_export -clock_margin 
@@ -735,8 +797,8 @@ Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/techn
 Command         ap_source done; 0.12 sec.
 Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
 Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
-Command       ap_source done; 0.19 sec.
-Command     ap_source done; 0.19 sec.
+Command       ap_source done; 0.18 sec.
+Command     ap_source done; 0.18 sec.
 Execute     source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
 Execute       source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
 INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
@@ -768,30 +830,30 @@ Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/techn
 Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
 Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
 Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
-Command         ap_source done; 0.17 sec.
+Command         ap_source done; 0.11 sec.
 Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
 Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
-Command       ap_source done; 0.24 sec.
-Command     ap_source done; 0.24 sec.
+Command       ap_source done; 0.17 sec.
+Command     ap_source done; 0.17 sec.
 Execute     source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
 Execute       source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
-INFO-FLOW: DBG:CMD:       initCTypeInfo top_module=multiply_block xml_exists=1
-Execute     source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block.rtl_wrap.cfg.tcl 
-Execute     source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block.rtl_wrap.cfg.tcl 
-Execute     source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block.rtl_wrap.cfg.tcl 
-Execute     source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block.tbgen.tcl 
-Execute     source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       initCTypeInfo top_module=multiply_block_32 xml_exists=1
+Execute     source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block_32.rtl_wrap.cfg.tcl 
+Execute     source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block_32.rtl_wrap.cfg.tcl 
+Execute     source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block_32.rtl_wrap.cfg.tcl 
+Execute     source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block_32.tbgen.tcl 
+Execute     source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block_32.tbgen.tcl 
 INFO-FLOW: DBG:CMD:       export_impl_rtl
 INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.verilog
 Execute     source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/global.setting.tcl 
-Execute     source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block.compgen.tcl 
+Execute     source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block_32.compgen.tcl 
 Execute       ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
 Execute       ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
 Execute       ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
 Execute       ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
 INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=1 expOnly=1 dstVlogDir=impl/.pcores/verilog
 Execute     source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/global.setting.tcl 
-Execute     source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block.compgen.tcl 
+Execute     source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block_32.compgen.tcl 
 Execute       ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
 Execute       ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
 Execute       ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
@@ -808,7 +870,7 @@ Execute     ap_part_info -name xc7z010i-clg225-1L -data names -quiet
 Execute     ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
 INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.pcores/verilog_sim
 Execute     source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/global.setting.tcl 
-Execute     source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block.compgen.tcl 
+Execute     source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block_32.compgen.tcl 
 Execute     ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
 Execute     ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
 Execute     ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
@@ -816,8 +878,8 @@ Execute     ap_part_info -name xc7z010i-clg225-1L -data info -quiet
 Execute     source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/global.setting.tcl 
 Execute     ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
 Execute     ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
-Execute     source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block.constraint.tcl 
-Execute     source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block.tbgen.tcl 
+Execute     source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block_32.constraint.tcl 
+Execute     source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block_32.tbgen.tcl 
 INFO-FLOW: DBG:CMD:       hasPcoreIpAdapter=false #gSsdmPorts=0
 INFO-FLOW: DBG:CMD:       copying IP vlog from /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/impl/verilog
 INFO-FLOW: DBG:CMD:       copying IP vhdl from /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/impl/vhdl
@@ -827,10 +889,10 @@ Execute     ap_part_info -name xc7z010i-clg225-1L -data names -quiet
 Execute     ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
 Execute     ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
 Execute     ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
-Execute     source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block.compgen.dataonly.tcl 
-Execute     source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block.compgen.dataonly.tcl 
-Execute     source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block.tbgen.tcl 
-Execute     source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block.tbgen.tcl 
+Execute     source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block_32.compgen.dataonly.tcl 
+Execute     source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block_32.compgen.dataonly.tcl 
+Execute     source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block_32.tbgen.tcl 
+Execute     source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block_32.tbgen.tcl 
 Execute     source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/global.setting.tcl 
 Execute     get_config_sdx -target 
 Execute     get_config_debug -directory 
@@ -838,20 +900,20 @@ INFO-FLOW: DBG:CMD:       generate_ip_auxiliary
 Execute     ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
 Execute     ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
 Execute     source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/global.setting.tcl 
-INFO-FLOW: DBG:CMD:       prepArgInfo -> loadAnalyze_DB top_module=multiply_block
-Execute     source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block.rtl_wrap.cfg.tcl 
-Execute     source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block.rtl_wrap.cfg.tcl 
-Execute     source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block.rtl_wrap.cfg.tcl 
-Execute     source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block.tbgen.tcl 
-Execute     source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block.tbgen.tcl 
-Execute     source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       prepArgInfo -> loadAnalyze_DB top_module=multiply_block_32
+Execute     source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block_32.rtl_wrap.cfg.tcl 
+Execute     source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block_32.rtl_wrap.cfg.tcl 
+Execute     source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block_32.rtl_wrap.cfg.tcl 
+Execute     source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block_32.tbgen.tcl 
+Execute     source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block_32.tbgen.tcl 
+Execute     source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block_32.tbgen.tcl 
 INFO-FLOW: DBG:CMD:       generate_top_info
-INFO-FLOW: DBG:CMD:       prepArgInfo -> loadAnalyze_DB top_module=multiply_block
-Execute     source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block.rtl_wrap.cfg.tcl 
-Execute     source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block.rtl_wrap.cfg.tcl 
-Execute     source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block.rtl_wrap.cfg.tcl 
-Execute     source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block.tbgen.tcl 
-Execute     source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       prepArgInfo -> loadAnalyze_DB top_module=multiply_block_32
+Execute     source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block_32.rtl_wrap.cfg.tcl 
+Execute     source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block_32.rtl_wrap.cfg.tcl 
+Execute     source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block_32.rtl_wrap.cfg.tcl 
+Execute     source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block_32.tbgen.tcl 
+Execute     source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block_32.tbgen.tcl 
 Execute     ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
 Execute     ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
 Execute     source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/global.setting.tcl 
@@ -859,9 +921,9 @@ Execute     ap_part_info -name xc7z010i-clg225-1L -data names -quiet
 Execute     ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
 Execute     ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
 Execute     ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
-Execute     source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block.tbgen.tcl 
+Execute     source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block_32.tbgen.tcl 
 Execute     source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/global.setting.tcl 
-Execute     source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block.constraint.tcl 
+Execute     source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block_32.constraint.tcl 
 INFO-FLOW: DBG:CMD:       generate_ipi_example_script
 Execute     ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
 Execute     ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
@@ -874,8 +936,8 @@ Execute     source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_3
 INFO-FLOW: DBG:CMD:       generate_imp_constraints
 Execute     ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
 Execute     ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
-Execute     source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block.constraint.tcl 
-Execute     source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block.tbgen.tcl 
+Execute     source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block_32.constraint.tcl 
+Execute     source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block_32.tbgen.tcl 
 INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
 Execute     ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
 Execute     ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
@@ -899,11 +961,11 @@ Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/techn
 Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
 Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
 Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
-Command         ap_source done; 0.15 sec.
+Command         ap_source done; 0.13 sec.
 Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
 Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
-Command       ap_source done; 0.24 sec.
-Command     ap_source done; 0.24 sec.
+Command       ap_source done; 0.18 sec.
+Command     ap_source done; 0.18 sec.
 Execute     source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
 Execute       source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
 Execute     ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
@@ -923,19 +985,25 @@ Execute       source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technol
 Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/plb46.gen 
 Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/fsl.gen 
 Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/axi4.gen 
+Command         ap_source done; 0.11 sec.
 Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/nativeAXI4.gen 
 Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/saxilite.gen 
+Command           ap_source done; 0.14 sec.
 Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/maxi.gen 
+Command           ap_source done; 0.12 sec.
+Command         ap_source done; 0.38 sec.
 Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Command         ap_source done; 0.13 sec.
 Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Command         ap_source done; 0.14 sec.
 Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
 Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
 Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
-Command         ap_source done; 0.14 sec.
+Command         ap_source done; 0.16 sec.
 Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
 Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
-Command       ap_source done; 0.49 sec.
-Command     ap_source done; 0.49 sec.
+Command       ap_source done; 1.55 sec.
+Command     ap_source done; 1.55 sec.
 Execute     source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
 Execute       source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
 Execute     ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
@@ -966,16 +1034,16 @@ Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/techn
 Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
 Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
 Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
-Command         ap_source done; 0.24 sec.
+Command         ap_source done; 0.12 sec.
 Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
 Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
-Command       ap_source done; 0.36 sec.
-Command     ap_source done; 0.36 sec.
+Command       ap_source done; 0.16 sec.
+Command     ap_source done; 0.16 sec.
 Execute     source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
 Execute       source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
 INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.verilog
 Execute     source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/global.setting.tcl 
-Execute     source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block.compgen.tcl 
+Execute     source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block_32.compgen.tcl 
 Execute       ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
 Execute       ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
 Execute       ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
@@ -987,8 +1055,8 @@ Execute     source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_3
 INFO-FLOW: DBG:CMD:       generate_imp_constraints
 Execute     ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
 Execute     ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
-Execute     source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block.constraint.tcl 
-Execute     source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block.tbgen.tcl 
+Execute     source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block_32.constraint.tcl 
+Execute     source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/.autopilot/db/multiply_block_32.tbgen.tcl 
 INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
 Execute     ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
 Execute     ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
@@ -1012,11 +1080,11 @@ Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/techn
 Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
 Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
 Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
-Command         ap_source done; 0.18 sec.
+Command         ap_source done; 0.12 sec.
 Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
 Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
-Command       ap_source done; 0.25 sec.
-Command     ap_source done; 0.25 sec.
+Command       ap_source done; 0.18 sec.
+Command     ap_source done; 0.19 sec.
 Execute     source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
 Execute       source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
 Execute     ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
@@ -1032,7 +1100,7 @@ Execute     source /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_3
 Execute     get_config_export -vivado_synth_strategy 
 Execute     get_config_export -vivado_synth_run_properties 
 INFO-FLOW: DBG:CMD: auto_impl: vhdl syn exec /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/impl/vhdl/implsyn.sh
-Command   export_design done; 730.91 sec.
-Command ap_source done; 732.37 sec.
+Command   export_design done; 1151.15 sec.
+Command ap_source done; 1153.17 sec.
 Execute cleanup_all 
-Command cleanup_all done; 0.22 sec.
+Command cleanup_all done; 0.2 sec.

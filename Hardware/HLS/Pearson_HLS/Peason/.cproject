@@ -157,6 +157,36 @@
                         					
                     </folderInfo>
                     					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1278652258.1568634893" name="main.c" rcbsApplicability="disable" resourcePath="testbench/main.c" toolsToInvoke="cdt.managedbuild.tool.gnu.c.compiler.exe.debug.1844719361.898047903">
+                        						
+                        <tool id="cdt.managedbuild.tool.gnu.c.compiler.exe.debug.1844719361.898047903" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.exe.debug.1844719361">
+                            							
+                            <option id="gnu.c.compiler.option.preprocessor.def.symbols.176318338" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols"/>
+                            							
+                            <option id="gnu.c.compiler.option.include.paths.1677076208" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+                                								
+                                <listOptionValue builtIn="false" value="/mnt/side_windows/Vivado_linux/Vivado/2019.1/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="/home/anis/A2/Hardware/HLS/Pearson_HLS"/>
+                                								
+                                <listOptionValue builtIn="false" value="/mnt/side_windows/Vivado_linux/Vivado/2019.1/include/ap_sysc"/>
+                                								
+                                <listOptionValue builtIn="false" value="/mnt/side_windows/Vivado_linux/Vivado/2019.1/include/etc"/>
+                                								
+                                <listOptionValue builtIn="false" value="/mnt/side_windows/Vivado_linux/Vivado/2019.1/lnx64/tools/auto_cc/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="/mnt/side_windows/Vivado_linux/Vivado/2019.1/lnx64/tools/systemc/include"/>
+                                							
+                            </option>
+                            							
+                            <option id="gnu.c.compiler.option.misc.other.301444690" name="Other flags" superClass="gnu.c.compiler.option.misc.other" value="-Wno-unknown-pragmas -c -fmessage-length=0" valueType="string"/>
+                            							
+                            <inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.1311515092" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+                            						
+                        </tool>
+                        					
+                    </fileInfo>
+                    					
                     <sourceEntries>
                         						
                         <entry excluding="solution1|*.c*|*.C*" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
@@ -304,6 +334,36 @@
                         </toolChain>
                         					
                     </folderInfo>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.313768117.265035692" name="main.c" rcbsApplicability="disable" resourcePath="testbench/main.c" toolsToInvoke="cdt.managedbuild.tool.gnu.c.compiler.exe.release.1777229447.1354632580">
+                        						
+                        <tool id="cdt.managedbuild.tool.gnu.c.compiler.exe.release.1777229447.1354632580" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.exe.release.1777229447">
+                            							
+                            <option id="gnu.c.compiler.option.preprocessor.def.symbols.295995782" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols"/>
+                            							
+                            <option id="gnu.c.compiler.option.include.paths.274712976" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+                                								
+                                <listOptionValue builtIn="false" value="/mnt/side_windows/Vivado_linux/Vivado/2019.1/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="/home/anis/A2/Hardware/HLS/Pearson_HLS"/>
+                                								
+                                <listOptionValue builtIn="false" value="/mnt/side_windows/Vivado_linux/Vivado/2019.1/include/ap_sysc"/>
+                                								
+                                <listOptionValue builtIn="false" value="/mnt/side_windows/Vivado_linux/Vivado/2019.1/include/etc"/>
+                                								
+                                <listOptionValue builtIn="false" value="/mnt/side_windows/Vivado_linux/Vivado/2019.1/lnx64/tools/auto_cc/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="/mnt/side_windows/Vivado_linux/Vivado/2019.1/lnx64/tools/systemc/include"/>
+                                							
+                            </option>
+                            							
+                            <option id="gnu.c.compiler.option.misc.other.1810811956" name="Other flags" superClass="gnu.c.compiler.option.misc.other" value="-Wno-unknown-pragmas -c -fmessage-length=0" valueType="string"/>
+                            							
+                            <inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.432532401" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+                            						
+                        </tool>
+                        					
+                    </fileInfo>
                     					
                     <sourceEntries>
                         						

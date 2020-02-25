@@ -83,10 +83,11 @@ u32 XPearson_IsIdle(XPearson *InstancePtr);
 u32 XPearson_IsReady(XPearson *InstancePtr);
 void XPearson_EnableAutoRestart(XPearson *InstancePtr);
 void XPearson_DisableAutoRestart(XPearson *InstancePtr);
-u32 XPearson_Get_return(XPearson *InstancePtr);
 
 void XPearson_Set_mat(XPearson *InstancePtr, u32 Data);
 u32 XPearson_Get_mat(XPearson *InstancePtr);
+void XPearson_Set_result(XPearson *InstancePtr, u32 Data);
+u32 XPearson_Get_result(XPearson *InstancePtr);
 
 void XPearson_InterruptGlobalEnable(XPearson *InstancePtr);
 void XPearson_InterruptGlobalDisable(XPearson *InstancePtr);

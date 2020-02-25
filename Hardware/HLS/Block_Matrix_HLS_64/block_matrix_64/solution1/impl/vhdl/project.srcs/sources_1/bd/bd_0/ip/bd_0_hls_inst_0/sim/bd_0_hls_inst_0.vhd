@@ -46,8 +46,8 @@
 -- 
 -- DO NOT MODIFY THIS FILE.
 
--- IP VLNV: xilinx.com:hls:multiply_block:1.0
--- IP Revision: 2002251925
+-- IP VLNV: xilinx.com:hls:multiply_block_64:1.0
+-- IP Revision: 2002252132
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
@@ -151,7 +151,7 @@ END bd_0_hls_inst_0;
 ARCHITECTURE bd_0_hls_inst_0_arch OF bd_0_hls_inst_0 IS
   ATTRIBUTE DowngradeIPIdentifiedWarnings : STRING;
   ATTRIBUTE DowngradeIPIdentifiedWarnings OF bd_0_hls_inst_0_arch: ARCHITECTURE IS "yes";
-  COMPONENT multiply_block IS
+  COMPONENT multiply_block_64 IS
     GENERIC (
       C_S_AXI_CONTROL_BUS_ADDR_WIDTH : INTEGER;
       C_S_AXI_CONTROL_BUS_DATA_WIDTH : INTEGER;
@@ -290,7 +290,7 @@ ARCHITECTURE bd_0_hls_inst_0_arch OF bd_0_hls_inst_0 IS
       m_axi_OUTPUT_r_RVALID : IN STD_LOGIC;
       m_axi_OUTPUT_r_RREADY : OUT STD_LOGIC
     );
-  END COMPONENT multiply_block;
+  END COMPONENT multiply_block_64;
   ATTRIBUTE IP_DEFINITION_SOURCE : STRING;
   ATTRIBUTE IP_DEFINITION_SOURCE OF bd_0_hls_inst_0_arch: ARCHITECTURE IS "HLS";
   ATTRIBUTE X_INTERFACE_INFO : STRING;
@@ -395,7 +395,7 @@ ARCHITECTURE bd_0_hls_inst_0_arch OF bd_0_hls_inst_0 IS
 "THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0";
   ATTRIBUTE X_INTERFACE_INFO OF s_axi_CONTROL_BUS_AWADDR: SIGNAL IS "xilinx.com:interface:aximm:1.0 s_axi_CONTROL_BUS AWADDR";
 BEGIN
-  U0 : multiply_block
+  U0 : multiply_block_64
     GENERIC MAP (
       C_S_AXI_CONTROL_BUS_ADDR_WIDTH => 6,
       C_S_AXI_CONTROL_BUS_DATA_WIDTH => 32,

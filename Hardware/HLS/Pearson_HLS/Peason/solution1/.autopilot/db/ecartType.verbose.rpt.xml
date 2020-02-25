@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'ecartType'" level="0">
-<item name = "Date">Mon Feb 17 15:38:31 2020
+<item name = "Date">Tue Feb 25 22:04:45 2020
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">Peason</item>
@@ -222,44 +222,44 @@
 <column name="reg_433">32, 0, 32, 0</column>
 <column name="somme_19_reg_1200">32, 0, 32, 0</column>
 <column name="somme_2_reg_1165">32, 0, 32, 0</column>
-<column name="tmp_5_16_reg_1154">32, 0, 32, 0</column>
-<column name="tmp_6_10_reg_1144">32, 0, 32, 0</column>
-<column name="tmp_6_11_reg_1149">32, 0, 32, 0</column>
-<column name="tmp_6_12_reg_1160">32, 0, 32, 0</column>
-<column name="tmp_6_13_reg_1170">32, 0, 32, 0</column>
-<column name="tmp_6_14_reg_1175">32, 0, 32, 0</column>
-<column name="tmp_6_15_reg_1180">32, 0, 32, 0</column>
-<column name="tmp_6_16_reg_1185">32, 0, 32, 0</column>
-<column name="tmp_6_17_reg_1190">32, 0, 32, 0</column>
-<column name="tmp_6_18_reg_1195">32, 0, 32, 0</column>
-<column name="tmp_6_1_reg_1044">32, 0, 32, 0</column>
-<column name="tmp_6_2_reg_1054">32, 0, 32, 0</column>
-<column name="tmp_6_3_reg_1064">32, 0, 32, 0</column>
-<column name="tmp_6_4_reg_1074">32, 0, 32, 0</column>
-<column name="tmp_6_5_reg_1084">32, 0, 32, 0</column>
-<column name="tmp_6_5_reg_1084_pp0_iter2_reg">32, 0, 32, 0</column>
-<column name="tmp_6_6_reg_1094">32, 0, 32, 0</column>
-<column name="tmp_6_6_reg_1094_pp0_iter2_reg">32, 0, 32, 0</column>
-<column name="tmp_6_7_reg_1104">32, 0, 32, 0</column>
-<column name="tmp_6_7_reg_1104_pp0_iter2_reg">32, 0, 32, 0</column>
-<column name="tmp_6_8_reg_1114">32, 0, 32, 0</column>
-<column name="tmp_6_8_reg_1114_pp0_iter2_reg">32, 0, 32, 0</column>
-<column name="tmp_6_9_reg_1129">32, 0, 32, 0</column>
-<column name="tmp_6_reg_1034">32, 0, 32, 0</column>
-<column name="tmp_6_s_reg_1139">32, 0, 32, 0</column>
+<column name="tmp_4_16_reg_1154">32, 0, 32, 0</column>
+<column name="tmp_5_10_reg_1144">32, 0, 32, 0</column>
+<column name="tmp_5_11_reg_1149">32, 0, 32, 0</column>
+<column name="tmp_5_12_reg_1160">32, 0, 32, 0</column>
+<column name="tmp_5_13_reg_1170">32, 0, 32, 0</column>
+<column name="tmp_5_14_reg_1175">32, 0, 32, 0</column>
+<column name="tmp_5_15_reg_1180">32, 0, 32, 0</column>
+<column name="tmp_5_16_reg_1185">32, 0, 32, 0</column>
+<column name="tmp_5_17_reg_1190">32, 0, 32, 0</column>
+<column name="tmp_5_18_reg_1195">32, 0, 32, 0</column>
+<column name="tmp_5_1_reg_1044">32, 0, 32, 0</column>
+<column name="tmp_5_2_reg_1054">32, 0, 32, 0</column>
+<column name="tmp_5_3_reg_1064">32, 0, 32, 0</column>
+<column name="tmp_5_4_reg_1074">32, 0, 32, 0</column>
+<column name="tmp_5_5_reg_1084">32, 0, 32, 0</column>
+<column name="tmp_5_5_reg_1084_pp0_iter2_reg">32, 0, 32, 0</column>
+<column name="tmp_5_6_reg_1094">32, 0, 32, 0</column>
+<column name="tmp_5_6_reg_1094_pp0_iter2_reg">32, 0, 32, 0</column>
+<column name="tmp_5_7_reg_1104">32, 0, 32, 0</column>
+<column name="tmp_5_7_reg_1104_pp0_iter2_reg">32, 0, 32, 0</column>
+<column name="tmp_5_8_reg_1114">32, 0, 32, 0</column>
+<column name="tmp_5_8_reg_1114_pp0_iter2_reg">32, 0, 32, 0</column>
+<column name="tmp_5_9_reg_1129">32, 0, 32, 0</column>
+<column name="tmp_5_reg_1034">32, 0, 32, 0</column>
+<column name="tmp_5_s_reg_1139">32, 0, 32, 0</column>
 <column name="tmp_reg_1205">32, 0, 32, 0</column>
 <column name="zext_ln71_1_reg_841">30, 0, 64, 34</column>
-<column name="tmp_6_10_reg_1144">64, 32, 32, 0</column>
-<column name="tmp_6_11_reg_1149">64, 32, 32, 0</column>
-<column name="tmp_6_12_reg_1160">64, 32, 32, 0</column>
-<column name="tmp_6_13_reg_1170">64, 32, 32, 0</column>
-<column name="tmp_6_14_reg_1175">64, 32, 32, 0</column>
-<column name="tmp_6_15_reg_1180">64, 32, 32, 0</column>
-<column name="tmp_6_16_reg_1185">64, 32, 32, 0</column>
-<column name="tmp_6_17_reg_1190">64, 32, 32, 0</column>
-<column name="tmp_6_18_reg_1195">64, 32, 32, 0</column>
-<column name="tmp_6_9_reg_1129">64, 32, 32, 0</column>
-<column name="tmp_6_s_reg_1139">64, 32, 32, 0</column>
+<column name="tmp_5_10_reg_1144">64, 32, 32, 0</column>
+<column name="tmp_5_11_reg_1149">64, 32, 32, 0</column>
+<column name="tmp_5_12_reg_1160">64, 32, 32, 0</column>
+<column name="tmp_5_13_reg_1170">64, 32, 32, 0</column>
+<column name="tmp_5_14_reg_1175">64, 32, 32, 0</column>
+<column name="tmp_5_15_reg_1180">64, 32, 32, 0</column>
+<column name="tmp_5_16_reg_1185">64, 32, 32, 0</column>
+<column name="tmp_5_17_reg_1190">64, 32, 32, 0</column>
+<column name="tmp_5_18_reg_1195">64, 32, 32, 0</column>
+<column name="tmp_5_9_reg_1129">64, 32, 32, 0</column>
+<column name="tmp_5_s_reg_1139">64, 32, 32, 0</column>
 </table>
 </item>
 </section>

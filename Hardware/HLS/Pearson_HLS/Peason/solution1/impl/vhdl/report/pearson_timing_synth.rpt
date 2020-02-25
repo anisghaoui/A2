@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
-| Date         : Mon Feb 17 15:55:46 2020
+| Date         : Tue Feb 25 22:17:07 2020
 | Host         : port running 64-bit Ubuntu 18.04.4 LTS
 | Command      : report_timing_summary -file ./report/pearson_timing_synth.rpt
 | Design       : bd_0_wrapper
@@ -75,14 +75,14 @@ Table of Contents
 
 5. checking no_input_delay
 --------------------------
- There are 89 input ports with no input delay specified. (HIGH)
+ There are 93 input ports with no input delay specified. (HIGH)
 
  There are 0 input ports with no input delay but user has a false path constraint.
 
 
 6. checking no_output_delay
 ---------------------------
- There are 74 ports with no output delay specified. (HIGH)
+ There are 149 ports with no output delay specified. (HIGH)
 
  There are 0 ports with no output delay but user has a false path constraint
 
@@ -127,7 +127,7 @@ Table of Contents
 
     WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
     -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
-      1.259        0.000                      0                24642        0.213        0.000                      0                24642        4.020        0.000                       0                 12591  
+      1.106        0.000                      0                26588        0.213        0.000                      0                26588        4.020        0.000                       0                 13172  
 
 
 All user specified timing constraints are met.
@@ -150,7 +150,7 @@ ap_clk  {0.000 5.000}      10.000          100.000
 
 Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
 -----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
-ap_clk              1.259        0.000                      0                24642        0.213        0.000                      0                24642        4.020        0.000                       0                 12591  
+ap_clk              1.106        0.000                      0                26588        0.213        0.000                      0                26588        4.020        0.000                       0                 13172  
 
 
 ------------------------------------------------------------------------------------------------
@@ -181,7 +181,7 @@ Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing 
 From Clock:  ap_clk
   To Clock:  ap_clk
 
-Setup :            0  Failing Endpoints,  Worst Slack        1.259ns,  Total Violation        0.000ns
+Setup :            0  Failing Endpoints,  Worst Slack        1.106ns,  Total Violation        0.000ns
 Hold  :            0  Failing Endpoints,  Worst Slack        0.213ns,  Total Violation        0.000ns
 PW    :            0  Failing Endpoints,  Worst Slack        4.020ns,  Total Violation        0.000ns
 ---------------------------------------------------------------------------------------------------
@@ -189,15 +189,15 @@ PW    :            0  Failing Endpoints,  Worst Slack        4.020ns,  Total Vio
 
 Max Delay Paths
 --------------------------------------------------------------------------------------
-Slack (MET) :             1.259ns  (required time - arrival time)
-  Source:                 bd_0_i/hls_inst/U0/ap_CS_fsm_reg[508]/C
+Slack (MET) :             1.106ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/U0/ap_CS_fsm_reg[179]/C
                             (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
   Destination:            bd_0_i/hls_inst/U0/pearson_INPUT_r_m_axi_U/bus_read/rs_rdata/data_p1_reg[0]/CE
                             (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
   Path Group:             ap_clk
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
-  Data Path Delay:        8.488ns  (logic 1.783ns (21.006%)  route 6.705ns (78.994%))
+  Data Path Delay:        8.641ns  (logic 1.777ns (20.565%)  route 6.864ns (79.435%))
   Logic Levels:           9  (LUT4=3 LUT5=2 LUT6=4)
   Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
     Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
@@ -213,44 +213,44 @@ Slack (MET) :             1.259ns  (required time - arrival time)
   -------------------------------------------------------------------    -------------------
                          (clock ap_clk rise edge)     0.000     0.000 r  
                                                       0.000     0.000 r  ap_clk (IN)
-                         net (fo=12601, unset)        0.973     0.973    bd_0_i/hls_inst/U0/ap_clk
-                         FDRE                                         r  bd_0_i/hls_inst/U0/ap_CS_fsm_reg[508]/C
+                         net (fo=13182, unset)        0.973     0.973    bd_0_i/hls_inst/U0/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/U0/ap_CS_fsm_reg[179]/C
   -------------------------------------------------------------------    -------------------
-                         FDRE (Prop_fdre_C_Q)         0.496     1.469 r  bd_0_i/hls_inst/U0/ap_CS_fsm_reg[508]/Q
-                         net (fo=2, unplaced)         0.752     2.221    bd_0_i/hls_inst/U0/grp_ecartType_fu_96/pearson_fsqrt_32ns_32ns_32_12_1_U18/zext_ln71_1_reg_841[29]_i_30_0[22]
-                         LUT4 (Prop_lut4_I1_O)        0.295     2.516 r  bd_0_i/hls_inst/U0/grp_ecartType_fu_96/pearson_fsqrt_32ns_32ns_32_12_1_U18/zext_ln71_1_reg_841[29]_i_40/O
-                         net (fo=1, unplaced)         0.449     2.965    bd_0_i/hls_inst/U0/grp_ecartType_fu_96/pearson_fsqrt_32ns_32ns_32_12_1_U18/zext_ln71_1_reg_841[29]_i_40_n_0
-                         LUT5 (Prop_lut5_I4_O)        0.124     3.089 r  bd_0_i/hls_inst/U0/grp_ecartType_fu_96/pearson_fsqrt_32ns_32ns_32_12_1_U18/zext_ln71_1_reg_841[29]_i_9/O
-                         net (fo=1, unplaced)         1.111     4.200    bd_0_i/hls_inst/U0/grp_ecartType_fu_96/pearson_fsqrt_32ns_32ns_32_12_1_U18/zext_ln71_1_reg_841[29]_i_9_n_0
-                         LUT5 (Prop_lut5_I0_O)        0.124     4.324 r  bd_0_i/hls_inst/U0/grp_ecartType_fu_96/pearson_fsqrt_32ns_32ns_32_12_1_U18/zext_ln71_1_reg_841[29]_i_3/O
-                         net (fo=1, unplaced)         0.964     5.288    bd_0_i/hls_inst/U0/grp_ecartType_fu_96/pearson_fsqrt_32ns_32ns_32_12_1_U18/zext_ln71_1_reg_841[29]_i_3_n_0
-                         LUT6 (Prop_lut6_I0_O)        0.124     5.412 f  bd_0_i/hls_inst/U0/grp_ecartType_fu_96/pearson_fsqrt_32ns_32ns_32_12_1_U18/zext_ln71_1_reg_841[29]_i_2/O
-                         net (fo=34, unplaced)        0.522     5.934    bd_0_i/hls_inst/U0/grp_ecartType_fu_96/zext_ln71_1_reg_841[29]_i_8
-                         LUT6 (Prop_lut6_I0_O)        0.124     6.058 r  bd_0_i/hls_inst/U0/grp_ecartType_fu_96/tmp_6_9_reg_1129[31]_i_1/O
-                         net (fo=34, unplaced)        0.975     7.033    bd_0_i/hls_inst/U0/grp_ecartType_fu_96/reg_3742
-                         LUT4 (Prop_lut4_I1_O)        0.124     7.157 r  bd_0_i/hls_inst/U0/grp_ecartType_fu_96/FSM_sequential_state[1]_i_11__0/O
-                         net (fo=1, unplaced)         0.449     7.606    bd_0_i/hls_inst/U0/grp_ecartType_fu_96/FSM_sequential_state[1]_i_11__0_n_0
-                         LUT6 (Prop_lut6_I1_O)        0.124     7.730 r  bd_0_i/hls_inst/U0/grp_ecartType_fu_96/FSM_sequential_state[1]_i_5/O
-                         net (fo=1, unplaced)         0.449     8.179    bd_0_i/hls_inst/U0/grp_moyenneXY_fu_117/s_ready_t_reg_2
-                         LUT6 (Prop_lut6_I4_O)        0.124     8.303 r  bd_0_i/hls_inst/U0/grp_moyenneXY_fu_117/FSM_sequential_state[1]_i_2__0/O
-                         net (fo=9, unplaced)         0.490     8.793    bd_0_i/hls_inst/U0/pearson_INPUT_r_m_axi_U/bus_read/rs_rdata/s_ready_t_reg_1
-                         LUT4 (Prop_lut4_I0_O)        0.124     8.917 r  bd_0_i/hls_inst/U0/pearson_INPUT_r_m_axi_U/bus_read/rs_rdata/data_p1[31]_i_1/O
-                         net (fo=32, unplaced)        0.544     9.461    bd_0_i/hls_inst/U0/pearson_INPUT_r_m_axi_U/bus_read/rs_rdata/load_p1
+                         FDRE (Prop_fdre_C_Q)         0.496     1.469 r  bd_0_i/hls_inst/U0/ap_CS_fsm_reg[179]/Q
+                         net (fo=2, unplaced)         0.752     2.221    bd_0_i/hls_inst/U0/grp_moyenne_fu_111/pearson_fadd_32ns_32ns_32_5_full_dsp_1_U1/data_p2[29]_i_44_0[114]
+                         LUT4 (Prop_lut4_I1_O)        0.295     2.516 r  bd_0_i/hls_inst/U0/grp_moyenne_fu_111/pearson_fadd_32ns_32ns_32_5_full_dsp_1_U1/data_p2[29]_i_105/O
+                         net (fo=1, unplaced)         0.449     2.965    bd_0_i/hls_inst/U0/grp_moyenne_fu_111/pearson_fadd_32ns_32ns_32_5_full_dsp_1_U1/data_p2[29]_i_105_n_0
+                         LUT5 (Prop_lut5_I4_O)        0.124     3.089 r  bd_0_i/hls_inst/U0/grp_moyenne_fu_111/pearson_fadd_32ns_32ns_32_5_full_dsp_1_U1/data_p2[29]_i_54/O
+                         net (fo=1, unplaced)         1.111     4.200    bd_0_i/hls_inst/U0/grp_moyenne_fu_111/pearson_fadd_32ns_32ns_32_5_full_dsp_1_U1/data_p2[29]_i_54_n_0
+                         LUT6 (Prop_lut6_I1_O)        0.124     4.324 r  bd_0_i/hls_inst/U0/grp_moyenne_fu_111/pearson_fadd_32ns_32ns_32_5_full_dsp_1_U1/data_p2[29]_i_14/O
+                         net (fo=2, unplaced)         0.975     5.299    bd_0_i/hls_inst/U0/grp_moyenne_fu_111/pearson_fadd_32ns_32ns_32_5_full_dsp_1_U1/ap_CS_fsm_reg[189]
+                         LUT6 (Prop_lut6_I0_O)        0.124     5.423 r  bd_0_i/hls_inst/U0/grp_moyenne_fu_111/pearson_fadd_32ns_32ns_32_5_full_dsp_1_U1/ce_r_i_6__0/O
+                         net (fo=1, unplaced)         0.449     5.872    bd_0_i/hls_inst/U0/pearson_CONTROL_BUS_s_axi_U/mat_offset_read_reg_765_reg[29]_0
+                         LUT4 (Prop_lut4_I0_O)        0.118     5.990 r  bd_0_i/hls_inst/U0/pearson_CONTROL_BUS_s_axi_U/ce_r_i_2__1/O
+                         net (fo=56, unplaced)        0.534     6.524    bd_0_i/hls_inst/U0/grp_moyenne_fu_111/ap_ce12_out
+                         LUT6 (Prop_lut6_I0_O)        0.124     6.648 r  bd_0_i/hls_inst/U0/grp_moyenne_fu_111/FSM_sequential_state[1]_i_9/O
+                         net (fo=1, unplaced)         1.111     7.759    bd_0_i/hls_inst/U0/grp_moyenne_fu_111/m_axi_mat_RREADY1
+                         LUT5 (Prop_lut5_I2_O)        0.124     7.883 r  bd_0_i/hls_inst/U0/grp_moyenne_fu_111/FSM_sequential_state[1]_i_5__0/O
+                         net (fo=1, unplaced)         0.449     8.332    bd_0_i/hls_inst/U0/grp_moyenneXY_fu_121/s_ready_t_reg_2
+                         LUT6 (Prop_lut6_I5_O)        0.124     8.456 r  bd_0_i/hls_inst/U0/grp_moyenneXY_fu_121/FSM_sequential_state[1]_i_2/O
+                         net (fo=9, unplaced)         0.490     8.946    bd_0_i/hls_inst/U0/pearson_INPUT_r_m_axi_U/bus_read/rs_rdata/I_RREADY
+                         LUT4 (Prop_lut4_I1_O)        0.124     9.070 r  bd_0_i/hls_inst/U0/pearson_INPUT_r_m_axi_U/bus_read/rs_rdata/data_p1[31]_i_1/O
+                         net (fo=32, unplaced)        0.544     9.614    bd_0_i/hls_inst/U0/pearson_INPUT_r_m_axi_U/bus_read/rs_rdata/load_p1
                          FDRE                                         r  bd_0_i/hls_inst/U0/pearson_INPUT_r_m_axi_U/bus_read/rs_rdata/data_p1_reg[0]/CE
   -------------------------------------------------------------------    -------------------
 
                          (clock ap_clk rise edge)    10.000    10.000 r  
                                                       0.000    10.000 r  ap_clk (IN)
-                         net (fo=12601, unset)        0.924    10.924    bd_0_i/hls_inst/U0/pearson_INPUT_r_m_axi_U/bus_read/rs_rdata/ap_clk
+                         net (fo=13182, unset)        0.924    10.924    bd_0_i/hls_inst/U0/pearson_INPUT_r_m_axi_U/bus_read/rs_rdata/ap_clk
                          FDRE                                         r  bd_0_i/hls_inst/U0/pearson_INPUT_r_m_axi_U/bus_read/rs_rdata/data_p1_reg[0]/C
                          clock pessimism              0.000    10.924    
                          clock uncertainty           -0.035    10.889    
                          FDRE (Setup_fdre_C_CE)      -0.169    10.720    bd_0_i/hls_inst/U0/pearson_INPUT_r_m_axi_U/bus_read/rs_rdata/data_p1_reg[0]
   -------------------------------------------------------------------
                          required time                         10.720    
-                         arrival time                          -9.461    
+                         arrival time                          -9.614    
   -------------------------------------------------------------------
-                         slack                                  1.259    
+                         slack                                  1.106    
 
 
 
@@ -259,9 +259,9 @@ Slack (MET) :             1.259ns  (required time - arrival time)
 Min Delay Paths
 --------------------------------------------------------------------------------------
 Slack (MET) :             0.213ns  (arrival time - required time)
-  Source:                 bd_0_i/hls_inst/U0/grp_ecartType_fu_96/pearson_fdiv_32ns_32ns_32_16_1_U17/pearson_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/EXP/FLOW_DEC_DEL/i_pipe/opt_has_pipe.first_q_reg[0]/C
+  Source:                 bd_0_i/hls_inst/U0/grp_ecartType_fu_100/pearson_fdiv_32ns_32ns_32_16_1_U17/pearson_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/EXP/FLOW_DEC_DEL/i_pipe/opt_has_pipe.first_q_reg[0]/C
                             (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Destination:            bd_0_i/hls_inst/U0/grp_ecartType_fu_96/pearson_fdiv_32ns_32ns_32_16_1_U17/pearson_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/EXP/FLOW_DEC_DEL/i_pipe/opt_has_pipe.i_pipe[11].pipe_reg[11][0]_srl10/D
+  Destination:            bd_0_i/hls_inst/U0/grp_ecartType_fu_100/pearson_fdiv_32ns_32ns_32_16_1_U17/pearson_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/EXP/FLOW_DEC_DEL/i_pipe/opt_has_pipe.i_pipe[11].pipe_reg[11][0]_srl10/D
                             (rising edge-triggered cell SRL16E clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
   Path Group:             ap_clk
   Path Type:              Hold (Min at Fast Process Corner)
@@ -277,21 +277,21 @@ Slack (MET) :             0.213ns  (arrival time - required time)
   -------------------------------------------------------------------    -------------------
                          (clock ap_clk rise edge)     0.000     0.000 r  
                                                       0.000     0.000 r  ap_clk (IN)
-                         net (fo=12601, unset)        0.410     0.410    bd_0_i/hls_inst/U0/grp_ecartType_fu_96/pearson_fdiv_32ns_32ns_32_16_1_U17/pearson_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/EXP/FLOW_DEC_DEL/i_pipe/aclk
-                         FDRE                                         r  bd_0_i/hls_inst/U0/grp_ecartType_fu_96/pearson_fdiv_32ns_32ns_32_16_1_U17/pearson_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/EXP/FLOW_DEC_DEL/i_pipe/opt_has_pipe.first_q_reg[0]/C
+                         net (fo=13182, unset)        0.410     0.410    bd_0_i/hls_inst/U0/grp_ecartType_fu_100/pearson_fdiv_32ns_32ns_32_16_1_U17/pearson_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/EXP/FLOW_DEC_DEL/i_pipe/aclk
+                         FDRE                                         r  bd_0_i/hls_inst/U0/grp_ecartType_fu_100/pearson_fdiv_32ns_32ns_32_16_1_U17/pearson_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/EXP/FLOW_DEC_DEL/i_pipe/opt_has_pipe.first_q_reg[0]/C
   -------------------------------------------------------------------    -------------------
-                         FDRE (Prop_fdre_C_Q)         0.158     0.568 r  bd_0_i/hls_inst/U0/grp_ecartType_fu_96/pearson_fdiv_32ns_32ns_32_16_1_U17/pearson_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/EXP/FLOW_DEC_DEL/i_pipe/opt_has_pipe.first_q_reg[0]/Q
-                         net (fo=1, unplaced)         0.141     0.709    bd_0_i/hls_inst/U0/grp_ecartType_fu_96/pearson_fdiv_32ns_32ns_32_16_1_U17/pearson_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/EXP/FLOW_DEC_DEL/i_pipe/first_q
-                         SRL16E                                       r  bd_0_i/hls_inst/U0/grp_ecartType_fu_96/pearson_fdiv_32ns_32ns_32_16_1_U17/pearson_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/EXP/FLOW_DEC_DEL/i_pipe/opt_has_pipe.i_pipe[11].pipe_reg[11][0]_srl10/D
+                         FDRE (Prop_fdre_C_Q)         0.158     0.568 r  bd_0_i/hls_inst/U0/grp_ecartType_fu_100/pearson_fdiv_32ns_32ns_32_16_1_U17/pearson_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/EXP/FLOW_DEC_DEL/i_pipe/opt_has_pipe.first_q_reg[0]/Q
+                         net (fo=1, unplaced)         0.141     0.709    bd_0_i/hls_inst/U0/grp_ecartType_fu_100/pearson_fdiv_32ns_32ns_32_16_1_U17/pearson_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/EXP/FLOW_DEC_DEL/i_pipe/first_q
+                         SRL16E                                       r  bd_0_i/hls_inst/U0/grp_ecartType_fu_100/pearson_fdiv_32ns_32ns_32_16_1_U17/pearson_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/EXP/FLOW_DEC_DEL/i_pipe/opt_has_pipe.i_pipe[11].pipe_reg[11][0]_srl10/D
   -------------------------------------------------------------------    -------------------
 
                          (clock ap_clk rise edge)     0.000     0.000 r  
                                                       0.000     0.000 r  ap_clk (IN)
-                         net (fo=12601, unset)        0.432     0.432    bd_0_i/hls_inst/U0/grp_ecartType_fu_96/pearson_fdiv_32ns_32ns_32_16_1_U17/pearson_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/EXP/FLOW_DEC_DEL/i_pipe/aclk
-                         SRL16E                                       r  bd_0_i/hls_inst/U0/grp_ecartType_fu_96/pearson_fdiv_32ns_32ns_32_16_1_U17/pearson_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/EXP/FLOW_DEC_DEL/i_pipe/opt_has_pipe.i_pipe[11].pipe_reg[11][0]_srl10/CLK
+                         net (fo=13182, unset)        0.432     0.432    bd_0_i/hls_inst/U0/grp_ecartType_fu_100/pearson_fdiv_32ns_32ns_32_16_1_U17/pearson_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/EXP/FLOW_DEC_DEL/i_pipe/aclk
+                         SRL16E                                       r  bd_0_i/hls_inst/U0/grp_ecartType_fu_100/pearson_fdiv_32ns_32ns_32_16_1_U17/pearson_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/EXP/FLOW_DEC_DEL/i_pipe/opt_has_pipe.i_pipe[11].pipe_reg[11][0]_srl10/CLK
                          clock pessimism              0.000     0.432    
                          SRL16E (Hold_srl16e_CLK_D)
-                                                      0.064     0.496    bd_0_i/hls_inst/U0/grp_ecartType_fu_96/pearson_fdiv_32ns_32ns_32_16_1_U17/pearson_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/EXP/FLOW_DEC_DEL/i_pipe/opt_has_pipe.i_pipe[11].pipe_reg[11][0]_srl10
+                                                      0.064     0.496    bd_0_i/hls_inst/U0/grp_ecartType_fu_100/pearson_fdiv_32ns_32ns_32_16_1_U17/pearson_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/EXP/FLOW_DEC_DEL/i_pipe/opt_has_pipe.i_pipe[11].pipe_reg[11][0]_srl10
   -------------------------------------------------------------------
                          required time                         -0.496    
                          arrival time                           0.709    
@@ -310,9 +310,9 @@ Period(ns):         10.000
 Sources:            { ap_clk }
 
 Check Type        Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location  Pin
-Min Period        n/a     RAMB18E1/CLKARDCLK  n/a            2.944         10.000      7.056                bd_0_i/hls_inst/U0/pearson_INPUT_r_m_axi_U/bus_read/fifo_rdata/mem_reg/CLKARDCLK
-Low Pulse Width   Fast    SRL16E/CLK          n/a            0.980         5.000       4.020                bd_0_i/hls_inst/U0/ap_CS_fsm_reg[157]_srl9___ap_CS_fsm_reg_r_7/CLK
-High Pulse Width  Slow    SRL16E/CLK          n/a            0.980         5.000       4.020                bd_0_i/hls_inst/U0/ap_CS_fsm_reg[157]_srl9___ap_CS_fsm_reg_r_7/CLK
+Min Period        n/a     RAMB18E1/CLKARDCLK  n/a            2.944         10.000      7.056                bd_0_i/hls_inst/U0/pearson_OUTPUT_r_m_axi_U/bus_write/buff_wdata/mem_reg/CLKARDCLK
+Low Pulse Width   Fast    SRL16E/CLK          n/a            0.980         5.000       4.020                bd_0_i/hls_inst/U0/ap_CS_fsm_reg[137]_srl9___ap_CS_fsm_reg_r_7/CLK
+High Pulse Width  Slow    SRL16E/CLK          n/a            0.980         5.000       4.020                bd_0_i/hls_inst/U0/ap_CS_fsm_reg[137]_srl9___ap_CS_fsm_reg_r_7/CLK
 
 
 

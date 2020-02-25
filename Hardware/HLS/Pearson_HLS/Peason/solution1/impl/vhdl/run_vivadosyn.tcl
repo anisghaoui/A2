@@ -19,11 +19,6 @@ file mkdir $outputDir
 create_project $vivadoProjectName $vivadoProjectDir -part $targetPart -force
 set_property target_language $language [current_project]
 
-# setup testbench files
-set simtbs [glob -nocomplain ./sim_tbs/*.v ./sim_tbs/*.vhd ./sim_tbs/cdatafile/*.dat ./sim_tbs/rtldatafile/*.dat]
-if {$simtbs != "" } {
-    add_files -fileset sim_1  -norecurse $simtbs
-}
 
 # setup design sources and constraints
 set bd_design_name bd_0
@@ -91,7 +86,6 @@ foreach run [get_runs -filter {IS_SYNTHESIS == 1}] {
 }
 
 
-update_compile_order -fileset sim_1
 set_property XPM_LIBRARIES {XPM_MEMORY} [current_project]
 
 # synth properties setting

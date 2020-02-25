@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'pearson'" level="0">
-<item name = "Date">Mon Feb 17 15:38:35 2020
+<item name = "Date">Tue Feb 25 22:04:49 2020
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">Peason</item>
@@ -24,21 +24,20 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">, min, max, min, max, Type</keys>
-<column name="">15781, 15781, 15781, 15781, none</column>
+<column name="">755, 755, 755, 755, none</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="7">Instance, Module, min, max, min, max, Type</keys>
-<column name="grp_ecartType_fu_96">ecartType, 149, 149, 20, 20, function</column>
-<column name="grp_moyenne_fu_107">moyenne, 128, 128, 20, 20, function</column>
-<column name="grp_moyenneXY_fu_117">moyenneXY, 130, 130, 40, 40, function</column>
+<column name="grp_ecartType_fu_100">ecartType, 149, 149, 20, 20, function</column>
+<column name="grp_moyenne_fu_111">moyenne, 128, 128, 20, 20, function</column>
+<column name="grp_moyenneXY_fu_121">moyenneXY, 130, 130, 40, 40, function</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- loop_on_table">15780, 15780, 789, -, -, 20, no</column>
 </table>
 </item>
 </section>
@@ -51,25 +50,26 @@
 <item name = "Summary"><table name="" hasTotal="1">
 <keys size="6">Name, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
 <column name="DSP">-, -, -, -, -</column>
-<column name="Expression">-, -, 0, 26, -</column>
+<column name="Expression">-, -, -, -, -</column>
 <column name="FIFO">-, -, -, -, -</column>
-<column name="Instance">2, 19, 12588, 13283, -</column>
+<column name="Instance">4, 19, 13106, 13863, -</column>
 <column name="Memory">-, -, -, -, -</column>
-<column name="Multiplexer">-, -, -, 2601, -</column>
-<column name="Register">-, -, 1089, -, -</column>
+<column name="Multiplexer">-, -, -, 2634, -</column>
+<column name="Register">-, -, 1075, -, -</column>
 <specialColumn name="Available">120, 80, 35200, 17600, 0</specialColumn>
-<specialColumn name="Utilization (%)">1, 23, 38, 90, 0</specialColumn>
+<specialColumn name="Utilization (%)">3, 23, 40, 93, 0</specialColumn>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
-<column name="grp_ecartType_fu_96">ecartType, 0, 7, 5167, 5145, 0</column>
-<column name="grp_moyenne_fu_107">moyenne, 0, 2, 3421, 3560, 0</column>
-<column name="grp_moyenneXY_fu_117">moyenneXY, 0, 5, 2273, 2125, 0</column>
-<column name="pearson_CONTROL_BUS_s_axi_U">pearson_CONTROL_BUS_s_axi, 0, 0, 106, 168, 0</column>
+<column name="grp_ecartType_fu_100">ecartType, 0, 7, 5167, 5145, 0</column>
+<column name="grp_moyenne_fu_111">moyenne, 0, 2, 3421, 3560, 0</column>
+<column name="grp_moyenneXY_fu_121">moyenneXY, 0, 5, 2273, 2125, 0</column>
+<column name="pearson_CONTROL_BUS_s_axi_U">pearson_CONTROL_BUS_s_axi, 0, 0, 112, 168, 0</column>
 <column name="pearson_INPUT_r_m_axi_U">pearson_INPUT_r_m_axi, 2, 0, 512, 580, 0</column>
+<column name="pearson_OUTPUT_r_m_axi_U">pearson_OUTPUT_r_m_axi, 2, 0, 512, 580, 0</column>
 <column name="pearson_fdiv_32ns_32ns_32_16_1_U27">pearson_fdiv_32ns_32ns_32_16_1, 0, 0, 761, 994, 0</column>
 <column name="pearson_fmul_32ns_32ns_32_4_max_dsp_1_U26">pearson_fmul_32ns_32ns_32_4_max_dsp_1, 0, 3, 143, 321, 0</column>
 <column name="pearson_fsub_32ns_32ns_32_5_full_dsp_1_U25">pearson_fsub_32ns_32ns_32_5_full_dsp_1, 0, 2, 205, 390, 0</column>
@@ -89,8 +89,6 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="j_fu_158_p2">+, 0, 0, 15, 5, 1</column>
-<column name="icmp_ln18_fu_152_p2">icmp, 0, 0, 11, 5, 5</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
@@ -110,33 +108,35 @@
 <column name="INPUT_r_RREADY">21, 4, 1, 4</column>
 <column name="INPUT_r_blk_n_AR">21, 4, 1, 4</column>
 <column name="INPUT_r_blk_n_R">21, 4, 1, 4</column>
-<column name="ap_NS_fsm">2193, 791, 1, 791</column>
-<column name="coeffPearson_0_reg_85">9, 2, 32, 64</column>
-<column name="grp_ecartType_fu_96_col">15, 3, 1, 3</column>
-<column name="grp_ecartType_fu_96_moy">15, 3, 32, 96</column>
-<column name="grp_fu_128_p0">15, 3, 32, 96</column>
-<column name="grp_fu_128_p1">15, 3, 32, 96</column>
-<column name="grp_moyenne_fu_107_col">15, 3, 1, 3</column>
-<column name="j_0_reg_74">9, 2, 5, 10</column>
+<column name="OUTPUT_r_blk_n_AW">9, 2, 1, 2</column>
+<column name="OUTPUT_r_blk_n_B">9, 2, 1, 2</column>
+<column name="OUTPUT_r_blk_n_W">9, 2, 1, 2</column>
+<column name="ap_NS_fsm">2193, 757, 1, 757</column>
+<column name="grp_ecartType_fu_100_col">15, 3, 1, 3</column>
+<column name="grp_ecartType_fu_100_moy">15, 3, 32, 96</column>
+<column name="grp_fu_132_p0">15, 3, 32, 96</column>
+<column name="grp_fu_132_p1">15, 3, 32, 96</column>
+<column name="grp_moyenne_fu_111_ap_start">9, 2, 1, 2</column>
+<column name="grp_moyenne_fu_111_col">15, 3, 1, 3</column>
+<column name="grp_moyenne_fu_111_mat_offset">15, 3, 30, 90</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="ap_CS_fsm">790, 0, 790, 0</column>
-<column name="coeffPearson_0_reg_85">32, 0, 32, 0</column>
-<column name="ectX_reg_196">32, 0, 32, 0</column>
-<column name="ectY_reg_206">32, 0, 32, 0</column>
-<column name="grp_ecartType_fu_96_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_moyenneXY_fu_117_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_moyenne_fu_107_ap_start_reg">1, 0, 1, 0</column>
-<column name="j_0_reg_74">5, 0, 5, 0</column>
-<column name="j_reg_174">5, 0, 5, 0</column>
-<column name="mat1_reg_164">30, 0, 30, 0</column>
-<column name="moyXY_reg_191">32, 0, 32, 0</column>
-<column name="moyX_reg_179">32, 0, 32, 0</column>
-<column name="moyY_reg_185">32, 0, 32, 0</column>
-<column name="reg_136">32, 0, 32, 0</column>
-<column name="tmp_1_reg_201">32, 0, 32, 0</column>
+<column name="ap_CS_fsm">756, 0, 756, 0</column>
+<column name="coeffPearson_reg_227">32, 0, 32, 0</column>
+<column name="ectX_reg_206">32, 0, 32, 0</column>
+<column name="ectY_reg_216">32, 0, 32, 0</column>
+<column name="grp_ecartType_fu_100_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_moyenneXY_fu_121_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_moyenne_fu_111_ap_start_reg">1, 0, 1, 0</column>
+<column name="mat1_reg_182">30, 0, 30, 0</column>
+<column name="moyXY_reg_201">32, 0, 32, 0</column>
+<column name="moyX_reg_189">32, 0, 32, 0</column>
+<column name="moyY_reg_195">32, 0, 32, 0</column>
+<column name="reg_140">32, 0, 32, 0</column>
+<column name="result3_reg_177">30, 0, 30, 0</column>
+<column name="tmp_1_reg_211">32, 0, 32, 0</column>
 </table>
 </item>
 </section>
@@ -211,6 +211,51 @@
 <column name="m_axi_INPUT_r_BRESP">in, 2, m_axi, INPUT_r, pointer</column>
 <column name="m_axi_INPUT_r_BID">in, 1, m_axi, INPUT_r, pointer</column>
 <column name="m_axi_INPUT_r_BUSER">in, 1, m_axi, INPUT_r, pointer</column>
+<column name="m_axi_OUTPUT_r_AWVALID">out, 1, m_axi, OUTPUT_r, pointer</column>
+<column name="m_axi_OUTPUT_r_AWREADY">in, 1, m_axi, OUTPUT_r, pointer</column>
+<column name="m_axi_OUTPUT_r_AWADDR">out, 32, m_axi, OUTPUT_r, pointer</column>
+<column name="m_axi_OUTPUT_r_AWID">out, 1, m_axi, OUTPUT_r, pointer</column>
+<column name="m_axi_OUTPUT_r_AWLEN">out, 8, m_axi, OUTPUT_r, pointer</column>
+<column name="m_axi_OUTPUT_r_AWSIZE">out, 3, m_axi, OUTPUT_r, pointer</column>
+<column name="m_axi_OUTPUT_r_AWBURST">out, 2, m_axi, OUTPUT_r, pointer</column>
+<column name="m_axi_OUTPUT_r_AWLOCK">out, 2, m_axi, OUTPUT_r, pointer</column>
+<column name="m_axi_OUTPUT_r_AWCACHE">out, 4, m_axi, OUTPUT_r, pointer</column>
+<column name="m_axi_OUTPUT_r_AWPROT">out, 3, m_axi, OUTPUT_r, pointer</column>
+<column name="m_axi_OUTPUT_r_AWQOS">out, 4, m_axi, OUTPUT_r, pointer</column>
+<column name="m_axi_OUTPUT_r_AWREGION">out, 4, m_axi, OUTPUT_r, pointer</column>
+<column name="m_axi_OUTPUT_r_AWUSER">out, 1, m_axi, OUTPUT_r, pointer</column>
+<column name="m_axi_OUTPUT_r_WVALID">out, 1, m_axi, OUTPUT_r, pointer</column>
+<column name="m_axi_OUTPUT_r_WREADY">in, 1, m_axi, OUTPUT_r, pointer</column>
+<column name="m_axi_OUTPUT_r_WDATA">out, 32, m_axi, OUTPUT_r, pointer</column>
+<column name="m_axi_OUTPUT_r_WSTRB">out, 4, m_axi, OUTPUT_r, pointer</column>
+<column name="m_axi_OUTPUT_r_WLAST">out, 1, m_axi, OUTPUT_r, pointer</column>
+<column name="m_axi_OUTPUT_r_WID">out, 1, m_axi, OUTPUT_r, pointer</column>
+<column name="m_axi_OUTPUT_r_WUSER">out, 1, m_axi, OUTPUT_r, pointer</column>
+<column name="m_axi_OUTPUT_r_ARVALID">out, 1, m_axi, OUTPUT_r, pointer</column>
+<column name="m_axi_OUTPUT_r_ARREADY">in, 1, m_axi, OUTPUT_r, pointer</column>
+<column name="m_axi_OUTPUT_r_ARADDR">out, 32, m_axi, OUTPUT_r, pointer</column>
+<column name="m_axi_OUTPUT_r_ARID">out, 1, m_axi, OUTPUT_r, pointer</column>
+<column name="m_axi_OUTPUT_r_ARLEN">out, 8, m_axi, OUTPUT_r, pointer</column>
+<column name="m_axi_OUTPUT_r_ARSIZE">out, 3, m_axi, OUTPUT_r, pointer</column>
+<column name="m_axi_OUTPUT_r_ARBURST">out, 2, m_axi, OUTPUT_r, pointer</column>
+<column name="m_axi_OUTPUT_r_ARLOCK">out, 2, m_axi, OUTPUT_r, pointer</column>
+<column name="m_axi_OUTPUT_r_ARCACHE">out, 4, m_axi, OUTPUT_r, pointer</column>
+<column name="m_axi_OUTPUT_r_ARPROT">out, 3, m_axi, OUTPUT_r, pointer</column>
+<column name="m_axi_OUTPUT_r_ARQOS">out, 4, m_axi, OUTPUT_r, pointer</column>
+<column name="m_axi_OUTPUT_r_ARREGION">out, 4, m_axi, OUTPUT_r, pointer</column>
+<column name="m_axi_OUTPUT_r_ARUSER">out, 1, m_axi, OUTPUT_r, pointer</column>
+<column name="m_axi_OUTPUT_r_RVALID">in, 1, m_axi, OUTPUT_r, pointer</column>
+<column name="m_axi_OUTPUT_r_RREADY">out, 1, m_axi, OUTPUT_r, pointer</column>
+<column name="m_axi_OUTPUT_r_RDATA">in, 32, m_axi, OUTPUT_r, pointer</column>
+<column name="m_axi_OUTPUT_r_RLAST">in, 1, m_axi, OUTPUT_r, pointer</column>
+<column name="m_axi_OUTPUT_r_RID">in, 1, m_axi, OUTPUT_r, pointer</column>
+<column name="m_axi_OUTPUT_r_RUSER">in, 1, m_axi, OUTPUT_r, pointer</column>
+<column name="m_axi_OUTPUT_r_RRESP">in, 2, m_axi, OUTPUT_r, pointer</column>
+<column name="m_axi_OUTPUT_r_BVALID">in, 1, m_axi, OUTPUT_r, pointer</column>
+<column name="m_axi_OUTPUT_r_BREADY">out, 1, m_axi, OUTPUT_r, pointer</column>
+<column name="m_axi_OUTPUT_r_BRESP">in, 2, m_axi, OUTPUT_r, pointer</column>
+<column name="m_axi_OUTPUT_r_BID">in, 1, m_axi, OUTPUT_r, pointer</column>
+<column name="m_axi_OUTPUT_r_BUSER">in, 1, m_axi, OUTPUT_r, pointer</column>
 </table>
 </item>
 </section>

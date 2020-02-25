@@ -35,7 +35,7 @@ set_property ip_output_repo /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block
 set_property ip_cache_permissions {read write} [current_project]
 read_vhdl -library xil_defaultlib /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/hdl/bd_0_wrapper.vhd
 add_files /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/bd_0.bd
-set_property used_in_implementation false [get_files -all /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/constraints/multiply_block_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/constraints/multiply_block_32_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/bd_0_ooc.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -46,8 +46,8 @@ set_property used_in_implementation false [get_files -all /home/anis/A2/Hardware
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/impl/vhdl/multiply_block.xdc
-set_property used_in_implementation false [get_files /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/impl/vhdl/multiply_block.xdc]
+read_xdc /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/impl/vhdl/multiply_block_32.xdc
+set_property used_in_implementation false [get_files /home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/impl/vhdl/multiply_block_32.xdc]
 
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]

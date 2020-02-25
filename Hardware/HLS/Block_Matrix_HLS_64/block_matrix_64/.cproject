@@ -53,8 +53,6 @@
                                     									
                                     <listOptionValue builtIn="false" value="/mnt/side_windows/Vivado_linux/Vivado/2019.1/include"/>
                                     									
-                                    <listOptionValue builtIn="false" value="/home/anis/A2/Hardware/HLS/Block_Matrix_HLS_64"/>
-                                    									
                                     <listOptionValue builtIn="false" value="/mnt/side_windows/Vivado_linux/Vivado/2019.1/include/ap_sysc"/>
                                     									
                                     <listOptionValue builtIn="false" value="/mnt/side_windows/Vivado_linux/Vivado/2019.1/include/etc"/>
@@ -88,8 +86,6 @@
                                 <option id="gnu.c.compiler.option.include.paths.1929033819" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
                                     									
                                     <listOptionValue builtIn="false" value="/mnt/side_windows/Vivado_linux/Vivado/2019.1/include"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="/home/anis/A2/Hardware/HLS/Block_Matrix_HLS_64"/>
                                     									
                                     <listOptionValue builtIn="false" value="/mnt/side_windows/Vivado_linux/Vivado/2019.1/include/ap_sysc"/>
                                     									
@@ -161,6 +157,36 @@
                         					
                     </folderInfo>
                     					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.856033788.1579622415" name="BMM_main.c" rcbsApplicability="disable" resourcePath="testbench/BMM_main.c" toolsToInvoke="cdt.managedbuild.tool.gnu.c.compiler.exe.debug.111888259.1976354856">
+                        						
+                        <tool id="cdt.managedbuild.tool.gnu.c.compiler.exe.debug.111888259.1976354856" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.exe.debug.111888259">
+                            							
+                            <option id="gnu.c.compiler.option.preprocessor.def.symbols.572087041" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols"/>
+                            							
+                            <option id="gnu.c.compiler.option.include.paths.344298495" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+                                								
+                                <listOptionValue builtIn="false" value="/mnt/side_windows/Vivado_linux/Vivado/2019.1/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="/home/anis/A2/Hardware/HLS/Block_Matrix_HLS_64"/>
+                                								
+                                <listOptionValue builtIn="false" value="/mnt/side_windows/Vivado_linux/Vivado/2019.1/include/ap_sysc"/>
+                                								
+                                <listOptionValue builtIn="false" value="/mnt/side_windows/Vivado_linux/Vivado/2019.1/include/etc"/>
+                                								
+                                <listOptionValue builtIn="false" value="/mnt/side_windows/Vivado_linux/Vivado/2019.1/lnx64/tools/auto_cc/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="/mnt/side_windows/Vivado_linux/Vivado/2019.1/lnx64/tools/systemc/include"/>
+                                							
+                            </option>
+                            							
+                            <option id="gnu.c.compiler.option.misc.other.52180132" name="Other flags" superClass="gnu.c.compiler.option.misc.other" value="-Wno-unknown-pragmas -c -fmessage-length=0" valueType="string"/>
+                            							
+                            <inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.1555814601" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+                            						
+                        </tool>
+                        					
+                    </fileInfo>
+                    					
                     <sourceEntries>
                         						
                         <entry excluding="solution1|*.c*|*.C*" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
@@ -225,8 +251,6 @@
                                     									
                                     <listOptionValue builtIn="false" value="/mnt/side_windows/Vivado_linux/Vivado/2019.1/include"/>
                                     									
-                                    <listOptionValue builtIn="false" value="/home/anis/A2/Hardware/HLS/Block_Matrix_HLS_64"/>
-                                    									
                                     <listOptionValue builtIn="false" value="/mnt/side_windows/Vivado_linux/Vivado/2019.1/include/ap_sysc"/>
                                     									
                                     <listOptionValue builtIn="false" value="/mnt/side_windows/Vivado_linux/Vivado/2019.1/include/etc"/>
@@ -250,8 +274,6 @@
                                 <option id="gnu.c.compiler.option.include.paths.610634197" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
                                     									
                                     <listOptionValue builtIn="false" value="/mnt/side_windows/Vivado_linux/Vivado/2019.1/include"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="/home/anis/A2/Hardware/HLS/Block_Matrix_HLS_64"/>
                                     									
                                     <listOptionValue builtIn="false" value="/mnt/side_windows/Vivado_linux/Vivado/2019.1/include/ap_sysc"/>
                                     									
@@ -312,6 +334,36 @@
                         </toolChain>
                         					
                     </folderInfo>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.837111000.747549344" name="BMM_main.c" rcbsApplicability="disable" resourcePath="testbench/BMM_main.c" toolsToInvoke="cdt.managedbuild.tool.gnu.c.compiler.exe.release.465763259.991041559">
+                        						
+                        <tool id="cdt.managedbuild.tool.gnu.c.compiler.exe.release.465763259.991041559" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.exe.release.465763259">
+                            							
+                            <option id="gnu.c.compiler.option.preprocessor.def.symbols.357906004" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols"/>
+                            							
+                            <option id="gnu.c.compiler.option.include.paths.1322046021" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+                                								
+                                <listOptionValue builtIn="false" value="/mnt/side_windows/Vivado_linux/Vivado/2019.1/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="/home/anis/A2/Hardware/HLS/Block_Matrix_HLS_64"/>
+                                								
+                                <listOptionValue builtIn="false" value="/mnt/side_windows/Vivado_linux/Vivado/2019.1/include/ap_sysc"/>
+                                								
+                                <listOptionValue builtIn="false" value="/mnt/side_windows/Vivado_linux/Vivado/2019.1/include/etc"/>
+                                								
+                                <listOptionValue builtIn="false" value="/mnt/side_windows/Vivado_linux/Vivado/2019.1/lnx64/tools/auto_cc/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="/mnt/side_windows/Vivado_linux/Vivado/2019.1/lnx64/tools/systemc/include"/>
+                                							
+                            </option>
+                            							
+                            <option id="gnu.c.compiler.option.misc.other.79679814" name="Other flags" superClass="gnu.c.compiler.option.misc.other" value="-Wno-unknown-pragmas -c -fmessage-length=0" valueType="string"/>
+                            							
+                            <inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.1236540853" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+                            						
+                        </tool>
+                        					
+                    </fileInfo>
                     					
                     <sourceEntries>
                         						

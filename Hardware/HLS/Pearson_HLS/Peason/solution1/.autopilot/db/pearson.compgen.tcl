@@ -104,15 +104,15 @@ ap_start { }
 ap_done { }
 ap_ready { }
 ap_idle { }
-ap_return { 
-	dir o
+mat { 
+	dir I
 	width 32
 	depth 1
-	mode ap_ctrl_hs
+	mode ap_none
 	offset 16
-	offset_end 0
+	offset_end 23
 }
-mat { 
+result { 
 	dir I
 	width 32
 	depth 1
@@ -165,18 +165,25 @@ if {${::AESL::PGuard_rtl_comp_handler}} {
 	::AP::rtl_comp_handler pearson_INPUT_r_m_axi
 }
 
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id -1 \
-    name ap_return \
-    type ap_return \
-    reset_level 0 \
-    sync_rst true \
-    corename ap_return \
+# Native M_AXI:
+if {${::AESL::PGuard_simmodel_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::m_axi_gen] == "::AESL_LIB_XILADAPTER::m_axi_gen"} {
+eval "::AESL_LIB_XILADAPTER::m_axi_gen { \
+    id 31 \
+    corename {m_axi} \
     op interface \
-    ports { ap_return { O 32 vector } } \
+    max_latency -1 \ 
+    delay_budget 8.75 \ 
+    is_flushable 0 \ 
+    name {pearson_OUTPUT_r_m_axi} \
 } "
+} else {
+puts "@W \[IMPL-110\] Cannot find AXI interface model in the library. Ignored generation of AXI interface for 'OUTPUT_r'"
+}
+}
+
+if {${::AESL::PGuard_rtl_comp_handler}} {
+	::AP::rtl_comp_handler pearson_OUTPUT_r_m_axi
 }
 
 
@@ -186,7 +193,7 @@ set DataWd 1
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc cg_default_interface_gen_clock] == "cg_default_interface_gen_clock"} {
 eval "cg_default_interface_gen_clock { \
-    id -2 \
+    id -1 \
     name ${PortName} \
     reset_level 0 \
     sync_rst true \
@@ -206,7 +213,7 @@ set DataWd 1
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc cg_default_interface_gen_reset] == "cg_default_interface_gen_reset"} {
 eval "cg_default_interface_gen_reset { \
-    id -3 \
+    id -2 \
     name ${PortName} \
     reset_level 0 \
     sync_rst true \

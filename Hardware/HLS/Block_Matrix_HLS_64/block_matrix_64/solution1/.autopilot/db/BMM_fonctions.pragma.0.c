@@ -1598,13 +1598,13 @@ extern char *stpncpy (char *__restrict __dest,
 typedef float type;
 
 
-void multiply_block(type mA[64][64], type mB[64][64], type result[64][64]);
+void multiply_block_64(type mA[64][64], type mB[64][64], type result[64][64]);
 # 4 "src/BMM_fonctions.c" 2
 
 
 
 
-void multiply_block(type in_mA[64][64], type in_mB[64][64], type out_mC[64][64]) {_ssdm_SpecArrayDimSize(in_mA, 64);_ssdm_SpecArrayDimSize(in_mB, 64);_ssdm_SpecArrayDimSize(out_mC, 64);
+void multiply_block_64(type in_mA[64][64], type in_mB[64][64], type out_mC[64][64]) {_ssdm_SpecArrayDimSize(in_mA, 64);_ssdm_SpecArrayDimSize(in_mB, 64);_ssdm_SpecArrayDimSize(out_mC, 64);
 
 #pragma HLS INTERFACE s_axilite port=return bundle=CONTROL_BUS
 #pragma HLS INTERFACE m_axi port=&in_mA offset=slave bundle=INPUT

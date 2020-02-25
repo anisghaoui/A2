@@ -6,7 +6,7 @@
 <Project Version="7" Minor="40" Path="/home/anis/A2/Hardware/HLS/Block_Matrix_HLS_32/block_matrix_32/solution1/impl/ip/tmp.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="3506beca0e814afcbe80f754b9a90d7e"/>
+    <Option Name="Id" Val="a8b161c2229d46e98fa334e2c041dd31"/>
     <Option Name="Part" Val="xc7z010iclg225-1L"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
@@ -60,14 +60,14 @@
   <FileSets Version="1" Minor="31">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
       <Filter Type="Srcs"/>
-      <File Path="$PSRCDIR/sources_1/ip/multiply_block_ap_fadd_3_full_dsp_32/multiply_block_ap_fadd_3_full_dsp_32.xci">
+      <File Path="$PSRCDIR/sources_1/ip/multiply_block_32_ap_fadd_3_full_dsp_32/multiply_block_32_ap_fadd_3_full_dsp_32.xci">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/ip/multiply_block_ap_fmul_2_max_dsp_32/multiply_block_ap_fmul_2_max_dsp_32.xci">
+      <File Path="$PSRCDIR/sources_1/ip/multiply_block_32_ap_fmul_2_max_dsp_32/multiply_block_32_ap_fmul_2_max_dsp_32.xci">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>

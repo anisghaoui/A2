@@ -5,7 +5,7 @@
 #
 # Settings for Vivado implementation flow
 #
-set top_module multiply_block
+set top_module multiply_block_64
 set language vhdl
 set family zynq
 set device xc7z010i

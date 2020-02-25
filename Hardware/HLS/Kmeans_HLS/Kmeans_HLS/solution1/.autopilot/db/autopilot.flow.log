@@ -1153,3 +1153,344 @@ INFO-FLOW: DBG:CMD: auto_impl: vhdl syn exec /mnt/side_windows/UPSUD/A2/HLS/Kmea
 Command   export_design done; 319.87 sec.
 Command ap_source done; 320.58 sec.
 Execute cleanup_all 
+INFO-FLOW: Workspace /home/anis/A2/Hardware/HLS/Kmeans_HLS/Kmeans_HLS/solution1 opened at Tue Feb 25 20:22:11 CET 2020
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+WARNING: [HLS 200-40] Cannot find library '/mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/Zynq-7000/Zynq-7000.lib'.
+WARNING: [HLS 200-40] Cannot find library 'xilinx/Zynq-7000/Zynq-7000'.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/zynq/zynq 
+Execute       source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx.lib 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/plb46.lib 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/fsl.lib 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/axi4.lib 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/maxi.lib 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/saxilite.lib 
+Command         ap_source done; 0.12 sec.
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/dsp48.lib 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/xfft.lib 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/xfir.lib 
+Command       ap_source done; 0.2 sec.
+Execute       source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Command       ap_source done; 0.11 sec.
+Execute       source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute       source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Command     import_lib done; 0.39 sec.
+Execute     source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/zynq/zynq.gen 
+Execute       source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
+Command         ap_source done; 0.13 sec.
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.33 sec.
+Command     ap_source done; 0.33 sec.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6 
+Execute       source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.lib 
+Execute       source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     set_part xc7z010i-clg225-1L 
+Execute       ap_part_info -name xc7z010i-clg225-1L -data single -quiet 
+Command       ap_part_info done; 2.03 sec.
+Execute       ap_part_info -name xc7z010i-clg225-1L -data info 
+Execute       add_library xilinx/zynq/zynq:xc7z010i:-clg225:-1L 
+Execute         get_default_platform 
+Execute         license_isbetapart xc7z010i 
+Command         license_isbetapart done; error code: 1; 
+Execute         open_platform DefaultPlatform 
+Execute         import_lib /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/zynq/zynq 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx.lib 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute               source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/plb46.lib 
+Execute               source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/fsl.lib 
+Execute               source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/axi4.lib 
+Execute               source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/maxi.lib 
+Execute               source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/saxilite.lib 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/dsp48.lib 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.lib 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/xfft.lib 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/xfir.lib 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute               source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute               source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute               source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute               source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/zynq/zynq.gen 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx.gen 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/plb46.gen 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/fsl.gen 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/axi4.gen 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute               source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/saxilite.gen 
+Execute               source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/maxi.gen 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
+Command             ap_source done; 0.12 sec.
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
+Command           ap_source done; 0.17 sec.
+Command         ap_source done; 0.18 sec.
+Execute         ap_part_info -data single -name xc7z010i-clg225-1L 
+Execute         ap_part_info -name xc7z010i-clg225-1L -data resources 
+Execute         ap_part_info -name xc7z010i-clg225-1L -data info 
+Execute         ap_part_info -name xc7z010i-clg225-1L -data info 
+Execute         config_chip_info -quiet -resource {SLICE 4400} {LUT 17600} {FF 35200} {DSP48E 80} {BRAM 120} {URAM 0} 
+Execute         ap_part_info -name xc7z010i-clg225-1L -data info 
+Execute         config_chip_info -quiet -speed slow 
+Command       add_library done; 0.3 sec.
+Execute       add_library xilinx/zynq/zynq_fpv6 
+Execute         get_default_platform 
+Execute         open_platform DefaultPlatform 
+Execute         import_lib /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.lib 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute               source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute               source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute                 source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute                 source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute               source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
+INFO: [HLS 200-10] Setting target device to 'xc7z010i-clg225-1L'
+Execute       ap_part_info -name xc7z010i-clg225-1L -data info 
+Execute       get_default_platform 
+Command     set_part done; 2.53 sec.
+Execute     ap_part_info -data single -name xc7z010i-clg225-1L 
+Execute     ap_part_info -name xc7z010i-clg225-1L -data resources 
+Execute     ap_part_info -name xc7z010i-clg225-1L -data info 
+Execute     ap_part_info -name xc7z010i-clg225-1L -data info 
+Execute     config_chip_info -quiet -resource {SLICE 4400} {LUT 17600} {FF 35200} {DSP48E 80} {BRAM 120} {URAM 0} 
+Execute     ap_part_info -name xc7z010i-clg225-1L -data info 
+Execute     config_chip_info -quiet -speed slow 
+Execute     config_export -format=ip_catalog 
+Execute     config_export -rtl=vhdl 
+Command   open_solution done; 3.88 sec.
+Execute   csim_design -quiet 
+Execute     source /home/anis/A2/Hardware/HLS/Kmeans_HLS/Kmeans_HLS/solution1/.autopilot/db/global.setting.tcl 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     is_encrypted /home/anis/A2/Hardware/HLS/Kmeans_HLS/src/main_test.c 
+Execute     is_xip /home/anis/A2/Hardware/HLS/Kmeans_HLS/src/main_test.c 
+Execute     is_encrypted /home/anis/A2/Hardware/HLS/Kmeans_HLS/src/kmeans.h 
+Execute     is_xip /home/anis/A2/Hardware/HLS/Kmeans_HLS/src/kmeans.h 
+Execute     is_encrypted /home/anis/A2/Hardware/HLS/Kmeans_HLS/src/kmeans.c 
+Execute     is_xip /home/anis/A2/Hardware/HLS/Kmeans_HLS/src/kmeans.c 
+Execute     ap_part_info -name xc7z010i-clg225-1L -data info 
+Execute     source run_sim.tcl 
+Command     ap_source done; 0.71 sec.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; 56.16 sec.
+Command ap_source done; 60.24 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace /home/anis/A2/Hardware/HLS/Kmeans_HLS/Kmeans_HLS/solution1 opened at Tue Feb 25 20:26:11 CET 2020
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+WARNING: [HLS 200-40] Cannot find library '/mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/Zynq-7000/Zynq-7000.lib'.
+WARNING: [HLS 200-40] Cannot find library 'xilinx/Zynq-7000/Zynq-7000'.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/zynq/zynq 
+Execute       source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx.lib 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/plb46.lib 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/fsl.lib 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/axi4.lib 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/maxi.lib 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/saxilite.lib 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/dsp48.lib 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/xfft.lib 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/xfir.lib 
+Execute       source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Execute       source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute       source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/zynq/zynq.gen 
+Execute       source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
+Command         ap_source done; 0.2 sec.
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.28 sec.
+Command     ap_source done; 0.28 sec.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6 
+Execute       source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.lib 
+Execute       source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     set_part xc7z010i-clg225-1L 
+Execute       ap_part_info -name xc7z010i-clg225-1L -data single -quiet 
+Command       ap_part_info done; 2.53 sec.
+Execute       ap_part_info -name xc7z010i-clg225-1L -data info 
+Execute       add_library xilinx/zynq/zynq:xc7z010i:-clg225:-1L 
+Execute         get_default_platform 
+Execute         license_isbetapart xc7z010i 
+Command         license_isbetapart done; error code: 1; 
+Execute         open_platform DefaultPlatform 
+Execute         import_lib /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/zynq/zynq 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx.lib 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute               source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/plb46.lib 
+Execute               source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/fsl.lib 
+Execute               source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/axi4.lib 
+Execute               source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/maxi.lib 
+Execute               source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/saxilite.lib 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/dsp48.lib 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.lib 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/xfft.lib 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/xfir.lib 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute               source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute               source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute               source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute               source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/zynq/zynq.gen 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx.gen 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/plb46.gen 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/fsl.gen 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/axi4.gen 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute               source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/saxilite.gen 
+Execute               source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/maxi.gen 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
+Command             ap_source done; 0.23 sec.
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
+Command           ap_source done; 0.32 sec.
+Command         ap_source done; 0.32 sec.
+Execute         ap_part_info -data single -name xc7z010i-clg225-1L 
+Execute         ap_part_info -name xc7z010i-clg225-1L -data resources 
+Execute         ap_part_info -name xc7z010i-clg225-1L -data info 
+Execute         ap_part_info -name xc7z010i-clg225-1L -data info 
+Execute         config_chip_info -quiet -resource {SLICE 4400} {LUT 17600} {FF 35200} {DSP48E 80} {BRAM 120} {URAM 0} 
+Execute         ap_part_info -name xc7z010i-clg225-1L -data info 
+Execute         config_chip_info -quiet -speed slow 
+Command       add_library done; 0.41 sec.
+Execute       add_library xilinx/zynq/zynq_fpv6 
+Execute         get_default_platform 
+Execute         open_platform DefaultPlatform 
+Execute         import_lib /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.lib 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute             source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute               source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute               source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute                 source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute                 source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute               source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Execute         source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute           source /mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
+INFO: [HLS 200-10] Setting target device to 'xc7z010i-clg225-1L'
+Execute       ap_part_info -name xc7z010i-clg225-1L -data info 
+Execute       get_default_platform 
+Command     set_part done; 3.21 sec.
+Execute     ap_part_info -data single -name xc7z010i-clg225-1L 
+Execute     ap_part_info -name xc7z010i-clg225-1L -data resources 
+Execute     ap_part_info -name xc7z010i-clg225-1L -data info 
+Execute     ap_part_info -name xc7z010i-clg225-1L -data info 
+Execute     config_chip_info -quiet -resource {SLICE 4400} {LUT 17600} {FF 35200} {DSP48E 80} {BRAM 120} {URAM 0} 
+Execute     ap_part_info -name xc7z010i-clg225-1L -data info 
+Execute     config_chip_info -quiet -speed slow 
+Execute     config_export -format=ip_catalog 
+Execute     config_export -rtl=vhdl 
+Command   open_solution done; 3.72 sec.
+Execute   csim_design -quiet 
+Execute     source /home/anis/A2/Hardware/HLS/Kmeans_HLS/Kmeans_HLS/solution1/.autopilot/db/global.setting.tcl 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Command     ap_source done; 0.23 sec.
+Execute     is_encrypted /home/anis/A2/Hardware/HLS/Kmeans_HLS/src/main_test.c 
+Execute     is_xip /home/anis/A2/Hardware/HLS/Kmeans_HLS/src/main_test.c 
+Execute     is_encrypted /home/anis/A2/Hardware/HLS/Kmeans_HLS/src/kmeans.h 
+Execute     is_xip /home/anis/A2/Hardware/HLS/Kmeans_HLS/src/kmeans.h 
+Execute     is_encrypted /home/anis/A2/Hardware/HLS/Kmeans_HLS/src/kmeans.c 
+Execute     is_xip /home/anis/A2/Hardware/HLS/Kmeans_HLS/src/kmeans.c 
+Execute     ap_part_info -name xc7z010i-clg225-1L -data info 
+Execute     source run_sim.tcl 
+Command     ap_source done; 1.04 sec.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; 42.13 sec.
+Command ap_source done; 45.85 sec.
+Execute cleanup_all 

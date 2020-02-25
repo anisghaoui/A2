@@ -1472,3 +1472,126 @@ Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+WARNING: [HLS 200-40] Cannot find library '/mnt/side_windows/Vivado_linux/Vivado/2019.1/common/technology/xilinx/Zynq-7000/Zynq-7000.lib'.
+WARNING: [HLS 200-40] Cannot find library 'xilinx/Zynq-7000/Zynq-7000'.
+INFO: [HLS 200-10] Setting target device to 'xc7z010i-clg225-1L'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'src/algo.c' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 836.230 ; gain = 128.000 ; free physical = 1732 ; free virtual = 7467
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 836.230 ; gain = 128.000 ; free physical = 1732 ; free virtual = 7467
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 836.230 ; gain = 128.000 ; free physical = 1746 ; free virtual = 7448
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 836.230 ; gain = 128.000 ; free physical = 1731 ; free virtual = 7433
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'ecartType' (src/algo.c:63).
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'moyenneXY' (src/algo.c:47).
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'moyenne' (src/algo.c:31).
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (src/algo.c:69) in function 'ecartType' completely with a factor of 20.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (src/algo.c:53) in function 'moyenneXY' completely with a factor of 20.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (src/algo.c:37) in function 'moyenne' completely with a factor of 20.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 836.230 ; gain = 128.000 ; free physical = 1708 ; free virtual = 7426
+INFO: [XFORM 203-811] Inferring bus burst read of length 40 on port 'mat' (src/algo.c:55:3).
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 836.230 ; gain = 128.000 ; free physical = 1720 ; free virtual = 7445
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'pearson' ...
+WARNING: [SYN 201-107] Renaming port name 'pearson/INPUT' to 'pearson/INPUT_r' to avoid the conflict with HDL keywords or other object names.
+WARNING: [SYN 201-107] Renaming port name 'pearson/OUTPUT' to 'pearson/OUTPUT_r' to avoid the conflict with HDL keywords or other object names.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'moyenne' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'moyenne'.
+WARNING: [SCHED 204-69] Unable to schedule bus request on port 'mat' (src/algo.c:39) due to limited memory ports. Please consider using a memory core with more ports or partitioning the array.
+INFO: [SCHED 204-61] Discarding stage scheduling solution.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 20, Depth = 129.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 18.94 seconds; current allocated memory: 119.866 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.72 seconds; current allocated memory: 121.109 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'moyenneXY' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'moyenneXY'.
+WARNING: [SCHED 204-69] Unable to schedule bus read on port 'mat' (src/algo.c:55) due to limited memory ports. Please consider using a memory core with more ports or partitioning the array.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 40, Depth = 131.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 1.04 seconds; current allocated memory: 121.797 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.7 seconds; current allocated memory: 122.528 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'ecartType' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'ecartType'.
+WARNING: [SCHED 204-69] Unable to schedule bus request on port 'mat' (src/algo.c:71) due to limited memory ports. Please consider using a memory core with more ports or partitioning the array.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 20, Depth = 150.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 1.24 seconds; current allocated memory: 123.618 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.91 seconds; current allocated memory: 125.268 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pearson' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.55 seconds; current allocated memory: 126.721 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.68 seconds; current allocated memory: 130.991 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'moyenne' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'pearson_fadd_32ns_32ns_32_5_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'pearson_fdiv_32ns_32ns_32_16_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'moyenne'.
+INFO: [HLS 200-111]  Elapsed time: 0.46 seconds; current allocated memory: 132.902 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'moyenneXY' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'pearson_fadd_32ns_32ns_32_5_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'pearson_fdiv_32ns_32ns_32_16_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'pearson_fmul_32ns_32ns_32_4_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'moyenneXY'.
+INFO: [HLS 200-111]  Elapsed time: 0.89 seconds; current allocated memory: 137.591 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================

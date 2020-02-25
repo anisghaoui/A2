@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'pearson'" level="0">
-<item name = "Date">Mon Feb 17 15:38:27 2020
+<item name = "Date">Tue Feb 25 22:04:42 2020
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">Peason</item>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">, min, max, min, max, Type</keys>
-<column name="">15781, 15781, 15781, 15781, none</column>
+<column name="">755, 755, 755, 755, none</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,7 +35,6 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- loop_on_table">15780, 15780, 789, -, -, 20, no</column>
 </table>
 </item>
 </section>

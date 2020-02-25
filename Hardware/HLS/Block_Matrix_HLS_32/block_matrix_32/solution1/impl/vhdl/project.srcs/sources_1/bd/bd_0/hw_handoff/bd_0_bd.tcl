@@ -219,7 +219,7 @@ proc create_root_design { parentCell } {
   set interrupt [ create_bd_port -dir O -type intr interrupt ]
 
   # Create instance: hls_inst, and set properties
-  set hls_inst [ create_bd_cell -type ip -vlnv xilinx.com:hls:multiply_block:1.0 hls_inst ]
+  set hls_inst [ create_bd_cell -type ip -vlnv xilinx.com:hls:multiply_block_32:1.0 hls_inst ]
 
   # Create interface connections
   connect_bd_intf_net -intf_net hls_inst_m_axi_INPUT_r [get_bd_intf_ports m_axi_INPUT_r] [get_bd_intf_pins hls_inst/m_axi_INPUT_r]
