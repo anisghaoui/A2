@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="multiply_block" xd:componentRef="multiply_block" xd:initiationInterval="286627" xd:clockPeriod="10.000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:controlReg xd:name="control" xd:interfaceRef="s_axi_CONTROL_BUS" xd:busTypeRef="axilite" xd:type="generic_axi_lite" xd:offset="0x0"/>
+  <xd:arg xd:name="in_mA[][]" xd:originalName="in_mA" xd:direction="inout" xd:interfaceRef="m_axi_INPUT_r" xd:busTypeRef="aximm" xd:dataPack="true" xd:bitMapping="31:0" xd:arraySize="4096" xd:dataWidth="32" xd:bufferDirection="in"/>
+  <xd:arg xd:name="in_mB[][]" xd:originalName="in_mB" xd:direction="inout" xd:interfaceRef="m_axi_INPUT_r" xd:busTypeRef="aximm" xd:dataPack="true" xd:bitMapping="31:0" xd:arraySize="4096" xd:dataWidth="32" xd:bufferDirection="in"/>
+  <xd:arg xd:name="out_mC[][]" xd:originalName="out_mC" xd:direction="inout" xd:interfaceRef="m_axi_OUTPUT_r" xd:busTypeRef="aximm" xd:arraySize="4096" xd:dataWidth="32" xd:bufferDirection="inout"/>
+  <xd:arg xd:name="in_mA" xd:originalName="in_mA" xd:direction="in" xd:interfaceRef="s_axi_CONTROL_BUS" xd:busTypeRef="axilite" xd:aximmInterfaceRef="m_axi_INPUT_r" xd:dataWidth="32" xd:offset="0x10" xd:handshakeRef="ap_none"/>
+  <xd:arg xd:name="in_mB" xd:originalName="in_mB" xd:direction="in" xd:interfaceRef="s_axi_CONTROL_BUS" xd:busTypeRef="axilite" xd:aximmInterfaceRef="m_axi_INPUT_r" xd:dataWidth="32" xd:offset="0x18" xd:handshakeRef="ap_none"/>
+  <xd:arg xd:name="out_mC" xd:originalName="out_mC" xd:direction="in" xd:interfaceRef="s_axi_CONTROL_BUS" xd:busTypeRef="axilite" xd:aximmInterfaceRef="m_axi_OUTPUT_r" xd:dataWidth="32" xd:offset="0x20" xd:handshakeRef="ap_none"/>
+  <xd:latencyEstimates xd:best-case="286626" xd:worst-case="286626" xd:average-case="286626"/>
+  <xd:resourceEstimates xd:LUT="15984" xd:FF="8163" xd:BRAM="28" xd:DSP="10"/>
+</xd:acceleratorMap>

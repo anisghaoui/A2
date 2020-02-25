@@ -1,0 +1,19 @@
+
+
+Implementation tool: Xilinx Vivado v.2019.1
+Project:             block_matrix_64
+Solution:            solution1
+Device target:       xc7z010i-clg225-1L
+Report date:         Tue Feb 25 19:39:22 CET 2020
+
+#=== Post-Synthesis Resource usage ===
+SLICE:            0
+LUT:           5515
+FF:            7552
+DSP:             10
+BRAM:            27
+SRL:            197
+#=== Final timing ===
+CP required:    10.000
+CP achieved post-synthesis:    8.254
+Timing met
