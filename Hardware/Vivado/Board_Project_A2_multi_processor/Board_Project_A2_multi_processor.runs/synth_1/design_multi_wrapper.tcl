@@ -17,6 +17,7 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_param chipscope.maxJobs 2
 create_project -in_memory -part xc7z020clg484-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -45,13 +46,6 @@ set_property used_in_implementation false [get_files -all c:/A2_project/Vivado/B
 set_property used_in_implementation false [get_files -all c:/A2_project/Vivado/Board_Project_A2_multi_processor/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_microblaze_0_0/design_multi_microblaze_0_0.xdc]
 set_property used_in_implementation false [get_files -all c:/A2_project/Vivado/Board_Project_A2_multi_processor/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_microblaze_0_0/design_multi_microblaze_0_0_ooc_debug.xdc]
 set_property used_in_implementation false [get_files -all c:/A2_project/Vivado/Board_Project_A2_multi_processor/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_microblaze_0_0/design_multi_microblaze_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/A2_project/Vivado/Board_Project_A2_multi_processor/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_dlmb_v10_0/design_multi_dlmb_v10_0.xdc]
-set_property used_in_implementation false [get_files -all c:/A2_project/Vivado/Board_Project_A2_multi_processor/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_dlmb_v10_0/design_multi_dlmb_v10_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/A2_project/Vivado/Board_Project_A2_multi_processor/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_ilmb_v10_0/design_multi_ilmb_v10_0.xdc]
-set_property used_in_implementation false [get_files -all c:/A2_project/Vivado/Board_Project_A2_multi_processor/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_ilmb_v10_0/design_multi_ilmb_v10_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/A2_project/Vivado/Board_Project_A2_multi_processor/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_dlmb_bram_if_cntlr_0/design_multi_dlmb_bram_if_cntlr_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/A2_project/Vivado/Board_Project_A2_multi_processor/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_ilmb_bram_if_cntlr_0/design_multi_ilmb_bram_if_cntlr_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/A2_project/Vivado/Board_Project_A2_multi_processor/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_lmb_bram_0/design_multi_lmb_bram_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/A2_project/Vivado/Board_Project_A2_multi_processor/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_microblaze_0_axi_intc_0/design_multi_microblaze_0_axi_intc_0.xdc]
 set_property used_in_implementation false [get_files -all c:/A2_project/Vivado/Board_Project_A2_multi_processor/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_microblaze_0_axi_intc_0/design_multi_microblaze_0_axi_intc_0_clocks.xdc]
 set_property used_in_implementation false [get_files -all c:/A2_project/Vivado/Board_Project_A2_multi_processor/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_microblaze_0_axi_intc_0/design_multi_microblaze_0_axi_intc_0_ooc.xdc]
@@ -95,11 +89,11 @@ set_property used_in_implementation false [get_files -all c:/A2_project/Vivado/B
 set_property used_in_implementation false [get_files -all c:/A2_project/Vivado/Board_Project_A2_multi_processor/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_29/bd_6f76_m00wn_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/A2_project/Vivado/Board_Project_A2_multi_processor/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_smartconnect_0_0/bd_0/ip/ip_30/bd_6f76_m00bn_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/A2_project/Vivado/Board_Project_A2_multi_processor/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_xbar_5/design_multi_xbar_5_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/A2_project/Vivado/Board_Project_A2_multi_processor/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_auto_pc_8/design_multi_auto_pc_8_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/A2_project/Vivado/Board_Project_A2_multi_processor/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_auto_pc_7/design_multi_auto_pc_7_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/A2_project/Vivado/Board_Project_A2_multi_processor/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_auto_pc_9/design_multi_auto_pc_9_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/A2_project/Vivado/Board_Project_A2_multi_processor/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_auto_pc_1/design_multi_auto_pc_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/A2_project/Vivado/Board_Project_A2_multi_processor/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_auto_pc_0/design_multi_auto_pc_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/A2_project/Vivado/Board_Project_A2_multi_processor/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_auto_pc_2/design_multi_auto_pc_2_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/A2_project/Vivado/Board_Project_A2_multi_processor/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_s00_mmu_0/design_multi_s00_mmu_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/A2_project/Vivado/Board_Project_A2_multi_processor/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_auto_pc_10/design_multi_auto_pc_10_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/A2_project/Vivado/Board_Project_A2_multi_processor/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_auto_pc_3/design_multi_auto_pc_3_ooc.xdc]
 set_property used_in_implementation false [get_files -all C:/A2_project/Vivado/Board_Project_A2_multi_processor/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/design_multi_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/A2_project/Vivado/Board_Project_A2_multi_processor/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/ip/design_multi_microblaze_0_0/data/mb_bootloop_le.elf]
 

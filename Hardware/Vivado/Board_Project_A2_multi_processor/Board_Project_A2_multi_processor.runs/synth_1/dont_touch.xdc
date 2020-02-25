@@ -19,21 +19,6 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_multi_rs
 # IP: bd/design_multi/ip/design_multi_microblaze_0_0/design_multi_microblaze_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_multi_microblaze_0_0 || ORIG_REF_NAME==design_multi_microblaze_0_0} -quiet] -quiet
 
-# IP: bd/design_multi/ip/design_multi_dlmb_v10_0/design_multi_dlmb_v10_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_multi_dlmb_v10_0 || ORIG_REF_NAME==design_multi_dlmb_v10_0} -quiet] -quiet
-
-# IP: bd/design_multi/ip/design_multi_ilmb_v10_0/design_multi_ilmb_v10_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_multi_ilmb_v10_0 || ORIG_REF_NAME==design_multi_ilmb_v10_0} -quiet] -quiet
-
-# IP: bd/design_multi/ip/design_multi_dlmb_bram_if_cntlr_0/design_multi_dlmb_bram_if_cntlr_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_multi_dlmb_bram_if_cntlr_0 || ORIG_REF_NAME==design_multi_dlmb_bram_if_cntlr_0} -quiet] -quiet
-
-# IP: bd/design_multi/ip/design_multi_ilmb_bram_if_cntlr_0/design_multi_ilmb_bram_if_cntlr_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_multi_ilmb_bram_if_cntlr_0 || ORIG_REF_NAME==design_multi_ilmb_bram_if_cntlr_0} -quiet] -quiet
-
-# IP: bd/design_multi/ip/design_multi_lmb_bram_0/design_multi_lmb_bram_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_multi_lmb_bram_0 || ORIG_REF_NAME==design_multi_lmb_bram_0} -quiet] -quiet
-
 # IP: bd/design_multi/ip/design_multi_microblaze_0_axi_periph_0/design_multi_microblaze_0_axi_periph_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_multi_microblaze_0_axi_periph_0 || ORIG_REF_NAME==design_multi_microblaze_0_axi_periph_0} -quiet] -quiet
 
@@ -73,19 +58,19 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_multi_xb
 # IP: bd/design_multi/ip/design_multi_axi_interconnect_1_0/design_multi_axi_interconnect_1_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_multi_axi_interconnect_1_0 || ORIG_REF_NAME==design_multi_axi_interconnect_1_0} -quiet] -quiet
 
-# IP: bd/design_multi/ip/design_multi_auto_pc_8/design_multi_auto_pc_8.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_multi_auto_pc_8 || ORIG_REF_NAME==design_multi_auto_pc_8} -quiet] -quiet
+# IP: bd/design_multi/ip/design_multi_auto_pc_1/design_multi_auto_pc_1.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_multi_auto_pc_1 || ORIG_REF_NAME==design_multi_auto_pc_1} -quiet] -quiet
 
-# IP: bd/design_multi/ip/design_multi_auto_pc_7/design_multi_auto_pc_7.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_multi_auto_pc_7 || ORIG_REF_NAME==design_multi_auto_pc_7} -quiet] -quiet
+# IP: bd/design_multi/ip/design_multi_auto_pc_0/design_multi_auto_pc_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_multi_auto_pc_0 || ORIG_REF_NAME==design_multi_auto_pc_0} -quiet] -quiet
 
-# IP: bd/design_multi/ip/design_multi_auto_pc_9/design_multi_auto_pc_9.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_multi_auto_pc_9 || ORIG_REF_NAME==design_multi_auto_pc_9} -quiet] -quiet
+# IP: bd/design_multi/ip/design_multi_auto_pc_2/design_multi_auto_pc_2.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_multi_auto_pc_2 || ORIG_REF_NAME==design_multi_auto_pc_2} -quiet] -quiet
 
 # IP: bd/design_multi/ip/design_multi_s00_mmu_0/design_multi_s00_mmu_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_multi_s00_mmu_0 || ORIG_REF_NAME==design_multi_s00_mmu_0} -quiet] -quiet
 
-# IP: bd/design_multi/ip/design_multi_auto_pc_10/design_multi_auto_pc_10.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_multi_auto_pc_10 || ORIG_REF_NAME==design_multi_auto_pc_10} -quiet] -quiet
+# IP: bd/design_multi/ip/design_multi_auto_pc_3/design_multi_auto_pc_3.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_multi_auto_pc_3 || ORIG_REF_NAME==design_multi_auto_pc_3} -quiet] -quiet
 
 # XDC: bd/design_multi/design_multi_ooc.xdc

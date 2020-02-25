@@ -229,3 +229,8 @@ dismissDialog("Customize Pin"); // r (cl)
 // HMemoryUtils.trashcanNow. Engine heap size: 1,072 MB. GUI used memory: 78 MB. Current time: 2/25/20, 11:08:15 AM CET
 // TclEventType: FILE_SET_CHANGE
 // TclEventType: RUN_STATUS_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,072 MB. GUI used memory: 79 MB. Current time: 2/25/20, 11:38:15 AM CET
+// WARNING: HEventQueue.dispatchEvent() is taking  5440506 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,072 MB. GUI used memory: 78 MB. Current time: 2/25/20, 1:17:12 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,072 MB. GUI used memory: 78 MB. Current time: 2/25/20, 1:47:13 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,072 MB. GUI used memory: 78 MB. Current time: 2/25/20, 2:17:13 PM CET
