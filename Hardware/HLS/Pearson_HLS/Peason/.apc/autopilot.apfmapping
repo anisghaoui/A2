@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
   <source>
-    <originFiles name="algo.h" path="/home/anis/A2/Hardware/HLS/Pearson_HLS/src/algo.h"/>
     <originFiles name="algo.c" path="/home/anis/A2/Hardware/HLS/Pearson_HLS/src/algo.c"/>
+    <originFiles name="algo.h" path="/home/anis/A2/Hardware/HLS/Pearson_HLS/src/algo.h"/>
   </source>
   <testbench>
     <originFiles name="main.c" path="/home/anis/A2/Hardware/HLS/Pearson_HLS/src/main.c"/>

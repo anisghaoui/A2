@@ -5,8 +5,8 @@
 ############################################################
 open_project Peason
 set_top pearson
-add_files src/algo.h
 add_files src/algo.c
+add_files src/algo.h
 add_files -tb src/main.c -cflags "-Wno-unknown-pragmas" -csimflags "-Wno-unknown-pragmas"
 open_solution "solution1"
 set_part {xc7z010i-clg225-1L}

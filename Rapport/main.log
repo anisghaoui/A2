@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.1.29)  25 FEB 2020 19:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.1.29)  27 FEB 2020 18:06
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -459,6 +459,28 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutvoffset=\dimen121
 \Gm@dimlist=\toks22
 )
+(/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2016/05/22 v1.1-161 Sub-captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
+\captionmargin=\dimen122
+\captionmargin@=\dimen123
+\captionwidth=\dimen124
+\caption@tempdima=\dimen125
+\caption@indent=\dimen126
+\caption@parindent=\dimen127
+\caption@hangindent=\dimen128
+)
+\c@ContinuedFloat=\count102
+)
+\c@subfigure=\count103
+\c@subtable=\count104
+)
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2018/02/14 3.18 The Babel package
 
@@ -470,38 +492,38 @@ Language: french 2018/02/04 v3.4b French support from the babel system
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
 File: babel.def 2018/02/14 3.18 Babel common definitions
-\babel@savecnt=\count102
-\U@D=\dimen122
+\babel@savecnt=\count105
+\U@D=\dimen129
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
-\bbl@dirlevel=\count103
+\bbl@dirlevel=\count106
 )
 \l@acadian = a dialect from \language\l@french 
-\FB@nonchar=\count104
+\FB@nonchar=\count107
 Package babel Info: Making : an active character on input line 411.
 Package babel Info: Making ; an active character on input line 412.
 Package babel Info: Making ! an active character on input line 413.
 Package babel Info: Making ? an active character on input line 414.
-\FBguill@level=\count105
+\FBguill@level=\count108
 \FB@everypar=\toks23
-\FB@Mht=\dimen123
-\mc@charclass=\count106
-\mc@charfam=\count107
-\mc@charslot=\count108
-\std@mcc=\count109
-\dec@mcc=\count110
-\c@FBcaption@count=\count111
+\FB@Mht=\dimen130
+\mc@charclass=\count109
+\mc@charfam=\count110
+\mc@charslot=\count111
+\std@mcc=\count112
+\dec@mcc=\count113
+\c@FBcaption@count=\count114
 \listindentFB=\skip46
 \descindentFB=\skip47
 \labelwidthFB=\skip48
 \leftmarginFB=\skip49
-\parindentFFN=\dimen124
+\parindentFFN=\dimen131
 \FBfnindent=\skip50
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/carlisle/scalefnt.sty)
 (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count112
+\c@float@type=\count115
 \float@exts=\toks24
 \float@box=\box28
 \@float@everytoks=\toks25
@@ -588,16 +610,16 @@ Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 )
-\@linkdim=\dimen125
-\Hy@linkcounter=\count113
-\Hy@pagecounter=\count114
+\@linkdim=\dimen132
+\Hy@linkcounter=\count116
+\Hy@pagecounter=\count117
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2018/02/06 v6.86b Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count115
+\Hy@SavedSpaceFactor=\count118
 
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -609,12 +631,12 @@ Package hyperref Info: Plain pages OFF on input line 4524.
 Package hyperref Info: Backreferencing OFF on input line 4529.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4762.
-\c@Hy@tempcnt=\count116
+\c@Hy@tempcnt=\count119
 LaTeX Info: Redefining \url on input line 5115.
-\XeTeXLinkMargin=\dimen126
-\Fld@menulength=\count117
-\Field@Width=\dimen127
-\Fld@charsize=\dimen128
+\XeTeXLinkMargin=\dimen133
+\Fld@menulength=\count120
+\Field@Width=\dimen134
+\Fld@charsize=\dimen135
 Package hyperref Info: Hyper figures OFF on input line 6369.
 Package hyperref Info: Link nesting OFF on input line 6374.
 Package hyperref Info: Hyper index ON on input line 6377.
@@ -624,16 +646,16 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6394.
 Package hyperref Info: PDF/A mode OFF on input line 6399.
 LaTeX Info: Redefining \ref on input line 6439.
 LaTeX Info: Redefining \pageref on input line 6443.
-\Hy@abspage=\count118
-\c@Item=\count119
-\c@Hfootnote=\count120
+\Hy@abspage=\count121
+\c@Item=\count122
+\c@Hfootnote=\count123
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2018/02/06 v6.86b Hyperref driver for pdfTeX
-\Fld@listcount=\count121
-\c@bookmark@seq@number=\count122
+\Fld@listcount=\count124
+\c@bookmark@seq@number=\count125
 
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
@@ -642,7 +664,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip63
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 42.
+Package hyperref Info: Option `colorlinks' set `true' on input line 43.
 
 
 Package hyperref Warning: Values of option `pdfpagemode':
@@ -653,7 +675,7 @@ Package hyperref Warning: Values of option `pdfpagemode':
 (hyperref)                * `UseOC' (PDF 1.5)
 (hyperref)                * `UseAttachments' (PDF 1.6)
 (hyperref)                * An empty value disables the option.
-(hyperref)                Unknown value `Maximize' on input line 42.
+(hyperref)                Unknown value `Maximize' on input line 43.
 
 (/usr/share/texlive/texmf-dist/tex/latex/minted/minted.sty
 Package: minted 2017/07/19 v2.5 Yet another Pygments shim for LaTeX
@@ -667,18 +689,18 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2018/02/11 v2.5e e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count123
+\etb@tempcnta=\count126
 )
 (/usr/share/texlive/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
 Package: fancyvrb 2008/02/07
 
 Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix 
 <2008/02/07> (tvz)
-\FV@CodeLineNo=\count124
+\FV@CodeLineNo=\count127
 \FV@InFile=\read1
 \FV@TabBox=\box30
-\c@FancyVerbLine=\count125
-\FV@StepNumber=\count126
+\c@FancyVerbLine=\count128
+\FV@StepNumber=\count129
 \FV@OutFile=\write3
 )
 (/usr/share/texlive/texmf-dist/tex/latex/upquote/upquote.sty
@@ -687,55 +709,55 @@ tim
 )
 (/usr/share/texlive/texmf-dist/tex/latex/lineno/lineno.sty
 Package: lineno 2005/11/02 line numbers on paragraphs v4.41
-\linenopenalty=\count127
+\linenopenalty=\count130
 \output=\toks26
-\linenoprevgraf=\count128
-\linenumbersep=\dimen129
-\linenumberwidth=\dimen130
-\c@linenumber=\count129
-\c@pagewiselinenumber=\count130
-\c@LN@truepage=\count131
-\c@internallinenumber=\count132
-\c@internallinenumbers=\count133
-\quotelinenumbersep=\dimen131
-\bframerule=\dimen132
-\bframesep=\dimen133
+\linenoprevgraf=\count131
+\linenumbersep=\dimen136
+\linenumberwidth=\dimen137
+\c@linenumber=\count132
+\c@pagewiselinenumber=\count133
+\c@LN@truepage=\count134
+\c@internallinenumber=\count135
+\c@internallinenumbers=\count136
+\quotelinenumbersep=\dimen138
+\bframerule=\dimen139
+\bframesep=\dimen140
 \bframebox=\box31
 LaTeX Info: Redefining \\ on input line 3056.
 )
-\c@FV@TrueTabGroupLevel=\count134
-\c@FV@TrueTabCounter=\count135
+\c@FV@TrueTabGroupLevel=\count137
+\c@FV@TrueTabCounter=\count138
 \FV@TabBox@Group=\box32
 \FV@TmpLength=\skip64
-\c@FV@HighlightLinesStart=\count136
-\c@FV@HighlightLinesStop=\count137
-\FV@LoopCount=\count138
+\c@FV@HighlightLinesStart=\count139
+\c@FV@HighlightLinesStop=\count140
+\FV@LoopCount=\count141
 \FV@NCharsBox=\box33
-\FV@BreakIndent=\dimen134
-\FV@BreakIndentNChars=\count139
-\FV@BreakSymbolSepLeft=\dimen135
-\FV@BreakSymbolSepLeftNChars=\count140
-\FV@BreakSymbolSepRight=\dimen136
-\FV@BreakSymbolSepRightNChars=\count141
-\FV@BreakSymbolIndentLeft=\dimen137
-\FV@BreakSymbolIndentLeftNChars=\count142
-\FV@BreakSymbolIndentRight=\dimen138
-\FV@BreakSymbolIndentRightNChars=\count143
-\c@FancyVerbLineBreakLast=\count144
+\FV@BreakIndent=\dimen141
+\FV@BreakIndentNChars=\count142
+\FV@BreakSymbolSepLeft=\dimen142
+\FV@BreakSymbolSepLeftNChars=\count143
+\FV@BreakSymbolSepRight=\dimen143
+\FV@BreakSymbolSepRightNChars=\count144
+\FV@BreakSymbolIndentLeft=\dimen144
+\FV@BreakSymbolIndentLeftNChars=\count145
+\FV@BreakSymbolIndentRight=\dimen145
+\FV@BreakSymbolIndentRightNChars=\count146
+\c@FancyVerbLineBreakLast=\count147
 \FV@LineBox=\box34
 \FV@LineIndentBox=\box35
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count145
-\calc@Bcount=\count146
-\calc@Adimen=\dimen139
-\calc@Bdimen=\dimen140
+\calc@Acount=\count148
+\calc@Bcount=\count149
+\calc@Adimen=\dimen146
+\calc@Bdimen=\dimen147
 \calc@Askip=\skip65
 \calc@Bskip=\skip66
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count147
+\calc@Ccount=\count150
 \calc@Cskip=\skip67
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/shellesc.sty
@@ -756,53 +778,30 @@ runsystem(rm -- "main.w18")...executed.
 ) (/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.sty
 (/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.tex
 \@xs@message=\write4
-\integerpart=\count148
-\decimalpart=\count149
+\integerpart=\count151
+\decimalpart=\count152
 )
 Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/framed/framed.sty
 Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
 \OuterFrameSep=\skip68
-\fb@frw=\dimen141
-\fb@frh=\dimen142
-\FrameRule=\dimen143
-\FrameSep=\dimen144
+\fb@frw=\dimen148
+\fb@frh=\dimen149
+\FrameRule=\dimen150
+\FrameSep=\dimen151
 )
 \minted@appexistsfile=\read2
 \minted@bgbox=\box36
 \minted@code=\write5
-\c@minted@FancyVerbLineTemp=\count150
-\c@minted@pygmentizecounter=\count151
+\c@minted@FancyVerbLineTemp=\count153
+\c@minted@pygmentizecounter=\count154
 \@float@every@listing=\toks27
-\c@listing=\count152
+\c@listing=\count155
 )
 runsystem(mkdir -p _minted-main)...executed.
 
 
-(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
-Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
-
-(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
-Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
-Package caption3 Info: TeX engine: e-TeX on input line 67.
-\captionmargin=\dimen145
-\captionmargin@=\dimen146
-\captionwidth=\dimen147
-\caption@tempdima=\dimen148
-\caption@indent=\dimen149
-\caption@parindent=\dimen150
-\caption@hangindent=\dimen151
-)
-\c@ContinuedFloat=\count153
-Package caption Info: float package is loaded.
-Package caption Info: hyperref package is loaded.
-)
-(/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
-Package: subcaption 2016/05/22 v1.1-161 Sub-captions (AR)
-\c@subfigure=\count154
-\c@subtable=\count155
-)
 (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 
@@ -828,20 +827,20 @@ runsystem(rm main.aex)...executed.
 (./titlepage.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -907,19 +906,35 @@ e
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \degres on input line 53.
-LaTeX Info: Redefining \dots on input line 53.
-LaTeX Info: Redefining \up on input line 53.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: End \AtBeginDocument code.
+LaTeX Info: Redefining \degres on input line 54.
+
+Package french.ldf Warning: Figures' and tables' captions might look like
+(french.ldf)                `Figure 1:' in French instead of `Figure 1 :'.
+(french.ldf)                If you have loaded any of the packages caption,
+(french.ldf)                subcaption or floatrow BEFORE babel/french,
+(french.ldf)                please move them AFTER babel/french.
+(french.ldf)                If one of them is loaded by your class,
+(french.ldf)                you can still add AFTER babel/french
+(french.ldf)                \usepackage[labelsep=period]{caption} or
+(french.ldf)                \usepackage[labelsep=endash]{caption} or
+(french.ldf)                ... live with it; reported on input line 54.
+
+LaTeX Info: Redefining \dots on input line 54.
+LaTeX Info: Redefining \up on input line 54.
 
 Package french.ldf Warning: OT1 encoding should not be used for French.
 (french.ldf)                Add \usepackage[T1]{fontenc} to the preamble
-(french.ldf)                of your document; reported on input line 53.
+(french.ldf)                of your document; reported on input line 54.
 
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 53.
+(lastpage)             ! on input line 54.
 \AtBeginShipoutBox=\box38
-Package hyperref Info: Link coloring ON on input line 53.
+Package hyperref Info: Link coloring ON on input line 54.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
@@ -928,25 +943,23 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count162
 )
-LaTeX Info: Redefining \ref on input line 53.
-LaTeX Info: Redefining \pageref on input line 53.
-LaTeX Info: Redefining \nameref on input line 53.
+LaTeX Info: Redefining \ref on input line 54.
+LaTeX Info: Redefining \pageref on input line 54.
+LaTeX Info: Redefining \nameref on input line 54.
 
 (./main.out) (./main.out)
 \@outlinefile=\write6
 \openout6 = `main.out'.
 
-Package caption Info: Begin \AtBeginDocument code.
-Package caption Info: End \AtBeginDocument code.
 \openout2 = `titlepage.aux'.
 
  (./titlepage.tex
-<logo.jpg, id=40, 188.20313pt x 188.20313pt>
+<logo.jpg, id=44, 188.20313pt x 188.20313pt>
 File: logo.jpg Graphic file (type jpg)
 <use logo.jpg>
 Package pdftex.def Info: logo.jpg  used on input line 28.
 (pdftex.def)             Requested size: 193.47578pt x 193.48953pt.
-<logo2.jpeg, id=41, 401.5pt x 401.5pt>
+<logo2.jpeg, id=45, 401.5pt x 401.5pt>
 File: logo2.jpeg Graphic file (type jpg)
 <use logo2.jpeg>
 Package pdftex.def Info: logo2.jpeg  used on input line 29.
@@ -956,16 +969,16 @@ Package pdftex.def Info: logo2.jpeg  used on input line 29.
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./logo.jpg> <./logo2.jpeg>
 ])
-Overfull \hbox (7.2691pt too wide) in paragraph at lines 64--65
+Overfull \hbox (7.2691pt too wide) in paragraph at lines 65--66
 \OT1/cmr/m/n/12 cielles ^^Ra impl^^Sementer. i.e. Choi-sir les al-go-rithmes ^^
 Ra ^^Setudier, choi-sir le stra-tag^^Reme d'impl^^Sementation
  []
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 69.
+LaTeX Font Info:    Try loading font information for U+msa on input line 70.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 69.
+LaTeX Font Info:    Try loading font information for U+msb on input line 70.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -980,8 +993,9 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.90 
-      [1
+l.92 \paragraph
+               {Pipeline} : Applicable aux boucles, fonctions et opérateurs...
+[1
 
 ]
 
@@ -990,43 +1004,68 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[2] 
+[2]
+<hls_fig/screenshot001.png, id=79, 323.70938pt x 182.93344pt>
+File: hls_fig/screenshot001.png Graphic file (type png)
+<use hls_fig/screenshot001.png>
+Package pdftex.def Info: hls_fig/screenshot001.png  used on input line 122.
+(pdftex.def)             Requested size: 145.11053pt x 82.00386pt.
+<hls_fig/screenshot002.png, id=81, 326.72063pt x 182.93344pt>
+File: hls_fig/screenshot002.png Graphic file (type png)
+<use hls_fig/screenshot002.png>
+Package pdftex.def Info: hls_fig/screenshot002.png  used on input line 127.
+(pdftex.def)             Requested size: 145.11053pt x 81.2474pt.
+<hls_fig/screenshot003.png, id=82, 327.47343pt x 190.46156pt>
+File: hls_fig/screenshot003.png Graphic file (type png)
+<use hls_fig/screenshot003.png>
+Package pdftex.def Info: hls_fig/screenshot003.png  used on input line 132.
+(pdftex.def)             Requested size: 145.11053pt x 84.3962pt.
+ 
 AED: lastpage setting LastPage
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.71667pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[3 <./hls_fig/screenshot001.png> <./hls_fig/screenshot002.png> <./hls_fig/scree
+nshot003.png>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[3]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 122.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 122.
+[4]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 154.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 154.
  (./main.aux (./titlepage.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 122.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 122.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 154.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 154.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 7088F21FA239C78CBDC18698F0C479A1;624.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 122.
+(rerunfilecheck)             Checksum: DFF9F56761B9C36C08657603E46617A1;714.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 154.
  ) 
 Here is how much of TeX's memory you used:
- 12362 strings out of 492982
- 195389 string characters out of 6134896
- 359232 words of memory out of 5000000
- 15714 multiletter control sequences out of 15000+600000
- 10319 words of font info for 39 fonts, out of 8000000 for 9000
+ 12401 strings out of 492982
+ 196143 string characters out of 6134896
+ 358366 words of memory out of 5000000
+ 15745 multiletter control sequences out of 15000+600000
+ 10920 words of font info for 41 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,12n,43p,935b,423s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,12n,43p,1008b,487s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmtt12.pfb>
-Output written on main.pdf (4 pages, 115650 bytes).
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmtt12.pfb>
+Output written on main.pdf (5 pages, 191962 bytes).
 PDF statistics:
- 107 PDF objects out of 1000 (max. 8388607)
- 91 compressed objects within 1 object stream
- 20 named destinations out of 1000 (max. 500000)
- 83 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 131 PDF objects out of 1000 (max. 8388607)
+ 106 compressed objects within 2 object streams
+ 23 named destinations out of 1000 (max. 500000)
+ 106 words of extra memory for PDF output out of 10000 (max. 10000000)
 

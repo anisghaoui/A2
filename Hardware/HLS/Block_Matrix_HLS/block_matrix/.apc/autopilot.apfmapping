@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
   <source>
-    <originFiles name="BMM_define.h" path="/mnt/side_windows/UPSUD/A2/HLS/Block_Matrix_HLS/src/BMM_define.h"/>
-    <originFiles name="BMM_fonctions.c" path="/mnt/side_windows/UPSUD/A2/HLS/Block_Matrix_HLS/src/BMM_fonctions.c"/>
+    <originFiles name="BMM_fonctions.c" path="/home/anis/A2/Hardware/HLS/Block_Matrix_HLS/src/BMM_fonctions.c"/>
+    <originFiles name="BMM_define.h" path="/home/anis/A2/Hardware/HLS/Block_Matrix_HLS/src/BMM_define.h"/>
   </source>
   <testbench>
-    <originFiles name="BMM_main.c" path="/mnt/side_windows/UPSUD/A2/HLS/Block_Matrix_HLS/src/BMM_main.c"/>
+    <originFiles name="BMM_main.c" path="/home/anis/A2/Hardware/HLS/Block_Matrix_HLS/src/BMM_main.c"/>
   </testbench>
 </autopilotfilemapping:AutoPilotFileMapping>
