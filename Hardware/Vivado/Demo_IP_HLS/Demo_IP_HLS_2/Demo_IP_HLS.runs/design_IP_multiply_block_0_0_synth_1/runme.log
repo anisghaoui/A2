@@ -1,0 +1,1591 @@
+
+*** Running vivado
+    with args -log design_IP_multiply_block_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_IP_multiply_block_0_0.tcl
+
+
+****** Vivado v2019.1.3 (64-bit)
+  **** SW Build 2644227 on Wed Sep  4 09:45:24 MDT 2019
+  **** IP Build 2633630 on Wed Sep  4 12:30:14 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source design_IP_multiply_block_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 354.262 ; gain = 51.426
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/A2_project/HLS'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:hls:multiply_block:1.0'. The one found in IP location 'c:/A2_project/HLS/xilinx_com_hls_multiply_block_1_0' will take precedence over the same IP in location c:/A2_project/HLS/Block_Matrix_HLS/block_matrix/solution2/impl/ip
+update_ip_catalog: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 378.105 ; gain = 23.844
+Command: synth_design -top design_IP_multiply_block_0_0 -part xc7z020clg484-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 1068 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 834.770 ; gain = 179.129
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_IP_multiply_block_0_0' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ip/design_IP_multiply_block_0_0/synth/design_IP_multiply_block_0_0.vhd:151]
+	Parameter C_S_AXI_CONTROL_BUS_ADDR_WIDTH bound to: 6 - type: integer 
+	Parameter C_S_AXI_CONTROL_BUS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_INPUT_R_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_INPUT_R_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_INPUT_R_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_INPUT_R_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_INPUT_R_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_INPUT_R_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_INPUT_R_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_INPUT_R_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_INPUT_R_USER_VALUE bound to: 0 - type: integer 
+	Parameter C_M_AXI_INPUT_R_PROT_VALUE bound to: 0 - type: integer 
+	Parameter C_M_AXI_INPUT_R_CACHE_VALUE bound to: 3 - type: integer 
+	Parameter C_M_AXI_OUTPUT_R_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_OUTPUT_R_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_OUTPUT_R_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_OUTPUT_R_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_OUTPUT_R_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_OUTPUT_R_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_OUTPUT_R_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_OUTPUT_R_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_OUTPUT_R_USER_VALUE bound to: 0 - type: integer 
+	Parameter C_M_AXI_OUTPUT_R_PROT_VALUE bound to: 0 - type: integer 
+	Parameter C_M_AXI_OUTPUT_R_CACHE_VALUE bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'multiply_block' declared at 'c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:12' bound to instance 'U0' of component 'multiply_block' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ip/design_IP_multiply_block_0_0/synth/design_IP_multiply_block_0_0.vhd:405]
+INFO: [Synth 8-638] synthesizing module 'multiply_block' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:152]
+	Parameter C_M_AXI_INPUT_R_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_INPUT_R_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_INPUT_R_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_INPUT_R_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_INPUT_R_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_INPUT_R_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_INPUT_R_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_INPUT_R_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_OUTPUT_R_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_OUTPUT_R_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_OUTPUT_R_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_OUTPUT_R_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_OUTPUT_R_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_OUTPUT_R_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_OUTPUT_R_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_OUTPUT_R_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_S_AXI_CONTROL_BUS_ADDR_WIDTH bound to: 6 - type: integer 
+	Parameter C_S_AXI_CONTROL_BUS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_INPUT_R_USER_VALUE bound to: 0 - type: integer 
+	Parameter C_M_AXI_INPUT_R_PROT_VALUE bound to: 0 - type: integer 
+	Parameter C_M_AXI_INPUT_R_CACHE_VALUE bound to: 3 - type: integer 
+	Parameter C_M_AXI_OUTPUT_R_USER_VALUE bound to: 0 - type: integer 
+	Parameter C_M_AXI_OUTPUT_R_PROT_VALUE bound to: 0 - type: integer 
+	Parameter C_M_AXI_OUTPUT_R_CACHE_VALUE bound to: 3 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1114]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1117]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1124]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1127]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1129]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1131]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1134]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1137]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1140]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1143]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1146]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1148]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1150]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1152]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1154]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1156]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1158]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1160]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1162]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1164]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1166]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1168]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1170]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1172]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1174]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1176]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1178]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1180]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1182]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1184]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1186]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1188]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1190]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1192]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1194]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1196]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1198]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1200]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1202]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1204]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1206]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1208]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1210]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1212]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1214]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1216]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1218]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1220]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1222]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1224]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1226]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1228]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1230]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1232]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1234]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1236]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1238]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1240]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1242]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1244]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1246]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1248]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1250]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1252]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1254]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1256]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1258]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1260]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1262]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1264]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1266]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1268]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1270]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1272]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1274]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1276]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1278]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1280]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1282]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1284]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1286]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1288]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1290]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1292]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1294]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1296]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1298]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1300]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1302]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1304]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1306]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1308]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1310]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1312]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1314]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1316]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1318]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1320]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1322]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:1324]
+INFO: [Common 17-14] Message 'Synth 8-5534' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 6 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'multiply_block_CONTROL_BUS_s_axi' declared at 'c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_CONTROL_BUS_s_axi.vhd:9' bound to instance 'multiply_block_CONTROL_BUS_s_axi_U' of component 'multiply_block_CONTROL_BUS_s_axi' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:3097]
+INFO: [Synth 8-638] synthesizing module 'multiply_block_CONTROL_BUS_s_axi' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_CONTROL_BUS_s_axi.vhd:75]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 6 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'multiply_block_CONTROL_BUS_s_axi' (1#1) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_CONTROL_BUS_s_axi.vhd:75]
+	Parameter CONSERVATIVE bound to: 0 - type: integer 
+	Parameter USER_DW bound to: 32 - type: integer 
+	Parameter USER_AW bound to: 32 - type: integer 
+	Parameter USER_MAXREQS bound to: 5 - type: integer 
+	Parameter NUM_READ_OUTSTANDING bound to: 16 - type: integer 
+	Parameter NUM_WRITE_OUTSTANDING bound to: 16 - type: integer 
+	Parameter MAX_READ_BURST_LENGTH bound to: 16 - type: integer 
+	Parameter MAX_WRITE_BURST_LENGTH bound to: 16 - type: integer 
+	Parameter C_M_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_USER_VALUE bound to: 0 - type: integer 
+	Parameter C_PROT_VALUE bound to: 0 - type: integer 
+	Parameter C_CACHE_VALUE bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'multiply_block_INPUT_r_m_axi' declared at 'c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_INPUT_r_m_axi.vhd:9' bound to instance 'multiply_block_INPUT_r_m_axi_U' of component 'multiply_block_INPUT_r_m_axi' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:3131]
+INFO: [Synth 8-638] synthesizing module 'multiply_block_INPUT_r_m_axi' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_INPUT_r_m_axi.vhd:140]
+	Parameter CONSERVATIVE bound to: 0 - type: integer 
+	Parameter NUM_READ_OUTSTANDING bound to: 16 - type: integer 
+	Parameter NUM_WRITE_OUTSTANDING bound to: 16 - type: integer 
+	Parameter MAX_READ_BURST_LENGTH bound to: 16 - type: integer 
+	Parameter MAX_WRITE_BURST_LENGTH bound to: 16 - type: integer 
+	Parameter C_M_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_TARGET_ADDR bound to: 0 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_USER_VALUE bound to: 0 - type: integer 
+	Parameter C_PROT_VALUE bound to: 0 - type: integer 
+	Parameter C_CACHE_VALUE bound to: 3 - type: integer 
+	Parameter USER_DW bound to: 32 - type: integer 
+	Parameter USER_AW bound to: 32 - type: integer 
+	Parameter USER_MAXREQS bound to: 5 - type: integer 
+	Parameter USED_FIX bound to: 0 - type: bool 
+	Parameter FIX_VALUE bound to: 4 - type: integer 
+	Parameter ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter DEPTH bound to: 16 - type: integer 
+	Parameter USER_MAXREQS bound to: 16 - type: integer 
+	Parameter CONSERVATIVE bound to: 0 - type: integer 
+	Parameter AVERAGE_MODE bound to: 0 - type: bool 
+INFO: [Synth 8-3491] module 'multiply_block_INPUT_r_m_axi_throttl' declared at 'c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_INPUT_r_m_axi.vhd:953' bound to instance 'wreq_throttl' of component 'multiply_block_INPUT_r_m_axi_throttl' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_INPUT_r_m_axi.vhd:307]
+INFO: [Synth 8-638] synthesizing module 'multiply_block_INPUT_r_m_axi_throttl' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_INPUT_r_m_axi.vhd:1010]
+	Parameter USED_FIX bound to: 0 - type: bool 
+	Parameter FIX_VALUE bound to: 4 - type: integer 
+	Parameter ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter DEPTH bound to: 16 - type: integer 
+	Parameter USER_MAXREQS bound to: 16 - type: integer 
+	Parameter CONSERVATIVE bound to: 0 - type: integer 
+	Parameter AVERAGE_MODE bound to: 0 - type: bool 
+INFO: [Synth 8-256] done synthesizing module 'multiply_block_INPUT_r_m_axi_throttl' (2#1) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_INPUT_r_m_axi.vhd:1010]
+	Parameter NUM_WRITE_OUTSTANDING bound to: 16 - type: integer 
+	Parameter MAX_WRITE_BURST_LENGTH bound to: 16 - type: integer 
+	Parameter C_M_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_TARGET_ADDR bound to: 0 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_USER_VALUE bound to: 0 - type: integer 
+	Parameter C_PROT_VALUE bound to: 0 - type: integer 
+	Parameter C_CACHE_VALUE bound to: 3 - type: integer 
+	Parameter USER_DW bound to: 32 - type: integer 
+	Parameter USER_AW bound to: 32 - type: integer 
+	Parameter USER_MAXREQS bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'multiply_block_INPUT_r_m_axi_write' declared at 'c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_INPUT_r_m_axi.vhd:2141' bound to instance 'bus_write' of component 'multiply_block_INPUT_r_m_axi_write' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_INPUT_r_m_axi.vhd:346]
+INFO: [Synth 8-638] synthesizing module 'multiply_block_INPUT_r_m_axi_write' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_INPUT_r_m_axi.vhd:2229]
+	Parameter NUM_WRITE_OUTSTANDING bound to: 16 - type: integer 
+	Parameter MAX_WRITE_BURST_LENGTH bound to: 16 - type: integer 
+	Parameter C_M_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_TARGET_ADDR bound to: 0 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_USER_VALUE bound to: 0 - type: integer 
+	Parameter C_PROT_VALUE bound to: 0 - type: integer 
+	Parameter C_CACHE_VALUE bound to: 3 - type: integer 
+	Parameter USER_DW bound to: 32 - type: integer 
+	Parameter USER_AW bound to: 32 - type: integer 
+	Parameter USER_MAXREQS bound to: 5 - type: integer 
+	Parameter N bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'multiply_block_INPUT_r_m_axi_reg_slice' declared at 'c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_INPUT_r_m_axi.vhd:470' bound to instance 'rs_wreq' of component 'multiply_block_INPUT_r_m_axi_reg_slice' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_INPUT_r_m_axi.vhd:2365]
+INFO: [Synth 8-638] synthesizing module 'multiply_block_INPUT_r_m_axi_reg_slice' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_INPUT_r_m_axi.vhd:487]
+	Parameter N bound to: 64 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'multiply_block_INPUT_r_m_axi_reg_slice' (3#1) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_INPUT_r_m_axi.vhd:487]
+	Parameter DATA_BITS bound to: 64 - type: integer 
+	Parameter DEPTH bound to: 5 - type: integer 
+	Parameter DEPTH_BITS bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'multiply_block_INPUT_r_m_axi_fifo' declared at 'c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_INPUT_r_m_axi.vhd:594' bound to instance 'fifo_wreq' of component 'multiply_block_INPUT_r_m_axi_fifo' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_INPUT_r_m_axi.vhd:2378]
+INFO: [Synth 8-638] synthesizing module 'multiply_block_INPUT_r_m_axi_fifo' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_INPUT_r_m_axi.vhd:611]
+	Parameter DATA_BITS bound to: 64 - type: integer 
+	Parameter DEPTH bound to: 5 - type: integer 
+	Parameter DEPTH_BITS bound to: 3 - type: integer 
+WARNING: [Synth 8-614] signal 'sclk_en' is read in the process but is not in the sensitivity list [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_INPUT_r_m_axi.vhd:704]
+INFO: [Synth 8-256] done synthesizing module 'multiply_block_INPUT_r_m_axi_fifo' (4#1) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_INPUT_r_m_axi.vhd:611]
+	Parameter MEM_STYLE bound to: block - type: string 
+	Parameter DATA_WIDTH bound to: 36 - type: integer 
+	Parameter ADDR_WIDTH bound to: 8 - type: integer 
+	Parameter DEPTH bound to: 256 - type: integer 
+INFO: [Synth 8-3491] module 'multiply_block_INPUT_r_m_axi_buffer' declared at 'c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_INPUT_r_m_axi.vhd:721' bound to instance 'buff_wdata' of component 'multiply_block_INPUT_r_m_axi_buffer' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_INPUT_r_m_axi.vhd:2777]
+INFO: [Synth 8-638] synthesizing module 'multiply_block_INPUT_r_m_axi_buffer' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_INPUT_r_m_axi.vhd:743]
+	Parameter MEM_STYLE bound to: block - type: string 
+	Parameter DATA_WIDTH bound to: 36 - type: integer 
+	Parameter ADDR_WIDTH bound to: 8 - type: integer 
+	Parameter DEPTH bound to: 256 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'multiply_block_INPUT_r_m_axi_buffer' (5#1) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_INPUT_r_m_axi.vhd:743]
+	Parameter DATA_BITS bound to: 8 - type: integer 
+	Parameter DEPTH bound to: 5 - type: integer 
+	Parameter DEPTH_BITS bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'multiply_block_INPUT_r_m_axi_fifo' declared at 'c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_INPUT_r_m_axi.vhd:594' bound to instance 'fifo_burst' of component 'multiply_block_INPUT_r_m_axi_fifo' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_INPUT_r_m_axi.vhd:2809]
+INFO: [Synth 8-638] synthesizing module 'multiply_block_INPUT_r_m_axi_fifo__parameterized1' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_INPUT_r_m_axi.vhd:611]
+	Parameter DATA_BITS bound to: 8 - type: integer 
+	Parameter DEPTH bound to: 5 - type: integer 
+	Parameter DEPTH_BITS bound to: 3 - type: integer 
+WARNING: [Synth 8-614] signal 'sclk_en' is read in the process but is not in the sensitivity list [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_INPUT_r_m_axi.vhd:704]
+INFO: [Synth 8-256] done synthesizing module 'multiply_block_INPUT_r_m_axi_fifo__parameterized1' (5#1) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_INPUT_r_m_axi.vhd:611]
+	Parameter DATA_BITS bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 15 - type: integer 
+	Parameter DEPTH_BITS bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'multiply_block_INPUT_r_m_axi_fifo' declared at 'c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_INPUT_r_m_axi.vhd:594' bound to instance 'fifo_resp' of component 'multiply_block_INPUT_r_m_axi_fifo' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_INPUT_r_m_axi.vhd:3241]
+INFO: [Synth 8-638] synthesizing module 'multiply_block_INPUT_r_m_axi_fifo__parameterized3' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_INPUT_r_m_axi.vhd:611]
+	Parameter DATA_BITS bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 15 - type: integer 
+	Parameter DEPTH_BITS bound to: 4 - type: integer 
+WARNING: [Synth 8-614] signal 'sclk_en' is read in the process but is not in the sensitivity list [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_INPUT_r_m_axi.vhd:704]
+INFO: [Synth 8-256] done synthesizing module 'multiply_block_INPUT_r_m_axi_fifo__parameterized3' (5#1) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_INPUT_r_m_axi.vhd:611]
+	Parameter DATA_BITS bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 5 - type: integer 
+	Parameter DEPTH_BITS bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'multiply_block_INPUT_r_m_axi_fifo' declared at 'c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_INPUT_r_m_axi.vhd:594' bound to instance 'fifo_resp_to_user' of component 'multiply_block_INPUT_r_m_axi_fifo' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_INPUT_r_m_axi.vhd:3257]
+INFO: [Synth 8-638] synthesizing module 'multiply_block_INPUT_r_m_axi_fifo__parameterized5' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_INPUT_r_m_axi.vhd:611]
+	Parameter DATA_BITS bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 5 - type: integer 
+	Parameter DEPTH_BITS bound to: 3 - type: integer 
+WARNING: [Synth 8-614] signal 'sclk_en' is read in the process but is not in the sensitivity list [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_INPUT_r_m_axi.vhd:704]
+INFO: [Synth 8-256] done synthesizing module 'multiply_block_INPUT_r_m_axi_fifo__parameterized5' (5#1) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_INPUT_r_m_axi.vhd:611]
+WARNING: [Synth 8-6014] Unused sequential element sect_end_buf_reg was removed.  [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_INPUT_r_m_axi.vhd:2590]
+INFO: [Synth 8-256] done synthesizing module 'multiply_block_INPUT_r_m_axi_write' (6#1) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_INPUT_r_m_axi.vhd:2229]
+	Parameter NUM_READ_OUTSTANDING bound to: 16 - type: integer 
+	Parameter MAX_READ_BURST_LENGTH bound to: 16 - type: integer 
+	Parameter C_M_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_TARGET_ADDR bound to: 0 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_USER_VALUE bound to: 0 - type: integer 
+	Parameter C_PROT_VALUE bound to: 0 - type: integer 
+	Parameter C_CACHE_VALUE bound to: 3 - type: integer 
+	Parameter USER_DW bound to: 32 - type: integer 
+	Parameter USER_AW bound to: 32 - type: integer 
+	Parameter USER_MAXREQS bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'multiply_block_INPUT_r_m_axi_read' declared at 'c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_INPUT_r_m_axi.vhd:1198' bound to instance 'bus_read' of component 'multiply_block_INPUT_r_m_axi_read' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_INPUT_r_m_axi.vhd:410]
+INFO: [Synth 8-638] synthesizing module 'multiply_block_INPUT_r_m_axi_read' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_INPUT_r_m_axi.vhd:1276]
+	Parameter NUM_READ_OUTSTANDING bound to: 16 - type: integer 
+	Parameter MAX_READ_BURST_LENGTH bound to: 16 - type: integer 
+	Parameter C_M_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_TARGET_ADDR bound to: 0 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_USER_VALUE bound to: 0 - type: integer 
+	Parameter C_PROT_VALUE bound to: 0 - type: integer 
+	Parameter C_CACHE_VALUE bound to: 3 - type: integer 
+	Parameter USER_DW bound to: 32 - type: integer 
+	Parameter USER_AW bound to: 32 - type: integer 
+	Parameter USER_MAXREQS bound to: 5 - type: integer 
+	Parameter N bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'multiply_block_INPUT_r_m_axi_reg_slice' declared at 'c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_INPUT_r_m_axi.vhd:470' bound to instance 'rs_rreq' of component 'multiply_block_INPUT_r_m_axi_reg_slice' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_INPUT_r_m_axi.vhd:1409]
+	Parameter DATA_BITS bound to: 64 - type: integer 
+	Parameter DEPTH bound to: 5 - type: integer 
+	Parameter DEPTH_BITS bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'multiply_block_INPUT_r_m_axi_fifo' declared at 'c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_INPUT_r_m_axi.vhd:594' bound to instance 'fifo_rreq' of component 'multiply_block_INPUT_r_m_axi_fifo' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_INPUT_r_m_axi.vhd:1422]
+	Parameter MEM_STYLE bound to: block - type: string 
+	Parameter DATA_WIDTH bound to: 35 - type: integer 
+	Parameter ADDR_WIDTH bound to: 8 - type: integer 
+	Parameter DEPTH bound to: 256 - type: integer 
+INFO: [Synth 8-3491] module 'multiply_block_INPUT_r_m_axi_buffer' declared at 'c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_INPUT_r_m_axi.vhd:721' bound to instance 'fifo_rdata' of component 'multiply_block_INPUT_r_m_axi_buffer' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_INPUT_r_m_axi.vhd:1799]
+INFO: [Synth 8-638] synthesizing module 'multiply_block_INPUT_r_m_axi_buffer__parameterized1' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_INPUT_r_m_axi.vhd:743]
+	Parameter MEM_STYLE bound to: block - type: string 
+	Parameter DATA_WIDTH bound to: 35 - type: integer 
+	Parameter ADDR_WIDTH bound to: 8 - type: integer 
+	Parameter DEPTH bound to: 256 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'multiply_block_INPUT_r_m_axi_buffer__parameterized1' (6#1) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_INPUT_r_m_axi.vhd:743]
+	Parameter N bound to: 34 - type: integer 
+INFO: [Synth 8-3491] module 'multiply_block_INPUT_r_m_axi_reg_slice' declared at 'c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_INPUT_r_m_axi.vhd:470' bound to instance 'rs_rdata' of component 'multiply_block_INPUT_r_m_axi_reg_slice' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_INPUT_r_m_axi.vhd:1817]
+INFO: [Synth 8-638] synthesizing module 'multiply_block_INPUT_r_m_axi_reg_slice__parameterized2' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_INPUT_r_m_axi.vhd:487]
+	Parameter N bound to: 34 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'multiply_block_INPUT_r_m_axi_reg_slice__parameterized2' (6#1) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_INPUT_r_m_axi.vhd:487]
+	Parameter DATA_BITS bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 15 - type: integer 
+	Parameter DEPTH_BITS bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'multiply_block_INPUT_r_m_axi_fifo' declared at 'c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_INPUT_r_m_axi.vhd:594' bound to instance 'fifo_rctl' of component 'multiply_block_INPUT_r_m_axi_fifo' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_INPUT_r_m_axi.vhd:1830]
+WARNING: [Synth 8-6014] Unused sequential element invalid_len_event_1_reg was removed.  [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_INPUT_r_m_axi.vhd:1576]
+WARNING: [Synth 8-6014] Unused sequential element sect_end_buf_reg was removed.  [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_INPUT_r_m_axi.vhd:1630]
+WARNING: [Synth 8-6014] Unused sequential element invalid_len_event_2_reg was removed.  [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_INPUT_r_m_axi.vhd:1644]
+INFO: [Synth 8-256] done synthesizing module 'multiply_block_INPUT_r_m_axi_read' (7#1) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_INPUT_r_m_axi.vhd:1276]
+INFO: [Synth 8-256] done synthesizing module 'multiply_block_INPUT_r_m_axi' (8#1) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_INPUT_r_m_axi.vhd:140]
+	Parameter CONSERVATIVE bound to: 0 - type: integer 
+	Parameter USER_DW bound to: 32 - type: integer 
+	Parameter USER_AW bound to: 32 - type: integer 
+	Parameter USER_MAXREQS bound to: 5 - type: integer 
+	Parameter NUM_READ_OUTSTANDING bound to: 16 - type: integer 
+	Parameter NUM_WRITE_OUTSTANDING bound to: 16 - type: integer 
+	Parameter MAX_READ_BURST_LENGTH bound to: 16 - type: integer 
+	Parameter MAX_WRITE_BURST_LENGTH bound to: 16 - type: integer 
+	Parameter C_M_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_USER_VALUE bound to: 0 - type: integer 
+	Parameter C_PROT_VALUE bound to: 0 - type: integer 
+	Parameter C_CACHE_VALUE bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'multiply_block_OUTPUT_r_m_axi' declared at 'c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_OUTPUT_r_m_axi.vhd:9' bound to instance 'multiply_block_OUTPUT_r_m_axi_U' of component 'multiply_block_OUTPUT_r_m_axi' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:3247]
+INFO: [Synth 8-638] synthesizing module 'multiply_block_OUTPUT_r_m_axi' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_OUTPUT_r_m_axi.vhd:140]
+	Parameter CONSERVATIVE bound to: 0 - type: integer 
+	Parameter NUM_READ_OUTSTANDING bound to: 16 - type: integer 
+	Parameter NUM_WRITE_OUTSTANDING bound to: 16 - type: integer 
+	Parameter MAX_READ_BURST_LENGTH bound to: 16 - type: integer 
+	Parameter MAX_WRITE_BURST_LENGTH bound to: 16 - type: integer 
+	Parameter C_M_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_TARGET_ADDR bound to: 0 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_USER_VALUE bound to: 0 - type: integer 
+	Parameter C_PROT_VALUE bound to: 0 - type: integer 
+	Parameter C_CACHE_VALUE bound to: 3 - type: integer 
+	Parameter USER_DW bound to: 32 - type: integer 
+	Parameter USER_AW bound to: 32 - type: integer 
+	Parameter USER_MAXREQS bound to: 5 - type: integer 
+	Parameter USED_FIX bound to: 0 - type: bool 
+	Parameter FIX_VALUE bound to: 4 - type: integer 
+	Parameter ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter DEPTH bound to: 16 - type: integer 
+	Parameter USER_MAXREQS bound to: 16 - type: integer 
+	Parameter CONSERVATIVE bound to: 0 - type: integer 
+	Parameter AVERAGE_MODE bound to: 0 - type: bool 
+INFO: [Synth 8-3491] module 'multiply_block_OUTPUT_r_m_axi_throttl' declared at 'c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_OUTPUT_r_m_axi.vhd:953' bound to instance 'wreq_throttl' of component 'multiply_block_OUTPUT_r_m_axi_throttl' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_OUTPUT_r_m_axi.vhd:307]
+INFO: [Synth 8-638] synthesizing module 'multiply_block_OUTPUT_r_m_axi_throttl' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_OUTPUT_r_m_axi.vhd:1010]
+	Parameter USED_FIX bound to: 0 - type: bool 
+	Parameter FIX_VALUE bound to: 4 - type: integer 
+	Parameter ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter DEPTH bound to: 16 - type: integer 
+	Parameter USER_MAXREQS bound to: 16 - type: integer 
+	Parameter CONSERVATIVE bound to: 0 - type: integer 
+	Parameter AVERAGE_MODE bound to: 0 - type: bool 
+INFO: [Synth 8-256] done synthesizing module 'multiply_block_OUTPUT_r_m_axi_throttl' (9#1) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_OUTPUT_r_m_axi.vhd:1010]
+	Parameter NUM_WRITE_OUTSTANDING bound to: 16 - type: integer 
+	Parameter MAX_WRITE_BURST_LENGTH bound to: 16 - type: integer 
+	Parameter C_M_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_TARGET_ADDR bound to: 0 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_USER_VALUE bound to: 0 - type: integer 
+	Parameter C_PROT_VALUE bound to: 0 - type: integer 
+	Parameter C_CACHE_VALUE bound to: 3 - type: integer 
+	Parameter USER_DW bound to: 32 - type: integer 
+	Parameter USER_AW bound to: 32 - type: integer 
+	Parameter USER_MAXREQS bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'multiply_block_OUTPUT_r_m_axi_write' declared at 'c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_OUTPUT_r_m_axi.vhd:2141' bound to instance 'bus_write' of component 'multiply_block_OUTPUT_r_m_axi_write' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_OUTPUT_r_m_axi.vhd:346]
+INFO: [Synth 8-638] synthesizing module 'multiply_block_OUTPUT_r_m_axi_write' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_OUTPUT_r_m_axi.vhd:2229]
+	Parameter NUM_WRITE_OUTSTANDING bound to: 16 - type: integer 
+	Parameter MAX_WRITE_BURST_LENGTH bound to: 16 - type: integer 
+	Parameter C_M_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_TARGET_ADDR bound to: 0 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_USER_VALUE bound to: 0 - type: integer 
+	Parameter C_PROT_VALUE bound to: 0 - type: integer 
+	Parameter C_CACHE_VALUE bound to: 3 - type: integer 
+	Parameter USER_DW bound to: 32 - type: integer 
+	Parameter USER_AW bound to: 32 - type: integer 
+	Parameter USER_MAXREQS bound to: 5 - type: integer 
+	Parameter N bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'multiply_block_OUTPUT_r_m_axi_reg_slice' declared at 'c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_OUTPUT_r_m_axi.vhd:470' bound to instance 'rs_wreq' of component 'multiply_block_OUTPUT_r_m_axi_reg_slice' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_OUTPUT_r_m_axi.vhd:2365]
+INFO: [Synth 8-638] synthesizing module 'multiply_block_OUTPUT_r_m_axi_reg_slice' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_OUTPUT_r_m_axi.vhd:487]
+	Parameter N bound to: 64 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'multiply_block_OUTPUT_r_m_axi_reg_slice' (10#1) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_OUTPUT_r_m_axi.vhd:487]
+	Parameter DATA_BITS bound to: 64 - type: integer 
+	Parameter DEPTH bound to: 5 - type: integer 
+	Parameter DEPTH_BITS bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'multiply_block_OUTPUT_r_m_axi_fifo' declared at 'c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_OUTPUT_r_m_axi.vhd:594' bound to instance 'fifo_wreq' of component 'multiply_block_OUTPUT_r_m_axi_fifo' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_OUTPUT_r_m_axi.vhd:2378]
+INFO: [Synth 8-638] synthesizing module 'multiply_block_OUTPUT_r_m_axi_fifo' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_OUTPUT_r_m_axi.vhd:611]
+	Parameter DATA_BITS bound to: 64 - type: integer 
+	Parameter DEPTH bound to: 5 - type: integer 
+	Parameter DEPTH_BITS bound to: 3 - type: integer 
+WARNING: [Synth 8-614] signal 'sclk_en' is read in the process but is not in the sensitivity list [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_OUTPUT_r_m_axi.vhd:704]
+INFO: [Synth 8-256] done synthesizing module 'multiply_block_OUTPUT_r_m_axi_fifo' (11#1) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_OUTPUT_r_m_axi.vhd:611]
+	Parameter MEM_STYLE bound to: block - type: string 
+	Parameter DATA_WIDTH bound to: 36 - type: integer 
+	Parameter ADDR_WIDTH bound to: 8 - type: integer 
+	Parameter DEPTH bound to: 256 - type: integer 
+INFO: [Synth 8-3491] module 'multiply_block_OUTPUT_r_m_axi_buffer' declared at 'c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_OUTPUT_r_m_axi.vhd:721' bound to instance 'buff_wdata' of component 'multiply_block_OUTPUT_r_m_axi_buffer' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_OUTPUT_r_m_axi.vhd:2777]
+INFO: [Synth 8-638] synthesizing module 'multiply_block_OUTPUT_r_m_axi_buffer' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_OUTPUT_r_m_axi.vhd:743]
+	Parameter MEM_STYLE bound to: block - type: string 
+	Parameter DATA_WIDTH bound to: 36 - type: integer 
+	Parameter ADDR_WIDTH bound to: 8 - type: integer 
+	Parameter DEPTH bound to: 256 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'multiply_block_OUTPUT_r_m_axi_buffer' (12#1) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_OUTPUT_r_m_axi.vhd:743]
+	Parameter DATA_BITS bound to: 8 - type: integer 
+	Parameter DEPTH bound to: 5 - type: integer 
+	Parameter DEPTH_BITS bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'multiply_block_OUTPUT_r_m_axi_fifo' declared at 'c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_OUTPUT_r_m_axi.vhd:594' bound to instance 'fifo_burst' of component 'multiply_block_OUTPUT_r_m_axi_fifo' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_OUTPUT_r_m_axi.vhd:2809]
+INFO: [Synth 8-638] synthesizing module 'multiply_block_OUTPUT_r_m_axi_fifo__parameterized1' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_OUTPUT_r_m_axi.vhd:611]
+	Parameter DATA_BITS bound to: 8 - type: integer 
+	Parameter DEPTH bound to: 5 - type: integer 
+	Parameter DEPTH_BITS bound to: 3 - type: integer 
+WARNING: [Synth 8-614] signal 'sclk_en' is read in the process but is not in the sensitivity list [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_OUTPUT_r_m_axi.vhd:704]
+INFO: [Synth 8-256] done synthesizing module 'multiply_block_OUTPUT_r_m_axi_fifo__parameterized1' (12#1) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_OUTPUT_r_m_axi.vhd:611]
+	Parameter DATA_BITS bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 15 - type: integer 
+	Parameter DEPTH_BITS bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'multiply_block_OUTPUT_r_m_axi_fifo' declared at 'c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_OUTPUT_r_m_axi.vhd:594' bound to instance 'fifo_resp' of component 'multiply_block_OUTPUT_r_m_axi_fifo' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_OUTPUT_r_m_axi.vhd:3241]
+INFO: [Synth 8-638] synthesizing module 'multiply_block_OUTPUT_r_m_axi_fifo__parameterized3' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_OUTPUT_r_m_axi.vhd:611]
+	Parameter DATA_BITS bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 15 - type: integer 
+	Parameter DEPTH_BITS bound to: 4 - type: integer 
+WARNING: [Synth 8-614] signal 'sclk_en' is read in the process but is not in the sensitivity list [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_OUTPUT_r_m_axi.vhd:704]
+INFO: [Synth 8-256] done synthesizing module 'multiply_block_OUTPUT_r_m_axi_fifo__parameterized3' (12#1) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_OUTPUT_r_m_axi.vhd:611]
+	Parameter DATA_BITS bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 5 - type: integer 
+	Parameter DEPTH_BITS bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'multiply_block_OUTPUT_r_m_axi_fifo' declared at 'c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_OUTPUT_r_m_axi.vhd:594' bound to instance 'fifo_resp_to_user' of component 'multiply_block_OUTPUT_r_m_axi_fifo' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_OUTPUT_r_m_axi.vhd:3257]
+INFO: [Synth 8-638] synthesizing module 'multiply_block_OUTPUT_r_m_axi_fifo__parameterized5' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_OUTPUT_r_m_axi.vhd:611]
+	Parameter DATA_BITS bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 5 - type: integer 
+	Parameter DEPTH_BITS bound to: 3 - type: integer 
+WARNING: [Synth 8-614] signal 'sclk_en' is read in the process but is not in the sensitivity list [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_OUTPUT_r_m_axi.vhd:704]
+INFO: [Synth 8-256] done synthesizing module 'multiply_block_OUTPUT_r_m_axi_fifo__parameterized5' (12#1) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_OUTPUT_r_m_axi.vhd:611]
+WARNING: [Synth 8-6014] Unused sequential element sect_end_buf_reg was removed.  [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_OUTPUT_r_m_axi.vhd:2590]
+INFO: [Synth 8-256] done synthesizing module 'multiply_block_OUTPUT_r_m_axi_write' (13#1) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_OUTPUT_r_m_axi.vhd:2229]
+	Parameter NUM_READ_OUTSTANDING bound to: 16 - type: integer 
+	Parameter MAX_READ_BURST_LENGTH bound to: 16 - type: integer 
+	Parameter C_M_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_TARGET_ADDR bound to: 0 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_USER_VALUE bound to: 0 - type: integer 
+	Parameter C_PROT_VALUE bound to: 0 - type: integer 
+	Parameter C_CACHE_VALUE bound to: 3 - type: integer 
+	Parameter USER_DW bound to: 32 - type: integer 
+	Parameter USER_AW bound to: 32 - type: integer 
+	Parameter USER_MAXREQS bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'multiply_block_OUTPUT_r_m_axi_read' declared at 'c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_OUTPUT_r_m_axi.vhd:1198' bound to instance 'bus_read' of component 'multiply_block_OUTPUT_r_m_axi_read' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_OUTPUT_r_m_axi.vhd:410]
+INFO: [Synth 8-638] synthesizing module 'multiply_block_OUTPUT_r_m_axi_read' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_OUTPUT_r_m_axi.vhd:1276]
+	Parameter NUM_READ_OUTSTANDING bound to: 16 - type: integer 
+	Parameter MAX_READ_BURST_LENGTH bound to: 16 - type: integer 
+	Parameter C_M_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_TARGET_ADDR bound to: 0 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_USER_VALUE bound to: 0 - type: integer 
+	Parameter C_PROT_VALUE bound to: 0 - type: integer 
+	Parameter C_CACHE_VALUE bound to: 3 - type: integer 
+	Parameter USER_DW bound to: 32 - type: integer 
+	Parameter USER_AW bound to: 32 - type: integer 
+	Parameter USER_MAXREQS bound to: 5 - type: integer 
+	Parameter N bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'multiply_block_OUTPUT_r_m_axi_reg_slice' declared at 'c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_OUTPUT_r_m_axi.vhd:470' bound to instance 'rs_rreq' of component 'multiply_block_OUTPUT_r_m_axi_reg_slice' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_OUTPUT_r_m_axi.vhd:1409]
+	Parameter DATA_BITS bound to: 64 - type: integer 
+	Parameter DEPTH bound to: 5 - type: integer 
+	Parameter DEPTH_BITS bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'multiply_block_OUTPUT_r_m_axi_fifo' declared at 'c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_OUTPUT_r_m_axi.vhd:594' bound to instance 'fifo_rreq' of component 'multiply_block_OUTPUT_r_m_axi_fifo' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_OUTPUT_r_m_axi.vhd:1422]
+	Parameter MEM_STYLE bound to: block - type: string 
+	Parameter DATA_WIDTH bound to: 35 - type: integer 
+	Parameter ADDR_WIDTH bound to: 8 - type: integer 
+	Parameter DEPTH bound to: 256 - type: integer 
+INFO: [Synth 8-3491] module 'multiply_block_OUTPUT_r_m_axi_buffer' declared at 'c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_OUTPUT_r_m_axi.vhd:721' bound to instance 'fifo_rdata' of component 'multiply_block_OUTPUT_r_m_axi_buffer' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_OUTPUT_r_m_axi.vhd:1799]
+INFO: [Synth 8-638] synthesizing module 'multiply_block_OUTPUT_r_m_axi_buffer__parameterized1' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_OUTPUT_r_m_axi.vhd:743]
+	Parameter MEM_STYLE bound to: block - type: string 
+	Parameter DATA_WIDTH bound to: 35 - type: integer 
+	Parameter ADDR_WIDTH bound to: 8 - type: integer 
+	Parameter DEPTH bound to: 256 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'multiply_block_OUTPUT_r_m_axi_buffer__parameterized1' (13#1) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_OUTPUT_r_m_axi.vhd:743]
+	Parameter N bound to: 34 - type: integer 
+INFO: [Synth 8-3491] module 'multiply_block_OUTPUT_r_m_axi_reg_slice' declared at 'c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_OUTPUT_r_m_axi.vhd:470' bound to instance 'rs_rdata' of component 'multiply_block_OUTPUT_r_m_axi_reg_slice' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_OUTPUT_r_m_axi.vhd:1817]
+INFO: [Synth 8-638] synthesizing module 'multiply_block_OUTPUT_r_m_axi_reg_slice__parameterized2' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_OUTPUT_r_m_axi.vhd:487]
+	Parameter N bound to: 34 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'multiply_block_OUTPUT_r_m_axi_reg_slice__parameterized2' (13#1) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_OUTPUT_r_m_axi.vhd:487]
+	Parameter DATA_BITS bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 15 - type: integer 
+	Parameter DEPTH_BITS bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'multiply_block_OUTPUT_r_m_axi_fifo' declared at 'c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_OUTPUT_r_m_axi.vhd:594' bound to instance 'fifo_rctl' of component 'multiply_block_OUTPUT_r_m_axi_fifo' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_OUTPUT_r_m_axi.vhd:1830]
+WARNING: [Synth 8-6014] Unused sequential element invalid_len_event_1_reg was removed.  [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_OUTPUT_r_m_axi.vhd:1576]
+WARNING: [Synth 8-6014] Unused sequential element sect_end_buf_reg was removed.  [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_OUTPUT_r_m_axi.vhd:1630]
+WARNING: [Synth 8-6014] Unused sequential element invalid_len_event_2_reg was removed.  [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_OUTPUT_r_m_axi.vhd:1644]
+INFO: [Synth 8-256] done synthesizing module 'multiply_block_OUTPUT_r_m_axi_read' (14#1) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_OUTPUT_r_m_axi.vhd:1276]
+INFO: [Synth 8-256] done synthesizing module 'multiply_block_OUTPUT_r_m_axi' (15#1) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_OUTPUT_r_m_axi.vhd:140]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 4096 - type: integer 
+	Parameter AddressWidth bound to: 12 - type: integer 
+INFO: [Synth 8-3491] module 'multiply_block_mA' declared at 'c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_mA.vhd:97' bound to instance 'mA_U' of component 'multiply_block_mA' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:3363]
+INFO: [Synth 8-638] synthesizing module 'multiply_block_mA' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_mA.vhd:115]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 4096 - type: integer 
+	Parameter AddressWidth bound to: 12 - type: integer 
+INFO: [Synth 8-3491] module 'multiply_block_mA_ram' declared at 'c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_mA.vhd:10' bound to instance 'multiply_block_mA_ram_U' of component 'multiply_block_mA_ram' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_mA.vhd:132]
+INFO: [Synth 8-638] synthesizing module 'multiply_block_mA_ram' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_mA.vhd:31]
+	Parameter MEM_TYPE bound to: block - type: string 
+	Parameter DWIDTH bound to: 32 - type: integer 
+	Parameter AWIDTH bound to: 12 - type: integer 
+	Parameter MEM_SIZE bound to: 4096 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'multiply_block_mA_ram' (16#1) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_mA.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'multiply_block_mA' (17#1) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_mA.vhd:115]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 4096 - type: integer 
+	Parameter AddressWidth bound to: 12 - type: integer 
+INFO: [Synth 8-3491] module 'multiply_block_mA' declared at 'c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_mA.vhd:97' bound to instance 'mB_U' of component 'multiply_block_mA' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:3380]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 4096 - type: integer 
+	Parameter AddressWidth bound to: 12 - type: integer 
+INFO: [Synth 8-3491] module 'multiply_block_mC' declared at 'c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_mC.vhd:102' bound to instance 'mC_U' of component 'multiply_block_mC' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:3397]
+INFO: [Synth 8-638] synthesizing module 'multiply_block_mC' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_mC.vhd:122]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 4096 - type: integer 
+	Parameter AddressWidth bound to: 12 - type: integer 
+INFO: [Synth 8-3491] module 'multiply_block_mC_ram' declared at 'c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_mC.vhd:10' bound to instance 'multiply_block_mC_ram_U' of component 'multiply_block_mC_ram' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_mC.vhd:141]
+INFO: [Synth 8-638] synthesizing module 'multiply_block_mC_ram' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_mC.vhd:33]
+	Parameter MEM_TYPE bound to: block - type: string 
+	Parameter DWIDTH bound to: 32 - type: integer 
+	Parameter AWIDTH bound to: 12 - type: integer 
+	Parameter MEM_SIZE bound to: 4096 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'multiply_block_mC_ram' (18#1) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_mC.vhd:33]
+INFO: [Synth 8-256] done synthesizing module 'multiply_block_mC' (19#1) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_mC.vhd:122]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 5 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'multiply_block_fadd_32ns_32ns_32_5_full_dsp_1' declared at 'c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_fadd_32ns_32ns_32_5_full_dsp_1.vhd:8' bound to instance 'multiply_block_fadd_32ns_32ns_32_5_full_dsp_1_U1' of component 'multiply_block_fadd_32ns_32ns_32_5_full_dsp_1' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:3416]
+INFO: [Synth 8-638] synthesizing module 'multiply_block_fadd_32ns_32ns_32_5_full_dsp_1' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_fadd_32ns_32ns_32_5_full_dsp_1.vhd:26]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 5 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'multiply_block_ap_fadd_3_full_dsp_32' declared at 'c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/ip/multiply_block_ap_fadd_3_full_dsp_32.vhd:59' bound to instance 'multiply_block_ap_fadd_3_full_dsp_32_u' of component 'multiply_block_ap_fadd_3_full_dsp_32' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_fadd_32ns_32ns_32_5_full_dsp_1.vhd:56]
+INFO: [Synth 8-638] synthesizing module 'multiply_block_ap_fadd_3_full_dsp_32' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/ip/multiply_block_ap_fadd_3_full_dsp_32.vhd:72]
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_HAS_ADD bound to: 1 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_SUB bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_C_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 3 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 2 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 1 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_8' declared at 'c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/83a3/hdl/floating_point_v7_1_vh_rfs.vhd:94214' bound to instance 'U0' of component 'floating_point_v7_1_8' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/ip/multiply_block_ap_fadd_3_full_dsp_32.vhd:210]
+INFO: [Synth 8-256] done synthesizing module 'multiply_block_ap_fadd_3_full_dsp_32' (37#1) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/ip/multiply_block_ap_fadd_3_full_dsp_32.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'multiply_block_fadd_32ns_32ns_32_5_full_dsp_1' (38#1) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_fadd_32ns_32ns_32_5_full_dsp_1.vhd:26]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 5 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'multiply_block_fadd_32ns_32ns_32_5_full_dsp_1' declared at 'c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_fadd_32ns_32ns_32_5_full_dsp_1.vhd:8' bound to instance 'multiply_block_fadd_32ns_32ns_32_5_full_dsp_1_U2' of component 'multiply_block_fadd_32ns_32ns_32_5_full_dsp_1' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:3431]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 4 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'multiply_block_fmul_32ns_32ns_32_4_max_dsp_1' declared at 'c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_fmul_32ns_32ns_32_4_max_dsp_1.vhd:8' bound to instance 'multiply_block_fmul_32ns_32ns_32_4_max_dsp_1_U3' of component 'multiply_block_fmul_32ns_32ns_32_4_max_dsp_1' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:3446]
+INFO: [Synth 8-638] synthesizing module 'multiply_block_fmul_32ns_32ns_32_4_max_dsp_1' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_fmul_32ns_32ns_32_4_max_dsp_1.vhd:26]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 4 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'multiply_block_ap_fmul_2_max_dsp_32' declared at 'c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/ip/multiply_block_ap_fmul_2_max_dsp_32.vhd:59' bound to instance 'multiply_block_ap_fmul_2_max_dsp_32_u' of component 'multiply_block_ap_fmul_2_max_dsp_32' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_fmul_32ns_32ns_32_4_max_dsp_1.vhd:56]
+INFO: [Synth 8-638] synthesizing module 'multiply_block_ap_fmul_2_max_dsp_32' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/ip/multiply_block_ap_fmul_2_max_dsp_32.vhd:72]
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_HAS_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 1 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_SUB bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_C_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 2 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 3 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 1 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_8' declared at 'c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/83a3/hdl/floating_point_v7_1_vh_rfs.vhd:94214' bound to instance 'U0' of component 'floating_point_v7_1_8' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/ip/multiply_block_ap_fmul_2_max_dsp_32.vhd:210]
+INFO: [Synth 8-256] done synthesizing module 'multiply_block_ap_fmul_2_max_dsp_32' (46#1) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/ip/multiply_block_ap_fmul_2_max_dsp_32.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'multiply_block_fmul_32ns_32ns_32_4_max_dsp_1' (47#1) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_fmul_32ns_32ns_32_4_max_dsp_1.vhd:26]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 4 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'multiply_block_fmul_32ns_32ns_32_4_max_dsp_1' declared at 'c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_fmul_32ns_32ns_32_4_max_dsp_1.vhd:8' bound to instance 'multiply_block_fmul_32ns_32ns_32_4_max_dsp_1_U4' of component 'multiply_block_fmul_32ns_32ns_32_4_max_dsp_1' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:3461]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln32_4_fu_4382_p3_reg' and it is trimmed from '64' to '12' bits. [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:9518]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln31_27_fu_4340_p3_reg' and it is trimmed from '64' to '12' bits. [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:9392]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln32_3_fu_4171_p3_reg' and it is trimmed from '13' to '12' bits. [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:9515]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln31_26_fu_4115_p3_reg' and it is trimmed from '13' to '12' bits. [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:9389]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln32_2_fu_3775_p3_reg' and it is trimmed from '14' to '12' bits. [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:9512]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln31_25_fu_3710_p3_reg' and it is trimmed from '14' to '12' bits. [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:9386]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln32_17_fu_4600_p3_reg' and it is trimmed from '64' to '12' bits. [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:9494]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln31_40_fu_4569_p3_reg' and it is trimmed from '64' to '12' bits. [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:9437]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln32_16_fu_4470_p3_reg' and it is trimmed from '64' to '12' bits. [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:9491]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln31_39_fu_4439_p3_reg' and it is trimmed from '64' to '12' bits. [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:9431]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln32_15_fu_4298_p3_reg' and it is trimmed from '64' to '12' bits. [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:9488]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln31_38_fu_4267_p3_reg' and it is trimmed from '64' to '12' bits. [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:9428]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln32_14_fu_3993_p3_reg' and it is trimmed from '64' to '12' bits. [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:9485]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln31_37_fu_3946_p3_reg' and it is trimmed from '13' to '12' bits. [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:9425]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln32_13_fu_4592_p3_reg' and it is trimmed from '64' to '12' bits. [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:9482]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln31_36_fu_4562_p3_reg' and it is trimmed from '64' to '12' bits. [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:9422]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln32_12_fu_4462_p3_reg' and it is trimmed from '64' to '12' bits. [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:9479]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln31_35_fu_4432_p3_reg' and it is trimmed from '64' to '12' bits. [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:9419]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln32_11_fu_4290_p3_reg' and it is trimmed from '64' to '12' bits. [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:9476]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln31_34_fu_4260_p3_reg' and it is trimmed from '64' to '12' bits. [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:9416]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln32_10_fu_3985_p3_reg' and it is trimmed from '64' to '12' bits. [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:9473]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln31_33_fu_3935_p3_reg' and it is trimmed from '13' to '12' bits. [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:9413]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln32_9_fu_4514_p3_reg' and it is trimmed from '64' to '12' bits. [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:9533]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln31_32_fu_4495_p3_reg' and it is trimmed from '64' to '12' bits. [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:9410]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln32_8_fu_4390_p3_reg' and it is trimmed from '64' to '12' bits. [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:9530]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln31_31_fu_4347_p3_reg' and it is trimmed from '64' to '12' bits. [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:9407]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln32_7_fu_4207_p3_reg' and it is trimmed from '64' to '12' bits. [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:9527]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln31_30_fu_4139_p3_reg' and it is trimmed from '64' to '12' bits. [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:9404]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln32_6_fu_3793_p3_reg' and it is trimmed from '64' to '12' bits. [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:9524]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln31_29_fu_3717_p3_reg' and it is trimmed from '13' to '12' bits. [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:9398]
+INFO: [Synth 8-256] done synthesizing module 'multiply_block' (48#1) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:152]
+INFO: [Synth 8-256] done synthesizing module 'design_IP_multiply_block_0_0' (49#1) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ip/design_IP_multiply_block_0_0/synth/design_IP_multiply_block_0_0.vhd:151]
+WARNING: [Synth 8-3331] design flt_dec_op_lat has unconnected port DEC_OP_STATE[11]
+WARNING: [Synth 8-3331] design flt_dec_op_lat has unconnected port DEC_OP_STATE[10]
+WARNING: [Synth 8-3331] design flt_dec_op_lat has unconnected port DEC_OP_STATE[9]
+WARNING: [Synth 8-3331] design flt_dec_op_lat has unconnected port DEC_OP_STATE[8]
+WARNING: [Synth 8-3331] design flt_dec_op_lat has unconnected port DIVIDE_BY_ZERO_IN
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized29 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized29 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized29 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized29 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized29 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized72 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized72 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized72 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized72 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized72 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized70 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized70 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized70 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized70 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized70 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized13 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized13 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized13 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized13 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized13 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized3 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized3 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized3 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized3 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized3 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized11 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized11 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized11 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized11 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized11 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized7 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized7 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized7 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized7 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized7 has unconnected port SINIT
+WARNING: [Synth 8-3331] design dsp48e1_wrapper__parameterized3 has unconnected port SCLR
+WARNING: [Synth 8-3331] design flt_round_dsp_opt_full has unconnected port SIGN
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized60 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized60 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized60 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized60 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized60 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized68 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized68 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized68 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized68 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized68 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized49 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized49 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized49 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized49 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized49 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized47 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized47 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized47 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized47 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized47 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized66 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized66 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized66 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized66 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized66 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized33 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized33 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized33 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized64 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized64 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized64 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized31 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized31 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized31 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized62 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized62 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized62 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized17 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized17 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized17 has unconnected port SINIT
+WARNING: [Synth 8-3331] design compare_eq_im__parameterized1 has unconnected port CARRYS_OUT[0]
+WARNING: [Synth 8-3331] design special_detect__parameterized0 has unconnected port A[31]
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized55 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized55 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized55 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized55 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized55 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized15 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized15 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized15 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized15 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized15 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized58 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized58 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized58 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized58 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized58 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized9 has unconnected port CLK
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:45 ; elapsed = 00:00:54 . Memory (MB): peak = 1112.363 ; gain = 456.723
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:47 ; elapsed = 00:00:57 . Memory (MB): peak = 1112.363 ; gain = 456.723
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:47 ; elapsed = 00:00:57 . Memory (MB): peak = 1112.363 ; gain = 456.723
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 220 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ip/design_IP_multiply_block_0_0/constraints/multiply_block_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ip/design_IP_multiply_block_0_0/constraints/multiply_block_ooc.xdc] for cell 'U0'
+Parsing XDC File [C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.runs/design_IP_multiply_block_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.runs/design_IP_multiply_block_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.049 . Memory (MB): peak = 1811.277 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 6 instances were transformed.
+  FDE => FDRE: 6 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1812.270 ; gain = 0.992
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:01:39 ; elapsed = 00:01:57 . Memory (MB): peak = 1812.270 ; gain = 1156.629
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:39 ; elapsed = 00:01:57 . Memory (MB): peak = 1812.270 ; gain = 1156.629
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0. (constraint file  C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.runs/design_IP_multiply_block_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:39 ; elapsed = 00:01:57 . Memory (MB): peak = 1812.270 ; gain = 1156.629
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'multiply_block_CONTROL_BUS_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'multiply_block_CONTROL_BUS_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'multiply_block_INPUT_r_m_axi_reg_slice'
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_INPUT_r_m_axi.vhd:803]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_INPUT_r_m_axi.vhd:695]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_INPUT_r_m_axi.vhd:803]
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'multiply_block_INPUT_r_m_axi_reg_slice__parameterized2'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'multiply_block_OUTPUT_r_m_axi_reg_slice'
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_OUTPUT_r_m_axi.vhd:803]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_OUTPUT_r_m_axi.vhd:695]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block_OUTPUT_r_m_axi.vhd:803]
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'multiply_block_OUTPUT_r_m_axi_reg_slice__parameterized2'
+WARNING: [Synth 8-3936] Found unconnected internal register 'tmp_89_reg_6751_reg' and it is trimmed from '13' to '12' bits. [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:5232]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tmp_102_reg_6828_reg' and it is trimmed from '13' to '12' bits. [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:5254]
+WARNING: [Synth 8-3936] Found unconnected internal register 'add_ln40_reg_7159_reg' and it is trimmed from '7' to '6' bits. [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:5320]
+WARNING: [Synth 8-3936] Found unconnected internal register 'add_ln40_3_reg_6918_reg' and it is trimmed from '13' to '12' bits. [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:5289]
+WARNING: [Synth 8-3936] Found unconnected internal register 'add_ln40_2_reg_6893_reg' and it is trimmed from '13' to '12' bits. [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:5288]
+WARNING: [Synth 8-3936] Found unconnected internal register 'add_ln40_1_reg_6868_reg' and it is trimmed from '14' to '12' bits. [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:5287]
+WARNING: [Synth 8-3936] Found unconnected internal register 'k_reg_7124_reg' and it is trimmed from '7' to '6' bits. [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:5322]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tmp_101_reg_6789_reg' and it is trimmed from '13' to '12' bits. [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:5243]
+INFO: [Synth 8-4471] merging register 'k_reg_7124_reg[5:0]' into 'trunc_ln32_1_reg_7130_reg[5:0]' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.srcs/sources_1/bd/design_IP/ipshared/76c1/hdl/vhdl/multiply_block.vhd:5322]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                              011
+*
+                  wridle |                             0010 |                              000
+                  wrdata |                             0100 |                              001
+                  wrresp |                             1000 |                              010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'multiply_block_CONTROL_BUS_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                              110
+*
+                  rdidle |                              010 |                              100
+                  rddata |                              100 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'multiply_block_CONTROL_BUS_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    zero |                               00 |                               10
+                     one |                               10 |                               11
+                     two |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'multiply_block_INPUT_r_m_axi_reg_slice'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    zero |                               00 |                               10
+                     one |                               10 |                               11
+                     two |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'multiply_block_INPUT_r_m_axi_reg_slice__parameterized2'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    zero |                               00 |                               10
+                     one |                               10 |                               11
+                     two |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'multiply_block_OUTPUT_r_m_axi_reg_slice'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    zero |                               00 |                               10
+                     one |                               10 |                               11
+                     two |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'multiply_block_OUTPUT_r_m_axi_reg_slice__parameterized2'
+INFO: [Synth 8-3971] The signal "multiply_block_mC_ram:/ram_reg" was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:54 ; elapsed = 00:02:15 . Memory (MB): peak = 1812.270 ; gain = 1156.629
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'multiply_block_fadd_32ns_32ns_32_5_full_dsp_1:/multiply_block_ap_fadd_3_full_dsp_32_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'multiply_block_fadd_32ns_32ns_32_5_full_dsp_1:/multiply_block_ap_fadd_3_full_dsp_32_u/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'multiply_block_fadd_32ns_32ns_32_5_full_dsp_1:/multiply_block_ap_fadd_3_full_dsp_32_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'multiply_block_fadd_32ns_32ns_32_5_full_dsp_1:/multiply_block_ap_fadd_3_full_dsp_32_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'multiply_block_fadd_32ns_32ns_32_5_full_dsp_1:/multiply_block_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/SUB_DELAY' (delay__parameterized0) to 'multiply_block_fadd_32ns_32ns_32_5_full_dsp_1:/multiply_block_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/SUB_ADD_IP_DELAY'
+INFO: [Synth 8-223] decloning instance 'multiply_block_fmul_32ns_32ns_32_4_max_dsp_1:/multiply_block_ap_fmul_2_max_dsp_32_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'multiply_block_fmul_32ns_32ns_32_4_max_dsp_1:/multiply_block_ap_fmul_2_max_dsp_32_u/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'multiply_block_fmul_32ns_32ns_32_4_max_dsp_1:/multiply_block_ap_fmul_2_max_dsp_32_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'multiply_block_fmul_32ns_32ns_32_4_max_dsp_1:/multiply_block_ap_fmul_2_max_dsp_32_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+
+Report RTL Partitions: 
++------+--------------------+------------+----------+
+|      |RTL Partition       |Replication |Instances |
++------+--------------------+------------+----------+
+|1     |multiply_block__GB0 |           1|     30124|
+|2     |multiply_block__GB1 |           1|      7719|
+|3     |multiply_block__GB2 |           1|     13347|
++------+--------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3971] The signal "U0/mC_U/multiply_block_mC_ram_U/ram_reg" was recognized as a true dual port RAM template.
+warning: Removed RAM multiply_block_INPUT_r_m_axi_U/bus_write/buff_wdata/mem_reg due to inactive write enable
+WARNING: [Synth 8-6014] Unused sequential element multiply_block_INPUT_r_m_axi_U/bus_write/buff_wdata/mem_reg was removed. 
+INFO: [Synth 8-3886] merging instance 'U0/i_8_0/mC_addr_7_reg_7257_reg[6]' (FDE) to 'U0/i_8_0/mC_addr_6_reg_7251_reg[6]'
+INFO: [Synth 8-3886] merging instance 'U0/i_8_0/mC_addr_7_reg_7257_reg[7]' (FDE) to 'U0/i_8_0/mC_addr_6_reg_7251_reg[7]'
+INFO: [Synth 8-3886] merging instance 'U0/i_8_0/mC_addr_7_reg_7257_reg[8]' (FDE) to 'U0/i_8_0/mC_addr_6_reg_7251_reg[8]'
+INFO: [Synth 8-3886] merging instance 'U0/i_8_0/mC_addr_7_reg_7257_reg[9]' (FDE) to 'U0/i_8_0/mC_addr_6_reg_7251_reg[9]'
+INFO: [Synth 8-3886] merging instance 'U0/i_8_0/mC_addr_7_reg_7257_reg[10]' (FDE) to 'U0/i_8_0/mC_addr_6_reg_7251_reg[10]'
+INFO: [Synth 8-3886] merging instance 'U0/i_8_0/mC_addr_7_reg_7257_reg[11]' (FDE) to 'U0/i_8_0/mC_addr_6_reg_7251_reg[11]'
+INFO: [Synth 8-3886] merging instance 'U0/i_8_0/mC_addr_7_reg_7257_pp0_iter1_reg_reg[6]' (FDE) to 'U0/i_8_0/mC_addr_6_reg_7251_pp0_iter1_reg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'U0/i_8_0/mC_addr_7_reg_7257_pp0_iter1_reg_reg[7]' (FDE) to 'U0/i_8_0/mC_addr_6_reg_7251_pp0_iter1_reg_reg[7]'
+INFO: [Synth 8-3886] merging instance 'U0/i_8_0/mC_addr_7_reg_7257_pp0_iter1_reg_reg[8]' (FDE) to 'U0/i_8_0/mC_addr_6_reg_7251_pp0_iter1_reg_reg[8]'
+INFO: [Synth 8-3886] merging instance 'U0/i_8_0/mC_addr_7_reg_7257_pp0_iter1_reg_reg[9]' (FDE) to 'U0/i_8_0/mC_addr_6_reg_7251_pp0_iter1_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'U0/i_8_0/mC_addr_7_reg_7257_pp0_iter1_reg_reg[10]' (FDE) to 'U0/i_8_0/mC_addr_6_reg_7251_pp0_iter1_reg_reg[10]'
+INFO: [Synth 8-3886] merging instance 'U0/i_8_0/mC_addr_7_reg_7257_pp0_iter1_reg_reg[11]' (FDE) to 'U0/i_8_0/mC_addr_6_reg_7251_pp0_iter1_reg_reg[11]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/i_8_0/multiply_block_fadd_32ns_32ns_32_5_full_dsp_1_U1/ce_r_reg)
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/i_8_0/multiply_block_fadd_32ns_32ns_32_5_full_dsp_1_U2/ce_r_reg)
+INFO: [Synth 8-3886] merging instance 'U0/i_8_0/mC_addr_7_reg_7257_pp0_iter2_reg_reg[6]' (FDE) to 'U0/i_8_0/mC_addr_6_reg_7251_pp0_iter2_reg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'U0/i_8_0/mC_addr_7_reg_7257_pp0_iter2_reg_reg[7]' (FDE) to 'U0/i_8_0/mC_addr_6_reg_7251_pp0_iter2_reg_reg[7]'
+INFO: [Synth 8-3886] merging instance 'U0/i_8_0/mC_addr_7_reg_7257_pp0_iter2_reg_reg[8]' (FDE) to 'U0/i_8_0/mC_addr_6_reg_7251_pp0_iter2_reg_reg[8]'
+INFO: [Synth 8-3886] merging instance 'U0/i_8_0/mC_addr_7_reg_7257_pp0_iter2_reg_reg[9]' (FDE) to 'U0/i_8_0/mC_addr_6_reg_7251_pp0_iter2_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'U0/i_8_0/mC_addr_7_reg_7257_pp0_iter2_reg_reg[10]' (FDE) to 'U0/i_8_0/mC_addr_6_reg_7251_pp0_iter2_reg_reg[10]'
+INFO: [Synth 8-3886] merging instance 'U0/i_8_0/mC_addr_7_reg_7257_pp0_iter2_reg_reg[11]' (FDE) to 'U0/i_8_0/mC_addr_6_reg_7251_pp0_iter2_reg_reg[11]'
+INFO: [Synth 8-3886] merging instance 'U0/i_8_0/mC_addr_7_reg_7257_pp0_iter3_reg_reg[6]' (FDE) to 'U0/i_8_0/mC_addr_6_reg_7251_pp0_iter3_reg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'U0/i_8_0/mC_addr_7_reg_7257_pp0_iter3_reg_reg[7]' (FDE) to 'U0/i_8_0/mC_addr_6_reg_7251_pp0_iter3_reg_reg[7]'
+INFO: [Synth 8-3886] merging instance 'U0/i_8_0/mC_addr_7_reg_7257_pp0_iter3_reg_reg[8]' (FDE) to 'U0/i_8_0/mC_addr_6_reg_7251_pp0_iter3_reg_reg[8]'
+INFO: [Synth 8-3886] merging instance 'U0/i_8_0/mC_addr_7_reg_7257_pp0_iter3_reg_reg[9]' (FDE) to 'U0/i_8_0/mC_addr_6_reg_7251_pp0_iter3_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'U0/i_8_0/mC_addr_7_reg_7257_pp0_iter3_reg_reg[10]' (FDE) to 'U0/i_8_0/mC_addr_6_reg_7251_pp0_iter3_reg_reg[10]'
+INFO: [Synth 8-3886] merging instance 'U0/i_8_0/mC_addr_7_reg_7257_pp0_iter3_reg_reg[11]' (FDE) to 'U0/i_8_0/mC_addr_6_reg_7251_pp0_iter3_reg_reg[11]'
+INFO: [Synth 8-3886] merging instance 'U0/i_8_0/empty_reg_6656_reg[0]' (FDE) to 'U0/i_8_0/p_cast162_reg_6723_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/i_8_0/empty_reg_6656_reg[1]' (FDE) to 'U0/i_8_0/p_cast162_reg_6723_reg[1]'
+INFO: [Synth 8-3886] merging instance 'U0/i_8_0/empty_reg_6656_reg[2]' (FDE) to 'U0/i_8_0/p_cast162_reg_6723_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U0/i_8_0/empty_reg_6656_reg[3]' (FDE) to 'U0/i_8_0/p_cast162_reg_6723_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/i_8_0/empty_reg_6656_reg[4]' (FDE) to 'U0/i_8_0/p_cast162_reg_6723_reg[4]'
+INFO: [Synth 8-3886] merging instance 'U0/i_8_0/empty_reg_6656_reg[5]' (FDE) to 'U0/i_8_0/p_cast162_reg_6723_reg[5]'
+INFO: [Synth 8-3886] merging instance 'U0/i_8_0/empty_reg_6656_reg[6]' (FDE) to 'U0/i_8_0/p_cast162_reg_6723_reg[6]'
+INFO: [Synth 8-3886] merging instance 'U0/i_8_0/empty_reg_6656_reg[7]' (FDE) to 'U0/i_8_0/p_cast162_reg_6723_reg[7]'
+INFO: [Synth 8-3886] merging instance 'U0/i_8_0/empty_reg_6656_reg[8]' (FDE) to 'U0/i_8_0/p_cast162_reg_6723_reg[8]'
+INFO: [Synth 8-3886] merging instance 'U0/i_8_0/empty_reg_6656_reg[9]' (FDE) to 'U0/i_8_0/p_cast162_reg_6723_reg[9]'
+INFO: [Synth 8-3886] merging instance 'U0/i_8_0/empty_reg_6656_reg[10]' (FDE) to 'U0/i_8_0/p_cast162_reg_6723_reg[10]'
+INFO: [Synth 8-3886] merging instance 'U0/i_8_0/empty_reg_6656_reg[11]' (FDE) to 'U0/i_8_0/p_cast162_reg_6723_reg[11]'
+INFO: [Synth 8-3886] merging instance 'U0/i_8_0/empty_reg_6656_reg[12]' (FDE) to 'U0/i_8_0/p_cast162_reg_6723_reg[12]'
+INFO: [Synth 8-3886] merging instance 'U0/i_8_0/empty_reg_6656_reg[13]' (FDE) to 'U0/i_8_0/p_cast162_reg_6723_reg[13]'
+INFO: [Synth 8-3886] merging instance 'U0/i_8_0/empty_reg_6656_reg[14]' (FDE) to 'U0/i_8_0/p_cast162_reg_6723_reg[14]'
+INFO: [Synth 8-3886] merging instance 'U0/i_8_0/empty_reg_6656_reg[15]' (FDE) to 'U0/i_8_0/p_cast162_reg_6723_reg[15]'
+INFO: [Synth 8-3886] merging instance 'U0/i_8_0/empty_reg_6656_reg[16]' (FDE) to 'U0/i_8_0/p_cast162_reg_6723_reg[16]'
+INFO: [Synth 8-3886] merging instance 'U0/i_8_0/empty_reg_6656_reg[17]' (FDE) to 'U0/i_8_0/p_cast162_reg_6723_reg[17]'
+INFO: [Synth 8-3886] merging instance 'U0/i_8_0/empty_reg_6656_reg[18]' (FDE) to 'U0/i_8_0/p_cast162_reg_6723_reg[18]'
+INFO: [Synth 8-3886] merging instance 'U0/i_8_0/empty_reg_6656_reg[19]' (FDE) to 'U0/i_8_0/p_cast162_reg_6723_reg[19]'
+INFO: [Synth 8-3886] merging instance 'U0/i_8_0/empty_reg_6656_reg[20]' (FDE) to 'U0/i_8_0/p_cast162_reg_6723_reg[20]'
+INFO: [Synth 8-3886] merging instance 'U0/i_8_0/empty_reg_6656_reg[21]' (FDE) to 'U0/i_8_0/p_cast162_reg_6723_reg[21]'
+INFO: [Synth 8-3886] merging instance 'U0/i_8_0/empty_reg_6656_reg[22]' (FDE) to 'U0/i_8_0/p_cast162_reg_6723_reg[22]'
+INFO: [Synth 8-3886] merging instance 'U0/i_8_0/empty_reg_6656_reg[23]' (FDE) to 'U0/i_8_0/p_cast162_reg_6723_reg[23]'
+INFO: [Synth 8-3886] merging instance 'U0/i_8_0/empty_reg_6656_reg[24]' (FDE) to 'U0/i_8_0/p_cast162_reg_6723_reg[24]'
+INFO: [Synth 8-3886] merging instance 'U0/i_8_0/empty_reg_6656_reg[25]' (FDE) to 'U0/i_8_0/p_cast162_reg_6723_reg[25]'
+INFO: [Synth 8-3886] merging instance 'U0/i_8_0/empty_reg_6656_reg[26]' (FDE) to 'U0/i_8_0/p_cast162_reg_6723_reg[26]'
+INFO: [Synth 8-3886] merging instance 'U0/i_8_0/empty_reg_6656_reg[27]' (FDE) to 'U0/i_8_0/p_cast162_reg_6723_reg[27]'
+INFO: [Synth 8-3886] merging instance 'U0/i_8_0/empty_reg_6656_reg[28]' (FDE) to 'U0/i_8_0/p_cast162_reg_6723_reg[28]'
+INFO: [Synth 8-3886] merging instance 'U0/i_8_0/empty_reg_6656_reg[29]' (FDE) to 'U0/i_8_0/p_cast162_reg_6723_reg[29]'
+INFO: [Synth 8-3886] merging instance 'U0/i_8_0/out_mC5_reg_6651_reg[0]' (FDE) to 'U0/i_8_0/p_cast162_reg_6723_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/i_8_0/out_mC5_reg_6651_reg[1]' (FDE) to 'U0/i_8_0/p_cast162_reg_6723_reg[1]'
+INFO: [Synth 8-3886] merging instance 'U0/i_8_0/out_mC5_reg_6651_reg[2]' (FDE) to 'U0/i_8_0/p_cast162_reg_6723_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U0/i_8_0/out_mC5_reg_6651_reg[3]' (FDE) to 'U0/i_8_0/p_cast162_reg_6723_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/i_8_0/out_mC5_reg_6651_reg[4]' (FDE) to 'U0/i_8_0/p_cast162_reg_6723_reg[4]'
+INFO: [Synth 8-3886] merging instance 'U0/i_8_0/out_mC5_reg_6651_reg[5]' (FDE) to 'U0/i_8_0/p_cast162_reg_6723_reg[5]'
+INFO: [Synth 8-3886] merging instance 'U0/i_8_0/out_mC5_reg_6651_reg[6]' (FDE) to 'U0/i_8_0/p_cast162_reg_6723_reg[6]'
+INFO: [Synth 8-3886] merging instance 'U0/i_8_0/out_mC5_reg_6651_reg[7]' (FDE) to 'U0/i_8_0/p_cast162_reg_6723_reg[7]'
+INFO: [Synth 8-3886] merging instance 'U0/i_8_0/out_mC5_reg_6651_reg[8]' (FDE) to 'U0/i_8_0/p_cast162_reg_6723_reg[8]'
+INFO: [Synth 8-3886] merging instance 'U0/i_8_0/out_mC5_reg_6651_reg[9]' (FDE) to 'U0/i_8_0/p_cast162_reg_6723_reg[9]'
+INFO: [Synth 8-3886] merging instance 'U0/i_8_0/out_mC5_reg_6651_reg[10]' (FDE) to 'U0/i_8_0/p_cast162_reg_6723_reg[10]'
+INFO: [Synth 8-3886] merging instance 'U0/i_8_0/out_mC5_reg_6651_reg[11]' (FDE) to 'U0/i_8_0/p_cast162_reg_6723_reg[11]'
+INFO: [Synth 8-3886] merging instance 'U0/i_8_0/out_mC5_reg_6651_reg[12]' (FDE) to 'U0/i_8_0/p_cast162_reg_6723_reg[12]'
+INFO: [Synth 8-3886] merging instance 'U0/i_8_0/out_mC5_reg_6651_reg[13]' (FDE) to 'U0/i_8_0/p_cast162_reg_6723_reg[13]'
+INFO: [Synth 8-3886] merging instance 'U0/i_8_0/out_mC5_reg_6651_reg[14]' (FDE) to 'U0/i_8_0/p_cast162_reg_6723_reg[14]'
+INFO: [Synth 8-3886] merging instance 'U0/i_8_0/out_mC5_reg_6651_reg[15]' (FDE) to 'U0/i_8_0/p_cast162_reg_6723_reg[15]'
+INFO: [Synth 8-3886] merging instance 'U0/i_8_0/out_mC5_reg_6651_reg[16]' (FDE) to 'U0/i_8_0/p_cast162_reg_6723_reg[16]'
+INFO: [Synth 8-3886] merging instance 'U0/i_8_0/out_mC5_reg_6651_reg[17]' (FDE) to 'U0/i_8_0/p_cast162_reg_6723_reg[17]'
+INFO: [Synth 8-3886] merging instance 'U0/i_8_0/out_mC5_reg_6651_reg[18]' (FDE) to 'U0/i_8_0/p_cast162_reg_6723_reg[18]'
+INFO: [Synth 8-3886] merging instance 'U0/i_8_0/out_mC5_reg_6651_reg[19]' (FDE) to 'U0/i_8_0/p_cast162_reg_6723_reg[19]'
+INFO: [Synth 8-3886] merging instance 'U0/i_8_0/out_mC5_reg_6651_reg[20]' (FDE) to 'U0/i_8_0/p_cast162_reg_6723_reg[20]'
+INFO: [Synth 8-3886] merging instance 'U0/i_8_0/out_mC5_reg_6651_reg[21]' (FDE) to 'U0/i_8_0/p_cast162_reg_6723_reg[21]'
+INFO: [Synth 8-3886] merging instance 'U0/i_8_0/out_mC5_reg_6651_reg[22]' (FDE) to 'U0/i_8_0/p_cast162_reg_6723_reg[22]'
+INFO: [Synth 8-3886] merging instance 'U0/i_8_0/out_mC5_reg_6651_reg[23]' (FDE) to 'U0/i_8_0/p_cast162_reg_6723_reg[23]'
+INFO: [Synth 8-3886] merging instance 'U0/i_8_0/out_mC5_reg_6651_reg[24]' (FDE) to 'U0/i_8_0/p_cast162_reg_6723_reg[24]'
+INFO: [Synth 8-3886] merging instance 'U0/i_8_0/out_mC5_reg_6651_reg[25]' (FDE) to 'U0/i_8_0/p_cast162_reg_6723_reg[25]'
+INFO: [Synth 8-3886] merging instance 'U0/i_8_0/out_mC5_reg_6651_reg[26]' (FDE) to 'U0/i_8_0/p_cast162_reg_6723_reg[26]'
+INFO: [Synth 8-3886] merging instance 'U0/i_8_0/out_mC5_reg_6651_reg[27]' (FDE) to 'U0/i_8_0/p_cast162_reg_6723_reg[27]'
+INFO: [Synth 8-3886] merging instance 'U0/i_8_0/out_mC5_reg_6651_reg[28]' (FDE) to 'U0/i_8_0/p_cast162_reg_6723_reg[28]'
+INFO: [Synth 8-3886] merging instance 'U0/i_8_0/out_mC5_reg_6651_reg[29]' (FDE) to 'U0/i_8_0/p_cast162_reg_6723_reg[29]'
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_8_viv__1.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_8_viv__1.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_8_viv.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_8_viv.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_8_1/\multiply_block_INPUT_r_m_axi_U/bus_write/rs_wreq/data_p2_reg[62] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_8_1/\multiply_block_INPUT_r_m_axi_U/bus_write/rs_wreq/data_p2_reg[61] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_8_1/\multiply_block_INPUT_r_m_axi_U/bus_write/rs_wreq/data_p2_reg[60] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_8_1/\multiply_block_INPUT_r_m_axi_U/bus_write/rs_wreq/data_p2_reg[59] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_8_1/\multiply_block_INPUT_r_m_axi_U/bus_write/rs_wreq/data_p2_reg[58] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_8_1/\multiply_block_INPUT_r_m_axi_U/bus_write/rs_wreq/data_p2_reg[57] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_8_1/\multiply_block_INPUT_r_m_axi_U/bus_write/rs_wreq/data_p2_reg[56] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_8_1/\multiply_block_INPUT_r_m_axi_U/bus_write/rs_wreq/data_p2_reg[55] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_8_1/\multiply_block_INPUT_r_m_axi_U/bus_write/rs_wreq/data_p2_reg[54] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_8_1/\multiply_block_INPUT_r_m_axi_U/bus_write/rs_wreq/data_p2_reg[53] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_8_1/\multiply_block_INPUT_r_m_axi_U/bus_write/rs_wreq/data_p2_reg[52] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_8_1/\multiply_block_INPUT_r_m_axi_U/bus_write/rs_wreq/data_p2_reg[51] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_8_1/\multiply_block_INPUT_r_m_axi_U/bus_write/rs_wreq/data_p2_reg[50] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_8_1/\multiply_block_INPUT_r_m_axi_U/bus_write/rs_wreq/data_p2_reg[49] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_8_1/\multiply_block_INPUT_r_m_axi_U/bus_write/rs_wreq/data_p2_reg[48] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_8_1/\multiply_block_INPUT_r_m_axi_U/bus_write/rs_wreq/data_p2_reg[47] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_8_1/\multiply_block_INPUT_r_m_axi_U/bus_write/rs_wreq/data_p2_reg[46] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_8_1/\multiply_block_INPUT_r_m_axi_U/bus_write/rs_wreq/data_p2_reg[45] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_8_1/\multiply_block_INPUT_r_m_axi_U/bus_write/rs_wreq/data_p2_reg[44] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_8_1/\multiply_block_INPUT_r_m_axi_U/bus_write/rs_wreq/data_p2_reg[43] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_8_1/\multiply_block_INPUT_r_m_axi_U/bus_write/rs_wreq/data_p2_reg[42] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_8_1/\multiply_block_INPUT_r_m_axi_U/bus_write/rs_wreq/data_p2_reg[41] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_8_1/\multiply_block_INPUT_r_m_axi_U/bus_write/rs_wreq/data_p2_reg[40] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_8_1/\multiply_block_INPUT_r_m_axi_U/bus_write/rs_wreq/data_p2_reg[39] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_8_1/\multiply_block_INPUT_r_m_axi_U/bus_write/rs_wreq/data_p2_reg[38] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_8_1/\multiply_block_INPUT_r_m_axi_U/bus_write/rs_wreq/data_p2_reg[37] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_8_1/\multiply_block_INPUT_r_m_axi_U/bus_write/rs_wreq/data_p2_reg[36] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_8_1/\multiply_block_INPUT_r_m_axi_U/bus_write/rs_wreq/data_p2_reg[35] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_8_1/\multiply_block_INPUT_r_m_axi_U/bus_write/rs_wreq/data_p2_reg[34] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_8_1/\multiply_block_INPUT_r_m_axi_U/bus_write/rs_wreq/data_p2_reg[33] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_8_1/\multiply_block_INPUT_r_m_axi_U/bus_write/rs_wreq/data_p2_reg[32] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_8_1/\multiply_block_INPUT_r_m_axi_U/bus_write/rs_wreq/data_p2_reg[63] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_8_1/\multiply_block_INPUT_r_m_axi_U/bus_write/rs_wreq/data_p2_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_8_1/\multiply_block_INPUT_r_m_axi_U/bus_write/rs_wreq/data_p2_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_8_1/\multiply_block_INPUT_r_m_axi_U/bus_write/rs_wreq/data_p2_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_8_1/\multiply_block_INPUT_r_m_axi_U/bus_write/rs_wreq/data_p2_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_8_1/\multiply_block_INPUT_r_m_axi_U/bus_write/rs_wreq/data_p2_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_8_1/\multiply_block_INPUT_r_m_axi_U/bus_write/rs_wreq/data_p2_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_8_1/\multiply_block_INPUT_r_m_axi_U/bus_write/rs_wreq/data_p2_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_8_1/\multiply_block_INPUT_r_m_axi_U/bus_write/rs_wreq/data_p2_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_8_1/\multiply_block_INPUT_r_m_axi_U/bus_write/rs_wreq/data_p2_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_8_1/\multiply_block_INPUT_r_m_axi_U/bus_write/rs_wreq/data_p2_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_8_1/\multiply_block_INPUT_r_m_axi_U/bus_write/rs_wreq/data_p2_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_8_1/\multiply_block_INPUT_r_m_axi_U/bus_write/rs_wreq/data_p2_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_8_1/\multiply_block_INPUT_r_m_axi_U/bus_write/rs_wreq/data_p2_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_8_1/\multiply_block_INPUT_r_m_axi_U/bus_write/rs_wreq/data_p2_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_8_1/\multiply_block_INPUT_r_m_axi_U/bus_write/rs_wreq/data_p2_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_8_1/\multiply_block_INPUT_r_m_axi_U/bus_write/rs_wreq/data_p2_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_8_1/\multiply_block_INPUT_r_m_axi_U/bus_write/rs_wreq/data_p2_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_8_1/\multiply_block_INPUT_r_m_axi_U/bus_write/rs_wreq/data_p2_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_8_1/\multiply_block_INPUT_r_m_axi_U/bus_write/rs_wreq/data_p2_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_8_1/\multiply_block_INPUT_r_m_axi_U/bus_write/rs_wreq/data_p2_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_8_1/\multiply_block_INPUT_r_m_axi_U/bus_write/rs_wreq/data_p2_reg[20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_8_1/\multiply_block_INPUT_r_m_axi_U/bus_write/rs_wreq/data_p2_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_8_1/\multiply_block_INPUT_r_m_axi_U/bus_write/rs_wreq/data_p2_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_8_1/\multiply_block_INPUT_r_m_axi_U/bus_write/rs_wreq/data_p2_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_8_1/\multiply_block_INPUT_r_m_axi_U/bus_write/rs_wreq/data_p2_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_8_1/\multiply_block_INPUT_r_m_axi_U/bus_write/rs_wreq/data_p2_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_8_1/\multiply_block_INPUT_r_m_axi_U/bus_write/rs_wreq/data_p2_reg[26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_8_1/\multiply_block_INPUT_r_m_axi_U/bus_write/rs_wreq/data_p2_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_8_1/\multiply_block_INPUT_r_m_axi_U/bus_write/rs_wreq/data_p2_reg[28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_8_1/\multiply_block_INPUT_r_m_axi_U/bus_write/rs_wreq/data_p2_reg[29] )
+INFO: [Synth 8-3886] merging instance 'U0/i_8_1/multiply_block_INPUT_r_m_axi_U/bus_read/rs_rreq/data_p2_reg[31]' (FDE) to 'U0/i_8_1/multiply_block_INPUT_r_m_axi_U/bus_read/rs_rreq/data_p2_reg[62]'
+INFO: [Synth 8-3886] merging instance 'U0/i_8_1/multiply_block_INPUT_r_m_axi_U/bus_read/rs_rreq/data_p2_reg[62]' (FDE) to 'U0/i_8_1/multiply_block_INPUT_r_m_axi_U/bus_read/rs_rreq/data_p2_reg[33]'
+INFO: [Synth 8-3886] merging instance 'U0/i_8_1/multiply_block_INPUT_r_m_axi_U/bus_read/rs_rreq/data_p2_reg[61]' (FDE) to 'U0/i_8_1/multiply_block_INPUT_r_m_axi_U/bus_read/rs_rreq/data_p2_reg[33]'
+INFO: [Synth 8-3886] merging instance 'U0/i_8_1/multiply_block_INPUT_r_m_axi_U/bus_read/rs_rreq/data_p2_reg[60]' (FDE) to 'U0/i_8_1/multiply_block_INPUT_r_m_axi_U/bus_read/rs_rreq/data_p2_reg[33]'
+INFO: [Synth 8-3886] merging instance 'U0/i_8_1/multiply_block_INPUT_r_m_axi_U/bus_read/rs_rreq/data_p2_reg[59]' (FDE) to 'U0/i_8_1/multiply_block_INPUT_r_m_axi_U/bus_read/rs_rreq/data_p2_reg[33]'
+INFO: [Synth 8-3886] merging instance 'U0/i_8_1/multiply_block_INPUT_r_m_axi_U/bus_read/rs_rreq/data_p2_reg[58]' (FDE) to 'U0/i_8_1/multiply_block_INPUT_r_m_axi_U/bus_read/rs_rreq/data_p2_reg[33]'
+INFO: [Synth 8-3886] merging instance 'U0/i_8_1/multiply_block_INPUT_r_m_axi_U/bus_read/rs_rreq/data_p2_reg[57]' (FDE) to 'U0/i_8_1/multiply_block_INPUT_r_m_axi_U/bus_read/rs_rreq/data_p2_reg[33]'
+INFO: [Synth 8-3886] merging instance 'U0/i_8_1/multiply_block_INPUT_r_m_axi_U/bus_read/rs_rreq/data_p2_reg[56]' (FDE) to 'U0/i_8_1/multiply_block_INPUT_r_m_axi_U/bus_read/rs_rreq/data_p2_reg[33]'
+INFO: [Synth 8-3886] merging instance 'U0/i_8_1/multiply_block_INPUT_r_m_axi_U/bus_read/rs_rreq/data_p2_reg[55]' (FDE) to 'U0/i_8_1/multiply_block_INPUT_r_m_axi_U/bus_read/rs_rreq/data_p2_reg[33]'
+INFO: [Synth 8-3886] merging instance 'U0/i_8_1/multiply_block_INPUT_r_m_axi_U/bus_read/rs_rreq/data_p2_reg[54]' (FDE) to 'U0/i_8_1/multiply_block_INPUT_r_m_axi_U/bus_read/rs_rreq/data_p2_reg[33]'
+INFO: [Synth 8-3886] merging instance 'U0/i_8_1/multiply_block_INPUT_r_m_axi_U/bus_read/rs_rreq/data_p2_reg[53]' (FDE) to 'U0/i_8_1/multiply_block_INPUT_r_m_axi_U/bus_read/rs_rreq/data_p2_reg[33]'
+INFO: [Synth 8-3886] merging instance 'U0/i_8_1/multiply_block_INPUT_r_m_axi_U/bus_read/rs_rreq/data_p2_reg[52]' (FDE) to 'U0/i_8_1/multiply_block_INPUT_r_m_axi_U/bus_read/rs_rreq/data_p2_reg[33]'
+INFO: [Synth 8-3886] merging instance 'U0/i_8_1/multiply_block_INPUT_r_m_axi_U/bus_read/rs_rreq/data_p2_reg[51]' (FDE) to 'U0/i_8_1/multiply_block_INPUT_r_m_axi_U/bus_read/rs_rreq/data_p2_reg[33]'
+INFO: [Synth 8-3886] merging instance 'U0/i_8_1/multiply_block_INPUT_r_m_axi_U/bus_read/rs_rreq/data_p2_reg[50]' (FDE) to 'U0/i_8_1/multiply_block_INPUT_r_m_axi_U/bus_read/rs_rreq/data_p2_reg[33]'
+INFO: [Synth 8-3886] merging instance 'U0/i_8_1/multiply_block_INPUT_r_m_axi_U/bus_read/rs_rreq/data_p2_reg[49]' (FDE) to 'U0/i_8_1/multiply_block_INPUT_r_m_axi_U/bus_read/rs_rreq/data_p2_reg[33]'
+INFO: [Synth 8-3886] merging instance 'U0/i_8_1/multiply_block_INPUT_r_m_axi_U/bus_read/rs_rreq/data_p2_reg[48]' (FDE) to 'U0/i_8_1/multiply_block_INPUT_r_m_axi_U/bus_read/rs_rreq/data_p2_reg[33]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/i_8_1/\multiply_block_INPUT_r_m_axi_U/bus_read/rs_rreq/data_p2_reg[32] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_8_1/\multiply_block_INPUT_r_m_axi_U/bus_read/rs_rreq/data_p2_reg[63] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_8_1/\multiply_block_INPUT_r_m_axi_U/bus_read/start_addr_reg[1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/i_8_1/\multiply_block_INPUT_r_m_axi_U/bus_write/buff_wdata/full_n_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_8_1/\multiply_block_INPUT_r_m_axi_U/bus_write/start_addr_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_8_1/\multiply_block_INPUT_r_m_axi_U/bus_write/buff_wdata/q_tmp_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_8_1/\multiply_block_INPUT_r_m_axi_U/bus_write/buff_wdata/show_ahead_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_8_1/multiply_block_INPUT_r_m_axi_Ui_8_1/\multiply_block_INPUT_r_m_axi_U/bus_write/buff_wdata/q_buf_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_8_1/\multiply_block_INPUT_r_m_axi_U/bus_read/could_multi_bursts.arlen_buf_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_8_1/\multiply_block_INPUT_r_m_axi_U/bus_read/could_multi_bursts.araddr_buf_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_8_1/\multiply_block_INPUT_r_m_axi_U/bus_write/could_multi_bursts.awaddr_buf_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_8_1/\multiply_block_INPUT_r_m_axi_U/bus_write/rs_wreq/data_p1_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_8_1/\multiply_block_INPUT_r_m_axi_U/bus_write/rs_wreq/data_p1_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_8_1/\multiply_block_INPUT_r_m_axi_U/bus_write/rs_wreq/data_p1_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_8_1/\multiply_block_INPUT_r_m_axi_U/bus_write/rs_wreq/data_p1_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_8_1/\multiply_block_INPUT_r_m_axi_U/bus_write/rs_wreq/data_p1_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_8_1/\multiply_block_INPUT_r_m_axi_U/bus_write/rs_wreq/data_p1_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_8_1/\multiply_block_INPUT_r_m_axi_U/bus_write/rs_wreq/data_p1_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_8_1/\multiply_block_INPUT_r_m_axi_U/bus_write/rs_wreq/data_p1_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_8_1/\multiply_block_INPUT_r_m_axi_U/bus_write/rs_wreq/data_p1_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_8_1/\multiply_block_INPUT_r_m_axi_U/bus_write/rs_wreq/data_p1_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_8_1/\multiply_block_INPUT_r_m_axi_U/bus_write/rs_wreq/data_p1_reg[62] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_8_1/\multiply_block_INPUT_r_m_axi_U/bus_write/rs_wreq/data_p1_reg[61] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_8_1/\multiply_block_INPUT_r_m_axi_U/bus_write/rs_wreq/data_p1_reg[60] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_8_1/\multiply_block_INPUT_r_m_axi_U/bus_write/rs_wreq/data_p1_reg[59] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_8_1/\multiply_block_INPUT_r_m_axi_U/bus_write/rs_wreq/data_p1_reg[58] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_8_1/\multiply_block_INPUT_r_m_axi_U/bus_write/rs_wreq/data_p1_reg[57] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_8_1/\multiply_block_INPUT_r_m_axi_U/bus_write/rs_wreq/data_p1_reg[56] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_8_1/\multiply_block_INPUT_r_m_axi_U/bus_write/rs_wreq/data_p1_reg[55] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_8_1/\multiply_block_INPUT_r_m_axi_U/bus_write/rs_wreq/data_p1_reg[54] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_8_1/\multiply_block_INPUT_r_m_axi_U/bus_write/rs_wreq/data_p1_reg[53] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_8_1/\multiply_block_INPUT_r_m_axi_U/bus_write/rs_wreq/data_p1_reg[52] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_8_1/\multiply_block_INPUT_r_m_axi_U/bus_write/rs_wreq/data_p1_reg[51] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_8_1/\multiply_block_INPUT_r_m_axi_U/bus_write/rs_wreq/data_p1_reg[50] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_8_1/\multiply_block_INPUT_r_m_axi_U/bus_write/rs_wreq/data_p1_reg[49] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_8_1/\multiply_block_INPUT_r_m_axi_U/bus_write/rs_wreq/data_p1_reg[48] )
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3332] Sequential element (FSM_onehot_wstate_reg[0]) is unused and will be removed from module multiply_block_CONTROL_BUS_s_axi.
+WARNING: [Synth 8-3332] Sequential element (FSM_onehot_rstate_reg[0]) is unused and will be removed from module multiply_block_CONTROL_BUS_s_axi.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:03:57 ; elapsed = 00:04:31 . Memory (MB): peak = 1812.270 ; gain = 1156.629
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance U0/i_8_0/i_8_0/mC_U/multiply_block_mC_ram_U/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance U0/i_8_0/i_8_0/mC_U/multiply_block_mC_ram_U/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance U0/i_8_0/i_8_0/mC_U/multiply_block_mC_ram_U/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance U0/i_8_0/i_8_0/mC_U/multiply_block_mC_ram_U/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance U0/i_8_0/i_8_0/mC_U/multiply_block_mC_ram_U/ram_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance U0/i_8_0/i_8_0/mC_U/multiply_block_mC_ram_U/ram_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance U0/i_8_0/i_8_0/mC_U/multiply_block_mC_ram_U/ram_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance U0/i_8_0/i_8_0/mC_U/multiply_block_mC_ram_U/ram_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance U0/i_8_1/i_8_7/multiply_block_INPUT_r_m_axi_U/bus_read/fifo_rdata/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance U0/i_8_2/i_8_1/mB_U/multiply_block_mA_ram_U/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance U0/i_8_2/i_8_1/mB_U/multiply_block_mA_ram_U/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance U0/i_8_2/i_8_1/mB_U/multiply_block_mA_ram_U/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance U0/i_8_2/i_8_1/mB_U/multiply_block_mA_ram_U/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance U0/i_8_2/i_8_1/mB_U/multiply_block_mA_ram_U/ram_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance U0/i_8_2/i_8_1/mB_U/multiply_block_mA_ram_U/ram_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance U0/i_8_2/i_8_1/mB_U/multiply_block_mA_ram_U/ram_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance U0/i_8_2/i_8_1/mB_U/multiply_block_mA_ram_U/ram_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance U0/i_8_2/i_8_2/mA_U/multiply_block_mA_ram_U/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance U0/i_8_2/i_8_2/mA_U/multiply_block_mA_ram_U/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance U0/i_8_2/i_8_2/mA_U/multiply_block_mA_ram_U/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance U0/i_8_2/i_8_2/mA_U/multiply_block_mA_ram_U/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance U0/i_8_2/i_8_2/mA_U/multiply_block_mA_ram_U/ram_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance U0/i_8_2/i_8_2/mA_U/multiply_block_mA_ram_U/ram_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance U0/i_8_2/i_8_2/mA_U/multiply_block_mA_ram_U/ram_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance U0/i_8_2/i_8_2/mA_U/multiply_block_mA_ram_U/ram_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance U0/i_8_2/multiply_block_OUTPUT_r_m_axi_U/i_8_1/bus_write/buff_wdata/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance U0/i_8_2/multiply_block_OUTPUT_r_m_axi_U/i_8_6/bus_read/fifo_rdata/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+
+Report RTL Partitions: 
++------+--------------------+------------+----------+
+|      |RTL Partition       |Replication |Instances |
++------+--------------------+------------+----------+
+|1     |multiply_block__GB0 |           1|     14805|
+|2     |multiply_block__GB1 |           1|      3573|
+|3     |multiply_block__GB2 |           1|      8845|
++------+--------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:04:24 ; elapsed = 00:05:01 . Memory (MB): peak = 1812.270 ; gain = 1156.629
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:04:33 ; elapsed = 00:05:10 . Memory (MB): peak = 1812.270 ; gain = 1156.629
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------------+------------+----------+
+|      |RTL Partition       |Replication |Instances |
++------+--------------------+------------+----------+
+|1     |multiply_block__GB0 |           1|     14805|
+|2     |multiply_block__GB1 |           1|      3573|
+|3     |multiply_block__GB2 |           1|      8845|
++------+--------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance U0/mC_U/multiply_block_mC_ram_U/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance U0/mC_U/multiply_block_mC_ram_U/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance U0/mC_U/multiply_block_mC_ram_U/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance U0/mC_U/multiply_block_mC_ram_U/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance U0/mC_U/multiply_block_mC_ram_U/ram_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance U0/mC_U/multiply_block_mC_ram_U/ram_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance U0/mC_U/multiply_block_mC_ram_U/ram_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance U0/mC_U/multiply_block_mC_ram_U/ram_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance U0/multiply_block_INPUT_r_m_axi_U/bus_read/fifo_rdata/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance U0/mB_U/multiply_block_mA_ram_U/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance U0/mB_U/multiply_block_mA_ram_U/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance U0/mB_U/multiply_block_mA_ram_U/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance U0/mB_U/multiply_block_mA_ram_U/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance U0/mB_U/multiply_block_mA_ram_U/ram_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance U0/mB_U/multiply_block_mA_ram_U/ram_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance U0/mB_U/multiply_block_mA_ram_U/ram_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance U0/mB_U/multiply_block_mA_ram_U/ram_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance U0/mA_U/multiply_block_mA_ram_U/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance U0/mA_U/multiply_block_mA_ram_U/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance U0/mA_U/multiply_block_mA_ram_U/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance U0/mA_U/multiply_block_mA_ram_U/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance U0/mA_U/multiply_block_mA_ram_U/ram_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance U0/mA_U/multiply_block_mA_ram_U/ram_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance U0/mA_U/multiply_block_mA_ram_U/ram_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance U0/mA_U/multiply_block_mA_ram_U/ram_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance U0/multiply_block_OUTPUT_r_m_axi_U/bus_write/buff_wdata/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance U0/multiply_block_OUTPUT_r_m_axi_U/bus_read/fifo_rdata/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:04:47 ; elapsed = 00:05:26 . Memory (MB): peak = 1812.270 ; gain = 1156.629
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:04:53 ; elapsed = 00:05:33 . Memory (MB): peak = 1812.270 ; gain = 1156.629
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:04:53 ; elapsed = 00:05:34 . Memory (MB): peak = 1812.270 ; gain = 1156.629
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:04:56 ; elapsed = 00:05:37 . Memory (MB): peak = 1812.270 ; gain = 1156.629
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:04:56 ; elapsed = 00:05:37 . Memory (MB): peak = 1812.270 ; gain = 1156.629
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:04:57 ; elapsed = 00:05:38 . Memory (MB): peak = 1812.270 ; gain = 1156.629
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:04:57 ; elapsed = 00:05:38 . Memory (MB): peak = 1812.270 ; gain = 1156.629
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |CARRY4    |   646|
+|2     |DSP48E1   |     2|
+|3     |DSP48E1_1 |     2|
+|4     |DSP48E1_2 |     2|
+|5     |DSP48E1_3 |     2|
+|6     |DSP48E1_4 |     2|
+|7     |LUT1      |   297|
+|8     |LUT2      |   947|
+|9     |LUT3      |  1295|
+|10    |LUT4      |   567|
+|11    |LUT5      |  1076|
+|12    |LUT6      |  2100|
+|13    |MUXCY     |   148|
+|14    |MUXF7     |     6|
+|15    |RAMB18E1  |     3|
+|16    |RAMB36E1  |    12|
+|17    |SRL16E    |   197|
+|18    |XORCY     |    50|
+|19    |FDE       |     6|
+|20    |FDRE      |  7533|
+|21    |FDSE      |    13|
++------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:04:57 ; elapsed = 00:05:38 . Memory (MB): peak = 1812.270 ; gain = 1156.629
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 11 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:03:28 ; elapsed = 00:04:50 . Memory (MB): peak = 1812.270 ; gain = 456.723
+Synthesis Optimization Complete : Time (s): cpu = 00:04:58 ; elapsed = 00:05:38 . Memory (MB): peak = 1812.270 ; gain = 1156.629
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 881 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1812.270 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 46 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 40 instances
+  FDE => FDRE: 6 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+521 Infos, 158 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:05:17 ; elapsed = 00:06:04 . Memory (MB): peak = 1812.270 ; gain = 1426.172
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1812.270 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.runs/design_IP_multiply_block_0_0_synth_1/design_IP_multiply_block_0_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1812.270 ; gain = 0.000
+write_vhdl: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1812.270 ; gain = 0.000
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_IP_multiply_block_0_0, cache-ID = 413255c96de72b11
+INFO: [Coretcl 2-1174] Renamed 232 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1812.270 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_2/Demo_IP_HLS.runs/design_IP_multiply_block_0_0_synth_1/design_IP_multiply_block_0_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1812.270 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file design_IP_multiply_block_0_0_utilization_synth.rpt -pb design_IP_multiply_block_0_0_utilization_synth.pb
+write_vhdl: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1812.270 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Feb 26 10:25:30 2020...

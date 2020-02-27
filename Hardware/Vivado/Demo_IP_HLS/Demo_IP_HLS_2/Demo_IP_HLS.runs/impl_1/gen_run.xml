@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1582623714">
+<GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1582736133">
   <File Type="BITSTR-BMM" Name="design_IP_wrapper_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="design_IP_wrapper_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="design_IP_wrapper_timing_summary_init.rpt"/>
@@ -114,4 +114,40 @@
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
   </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="design_IP_pearson_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_IP_multiply_block_32_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_IP_clk_wiz_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_IP_auto_cc_11"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_IP_rst_Multiply_block_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_IP_clk_wiz_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_IP_multiply_block_64_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_IP_auto_cc_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_IP_auto_us_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_IP_rst_ps7_0_100M_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_IP_processing_system7_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_IP_xbar_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_IP_multiply_block_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_IP_xbar_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_IP_auto_cc_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_IP_auto_us_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_IP_rst_ps7_0_100M_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_IP_axi_gpio_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_IP_kmeans_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_IP_smartconnect_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_IP_auto_cc_9"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_IP_auto_cc_13"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_IP_auto_cc_10"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_IP_auto_cc_12"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_IP_auto_cc_6"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_IP_auto_cc_14"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_IP_auto_cc_5"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_IP_auto_pc_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_IP_auto_cc_7"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_IP_auto_cc_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_IP_auto_us_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_IP_auto_cc_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_IP_auto_us_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_IP_auto_cc_4"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_IP_auto_cc_8"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_IP_auto_pc_0"/>
 </GenRun>

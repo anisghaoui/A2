@@ -43,6 +43,30 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_IP_kmean
 # IP: bd/design_IP/ip/design_IP_rst_Multiply_block_0/design_IP_rst_Multiply_block_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_IP_rst_Multiply_block_0 || ORIG_REF_NAME==design_IP_rst_Multiply_block_0} -quiet] -quiet
 
+# IP: bd/design_IP/ip/design_IP_proc_sys_reset_0_0/design_IP_proc_sys_reset_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_IP_proc_sys_reset_0_0 || ORIG_REF_NAME==design_IP_proc_sys_reset_0_0} -quiet] -quiet
+
+# IP: bd/design_IP/ip/design_IP_pearson_0_0/design_IP_pearson_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_IP_pearson_0_0 || ORIG_REF_NAME==design_IP_pearson_0_0} -quiet] -quiet
+
+# IP: bd/design_IP/ip/design_IP_clk_wiz_1_0/design_IP_clk_wiz_1_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_IP_clk_wiz_1_0 || ORIG_REF_NAME==design_IP_clk_wiz_1_0} -quiet] -quiet
+
+# IP: bd/design_IP/ip/design_IP_multiply_block_32_0_0/design_IP_multiply_block_32_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_IP_multiply_block_32_0_0 || ORIG_REF_NAME==design_IP_multiply_block_32_0_0} -quiet] -quiet
+
+# IP: bd/design_IP/ip/design_IP_proc_sys_reset_0_1/design_IP_proc_sys_reset_0_1.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_IP_proc_sys_reset_0_1 || ORIG_REF_NAME==design_IP_proc_sys_reset_0_1} -quiet] -quiet
+
+# IP: bd/design_IP/ip/design_IP_multiply_block_64_0_0/design_IP_multiply_block_64_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_IP_multiply_block_64_0_0 || ORIG_REF_NAME==design_IP_multiply_block_64_0_0} -quiet] -quiet
+
+# IP: bd/design_IP/ip/design_IP_proc_sys_reset_0_2/design_IP_proc_sys_reset_0_2.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_IP_proc_sys_reset_0_2 || ORIG_REF_NAME==design_IP_proc_sys_reset_0_2} -quiet] -quiet
+
+# IP: bd/design_IP/ip/design_IP_smartconnect_0_0/design_IP_smartconnect_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_IP_smartconnect_0_0 || ORIG_REF_NAME==design_IP_smartconnect_0_0} -quiet] -quiet
+
 # IP: bd/design_IP/ip/design_IP_auto_us_0/design_IP_auto_us_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_IP_auto_us_0 || ORIG_REF_NAME==design_IP_auto_us_0} -quiet] -quiet
 
@@ -67,136 +91,61 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_IP_auto_
 # IP: bd/design_IP/ip/design_IP_auto_cc_3/design_IP_auto_cc_3.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_IP_auto_cc_3 || ORIG_REF_NAME==design_IP_auto_cc_3} -quiet] -quiet
 
-# IP: bd/design_IP/ip/design_IP_auto_pc_0/design_IP_auto_pc_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_IP_auto_pc_0 || ORIG_REF_NAME==design_IP_auto_pc_0} -quiet] -quiet
-
-# IP: bd/design_IP/ip/design_IP_s00_mmu_0/design_IP_s00_mmu_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_IP_s00_mmu_0 || ORIG_REF_NAME==design_IP_s00_mmu_0} -quiet] -quiet
-
-# IP: bd/design_IP/ip/design_IP_s01_mmu_0/design_IP_s01_mmu_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_IP_s01_mmu_0 || ORIG_REF_NAME==design_IP_s01_mmu_0} -quiet] -quiet
-
-# IP: bd/design_IP/ip/design_IP_s02_mmu_0/design_IP_s02_mmu_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_IP_s02_mmu_0 || ORIG_REF_NAME==design_IP_s02_mmu_0} -quiet] -quiet
-
-# IP: bd/design_IP/ip/design_IP_s03_mmu_0/design_IP_s03_mmu_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_IP_s03_mmu_0 || ORIG_REF_NAME==design_IP_s03_mmu_0} -quiet] -quiet
-
-# IP: bd/design_IP/ip/design_IP_auto_pc_1/design_IP_auto_pc_1.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_IP_auto_pc_1 || ORIG_REF_NAME==design_IP_auto_pc_1} -quiet] -quiet
+# IP: bd/design_IP/ip/design_IP_auto_us_4/design_IP_auto_us_4.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_IP_auto_us_4 || ORIG_REF_NAME==design_IP_auto_us_4} -quiet] -quiet
 
 # IP: bd/design_IP/ip/design_IP_auto_cc_4/design_IP_auto_cc_4.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_IP_auto_cc_4 || ORIG_REF_NAME==design_IP_auto_cc_4} -quiet] -quiet
 
+# IP: bd/design_IP/ip/design_IP_auto_us_5/design_IP_auto_us_5.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_IP_auto_us_5 || ORIG_REF_NAME==design_IP_auto_us_5} -quiet] -quiet
+
 # IP: bd/design_IP/ip/design_IP_auto_cc_5/design_IP_auto_cc_5.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_IP_auto_cc_5 || ORIG_REF_NAME==design_IP_auto_cc_5} -quiet] -quiet
 
-# IP: bd/design_IP/ip/design_IP_auto_pc_2/design_IP_auto_pc_2.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_IP_auto_pc_2 || ORIG_REF_NAME==design_IP_auto_pc_2} -quiet] -quiet
+# IP: bd/design_IP/ip/design_IP_auto_us_6/design_IP_auto_us_6.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_IP_auto_us_6 || ORIG_REF_NAME==design_IP_auto_us_6} -quiet] -quiet
 
-# XDC: bd/design_IP/ip/design_IP_processing_system7_0_0/design_IP_processing_system7_0_0.xdc
-set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==design_IP_processing_system7_0_0 || ORIG_REF_NAME==design_IP_processing_system7_0_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
+# IP: bd/design_IP/ip/design_IP_auto_cc_6/design_IP_auto_cc_6.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_IP_auto_cc_6 || ORIG_REF_NAME==design_IP_auto_cc_6} -quiet] -quiet
 
-# XDC: bd/design_IP/ip/design_IP_clk_wiz_0_0/design_IP_clk_wiz_0_0_board.xdc
-set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==design_IP_clk_wiz_0_0 || ORIG_REF_NAME==design_IP_clk_wiz_0_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
+# IP: bd/design_IP/ip/design_IP_auto_us_7/design_IP_auto_us_7.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_IP_auto_us_7 || ORIG_REF_NAME==design_IP_auto_us_7} -quiet] -quiet
 
-# XDC: bd/design_IP/ip/design_IP_clk_wiz_0_0/design_IP_clk_wiz_0_0.xdc
-#dup# set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==design_IP_clk_wiz_0_0 || ORIG_REF_NAME==design_IP_clk_wiz_0_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
+# IP: bd/design_IP/ip/design_IP_auto_cc_7/design_IP_auto_cc_7.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_IP_auto_cc_7 || ORIG_REF_NAME==design_IP_auto_cc_7} -quiet] -quiet
 
-# XDC: bd/design_IP/ip/design_IP_clk_wiz_0_0/design_IP_clk_wiz_0_0_ooc.xdc
+# IP: bd/design_IP/ip/design_IP_auto_us_8/design_IP_auto_us_8.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_IP_auto_us_8 || ORIG_REF_NAME==design_IP_auto_us_8} -quiet] -quiet
 
-# XDC: bd/design_IP/ip/design_IP_rst_ps7_0_100M_0/design_IP_rst_ps7_0_100M_0_board.xdc
-set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==design_IP_rst_ps7_0_100M_0 || ORIG_REF_NAME==design_IP_rst_ps7_0_100M_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+# IP: bd/design_IP/ip/design_IP_auto_cc_8/design_IP_auto_cc_8.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_IP_auto_cc_8 || ORIG_REF_NAME==design_IP_auto_cc_8} -quiet] -quiet
 
-# XDC: bd/design_IP/ip/design_IP_rst_ps7_0_100M_0/design_IP_rst_ps7_0_100M_0.xdc
-#dup# set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==design_IP_rst_ps7_0_100M_0 || ORIG_REF_NAME==design_IP_rst_ps7_0_100M_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+# IP: bd/design_IP/ip/design_IP_auto_us_9/design_IP_auto_us_9.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_IP_auto_us_9 || ORIG_REF_NAME==design_IP_auto_us_9} -quiet] -quiet
 
-# XDC: bd/design_IP/ip/design_IP_axi_gpio_0_0/design_IP_axi_gpio_0_0_board.xdc
-set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==design_IP_axi_gpio_0_0 || ORIG_REF_NAME==design_IP_axi_gpio_0_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+# IP: bd/design_IP/ip/design_IP_auto_cc_9/design_IP_auto_cc_9.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_IP_auto_cc_9 || ORIG_REF_NAME==design_IP_auto_cc_9} -quiet] -quiet
 
-# XDC: bd/design_IP/ip/design_IP_axi_gpio_0_0/design_IP_axi_gpio_0_0_ooc.xdc
+# IP: bd/design_IP/ip/design_IP_auto_pc_0/design_IP_auto_pc_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_IP_auto_pc_0 || ORIG_REF_NAME==design_IP_auto_pc_0} -quiet] -quiet
 
-# XDC: bd/design_IP/ip/design_IP_axi_gpio_0_0/design_IP_axi_gpio_0_0.xdc
-#dup# set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==design_IP_axi_gpio_0_0 || ORIG_REF_NAME==design_IP_axi_gpio_0_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+# IP: bd/design_IP/ip/design_IP_auto_cc_10/design_IP_auto_cc_10.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_IP_auto_cc_10 || ORIG_REF_NAME==design_IP_auto_cc_10} -quiet] -quiet
 
-# XDC: bd/design_IP/ip/design_IP_multiply_block_0_0/constraints/multiply_block_ooc.xdc
+# IP: bd/design_IP/ip/design_IP_auto_cc_11/design_IP_auto_cc_11.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_IP_auto_cc_11 || ORIG_REF_NAME==design_IP_auto_cc_11} -quiet] -quiet
 
-# XDC: bd/design_IP/ip/design_IP_rst_ps7_0_100M_1/design_IP_rst_ps7_0_100M_1_board.xdc
-set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==design_IP_rst_ps7_0_100M_1 || ORIG_REF_NAME==design_IP_rst_ps7_0_100M_1} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+# IP: bd/design_IP/ip/design_IP_auto_cc_12/design_IP_auto_cc_12.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_IP_auto_cc_12 || ORIG_REF_NAME==design_IP_auto_cc_12} -quiet] -quiet
 
-# XDC: bd/design_IP/ip/design_IP_rst_ps7_0_100M_1/design_IP_rst_ps7_0_100M_1.xdc
-#dup# set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==design_IP_rst_ps7_0_100M_1 || ORIG_REF_NAME==design_IP_rst_ps7_0_100M_1} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+# IP: bd/design_IP/ip/design_IP_auto_cc_13/design_IP_auto_cc_13.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_IP_auto_cc_13 || ORIG_REF_NAME==design_IP_auto_cc_13} -quiet] -quiet
 
-# XDC: bd/design_IP/ip/design_IP_kmeans_0_0/constraints/kmeans_ooc.xdc
+# IP: bd/design_IP/ip/design_IP_auto_cc_14/design_IP_auto_cc_14.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_IP_auto_cc_14 || ORIG_REF_NAME==design_IP_auto_cc_14} -quiet] -quiet
 
-# XDC: bd/design_IP/ip/design_IP_rst_Multiply_block_0/design_IP_rst_Multiply_block_0_board.xdc
-set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==design_IP_rst_Multiply_block_0 || ORIG_REF_NAME==design_IP_rst_Multiply_block_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
-
-# XDC: bd/design_IP/ip/design_IP_rst_Multiply_block_0/design_IP_rst_Multiply_block_0.xdc
-#dup# set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==design_IP_rst_Multiply_block_0 || ORIG_REF_NAME==design_IP_rst_Multiply_block_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
-
-# XDC: bd/design_IP/ip/design_IP_auto_us_0/design_IP_auto_us_0_clocks.xdc
-set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==design_IP_auto_us_0 || ORIG_REF_NAME==design_IP_auto_us_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
-
-# XDC: bd/design_IP/ip/design_IP_auto_us_0/design_IP_auto_us_0_ooc.xdc
-
-# XDC: bd/design_IP/ip/design_IP_auto_cc_0/design_IP_auto_cc_0_clocks.xdc
-set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==design_IP_auto_cc_0 || ORIG_REF_NAME==design_IP_auto_cc_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
-
-# XDC: bd/design_IP/ip/design_IP_auto_cc_0/design_IP_auto_cc_0_ooc.xdc
-
-# XDC: bd/design_IP/ip/design_IP_auto_us_1/design_IP_auto_us_1_clocks.xdc
-set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==design_IP_auto_us_1 || ORIG_REF_NAME==design_IP_auto_us_1} -quiet] {/inst } ]/inst ] -quiet] -quiet
-
-# XDC: bd/design_IP/ip/design_IP_auto_us_1/design_IP_auto_us_1_ooc.xdc
-
-# XDC: bd/design_IP/ip/design_IP_auto_cc_1/design_IP_auto_cc_1_clocks.xdc
-set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==design_IP_auto_cc_1 || ORIG_REF_NAME==design_IP_auto_cc_1} -quiet] {/inst } ]/inst ] -quiet] -quiet
-
-# XDC: bd/design_IP/ip/design_IP_auto_cc_1/design_IP_auto_cc_1_ooc.xdc
-
-# XDC: bd/design_IP/ip/design_IP_auto_us_2/design_IP_auto_us_2_clocks.xdc
-set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==design_IP_auto_us_2 || ORIG_REF_NAME==design_IP_auto_us_2} -quiet] {/inst } ]/inst ] -quiet] -quiet
-
-# XDC: bd/design_IP/ip/design_IP_auto_us_2/design_IP_auto_us_2_ooc.xdc
-
-# XDC: bd/design_IP/ip/design_IP_auto_cc_2/design_IP_auto_cc_2_clocks.xdc
-set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==design_IP_auto_cc_2 || ORIG_REF_NAME==design_IP_auto_cc_2} -quiet] {/inst } ]/inst ] -quiet] -quiet
-
-# XDC: bd/design_IP/ip/design_IP_auto_cc_2/design_IP_auto_cc_2_ooc.xdc
-
-# XDC: bd/design_IP/ip/design_IP_auto_us_3/design_IP_auto_us_3_clocks.xdc
-set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==design_IP_auto_us_3 || ORIG_REF_NAME==design_IP_auto_us_3} -quiet] {/inst } ]/inst ] -quiet] -quiet
-
-# XDC: bd/design_IP/ip/design_IP_auto_us_3/design_IP_auto_us_3_ooc.xdc
-
-# XDC: bd/design_IP/ip/design_IP_auto_cc_3/design_IP_auto_cc_3_clocks.xdc
-set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==design_IP_auto_cc_3 || ORIG_REF_NAME==design_IP_auto_cc_3} -quiet] {/inst } ]/inst ] -quiet] -quiet
-
-# XDC: bd/design_IP/ip/design_IP_auto_cc_3/design_IP_auto_cc_3_ooc.xdc
-
-# XDC: bd/design_IP/ip/design_IP_auto_pc_0/design_IP_auto_pc_0_ooc.xdc
-
-# XDC: bd/design_IP/ip/design_IP_s00_mmu_0/design_IP_s00_mmu_0_ooc.xdc
-
-# XDC: bd/design_IP/ip/design_IP_s01_mmu_0/design_IP_s01_mmu_0_ooc.xdc
-
-# XDC: bd/design_IP/ip/design_IP_s02_mmu_0/design_IP_s02_mmu_0_ooc.xdc
-
-# XDC: bd/design_IP/ip/design_IP_s03_mmu_0/design_IP_s03_mmu_0_ooc.xdc
-
-# XDC: bd/design_IP/ip/design_IP_auto_pc_1/design_IP_auto_pc_1_ooc.xdc
-
-# XDC: bd/design_IP/ip/design_IP_auto_cc_4/design_IP_auto_cc_4_clocks.xdc
-set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==design_IP_auto_cc_4 || ORIG_REF_NAME==design_IP_auto_cc_4} -quiet] {/inst } ]/inst ] -quiet] -quiet
-
-# XDC: bd/design_IP/ip/design_IP_auto_cc_4/design_IP_auto_cc_4_ooc.xdc
-
-# XDC: bd/design_IP/ip/design_IP_auto_cc_5/design_IP_auto_cc_5_clocks.xdc
-set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==design_IP_auto_cc_5 || ORIG_REF_NAME==design_IP_auto_cc_5} -quiet] {/inst } ]/inst ] -quiet] -quiet
-
-# XDC: bd/design_IP/ip/design_IP_auto_cc_5/design_IP_auto_cc_5_ooc.xdc
-
-# XDC: bd/design_IP/ip/design_IP_auto_pc_2/design_IP_auto_pc_2_ooc.xdc
+# IP: bd/design_IP/ip/design_IP_auto_pc_1/design_IP_auto_pc_1.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_IP_auto_pc_1 || ORIG_REF_NAME==design_IP_auto_pc_1} -quiet] -quiet
 
 # XDC: bd/design_IP/design_IP_ooc.xdc

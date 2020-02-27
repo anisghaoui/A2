@@ -300,6 +300,63 @@
 
 /******************************************************************/
 
+/* Definitions for driver MULTIPLY_BLOCK_32 */
+#define XPAR_XMULTIPLY_BLOCK_32_NUM_INSTANCES 1
+
+/* Definitions for peripheral MULTIPLY_BLOCK_32_0 */
+#define XPAR_MULTIPLY_BLOCK_32_0_DEVICE_ID 0
+#define XPAR_MULTIPLY_BLOCK_32_0_S_AXI_CONTROL_BUS_BASEADDR 0x43C30000
+#define XPAR_MULTIPLY_BLOCK_32_0_S_AXI_CONTROL_BUS_HIGHADDR 0x43C3FFFF
+
+
+/******************************************************************/
+
+/* Canonical definitions for peripheral MULTIPLY_BLOCK_32_0 */
+#define XPAR_XMULTIPLY_BLOCK_32_0_DEVICE_ID XPAR_MULTIPLY_BLOCK_32_0_DEVICE_ID
+#define XPAR_XMULTIPLY_BLOCK_32_0_S_AXI_CONTROL_BUS_BASEADDR 0x43C30000
+#define XPAR_XMULTIPLY_BLOCK_32_0_S_AXI_CONTROL_BUS_HIGHADDR 0x43C3FFFF
+
+
+/******************************************************************/
+
+/* Definitions for driver MULTIPLY_BLOCK_64 */
+#define XPAR_XMULTIPLY_BLOCK_64_NUM_INSTANCES 1
+
+/* Definitions for peripheral MULTIPLY_BLOCK_64_0 */
+#define XPAR_MULTIPLY_BLOCK_64_0_DEVICE_ID 0
+#define XPAR_MULTIPLY_BLOCK_64_0_S_AXI_CONTROL_BUS_BASEADDR 0x43C40000
+#define XPAR_MULTIPLY_BLOCK_64_0_S_AXI_CONTROL_BUS_HIGHADDR 0x43C4FFFF
+
+
+/******************************************************************/
+
+/* Canonical definitions for peripheral MULTIPLY_BLOCK_64_0 */
+#define XPAR_XMULTIPLY_BLOCK_64_0_DEVICE_ID XPAR_MULTIPLY_BLOCK_64_0_DEVICE_ID
+#define XPAR_XMULTIPLY_BLOCK_64_0_S_AXI_CONTROL_BUS_BASEADDR 0x43C40000
+#define XPAR_XMULTIPLY_BLOCK_64_0_S_AXI_CONTROL_BUS_HIGHADDR 0x43C4FFFF
+
+
+/******************************************************************/
+
+/* Definitions for driver PEARSON */
+#define XPAR_XPEARSON_NUM_INSTANCES 1
+
+/* Definitions for peripheral PEARSON_0 */
+#define XPAR_PEARSON_0_DEVICE_ID 0
+#define XPAR_PEARSON_0_S_AXI_CONTROL_BUS_BASEADDR 0x43C20000
+#define XPAR_PEARSON_0_S_AXI_CONTROL_BUS_HIGHADDR 0x43C2FFFF
+
+
+/******************************************************************/
+
+/* Canonical definitions for peripheral PEARSON_0 */
+#define XPAR_XPEARSON_0_DEVICE_ID XPAR_PEARSON_0_DEVICE_ID
+#define XPAR_XPEARSON_0_S_AXI_CONTROL_BUS_BASEADDR 0x43C20000
+#define XPAR_XPEARSON_0_S_AXI_CONTROL_BUS_HIGHADDR 0x43C2FFFF
+
+
+/******************************************************************/
+
 /* Definitions for driver QSPIPS */
 #define XPAR_XQSPIPS_NUM_INSTANCES 1
 

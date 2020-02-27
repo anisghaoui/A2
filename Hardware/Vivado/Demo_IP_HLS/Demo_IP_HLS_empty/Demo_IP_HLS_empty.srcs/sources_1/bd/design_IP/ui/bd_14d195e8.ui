@@ -1,0 +1,42 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0.19  2019-03-26 bk=1.5019 VDI=41 GEI=35 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -lvl 9 -x 2130 -y -280 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 9 -x 2130 -y -260 -defaultsOSRD
+preplace port leds_8bits -pg 1 -lvl 9 -x 2130 -y -520 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 4 -x 620 -y 0 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 5 -x 1010 -y -140 -defaultsOSRD
+preplace inst proc_sys_reset_0 -pg 1 -lvl 2 -x -220 -y -210 -defaultsOSRD
+preplace inst axi_gpio_0 -pg 1 -lvl 8 -x 1920 -y -520 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 7 -x 1640 -y -500 -defaultsOSRD
+preplace inst rst_clk_wiz_0_100M -pg 1 -lvl 6 -x 1300 -y -520 -defaultsOSRD
+preplace inst multiply_block_0 -pg 1 -lvl 2 -x -220 -y 20 -defaultsOSRD
+preplace inst axi_interconnect_0 -pg 1 -lvl 3 -x 220 -y 80 -defaultsOSRD
+preplace inst ps7_0_axi_periph_1 -pg 1 -lvl 1 -x -640 -y -20 -defaultsOSRD
+preplace netloc processing_system7_0_FCLK_CLK0 1 4 1 910 -130n
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 1 5 -440 -310 N -310 N -310 900 -540 N
+preplace netloc clk_wiz_0_HLS_CLK 1 0 6 -830 -180 -450 -80 30 -180 NJ -180 890J -50 1110
+preplace netloc clk_wiz_0_AXI_CLK 1 0 8 -800 -150 -470 -70 10 -70 380 -160 870 -60 1120 -630 1480 -630 1810
+preplace netloc clk_wiz_0_locked 1 1 5 -430 -100 0 -170 N -170 860 -40 1130
+preplace netloc rst_clk_wiz_0_100M_peripheral_aresetn 1 0 8 -810 -170 -440 -90 20 -320 N -320 N -320 N -320 1490 -620 1800
+preplace netloc proc_sys_reset_0_peripheral_aresetn 1 0 3 -820 -160 -480 -60 -10
+preplace netloc processing_system7_0_DDR 1 4 5 850 -280 N -280 N -280 N -280 N
+preplace netloc processing_system7_0_FIXED_IO 1 4 5 880 -260 N -260 N -260 N -260 N
+preplace netloc axi_gpio_0_GPIO 1 8 1 N -520
+preplace netloc processing_system7_0_M_AXI_GP0 1 4 3 840J -620 NJ -620 1470
+preplace netloc ps7_0_axi_periph_M00_AXI 1 7 1 1790 -540n
+preplace netloc axi_interconnect_0_M00_AXI 1 3 1 390 -30n
+preplace netloc processing_system7_0_M_AXI_GP1 1 0 5 -790 -140 -460 -110 N -110 370 -150 830J
+preplace netloc ps7_0_axi_periph_1_M00_AXI 1 1 1 -490 -20n
+preplace netloc multiply_block_0_m_axi_INPUT_r 1 2 1 0 -10n
+preplace netloc multiply_block_0_m_axi_OUTPUT_r 1 2 1 40 10n
+levelinfo -pg 1 -850 -640 -220 220 620 1010 1300 1640 1920 2130
+pagesize -pg 1 -db -bbox -sgen -850 -740 2250 320
+"
+}
+{
+   "da_axi4_cnt":"7",
+   "da_clkrst_cnt":"1",
+   "da_ps7_cnt":"1"
+}

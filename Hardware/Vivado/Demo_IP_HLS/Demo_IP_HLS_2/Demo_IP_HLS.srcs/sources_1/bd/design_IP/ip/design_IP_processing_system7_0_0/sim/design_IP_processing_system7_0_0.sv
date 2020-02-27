@@ -800,6 +800,7 @@
   S_AXI_ACP_WDATA,
   S_AXI_ACP_WSTRB,
   FCLK_CLK0,
+  FCLK_CLK1,
   FCLK_RESET0_N,
   MIO,
   DDR_CAS_n,
@@ -876,7 +877,7 @@
       parameter C_USE_S_AXI_ACP = 1;
       parameter C_PS7_SI_REV = "PRODUCTION";
       parameter C_FCLK_CLK0_BUF = "TRUE";
-      parameter C_FCLK_CLK1_BUF = "FALSE";
+      parameter C_FCLK_CLK1_BUF = "TRUE";
       parameter C_FCLK_CLK2_BUF = "FALSE";
       parameter C_FCLK_CLK3_BUF = "FALSE";
       parameter C_PACKAGE_NAME = "clg484";
@@ -1008,6 +1009,7 @@
       input  [63 : 0] S_AXI_ACP_WDATA;
       input  [7 : 0] S_AXI_ACP_WSTRB;
       output  FCLK_CLK0;
+      output  FCLK_CLK1;
       output  FCLK_RESET0_N;
       inout  [53 : 0] MIO;
       inout  DDR_CAS_n;
@@ -1102,6 +1104,7 @@
       reg [2 : 0] S_AXI_ACP_RID;
       reg [63 : 0] S_AXI_ACP_RDATA;
       reg FCLK_CLK0;
+      reg FCLK_CLK1;
       reg FCLK_RESET0_N;
       string ip_name;
       reg disable_port;
@@ -1115,6 +1118,7 @@ import "DPI-C" function void ps7_init_m_axi_gp0(input int M_AXI_GP0_AWID_size,in
 import "DPI-C" function void ps7_init_m_axi_gp1(input int M_AXI_GP1_AWID_size,input int M_AXI_GP1_AWADDR_size,input int M_AXI_GP1_AWLEN_size,input int M_AXI_GP1_AWSIZE_size,input int M_AXI_GP1_AWBURST_size,input int M_AXI_GP1_AWLOCK_size,input int M_AXI_GP1_AWCACHE_size,input int M_AXI_GP1_AWPROT_size,input int M_AXI_GP1_AWQOS_size,input int M_AXI_GP1_AWVALID_size,input int M_AXI_GP1_AWREADY_size,input int M_AXI_GP1_WID_size,input int M_AXI_GP1_WDATA_size,input int M_AXI_GP1_WSTRB_size,input int M_AXI_GP1_WLAST_size,input int M_AXI_GP1_WVALID_size,input int M_AXI_GP1_WREADY_size,input int M_AXI_GP1_BID_size,input int M_AXI_GP1_BRESP_size,input int M_AXI_GP1_BVALID_size,input int M_AXI_GP1_BREADY_size,input int M_AXI_GP1_ARID_size,input int M_AXI_GP1_ARADDR_size,input int M_AXI_GP1_ARLEN_size,input int M_AXI_GP1_ARSIZE_size,input int M_AXI_GP1_ARBURST_size,input int M_AXI_GP1_ARLOCK_size,input int M_AXI_GP1_ARCACHE_size,input int M_AXI_GP1_ARPROT_size,input int M_AXI_GP1_ARQOS_size,input int M_AXI_GP1_ARVALID_size,input int M_AXI_GP1_ARREADY_size,input int M_AXI_GP1_RID_size,input int M_AXI_GP1_RDATA_size,input int M_AXI_GP1_RRESP_size,input int M_AXI_GP1_RLAST_size,input int M_AXI_GP1_RVALID_size,input int M_AXI_GP1_RREADY_size);
 import "DPI-C" function void ps7_init_s_axi_acp(input int S_AXI_ACP_AWID_size,input int S_AXI_ACP_AWADDR_size,input int S_AXI_ACP_AWLEN_size,input int S_AXI_ACP_AWSIZE_size,input int S_AXI_ACP_AWBURST_size,input int S_AXI_ACP_AWLOCK_size,input int S_AXI_ACP_AWCACHE_size,input int S_AXI_ACP_AWPROT_size,input int S_AXI_ACP_AWQOS_size,input int S_AXI_ACP_AWUSER_size,input int S_AXI_ACP_AWVALID_size,input int S_AXI_ACP_AWREADY_size,input int S_AXI_ACP_WID_size,input int S_AXI_ACP_WDATA_size,input int S_AXI_ACP_WSTRB_size,input int S_AXI_ACP_WLAST_size,input int S_AXI_ACP_WVALID_size,input int S_AXI_ACP_WREADY_size,input int S_AXI_ACP_BID_size,input int S_AXI_ACP_BRESP_size,input int S_AXI_ACP_BVALID_size,input int S_AXI_ACP_BREADY_size,input int S_AXI_ACP_ARID_size,input int S_AXI_ACP_ARADDR_size,input int S_AXI_ACP_ARLEN_size,input int S_AXI_ACP_ARSIZE_size,input int S_AXI_ACP_ARBURST_size,input int S_AXI_ACP_ARLOCK_size,input int S_AXI_ACP_ARCACHE_size,input int S_AXI_ACP_ARPROT_size,input int S_AXI_ACP_ARQOS_size,input int S_AXI_ACP_ARUSER_size,input int S_AXI_ACP_ARVALID_size,input int S_AXI_ACP_ARREADY_size,input int S_AXI_ACP_RID_size,input int S_AXI_ACP_RDATA_size,input int S_AXI_ACP_RRESP_size,input int S_AXI_ACP_RLAST_size,input int S_AXI_ACP_RVALID_size,input int S_AXI_ACP_RREADY_size);
 import "DPI-C" function void ps7_simulate_single_cycle_FCLK_CLK0();
+import "DPI-C" function void ps7_simulate_single_cycle_FCLK_CLK1();
 import "DPI-C" function void ps7_simulate_single_cycle_M_AXI_GP0_ACLK();
 import "DPI-C" function void ps7_set_inputs_m_axi_gp0_M_AXI_GP0_ACLK(
 input bit M_AXI_GP0_AWREADY,
@@ -1361,6 +1365,19 @@ output bit S_AXI_ACP_RVALID
   begin
    ps7_set_ip_context(ip_name);
    ps7_simulate_single_cycle_FCLK_CLK0();
+  end
+
+  initial
+  begin
+     FCLK_CLK1 = 1'b0;
+  end
+
+  always #(5.0) FCLK_CLK1 <= ~FCLK_CLK1;
+
+  always@(posedge FCLK_CLK1)
+  begin
+   ps7_set_ip_context(ip_name);
+   ps7_simulate_single_cycle_FCLK_CLK1();
   end
 
 

@@ -61,57 +61,7 @@
 #include "xil_cache.h"
 #include "xplatform_info.h"
 #include "block_matrix.h"
-static FIL fil;		// File object
-static FATFS fatfs;
 
-
-
-int test_file_system(){
-	printf("testing fileystem\n Only on ZYNQ\n");
-	BYTE work[FF_MAX_SS];
-
-
-	// To test logical drive 0, Path should be "0:/"
-	// For logical drive 1, Path should be "1:/"
-
-	FRESULT Res;
-	TCHAR *Path = "0:/";
-	FILINFO fno;
-	DIR dir;
-	char *fn;   //This function assumes non-Unicode configuration
-
-	Res=f_mount(&fatfs, Path, 0);
-	if (Res != FR_OK) {
-		return XST_FAILURE;
-	}
-	printf("mount succeeded\n");
-	//
-	 // Path - Path to logical driver, 0 - FDISK format.
-	 // 0 - Cluster size is automatically determined based on Vol size.
-	 //
-	Res = f_mkfs(Path, FM_FAT32, 0, work, sizeof work);
-	if (Res != FR_OK) {
-		return XST_FAILURE;
-	}
-	printf("file system initied\n");
-	Res = f_opendir(&dir, Path);
-	if (Res == FR_OK) {
-		for (;;) {
-		            Res = f_readdir(&dir, &fno);                   // Read a directory item
-		            if (Res != FR_OK || fno.fname[0] == 0) break;  // Break on error or end of dir
-		            if (fno.fname[0] == '.') continue;             // Ignore dot entry
-		            fn = fno.fname;
-		            if (fno.fattrib & AM_DIR) {                    // It is a directory
-		                break;
-		            } else {                                       // It is a file.
-		                xil_printf("  %s/%s\n\r", Path, fn);
-		            }
-		        }
-		        f_closedir(&dir);
-	}
-	printf("file system tested\n");
-	return XST_SUCCESS;
-}
 
 
 //char* test=(char*)XPAR_PS7_DDR_0_S_AXI_BASEADDR;

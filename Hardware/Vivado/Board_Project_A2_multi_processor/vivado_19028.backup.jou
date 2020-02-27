@@ -1,0 +1,497 @@
+#-----------------------------------------------------------
+# Vivado v2019.1.3 (64-bit)
+# SW Build 2644227 on Wed Sep  4 09:45:24 MDT 2019
+# IP Build 2633630 on Wed Sep  4 12:30:14 MDT 2019
+# Start of session at: Tue Feb 25 11:08:54 2020
+# Process ID: 19028
+# Current directory: C:/A2_project/Vivado/Board_Project_A2_multi_processor
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10420 C:\A2_project\Vivado\Board_Project_A2_multi_processor\Board_Project_A2_multi_processor.xpr
+# Log file: C:/A2_project/Vivado/Board_Project_A2_multi_processor/vivado.log
+# Journal file: C:/A2_project/Vivado/Board_Project_A2_multi_processor\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/A2_project/Vivado/Board_Project_A2_multi_processor/Board_Project_A2_multi_processor.xpr
+update_compile_order -fileset sources_1
+open_bd_design {C:/A2_project/Vivado/Board_Project_A2_multi_processor/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/design_multi.bd}
+delete_bd_objs [get_bd_intf_nets Kmeans_0_m_axi_INPUT_r] [get_bd_intf_nets axi_interconnect_2_M00_AXI] [get_bd_intf_nets S01_AXI_2] [get_bd_cells axi_interconnect_2]
+delete_bd_objs [get_bd_intf_nets axi_interconnect_0_M00_AXI] [get_bd_cells Kmeans_0]
+delete_bd_objs [get_bd_nets Net] [get_bd_intf_nets S00_AXI_1] [get_bd_cells axi_interconnect_0]
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+file copy -force C:/A2_project/Vivado/Board_Project_A2_multi_processor/Board_Project_A2_multi_processor.runs/impl_1/design_multi_wrapper.sysdef C:/A2_project/Vivado/Board_Project_A2_multi_processor/Board_Project_A2_multi_processor.sdk/design_multi_wrapper.hdf
+
+launch_sdk -workspace C:/A2_project/Vivado/Board_Project_A2_multi_processor/Board_Project_A2_multi_processor.sdk -hwspec C:/A2_project/Vivado/Board_Project_A2_multi_processor/Board_Project_A2_multi_processor.sdk/design_multi_wrapper.hdf
+file copy -force C:/A2_project/Vivado/Board_Project_A2_multi_processor/Board_Project_A2_multi_processor.runs/impl_1/design_multi_wrapper.sysdef C:/A2_project/Vivado/Board_Project_A2_multi_processor/Board_Project_A2_multi_processor.sdk/design_multi_wrapper.hdf
+
+set_property location {4 795 -604} [get_bd_cells axi_interconnect_1]
+startgroup
+set_property -dict [list CONFIG.NUM_MI {1}] [get_bd_cells axi_interconnect_1]
+endgroup
+set_property location {5 2174 -475} [get_bd_cells axi_interconnect_1]
+set_property location {3 1355 -487} [get_bd_cells microblaze_0]
+set_property location {5 2125 -476} [get_bd_cells axi_interconnect_1]
+set_property location {3 1447 -566} [get_bd_cells microblaze_0]
+set_property location {1.5 504 -935} [get_bd_cells microblaze_0]
+set_property location {3 948 -885} [get_bd_cells axi_interconnect_1]
+set_property location {3 950 -881} [get_bd_cells axi_interconnect_1]
+set_property location {3 947 -880} [get_bd_cells axi_interconnect_1]
+set_property location {2 515 -964} [get_bd_cells microblaze_0]
+set_property location {2 515 -978} [get_bd_cells microblaze_0]
+set_property location {2 520 -982} [get_bd_cells microblaze_0]
+set_property location {2 520 -974} [get_bd_cells microblaze_0]
+set_property location {2 563 -761} [get_bd_cells mdm_1]
+set_property location {0.5 -262 -702} [get_bd_cells mdm_1]
+set_property location {2 300 -723} [get_bd_cells mdm_1]
+set_property location {7 2866 494} [get_bd_cells microblaze_0_axi_intc]
+set_property location {6 2489 335} [get_bd_cells microblaze_0_axi_periph]
+set_property location {7 2860 341} [get_bd_cells microblaze_0_axi_intc]
+set_property location {7 2871 334} [get_bd_cells microblaze_0_axi_intc]
+set_property location {10 3725 -52} [get_bd_cells axi_bram_ctrl_0_bram_0]
+set_property location {10 3704 -37} [get_bd_cells axi_bram_ctrl_0_bram_0]
+startgroup
+set_property -dict [list CONFIG.NUM_MI {2}] [get_bd_cells ps7_0_axi_periph]
+endgroup
+set_property location {8 3161 -8} [get_bd_cells smartconnect_0]
+set_property location {8 3165 -29} [get_bd_cells smartconnect_0]
+set_property location {8 3187 -44} [get_bd_cells smartconnect_0]
+set_property location {8 3182 -49} [get_bd_cells smartconnect_0]
+set_property location {7 2863 -129} [get_bd_cells smartconnect_0]
+set_property location {7 2911 -96} [get_bd_cells smartconnect_0]
+set_property location {7 2909 -95} [get_bd_cells smartconnect_0]
+set_property location {7 2904 -85} [get_bd_cells smartconnect_0]
+reset_run design_multi_xbar_5_synth_1
+reset_run synth_1
+save_bd_design
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+delete_bd_objs [get_bd_nets rst_clk_wiz_1_100M_bus_struct_reset] [get_bd_cells microblaze_0_local_memory]
+startgroup
+set_property -dict [list CONFIG.PCW_USE_S_AXI_HP2 {0}] [get_bd_cells processing_system7_0]
+endgroup
+save_bd_design
+reset_run design_multi_processing_system7_0_0_synth_1
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+file mkdir C:/A2_project/Vivado/Board_Project_A2_multi_processor/Board_Project_A2_multi_processor.sdk
+file copy -force C:/A2_project/Vivado/Board_Project_A2_multi_processor/Board_Project_A2_multi_processor.runs/impl_1/design_multi_wrapper.sysdef C:/A2_project/Vivado/Board_Project_A2_multi_processor/Board_Project_A2_multi_processor.sdk/design_multi_wrapper.hdf
+
+launch_sdk -workspace C:/A2_project/Vivado/Board_Project_A2_multi_processor/Board_Project_A2_multi_processor.sdk -hwspec C:/A2_project/Vivado/Board_Project_A2_multi_processor/Board_Project_A2_multi_processor.sdk/design_multi_wrapper.hdf
+set_property location {2 898 -906} [get_bd_cells axi_interconnect_1]
+set_property location {2 924 -930} [get_bd_cells axi_interconnect_1]
+startgroup
+set_property -dict [list CONFIG.NUM_MI {2}] [get_bd_cells axi_interconnect_1]
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_bram_ctrl:4.1 axi_bram_ctrl_1
+endgroup
+set_property location {4 1441 -1081} [get_bd_cells axi_bram_ctrl_1]
+connect_bd_intf_net [get_bd_intf_pins axi_bram_ctrl_1/S_AXI] -boundary_type upper [get_bd_intf_pins axi_interconnect_1/M01_AXI]
+connect_bd_net [get_bd_pins axi_bram_ctrl_1/s_axi_aclk] [get_bd_pins axi_interconnect_1/M01_ACLK]
+connect_bd_net [get_bd_pins axi_bram_ctrl_1/s_axi_aresetn] [get_bd_pins axi_interconnect_1/M01_ARESETN]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:bram_cntlr -config {BRAM "Auto" }  [get_bd_intf_pins axi_bram_ctrl_1/BRAM_PORTA]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config {Clk "/clk_wiz_1/AXI_clk (100 MHz)" }  [get_bd_pins axi_bram_ctrl_1/s_axi_aclk]
+endgroup
+undo
+connect_bd_net [get_bd_pins clk_wiz_1/AXI_clk] [get_bd_pins axi_bram_ctrl_1/s_axi_aclk]
+connect_bd_net [get_bd_pins rst_ps7_0_100M/interconnect_aresetn] [get_bd_pins axi_bram_ctrl_1/s_axi_aresetn]
+apply_bd_automation -rule xilinx.com:bd_rule:bram_cntlr -config {BRAM "New Blk_Mem_Gen" }  [get_bd_intf_pins axi_bram_ctrl_1/BRAM_PORTA]
+set_property location {3.5 1615 -1086} [get_bd_cells axi_bram_ctrl_1_bram]
+set_property location {4 1527 -1091} [get_bd_cells axi_bram_ctrl_1_bram]
+set_property location {4 1521 -1097} [get_bd_cells axi_bram_ctrl_1_bram]
+startgroup
+set_property -dict [list CONFIG.SINGLE_PORT_BRAM {1}] [get_bd_cells axi_bram_ctrl_1]
+endgroup
+set_property location {4 1581 -1090} [get_bd_cells axi_bram_ctrl_1_bram]
+reset_run design_multi_xbar_5_synth_1
+reset_run synth_1
+save_bd_design
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+reset_run design_multi_s00_mmu_1_synth_1
+reset_run design_multi_s01_mmu_0_synth_1
+reset_run design_multi_axi_bram_ctrl_1_0_synth_1
+assign_bd_address [get_bd_addr_segs {axi_bram_ctrl_1/S_AXI/Mem0 }]
+set_property offset 0x00000000 [get_bd_addr_segs {microblaze_0/Instruction/SEG_axi_bram_ctrl_1_Mem0}]
+set_property offset 0x60000000 [get_bd_addr_segs {microblaze_0/Instruction/SEG_processing_system7_0_HP0_DDR_LOWOCM}]
+set_property offset 0x00000000 [get_bd_addr_segs {microblaze_0/Instruction/SEG_axi_bram_ctrl_1_Mem0}]
+set_property offset 0x60000000 [get_bd_addr_segs {microblaze_0/Data/SEG_processing_system7_0_HP0_DDR_LOWOCM}]
+set_property offset 0x00000000 [get_bd_addr_segs {microblaze_0/Data/SEG_axi_bram_ctrl_0_Mem0}]
+save_bd_design
+launch_runs impl_1 -jobs 8
+generate_target all [get_files  C:/A2_project/Vivado/Board_Project_A2_multi_processor/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/design_multi.bd]
+save_bd_design
+set_property range 16K [get_bd_addr_segs {microblaze_0/Data/SEG_axi_bram_ctrl_0_Mem0}]
+set_property range 8K [get_bd_addr_segs {microblaze_0/Data/SEG_axi_bram_ctrl_0_Mem0}]
+save_bd_design
+generate_target all [get_files  C:/A2_project/Vivado/Board_Project_A2_multi_processor/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/design_multi.bd]
+startgroup
+set_property -dict [list CONFIG.Memory_Type {Single_Port_RAM} CONFIG.Use_Byte_Write_Enable {true} CONFIG.Enable_B {Always_Enabled} CONFIG.Use_RSTB_Pin {false} CONFIG.Port_A_Write_Rate {50} CONFIG.Port_B_Clock {0} CONFIG.Port_B_Write_Rate {0} CONFIG.Port_B_Enable_Rate {0}] [get_bd_cells axi_bram_ctrl_1_bram]
+endgroup
+startgroup
+set_property -dict [list CONFIG.DATA_WIDTH {64} CONFIG.ECC_TYPE {0}] [get_bd_cells axi_bram_ctrl_1]
+endgroup
+startgroup
+set_property -dict [list CONFIG.PCW_USE_M_AXI_GP1 {0}] [get_bd_cells processing_system7_0]
+delete_bd_objs [get_bd_nets clk_wiz_1_hls_clk]
+endgroup
+startgroup
+set_property -dict [list CONFIG.DATA_WIDTH {32}] [get_bd_cells axi_bram_ctrl_1]
+endgroup
+reset_run design_multi_processing_system7_0_0_synth_1
+save_bd_design
+launch_runs synth_1 -jobs 8
+delete_bd_objs [get_bd_intf_nets axi_bram_ctrl_1_BRAM_PORTA] [get_bd_cells axi_bram_ctrl_1_bram]
+startgroup
+set_property -dict [list CONFIG.NUM_MI {1}] [get_bd_cells smartconnect_0]
+endgroup
+reset_run design_multi_smartconnect_0_0_synth_1
+save_bd_design
+launch_runs synth_1 -jobs 8
+delete_bd_objs [get_bd_intf_nets axi_bram_ctrl_0_BRAM_PORTA] [get_bd_cells axi_bram_ctrl_0_bram_0]
+delete_bd_objs [get_bd_intf_nets ps7_0_axi_periph_M01_AXI] [get_bd_intf_nets microblaze_0_axi_periph_M03_AXI] [get_bd_intf_nets smartconnect_0_M00_AXI] [get_bd_cells smartconnect_0]
+delete_bd_objs [get_bd_cells axi_bram_ctrl_0]
+set_property location {8.5 3458 -94} [get_bd_cells axi_gpio_0]
+delete_bd_objs [get_bd_intf_nets microblaze_0_intc_axi]
+connect_bd_intf_net [get_bd_intf_pins microblaze_0_axi_intc/s_axi] -boundary_type upper [get_bd_intf_pins ps7_0_axi_periph/M01_AXI]
+set_property location {7 3115 165} [get_bd_cells microblaze_0_axi_intc]
+set_property location {7 3068 37} [get_bd_cells microblaze_0_axi_intc]
+set_property location {7 3110 40} [get_bd_cells microblaze_0_axi_intc]
+save_bd_design
+generate_target all [get_files  C:/A2_project/Vivado/Board_Project_A2_multi_processor/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/design_multi.bd]
+delete_bd_objs [get_bd_intf_nets axi_interconnect_1_M01_AXI] [get_bd_cells axi_bram_ctrl_1]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_bram_ctrl:4.1 axi_bram_ctrl_0
+endgroup
+set_property location {3 1254 -1037} [get_bd_cells axi_bram_ctrl_0]
+connect_bd_intf_net [get_bd_intf_pins axi_bram_ctrl_0/S_AXI] -boundary_type upper [get_bd_intf_pins axi_interconnect_1/M01_AXI]
+connect_bd_net [get_bd_pins axi_bram_ctrl_0/s_axi_aclk] [get_bd_pins clk_wiz_1/AXI_clk]
+connect_bd_net [get_bd_pins axi_bram_ctrl_0/s_axi_aresetn] [get_bd_pins rst_ps7_0_100M/interconnect_aresetn]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:bram_cntlr -config {BRAM "Auto" }  [get_bd_intf_pins axi_bram_ctrl_0/BRAM_PORTA]
+apply_bd_automation -rule xilinx.com:bd_rule:bram_cntlr -config {BRAM "Auto" }  [get_bd_intf_pins axi_bram_ctrl_0/BRAM_PORTB]
+endgroup
+set_property location {3.5 1617 -1058} [get_bd_cells axi_bram_ctrl_0_bram]
+startgroup
+endgroup
+reset_run design_multi_xbar_0_synth_1
+save_bd_design
+launch_runs synth_1 -jobs 8
+delete_bd_objs [get_bd_addr_segs microblaze_0/Data/SEG_mdm_1_Reg]
+assign_bd_address [get_bd_addr_segs {axi_bram_ctrl_0/S_AXI/Mem0 }]
+set_property offset 0x00000000 [get_bd_addr_segs {microblaze_0/Instruction/SEG_axi_bram_ctrl_0_Mem0}]
+set_property offset 0x00000000 [get_bd_addr_segs {microblaze_0/Data/SEG_axi_bram_ctrl_0_Mem0}]
+save_bd_design
+generate_target all [get_files  C:/A2_project/Vivado/Board_Project_A2_multi_processor/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/design_multi.bd]
+assign_bd_address [get_bd_addr_segs {mdm_1/S_AXI/Reg }]
+assign_bd_address [get_bd_addr_segs {microblaze_0_axi_intc/S_AXI/Reg }]
+delete_bd_objs [get_bd_addr_segs processing_system7_0/Data/SEG_microblaze_0_axi_intc_Reg]
+delete_bd_objs [get_bd_addr_segs microblaze_0/Data/SEG_microblaze_0_axi_intc_Reg]
+save_bd_design
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+assign_bd_address [get_bd_addr_segs {microblaze_0_axi_intc/S_AXI/Reg }]
+startgroup
+set_property -dict [list CONFIG.NUM_MI {3}] [get_bd_cells ps7_0_axi_periph]
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_interconnect:2.1 axi_interconnect_0
+endgroup
+set_property location {9 3273 241} [get_bd_cells axi_interconnect_0]
+set_property location {8 3199 -265} [get_bd_cells microblaze_0_axi_intc]
+set_property location {8 3240 104} [get_bd_cells axi_interconnect_0]
+set_property -dict [list CONFIG.NUM_SI {2} CONFIG.NUM_MI {1}] [get_bd_cells axi_interconnect_0]
+connect_bd_intf_net -boundary_type upper [get_bd_intf_pins axi_interconnect_0/S00_AXI] [get_bd_intf_pins ps7_0_axi_periph/M02_AXI]
+connect_bd_intf_net -boundary_type upper [get_bd_intf_pins axi_interconnect_0/S01_AXI] [get_bd_intf_pins microblaze_0_axi_periph/M00_AXI]
+connect_bd_net [get_bd_pins axi_interconnect_0/ACLK] [get_bd_pins clk_wiz_1/AXI_clk]
+connect_bd_net [get_bd_pins axi_interconnect_0/S00_ACLK] [get_bd_pins clk_wiz_1/AXI_clk]
+connect_bd_net [get_bd_pins axi_interconnect_0/M00_ACLK] [get_bd_pins clk_wiz_1/AXI_clk]
+connect_bd_net [get_bd_pins axi_interconnect_0/M00_ARESETN] [get_bd_pins ps7_0_axi_periph/M02_ARESETN] -boundary_type upper
+connect_bd_net [get_bd_pins axi_interconnect_0/S00_ARESETN] [get_bd_pins axi_interconnect_0/M00_ARESETN] -boundary_type upper
+connect_bd_net [get_bd_pins axi_interconnect_0/ARESETN] [get_bd_pins axi_interconnect_0/M00_ARESETN] -boundary_type upper
+connect_bd_net [get_bd_pins axi_interconnect_0/S01_ACLK] [get_bd_pins clk_wiz_1/AXI_clk]
+connect_bd_net [get_bd_pins axi_interconnect_0/S01_ARESETN] [get_bd_pins axi_interconnect_0/M00_ARESETN] -boundary_type upper
+connect_bd_net [get_bd_pins ps7_0_axi_periph/M02_ACLK] [get_bd_pins clk_wiz_1/AXI_clk]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_bram_ctrl:4.1 axi_bram_ctrl_1
+endgroup
+set_property location {9 3514 124} [get_bd_cells axi_bram_ctrl_1]
+connect_bd_intf_net [get_bd_intf_pins axi_bram_ctrl_1/S_AXI] -boundary_type upper [get_bd_intf_pins axi_interconnect_0/M00_AXI]
+connect_bd_net [get_bd_pins axi_bram_ctrl_1/s_axi_aclk] [get_bd_pins clk_wiz_1/AXI_clk]
+connect_bd_net [get_bd_pins axi_bram_ctrl_1/s_axi_aresetn] [get_bd_pins axi_interconnect_0/S01_ARESETN]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:bram_cntlr -config {BRAM "Auto" }  [get_bd_intf_pins axi_bram_ctrl_1/BRAM_PORTA]
+apply_bd_automation -rule xilinx.com:bd_rule:bram_cntlr -config {BRAM "Auto" }  [get_bd_intf_pins axi_bram_ctrl_1/BRAM_PORTB]
+endgroup
+set_property location {10 3440 124} [get_bd_cells axi_bram_ctrl_1_bram]
+save_bd_design
+assign_bd_address [get_bd_addr_segs {axi_bram_ctrl_1/S_AXI/Mem0 }]
+reset_run design_multi_xbar_0_synth_1
+reset_run synth_1
+save_bd_design
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+reset_run design_multi_xbar_0_synth_1
+reset_run design_multi_xbar_1_synth_1
+reset_run design_multi_s00_mmu_0_synth_1
+reset_run design_multi_xbar_6_synth_1
+reset_run design_multi_auto_pc_3_synth_1
+connect_bd_net [get_bd_pins ps7_0_axi_periph/M02_ARESETN] [get_bd_pins rst_ps7_0_100M/peripheral_aresetn]
+save_bd_design
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+file copy -force C:/A2_project/Vivado/Board_Project_A2_multi_processor/Board_Project_A2_multi_processor.runs/impl_1/design_multi_wrapper.sysdef C:/A2_project/Vivado/Board_Project_A2_multi_processor/Board_Project_A2_multi_processor.sdk/design_multi_wrapper.hdf
+
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:microblaze_mcs:3.0 microblaze_mcs_0
+endgroup
+delete_bd_objs [get_bd_cells microblaze_mcs_0]
+startgroup
+set_property -dict [list CONFIG.C_I_LMB {1}] [get_bd_cells microblaze_0]
+endgroup
+save_bd_design
+startgroup
+set_property -dict [list CONFIG.C_D_LMB {1}] [get_bd_cells microblaze_0]
+endgroup
+save_bd_design
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:microblaze:11.0 microblaze_1
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:microblaze -config { axi_intc {0} axi_periph {Enabled} cache {8KB} clk {None} debug_module {Debug Only} ecc {None} local_mem {8KB} preset {None}}  [get_bd_cells microblaze_1]
+delete_bd_objs [get_bd_intf_nets microblaze_1_dlmb_1]
+delete_bd_objs [get_bd_intf_nets microblaze_1_ilmb_1] [get_bd_intf_nets microblaze_1_debug] [get_bd_nets microblaze_1_Clk] [get_bd_cells microblaze_1]
+startgroup
+set_property -dict [list CONFIG.C_D_LMB {0} CONFIG.C_I_LMB {0}] [get_bd_cells microblaze_0]
+endgroup
+connect_bd_net [get_bd_pins microblaze_1_local_memory/LMB_Clk] [get_bd_pins clk_wiz_1/AXI_clk]
+reset_run synth_1
+save_bd_design
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+reset_run impl_1
+exclude_bd_addr_seg [get_bd_addr_segs microblaze_0/Data/SEG_processing_system7_0_GP0_DDR_LOWOCM]
+generate_target all [get_files  C:/A2_project/Vivado/Board_Project_A2_multi_processor/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/design_multi.bd]
+catch { config_ip_cache -export [get_ips -all design_multi_xbar_1] }
+catch { [ delete_ip_run [get_ips -all design_multi_xbar_1] ] }
+catch { config_ip_cache -export [get_ips -all design_multi_auto_pc_0] }
+catch { config_ip_cache -export [get_ips -all design_multi_auto_pc_1] }
+catch { config_ip_cache -export [get_ips -all design_multi_auto_pc_2] }
+catch { config_ip_cache -export [get_ips -all design_multi_auto_pc_3] }
+export_ip_user_files -of_objects [get_files C:/A2_project/Vivado/Board_Project_A2_multi_processor/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/design_multi.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/A2_project/Vivado/Board_Project_A2_multi_processor/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/design_multi.bd]
+export_simulation -of_objects [get_files C:/A2_project/Vivado/Board_Project_A2_multi_processor/Board_Project_A2_multi_processor.srcs/sources_1/bd/design_multi/design_multi.bd] -directory C:/A2_project/Vivado/Board_Project_A2_multi_processor/Board_Project_A2_multi_processor.ip_user_files/sim_scripts -ip_user_files_dir C:/A2_project/Vivado/Board_Project_A2_multi_processor/Board_Project_A2_multi_processor.ip_user_files -ipstatic_source_dir C:/A2_project/Vivado/Board_Project_A2_multi_processor/Board_Project_A2_multi_processor.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/A2_project/Vivado/Board_Project_A2_multi_processor/Board_Project_A2_multi_processor.cache/compile_simlib/modelsim} {questa=C:/A2_project/Vivado/Board_Project_A2_multi_processor/Board_Project_A2_multi_processor.cache/compile_simlib/questa} {riviera=C:/A2_project/Vivado/Board_Project_A2_multi_processor/Board_Project_A2_multi_processor.cache/compile_simlib/riviera} {activehdl=C:/A2_project/Vivado/Board_Project_A2_multi_processor/Board_Project_A2_multi_processor.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+file copy -force C:/A2_project/Vivado/Board_Project_A2_multi_processor/Board_Project_A2_multi_processor.runs/impl_1/design_multi_wrapper.sysdef C:/A2_project/Vivado/Board_Project_A2_multi_processor/Board_Project_A2_multi_processor.sdk/design_multi_wrapper.hdf
+
+set_property offset 0x20000000 [get_bd_addr_segs {microblaze_0/Instruction/SEG_processing_system7_0_HP0_DDR_LOWOCM}]
+set_property offset 0x20000000 [get_bd_addr_segs {microblaze_0/Data/SEG_processing_system7_0_HP0_DDR_LOWOCM}]
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+file copy -force C:/A2_project/Vivado/Board_Project_A2_multi_processor/Board_Project_A2_multi_processor.runs/impl_1/design_multi_wrapper.sysdef C:/A2_project/Vivado/Board_Project_A2_multi_processor/Board_Project_A2_multi_processor.sdk/design_multi_wrapper.hdf
+
+set_property location {2 747 -1031} [get_bd_cells microblaze_0]
+set_property location {1 767 -1056} [get_bd_cells microblaze_0]
+set_property location {1 797 -1053} [get_bd_cells microblaze_0]
+set_property location {1 809 -1047} [get_bd_cells microblaze_0]
+set_property location {1 722 -1034} [get_bd_cells microblaze_0]
+set_property location {1 705 -1034} [get_bd_cells microblaze_0]
+set_property location {2 1224 -915} [get_bd_cells axi_interconnect_1]
+set_property location {2 1203 -913} [get_bd_cells axi_interconnect_1]
+set_property location {2 1205 -910} [get_bd_cells axi_interconnect_1]
+set_property location {2 1285 -909} [get_bd_cells axi_interconnect_1]
+set_property location {4 1966 -1024} [get_bd_cells axi_bram_ctrl_0_bram]
+set_property location {4 1985 -1021} [get_bd_cells axi_bram_ctrl_0_bram]
+set_property location {4 2002 -1029} [get_bd_cells axi_bram_ctrl_0_bram]
+set_property location {4 2024 -1035} [get_bd_cells axi_bram_ctrl_0_bram]
+set_property location {2 1199 -892} [get_bd_cells axi_interconnect_1]
+set_property location {2 1216 -895} [get_bd_cells axi_interconnect_1]
+set_property location {2 1228 -907} [get_bd_cells axi_interconnect_1]
+set_property location {2 1221 -897} [get_bd_cells axi_interconnect_1]
+set_property location {2 1213 -888} [get_bd_cells axi_interconnect_1]
+set_property location {2 1203 -897} [get_bd_cells axi_interconnect_1]
+set_property location {2 1212 -895} [get_bd_cells axi_interconnect_1]
+set_property location {2 1221 -924} [get_bd_cells axi_interconnect_1]
+set_property location {4 1978 -1041} [get_bd_cells axi_bram_ctrl_0_bram]
+set_property location {3.5 1875 -1043} [get_bd_cells axi_bram_ctrl_0_bram]
+set_property location {3.5 1778 -1045} [get_bd_cells axi_bram_ctrl_0_bram]
+set_property location {1 525 -1004} [get_bd_cells microblaze_0]
+set_property location {1 530 -1003} [get_bd_cells microblaze_0]
+set_property location {1 526 -998} [get_bd_cells microblaze_0]
+set_property location {1 539 -1027} [get_bd_cells microblaze_0]
+set_property location {1 503 -1018} [get_bd_cells microblaze_0]
+set_property location {1 602 -1014} [get_bd_cells microblaze_0]
+set_property location {0.5 484 -999} [get_bd_cells microblaze_0]
+set_property location {1 464 -1031} [get_bd_cells microblaze_0]
+set_property location {1 464 -1053} [get_bd_cells microblaze_0]
+set_property location {1.5 604 -1036} [get_bd_cells microblaze_0]
+set_property location {1 629 -1016} [get_bd_cells microblaze_0]
+set_property location {1 560 -1027} [get_bd_cells microblaze_0]
+set_property location {1 575 -1038} [get_bd_cells microblaze_0]
+set_property location {1 662 -1016} [get_bd_cells microblaze_0]
+set_property location {1.5 653 -1013} [get_bd_cells microblaze_0]
+set_property location {1 605 -1045} [get_bd_cells microblaze_0]
+startgroup
+set_property -dict [list CONFIG.C_I_LMB {1} CONFIG.C_TRACE {0}] [get_bd_cells microblaze_0]
+endgroup
+connect_bd_intf_net [get_bd_intf_pins microblaze_0/ILMB] -boundary_type upper [get_bd_intf_pins microblaze_1_local_memory/ILMB]
+save_bd_design
+reset_run design_multi_microblaze_0_0_synth_1
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+assign_bd_address [get_bd_addr_segs {microblaze_1_local_memory/ilmb_bram_if_cntlr/SLMB/Mem }]
+save_bd_design
+reset_run synth_1
+reset_run design_multi_microblaze_0_0_synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+delete_bd_objs [get_bd_intf_nets microblaze_0_ILMB] [get_bd_cells microblaze_1_local_memory]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:lmb_v10:3.0 lmb_v10_0
+endgroup
+set_property location {2 1037 -1092} [get_bd_cells lmb_v10_0]
+connect_bd_intf_net [get_bd_intf_pins lmb_v10_0/LMB_M] [get_bd_intf_pins microblaze_0/ILMB]
+connect_bd_net [get_bd_pins lmb_v10_0/LMB_Clk] [get_bd_pins clk_wiz_1/AXI_clk]
+connect_bd_net [get_bd_pins lmb_v10_0/SYS_Rst] [get_bd_pins rst_clk_wiz_1_100M/mb_reset]
+set_property location {2 985 -1066} [get_bd_cells lmb_v10_0]
+set_property location {2 1044 -1062} [get_bd_cells lmb_v10_0]
+set_property location {2 1100 -1048} [get_bd_cells lmb_v10_0]
+set_property location {2 1075 -1093} [get_bd_cells lmb_v10_0]
+set_property location {2 1095 -1104} [get_bd_cells lmb_v10_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:lmb_bram_if_cntlr:4.0 lmb_bram_if_cntlr_0
+endgroup
+set_property location {2 1049 -1108} [get_bd_cells lmb_v10_0]
+set_property location {3 1369 -1128} [get_bd_cells lmb_bram_if_cntlr_0]
+delete_bd_objs [get_bd_intf_nets microblaze_0_ILMB] [get_bd_cells lmb_v10_0]
+set_property location {2 1116 -1121} [get_bd_cells lmb_bram_if_cntlr_0]
+connect_bd_intf_net [get_bd_intf_pins lmb_bram_if_cntlr_0/SLMB] [get_bd_intf_pins microblaze_0/ILMB]
+connect_bd_net [get_bd_pins lmb_bram_if_cntlr_0/LMB_Clk] [get_bd_pins clk_wiz_1/AXI_clk]
+connect_bd_net [get_bd_pins lmb_bram_if_cntlr_0/LMB_Rst] [get_bd_pins rst_clk_wiz_1_100M/mb_reset]
+save_bd_design
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:bram_cntlr -config {BRAM "Auto" }  [get_bd_intf_pins lmb_bram_if_cntlr_0/BRAM_PORT]
+endgroup
+set_property location {3 1398 -1116} [get_bd_cells lmb_bram_if_cntlr_0_bram]
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+assign_bd_address [get_bd_addr_segs {lmb_bram_if_cntlr_0/SLMB/Mem }]
+save_bd_design
+reset_run impl_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+create_bd_cell -type ip -vlnv xilinx.com:hls:pearson:1.0 pearson_0
+delete_bd_objs [get_bd_cells pearson_0]
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property location {2 1148 -1114} [get_bd_cells lmb_bram_if_cntlr_0]
+save_bd_design
+file copy -force C:/A2_project/Vivado/Board_Project_A2_multi_processor/Board_Project_A2_multi_processor.runs/impl_1/design_multi_wrapper.sysdef C:/A2_project/Vivado/Board_Project_A2_multi_processor/Board_Project_A2_multi_processor.sdk/design_multi_wrapper.hdf
+
+delete_bd_objs [get_bd_intf_nets axi_interconnect_1_M01_AXI] [get_bd_intf_nets axi_bram_ctrl_0_BRAM_PORTB] [get_bd_intf_nets axi_bram_ctrl_0_BRAM_PORTA] [get_bd_cells axi_bram_ctrl_0]
+delete_bd_objs [get_bd_cells axi_bram_ctrl_0_bram]
+set_property offset 0x00000000 [get_bd_addr_segs {microblaze_0/Instruction/SEG_lmb_bram_if_cntlr_0_Mem}]
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+file copy -force C:/A2_project/Vivado/Board_Project_A2_multi_processor/Board_Project_A2_multi_processor.runs/impl_1/design_multi_wrapper.sysdef C:/A2_project/Vivado/Board_Project_A2_multi_processor/Board_Project_A2_multi_processor.sdk/design_multi_wrapper.hdf
+
+startgroup
+set_property -dict [list CONFIG.NUM_MI {1}] [get_bd_cells axi_interconnect_1]
+endgroup
+delete_bd_objs [get_bd_nets M00_ARESETN_1] [get_bd_intf_nets axi_interconnect_1_M00_AXI] [get_bd_intf_nets S01_AXI_1] [get_bd_intf_nets S00_AXI_2] [get_bd_cells axi_interconnect_1]
+set_property location {2.5 1560 -936} [get_bd_cells microblaze_0]
+set_property location {2.5 1631 -870} [get_bd_cells microblaze_0]
+startgroup
+set_property -dict [list CONFIG.PCW_USE_S_AXI_HP1 {1}] [get_bd_cells processing_system7_0]
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_crossbar:2.1 axi_crossbar_0
+endgroup
+set_property location {3 2019 -852} [get_bd_cells axi_crossbar_0]
+delete_bd_objs [get_bd_cells axi_crossbar_0]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz_1/AXI_clk (100 MHz)} Clk_slave {/clk_wiz_1/AXI_clk (100 MHz)} Clk_xbar {/clk_wiz_1/AXI_clk (100 MHz)} Master {/microblaze_0/M_AXI_IC} Slave {/axi_bram_ctrl_1/S_AXI} intc_ip {/axi_interconnect_0} master_apm {0}}  [get_bd_intf_pins microblaze_0/M_AXI_IC]
+undo
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz_1/AXI_clk (100 MHz)} Clk_slave {/clk_wiz_1/AXI_clk (100 MHz)} Clk_xbar {/clk_wiz_1/AXI_clk (100 MHz)} Master {/microblaze_0 (Cached)} Slave {/processing_system7_0/S_AXI_HP0} intc_ip {New AXI SmartConnect} master_apm {0}}  [get_bd_intf_pins processing_system7_0/S_AXI_HP0]
+set_property location {4 2417 -1124} [get_bd_cells axi_smc]
+set_property location {3 1994 -879} [get_bd_cells axi_smc]
+save_bd_design
+reset_run design_multi_processing_system7_0_0_synth_1
+reset_run design_multi_xbar_6_synth_1
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_HP1_ACLK] [get_bd_pins clk_wiz_1/AXI_clk]
+startgroup
+set_property -dict [list CONFIG.PCW_USE_S_AXI_HP1 {0}] [get_bd_cells processing_system7_0]
+endgroup
+save_bd_design
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+file copy -force C:/A2_project/Vivado/Board_Project_A2_multi_processor/Board_Project_A2_multi_processor.runs/impl_1/design_multi_wrapper.sysdef C:/A2_project/Vivado/Board_Project_A2_multi_processor/Board_Project_A2_multi_processor.sdk/design_multi_wrapper.hdf
+
+startgroup
+set_property -dict [list CONFIG.NUM_MI {2}] [get_bd_cells axi_smc]
+endgroup
+startgroup
+set_property -dict [list CONFIG.PCW_USE_S_AXI_HP1 {1}] [get_bd_cells processing_system7_0]
+endgroup
+connect_bd_intf_net [get_bd_intf_pins processing_system7_0/S_AXI_HP1] [get_bd_intf_pins axi_smc/M01_AXI]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_HP1_ACLK] [get_bd_pins clk_wiz_1/AXI_clk]
+set_property location {3 1970 -866} [get_bd_cells axi_smc]
+set_property location {3 1964 -848} [get_bd_cells axi_smc]
+save_bd_design
+assign_bd_address [get_bd_addr_segs {processing_system7_0/S_AXI_HP1/HP1_DDR_LOWOCM }]
+delete_bd_objs [get_bd_addr_segs microblaze_0/Instruction/SEG_processing_system7_0_HP1_DDR_LOWOCM]
+delete_bd_objs [get_bd_addr_segs microblaze_0/Data/SEG_processing_system7_0_HP1_DDR_LOWOCM]
+save_bd_design
+reset_run design_multi_processing_system7_0_0_synth_1
+reset_run design_multi_axi_smc_0_synth_1
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+file copy -force C:/A2_project/Vivado/Board_Project_A2_multi_processor/Board_Project_A2_multi_processor.runs/impl_1/design_multi_wrapper.sysdef C:/A2_project/Vivado/Board_Project_A2_multi_processor/Board_Project_A2_multi_processor.sdk/design_multi_wrapper.hdf
+
+delete_bd_objs [get_bd_intf_nets microblaze_0_M_AXI_DC] [get_bd_intf_nets axi_smc_M01_AXI] [get_bd_intf_nets microblaze_0_M_AXI_IC] [get_bd_intf_nets axi_smc_M00_AXI] [get_bd_cells axi_smc]
+undo
+set_property location {3 2056 -865} [get_bd_cells axi_smc]
+delete_bd_objs [get_bd_intf_nets axi_smc_M00_AXI]
+delete_bd_objs [get_bd_intf_nets axi_smc_M01_AXI]
+startgroup
+set_property -dict [list CONFIG.PCW_USE_S_AXI_ACP {1}] [get_bd_cells processing_system7_0]
+endgroup
+startgroup
+set_property -dict [list CONFIG.PCW_USE_S_AXI_HP0 {0} CONFIG.PCW_USE_S_AXI_HP1 {0}] [get_bd_cells processing_system7_0]

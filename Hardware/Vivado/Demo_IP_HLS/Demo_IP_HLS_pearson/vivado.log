@@ -1,0 +1,277 @@
+#-----------------------------------------------------------
+# Vivado v2019.1.3 (64-bit)
+# SW Build 2644227 on Wed Sep  4 09:45:24 MDT 2019
+# IP Build 2633630 on Wed Sep  4 12:30:14 MDT 2019
+# Start of session at: Thu Feb 27 20:29:12 2020
+# Process ID: 7024
+# Current directory: C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13960 C:\A2_project\Vivado\Demo_IP_HLS\Demo_IP_HLS_pearson\Demo_IP_HLS_pearson.xpr
+# Log file: C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/vivado.log
+# Journal file: C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.xpr
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] Board Part Repository Path: Could not find the directory 'C:/../../../../../AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/A2_project/HLS'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:hls:multiply_block:1.0'. The one found in IP location 'c:/A2_project/HLS/xilinx_com_hls_multiply_block_1_0' will take precedence over the same IP in location c:/A2_project/HLS/Block_Matrix_HLS/block_matrix/solution2/impl/ip
+open_project: Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 892.594 ; gain = 272.012
+update_compile_order -fileset sources_1
+open_bd_design {C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.srcs/sources_1/bd/design_IP/design_IP.bd}
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_0
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_clk_wiz_0_100M
+Adding component instance block -- xilinx.com:hls:multiply_block:1.0 - multiply_block_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_0
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph_1
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Excluding </processing_system7_0/S_AXI_ACP/ACP_IOP> from </multiply_block_0/Data_m_axi_INPUT_r>
+Excluding </processing_system7_0/S_AXI_ACP/ACP_M_AXI_GP0> from </multiply_block_0/Data_m_axi_INPUT_r>
+Excluding </processing_system7_0/S_AXI_ACP/ACP_M_AXI_GP1> from </multiply_block_0/Data_m_axi_INPUT_r>
+Excluding </processing_system7_0/S_AXI_ACP/ACP_IOP> from </multiply_block_0/Data_m_axi_OUTPUT_r>
+Excluding </processing_system7_0/S_AXI_ACP/ACP_M_AXI_GP0> from </multiply_block_0/Data_m_axi_OUTPUT_r>
+Excluding </processing_system7_0/S_AXI_ACP/ACP_M_AXI_GP1> from </multiply_block_0/Data_m_axi_OUTPUT_r>
+Successfully read diagram <design_IP> from BD file <C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.srcs/sources_1/bd/design_IP/design_IP.bd>
+open_bd_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:13 . Memory (MB): peak = 998.242 ; gain = 76.313
+delete_bd_objs [get_bd_intf_nets multiply_block_0_m_axi_INPUT_r] [get_bd_intf_nets ps7_0_axi_periph_1_M00_AXI] [get_bd_intf_nets multiply_block_0_m_axi_OUTPUT_r] [get_bd_cells multiply_block_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:hls:pearson:1.0 pearson_0
+endgroup
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz_0/AXI_CLK (100 MHz)} Clk_slave {Auto} Clk_xbar {/clk_wiz_0/AXI_CLK (100 MHz)} Master {/processing_system7_0/M_AXI_GP0} Slave {/pearson_0/s_axi_CONTROL_BUS} intc_ip {/ps7_0_axi_periph} master_apm {0}}  [get_bd_intf_pins pearson_0/s_axi_CONTROL_BUS]
+Slave segment </pearson_0/s_axi_CONTROL_BUS/Reg> is being mapped into address space </processing_system7_0/Data> at <0x43C0_0000 [ 64K ]>
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz_0/HLS_CLK (100 MHz)} Clk_slave {/clk_wiz_0/AXI_CLK (100 MHz)} Clk_xbar {/clk_wiz_0/AXI_CLK (100 MHz)} Master {/pearson_0/m_axi_INPUT_r} Slave {/processing_system7_0/S_AXI_ACP} intc_ip {/axi_interconnect_0} master_apm {0}}  [get_bd_intf_pins pearson_0/m_axi_INPUT_r]
+INFO: [xilinx.com:hls:pearson:1.0-1] /pearson_0</pearson_0/m_axi_INPUT_r> already has associated sink clock </pearson_0/ap_clk> driven by clock source </clk_wiz_0/AXI_CLK>. Specified clock </clk_wiz_0/HLS_CLK> will not be used to connect associated sink clock pin of </axi_interconnect_0/S00_AXI> (if not connected already); </clk_wiz_0/AXI_CLK> will be used instead.
+Slave segment </processing_system7_0/S_AXI_ACP/ACP_DDR_LOWOCM> is being mapped into address space </pearson_0/Data_m_axi_INPUT_r> at <0x0000_0000 [ 512M ]>
+Slave segment </processing_system7_0/S_AXI_ACP/ACP_QSPI_LINEAR> is being mapped into address space </pearson_0/Data_m_axi_INPUT_r> at <0xFC00_0000 [ 16M ]>
+Slave segment </processing_system7_0/S_AXI_ACP/ACP_IOP> is being mapped into address space </pearson_0/Data_m_axi_INPUT_r> at <0xE000_0000 [ 4M ]>
+INFO: [BD 41-1051] The usage register of slave segment /processing_system7_0/S_AXI_ACP/ACP_IOP does not match the usage memory of address space /pearson_0/Data_m_axi_INPUT_r and will be excluded. Use the include_bd_addr_seg command to override this precaution and make the slave segment visible within this address space.
+Excluding </processing_system7_0/S_AXI_ACP/ACP_IOP> from </pearson_0/Data_m_axi_INPUT_r>
+Slave segment </processing_system7_0/S_AXI_ACP/ACP_M_AXI_GP0> is being mapped into address space </pearson_0/Data_m_axi_INPUT_r> at <0x4000_0000 [ 1G ]>
+INFO: [BD 41-1051] The usage register of slave segment /processing_system7_0/S_AXI_ACP/ACP_M_AXI_GP0 does not match the usage memory of address space /pearson_0/Data_m_axi_INPUT_r and will be excluded. Use the include_bd_addr_seg command to override this precaution and make the slave segment visible within this address space.
+Excluding </processing_system7_0/S_AXI_ACP/ACP_M_AXI_GP0> from </pearson_0/Data_m_axi_INPUT_r>
+Slave segment </processing_system7_0/S_AXI_ACP/ACP_M_AXI_GP1> is being mapped into address space </pearson_0/Data_m_axi_INPUT_r> at <0x8000_0000 [ 1G ]>
+INFO: [BD 41-1051] The usage register of slave segment /processing_system7_0/S_AXI_ACP/ACP_M_AXI_GP1 does not match the usage memory of address space /pearson_0/Data_m_axi_INPUT_r and will be excluded. Use the include_bd_addr_seg command to override this precaution and make the slave segment visible within this address space.
+Excluding </processing_system7_0/S_AXI_ACP/ACP_M_AXI_GP1> from </pearson_0/Data_m_axi_INPUT_r>
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {/clk_wiz_0/AXI_CLK (100 MHz)} Clk_xbar {/clk_wiz_0/AXI_CLK (100 MHz)} Master {/pearson_0/m_axi_OUTPUT_r} Slave {/processing_system7_0/S_AXI_ACP} intc_ip {/axi_interconnect_0} master_apm {0}}  [get_bd_intf_pins pearson_0/m_axi_OUTPUT_r]
+Slave segment </processing_system7_0/S_AXI_ACP/ACP_DDR_LOWOCM> is being mapped into address space </pearson_0/Data_m_axi_OUTPUT_r> at <0x0000_0000 [ 512M ]>
+Slave segment </processing_system7_0/S_AXI_ACP/ACP_QSPI_LINEAR> is being mapped into address space </pearson_0/Data_m_axi_OUTPUT_r> at <0xFC00_0000 [ 16M ]>
+Slave segment </processing_system7_0/S_AXI_ACP/ACP_IOP> is being mapped into address space </pearson_0/Data_m_axi_OUTPUT_r> at <0xE000_0000 [ 4M ]>
+INFO: [BD 41-1051] The usage register of slave segment /processing_system7_0/S_AXI_ACP/ACP_IOP does not match the usage memory of address space /pearson_0/Data_m_axi_OUTPUT_r and will be excluded. Use the include_bd_addr_seg command to override this precaution and make the slave segment visible within this address space.
+Excluding </processing_system7_0/S_AXI_ACP/ACP_IOP> from </pearson_0/Data_m_axi_OUTPUT_r>
+Slave segment </processing_system7_0/S_AXI_ACP/ACP_M_AXI_GP0> is being mapped into address space </pearson_0/Data_m_axi_OUTPUT_r> at <0x4000_0000 [ 1G ]>
+INFO: [BD 41-1051] The usage register of slave segment /processing_system7_0/S_AXI_ACP/ACP_M_AXI_GP0 does not match the usage memory of address space /pearson_0/Data_m_axi_OUTPUT_r and will be excluded. Use the include_bd_addr_seg command to override this precaution and make the slave segment visible within this address space.
+Excluding </processing_system7_0/S_AXI_ACP/ACP_M_AXI_GP0> from </pearson_0/Data_m_axi_OUTPUT_r>
+Slave segment </processing_system7_0/S_AXI_ACP/ACP_M_AXI_GP1> is being mapped into address space </pearson_0/Data_m_axi_OUTPUT_r> at <0x8000_0000 [ 1G ]>
+INFO: [BD 41-1051] The usage register of slave segment /processing_system7_0/S_AXI_ACP/ACP_M_AXI_GP1 does not match the usage memory of address space /pearson_0/Data_m_axi_OUTPUT_r and will be excluded. Use the include_bd_addr_seg command to override this precaution and make the slave segment visible within this address space.
+Excluding </processing_system7_0/S_AXI_ACP/ACP_M_AXI_GP1> from </pearson_0/Data_m_axi_OUTPUT_r>
+endgroup
+undo
+INFO: [Common 17-17] undo 'endgroup'
+INFO: [Common 17-17] undo 'apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {/clk_wiz_0/AXI_CLK (100 MHz)} Clk_xbar {/clk_wiz_0/AXI_CLK (100 MHz)} Master {/pearson_0/m_axi_OUTPUT_r} Slave {/processing_system7_0/S_AXI_ACP} intc_ip {/axi_interconnect_0} master_apm {0}}  [get_bd_intf_pins pearson_0/m_axi_OUTPUT_r]'
+Including </processing_system7_0/S_AXI_ACP/ACP_M_AXI_GP1> into </pearson_0/Data_m_axi_OUTPUT_r>
+Including </processing_system7_0/S_AXI_ACP/ACP_M_AXI_GP0> into </pearson_0/Data_m_axi_OUTPUT_r>
+Including </processing_system7_0/S_AXI_ACP/ACP_IOP> into </pearson_0/Data_m_axi_OUTPUT_r>
+INFO: [Common 17-17] undo 'apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz_0/HLS_CLK (100 MHz)} Clk_slave {/clk_wiz_0/AXI_CLK (100 MHz)} Clk_xbar {/clk_wiz_0/AXI_CLK (100 MHz)} Master {/pearson_0/m_axi_INPUT_r} Slave {/processing_system7_0/S_AXI_ACP} intc_ip {/axi_interconnect_0} master_apm {0}}  [get_bd_intf_pins pearson_0/m_axi_INPUT_r]'
+Including </processing_system7_0/S_AXI_ACP/ACP_M_AXI_GP1> into </pearson_0/Data_m_axi_INPUT_r>
+Including </processing_system7_0/S_AXI_ACP/ACP_M_AXI_GP0> into </pearson_0/Data_m_axi_INPUT_r>
+Including </processing_system7_0/S_AXI_ACP/ACP_IOP> into </pearson_0/Data_m_axi_INPUT_r>
+INFO: [Common 17-17] undo 'apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz_0/AXI_CLK (100 MHz)} Clk_slave {Auto} Clk_xbar {/clk_wiz_0/AXI_CLK (100 MHz)} Master {/processing_system7_0/M_AXI_GP0} Slave {/pearson_0/s_axi_CONTROL_BUS} intc_ip {/ps7_0_axi_periph} master_apm {0}}  [get_bd_intf_pins pearson_0/s_axi_CONTROL_BUS]'
+INFO: [Common 17-17] undo 'startgroup'
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz_0/AXI_CLK (100 MHz)} Clk_slave {Auto} Clk_xbar {/clk_wiz_0/AXI_CLK (100 MHz)} Master {/processing_system7_0/M_AXI_GP1} Slave {/pearson_0/s_axi_CONTROL_BUS} intc_ip {/ps7_0_axi_periph_1} master_apm {0}}  [get_bd_intf_pins pearson_0/s_axi_CONTROL_BUS]
+Slave segment </pearson_0/s_axi_CONTROL_BUS/Reg> is being mapped into address space </processing_system7_0/Data> at <0x83C0_0000 [ 64K ]>
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz_0/HLS_CLK (100 MHz)} Clk_slave {/clk_wiz_0/AXI_CLK (100 MHz)} Clk_xbar {/clk_wiz_0/AXI_CLK (100 MHz)} Master {/pearson_0/m_axi_INPUT_r} Slave {/processing_system7_0/S_AXI_ACP} intc_ip {/axi_interconnect_0} master_apm {0}}  [get_bd_intf_pins pearson_0/m_axi_INPUT_r]
+Slave segment </processing_system7_0/S_AXI_ACP/ACP_DDR_LOWOCM> is being mapped into address space </pearson_0/Data_m_axi_INPUT_r> at <0x0000_0000 [ 512M ]>
+Slave segment </processing_system7_0/S_AXI_ACP/ACP_QSPI_LINEAR> is being mapped into address space </pearson_0/Data_m_axi_INPUT_r> at <0xFC00_0000 [ 16M ]>
+Slave segment </processing_system7_0/S_AXI_ACP/ACP_IOP> is being mapped into address space </pearson_0/Data_m_axi_INPUT_r> at <0xE000_0000 [ 4M ]>
+INFO: [BD 41-1051] The usage register of slave segment /processing_system7_0/S_AXI_ACP/ACP_IOP does not match the usage memory of address space /pearson_0/Data_m_axi_INPUT_r and will be excluded. Use the include_bd_addr_seg command to override this precaution and make the slave segment visible within this address space.
+Excluding </processing_system7_0/S_AXI_ACP/ACP_IOP> from </pearson_0/Data_m_axi_INPUT_r>
+Slave segment </processing_system7_0/S_AXI_ACP/ACP_M_AXI_GP0> is being mapped into address space </pearson_0/Data_m_axi_INPUT_r> at <0x4000_0000 [ 1G ]>
+INFO: [BD 41-1051] The usage register of slave segment /processing_system7_0/S_AXI_ACP/ACP_M_AXI_GP0 does not match the usage memory of address space /pearson_0/Data_m_axi_INPUT_r and will be excluded. Use the include_bd_addr_seg command to override this precaution and make the slave segment visible within this address space.
+Excluding </processing_system7_0/S_AXI_ACP/ACP_M_AXI_GP0> from </pearson_0/Data_m_axi_INPUT_r>
+Slave segment </processing_system7_0/S_AXI_ACP/ACP_M_AXI_GP1> is being mapped into address space </pearson_0/Data_m_axi_INPUT_r> at <0x8000_0000 [ 1G ]>
+INFO: [BD 41-1051] The usage register of slave segment /processing_system7_0/S_AXI_ACP/ACP_M_AXI_GP1 does not match the usage memory of address space /pearson_0/Data_m_axi_INPUT_r and will be excluded. Use the include_bd_addr_seg command to override this precaution and make the slave segment visible within this address space.
+Excluding </processing_system7_0/S_AXI_ACP/ACP_M_AXI_GP1> from </pearson_0/Data_m_axi_INPUT_r>
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz_0/HLS_CLK (100 MHz)} Clk_slave {/clk_wiz_0/AXI_CLK (100 MHz)} Clk_xbar {/clk_wiz_0/AXI_CLK (100 MHz)} Master {/pearson_0/m_axi_OUTPUT_r} Slave {/processing_system7_0/S_AXI_ACP} intc_ip {/axi_interconnect_0} master_apm {0}}  [get_bd_intf_pins pearson_0/m_axi_OUTPUT_r]
+Slave segment </processing_system7_0/S_AXI_ACP/ACP_DDR_LOWOCM> is being mapped into address space </pearson_0/Data_m_axi_OUTPUT_r> at <0x0000_0000 [ 512M ]>
+Slave segment </processing_system7_0/S_AXI_ACP/ACP_QSPI_LINEAR> is being mapped into address space </pearson_0/Data_m_axi_OUTPUT_r> at <0xFC00_0000 [ 16M ]>
+Slave segment </processing_system7_0/S_AXI_ACP/ACP_IOP> is being mapped into address space </pearson_0/Data_m_axi_OUTPUT_r> at <0xE000_0000 [ 4M ]>
+INFO: [BD 41-1051] The usage register of slave segment /processing_system7_0/S_AXI_ACP/ACP_IOP does not match the usage memory of address space /pearson_0/Data_m_axi_OUTPUT_r and will be excluded. Use the include_bd_addr_seg command to override this precaution and make the slave segment visible within this address space.
+Excluding </processing_system7_0/S_AXI_ACP/ACP_IOP> from </pearson_0/Data_m_axi_OUTPUT_r>
+Slave segment </processing_system7_0/S_AXI_ACP/ACP_M_AXI_GP0> is being mapped into address space </pearson_0/Data_m_axi_OUTPUT_r> at <0x4000_0000 [ 1G ]>
+INFO: [BD 41-1051] The usage register of slave segment /processing_system7_0/S_AXI_ACP/ACP_M_AXI_GP0 does not match the usage memory of address space /pearson_0/Data_m_axi_OUTPUT_r and will be excluded. Use the include_bd_addr_seg command to override this precaution and make the slave segment visible within this address space.
+Excluding </processing_system7_0/S_AXI_ACP/ACP_M_AXI_GP0> from </pearson_0/Data_m_axi_OUTPUT_r>
+Slave segment </processing_system7_0/S_AXI_ACP/ACP_M_AXI_GP1> is being mapped into address space </pearson_0/Data_m_axi_OUTPUT_r> at <0x8000_0000 [ 1G ]>
+INFO: [BD 41-1051] The usage register of slave segment /processing_system7_0/S_AXI_ACP/ACP_M_AXI_GP1 does not match the usage memory of address space /pearson_0/Data_m_axi_OUTPUT_r and will be excluded. Use the include_bd_addr_seg command to override this precaution and make the slave segment visible within this address space.
+Excluding </processing_system7_0/S_AXI_ACP/ACP_M_AXI_GP1> from </pearson_0/Data_m_axi_OUTPUT_r>
+endgroup
+save_bd_design
+Wrote  : <C:\A2_project\Vivado\Demo_IP_HLS\Demo_IP_HLS_pearson\Demo_IP_HLS_pearson.srcs\sources_1\bd\design_IP\design_IP.bd> 
+Wrote  : <C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.srcs/sources_1/bd/design_IP/ui/bd_14d195e8.ui> 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+WARNING: [BD 41-1629] Slave segment </processing_system7_0/S_AXI_ACP/ACP_IOP> is excluded from all addressing paths.
+WARNING: [BD 41-1629] Slave segment </processing_system7_0/S_AXI_ACP/ACP_M_AXI_GP1> is excluded from all addressing paths.
+WARNING: [BD 41-1629] Slave segment </processing_system7_0/S_AXI_ACP/ACP_M_AXI_GP0> is excluded from all addressing paths.
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /processing_system7_0/S_AXI_ACP(5) and /axi_interconnect_0/m00_couplers/auto_pc/M_AXI(0)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /processing_system7_0/S_AXI_ACP(5) and /axi_interconnect_0/m00_couplers/auto_pc/M_AXI(0)
+WARNING: [BD 41-927] Following properties on pin /pearson_0/ap_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=/clk_wiz_0_clk_out1 
+Wrote  : <C:\A2_project\Vivado\Demo_IP_HLS\Demo_IP_HLS_pearson\Demo_IP_HLS_pearson.srcs\sources_1\bd\design_IP\design_IP.bd> 
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_interconnect_0/s00_couplers/auto_us/s_axi_arlock'(1) to net 's00_couplers_to_auto_us_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_interconnect_0/s00_couplers/auto_us/s_axi_awlock'(1) to net 's00_couplers_to_auto_us_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_interconnect_0/s01_couplers/auto_us/s_axi_arlock'(1) to net 's01_couplers_to_auto_us_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_interconnect_0/s01_couplers/auto_us/s_axi_awlock'(1) to net 's01_couplers_to_auto_us_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_interconnect_0/m00_couplers/auto_pc/m_axi_rid'(1) to net 'auto_pc_to_m00_couplers_RID'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_interconnect_0/m00_couplers/auto_pc/m_axi_bid'(1) to net 'auto_pc_to_m00_couplers_BID'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_ACP_AWID'(3) to net 'axi_interconnect_0_M00_AXI_AWID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_ACP_ARID'(3) to net 'axi_interconnect_0_M00_AXI_ARID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_ACP_WID'(3) to net 'axi_interconnect_0_M00_AXI_WID'(1) - Only lower order bits will be connected.
+VHDL Output written to : C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.srcs/sources_1/bd/design_IP/synth/design_IP.vhd
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_interconnect_0/s00_couplers/auto_us/s_axi_arlock'(1) to net 's00_couplers_to_auto_us_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_interconnect_0/s00_couplers/auto_us/s_axi_awlock'(1) to net 's00_couplers_to_auto_us_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_interconnect_0/s01_couplers/auto_us/s_axi_arlock'(1) to net 's01_couplers_to_auto_us_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_interconnect_0/s01_couplers/auto_us/s_axi_awlock'(1) to net 's01_couplers_to_auto_us_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_interconnect_0/m00_couplers/auto_pc/m_axi_rid'(1) to net 'auto_pc_to_m00_couplers_RID'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_interconnect_0/m00_couplers/auto_pc/m_axi_bid'(1) to net 'auto_pc_to_m00_couplers_BID'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_ACP_AWID'(3) to net 'axi_interconnect_0_M00_AXI_AWID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_ACP_ARID'(3) to net 'axi_interconnect_0_M00_AXI_ARID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_ACP_WID'(3) to net 'axi_interconnect_0_M00_AXI_WID'(1) - Only lower order bits will be connected.
+VHDL Output written to : C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.srcs/sources_1/bd/design_IP/sim/design_IP.vhd
+VHDL Output written to : C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.srcs/sources_1/bd/design_IP/hdl/design_IP_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_0 .
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:au280_es1:part0:1.0 available at C:/Users/Qlala/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store/XilinxBoardStore/Vivado/2019.1/boards/Xilinx/au280/es1/1.0/1.0/board.xml as part xcu280-fsvh2892-2l-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:au280_es1:part0:1.1 available at C:/Users/Qlala/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store/XilinxBoardStore/Vivado/2019.1/boards/Xilinx/au280/es1/1.1/1.1/board.xml as part xcu280-fsvh2892-2l-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128_es:part0:1.0 available at C:/Users/Qlala/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store/XilinxBoardStore/Vivado/2019.1/boards/Xilinx/vcu128/1.0/1.0/board.xml as part xcvu37p-fsvh2892-2l-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128_es:part0:1.1 available at C:/Users/Qlala/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store/XilinxBoardStore/Vivado/2019.1/boards/Xilinx/vcu128/1.1/1.1/board.xml as part xcvu37p-fsvh2892-2l-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129_es:part0:1.0 available at C:/Users/Qlala/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store/XilinxBoardStore/Vivado/2019.1/boards/Xilinx/vcu129/es/1.0/1.0/board.xml as part xcvu29p-fsga2577-2l-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:au280_es1:part0:1.0 available at C:/Users/Qlala/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store/XilinxBoardStore/Vivado/2019.1/boards/Xilinx/au280/es1/1.0/1.0/board.xml as part xcu280-fsvh2892-2l-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:au280_es1:part0:1.1 available at C:/Users/Qlala/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store/XilinxBoardStore/Vivado/2019.1/boards/Xilinx/au280/es1/1.1/1.1/board.xml as part xcu280-fsvh2892-2l-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128_es:part0:1.0 available at C:/Users/Qlala/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store/XilinxBoardStore/Vivado/2019.1/boards/Xilinx/vcu128/1.0/1.0/board.xml as part xcvu37p-fsvh2892-2l-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128_es:part0:1.1 available at C:/Users/Qlala/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store/XilinxBoardStore/Vivado/2019.1/boards/Xilinx/vcu128/1.1/1.1/board.xml as part xcvu37p-fsvh2892-2l-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129_es:part0:1.0 available at C:/Users/Qlala/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store/XilinxBoardStore/Vivado/2019.1/boards/Xilinx/vcu129/es/1.0/1.0/board.xml as part xcvu29p-fsga2577-2l-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:au280_es1:part0:1.0 available at C:/Users/Qlala/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store/XilinxBoardStore/Vivado/2019.1/boards/Xilinx/au280/es1/1.0/1.0/board.xml as part xcu280-fsvh2892-2l-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:au280_es1:part0:1.1 available at C:/Users/Qlala/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store/XilinxBoardStore/Vivado/2019.1/boards/Xilinx/au280/es1/1.1/1.1/board.xml as part xcu280-fsvh2892-2l-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128_es:part0:1.0 available at C:/Users/Qlala/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store/XilinxBoardStore/Vivado/2019.1/boards/Xilinx/vcu128/1.0/1.0/board.xml as part xcvu37p-fsvh2892-2l-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128_es:part0:1.1 available at C:/Users/Qlala/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store/XilinxBoardStore/Vivado/2019.1/boards/Xilinx/vcu128/1.1/1.1/board.xml as part xcvu37p-fsvh2892-2l-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129_es:part0:1.0 available at C:/Users/Qlala/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store/XilinxBoardStore/Vivado/2019.1/boards/Xilinx/vcu129/es/1.0/1.0/board.xml as part xcvu29p-fsga2577-2l-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:au280_es1:part0:1.0 available at C:/Users/Qlala/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store/XilinxBoardStore/Vivado/2019.1/boards/Xilinx/au280/es1/1.0/1.0/board.xml as part xcu280-fsvh2892-2l-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:au280_es1:part0:1.1 available at C:/Users/Qlala/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store/XilinxBoardStore/Vivado/2019.1/boards/Xilinx/au280/es1/1.1/1.1/board.xml as part xcu280-fsvh2892-2l-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128_es:part0:1.0 available at C:/Users/Qlala/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store/XilinxBoardStore/Vivado/2019.1/boards/Xilinx/vcu128/1.0/1.0/board.xml as part xcvu37p-fsvh2892-2l-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128_es:part0:1.1 available at C:/Users/Qlala/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store/XilinxBoardStore/Vivado/2019.1/boards/Xilinx/vcu128/1.1/1.1/board.xml as part xcvu37p-fsvh2892-2l-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129_es:part0:1.0 available at C:/Users/Qlala/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store/XilinxBoardStore/Vivado/2019.1/boards/Xilinx/vcu129/es/1.0/1.0/board.xml as part xcvu29p-fsga2577-2l-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:au280_es1:part0:1.0 available at C:/Users/Qlala/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store/XilinxBoardStore/Vivado/2019.1/boards/Xilinx/au280/es1/1.0/1.0/board.xml as part xcu280-fsvh2892-2l-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:au280_es1:part0:1.1 available at C:/Users/Qlala/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store/XilinxBoardStore/Vivado/2019.1/boards/Xilinx/au280/es1/1.1/1.1/board.xml as part xcu280-fsvh2892-2l-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128_es:part0:1.0 available at C:/Users/Qlala/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store/XilinxBoardStore/Vivado/2019.1/boards/Xilinx/vcu128/1.0/1.0/board.xml as part xcvu37p-fsvh2892-2l-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128_es:part0:1.1 available at C:/Users/Qlala/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store/XilinxBoardStore/Vivado/2019.1/boards/Xilinx/vcu128/1.1/1.1/board.xml as part xcvu37p-fsvh2892-2l-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129_es:part0:1.0 available at C:/Users/Qlala/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store/XilinxBoardStore/Vivado/2019.1/boards/Xilinx/vcu129/es/1.0/1.0/board.xml as part xcvu29p-fsga2577-2l-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:au280_es1:part0:1.0 available at C:/Users/Qlala/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store/XilinxBoardStore/Vivado/2019.1/boards/Xilinx/au280/es1/1.0/1.0/board.xml as part xcu280-fsvh2892-2l-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:au280_es1:part0:1.1 available at C:/Users/Qlala/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store/XilinxBoardStore/Vivado/2019.1/boards/Xilinx/au280/es1/1.1/1.1/board.xml as part xcu280-fsvh2892-2l-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128_es:part0:1.0 available at C:/Users/Qlala/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store/XilinxBoardStore/Vivado/2019.1/boards/Xilinx/vcu128/1.0/1.0/board.xml as part xcvu37p-fsvh2892-2l-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128_es:part0:1.1 available at C:/Users/Qlala/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store/XilinxBoardStore/Vivado/2019.1/boards/Xilinx/vcu128/1.1/1.1/board.xml as part xcvu37p-fsvh2892-2l-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129_es:part0:1.0 available at C:/Users/Qlala/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store/XilinxBoardStore/Vivado/2019.1/boards/Xilinx/vcu129/es/1.0/1.0/board.xml as part xcvu29p-fsga2577-2l-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:au280_es1:part0:1.0 available at C:/Users/Qlala/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store/XilinxBoardStore/Vivado/2019.1/boards/Xilinx/au280/es1/1.0/1.0/board.xml as part xcu280-fsvh2892-2l-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:au280_es1:part0:1.1 available at C:/Users/Qlala/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store/XilinxBoardStore/Vivado/2019.1/boards/Xilinx/au280/es1/1.1/1.1/board.xml as part xcu280-fsvh2892-2l-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128_es:part0:1.0 available at C:/Users/Qlala/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store/XilinxBoardStore/Vivado/2019.1/boards/Xilinx/vcu128/1.0/1.0/board.xml as part xcvu37p-fsvh2892-2l-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128_es:part0:1.1 available at C:/Users/Qlala/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store/XilinxBoardStore/Vivado/2019.1/boards/Xilinx/vcu128/1.1/1.1/board.xml as part xcvu37p-fsvh2892-2l-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129_es:part0:1.0 available at C:/Users/Qlala/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store/XilinxBoardStore/Vivado/2019.1/boards/Xilinx/vcu129/es/1.0/1.0/board.xml as part xcvu29p-fsga2577-2l-e-es1 specified in board_part file is either invalid or not available
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_clk_wiz_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pearson_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.srcs/sources_1/bd/design_IP/ip/design_IP_auto_pc_0/design_IP_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.srcs/sources_1/bd/design_IP/ip/design_IP_auto_us_0/design_IP_auto_us_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.srcs/sources_1/bd/design_IP/ip/design_IP_auto_cc_0/design_IP_auto_cc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_cc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.srcs/sources_1/bd/design_IP/ip/design_IP_auto_us_1/design_IP_auto_us_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s01_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.srcs/sources_1/bd/design_IP/ip/design_IP_auto_cc_1/design_IP_auto_cc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s01_couplers/auto_cc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.srcs/sources_1/bd/design_IP/ip/design_IP_auto_pc_1/design_IP_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.srcs/sources_1/bd/design_IP/ip/design_IP_auto_cc_2/design_IP_auto_cc_2_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph_1/s00_couplers/auto_cc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.srcs/sources_1/bd/design_IP/ip/design_IP_auto_pc_2/design_IP_auto_pc_2_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph_1/s00_couplers/auto_pc .
+Exporting to file C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.srcs/sources_1/bd/design_IP/hw_handoff/design_IP.hwh
+Generated Block Design Tcl file C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.srcs/sources_1/bd/design_IP/hw_handoff/design_IP_bd.tcl
+Generated Hardware Definition File C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.srcs/sources_1/bd/design_IP/synth/design_IP.hwdef
+[Thu Feb 27 20:35:49 2020] Launched design_IP_proc_sys_reset_0_0_synth_1, design_IP_processing_system7_0_0_synth_1, design_IP_clk_wiz_0_0_synth_1, design_IP_xbar_0_synth_1, design_IP_axi_gpio_0_0_synth_1, design_IP_rst_clk_wiz_0_100M_0_synth_1, design_IP_pearson_0_0_synth_1, design_IP_auto_cc_0_synth_1, design_IP_auto_pc_0_synth_1, design_IP_auto_cc_2_synth_1, design_IP_auto_pc_2_synth_1, design_IP_auto_us_1_synth_1, design_IP_auto_cc_1_synth_1, design_IP_auto_pc_1_synth_1, design_IP_auto_us_0_synth_1, synth_1...
+Run output will be captured here:
+design_IP_proc_sys_reset_0_0_synth_1: C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.runs/design_IP_proc_sys_reset_0_0_synth_1/runme.log
+design_IP_processing_system7_0_0_synth_1: C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.runs/design_IP_processing_system7_0_0_synth_1/runme.log
+design_IP_clk_wiz_0_0_synth_1: C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.runs/design_IP_clk_wiz_0_0_synth_1/runme.log
+design_IP_xbar_0_synth_1: C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.runs/design_IP_xbar_0_synth_1/runme.log
+design_IP_axi_gpio_0_0_synth_1: C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.runs/design_IP_axi_gpio_0_0_synth_1/runme.log
+design_IP_rst_clk_wiz_0_100M_0_synth_1: C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.runs/design_IP_rst_clk_wiz_0_100M_0_synth_1/runme.log
+design_IP_pearson_0_0_synth_1: C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.runs/design_IP_pearson_0_0_synth_1/runme.log
+design_IP_auto_cc_0_synth_1: C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.runs/design_IP_auto_cc_0_synth_1/runme.log
+design_IP_auto_pc_0_synth_1: C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.runs/design_IP_auto_pc_0_synth_1/runme.log
+design_IP_auto_cc_2_synth_1: C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.runs/design_IP_auto_cc_2_synth_1/runme.log
+design_IP_auto_pc_2_synth_1: C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.runs/design_IP_auto_pc_2_synth_1/runme.log
+design_IP_auto_us_1_synth_1: C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.runs/design_IP_auto_us_1_synth_1/runme.log
+design_IP_auto_cc_1_synth_1: C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.runs/design_IP_auto_cc_1_synth_1/runme.log
+design_IP_auto_pc_1_synth_1: C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.runs/design_IP_auto_pc_1_synth_1/runme.log
+design_IP_auto_us_0_synth_1: C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.runs/design_IP_auto_us_0_synth_1/runme.log
+synth_1: C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.runs/synth_1/runme.log
+[Thu Feb 27 20:35:51 2020] Launched impl_1...
+Run output will be captured here: C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:01:22 ; elapsed = 00:01:45 . Memory (MB): peak = 1292.285 ; gain = 228.434
+reset_run design_IP_processing_system7_0_0_synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Thu Feb 27 21:06:12 2020] Launched design_IP_processing_system7_0_0_synth_1...
+Run output will be captured here: C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.runs/design_IP_processing_system7_0_0_synth_1/runme.log
+[Thu Feb 27 21:06:13 2020] Launched synth_1...
+Run output will be captured here: C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.runs/synth_1/runme.log
+generate_target all [get_files  C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.srcs/sources_1/bd/design_IP/design_IP.bd]
+INFO: [BD 41-1637] Generated targets are already up-to-date for block design 'design_IP' - hence not re-generating.
+catch { config_ip_cache -export [get_ips -all design_IP_processing_system7_0_0] }
+export_ip_user_files -of_objects [get_files C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.srcs/sources_1/bd/design_IP/design_IP.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.srcs/sources_1/bd/design_IP/design_IP.bd]
+launch_runs -jobs 8 design_IP_processing_system7_0_0_synth_1
+[Thu Feb 27 21:36:08 2020] Launched design_IP_processing_system7_0_0_synth_1...
+Run output will be captured here: C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.runs/design_IP_processing_system7_0_0_synth_1/runme.log
+export_simulation -of_objects [get_files C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.srcs/sources_1/bd/design_IP/design_IP.bd] -directory C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.ip_user_files/sim_scripts -ip_user_files_dir C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.ip_user_files -ipstatic_source_dir C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.cache/compile_simlib/modelsim} {questa=C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.cache/compile_simlib/questa} {riviera=C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.cache/compile_simlib/riviera} {activehdl=C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run design_IP_processing_system7_0_0_synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Thu Feb 27 21:38:44 2020] Launched design_IP_processing_system7_0_0_synth_1...
+Run output will be captured here: C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.runs/design_IP_processing_system7_0_0_synth_1/runme.log
+[Thu Feb 27 21:38:44 2020] Launched synth_1...
+Run output will be captured here: C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.runs/synth_1/runme.log
+create_run synth_2 -flow {Vivado Synthesis 2019}
+Run is defaulting to srcset: sources_1
+Run is defaulting to constrset: constrs_1
+Run is defaulting to part: xc7z020clg484-1
+create_run impl_2 -parent_run synth_2 -flow {Vivado Implementation 2019}
+Run is defaulting to parent run srcset: sources_1
+Run is defaulting to parent run constrset: constrs_1
+Run is defaulting to parent run part: xc7z020clg484-1
+launch_runs impl_2 -jobs 8
+[Thu Feb 27 21:47:46 2020] Launched design_IP_processing_system7_0_0_synth_1, synth_2...
+Run output will be captured here:
+design_IP_processing_system7_0_0_synth_1: C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.runs/design_IP_processing_system7_0_0_synth_1/runme.log
+synth_2: C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.runs/synth_2/runme.log
+[Thu Feb 27 21:47:46 2020] Launched impl_2...
+Run output will be captured here: C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.runs/impl_2/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Feb 27 21:49:38 2020...

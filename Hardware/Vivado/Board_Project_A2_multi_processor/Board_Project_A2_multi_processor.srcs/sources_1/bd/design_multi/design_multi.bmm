@@ -1,20 +1,26 @@
 WORKFLOW_OPERATION simulation,dialog;
 
-DEFINE_MEMORY_TYPE axi_bram_ctrl_0_bram_0_8K_4_MEM_DEVICE [0x00002000] 32;
-DEFINE_MEMORY_TYPE axi_bram_ctrl_0_bram_0_8K_5_MEM_DEVICE [0x00002000] 32;
+DEFINE_MEMORY_TYPE microblaze_1_local_memory_lmb_bram_8K_1_MEM_DEVICE [0x00002000] 32;
+DEFINE_MEMORY_TYPE axi_bram_ctrl_1_bram_8K_16_MEM_DEVICE [0x00002000] 32;
+DEFINE_MEMORY_TYPE axi_bram_ctrl_1_bram_8K_17_MEM_DEVICE [0x00002000] 32;
 
 ADDRESS_MAP microblaze_0 MICROBLAZE-LE 100 microblaze_0
-   ADDRESS_SPACE axi_bram_ctrl_0_bram_0_8K_4_ADDR_SPACE axi_bram_ctrl_0_bram_0_8K_4_MEM_DEVICE  [0x50000000:0x50001FFF] axi_bram_ctrl_0
+   ADDRESS_SPACE microblaze_1_local_memory_lmb_bram_8K_1_ADDR_SPACE microblaze_1_local_memory_lmb_bram_8K_1_MEM_DEVICE  [0x00000000:0x00001FFF] microblaze_1_local_memory/dlmb_bram_if_cntlr
      BUS_BLOCK
-      axi_bram_ctrl_0_bram_0_8K_4_BUS_BLK [31:0] INPUT = "design_multi_axi_bram_ctrl_0_bram_0_0.mem";
+      microblaze_1_local_memory_lmb_bram_8K_1_BUS_BLK [31:0] INPUT = "design_multi_lmb_bram_0.mem";
+     END_BUS_BLOCK;
+   END_ADDRESS_SPACE;
+   ADDRESS_SPACE axi_bram_ctrl_1_bram_8K_16_ADDR_SPACE axi_bram_ctrl_1_bram_8K_16_MEM_DEVICE  [0x42000000:0x42001FFF] axi_bram_ctrl_1
+     BUS_BLOCK
+      axi_bram_ctrl_1_bram_8K_16_BUS_BLK [31:0] INPUT = "design_multi_axi_bram_ctrl_1_bram_0.mem";
      END_BUS_BLOCK;
    END_ADDRESS_SPACE;
 END_ADDRESS_MAP;
 
 ADDRESS_MAP processing_system7_0 ARM 100 processing_system7_0
-   ADDRESS_SPACE axi_bram_ctrl_0_bram_0_8K_5_ADDR_SPACE axi_bram_ctrl_0_bram_0_8K_5_MEM_DEVICE  [0x50000000:0x50001FFF] axi_bram_ctrl_0
+   ADDRESS_SPACE axi_bram_ctrl_1_bram_8K_17_ADDR_SPACE axi_bram_ctrl_1_bram_8K_17_MEM_DEVICE  [0x42000000:0x42001FFF] axi_bram_ctrl_1
      BUS_BLOCK
-      axi_bram_ctrl_0_bram_0_8K_5_BUS_BLK [31:0] INPUT = "design_multi_axi_bram_ctrl_0_bram_0_0.mem";
+      axi_bram_ctrl_1_bram_8K_17_BUS_BLK [31:0] INPUT = "design_multi_axi_bram_ctrl_1_bram_0.mem";
      END_BUS_BLOCK;
    END_ADDRESS_SPACE;
 END_ADDRESS_MAP;

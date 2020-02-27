@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/A2_project/Board_Project_A2_multi_processor.runs/design_multi_smartconnect_0_0_synth_1'
+HD_PWD='C:/A2_project/Vivado/Board_Project_A2_multi_processor/Board_Project_A2_multi_processor.runs/design_multi_smartconnect_0_0_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
