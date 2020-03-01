@@ -231,7 +231,9 @@ Il existe un nombre assez élevé d'optimisation effectuées automatiquement ou 
 
 Le deuxième paramètre limitant l'implémentation de l'IP est la fréquence de fonctionnement. HLS prend une période (donc fréquence) objective et "essayera" de synthétiser l'IP demandée à cette fréquence. Il est possible de le forcer à relaxer la synthèse afin de respecter ce critère.
 
-Une solution possible à cette contrainte est d'utiliser des horloges différentes sur la carte qui ce soit par le Zynq ou le \texttt{SmartClock} (voir \ref{SmartClock}). La figure \ref{fig-hls} montre un résumé de quelques IPs implémentées. Toutes les IP ont pour période de fonctionnement objective : \textbf{10} ns.
+Une solution possible à cette contrainte est d'utiliser des horloges différentes sur la carte qui ce soit par le Zynq ou le \texttt{SmartClock} (voir \ref{SmartClock}). Les algorithmes SVD et PCA ne sont pas implémentées à cause de la présence de plusieurs séquences de contrôle durs à optimiser dans les contraintes temporelles données. Il est aussi important de noter qu'une IP agit comme un accélérateur matériel non-bloquant pour le CPU. i.e. le CPU est libre pendant tout le temps d'exécution.
+
+La figure \ref{fig-hls} montre un résumé de quelques IPs implémentées. Toutes les IP ont pour période de fonctionnement objective : \textbf{10} ns.
 
 \begin{figure}[H]
 	\centering
@@ -253,9 +255,6 @@ Une solution possible à cette contrainte est d'utiliser des horloges différent
 	\caption{Occupation des ressources FPGA pour différentes IP}
 	\label{fig-hls}
 \end{figure}
-
-Les algorithmes SVD et PCA ne sont pas implémentées à cause de la présence de plusieurs séquences de contrôle durs à optimiser dans les contraintes temporelles données.
-
 \section{Implémentation matérielle}
 
 % études des ports et connexions 
@@ -272,17 +271,56 @@ Multi-horloge
 \section{Performances Mesurées}
 Dans cette section, on présente les résultats obtenu et validé pour les exécution sur PC standard, ARM, ARM+HLS et $\mu$blaze.
 \subsection{Performances ARM}
-L'exécution sur ARM donne les résultats montré en figure \ref{fig:screenshot005}. On retrouve bien la complexité algorithmique théoriques et que ces algorithmes sont proportionnels à la taille des données sauf pour Bloc-Matrix-Multiplication. qui lui dépend du formatage de ces données.
+L'exécution sur ARM donne les résultats montré en figure \ref{fig:screenshot005}. On retrouve bien la complexité algorithmique théoriques et que ces algorithmes sont proportionnels à la taille des données sauf pour Bloc-Matrix-Multiplication. qui lui dépend du formatage et du parcours (ijk) de ces données.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\linewidth]{soft/screenshot005}
 	\caption {Temps d'exécution sur ARM des différents algorithmes}
 	\label{fig:screenshot005}
 \end{figure}
+On voit aussi le lien entre optimisations de compilation et performance en terme de taille de code et temps sur la figure \ref{fig:screenshot006} et \ref{fig:screenshot007}.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.6\linewidth]{soft/screenshot006}
+	\caption{Un exemple des tailles de codes produit par l'optimisation}
+	\label{fig:screenshot006}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\linewidth]{soft/screenshot007}
+	\caption{Un exemple des temps d'exécution des codes produit par l'optimisation}
+	\label{fig:screenshot007}
+\end{figure}
+
 
 \subsection{Performances HLS}
 Les exécutions utilisant les 3 IP réalisées, on obtient les temps d'exécution  suivants:
 
+\subsection{Performances PC}
+Pour comparaison, la figure \ref{fig:timepc} donne les performances en temps d'exécution pour différents paramètres des algorithmes.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\linewidth]{soft/time_pc}
+	\caption{}
+	\label{fig:timepc}
+\end{figure}
+Il est évident que ces performances seront meilleures car les PC modernes sont multicœurs et sont cadencées à 3 GHz au minimum avec des optimisations de toutes sortes (exécution dans le désordre, prédiction des branchements, pipelines profonds, cache multi-niveaux...).
+
 \section{Conclusion et perspectives}
-Ce projet aura permis de découvrir une architecture hétérogène CPU+FPGA ainsi que les outils de développement qui lui dédié et d'y implémenter
+Ce projet aura permis de découvrir une architecture hétérogène CPU+FPGA ainsi que les outils de développement qui lui dédié. On a pu implémenté les algorithmes de la série SPARK. L'exploration des possibilité et le choix des algorithmes étaient une étape assez délicate qui demandait l'accord de tous les membres de l'équipe. Ces implémentation en C on étaient exécutées sur PC et ARM avec des plus tentatives d'implémentation sur $\mu$blaze mais rendu impossible dans les délais déterminés à cause de problèmes au niveau des programmes de développement.
+
+Certaines IPs HLS conçues montrent une inconsistance/incohérence lors de leurs exécutions ainsi que des différences de résultats, comme pour Kmeans, à cause des différentes normes utilisées et des arrondis. L'interfaçage de ces IPs est correctement assuré par la partie matérielle. On a pu montrer qu'une simple implémentation non optimisée d'une IP HLS est au minimum 4 fois plus rapide, sur la série d'algorithmes que l'on a fait, que l'exécution sur CPU. Il est aussi possible de cadencer les différentes IP du systèmes avec différentes horloges. Cette possibilité rend le système plus hétérogène qu'avant, le complexifiant certes, mais améliorant les performances en termes de temps. Il est aussi à constater que l'usage des IPs consomme plus de ressources s'elles ne sont pas agrégées. i.e. Il est souvent plus performant d'avoir une seule IP qui gèrent toutes l'implémentation RTL si les communications ne sont pas très fréquentes. Dans le cas contraire ceci saturerait l'interface de communication AXI. Enfin, la limite matérielle sur le FPGA reste le plafond physique pour ce genre de solution.
+
+
+De manière similaire au projet, l'équipe est hétérogène et demandait un certain niveau de coopération. Plusieurs difficultés, concernant les logiciels de développement et un manque de performances des PCs utilisés, ont entravé le bon déroulement du projet. Il faut aussi noté que, malgré tous les efforts mis dans la coopération et communication mais aussi la séparation des tâches, on a rencontré quelques conflits de point de vu. Ceci est dû aux différentes habitudes de chaque membre de l'équipe.
+
+
+En perspectives, on prévoit :
+
+\begin{itemize}
+\item \textbf{Implémentation sur $\mu$blaze} : On souhaite terminer l'implémentation logicielle des algorithmes sur un $\mu$blaze afin de comparer les performances à celles du ARM et de l'IP HLS. Ensuite, on envisage passer à une version multi-$\mu$-blazes où chacun des CPU exécute soit une partie du calcul ou un autre algorithme.
+\item \textbf{HLS multi-IPs} : même si théoriquement une implémentation multi-IPs de sous-opérateurs semble moins bonne qu'une implémentation d'une IP unique, on souhaite effectuer plusieurs tests sur ces modèles afin d'avoir une base de comparaison.
+\item \textbf{$\mu$blaze - HLS} On pense aussi avoir une implémentation multi-$\mu$blaze où chacun serait capable de contrôler une ou plusieurs IP HLS. Ceci répartirait la charge du calcul sur les $\mu$blazes et leur IPs mais risque de mener à un encombrement en communication.
+\end{itemize}
+
 \end{document}
