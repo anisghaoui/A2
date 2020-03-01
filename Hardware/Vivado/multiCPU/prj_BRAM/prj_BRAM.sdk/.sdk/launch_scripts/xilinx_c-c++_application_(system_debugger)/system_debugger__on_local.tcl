@@ -11,9 +11,13 @@ configparams mdm-detect-bscan-mask 2
 targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248686847"} -index 1
 rst -processor
 targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248686847"} -index 0
-dow -data C:/A2_project/Vivado/multiCPU/prj_BRAM/prj_BRAM.sdk/micro_hello/Debug/micro_hello.elf 0x10000000
+rst -processor
 targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248686847"} -index 1
 dow C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiCPU/prj_BRAM/prj_BRAM.sdk/micro_hello/Debug/micro_hello.elf
 targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248686847"} -index 0
 dow C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiCPU/prj_BRAM/prj_BRAM.sdk/zynq_hello/Debug/zynq_hello.elf
 configparams force-mem-access 0
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248686847"} -index 1
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248686847"} -index 0
+con

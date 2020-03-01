@@ -1,36 +1,8 @@
-17:25:47 **** Build of configuration Debug for project zynq_hello ****
+19:23:44 **** Incremental Build of configuration Debug for project zynq_hello ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
-'Building file: ../src/platform.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../zynq_hello_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
-'Finished building: ../src/platform.c'
-' '
-'Building file: ../src/zynq_hello.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/zynq_hello.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../zynq_hello_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/zynq_hello.d" -MT"src/zynq_hello.o" -o "src/zynq_hello.o" "../src/zynq_hello.c"
-In file included from ../src/zynq_hello.c:51:
-../../zynq_hello_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
- #pragma message ("For the sleep routines, Global timer is being used")
-         ^~~~~~~
-../src/zynq_hello.c: In function 'init_bram':
-../src/zynq_hello.c:59:8: warning: unused variable 'output' [-Wunused-variable]
-  char* output;
-        ^~~~~~
-'Finished building: ../src/zynq_hello.c'
-' '
-'Building target: zynq_hello.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../zynq_hello_bsp/ps7_cortexa9_0/lib -o "zynq_hello.elf"  ./src/platform.o ./src/zynq_hello.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: zynq_hello.elf'
-' '
-'Invoking: ARM v7 Print Size'
-arm-none-eabi-size zynq_hello.elf  |tee "zynq_hello.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  74996	   2656	  23440	 101092	  18ae4	zynq_hello.elf
-'Finished building: zynq_hello.elf.size'
-' '
+make: Nothing to be done for 'main-build'.
 
-17:25:49 Build Finished (took 1s.738ms)
+19:23:45 Build Finished (took 368ms)
 

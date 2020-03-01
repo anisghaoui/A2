@@ -8539,7 +8539,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>NUM_READ_OUTSTANDING</spirit:name>
-          <spirit:value spirit:format="long" spirit:resolve="dependent" spirit:id="BUSIFPARAM_VALUE.M_AXI_DC.NUM_READ_OUTSTANDING" spirit:dependency="2 - number(spirit:decode(id(&apos;MODELPARAM_VALUE.C_DCACHE_DATA_WIDTH&apos;)) > 0)">2</spirit:value>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M_AXI_DC.NUM_READ_OUTSTANDING" spirit:dependency="2 - number(spirit:decode(id(&apos;MODELPARAM_VALUE.C_DCACHE_DATA_WIDTH&apos;)) > 0)">8</spirit:value>
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>NUM_WRITE_OUTSTANDING</spirit:name>
@@ -10899,7 +10899,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>NUM_WRITE_OUTSTANDING</spirit:name>
-          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M_AXI_IC.NUM_WRITE_OUTSTANDING">2</spirit:value>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M_AXI_IC.NUM_WRITE_OUTSTANDING">8</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -13909,7 +13909,7 @@
             </spirit:parameter>
             <spirit:parameter>
               <spirit:name>workflow</spirit:name>
-              <spirit:value spirit:id="ADDRSPACE_ADDRBLOCKPARAM_VALUE.DATA.LOCAL_MEMORY_MAP.MICROBLAZE_2.workflow">implementation</spirit:value>
+              <spirit:value spirit:id="ADDRSPACE_ADDRBLOCKPARAM_VALUE.DATA.LOCAL_MEMORY_MAP.MICROBLAZE_2.workflow">simulation</spirit:value>
             </spirit:parameter>
             <spirit:parameter>
               <spirit:name>controlpaths</spirit:name>
@@ -13917,11 +13917,11 @@
             </spirit:parameter>
             <spirit:parameter>
               <spirit:name>memorytypename</spirit:name>
-              <spirit:value spirit:id="ADDRSPACE_ADDRBLOCKPARAM_VALUE.DATA.LOCAL_MEMORY_MAP.MICROBLAZE_2.memorytypename"/>
+              <spirit:value spirit:id="ADDRSPACE_ADDRBLOCKPARAM_VALUE.DATA.LOCAL_MEMORY_MAP.MICROBLAZE_2.memorytypename">axi_bram_ctrl_0_bram_MEM_DEVICE</spirit:value>
             </spirit:parameter>
             <spirit:parameter>
               <spirit:name>simmemfile</spirit:name>
-              <spirit:value spirit:id="ADDRSPACE_ADDRBLOCKPARAM_VALUE.DATA.LOCAL_MEMORY_MAP.MICROBLAZE_2.simmemfile"/>
+              <spirit:value spirit:id="ADDRSPACE_ADDRBLOCKPARAM_VALUE.DATA.LOCAL_MEMORY_MAP.MICROBLAZE_2.simmemfile">design_mb_axi_bram_ctrl_0_bram_0.mem</spirit:value>
             </spirit:parameter>
           </spirit:parameters>
         </spirit:addressBlock>
@@ -13941,7 +13941,7 @@
             </spirit:parameter>
             <spirit:parameter>
               <spirit:name>workflow</spirit:name>
-              <spirit:value spirit:id="ADDRSPACE_ADDRBLOCKPARAM_VALUE.DATA.LOCAL_MEMORY_MAP.MICROBLAZE_3.workflow">simulation</spirit:value>
+              <spirit:value spirit:id="ADDRSPACE_ADDRBLOCKPARAM_VALUE.DATA.LOCAL_MEMORY_MAP.MICROBLAZE_3.workflow">implementation</spirit:value>
             </spirit:parameter>
             <spirit:parameter>
               <spirit:name>controlpaths</spirit:name>
@@ -13949,11 +13949,11 @@
             </spirit:parameter>
             <spirit:parameter>
               <spirit:name>memorytypename</spirit:name>
-              <spirit:value spirit:id="ADDRSPACE_ADDRBLOCKPARAM_VALUE.DATA.LOCAL_MEMORY_MAP.MICROBLAZE_3.memorytypename">axi_bram_ctrl_0_bram_MEM_DEVICE</spirit:value>
+              <spirit:value spirit:id="ADDRSPACE_ADDRBLOCKPARAM_VALUE.DATA.LOCAL_MEMORY_MAP.MICROBLAZE_3.memorytypename"/>
             </spirit:parameter>
             <spirit:parameter>
               <spirit:name>simmemfile</spirit:name>
-              <spirit:value spirit:id="ADDRSPACE_ADDRBLOCKPARAM_VALUE.DATA.LOCAL_MEMORY_MAP.MICROBLAZE_3.simmemfile">design_mb_axi_bram_ctrl_0_bram_0.mem</spirit:value>
+              <spirit:value spirit:id="ADDRSPACE_ADDRBLOCKPARAM_VALUE.DATA.LOCAL_MEMORY_MAP.MICROBLAZE_3.simmemfile"/>
             </spirit:parameter>
           </spirit:parameters>
         </spirit:addressBlock>
@@ -13984,6 +13984,24 @@
   <spirit:model>
     <spirit:views>
       <spirit:view>
+        <spirit:name>xilinx_externalfiles</spirit:name>
+        <spirit:displayName>External Files</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:external.files</spirit:envIdentifier>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_externalfiles_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Sun Mar 01 16:51:13 UTC 2020</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:84910fdb</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
         <spirit:name>xilinx_vhdlsynthesis</spirit:name>
         <spirit:displayName>VHDL Synthesis</spirit:displayName>
         <spirit:envIdentifier>vhdlSource:vivado.xilinx.com:synthesis</spirit:envIdentifier>
@@ -13999,7 +14017,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:84910fdb</spirit:value>
+            <spirit:value>9:808012d0</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -14013,11 +14031,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sun Mar 01 16:10:42 UTC 2020</spirit:value>
+            <spirit:value>Sun Mar 01 16:51:07 UTC 2020</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:84910fdb</spirit:value>
+            <spirit:value>9:808012d0</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -14033,11 +14051,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sun Mar 01 16:10:42 UTC 2020</spirit:value>
+            <spirit:value>Sun Mar 01 16:51:07 UTC 2020</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:84910fdb</spirit:value>
+            <spirit:value>9:808012d0</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -14057,7 +14075,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:2aed37d4</spirit:value>
+            <spirit:value>9:8704948a</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -14073,29 +14091,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sun Mar 01 16:10:42 UTC 2020</spirit:value>
+            <spirit:value>Sun Mar 01 16:51:07 UTC 2020</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:2aed37d4</spirit:value>
-          </spirit:parameter>
-        </spirit:parameters>
-      </spirit:view>
-      <spirit:view>
-        <spirit:name>xilinx_externalfiles</spirit:name>
-        <spirit:displayName>External Files</spirit:displayName>
-        <spirit:envIdentifier>:vivado.xilinx.com:external.files</spirit:envIdentifier>
-        <spirit:fileSetRef>
-          <spirit:localName>xilinx_externalfiles_view_fileset</spirit:localName>
-        </spirit:fileSetRef>
-        <spirit:parameters>
-          <spirit:parameter>
-            <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sun Mar 01 16:14:32 UTC 2020</spirit:value>
-          </spirit:parameter>
-          <spirit:parameter>
-            <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:84910fdb</spirit:value>
+            <spirit:value>9:8704948a</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -25070,7 +25070,7 @@
       <spirit:modelParameter spirit:dataType="std_logic_vector">
         <spirit:name>C_DCACHE_HIGHADDR</spirit:name>
         <spirit:displayName>High Address</spirit:displayName>
-        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_DCACHE_HIGHADDR" spirit:bitStringLength="64">0x000000003fffffff</spirit:value>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_DCACHE_HIGHADDR" spirit:bitStringLength="64">0x000000001fffffff</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_USE_DCACHE</spirit:name>
@@ -25084,7 +25084,7 @@
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_DCACHE_ADDR_TAG</spirit:name>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_DCACHE_ADDR_TAG" spirit:minimum="0" spirit:maximum="58" spirit:rangeType="long">18</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_DCACHE_ADDR_TAG" spirit:minimum="0" spirit:maximum="58" spirit:rangeType="long">17</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_DCACHE_BYTE_SIZE</spirit:name>
@@ -25476,6 +25476,42 @@
   </spirit:choices>
   <spirit:fileSets>
     <spirit:fileSet>
+      <spirit:name>xilinx_externalfiles_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>design_mb_microblaze_0_0.dcp</spirit:name>
+        <spirit:userFileType>dcp</spirit:userFileType>
+        <spirit:userFileType>USED_IN_implementation</spirit:userFileType>
+        <spirit:userFileType>USED_IN_synthesis</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>design_mb_microblaze_0_0_stub.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_synth_blackbox_stub</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>design_mb_microblaze_0_0_stub.vhdl</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_synth_blackbox_stub</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>design_mb_microblaze_0_0_sim_netlist.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_simulation</spirit:userFileType>
+        <spirit:userFileType>USED_IN_single_language</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>design_mb_microblaze_0_0_sim_netlist.vhdl</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_simulation</spirit:userFileType>
+        <spirit:userFileType>USED_IN_single_language</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
       <spirit:name>xilinx_vhdlsynthesis_view_fileset</spirit:name>
       <spirit:file>
         <spirit:name>data/mb_bootloop_le.elf</spirit:name>
@@ -25538,42 +25574,6 @@
       <spirit:file>
         <spirit:name>sim/design_mb_microblaze_0_0.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
-      </spirit:file>
-    </spirit:fileSet>
-    <spirit:fileSet>
-      <spirit:name>xilinx_externalfiles_view_fileset</spirit:name>
-      <spirit:file>
-        <spirit:name>design_mb_microblaze_0_0.dcp</spirit:name>
-        <spirit:userFileType>dcp</spirit:userFileType>
-        <spirit:userFileType>USED_IN_implementation</spirit:userFileType>
-        <spirit:userFileType>USED_IN_synthesis</spirit:userFileType>
-        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>design_mb_microblaze_0_0_stub.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_synth_blackbox_stub</spirit:userFileType>
-        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>design_mb_microblaze_0_0_stub.vhdl</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_synth_blackbox_stub</spirit:userFileType>
-        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>design_mb_microblaze_0_0_sim_netlist.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_simulation</spirit:userFileType>
-        <spirit:userFileType>USED_IN_single_language</spirit:userFileType>
-        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>design_mb_microblaze_0_0_sim_netlist.vhdl</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_simulation</spirit:userFileType>
-        <spirit:userFileType>USED_IN_single_language</spirit:userFileType>
         <spirit:logicalName>xil_defaultlib</spirit:logicalName>
       </spirit:file>
     </spirit:fileSet>
@@ -27628,7 +27628,7 @@ It is highly recommended to create MicroBlaze systems within Vivado IP Integrato
     <spirit:parameter>
       <spirit:name>C_DCACHE_HIGHADDR</spirit:name>
       <spirit:displayName>High Address</spirit:displayName>
-      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.C_DCACHE_HIGHADDR" spirit:order="3130" spirit:configGroups="3 Data Cache Feature" spirit:bitStringLength="64">0x000000003FFFFFFF</spirit:value>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.C_DCACHE_HIGHADDR" spirit:order="3130" spirit:configGroups="3 Data Cache Feature" spirit:bitStringLength="64">0x000000001FFFFFFF</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
@@ -27664,7 +27664,7 @@ It is highly recommended to create MicroBlaze systems within Vivado IP Integrato
     <spirit:parameter>
       <spirit:name>C_DCACHE_ADDR_TAG</spirit:name>
       <spirit:displayName>Set number of D-cache address tag bits</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_DCACHE_ADDR_TAG" spirit:order="3230" spirit:configGroups="3 NoDisplay">18</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_DCACHE_ADDR_TAG" spirit:order="3230" spirit:configGroups="3 NoDisplay">17</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
@@ -28049,7 +28049,7 @@ It is highly recommended to create MicroBlaze systems within Vivado IP Integrato
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXI_DC.HAS_WSTRB" xilinx:valueSource="auto" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXI_DC.ID_WIDTH" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXI_DC.MAX_BURST_LENGTH" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXI_DC.NUM_READ_OUTSTANDING" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXI_DC.NUM_READ_OUTSTANDING" xilinx:valueSource="constant_prop" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXI_DC.NUM_READ_THREADS" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXI_DC.NUM_WRITE_OUTSTANDING" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXI_DC.NUM_WRITE_THREADS" xilinx:valuePermission="bd"/>
@@ -28099,7 +28099,7 @@ It is highly recommended to create MicroBlaze systems within Vivado IP Integrato
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXI_IC.MAX_BURST_LENGTH" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXI_IC.NUM_READ_OUTSTANDING" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXI_IC.NUM_READ_THREADS" xilinx:valuePermission="bd"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXI_IC.NUM_WRITE_OUTSTANDING" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXI_IC.NUM_WRITE_OUTSTANDING" xilinx:valueSource="constant_prop" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXI_IC.NUM_WRITE_THREADS" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXI_IC.PHASE" xilinx:valueSource="ip_propagated" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXI_IC.PROTOCOL" xilinx:valuePermission="bd"/>

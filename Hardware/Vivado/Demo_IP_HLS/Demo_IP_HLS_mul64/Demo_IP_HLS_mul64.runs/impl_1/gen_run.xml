@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1583024724">
+<GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1583084681">
   <File Type="BITSTR-BMM" Name="design_IP_wrapper_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="opt_report_methodology_0.rpt"/>
-  <File Type="INIT-TIMING" Name="init_report_timing_summary_0.rpt"/>
+  <File Type="INIT-TIMING" Name="design_IP_wrapper_timing_summary_init.rpt"/>
   <File Type="ROUTE-PWR" Name="route_report_power_0.rpt"/>
   <File Type="PA-TCL" Name="design_IP_wrapper.tcl"/>
   <File Type="OPT-TIMING" Name="opt_report_timing_summary_0.rpt"/>
@@ -17,13 +17,13 @@
   <File Type="PLACE-DCP" Name="design_IP_wrapper_placed.dcp"/>
   <File Type="PLACE-IO" Name="place_report_io_0.rpt"/>
   <File Type="PLACE-CLK" Name="design_IP_wrapper_clock_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL" Name="place_report_utilization_0.rpt"/>
-  <File Type="PLACE-UTIL-PB" Name="place_report_utilization_0.pb"/>
+  <File Type="PLACE-UTIL" Name="design_IP_wrapper_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="design_IP_wrapper_utilization_placed.pb"/>
   <File Type="PLACE-CTRL" Name="design_IP_wrapper_control_sets_placed.rpt"/>
   <File Type="PLACE-SIMILARITY" Name="place_report_incremental_reuse_0.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="design_IP_wrapper_incremental_reuse_pre_placed.rpt"/>
   <File Type="BG-BGN" Name="design_IP_wrapper.bgn"/>
-  <File Type="PLACE-TIMING" Name="place_report_timing_summary_0.rpt"/>
+  <File Type="PLACE-TIMING" Name="design_IP_wrapper_timing_summary_placed.rpt"/>
   <File Type="POSTPLACE-PWROPT-DCP" Name="design_IP_wrapper_postplace_pwropt.dcp"/>
   <File Type="BG-BIN" Name="design_IP_wrapper.bin"/>
   <File Type="POSTPLACE-PWROPT-TIMING" Name="design_IP_wrapper_timing_summary_postplace_pwropted.rpt"/>
@@ -51,7 +51,7 @@
   <File Type="ROUTE-TIMING-PB" Name="design_IP_wrapper_timing_summary_routed.pb"/>
   <File Type="ROUTE-TIMING-RPX" Name="route_report_timing_summary_0.rpx"/>
   <File Type="ROUTE-SIMILARITY" Name="route_report_incremental_reuse_0.rpt"/>
-  <File Type="ROUTE-CLK" Name="route_report_clock_utilization_0.rpt"/>
+  <File Type="ROUTE-CLK" Name="design_IP_wrapper_clock_utilization_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW" Name="route_report_bus_skew_0.rpt"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="route_report_bus_skew_0.pb"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="route_report_bus_skew_0.rpx"/>
@@ -107,18 +107,18 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Performance_WLBlockPlacementFanoutOpt" Flow="Vivado Implementation 2019">
-      <Desc>Ignore timing constraints for placing Block RAM and DSPs, use wirelength instead, and perform aggressive replication of high fanout drivers.</Desc>
+    <StratHandle Name="Performance_Retiming" Flow="Vivado Implementation 2019">
+      <Desc>Combines retiming in phys_opt_design with extra placement optimization and higher router delay cost.</Desc>
     </StratHandle>
     <Step Id="init_design"/>
     <Step Id="opt_design"/>
     <Step Id="power_opt_design"/>
     <Step Id="place_design">
-      <Option Id="Directive">1</Option>
+      <Option Id="Directive">7</Option>
     </Step>
     <Step Id="post_place_power_opt_design"/>
     <Step Id="phys_opt_design" EnableStepBool="1">
-      <Option Id="Directive">4</Option>
+      <Option Id="Directive">6</Option>
     </Step>
     <Step Id="route_design">
       <Option Id="Directive">0</Option>

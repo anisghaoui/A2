@@ -12,7 +12,7 @@
   <Processor Endianness="Little" InstPath="design_mb_i/microblaze_0">
     <AddressSpace Name="design_mb_i_microblaze_0.design_mb_i_axi_bram_ctrl_0" Begin="1107296256" End="1107304447">
       <BusBlock>
-        <BitLane MemType="RAMB36" Placement="X3Y21">
+        <BitLane MemType="RAMB36" Placement="X3Y19">
           <DataWidth MSB="15" LSB="0"/>
           <AddressRange Begin="0" End="2047"/>
           <Parity ON="false" NumBits="0"/>
@@ -26,7 +26,7 @@
     </AddressSpace>
     <AddressSpace Name="design_mb_i_microblaze_0.design_mb_i_microblaze_0_local_memory_dlmb_bram_if_cntlr" Begin="2147483648" End="2147491839">
       <BusBlock>
-        <BitLane MemType="RAMB36" Placement="X2Y18">
+        <BitLane MemType="RAMB36" Placement="X2Y16">
           <DataWidth MSB="15" LSB="0"/>
           <AddressRange Begin="0" End="2047"/>
           <Parity ON="false" NumBits="0"/>

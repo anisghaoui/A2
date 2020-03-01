@@ -849,3 +849,26 @@ selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Address
 // WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1269 ms. Increasing delay to 3807 ms.
 // WARNING: HEventQueue.dispatchEvent() is taking  2129 ms.
 // HMemoryUtils.trashcanNow. Engine heap size: 2,306 MB. GUI used memory: 170 MB. Current time: 3/1/20, 5:22:40 PM CET
+// Elapsed time: 17842 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // Z (q, cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // Z (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // Z (q, cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // Z (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // Z (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ae (cl)
+selectMenuItem(PAResourceCommand.PACommandNames_NEW_PROJECT, "New..."); // ah (cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // Z (q, cl)
+// Run Command: PAResourceCommand.PACommandNames_NEW_PROJECT
+// f (cl): New Project: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, f)
+// 'g' command handler elapsed time: 17 seconds
+// Elapsed time: 13 seconds
+dismissDialog("New Project"); // f (cl)
+// WARNING: HEventQueue.dispatchEvent() is taking  1387 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,306 MB. GUI used memory: 172 MB. Current time: 3/1/20, 5:52:39 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,306 MB. GUI used memory: 172 MB. Current time: 3/1/20, 6:22:39 PM CET
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 2441 ms. Increasing delay to 7323 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1625 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,306 MB. GUI used memory: 171 MB. Current time: 3/1/20, 6:52:40 PM CET
+// WARNING: HEventQueue.dispatchEvent() is taking  2474 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,306 MB. GUI used memory: 171 MB. Current time: 3/1/20, 7:22:41 PM CET

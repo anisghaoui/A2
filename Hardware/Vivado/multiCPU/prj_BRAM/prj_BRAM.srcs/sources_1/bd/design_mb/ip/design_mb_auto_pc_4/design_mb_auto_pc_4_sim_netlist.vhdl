@@ -1,11 +1,11 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.1.3 (win64) Build 2644227 Wed Sep  4 09:45:24 MDT 2019
--- Date        : Sun Mar  1 17:14:03 2020
+-- Date        : Sun Mar  1 17:14:04 2020
 -- Host        : Qlala-Blade running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiCPU/prj_BRAM/prj_BRAM.srcs/sources_1/bd/design_mb/ip/design_mb_auto_pc_4/design_mb_auto_pc_4_sim_netlist.vhdl
--- Design      : design_mb_auto_pc_4
+-- Command     : write_vhdl -force -mode funcsim -rename_top design_mb_auto_pc_4 -prefix
+--               design_mb_auto_pc_4_ design_mb_auto_pc_8_sim_netlist.vhdl
+-- Design      : design_mb_auto_pc_8
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
 -- Device      : xc7z020clg484-1
@@ -29,8 +29,6 @@ entity design_mb_auto_pc_4_axi_protocol_converter_v2_1_19_b_downsizer is
     dout : in STD_LOGIC_VECTOR ( 4 downto 0 );
     m_axi_bresp : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_mb_auto_pc_4_axi_protocol_converter_v2_1_19_b_downsizer : entity is "axi_protocol_converter_v2_1_19_b_downsizer";
 end design_mb_auto_pc_4_axi_protocol_converter_v2_1_19_b_downsizer;
 
 architecture STRUCTURE of design_mb_auto_pc_4_axi_protocol_converter_v2_1_19_b_downsizer is
@@ -279,8 +277,6 @@ entity design_mb_auto_pc_4_axi_protocol_converter_v2_1_19_w_axi3_conv is
     empty : in STD_LOGIC;
     dout : in STD_LOGIC_VECTOR ( 3 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_mb_auto_pc_4_axi_protocol_converter_v2_1_19_w_axi3_conv : entity is "axi_protocol_converter_v2_1_19_w_axi3_conv";
 end design_mb_auto_pc_4_axi_protocol_converter_v2_1_19_w_axi3_conv;
 
 architecture STRUCTURE of design_mb_auto_pc_4_axi_protocol_converter_v2_1_19_w_axi3_conv is
@@ -608,8 +604,6 @@ entity design_mb_auto_pc_4_xpm_cdc_async_rst is
   attribute INIT_SYNC_FF of design_mb_auto_pc_4_xpm_cdc_async_rst : entity is 0;
   attribute INV_DEF_VAL : string;
   attribute INV_DEF_VAL of design_mb_auto_pc_4_xpm_cdc_async_rst : entity is "1'b1";
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_mb_auto_pc_4_xpm_cdc_async_rst : entity is "xpm_cdc_async_rst";
   attribute RST_ACTIVE_HIGH : integer;
   attribute RST_ACTIVE_HIGH of design_mb_auto_pc_4_xpm_cdc_async_rst : entity is 1;
   attribute VERSION : integer;
@@ -814,8 +808,6 @@ entity design_mb_auto_pc_4_dmem is
     I28 : in STD_LOGIC_VECTOR ( 4 downto 0 );
     \gpr1.dout_i_reg[0]_0\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_mb_auto_pc_4_dmem : entity is "dmem";
 end design_mb_auto_pc_4_dmem;
 
 architecture STRUCTURE of design_mb_auto_pc_4_dmem is
@@ -1122,8 +1114,6 @@ entity design_mb_auto_pc_4_rd_bin_cntr is
     clk : in STD_LOGIC;
     \gc0.count_d1_reg[0]_0\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_mb_auto_pc_4_rd_bin_cntr : entity is "rd_bin_cntr";
 end design_mb_auto_pc_4_rd_bin_cntr;
 
 architecture STRUCTURE of design_mb_auto_pc_4_rd_bin_cntr is
@@ -1686,8 +1676,6 @@ entity design_mb_auto_pc_4_rd_fwft is
     rd_en : in STD_LOGIC;
     \gc0.count_reg[4]\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_mb_auto_pc_4_rd_fwft : entity is "rd_fwft";
 end design_mb_auto_pc_4_rd_fwft;
 
 architecture STRUCTURE of design_mb_auto_pc_4_rd_fwft is
@@ -2388,8 +2376,6 @@ entity design_mb_auto_pc_4_rd_status_flags_ss is
     clk : in STD_LOGIC;
     ram_empty_fb_i_reg_0 : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_mb_auto_pc_4_rd_status_flags_ss : entity is "rd_status_flags_ss";
 end design_mb_auto_pc_4_rd_status_flags_ss;
 
 architecture STRUCTURE of design_mb_auto_pc_4_rd_status_flags_ss is
@@ -2558,8 +2544,6 @@ entity design_mb_auto_pc_4_wr_bin_cntr is
     clk : in STD_LOGIC;
     AR : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_mb_auto_pc_4_wr_bin_cntr : entity is "wr_bin_cntr";
 end design_mb_auto_pc_4_wr_bin_cntr;
 
 architecture STRUCTURE of design_mb_auto_pc_4_wr_bin_cntr is
@@ -3456,8 +3440,6 @@ entity design_mb_auto_pc_4_wr_status_flags_ss is
     AR : in STD_LOGIC_VECTOR ( 0 to 0 );
     wr_en : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_mb_auto_pc_4_wr_status_flags_ss : entity is "wr_status_flags_ss";
 end design_mb_auto_pc_4_wr_status_flags_ss;
 
 architecture STRUCTURE of design_mb_auto_pc_4_wr_status_flags_ss is
@@ -3718,8 +3700,6 @@ entity design_mb_auto_pc_4_memory is
     I28 : in STD_LOGIC_VECTOR ( 4 downto 0 );
     \gpr1.dout_i_reg[0]\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_mb_auto_pc_4_memory : entity is "memory";
 end design_mb_auto_pc_4_memory;
 
 architecture STRUCTURE of design_mb_auto_pc_4_memory is
@@ -3953,8 +3933,6 @@ entity design_mb_auto_pc_4_rd_logic is
     \gc0.count_d1_reg[0]\ : in STD_LOGIC;
     rd_en : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_mb_auto_pc_4_rd_logic : entity is "rd_logic";
 end design_mb_auto_pc_4_rd_logic;
 
 architecture STRUCTURE of design_mb_auto_pc_4_rd_logic is
@@ -4114,8 +4092,6 @@ entity design_mb_auto_pc_4_reset_blk_ramfifo is
     rst : in STD_LOGIC;
     clk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_mb_auto_pc_4_reset_blk_ramfifo : entity is "reset_blk_ramfifo";
 end design_mb_auto_pc_4_reset_blk_ramfifo;
 
 architecture STRUCTURE of design_mb_auto_pc_4_reset_blk_ramfifo is
@@ -4385,8 +4361,6 @@ entity design_mb_auto_pc_4_wr_logic is
     ram_empty_fb_i_i_3 : in STD_LOGIC_VECTOR ( 4 downto 0 );
     ram_empty_fb_i_i_2 : in STD_LOGIC_VECTOR ( 4 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_mb_auto_pc_4_wr_logic : entity is "wr_logic";
 end design_mb_auto_pc_4_wr_logic;
 
 architecture STRUCTURE of design_mb_auto_pc_4_wr_logic is
@@ -4544,8 +4518,6 @@ entity design_mb_auto_pc_4_fifo_generator_ramfifo is
     rd_en : in STD_LOGIC;
     wr_en : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_mb_auto_pc_4_fifo_generator_ramfifo : entity is "fifo_generator_ramfifo";
 end design_mb_auto_pc_4_fifo_generator_ramfifo;
 
 architecture STRUCTURE of design_mb_auto_pc_4_fifo_generator_ramfifo is
@@ -4800,8 +4772,6 @@ entity design_mb_auto_pc_4_fifo_generator_top is
     rd_en : in STD_LOGIC;
     wr_en : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_mb_auto_pc_4_fifo_generator_top : entity is "fifo_generator_top";
 end design_mb_auto_pc_4_fifo_generator_top;
 
 architecture STRUCTURE of design_mb_auto_pc_4_fifo_generator_top is
@@ -4899,8 +4869,6 @@ entity design_mb_auto_pc_4_fifo_generator_v13_2_4_synth is
     rd_en : in STD_LOGIC;
     wr_en : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_mb_auto_pc_4_fifo_generator_v13_2_4_synth : entity is "fifo_generator_v13_2_4_synth";
 end design_mb_auto_pc_4_fifo_generator_v13_2_4_synth;
 
 architecture STRUCTURE of design_mb_auto_pc_4_fifo_generator_v13_2_4_synth is
@@ -5625,8 +5593,6 @@ entity design_mb_auto_pc_4_fifo_generator_v13_2_4 is
   attribute C_WR_PNTR_WIDTH_WRCH of design_mb_auto_pc_4_fifo_generator_v13_2_4 : entity is 4;
   attribute C_WR_RESPONSE_LATENCY : integer;
   attribute C_WR_RESPONSE_LATENCY of design_mb_auto_pc_4_fifo_generator_v13_2_4 : entity is 1;
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_mb_auto_pc_4_fifo_generator_v13_2_4 : entity is "fifo_generator_v13_2_4";
 end design_mb_auto_pc_4_fifo_generator_v13_2_4;
 
 architecture STRUCTURE of design_mb_auto_pc_4_fifo_generator_v13_2_4 is
@@ -8840,8 +8806,6 @@ entity design_mb_auto_pc_4_axi_data_fifo_v2_1_18_fifo_gen is
     areset_d : in STD_LOGIC_VECTOR ( 0 to 0 );
     command_ongoing_reg : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_mb_auto_pc_4_axi_data_fifo_v2_1_18_fifo_gen : entity is "axi_data_fifo_v2_1_18_fifo_gen";
 end design_mb_auto_pc_4_axi_data_fifo_v2_1_18_fifo_gen;
 
 architecture STRUCTURE of design_mb_auto_pc_4_axi_data_fifo_v2_1_18_fifo_gen is
@@ -12147,8 +12111,6 @@ entity design_mb_auto_pc_4_axi_data_fifo_v2_1_18_axic_fifo is
     areset_d : in STD_LOGIC_VECTOR ( 0 to 0 );
     command_ongoing_reg : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_mb_auto_pc_4_axi_data_fifo_v2_1_18_axic_fifo : entity is "axi_data_fifo_v2_1_18_axic_fifo";
 end design_mb_auto_pc_4_axi_data_fifo_v2_1_18_axic_fifo;
 
 architecture STRUCTURE of design_mb_auto_pc_4_axi_data_fifo_v2_1_18_axic_fifo is
@@ -12441,8 +12403,6 @@ entity design_mb_auto_pc_4_axi_protocol_converter_v2_1_19_a_axi3_conv is
     s_axi_awprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
     s_axi_awqos : in STD_LOGIC_VECTOR ( 3 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_mb_auto_pc_4_axi_protocol_converter_v2_1_19_a_axi3_conv : entity is "axi_protocol_converter_v2_1_19_a_axi3_conv";
 end design_mb_auto_pc_4_axi_protocol_converter_v2_1_19_a_axi3_conv;
 
 architecture STRUCTURE of design_mb_auto_pc_4_axi_protocol_converter_v2_1_19_a_axi3_conv is
@@ -18929,8 +18889,6 @@ entity design_mb_auto_pc_4_axi_protocol_converter_v2_1_19_axi3_conv is
     s_axi_awvalid : in STD_LOGIC;
     s_axi_arvalid : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_mb_auto_pc_4_axi_protocol_converter_v2_1_19_axi3_conv : entity is "axi_protocol_converter_v2_1_19_axi3_conv";
 end design_mb_auto_pc_4_axi_protocol_converter_v2_1_19_axi3_conv;
 
 architecture STRUCTURE of design_mb_auto_pc_4_axi_protocol_converter_v2_1_19_axi3_conv is
@@ -19080,8 +19038,8 @@ entity design_mb_auto_pc_4_axi_protocol_converter_v2_1_19_axi_protocol_converter
     s_axi_awvalid : in STD_LOGIC;
     s_axi_awready : out STD_LOGIC;
     s_axi_wid : in STD_LOGIC_VECTOR ( 0 to 0 );
-    s_axi_wdata : in STD_LOGIC_VECTOR ( 63 downto 0 );
-    s_axi_wstrb : in STD_LOGIC_VECTOR ( 7 downto 0 );
+    s_axi_wdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    s_axi_wstrb : in STD_LOGIC_VECTOR ( 3 downto 0 );
     s_axi_wlast : in STD_LOGIC;
     s_axi_wuser : in STD_LOGIC_VECTOR ( 0 to 0 );
     s_axi_wvalid : in STD_LOGIC;
@@ -19105,7 +19063,7 @@ entity design_mb_auto_pc_4_axi_protocol_converter_v2_1_19_axi_protocol_converter
     s_axi_arvalid : in STD_LOGIC;
     s_axi_arready : out STD_LOGIC;
     s_axi_rid : out STD_LOGIC_VECTOR ( 0 to 0 );
-    s_axi_rdata : out STD_LOGIC_VECTOR ( 63 downto 0 );
+    s_axi_rdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
     s_axi_rresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
     s_axi_rlast : out STD_LOGIC;
     s_axi_ruser : out STD_LOGIC_VECTOR ( 0 to 0 );
@@ -19125,8 +19083,8 @@ entity design_mb_auto_pc_4_axi_protocol_converter_v2_1_19_axi_protocol_converter
     m_axi_awvalid : out STD_LOGIC;
     m_axi_awready : in STD_LOGIC;
     m_axi_wid : out STD_LOGIC_VECTOR ( 0 to 0 );
-    m_axi_wdata : out STD_LOGIC_VECTOR ( 63 downto 0 );
-    m_axi_wstrb : out STD_LOGIC_VECTOR ( 7 downto 0 );
+    m_axi_wdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    m_axi_wstrb : out STD_LOGIC_VECTOR ( 3 downto 0 );
     m_axi_wlast : out STD_LOGIC;
     m_axi_wuser : out STD_LOGIC_VECTOR ( 0 to 0 );
     m_axi_wvalid : out STD_LOGIC;
@@ -19150,7 +19108,7 @@ entity design_mb_auto_pc_4_axi_protocol_converter_v2_1_19_axi_protocol_converter
     m_axi_arvalid : out STD_LOGIC;
     m_axi_arready : in STD_LOGIC;
     m_axi_rid : in STD_LOGIC_VECTOR ( 0 to 0 );
-    m_axi_rdata : in STD_LOGIC_VECTOR ( 63 downto 0 );
+    m_axi_rdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
     m_axi_rresp : in STD_LOGIC_VECTOR ( 1 downto 0 );
     m_axi_rlast : in STD_LOGIC;
     m_axi_ruser : in STD_LOGIC_VECTOR ( 0 to 0 );
@@ -19166,7 +19124,7 @@ entity design_mb_auto_pc_4_axi_protocol_converter_v2_1_19_axi_protocol_converter
   attribute C_AXI_BUSER_WIDTH : integer;
   attribute C_AXI_BUSER_WIDTH of design_mb_auto_pc_4_axi_protocol_converter_v2_1_19_axi_protocol_converter : entity is 1;
   attribute C_AXI_DATA_WIDTH : integer;
-  attribute C_AXI_DATA_WIDTH of design_mb_auto_pc_4_axi_protocol_converter_v2_1_19_axi_protocol_converter : entity is 64;
+  attribute C_AXI_DATA_WIDTH of design_mb_auto_pc_4_axi_protocol_converter_v2_1_19_axi_protocol_converter : entity is 32;
   attribute C_AXI_ID_WIDTH : integer;
   attribute C_AXI_ID_WIDTH of design_mb_auto_pc_4_axi_protocol_converter_v2_1_19_axi_protocol_converter : entity is 1;
   attribute C_AXI_RUSER_WIDTH : integer;
@@ -19191,8 +19149,6 @@ entity design_mb_auto_pc_4_axi_protocol_converter_v2_1_19_axi_protocol_converter
   attribute C_TRANSLATION_MODE of design_mb_auto_pc_4_axi_protocol_converter_v2_1_19_axi_protocol_converter : entity is 2;
   attribute DowngradeIPIdentifiedWarnings : string;
   attribute DowngradeIPIdentifiedWarnings of design_mb_auto_pc_4_axi_protocol_converter_v2_1_19_axi_protocol_converter : entity is "yes";
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_mb_auto_pc_4_axi_protocol_converter_v2_1_19_axi_protocol_converter : entity is "axi_protocol_converter_v2_1_19_axi_protocol_converter";
   attribute P_AXI3 : integer;
   attribute P_AXI3 of design_mb_auto_pc_4_axi_protocol_converter_v2_1_19_axi_protocol_converter : entity is 1;
   attribute P_AXI4 : integer;
@@ -19200,7 +19156,7 @@ entity design_mb_auto_pc_4_axi_protocol_converter_v2_1_19_axi_protocol_converter
   attribute P_AXILITE : integer;
   attribute P_AXILITE of design_mb_auto_pc_4_axi_protocol_converter_v2_1_19_axi_protocol_converter : entity is 2;
   attribute P_AXILITE_SIZE : string;
-  attribute P_AXILITE_SIZE of design_mb_auto_pc_4_axi_protocol_converter_v2_1_19_axi_protocol_converter : entity is "3'b011";
+  attribute P_AXILITE_SIZE of design_mb_auto_pc_4_axi_protocol_converter_v2_1_19_axi_protocol_converter : entity is "3'b010";
   attribute P_CONVERSION : integer;
   attribute P_CONVERSION of design_mb_auto_pc_4_axi_protocol_converter_v2_1_19_axi_protocol_converter : entity is 2;
   attribute P_DECERR : string;
@@ -19218,20 +19174,20 @@ architecture STRUCTURE of design_mb_auto_pc_4_axi_protocol_converter_v2_1_19_axi
   signal \^m_axi_arlock\ : STD_LOGIC_VECTOR ( 0 to 0 );
   signal \^m_axi_awlock\ : STD_LOGIC_VECTOR ( 0 to 0 );
   signal \^m_axi_bid\ : STD_LOGIC_VECTOR ( 0 to 0 );
-  signal \^m_axi_rdata\ : STD_LOGIC_VECTOR ( 63 downto 0 );
+  signal \^m_axi_rdata\ : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal \^m_axi_rid\ : STD_LOGIC_VECTOR ( 0 to 0 );
   signal \^m_axi_rresp\ : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal \^m_axi_ruser\ : STD_LOGIC_VECTOR ( 0 to 0 );
-  signal \^s_axi_wdata\ : STD_LOGIC_VECTOR ( 63 downto 0 );
-  signal \^s_axi_wstrb\ : STD_LOGIC_VECTOR ( 7 downto 0 );
+  signal \^s_axi_wdata\ : STD_LOGIC_VECTOR ( 31 downto 0 );
+  signal \^s_axi_wstrb\ : STD_LOGIC_VECTOR ( 3 downto 0 );
 begin
   \^m_axi_bid\(0) <= m_axi_bid(0);
-  \^m_axi_rdata\(63 downto 0) <= m_axi_rdata(63 downto 0);
+  \^m_axi_rdata\(31 downto 0) <= m_axi_rdata(31 downto 0);
   \^m_axi_rid\(0) <= m_axi_rid(0);
   \^m_axi_rresp\(1 downto 0) <= m_axi_rresp(1 downto 0);
   \^m_axi_ruser\(0) <= m_axi_ruser(0);
-  \^s_axi_wdata\(63 downto 0) <= s_axi_wdata(63 downto 0);
-  \^s_axi_wstrb\(7 downto 0) <= s_axi_wstrb(7 downto 0);
+  \^s_axi_wdata\(31 downto 0) <= s_axi_wdata(31 downto 0);
+  \^s_axi_wstrb\(3 downto 0) <= s_axi_wstrb(3 downto 0);
   m_axi_arlock(1) <= \<const0>\;
   m_axi_arlock(0) <= \^m_axi_arlock\(0);
   m_axi_arregion(3) <= \<const0>\;
@@ -19246,12 +19202,12 @@ begin
   m_axi_awregion(1) <= \<const0>\;
   m_axi_awregion(0) <= \<const0>\;
   m_axi_awuser(0) <= \<const0>\;
-  m_axi_wdata(63 downto 0) <= \^s_axi_wdata\(63 downto 0);
-  m_axi_wstrb(7 downto 0) <= \^s_axi_wstrb\(7 downto 0);
+  m_axi_wdata(31 downto 0) <= \^s_axi_wdata\(31 downto 0);
+  m_axi_wstrb(3 downto 0) <= \^s_axi_wstrb\(3 downto 0);
   m_axi_wuser(0) <= \<const0>\;
   s_axi_bid(0) <= \^m_axi_bid\(0);
   s_axi_buser(0) <= \<const0>\;
-  s_axi_rdata(63 downto 0) <= \^m_axi_rdata\(63 downto 0);
+  s_axi_rdata(31 downto 0) <= \^m_axi_rdata\(31 downto 0);
   s_axi_rid(0) <= \^m_axi_rid\(0);
   s_axi_rresp(1 downto 0) <= \^m_axi_rresp\(1 downto 0);
   s_axi_ruser(0) <= \^m_axi_ruser\(0);
@@ -19346,8 +19302,8 @@ entity design_mb_auto_pc_4 is
     s_axi_awqos : in STD_LOGIC_VECTOR ( 3 downto 0 );
     s_axi_awvalid : in STD_LOGIC;
     s_axi_awready : out STD_LOGIC;
-    s_axi_wdata : in STD_LOGIC_VECTOR ( 63 downto 0 );
-    s_axi_wstrb : in STD_LOGIC_VECTOR ( 7 downto 0 );
+    s_axi_wdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    s_axi_wstrb : in STD_LOGIC_VECTOR ( 3 downto 0 );
     s_axi_wlast : in STD_LOGIC;
     s_axi_wvalid : in STD_LOGIC;
     s_axi_wready : out STD_LOGIC;
@@ -19365,7 +19321,7 @@ entity design_mb_auto_pc_4 is
     s_axi_arqos : in STD_LOGIC_VECTOR ( 3 downto 0 );
     s_axi_arvalid : in STD_LOGIC;
     s_axi_arready : out STD_LOGIC;
-    s_axi_rdata : out STD_LOGIC_VECTOR ( 63 downto 0 );
+    s_axi_rdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
     s_axi_rresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
     s_axi_rlast : out STD_LOGIC;
     s_axi_rvalid : out STD_LOGIC;
@@ -19380,8 +19336,8 @@ entity design_mb_auto_pc_4 is
     m_axi_awqos : out STD_LOGIC_VECTOR ( 3 downto 0 );
     m_axi_awvalid : out STD_LOGIC;
     m_axi_awready : in STD_LOGIC;
-    m_axi_wdata : out STD_LOGIC_VECTOR ( 63 downto 0 );
-    m_axi_wstrb : out STD_LOGIC_VECTOR ( 7 downto 0 );
+    m_axi_wdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    m_axi_wstrb : out STD_LOGIC_VECTOR ( 3 downto 0 );
     m_axi_wlast : out STD_LOGIC;
     m_axi_wvalid : out STD_LOGIC;
     m_axi_wready : in STD_LOGIC;
@@ -19398,7 +19354,7 @@ entity design_mb_auto_pc_4 is
     m_axi_arqos : out STD_LOGIC_VECTOR ( 3 downto 0 );
     m_axi_arvalid : out STD_LOGIC;
     m_axi_arready : in STD_LOGIC;
-    m_axi_rdata : in STD_LOGIC_VECTOR ( 63 downto 0 );
+    m_axi_rdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
     m_axi_rresp : in STD_LOGIC_VECTOR ( 1 downto 0 );
     m_axi_rlast : in STD_LOGIC;
     m_axi_rvalid : in STD_LOGIC;
@@ -19407,7 +19363,7 @@ entity design_mb_auto_pc_4 is
   attribute NotValidForBitStream : boolean;
   attribute NotValidForBitStream of design_mb_auto_pc_4 : entity is true;
   attribute CHECK_LICENSE_TYPE : string;
-  attribute CHECK_LICENSE_TYPE of design_mb_auto_pc_4 : entity is "design_mb_auto_pc_4,axi_protocol_converter_v2_1_19_axi_protocol_converter,{}";
+  attribute CHECK_LICENSE_TYPE of design_mb_auto_pc_4 : entity is "design_mb_auto_pc_8,axi_protocol_converter_v2_1_19_axi_protocol_converter,{}";
   attribute DowngradeIPIdentifiedWarnings : string;
   attribute DowngradeIPIdentifiedWarnings of design_mb_auto_pc_4 : entity is "yes";
   attribute X_CORE_INFO : string;
@@ -19436,7 +19392,7 @@ architecture STRUCTURE of design_mb_auto_pc_4 is
   attribute C_AXI_BUSER_WIDTH : integer;
   attribute C_AXI_BUSER_WIDTH of inst : label is 1;
   attribute C_AXI_DATA_WIDTH : integer;
-  attribute C_AXI_DATA_WIDTH of inst : label is 64;
+  attribute C_AXI_DATA_WIDTH of inst : label is 32;
   attribute C_AXI_ID_WIDTH : integer;
   attribute C_AXI_ID_WIDTH of inst : label is 1;
   attribute C_AXI_RUSER_WIDTH : integer;
@@ -19467,7 +19423,7 @@ architecture STRUCTURE of design_mb_auto_pc_4 is
   attribute P_AXILITE : integer;
   attribute P_AXILITE of inst : label is 2;
   attribute P_AXILITE_SIZE : string;
-  attribute P_AXILITE_SIZE of inst : label is "3'b011";
+  attribute P_AXILITE_SIZE of inst : label is "3'b010";
   attribute P_CONVERSION : integer;
   attribute P_CONVERSION of inst : label is 2;
   attribute P_DECERR : string;
@@ -19492,7 +19448,7 @@ architecture STRUCTURE of design_mb_auto_pc_4 is
   attribute X_INTERFACE_INFO of m_axi_bvalid : signal is "xilinx.com:interface:aximm:1.0 M_AXI BVALID";
   attribute X_INTERFACE_INFO of m_axi_rlast : signal is "xilinx.com:interface:aximm:1.0 M_AXI RLAST";
   attribute X_INTERFACE_INFO of m_axi_rready : signal is "xilinx.com:interface:aximm:1.0 M_AXI RREADY";
-  attribute X_INTERFACE_PARAMETER of m_axi_rready : signal is "XIL_INTERFACENAME M_AXI, DATA_WIDTH 64, PROTOCOL AXI3, FREQ_HZ 100000000, ID_WIDTH 0, ADDR_WIDTH 32, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 1, HAS_LOCK 1, HAS_PROT 1, HAS_CACHE 1, HAS_QOS 1, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 8, NUM_WRITE_OUTSTANDING 8, MAX_BURST_LENGTH 16, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0";
+  attribute X_INTERFACE_PARAMETER of m_axi_rready : signal is "XIL_INTERFACENAME M_AXI, DATA_WIDTH 32, PROTOCOL AXI3, FREQ_HZ 100000000, ID_WIDTH 0, ADDR_WIDTH 32, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 1, HAS_LOCK 0, HAS_PROT 1, HAS_CACHE 1, HAS_QOS 1, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 8, NUM_WRITE_OUTSTANDING 8, MAX_BURST_LENGTH 16, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0";
   attribute X_INTERFACE_INFO of m_axi_rvalid : signal is "xilinx.com:interface:aximm:1.0 M_AXI RVALID";
   attribute X_INTERFACE_INFO of m_axi_wlast : signal is "xilinx.com:interface:aximm:1.0 M_AXI WLAST";
   attribute X_INTERFACE_INFO of m_axi_wready : signal is "xilinx.com:interface:aximm:1.0 M_AXI WREADY";
@@ -19505,7 +19461,7 @@ architecture STRUCTURE of design_mb_auto_pc_4 is
   attribute X_INTERFACE_INFO of s_axi_bvalid : signal is "xilinx.com:interface:aximm:1.0 S_AXI BVALID";
   attribute X_INTERFACE_INFO of s_axi_rlast : signal is "xilinx.com:interface:aximm:1.0 S_AXI RLAST";
   attribute X_INTERFACE_INFO of s_axi_rready : signal is "xilinx.com:interface:aximm:1.0 S_AXI RREADY";
-  attribute X_INTERFACE_PARAMETER of s_axi_rready : signal is "XIL_INTERFACENAME S_AXI, DATA_WIDTH 64, PROTOCOL AXI4, FREQ_HZ 100000000, ID_WIDTH 0, ADDR_WIDTH 32, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 1, HAS_LOCK 1, HAS_PROT 1, HAS_CACHE 1, HAS_QOS 1, HAS_REGION 1, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 8, NUM_WRITE_OUTSTANDING 8, MAX_BURST_LENGTH 2, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0";
+  attribute X_INTERFACE_PARAMETER of s_axi_rready : signal is "XIL_INTERFACENAME S_AXI, DATA_WIDTH 32, PROTOCOL AXI4, FREQ_HZ 100000000, ID_WIDTH 0, ADDR_WIDTH 32, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 1, HAS_LOCK 1, HAS_PROT 1, HAS_CACHE 1, HAS_QOS 1, HAS_REGION 1, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 8, NUM_WRITE_OUTSTANDING 8, MAX_BURST_LENGTH 4, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0";
   attribute X_INTERFACE_INFO of s_axi_rvalid : signal is "xilinx.com:interface:aximm:1.0 S_AXI RVALID";
   attribute X_INTERFACE_INFO of s_axi_wlast : signal is "xilinx.com:interface:aximm:1.0 S_AXI WLAST";
   attribute X_INTERFACE_INFO of s_axi_wready : signal is "xilinx.com:interface:aximm:1.0 S_AXI WREADY";
@@ -19590,18 +19546,18 @@ inst: entity work.design_mb_auto_pc_4_axi_protocol_converter_v2_1_19_axi_protoco
       m_axi_bresp(1 downto 0) => m_axi_bresp(1 downto 0),
       m_axi_buser(0) => '0',
       m_axi_bvalid => m_axi_bvalid,
-      m_axi_rdata(63 downto 0) => m_axi_rdata(63 downto 0),
+      m_axi_rdata(31 downto 0) => m_axi_rdata(31 downto 0),
       m_axi_rid(0) => '0',
       m_axi_rlast => m_axi_rlast,
       m_axi_rready => m_axi_rready,
       m_axi_rresp(1 downto 0) => m_axi_rresp(1 downto 0),
       m_axi_ruser(0) => '0',
       m_axi_rvalid => m_axi_rvalid,
-      m_axi_wdata(63 downto 0) => m_axi_wdata(63 downto 0),
+      m_axi_wdata(31 downto 0) => m_axi_wdata(31 downto 0),
       m_axi_wid(0) => NLW_inst_m_axi_wid_UNCONNECTED(0),
       m_axi_wlast => m_axi_wlast,
       m_axi_wready => m_axi_wready,
-      m_axi_wstrb(7 downto 0) => m_axi_wstrb(7 downto 0),
+      m_axi_wstrb(3 downto 0) => m_axi_wstrb(3 downto 0),
       m_axi_wuser(0) => NLW_inst_m_axi_wuser_UNCONNECTED(0),
       m_axi_wvalid => m_axi_wvalid,
       s_axi_araddr(31 downto 0) => s_axi_araddr(31 downto 0),
@@ -19635,18 +19591,18 @@ inst: entity work.design_mb_auto_pc_4_axi_protocol_converter_v2_1_19_axi_protoco
       s_axi_bresp(1 downto 0) => s_axi_bresp(1 downto 0),
       s_axi_buser(0) => NLW_inst_s_axi_buser_UNCONNECTED(0),
       s_axi_bvalid => s_axi_bvalid,
-      s_axi_rdata(63 downto 0) => s_axi_rdata(63 downto 0),
+      s_axi_rdata(31 downto 0) => s_axi_rdata(31 downto 0),
       s_axi_rid(0) => NLW_inst_s_axi_rid_UNCONNECTED(0),
       s_axi_rlast => s_axi_rlast,
       s_axi_rready => s_axi_rready,
       s_axi_rresp(1 downto 0) => s_axi_rresp(1 downto 0),
       s_axi_ruser(0) => NLW_inst_s_axi_ruser_UNCONNECTED(0),
       s_axi_rvalid => s_axi_rvalid,
-      s_axi_wdata(63 downto 0) => s_axi_wdata(63 downto 0),
+      s_axi_wdata(31 downto 0) => s_axi_wdata(31 downto 0),
       s_axi_wid(0) => '0',
       s_axi_wlast => s_axi_wlast,
       s_axi_wready => s_axi_wready,
-      s_axi_wstrb(7 downto 0) => s_axi_wstrb(7 downto 0),
+      s_axi_wstrb(3 downto 0) => s_axi_wstrb(3 downto 0),
       s_axi_wuser(0) => '0',
       s_axi_wvalid => s_axi_wvalid
     );

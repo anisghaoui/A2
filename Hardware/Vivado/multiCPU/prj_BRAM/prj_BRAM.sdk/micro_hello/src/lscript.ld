@@ -18,8 +18,8 @@ _HEAP_SIZE = DEFINED(_HEAP_SIZE) ? _HEAP_SIZE : 0x400;
 MEMORY
 {
    microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem : ORIGIN = 0x80000050, LENGTH = 0x1FB0
-   ps7_ddr_0_HP1_AXI_BASENAME : ORIGIN = 0x100000, LENGTH = 0x1FF00000
-   ps7_ram_0_HP1_AXI_BASENAME : ORIGIN = 0x0, LENGTH = 0x40000
+   ps7_ddr_0_HP0_AXI_BASENAME_ps7_ddr_0_ACP_AXI_BASENAME : ORIGIN = 0x100000, LENGTH = 0x1FF00000
+   ps7_ram_0_HP0_AXI_BASENAME_ps7_ram_0_ACP_AXI_BASENAME : ORIGIN = 0x0, LENGTH = 0x40000
    axi_bram_ctrl_0_Mem0 : ORIGIN = 0x42000000, LENGTH = 0x2000
 }
 
@@ -51,15 +51,15 @@ SECTIONS
    *(.text)
    *(.text.*)
    *(.gnu.linkonce.t.*)
-} > ps7_ddr_0_HP1_AXI_BASENAME
+} > ps7_ddr_0_HP0_AXI_BASENAME_ps7_ddr_0_ACP_AXI_BASENAME
 
 .init : {
    KEEP (*(.init))
-} > ps7_ddr_0_HP1_AXI_BASENAME
+} > ps7_ddr_0_HP0_AXI_BASENAME_ps7_ddr_0_ACP_AXI_BASENAME
 
 .fini : {
    KEEP (*(.fini))
-} > ps7_ddr_0_HP1_AXI_BASENAME
+} > ps7_ddr_0_HP0_AXI_BASENAME_ps7_ddr_0_ACP_AXI_BASENAME
 
 .ctors : {
    __CTOR_LIST__ = .;
@@ -70,7 +70,7 @@ SECTIONS
    KEEP (*(.ctors))
    __CTOR_END__ = .;
    ___CTORS_END___ = .;
-} > microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem
+} > ps7_ddr_0_HP0_AXI_BASENAME_ps7_ddr_0_ACP_AXI_BASENAME
 
 .dtors : {
    __DTOR_LIST__ = .;
@@ -81,7 +81,7 @@ SECTIONS
    KEEP (*(.dtors))
    PROVIDE(__DTOR_END__ = .);
    PROVIDE(___DTORS_END___ = .);
-} > microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem
+} > ps7_ddr_0_HP0_AXI_BASENAME_ps7_ddr_0_ACP_AXI_BASENAME
 
 .rodata : {
    __rodata_start = .;
@@ -89,7 +89,7 @@ SECTIONS
    *(.rodata.*)
    *(.gnu.linkonce.r.*)
    __rodata_end = .;
-} > microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem
+} > ps7_ddr_0_HP0_AXI_BASENAME_ps7_ddr_0_ACP_AXI_BASENAME
 
 .sdata2 : {
    . = ALIGN(8);
@@ -99,7 +99,7 @@ SECTIONS
    *(.gnu.linkonce.s2.*)
    . = ALIGN(8);
    __sdata2_end = .;
-} > microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem
+} > ps7_ddr_0_HP0_AXI_BASENAME_ps7_ddr_0_ACP_AXI_BASENAME
 
 .sbss2 : {
    __sbss2_start = .;
@@ -107,7 +107,7 @@ SECTIONS
    *(.sbss2.*)
    *(.gnu.linkonce.sb2.*)
    __sbss2_end = .;
-} > microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem
+} > ps7_ddr_0_HP0_AXI_BASENAME_ps7_ddr_0_ACP_AXI_BASENAME
 
 .data : {
    . = ALIGN(4);
@@ -116,31 +116,31 @@ SECTIONS
    *(.data.*)
    *(.gnu.linkonce.d.*)
    __data_end = .;
-} > microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem
+} > ps7_ddr_0_HP0_AXI_BASENAME_ps7_ddr_0_ACP_AXI_BASENAME
 
 .got : {
    *(.got)
-} > microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem
+} > ps7_ddr_0_HP0_AXI_BASENAME_ps7_ddr_0_ACP_AXI_BASENAME
 
 .got1 : {
    *(.got1)
-} > microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem
+} > ps7_ddr_0_HP0_AXI_BASENAME_ps7_ddr_0_ACP_AXI_BASENAME
 
 .got2 : {
    *(.got2)
-} > microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem
+} > ps7_ddr_0_HP0_AXI_BASENAME_ps7_ddr_0_ACP_AXI_BASENAME
 
 .eh_frame : {
    *(.eh_frame)
-} > microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem
+} > ps7_ddr_0_HP0_AXI_BASENAME_ps7_ddr_0_ACP_AXI_BASENAME
 
 .jcr : {
    *(.jcr)
-} > microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem
+} > ps7_ddr_0_HP0_AXI_BASENAME_ps7_ddr_0_ACP_AXI_BASENAME
 
 .gcc_except_table : {
    *(.gcc_except_table)
-} > microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem
+} > ps7_ddr_0_HP0_AXI_BASENAME_ps7_ddr_0_ACP_AXI_BASENAME
 
 .sdata : {
    . = ALIGN(8);
@@ -149,7 +149,7 @@ SECTIONS
    *(.sdata.*)
    *(.gnu.linkonce.s.*)
    __sdata_end = .;
-} > microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem
+} > ps7_ddr_0_HP0_AXI_BASENAME_ps7_ddr_0_ACP_AXI_BASENAME
 
 .sbss (NOLOAD) : {
    . = ALIGN(4);
@@ -159,7 +159,7 @@ SECTIONS
    *(.gnu.linkonce.sb.*)
    . = ALIGN(8);
    __sbss_end = .;
-} > microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem
+} > ps7_ddr_0_HP0_AXI_BASENAME_ps7_ddr_0_ACP_AXI_BASENAME
 
 .tdata : {
    __tdata_start = .;
@@ -167,7 +167,7 @@ SECTIONS
    *(.tdata.*)
    *(.gnu.linkonce.td.*)
    __tdata_end = .;
-} > microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem
+} > ps7_ddr_0_HP0_AXI_BASENAME_ps7_ddr_0_ACP_AXI_BASENAME
 
 .tbss : {
    __tbss_start = .;
@@ -175,7 +175,7 @@ SECTIONS
    *(.tbss.*)
    *(.gnu.linkonce.tb.*)
    __tbss_end = .;
-} > microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem
+} > ps7_ddr_0_HP0_AXI_BASENAME_ps7_ddr_0_ACP_AXI_BASENAME
 
 .bss (NOLOAD) : {
    . = ALIGN(4);
@@ -186,7 +186,7 @@ SECTIONS
    *(COMMON)
    . = ALIGN(4);
    __bss_end = .;
-} > microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem
+} > ps7_ddr_0_HP0_AXI_BASENAME_ps7_ddr_0_ACP_AXI_BASENAME
 
 _SDA_BASE_ = __sdata_start + ((__sbss_end - __sdata_start) / 2 );
 
@@ -200,7 +200,7 @@ _SDA2_BASE_ = __sdata2_start + ((__sbss2_end - __sdata2_start) / 2 );
    _heap_start = .;
    . += _HEAP_SIZE;
    _heap_end = .;
-} > microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem
+} > ps7_ddr_0_HP0_AXI_BASENAME_ps7_ddr_0_ACP_AXI_BASENAME
 
 .stack (NOLOAD) : {
    _stack_end = .;
@@ -208,7 +208,7 @@ _SDA2_BASE_ = __sdata2_start + ((__sbss2_end - __sdata2_start) / 2 );
    . = ALIGN(8);
    _stack = .;
    __stack = _stack;
-} > microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem
+} > ps7_ddr_0_HP0_AXI_BASENAME_ps7_ddr_0_ACP_AXI_BASENAME
 
 _end = .;
 }

@@ -17,8 +17,18 @@
 \BOOKMARK [2][-]{subsection.4.3}{Approche d'impl\351mentation des algorithmes}{section.4}% 17
 \BOOKMARK [3][-]{subsubsection.4.3.1}{Crit\350res de conception d'IP}{subsection.4.3}% 18
 \BOOKMARK [1][-]{section.5}{Impl\351mentation mat\351rielle}{}% 19
-\BOOKMARK [1][-]{section.6}{Performances Mesur\351es}{}% 20
-\BOOKMARK [2][-]{subsection.6.1}{Performances ARM}{section.6}% 21
-\BOOKMARK [2][-]{subsection.6.2}{Performances HLS}{section.6}% 22
-\BOOKMARK [2][-]{subsection.6.3}{Performances PC}{section.6}% 23
-\BOOKMARK [1][-]{section.7}{Conclusion et perspectives}{}% 24
+\BOOKMARK [2][-]{subsection.5.1}{Introduction}{section.5}% 20
+\BOOKMARK [2][-]{subsection.5.2}{Demo multi-CPU}{section.5}% 21
+\BOOKMARK [3][-]{subsubsection.5.2.1}{Concept et problem}{subsection.5.2}% 22
+\BOOKMARK [3][-]{subsubsection.5.2.2}{Utilisation de la BRAM}{subsection.5.2}% 23
+\BOOKMARK [3][-]{subsubsection.5.2.3}{Passage de donn\351es vers un microblaze}{subsection.5.2}% 24
+\BOOKMARK [2][-]{subsection.5.3}{IP HLS}{section.5}% 25
+\BOOKMARK [3][-]{subsubsection.5.3.1}{Concept}{subsection.5.3}% 26
+\BOOKMARK [3][-]{subsubsection.5.3.2}{Impl\351mentation et clocking}{subsection.5.3}% 27
+\BOOKMARK [3][-]{subsubsection.5.3.3}{Performances}{subsection.5.3}% 28
+\BOOKMARK [2][-]{subsection.5.4}{Am\351lioration et future design}{section.5}% 29
+\BOOKMARK [1][-]{section.6}{Performances Mesur\351es}{}% 30
+\BOOKMARK [2][-]{subsection.6.1}{Performances ARM}{section.6}% 31
+\BOOKMARK [2][-]{subsection.6.2}{Performances HLS}{section.6}% 32
+\BOOKMARK [2][-]{subsection.6.3}{Performances PC}{section.6}% 33
+\BOOKMARK [1][-]{section.7}{Conclusion et perspectives}{}% 34

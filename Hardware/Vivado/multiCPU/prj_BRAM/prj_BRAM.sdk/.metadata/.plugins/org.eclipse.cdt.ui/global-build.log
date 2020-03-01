@@ -9574,3 +9574,144 @@ mb-size micro_hello.elf  |tee "micro_hello.elf.size"
   63892	   1724	   2152	  67768	  108b8	micro_hello.elf
 'Finished building: micro_hello.elf.size'
 ' '
+17:28:32 **** Incremental Build of configuration Debug for project micro_hello ****
+make all 
+make: Nothing to be done for 'all'.
+17:28:33 **** Incremental Build of configuration Debug for project zynq_hello ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+17:29:00 **** Incremental Build of configuration Debug for project zynq_hello ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+17:29:31 **** Incremental Build of configuration Debug for project micro_hello ****
+make all 
+make: Nothing to be done for 'all'.
+17:29:32 **** Incremental Build of configuration Debug for project zynq_hello ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+17:29:50 **** Incremental Build of configuration Debug for project micro_hello ****
+make all 
+make: Nothing to be done for 'all'.
+17:29:50 **** Incremental Build of configuration Debug for project zynq_hello ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+17:30:22 **** Incremental Build of configuration Debug for project micro_hello ****
+make all 
+make: Nothing to be done for 'all'.
+17:30:22 **** Incremental Build of configuration Debug for project zynq_hello ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+17:30:48 **** Incremental Build of configuration Debug for project zynq_hello ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+17:30:59 **** Incremental Build of configuration Debug for project micro_hello ****
+make all 
+make: Nothing to be done for 'all'.
+17:31:49 **** Auto Build of configuration Debug for project micro_hello ****
+make all 
+'Building target: micro_hello.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../micro_hello_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "micro_hello.elf"  ./src/micro_hello.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: micro_hello.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size micro_hello.elf  |tee "micro_hello.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  63892	   1724	   2152	  67768	  108b8	micro_hello.elf
+'Finished building: micro_hello.elf.size'
+' '
+17:31:54 **** Incremental Build of configuration Debug for project micro_hello ****
+make all 
+make: Nothing to be done for 'all'.
+17:32:05 **** Incremental Build of configuration Debug for project micro_hello ****
+make all 
+make: Nothing to be done for 'all'.
+17:38:21 **** Auto Build of configuration Debug for project micro_hello ****
+make all 
+'Building target: micro_hello.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../micro_hello_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "micro_hello.elf"  ./src/micro_hello.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: micro_hello.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size micro_hello.elf  |tee "micro_hello.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  63892	   1724	   2148	  67764	  108b4	micro_hello.elf
+'Finished building: micro_hello.elf.size'
+' '
+17:38:26 **** Incremental Build of configuration Debug for project micro_hello ****
+make all 
+make: Nothing to be done for 'all'.
+17:38:27 **** Incremental Build of configuration Debug for project zynq_hello ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+17:38:51 **** Incremental Build of configuration Debug for project zynq_hello ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+17:39:02 **** Incremental Build of configuration Debug for project micro_hello ****
+make all 
+make: Nothing to be done for 'all'.
+17:39:11 **** Incremental Build of configuration Debug for project micro_hello ****
+make all 
+make: Nothing to be done for 'all'.
+18:38:17 **** Clean-only build of configuration Debug for project micro_hello ****
+make clean 
+rm -rf  ./src/micro_hello.o ./src/platform.o  ./src/micro_hello.d ./src/platform.d  micro_hello.elf.size  micro_hello.elf
+' '
+18:38:18 **** Auto Build of configuration Debug for project micro_hello ****
+make all 
+'Building file: ../src/micro_hello.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/micro_hello.o" -I../../micro_hello_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/micro_hello.d" -MT"src/micro_hello.o" -o "src/micro_hello.o" "../src/micro_hello.c"
+../src/micro_hello.c: In function 'main':
+../src/micro_hello.c:60:28: warning: unused variable 'ExecTimeInTicks' [-Wunused-variable]
+  u32 Start_Time, End_Time, ExecTimeInTicks;
+                            ^~~~~~~~~~~~~~~
+../src/micro_hello.c:60:18: warning: unused variable 'End_Time' [-Wunused-variable]
+  u32 Start_Time, End_Time, ExecTimeInTicks;
+                  ^~~~~~~~
+../src/micro_hello.c:60:6: warning: unused variable 'Start_Time' [-Wunused-variable]
+  u32 Start_Time, End_Time, ExecTimeInTicks;
+      ^~~~~~~~~~
+'Finished building: ../src/micro_hello.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../micro_hello_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: micro_hello.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../micro_hello_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "micro_hello.elf"  ./src/micro_hello.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: micro_hello.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size micro_hello.elf  |tee "micro_hello.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  63892	   1724	   2152	  67768	  108b8	micro_hello.elf
+'Finished building: micro_hello.elf.size'
+' '
+19:23:25 **** Incremental Build of configuration Debug for project micro_hello ****
+make all 
+make: Nothing to be done for 'all'.
+19:23:44 **** Incremental Build of configuration Debug for project zynq_hello ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.

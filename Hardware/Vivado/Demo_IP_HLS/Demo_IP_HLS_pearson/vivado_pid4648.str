@@ -1166,3 +1166,27 @@ dismissMenu(PAResourceItoN.MainMenuMgr_VIEW, "View"); // Z (q, cl)
 // WARNING: HSwingWorker (Update Runs Swing Worker) is taking 7684 ms. Increasing delay to 10000 ms.
 // WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 429 ms. Decreasing delay to 2429 ms.
 // WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1322 ms. Increasing delay to 3966 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1879 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,302 MB. GUI used memory: 186 MB. Current time: 3/1/20, 5:28:18 PM CET
+// Elapsed time: 1312 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // k (j, cl)
+// WARNING: HEventQueue.dispatchEvent() is taking  1222 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,302 MB. GUI used memory: 186 MB. Current time: 3/1/20, 5:58:18 PM CET
+// Elapsed time: 2919 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // Z (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ae (cl)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ae (cl)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent"); // ae (cl)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent"); // ae (cl)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent"); // ae (cl)
+selectMenuItem(PAResourceCommand.PACommandNames_OPEN_PROJECT, "Open..."); // ah (cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // Z (q, cl)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_PROJECT
+dismissFileChooser();
+// 'i' command handler elapsed time: 3 seconds
+// HMemoryUtils.trashcanNow. Engine heap size: 2,302 MB. GUI used memory: 187 MB. Current time: 3/1/20, 6:28:18 PM CET
+// WARNING: HEventQueue.dispatchEvent() is taking  1093 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 3072 ms. Increasing delay to 9216 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,302 MB. GUI used memory: 187 MB. Current time: 3/1/20, 6:58:19 PM CET
+// WARNING: HEventQueue.dispatchEvent() is taking  1967 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,302 MB. GUI used memory: 187 MB. Current time: 3/1/20, 7:28:19 PM CET

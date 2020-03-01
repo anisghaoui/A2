@@ -128,3 +128,38 @@ refresh_design
 file copy -force C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.runs/impl_1/design_IP_wrapper.sysdef C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.sdk/design_IP_wrapper.hdf
 
 open_bd_design {C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/design_IP.bd}
+reset_run impl_1
+startgroup
+set_property report_strategy {Vivado Implementation Default Reports} [get_runs impl_1]
+endgroup
+set_property strategy {Vivado Implementation Defaults} [get_runs impl_1]
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/design_IP.bd]
+refresh_design
+create_run impl_2 -parent_run synth_1 -flow {Vivado Implementation 2019}
+create_run impl_3 -parent_run synth_1 -flow {Vivado Implementation 2019} -strategy Performance_Explore -report_strategy {UltraFast Design Methodology Reports}
+launch_runs impl_2 impl_3 -jobs 8
+wait_on_run impl_2
+wait_on_run impl_3
+reset_run impl_1
+startgroup
+set_property report_strategy {Performance Explore Reports} [get_runs impl_1]
+endgroup
+set_property strategy Performance_Retiming [get_runs impl_1]
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/design_IP.bd]
+refresh_design
+open_run impl_2
+current_design impl_1
+current_design impl_2
+current_design impl_1
+open_run impl_3
+current_design impl_1
+create_run impl_4 -parent_run synth_1 -flow {Vivado Implementation 2019} -strategy Performance_RefinePlacement -report_strategy {UltraFast Design Methodology Reports}
+launch_runs impl_4 -jobs 8
+wait_on_run impl_4
+create_run synth_2 -flow {Vivado Synthesis 2019} -strategy Flow_PerfOptimized_high
+launch_runs synth_2 -jobs 8
+wait_on_run synth_2

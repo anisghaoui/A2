@@ -17,7 +17,6 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param chipscope.maxJobs 2
 create_project -in_memory -part xc7z020clg484-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -61,41 +60,27 @@ set_property used_in_implementation false [get_files -all c:/Users/Qlala/Documen
 set_property used_in_implementation false [get_files -all c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiCPU/prj_BRAM/prj_BRAM.srcs/sources_1/bd/design_mb/ip/design_mb_rst_clk_wiz_0_100M_1_2/design_mb_rst_clk_wiz_0_100M_1_2_board.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiCPU/prj_BRAM/prj_BRAM.srcs/sources_1/bd/design_mb/ip/design_mb_rst_clk_wiz_0_100M_1_2/design_mb_rst_clk_wiz_0_100M_1_2.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiCPU/prj_BRAM/prj_BRAM.srcs/sources_1/bd/design_mb/ip/design_mb_rst_clk_wiz_0_100M_1_2/design_mb_rst_clk_wiz_0_100M_1_2_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiCPU/prj_BRAM/prj_BRAM.srcs/sources_1/bd/design_mb/ip/design_mb_xbar_6/design_mb_xbar_6_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiCPU/prj_BRAM/prj_BRAM.srcs/sources_1/bd/design_mb/ip/design_mb_xbar_7/design_mb_xbar_7_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiCPU/prj_BRAM/prj_BRAM.srcs/sources_1/bd/design_mb/ip/design_mb_axi_timer_0_0/design_mb_axi_timer_0_0.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiCPU/prj_BRAM/prj_BRAM.srcs/sources_1/bd/design_mb/ip/design_mb_axi_timer_0_0/design_mb_axi_timer_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiCPU/prj_BRAM/prj_BRAM.srcs/sources_1/bd/design_mb/ip/design_mb_axi_bram_ctrl_0_0/design_mb_axi_bram_ctrl_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiCPU/prj_BRAM/prj_BRAM.srcs/sources_1/bd/design_mb/ip/design_mb_axi_bram_ctrl_0_bram_0/design_mb_axi_bram_ctrl_0_bram_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiCPU/prj_BRAM/prj_BRAM.srcs/sources_1/bd/design_mb/ip/design_mb_xbar_8/design_mb_xbar_8_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiCPU/prj_BRAM/prj_BRAM.srcs/sources_1/bd/design_mb/ip/design_mb_auto_pc_2/design_mb_auto_pc_2_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiCPU/prj_BRAM/prj_BRAM.srcs/sources_1/bd/design_mb/ip/design_mb_auto_pc_3/design_mb_auto_pc_3_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiCPU/prj_BRAM/prj_BRAM.srcs/sources_1/bd/design_mb/ip/design_mb_auto_pc_0/design_mb_auto_pc_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiCPU/prj_BRAM/prj_BRAM.srcs/sources_1/bd/design_mb/ip/design_mb_auto_pc_1/design_mb_auto_pc_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiCPU/prj_BRAM/prj_BRAM.srcs/sources_1/bd/design_mb/ip/design_mb_auto_pc_4/design_mb_auto_pc_4_ooc.xdc]
 set_property used_in_synthesis false [get_files -all c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiCPU/prj_BRAM/prj_BRAM.srcs/sources_1/bd/design_mb/ip/design_mb_auto_us_0/design_mb_auto_us_0_clocks.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiCPU/prj_BRAM/prj_BRAM.srcs/sources_1/bd/design_mb/ip/design_mb_auto_us_0/design_mb_auto_us_0_clocks.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiCPU/prj_BRAM/prj_BRAM.srcs/sources_1/bd/design_mb/ip/design_mb_auto_us_0/design_mb_auto_us_0_ooc.xdc]
 set_property used_in_synthesis false [get_files -all c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiCPU/prj_BRAM/prj_BRAM.srcs/sources_1/bd/design_mb/ip/design_mb_auto_cc_0/design_mb_auto_cc_0_clocks.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiCPU/prj_BRAM/prj_BRAM.srcs/sources_1/bd/design_mb/ip/design_mb_auto_cc_0/design_mb_auto_cc_0_clocks.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiCPU/prj_BRAM/prj_BRAM.srcs/sources_1/bd/design_mb/ip/design_mb_auto_cc_0/design_mb_auto_cc_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiCPU/prj_BRAM/prj_BRAM.srcs/sources_1/bd/design_mb/ip/design_mb_auto_pc_4/design_mb_auto_pc_4_ooc.xdc]
-set_property used_in_synthesis false [get_files -all c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiCPU/prj_BRAM/prj_BRAM.srcs/sources_1/bd/design_mb/ip/design_mb_auto_ds_0/design_mb_auto_ds_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiCPU/prj_BRAM/prj_BRAM.srcs/sources_1/bd/design_mb/ip/design_mb_auto_ds_0/design_mb_auto_ds_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiCPU/prj_BRAM/prj_BRAM.srcs/sources_1/bd/design_mb/ip/design_mb_auto_ds_0/design_mb_auto_ds_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiCPU/prj_BRAM/prj_BRAM.srcs/sources_1/bd/design_mb/ip/design_mb_auto_pc_5/design_mb_auto_pc_5_ooc.xdc]
-set_property used_in_synthesis false [get_files -all c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiCPU/prj_BRAM/prj_BRAM.srcs/sources_1/bd/design_mb/ip/design_mb_auto_ds_1/design_mb_auto_ds_1_clocks.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiCPU/prj_BRAM/prj_BRAM.srcs/sources_1/bd/design_mb/ip/design_mb_auto_ds_1/design_mb_auto_ds_1_clocks.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiCPU/prj_BRAM/prj_BRAM.srcs/sources_1/bd/design_mb/ip/design_mb_auto_ds_1/design_mb_auto_ds_1_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiCPU/prj_BRAM/prj_BRAM.srcs/sources_1/bd/design_mb/ip/design_mb_auto_pc_6/design_mb_auto_pc_6_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiCPU/prj_BRAM/prj_BRAM.srcs/sources_1/bd/design_mb/ip/design_mb_auto_pc_7/design_mb_auto_pc_7_ooc.xdc]
 set_property used_in_synthesis false [get_files -all c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiCPU/prj_BRAM/prj_BRAM.srcs/sources_1/bd/design_mb/ip/design_mb_auto_cc_1/design_mb_auto_cc_1_clocks.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiCPU/prj_BRAM/prj_BRAM.srcs/sources_1/bd/design_mb/ip/design_mb_auto_cc_1/design_mb_auto_cc_1_clocks.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiCPU/prj_BRAM/prj_BRAM.srcs/sources_1/bd/design_mb/ip/design_mb_auto_cc_1/design_mb_auto_cc_1_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiCPU/prj_BRAM/prj_BRAM.srcs/sources_1/bd/design_mb/ip/design_mb_auto_pc_8/design_mb_auto_pc_8_ooc.xdc]
-set_property used_in_synthesis false [get_files -all c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiCPU/prj_BRAM/prj_BRAM.srcs/sources_1/bd/design_mb/ip/design_mb_auto_cc_2/design_mb_auto_cc_2_clocks.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiCPU/prj_BRAM/prj_BRAM.srcs/sources_1/bd/design_mb/ip/design_mb_auto_cc_2/design_mb_auto_cc_2_clocks.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiCPU/prj_BRAM/prj_BRAM.srcs/sources_1/bd/design_mb/ip/design_mb_auto_cc_2/design_mb_auto_cc_2_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiCPU/prj_BRAM/prj_BRAM.srcs/sources_1/bd/design_mb/ip/design_mb_auto_pc_9/design_mb_auto_pc_9_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiCPU/prj_BRAM/prj_BRAM.srcs/sources_1/bd/design_mb/ip/design_mb_auto_pc_6/design_mb_auto_pc_6_ooc.xdc]
 set_property used_in_implementation false [get_files -all C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiCPU/prj_BRAM/prj_BRAM.srcs/sources_1/bd/design_mb/design_mb_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiCPU/prj_BRAM/prj_BRAM.srcs/sources_1/bd/design_mb/ip/design_mb_microblaze_0_0/data/mb_bootloop_le.elf]
 
