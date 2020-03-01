@@ -61,6 +61,9 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_mb_xbar_
 # IP: bd/design_mb/ip/design_mb_axi_interconnect_0_0/design_mb_axi_interconnect_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_mb_axi_interconnect_0_0 || ORIG_REF_NAME==design_mb_axi_interconnect_0_0} -quiet] -quiet
 
+# IP: bd/design_mb/ip/design_mb_axi_timer_0_0/design_mb_axi_timer_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_mb_axi_timer_0_0 || ORIG_REF_NAME==design_mb_axi_timer_0_0} -quiet] -quiet
+
 # IP: bd/design_mb/ip/design_mb_auto_pc_0/design_mb_auto_pc_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_mb_auto_pc_0 || ORIG_REF_NAME==design_mb_auto_pc_0} -quiet] -quiet
 

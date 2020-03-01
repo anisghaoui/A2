@@ -1,0 +1,2419 @@
+22:46:01 **** Build of project pearson_test_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_5/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_9/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/gpio_v4_4/src"
+make -C ps7_cortexa9_0/libsrc/gpio_v4_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/pearson_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/pearson_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v4_0/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v4_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/sdps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v7_0/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v7_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ttcps_v3_9/src"
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_5/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling coresightps_dcc"
+arm-none-eabi-ar: creating ../../../lib/libxil.a
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_9/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_9/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling emacps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling gpiops"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpio_v4_4/src"
+make -C ps7_cortexa9_0/libsrc/gpio_v4_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling gpio"
+"Running Make libs in ps7_cortexa9_0/libsrc/pearson_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/pearson_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling pearson"
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling qspips"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v4_0/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v4_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/sdps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling sdps"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v7_0/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v7_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling standalone"
+In file included from usleep.c:56:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xil_sleeptimer.c:51:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xtime_l.c:49:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from sleep.c:53:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/ttcps_v3_9/src"
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_9/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling ttcps"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling usbps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling xadcps"
+'Finished building libraries'
+22:46:38 **** Build of configuration Debug for project pearson_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../pearson_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/pearson.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/pearson.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../pearson_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pearson.d" -MT"src/pearson.o" -o "src/pearson.o" "../src/pearson.c"
+'Finished building: ../src/pearson.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../pearson_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: pearson_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../pearson_test_bsp/ps7_cortexa9_0/lib -o "pearson_test.elf"  ./src/helloworld.o ./src/pearson.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: pearson_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size pearson_test.elf  |tee "pearson_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19064	   1144	  22568	  42776	   a718	pearson_test.elf
+'Finished building: pearson_test.elf.size'
+' '
+22:48:43 **** Auto Build of configuration Debug for project pearson_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+22:49:24 **** Auto Build of configuration Debug for project pearson_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+22:49:59 **** Auto Build of configuration Debug for project pearson_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/pearson.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/pearson.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../pearson_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pearson.d" -MT"src/pearson.o" -o "src/pearson.o" "../src/pearson.c"
+../src/pearson.c: In function 'test_pearson':
+../src/pearson.c:40:2: warning: implicit declaration of function 'pearson'; did you mean 'perror'? [-Wimplicit-function-declaration]
+  pearson(Mat,&result);
+  ^~~~~~~
+  perror
+'Finished building: ../src/pearson.c'
+' '
+'Building target: pearson_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../pearson_test_bsp/ps7_cortexa9_0/lib -o "pearson_test.elf"  ./src/helloworld.o ./src/pearson.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: ./src/pearson.o: in function `test_pearson':
+C:\A2_project\Vivado\Demo_IP_HLS\Demo_IP_HLS_pearson\Demo_IP_HLS_pearson.sdk\pearson_test\Debug/../src/pearson.c:40: undefined reference to `pearson'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:41: pearson_test.elf] Error 1
+22:50:46 **** Auto Build of configuration Debug for project pearson_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/pearson.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/pearson.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../pearson_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pearson.d" -MT"src/pearson.o" -o "src/pearson.o" "../src/pearson.c"
+In file included from ../src/pearson.c:10:
+../../pearson_test_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+../src/pearson.c: In function 'test_pearson':
+../src/pearson.c:41:2: warning: implicit declaration of function 'pearson'; did you mean 'perror'? [-Wimplicit-function-declaration]
+  pearson(Mat,&result);
+  ^~~~~~~
+  perror
+../src/pearson.c:45:2: error: 'ExecTimeInTicks' undeclared (first use in this function)
+  ExecTimeInTicks = End_Time - Start_Time;
+  ^~~~~~~~~~~~~~~
+../src/pearson.c:45:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/pearson.c:45:20: error: 'End_Time' undeclared (first use in this function); did you mean 'XTime'?
+  ExecTimeInTicks = End_Time - Start_Time;
+                    ^~~~~~~~
+                    XTime
+../src/pearson.c:45:31: error: 'Start_Time' undeclared (first use in this function)
+  ExecTimeInTicks = End_Time - Start_Time;
+                               ^~~~~~~~~~
+../src/pearson.c:51:2: warning: implicit declaration of function 'multiply_block_sw' [-Wimplicit-function-declaration]
+  multiply_block_sw((float**)A,(float**)B,(float**)result);
+  ^~~~~~~~~~~~~~~~~
+../src/pearson.c:51:29: error: 'A' undeclared (first use in this function)
+  multiply_block_sw((float**)A,(float**)B,(float**)result);
+                             ^
+../src/pearson.c:51:40: error: 'B' undeclared (first use in this function)
+  multiply_block_sw((float**)A,(float**)B,(float**)result);
+                                        ^
+../src/pearson.c:51:2: error: cannot convert to a pointer type
+  multiply_block_sw((float**)A,(float**)B,(float**)result);
+  ^~~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:29: src/pearson.o] Error 1
+22:52:08 **** Auto Build of configuration Debug for project pearson_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/pearson.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/pearson.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../pearson_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pearson.d" -MT"src/pearson.o" -o "src/pearson.o" "../src/pearson.c"
+In file included from ../src/pearson.c:10:
+../../pearson_test_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+../src/pearson.c: In function 'pearson_sw':
+../src/pearson.c:14: warning: ignoring #pragma HLS INTERFACE [-Wunknown-pragmas]
+ #pragma HLS INTERFACE s_axilite port=return bundle=CONTROL_BUS
+ 
+../src/pearson.c:15: warning: ignoring #pragma HLS INTERFACE [-Wunknown-pragmas]
+ #pragma HLS INTERFACE m_axi depth=40 port=mat offset=slave bundle=INPUT
+ 
+../src/pearson.c:16: warning: ignoring #pragma HLS INTERFACE [-Wunknown-pragmas]
+ #pragma HLS INTERFACE m_axi port=result offset=slave bundle=OUTPUT
+ 
+../src/pearson.c:27:9: warning: implicit declaration of function 'moyenne' [-Wimplicit-function-declaration]
+  moyX = moyenne(mat, 0);
+         ^~~~~~~
+../src/pearson.c:29:10: warning: implicit declaration of function 'moyenneXY' [-Wimplicit-function-declaration]
+  moyXY = moyenneXY(mat, 0, 1);
+          ^~~~~~~~~
+../src/pearson.c:30:9: warning: implicit declaration of function 'ecartType' [-Wimplicit-function-declaration]
+  ectX = ecartType(mat, 0, moyX);
+         ^~~~~~~~~
+../src/pearson.c:18:6: warning: unused variable 'j' [-Wunused-variable]
+  int j;
+      ^
+../src/pearson.c:17:6: warning: unused variable 'i' [-Wunused-variable]
+  int i;
+      ^
+../src/pearson.c: At top level:
+../src/pearson.c:38:7: error: conflicting types for 'moyenne'
+ float moyenne(float mat[N_ROWS][N_COLS], int col)
+       ^~~~~~~
+../src/pearson.c:27:9: note: previous implicit declaration of 'moyenne' was here
+  moyX = moyenne(mat, 0);
+         ^~~~~~~
+../src/pearson.c:54:7: error: conflicting types for 'moyenneXY'
+ float moyenneXY(float mat[N_ROWS][N_COLS], int colX, int colY)
+       ^~~~~~~~~
+../src/pearson.c:29:10: note: previous implicit declaration of 'moyenneXY' was here
+  moyXY = moyenneXY(mat, 0, 1);
+          ^~~~~~~~~
+../src/pearson.c:70:7: error: conflicting types for 'ecartType'
+ float ecartType(float mat[N_ROWS][N_COLS], int col, float moy)
+       ^~~~~~~~~
+../src/pearson.c:30:9: note: previous implicit declaration of 'ecartType' was here
+  ectX = ecartType(mat, 0, moyX);
+         ^~~~~~~~~
+../src/pearson.c: In function 'test_pearson':
+../src/pearson.c:114:2: warning: implicit declaration of function 'pearson'; did you mean 'pearson_sw'? [-Wimplicit-function-declaration]
+  pearson(Mat,&result);
+  ^~~~~~~
+  pearson_sw
+../src/pearson.c:124:2: warning: implicit declaration of function 'multiply_block_sw' [-Wimplicit-function-declaration]
+  multiply_block_sw((float**)A,(float**)B,(float**)result);
+  ^~~~~~~~~~~~~~~~~
+../src/pearson.c:124:29: error: 'A' undeclared (first use in this function)
+  multiply_block_sw((float**)A,(float**)B,(float**)result);
+                             ^
+../src/pearson.c:124:29: note: each undeclared identifier is reported only once for each function it appears in
+../src/pearson.c:124:40: error: 'B' undeclared (first use in this function)
+  multiply_block_sw((float**)A,(float**)B,(float**)result);
+                                        ^
+../src/pearson.c:124:2: error: cannot convert to a pointer type
+  multiply_block_sw((float**)A,(float**)B,(float**)result);
+  ^~~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:29: src/pearson.o] Error 1
+22:52:39 **** Auto Build of configuration Debug for project pearson_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/pearson.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/pearson.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../pearson_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pearson.d" -MT"src/pearson.o" -o "src/pearson.o" "../src/pearson.c"
+In file included from ../src/pearson.c:10:
+../../pearson_test_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+../src/pearson.c: In function 'pearson_sw':
+../src/pearson.c:14: warning: ignoring #pragma HLS INTERFACE [-Wunknown-pragmas]
+ #pragma HLS INTERFACE s_axilite port=return bundle=CONTROL_BUS
+ 
+../src/pearson.c:15: warning: ignoring #pragma HLS INTERFACE [-Wunknown-pragmas]
+ #pragma HLS INTERFACE m_axi depth=40 port=mat offset=slave bundle=INPUT
+ 
+../src/pearson.c:16: warning: ignoring #pragma HLS INTERFACE [-Wunknown-pragmas]
+ #pragma HLS INTERFACE m_axi port=result offset=slave bundle=OUTPUT
+ 
+../src/pearson.c:27:9: warning: implicit declaration of function 'moyenne' [-Wimplicit-function-declaration]
+  moyX = moyenne(mat, 0);
+         ^~~~~~~
+../src/pearson.c:29:10: warning: implicit declaration of function 'moyenneXY' [-Wimplicit-function-declaration]
+  moyXY = moyenneXY(mat, 0, 1);
+          ^~~~~~~~~
+../src/pearson.c:30:9: warning: implicit declaration of function 'ecartType' [-Wimplicit-function-declaration]
+  ectX = ecartType(mat, 0, moyX);
+         ^~~~~~~~~
+../src/pearson.c:18:6: warning: unused variable 'j' [-Wunused-variable]
+  int j;
+      ^
+../src/pearson.c:17:6: warning: unused variable 'i' [-Wunused-variable]
+  int i;
+      ^
+../src/pearson.c: At top level:
+../src/pearson.c:38:7: error: conflicting types for 'moyenne'
+ float moyenne(float** mat, int col)
+       ^~~~~~~
+../src/pearson.c:27:9: note: previous implicit declaration of 'moyenne' was here
+  moyX = moyenne(mat, 0);
+         ^~~~~~~
+../src/pearson.c:54:29: error: expected ';', ',' or ')' before 'int'
+ float moyenneXY(float** mat int colX, int colY)
+                             ^~~
+../src/pearson.c:70:7: error: conflicting types for 'ecartType'
+ float ecartType(float** mat, int col, float moy)
+       ^~~~~~~~~
+../src/pearson.c:30:9: note: previous implicit declaration of 'ecartType' was here
+  ectX = ecartType(mat, 0, moyX);
+         ^~~~~~~~~
+../src/pearson.c: In function 'test_pearson':
+../src/pearson.c:114:2: warning: implicit declaration of function 'pearson'; did you mean 'pearson_sw'? [-Wimplicit-function-declaration]
+  pearson(Mat,&result);
+  ^~~~~~~
+  pearson_sw
+../src/pearson.c:124:2: warning: implicit declaration of function 'multiply_block_sw' [-Wimplicit-function-declaration]
+  multiply_block_sw((float**)A,(float**)B,(float**)result);
+  ^~~~~~~~~~~~~~~~~
+../src/pearson.c:124:29: error: 'A' undeclared (first use in this function)
+  multiply_block_sw((float**)A,(float**)B,(float**)result);
+                             ^
+../src/pearson.c:124:29: note: each undeclared identifier is reported only once for each function it appears in
+../src/pearson.c:124:40: error: 'B' undeclared (first use in this function)
+  multiply_block_sw((float**)A,(float**)B,(float**)result);
+                                        ^
+../src/pearson.c:124:2: error: cannot convert to a pointer type
+  multiply_block_sw((float**)A,(float**)B,(float**)result);
+  ^~~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:29: src/pearson.o] Error 1
+22:52:53 **** Auto Build of configuration Debug for project pearson_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/pearson.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/pearson.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../pearson_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pearson.d" -MT"src/pearson.o" -o "src/pearson.o" "../src/pearson.c"
+In file included from ../src/pearson.c:10:
+../../pearson_test_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+../src/pearson.c: In function 'pearson_sw':
+../src/pearson.c:24:9: warning: implicit declaration of function 'moyenne' [-Wimplicit-function-declaration]
+  moyX = moyenne(mat, 0);
+         ^~~~~~~
+../src/pearson.c:26:10: warning: implicit declaration of function 'moyenneXY' [-Wimplicit-function-declaration]
+  moyXY = moyenneXY(mat, 0, 1);
+          ^~~~~~~~~
+../src/pearson.c:27:9: warning: implicit declaration of function 'ecartType' [-Wimplicit-function-declaration]
+  ectX = ecartType(mat, 0, moyX);
+         ^~~~~~~~~
+../src/pearson.c:15:6: warning: unused variable 'j' [-Wunused-variable]
+  int j;
+      ^
+../src/pearson.c:14:6: warning: unused variable 'i' [-Wunused-variable]
+  int i;
+      ^
+../src/pearson.c: At top level:
+../src/pearson.c:35:7: error: conflicting types for 'moyenne'
+ float moyenne(float** mat, int col)
+       ^~~~~~~
+../src/pearson.c:24:9: note: previous implicit declaration of 'moyenne' was here
+  moyX = moyenne(mat, 0);
+         ^~~~~~~
+../src/pearson.c:51:29: error: expected ';', ',' or ')' before 'int'
+ float moyenneXY(float** mat int colX, int colY)
+                             ^~~
+../src/pearson.c:67:7: error: conflicting types for 'ecartType'
+ float ecartType(float** mat, int col, float moy)
+       ^~~~~~~~~
+../src/pearson.c:27:9: note: previous implicit declaration of 'ecartType' was here
+  ectX = ecartType(mat, 0, moyX);
+         ^~~~~~~~~
+../src/pearson.c: In function 'test_pearson':
+../src/pearson.c:111:2: warning: implicit declaration of function 'pearson'; did you mean 'pearson_sw'? [-Wimplicit-function-declaration]
+  pearson(Mat,&result);
+  ^~~~~~~
+  pearson_sw
+../src/pearson.c:121:2: warning: implicit declaration of function 'multiply_block_sw' [-Wimplicit-function-declaration]
+  multiply_block_sw((float**)A,(float**)B,(float**)result);
+  ^~~~~~~~~~~~~~~~~
+../src/pearson.c:121:29: error: 'A' undeclared (first use in this function)
+  multiply_block_sw((float**)A,(float**)B,(float**)result);
+                             ^
+../src/pearson.c:121:29: note: each undeclared identifier is reported only once for each function it appears in
+../src/pearson.c:121:40: error: 'B' undeclared (first use in this function)
+  multiply_block_sw((float**)A,(float**)B,(float**)result);
+                                        ^
+../src/pearson.c:121:2: error: cannot convert to a pointer type
+  multiply_block_sw((float**)A,(float**)B,(float**)result);
+  ^~~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:29: src/pearson.o] Error 1
+22:53:25 **** Auto Build of configuration Debug for project pearson_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/pearson.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/pearson.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../pearson_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pearson.d" -MT"src/pearson.o" -o "src/pearson.o" "../src/pearson.c"
+In file included from ../src/pearson.c:10:
+../../pearson_test_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+../src/pearson.c: In function 'pearson_sw':
+../src/pearson.c:24:9: warning: implicit declaration of function 'moyenne' [-Wimplicit-function-declaration]
+  moyX = moyenne(mat, 0);
+         ^~~~~~~
+../src/pearson.c:26:10: warning: implicit declaration of function 'moyenneXY' [-Wimplicit-function-declaration]
+  moyXY = moyenneXY(mat, 0, 1);
+          ^~~~~~~~~
+../src/pearson.c:27:9: warning: implicit declaration of function 'ecartType' [-Wimplicit-function-declaration]
+  ectX = ecartType(mat, 0, moyX);
+         ^~~~~~~~~
+../src/pearson.c:15:6: warning: unused variable 'j' [-Wunused-variable]
+  int j;
+      ^
+../src/pearson.c:14:6: warning: unused variable 'i' [-Wunused-variable]
+  int i;
+      ^
+../src/pearson.c: At top level:
+../src/pearson.c:35:7: error: conflicting types for 'moyenne'
+ float moyenne(float** mat, int col)
+       ^~~~~~~
+../src/pearson.c:24:9: note: previous implicit declaration of 'moyenne' was here
+  moyX = moyenne(mat, 0);
+         ^~~~~~~
+../src/pearson.c:51:7: error: conflicting types for 'moyenneXY'
+ float moyenneXY(float** mat, int colX, int colY)
+       ^~~~~~~~~
+../src/pearson.c:26:10: note: previous implicit declaration of 'moyenneXY' was here
+  moyXY = moyenneXY(mat, 0, 1);
+          ^~~~~~~~~
+../src/pearson.c:67:7: error: conflicting types for 'ecartType'
+ float ecartType(float** mat, int col, float moy)
+       ^~~~~~~~~
+../src/pearson.c:27:9: note: previous implicit declaration of 'ecartType' was here
+  ectX = ecartType(mat, 0, moyX);
+         ^~~~~~~~~
+../src/pearson.c: In function 'test_pearson':
+../src/pearson.c:111:2: warning: implicit declaration of function 'pearson'; did you mean 'pearson_sw'? [-Wimplicit-function-declaration]
+  pearson(Mat,&result);
+  ^~~~~~~
+  pearson_sw
+../src/pearson.c:121:2: warning: implicit declaration of function 'multiply_block_sw' [-Wimplicit-function-declaration]
+  multiply_block_sw((float**)A,(float**)B,(float**)result);
+  ^~~~~~~~~~~~~~~~~
+../src/pearson.c:121:29: error: 'A' undeclared (first use in this function)
+  multiply_block_sw((float**)A,(float**)B,(float**)result);
+                             ^
+../src/pearson.c:121:29: note: each undeclared identifier is reported only once for each function it appears in
+../src/pearson.c:121:40: error: 'B' undeclared (first use in this function)
+  multiply_block_sw((float**)A,(float**)B,(float**)result);
+                                        ^
+../src/pearson.c:121:2: error: cannot convert to a pointer type
+  multiply_block_sw((float**)A,(float**)B,(float**)result);
+  ^~~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:29: src/pearson.o] Error 1
+22:53:48 **** Auto Build of configuration Debug for project pearson_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/pearson.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/pearson.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../pearson_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pearson.d" -MT"src/pearson.o" -o "src/pearson.o" "../src/pearson.c"
+In file included from ../src/pearson.c:10:
+../../pearson_test_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+../src/pearson.c: In function 'pearson_sw':
+../src/pearson.c:65:6: warning: unused variable 'j' [-Wunused-variable]
+  int j;
+      ^
+../src/pearson.c:64:6: warning: unused variable 'i' [-Wunused-variable]
+  int i;
+      ^
+../src/pearson.c: In function 'test_pearson':
+../src/pearson.c:114:2: warning: implicit declaration of function 'pearson'; did you mean 'pearson_sw'? [-Wimplicit-function-declaration]
+  pearson(Mat,&result);
+  ^~~~~~~
+  pearson_sw
+../src/pearson.c:124:2: warning: implicit declaration of function 'multiply_block_sw' [-Wimplicit-function-declaration]
+  multiply_block_sw((float**)A,(float**)B,(float**)result);
+  ^~~~~~~~~~~~~~~~~
+../src/pearson.c:124:29: error: 'A' undeclared (first use in this function)
+  multiply_block_sw((float**)A,(float**)B,(float**)result);
+                             ^
+../src/pearson.c:124:29: note: each undeclared identifier is reported only once for each function it appears in
+../src/pearson.c:124:40: error: 'B' undeclared (first use in this function)
+  multiply_block_sw((float**)A,(float**)B,(float**)result);
+                                        ^
+../src/pearson.c:124:2: error: cannot convert to a pointer type
+  multiply_block_sw((float**)A,(float**)B,(float**)result);
+  ^~~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:29: src/pearson.o] Error 1
+22:54:12 **** Auto Build of configuration Debug for project pearson_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/pearson.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/pearson.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../pearson_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pearson.d" -MT"src/pearson.o" -o "src/pearson.o" "../src/pearson.c"
+In file included from ../src/pearson.c:10:
+../../pearson_test_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+../src/pearson.c: In function 'pearson_sw':
+../src/pearson.c:65:6: warning: unused variable 'j' [-Wunused-variable]
+  int j;
+      ^
+../src/pearson.c:64:6: warning: unused variable 'i' [-Wunused-variable]
+  int i;
+      ^
+../src/pearson.c: In function 'test_pearson':
+../src/pearson.c:114:2: warning: implicit declaration of function 'pearson'; did you mean 'pearson_sw'? [-Wimplicit-function-declaration]
+  pearson(Mat,&result);
+  ^~~~~~~
+  pearson_sw
+../src/pearson.c:124:13: warning: passing argument 1 of 'pearson_sw' from incompatible pointer type [-Wincompatible-pointer-types]
+  pearson_sw(Mat,&result);
+             ^~~
+../src/pearson.c:62:25: note: expected 'float **' but argument is of type 'float (*)[2]'
+ void pearson_sw(float** mat,float *result)
+                 ~~~~~~~~^~~
+'Finished building: ../src/pearson.c'
+' '
+'Building target: pearson_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../pearson_test_bsp/ps7_cortexa9_0/lib -o "pearson_test.elf"  ./src/helloworld.o ./src/pearson.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: ./src/pearson.o: in function `ecartType':
+C:\A2_project\Vivado\Demo_IP_HLS\Demo_IP_HLS_pearson\Demo_IP_HLS_pearson.sdk\pearson_test\Debug/../src/pearson.c:58: undefined reference to `sqrtf'
+c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: ./src/pearson.o: in function `test_pearson':
+C:\A2_project\Vivado\Demo_IP_HLS\Demo_IP_HLS_pearson\Demo_IP_HLS_pearson.sdk\pearson_test\Debug/../src/pearson.c:114: undefined reference to `pearson'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:41: pearson_test.elf] Error 1
+22:54:24 **** Auto Build of configuration Debug for project pearson_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/pearson.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/pearson.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../pearson_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pearson.d" -MT"src/pearson.o" -o "src/pearson.o" "../src/pearson.c"
+In file included from ../src/pearson.c:10:
+../../pearson_test_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+../src/pearson.c: In function 'pearson_sw':
+../src/pearson.c:65:6: warning: unused variable 'j' [-Wunused-variable]
+  int j;
+      ^
+../src/pearson.c:64:6: warning: unused variable 'i' [-Wunused-variable]
+  int i;
+      ^
+../src/pearson.c: In function 'test_pearson':
+../src/pearson.c:114:2: warning: implicit declaration of function 'pearson'; did you mean 'pearson_sw'? [-Wimplicit-function-declaration]
+  pearson(Mat,&result);
+  ^~~~~~~
+  pearson_sw
+'Finished building: ../src/pearson.c'
+' '
+'Building target: pearson_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../pearson_test_bsp/ps7_cortexa9_0/lib -o "pearson_test.elf"  ./src/helloworld.o ./src/pearson.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: ./src/pearson.o: in function `ecartType':
+C:\A2_project\Vivado\Demo_IP_HLS\Demo_IP_HLS_pearson\Demo_IP_HLS_pearson.sdk\pearson_test\Debug/../src/pearson.c:58: undefined reference to `sqrtf'
+c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: ./src/pearson.o: in function `test_pearson':
+C:\A2_project\Vivado\Demo_IP_HLS\Demo_IP_HLS_pearson\Demo_IP_HLS_pearson.sdk\pearson_test\Debug/../src/pearson.c:114: undefined reference to `pearson'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:41: pearson_test.elf] Error 1
+22:55:58 **** Auto Build of configuration Debug for project pearson_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/pearson.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/pearson.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../pearson_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pearson.d" -MT"src/pearson.o" -o "src/pearson.o" "../src/pearson.c"
+In file included from ../src/pearson.c:10:
+../../pearson_test_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+../src/pearson.c:13:10: fatal error: xperson.h: No such file or directory
+ #include "xperson.h"
+          ^~~~~~~~~~~
+compilation terminated.
+make: *** [src/subdir.mk:29: src/pearson.o] Error 1
+22:56:03 **** Auto Build of configuration Debug for project pearson_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/pearson.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/pearson.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../pearson_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pearson.d" -MT"src/pearson.o" -o "src/pearson.o" "../src/pearson.c"
+In file included from ../src/pearson.c:10:
+../../pearson_test_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+../src/pearson.c: In function 'pearson_sw':
+../src/pearson.c:66:6: warning: unused variable 'j' [-Wunused-variable]
+  int j;
+      ^
+../src/pearson.c:65:6: warning: unused variable 'i' [-Wunused-variable]
+  int i;
+      ^
+../src/pearson.c: At top level:
+../src/pearson.c:85:29: error: unknown type name 'XMultiply_block_64'
+ void init_multiply_block_ip(XMultiply_block_64* mb,XMultiply_block_64_Config* mb_c){
+                             ^~~~~~~~~~~~~~~~~~
+../src/pearson.c:85:52: error: unknown type name 'XMultiply_block_64_Config'
+ void init_multiply_block_ip(XMultiply_block_64* mb,XMultiply_block_64_Config* mb_c){
+                                                    ^~~~~~~~~~~~~~~~~~~~~~~~~
+../src/pearson.c: In function 'test_pearson':
+../src/pearson.c:129:2: warning: implicit declaration of function 'pearson'; did you mean 'pearson_sw'? [-Wimplicit-function-declaration]
+  pearson(Mat,&result);
+  ^~~~~~~
+  pearson_sw
+make: *** [src/subdir.mk:29: src/pearson.o] Error 1
+22:56:50 **** Auto Build of configuration Debug for project pearson_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/pearson.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/pearson.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../pearson_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pearson.d" -MT"src/pearson.o" -o "src/pearson.o" "../src/pearson.c"
+In file included from ../src/pearson.c:10:
+../../pearson_test_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+../src/pearson.c: In function 'pearson_sw':
+../src/pearson.c:66:6: warning: unused variable 'j' [-Wunused-variable]
+  int j;
+      ^
+../src/pearson.c:65:6: warning: unused variable 'i' [-Wunused-variable]
+  int i;
+      ^
+../src/pearson.c: At top level:
+../src/pearson.c:85:29: error: unknown type name 'Xpearson'; did you mean 'XPearson'?
+ void init_multiply_block_ip(Xpearson* xp,Xpearson_config* xp_c){
+                             ^~~~~~~~
+                             XPearson
+../src/pearson.c:85:42: error: unknown type name 'Xpearson_config'; did you mean 'XPearson_Config'?
+ void init_multiply_block_ip(Xpearson* xp,Xpearson_config* xp_c){
+                                          ^~~~~~~~~~~~~~~
+                                          XPearson_Config
+../src/pearson.c: In function 'test_pearson':
+../src/pearson.c:129:2: warning: implicit declaration of function 'pearson'; did you mean 'pearson_sw'? [-Wimplicit-function-declaration]
+  pearson(Mat,&result);
+  ^~~~~~~
+  pearson_sw
+make: *** [src/subdir.mk:29: src/pearson.o] Error 1
+22:57:00 **** Auto Build of configuration Debug for project pearson_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/pearson.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/pearson.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../pearson_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pearson.d" -MT"src/pearson.o" -o "src/pearson.o" "../src/pearson.c"
+In file included from ../src/pearson.c:10:
+../../pearson_test_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+../src/pearson.c: In function 'pearson_sw':
+../src/pearson.c:66:6: warning: unused variable 'j' [-Wunused-variable]
+  int j;
+      ^
+../src/pearson.c:65:6: warning: unused variable 'i' [-Wunused-variable]
+  int i;
+      ^
+../src/pearson.c: At top level:
+../src/pearson.c:85:42: error: unknown type name 'XPearson_config'; did you mean 'XPearson_Config'?
+ void init_multiply_block_ip(XPearson* xp,XPearson_config* xp_c){
+                                          ^~~~~~~~~~~~~~~
+                                          XPearson_Config
+../src/pearson.c: In function 'test_pearson':
+../src/pearson.c:129:2: warning: implicit declaration of function 'pearson'; did you mean 'pearson_sw'? [-Wimplicit-function-declaration]
+  pearson(Mat,&result);
+  ^~~~~~~
+  pearson_sw
+make: *** [src/subdir.mk:29: src/pearson.o] Error 1
+22:59:49 **** Auto Build of configuration Debug for project pearson_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/pearson.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/pearson.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../pearson_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pearson.d" -MT"src/pearson.o" -o "src/pearson.o" "../src/pearson.c"
+In file included from ../src/pearson.c:10:
+../../pearson_test_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+../src/pearson.c: In function 'pearson_sw':
+../src/pearson.c:66:6: warning: unused variable 'j' [-Wunused-variable]
+  int j;
+      ^
+../src/pearson.c:65:6: warning: unused variable 'i' [-Wunused-variable]
+  int i;
+      ^
+../src/pearson.c: In function 'test_pearson':
+../src/pearson.c:129:2: warning: implicit declaration of function 'pearson'; did you mean 'pearson_sw'? [-Wimplicit-function-declaration]
+  pearson(Mat,&result);
+  ^~~~~~~
+  pearson_sw
+'Finished building: ../src/pearson.c'
+' '
+'Building target: pearson_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../pearson_test_bsp/ps7_cortexa9_0/lib -o "pearson_test.elf"  ./src/helloworld.o ./src/pearson.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: ./src/pearson.o: in function `ecartType':
+C:\A2_project\Vivado\Demo_IP_HLS\Demo_IP_HLS_pearson\Demo_IP_HLS_pearson.sdk\pearson_test\Debug/../src/pearson.c:59: undefined reference to `sqrtf'
+c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: ./src/pearson.o: in function `test_pearson':
+C:\A2_project\Vivado\Demo_IP_HLS\Demo_IP_HLS_pearson\Demo_IP_HLS_pearson.sdk\pearson_test\Debug/../src/pearson.c:129: undefined reference to `pearson'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:41: pearson_test.elf] Error 1
+23:00:57 **** Auto Build of configuration Debug for project pearson_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building target: pearson_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../pearson_test_bsp/ps7_cortexa9_0/lib -o "pearson_test.elf"  ./src/helloworld.o ./src/pearson.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: ./src/pearson.o: in function `ecartType':
+C:\A2_project\Vivado\Demo_IP_HLS\Demo_IP_HLS_pearson\Demo_IP_HLS_pearson.sdk\pearson_test\Debug/../src/pearson.c:59: undefined reference to `sqrtf'
+c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: ./src/pearson.o: in function `test_pearson':
+C:\A2_project\Vivado\Demo_IP_HLS\Demo_IP_HLS_pearson\Demo_IP_HLS_pearson.sdk\pearson_test\Debug/../src/pearson.c:129: undefined reference to `pearson'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:41: pearson_test.elf] Error 1
+23:01:38 **** Auto Build of configuration Debug for project pearson_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/pearson.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/pearson.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../pearson_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pearson.d" -MT"src/pearson.o" -o "src/pearson.o" "../src/pearson.c"
+In file included from ../src/pearson.c:10:
+../../pearson_test_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+../src/pearson.c: In function 'pearson_sw':
+../src/pearson.c:66:6: warning: unused variable 'j' [-Wunused-variable]
+  int j;
+      ^
+../src/pearson.c:65:6: warning: unused variable 'i' [-Wunused-variable]
+  int i;
+      ^
+../src/pearson.c: In function 'test_pearson':
+../src/pearson.c:101:29: error: 'XPAR_' undeclared (first use in this function)
+  XPearson_Config xpear_c={0,XPAR_};
+                             ^~~~~
+../src/pearson.c:101:29: note: each undeclared identifier is reported only once for each function it appears in
+../src/pearson.c:131:2: warning: implicit declaration of function 'pearson'; did you mean 'pearson_sw'? [-Wimplicit-function-declaration]
+  pearson(Mat,&result);
+  ^~~~~~~
+  pearson_sw
+../src/pearson.c:101:18: warning: unused variable 'xpear_c' [-Wunused-variable]
+  XPearson_Config xpear_c={0,XPAR_};
+                  ^~~~~~~
+../src/pearson.c:100:11: warning: unused variable 'xpear' [-Wunused-variable]
+  XPearson xpear;
+           ^~~~~
+make: *** [src/subdir.mk:29: src/pearson.o] Error 1
+23:02:59 **** Auto Build of configuration Debug for project pearson_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/pearson.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/pearson.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../pearson_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pearson.d" -MT"src/pearson.o" -o "src/pearson.o" "../src/pearson.c"
+In file included from ../src/pearson.c:10:
+../../pearson_test_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+../src/pearson.c: In function 'pearson_sw':
+../src/pearson.c:66:6: warning: unused variable 'j' [-Wunused-variable]
+  int j;
+      ^
+../src/pearson.c:65:6: warning: unused variable 'i' [-Wunused-variable]
+  int i;
+      ^
+../src/pearson.c: In function 'test_pearson':
+../src/pearson.c:102:25: error: incompatible type for argument 2 of 'init_pearson_ip'
+  init_pearson_ip(&xpear,xpear_c);
+                         ^~~~~~~
+../src/pearson.c:85:52: note: expected 'XPearson_Config *' {aka 'struct <anonymous> *'} but argument is of type 'XPearson_Config' {aka 'struct <anonymous>'}
+ void init_pearson_ip(XPearson* xp,XPearson_Config* xp_c){
+                                   ~~~~~~~~~~~~~~~~~^~~~
+../src/pearson.c:131:2: warning: implicit declaration of function 'pearson'; did you mean 'pearson_sw'? [-Wimplicit-function-declaration]
+  pearson(Mat,&result);
+  ^~~~~~~
+  pearson_sw
+make: *** [src/subdir.mk:29: src/pearson.o] Error 1
+23:03:04 **** Auto Build of configuration Debug for project pearson_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/pearson.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/pearson.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../pearson_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pearson.d" -MT"src/pearson.o" -o "src/pearson.o" "../src/pearson.c"
+In file included from ../src/pearson.c:10:
+../../pearson_test_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+../src/pearson.c: In function 'pearson_sw':
+../src/pearson.c:66:6: warning: unused variable 'j' [-Wunused-variable]
+  int j;
+      ^
+../src/pearson.c:65:6: warning: unused variable 'i' [-Wunused-variable]
+  int i;
+      ^
+../src/pearson.c: In function 'test_pearson':
+../src/pearson.c:131:2: warning: implicit declaration of function 'pearson'; did you mean 'pearson_sw'? [-Wimplicit-function-declaration]
+  pearson(Mat,&result);
+  ^~~~~~~
+  pearson_sw
+'Finished building: ../src/pearson.c'
+' '
+'Building target: pearson_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../pearson_test_bsp/ps7_cortexa9_0/lib -o "pearson_test.elf"  ./src/helloworld.o ./src/pearson.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: ./src/pearson.o: in function `ecartType':
+C:\A2_project\Vivado\Demo_IP_HLS\Demo_IP_HLS_pearson\Demo_IP_HLS_pearson.sdk\pearson_test\Debug/../src/pearson.c:59: undefined reference to `sqrtf'
+c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: ./src/pearson.o: in function `test_pearson':
+C:\A2_project\Vivado\Demo_IP_HLS\Demo_IP_HLS_pearson\Demo_IP_HLS_pearson.sdk\pearson_test\Debug/../src/pearson.c:131: undefined reference to `pearson'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:41: pearson_test.elf] Error 1
+23:06:20 **** Auto Build of configuration Debug for project pearson_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/pearson.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/pearson.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../pearson_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pearson.d" -MT"src/pearson.o" -o "src/pearson.o" "../src/pearson.c"
+In file included from ../src/pearson.c:10:
+../../pearson_test_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+../src/pearson.c: In function 'pearson_sw':
+../src/pearson.c:66:6: warning: unused variable 'j' [-Wunused-variable]
+  int j;
+      ^
+../src/pearson.c:65:6: warning: unused variable 'i' [-Wunused-variable]
+  int i;
+      ^
+../src/pearson.c: At top level:
+../src/pearson.c:97:17: error: unknown type name 'Xpearson'; did you mean 'XPearson'?
+ void pearson_hw(Xpearson* xp,float** mat,float *result)void multiply_block_hw_call(XMultiply_block_64* mb_p,type* mA, type* mB, type* result){
+                 ^~~~~~~~
+                 XPearson
+../src/pearson.c: In function 'test_pearson':
+../src/pearson.c:157:2: warning: implicit declaration of function 'pearson'; did you mean 'pearson_sw'? [-Wimplicit-function-declaration]
+  pearson(Mat,&result);
+  ^~~~~~~
+  pearson_sw
+make: *** [src/subdir.mk:29: src/pearson.o] Error 1
+23:07:06 **** Auto Build of configuration Debug for project pearson_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/pearson.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/pearson.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../pearson_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pearson.d" -MT"src/pearson.o" -o "src/pearson.o" "../src/pearson.c"
+In file included from ../src/pearson.c:10:
+../../pearson_test_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+../src/pearson.c: In function 'pearson_sw':
+../src/pearson.c:66:6: warning: unused variable 'j' [-Wunused-variable]
+  int j;
+      ^
+../src/pearson.c:65:6: warning: unused variable 'i' [-Wunused-variable]
+  int i;
+      ^
+../src/pearson.c: At top level:
+../src/pearson.c:97:17: error: unknown type name 'Xpearson'; did you mean 'XPearson'?
+ void pearson_hw(Xpearson* xp,float** mat,float *result)void multiply_block_hw_call(XMultiply_block_64* mb_p,type* mA, type* mB, type* result){
+                 ^~~~~~~~
+                 XPearson
+../src/pearson.c: In function 'test_pearson':
+../src/pearson.c:158:2: warning: implicit declaration of function 'pearson_hw'; did you mean 'pearson_sw'? [-Wimplicit-function-declaration]
+  pearson_hw(&xpear,(float**)Mat,&result);
+  ^~~~~~~~~~
+  pearson_sw
+make: *** [src/subdir.mk:29: src/pearson.o] Error 1
+23:07:16 **** Auto Build of configuration Debug for project pearson_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/pearson.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/pearson.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../pearson_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pearson.d" -MT"src/pearson.o" -o "src/pearson.o" "../src/pearson.c"
+In file included from ../src/pearson.c:10:
+../../pearson_test_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+../src/pearson.c: In function 'pearson_sw':
+../src/pearson.c:66:6: warning: unused variable 'j' [-Wunused-variable]
+  int j;
+      ^
+../src/pearson.c:65:6: warning: unused variable 'i' [-Wunused-variable]
+  int i;
+      ^
+../src/pearson.c: In function 'pearson_hw':
+../src/pearson.c:97:84: error: unknown type name 'XMultiply_block_64'
+ void pearson_hw(XPearson* xp,float** mat,float *result)void multiply_block_hw_call(XMultiply_block_64* mb_p,type* mA, type* mB, type* result){
+                                                                                    ^~~~~~~~~~~~~~~~~~
+../src/pearson.c:97:109: error: unknown type name 'type'; did you mean 'typeof'?
+ void pearson_hw(XPearson* xp,float** mat,float *result)void multiply_block_hw_call(XMultiply_block_64* mb_p,type* mA, type* mB, type* result){
+                                                                                                             ^~~~
+                                                                                                             typeof
+../src/pearson.c:97:119: error: unknown type name 'type'; did you mean 'typeof'?
+ void pearson_hw(XPearson* xp,float** mat,float *result)void multiply_block_hw_call(XMultiply_block_64* mb_p,type* mA, type* mB, type* result){
+                                                                                                                       ^~~~
+                                                                                                                       typeof
+../src/pearson.c:97:129: error: unknown type name 'type'; did you mean 'typeof'?
+ void pearson_hw(XPearson* xp,float** mat,float *result)void multiply_block_hw_call(XMultiply_block_64* mb_p,type* mA, type* mB, type* result){
+                                                                                                                                 ^~~~
+                                                                                                                                 typeof
+../src/pearson.c:125:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+ {
+ ^
+../src/pearson.c:179: error: expected '{' at end of input
+make: *** [src/subdir.mk:29: src/pearson.o] Error 1
+23:07:51 **** Auto Build of configuration Debug for project pearson_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/pearson.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/pearson.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../pearson_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pearson.d" -MT"src/pearson.o" -o "src/pearson.o" "../src/pearson.c"
+In file included from ../src/pearson.c:10:
+../../pearson_test_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+../src/pearson.c: In function 'pearson_sw':
+../src/pearson.c:66:6: warning: unused variable 'j' [-Wunused-variable]
+  int j;
+      ^
+../src/pearson.c:65:6: warning: unused variable 'i' [-Wunused-variable]
+  int i;
+      ^
+'Finished building: ../src/pearson.c'
+' '
+'Building target: pearson_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../pearson_test_bsp/ps7_cortexa9_0/lib -o "pearson_test.elf"  ./src/helloworld.o ./src/pearson.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: ./src/pearson.o: in function `ecartType':
+C:\A2_project\Vivado\Demo_IP_HLS\Demo_IP_HLS_pearson\Demo_IP_HLS_pearson.sdk\pearson_test\Debug/../src/pearson.c:59: undefined reference to `sqrtf'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:41: pearson_test.elf] Error 1
+23:08:44 **** Auto Build of project pearson_test_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_5/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -lm"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -lm"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -lm"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -lm"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -lm"
+"Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_9/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -lm"
+"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -lm"
+"Running Make include in ps7_cortexa9_0/libsrc/gpio_v4_4/src"
+make -C ps7_cortexa9_0/libsrc/gpio_v4_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -lm"
+"Running Make include in ps7_cortexa9_0/libsrc/pearson_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/pearson_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -lm"
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -lm"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v4_0/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v4_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -lm"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -lm"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -lm"
+"Running Make include in ps7_cortexa9_0/libsrc/sdps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -lm"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v7_0/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v7_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -lm"
+"Running Make include in ps7_cortexa9_0/libsrc/ttcps_v3_9/src"
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -lm"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -lm"
+"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -lm"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -lm"
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_5/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -lm"
+"Compiling coresightps_dcc"
+arm-none-eabi-ar: creating ../../../lib/libxil.a
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -lm"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -lm"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -lm"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -lm"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_9/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_9/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -lm"
+"Compiling emacps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -lm"
+"Compiling gpiops"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpio_v4_4/src"
+make -C ps7_cortexa9_0/libsrc/gpio_v4_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -lm"
+"Compiling gpio"
+"Running Make libs in ps7_cortexa9_0/libsrc/pearson_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/pearson_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -lm"
+"Compiling pearson"
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -lm"
+"Compiling qspips"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v4_0/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v4_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -lm"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -lm"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -lm"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/sdps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -lm"
+"Compiling sdps"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v7_0/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v7_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -lm"
+"Compiling standalone"
+In file included from usleep.c:56:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xil_sleeptimer.c:51:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xtime_l.c:49:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from sleep.c:53:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/ttcps_v3_9/src"
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_9/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -lm"
+"Compiling ttcps"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -lm"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -lm"
+"Compiling usbps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -lm"
+"Compiling xadcps"
+'Finished building libraries'
+23:09:17 **** Auto Build of configuration Debug for project pearson_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../pearson_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/pearson.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/pearson.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../pearson_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pearson.d" -MT"src/pearson.o" -o "src/pearson.o" "../src/pearson.c"
+In file included from ../src/pearson.c:10:
+../../pearson_test_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+../src/pearson.c: In function 'pearson_sw':
+../src/pearson.c:66:6: warning: unused variable 'j' [-Wunused-variable]
+  int j;
+      ^
+../src/pearson.c:65:6: warning: unused variable 'i' [-Wunused-variable]
+  int i;
+      ^
+'Finished building: ../src/pearson.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../pearson_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: pearson_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../pearson_test_bsp/ps7_cortexa9_0/lib -o "pearson_test.elf"  ./src/helloworld.o ./src/pearson.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: ./src/pearson.o: in function `ecartType':
+C:\A2_project\Vivado\Demo_IP_HLS\Demo_IP_HLS_pearson\Demo_IP_HLS_pearson.sdk\pearson_test\Debug/../src/pearson.c:59: undefined reference to `sqrtf'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:41: pearson_test.elf] Error 1
+23:10:07 **** Auto Build of project pearson_test_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_5/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -lm"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -lm"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -lm"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -lm"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -lm"
+"Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_9/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -lm"
+"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -lm"
+"Running Make include in ps7_cortexa9_0/libsrc/gpio_v4_4/src"
+make -C ps7_cortexa9_0/libsrc/gpio_v4_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -lm"
+"Running Make include in ps7_cortexa9_0/libsrc/libmetal_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/libmetal_v2_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -lm"
+"Running Make include in ps7_cortexa9_0/libsrc/pearson_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/pearson_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -lm"
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -lm"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v4_0/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v4_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -lm"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -lm"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -lm"
+"Running Make include in ps7_cortexa9_0/libsrc/sdps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -lm"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v7_0/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v7_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -lm"
+"Running Make include in ps7_cortexa9_0/libsrc/ttcps_v3_9/src"
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -lm"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -lm"
+"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -lm"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -lm"
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_5/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -lm"
+"Compiling coresightps_dcc"
+arm-none-eabi-ar: creating ../../../lib/libxil.a
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -lm"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -lm"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -lm"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -lm"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_9/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_9/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -lm"
+"Compiling emacps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -lm"
+"Compiling gpiops"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpio_v4_4/src"
+make -C ps7_cortexa9_0/libsrc/gpio_v4_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -lm"
+"Compiling gpio"
+"Running Make libs in ps7_cortexa9_0/libsrc/libmetal_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/libmetal_v2_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -lm"
+Scanning dependencies of target metal-static
+[  5%] Building C object lib/CMakeFiles/metal-static.dir/dma.c.obj
+[ 10%] Building C object lib/CMakeFiles/metal-static.dir/device.c.obj
+[ 15%] Building C object lib/CMakeFiles/metal-static.dir/init.c.obj
+[ 21%] Building C object lib/CMakeFiles/metal-static.dir/io.c.obj
+[ 26%] Building C object lib/CMakeFiles/metal-static.dir/irq.c.obj
+[ 31%] Building C object lib/CMakeFiles/metal-static.dir/log.c.obj
+[ 36%] Building C object lib/CMakeFiles/metal-static.dir/shmem.c.obj
+[ 42%] Building C object lib/CMakeFiles/metal-static.dir/shmem-provider.c.obj
+[ 47%] Building C object lib/CMakeFiles/metal-static.dir/softirq.c.obj
+[ 52%] Building C object lib/CMakeFiles/metal-static.dir/version.c.obj
+[ 57%] Building C object lib/CMakeFiles/metal-static.dir/system/generic/condition.c.obj
+[ 63%] Building C object lib/CMakeFiles/metal-static.dir/system/generic/device.c.obj
+[ 68%] Building C object lib/CMakeFiles/metal-static.dir/system/generic/init.c.obj
+[ 73%] Building C object lib/CMakeFiles/metal-static.dir/system/generic/io.c.obj
+[ 78%] Building C object lib/CMakeFiles/metal-static.dir/system/generic/irq.c.obj
+[ 84%] Building C object lib/CMakeFiles/metal-static.dir/system/generic/time.c.obj
+[ 89%] Building C object lib/CMakeFiles/metal-static.dir/system/generic/zynq7/sys.c.obj
+[ 94%] Building C object lib/CMakeFiles/metal-static.dir/system/generic/xlnx_common/irq.c.obj
+[100%] Linking C static library libmetal.a
+C:/Xilinx/SDK/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/arm-none-eabi-ar.exe cq libmetal.a  CMakeFiles/metal-static.dir/dma.c.obj CMakeFiles/metal-static.dir/device.c.obj CMakeFiles/metal-static.dir/init.c.obj CMakeFiles/metal-static.dir/io.c.obj CMakeFiles/metal-static.dir/irq.c.obj CMakeFiles/metal-static.dir/log.c.obj CMakeFiles/metal-static.dir/shmem.c.obj CMakeFiles/metal-static.dir/shmem-provider.c.obj CMakeFiles/metal-static.dir/softirq.c.obj CMakeFiles/metal-static.dir/version.c.obj CMakeFiles/metal-static.dir/system/generic/condition.c.obj CMakeFiles/metal-static.dir/system/generic/device.c.obj CMakeFiles/metal-static.dir/system/generic/init.c.obj CMakeFiles/metal-static.dir/system/generic/io.c.obj CMakeFiles/metal-static.dir/system/generic/irq.c.obj CMakeFiles/metal-static.dir/system/generic/time.c.obj CMakeFiles/metal-static.dir/system/generic/zynq7/sys.c.obj CMakeFiles/metal-static.dir/system/generic/xlnx_common/irq.c.obj
+C:/Xilinx/SDK/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/arm-none-eabi-ranlib.exe libmetal.a
+[100%] Built target metal-static
+Install the project...
+-- Install configuration: "Debug"
+-- Installing: ../../../include/metal/alloc.h
+-- Installing: ../../../include/metal/assert.h
+-- Installing: ../../../include/metal/atomic.h
+-- Installing: ../../../include/metal/cache.h
+-- Installing: ../../../include/metal/compiler.h
+-- Installing: ../../../include/metal/condition.h
+-- Installing: ../../../include/metal/config.h
+-- Installing: ../../../include/metal/cpu.h
+-- Installing: ../../../include/metal/device.h
+-- Installing: ../../../include/metal/dma.h
+-- Installing: ../../../include/metal/io.h
+-- Installing: ../../../include/metal/irq.h
+-- Installing: ../../../include/metal/irq_controller.h
+-- Installing: ../../../include/metal/list.h
+-- Installing: ../../../include/metal/log.h
+-- Installing: ../../../include/metal/mutex.h
+-- Installing: ../../../include/metal/scatterlist.h
+-- Installing: ../../../include/metal/shmem.h
+-- Installing: ../../../include/metal/shmem-provider.h
+-- Installing: ../../../include/metal/sleep.h
+-- Installing: ../../../include/metal/softirq.h
+-- Installing: ../../../include/metal/spinlock.h
+-- Installing: ../../../include/metal/sys.h
+-- Installing: ../../../include/metal/time.h
+-- Installing: ../../../include/metal/utilities.h
+-- Installing: ../../../include/metal/version.h
+-- Installing: ../../../include/metal/compiler/gcc/atomic.h
+-- Installing: ../../../include/metal/compiler/gcc/compiler.h
+-- Installing: ../../../include/metal/compiler/iar/compiler.h
+-- Installing: ../../../include/metal/processor/arm/atomic.h
+-- Installing: ../../../include/metal/processor/arm/cpu.h
+-- Installing: ../../../include/metal/system/generic/alloc.h
+-- Installing: ../../../include/metal/system/generic/assert.h
+-- Installing: ../../../include/metal/system/generic/cache.h
+-- Installing: ../../../include/metal/system/generic/condition.h
+-- Installing: ../../../include/metal/system/generic/io.h
+-- Installing: ../../../include/metal/system/generic/irq.h
+-- Installing: ../../../include/metal/system/generic/log.h
+-- Installing: ../../../include/metal/system/generic/mutex.h
+-- Installing: ../../../include/metal/system/generic/sleep.h
+-- Installing: ../../../include/metal/system/generic/sys.h
+-- Installing: ../../../include/metal/system/generic/zynq7/sys.h
+-- Installing: ../../../include/metal/system/generic/xlnx_common/sys.h
+-- Installing: ../../../lib/libmetal.a
+"Running Make libs in ps7_cortexa9_0/libsrc/pearson_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/pearson_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -lm"
+"Compiling pearson"
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -lm"
+"Compiling qspips"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v4_0/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v4_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -lm"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -lm"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -lm"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/sdps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -lm"
+"Compiling sdps"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v7_0/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v7_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -lm"
+"Compiling standalone"
+In file included from usleep.c:56:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xil_sleeptimer.c:51:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xtime_l.c:49:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from sleep.c:53:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/ttcps_v3_9/src"
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_9/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -lm"
+"Compiling ttcps"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -lm"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -lm"
+"Compiling usbps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -lm"
+"Compiling xadcps"
+'Finished building libraries'
+23:10:49 **** Clean-only build of configuration Debug for project pearson_test ****
+make clean 
+rm -rf  ./src/helloworld.o ./src/pearson.o ./src/platform.o  ./src/helloworld.d ./src/pearson.d ./src/platform.d  pearson_test.elf.size  pearson_test.elf
+' '
+23:10:49 **** Auto Build of configuration Debug for project pearson_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../pearson_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/pearson.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/pearson.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../pearson_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pearson.d" -MT"src/pearson.o" -o "src/pearson.o" "../src/pearson.c"
+In file included from ../src/pearson.c:10:
+../../pearson_test_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+../src/pearson.c: In function 'pearson_sw':
+../src/pearson.c:66:6: warning: unused variable 'j' [-Wunused-variable]
+  int j;
+      ^
+../src/pearson.c:65:6: warning: unused variable 'i' [-Wunused-variable]
+  int i;
+      ^
+'Finished building: ../src/pearson.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../pearson_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: pearson_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../pearson_test_bsp/ps7_cortexa9_0/lib -o "pearson_test.elf"  ./src/helloworld.o ./src/pearson.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-lmetal,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: ./src/pearson.o: in function `ecartType':
+C:\A2_project\Vivado\Demo_IP_HLS\Demo_IP_HLS_pearson\Demo_IP_HLS_pearson.sdk\pearson_test\Debug/../src/pearson.c:59: undefined reference to `sqrtf'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:41: pearson_test.elf] Error 1
+23:11:01 **** Auto Build of project pearson_test_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_5/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_9/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/gpio_v4_4/src"
+make -C ps7_cortexa9_0/libsrc/gpio_v4_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/pearson_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/pearson_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v4_0/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v4_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/sdps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v7_0/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v7_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ttcps_v3_9/src"
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_5/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling coresightps_dcc"
+arm-none-eabi-ar: creating ../../../lib/libxil.a
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_9/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_9/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling emacps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling gpiops"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpio_v4_4/src"
+make -C ps7_cortexa9_0/libsrc/gpio_v4_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling gpio"
+"Running Make libs in ps7_cortexa9_0/libsrc/pearson_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/pearson_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling pearson"
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling qspips"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v4_0/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v4_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/sdps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling sdps"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v7_0/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v7_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling standalone"
+In file included from usleep.c:56:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xil_sleeptimer.c:51:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xtime_l.c:49:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from sleep.c:53:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/ttcps_v3_9/src"
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_9/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling ttcps"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling usbps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling xadcps"
+'Finished building libraries'
+23:11:35 **** Clean-only build of configuration Debug for project pearson_test ****
+make clean 
+rm -rf  ./src/helloworld.o ./src/pearson.o ./src/platform.o  ./src/helloworld.d ./src/pearson.d ./src/platform.d  pearson_test.elf.size  pearson_test.elf
+' '
+23:11:35 **** Auto Build of configuration Debug for project pearson_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../pearson_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/pearson.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/pearson.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../pearson_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pearson.d" -MT"src/pearson.o" -o "src/pearson.o" "../src/pearson.c"
+In file included from ../src/pearson.c:10:
+../../pearson_test_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+../src/pearson.c: In function 'pearson_sw':
+../src/pearson.c:66:6: warning: unused variable 'j' [-Wunused-variable]
+  int j;
+      ^
+../src/pearson.c:65:6: warning: unused variable 'i' [-Wunused-variable]
+  int i;
+      ^
+'Finished building: ../src/pearson.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../pearson_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: pearson_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../pearson_test_bsp/ps7_cortexa9_0/lib -o "pearson_test.elf"  ./src/helloworld.o ./src/pearson.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: ./src/pearson.o: in function `ecartType':
+C:\A2_project\Vivado\Demo_IP_HLS\Demo_IP_HLS_pearson\Demo_IP_HLS_pearson.sdk\pearson_test\Debug/../src/pearson.c:59: undefined reference to `sqrtf'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:41: pearson_test.elf] Error 1
+23:11:45 **** Clean-only build of configuration Debug for project pearson_test ****
+make clean 
+rm -rf  ./src/helloworld.o ./src/pearson.o ./src/platform.o  ./src/helloworld.d ./src/pearson.d ./src/platform.d  pearson_test.elf.size  pearson_test.elf
+' '
+23:11:45 **** Auto Build of configuration Debug for project pearson_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../pearson_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/pearson.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/pearson.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../pearson_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pearson.d" -MT"src/pearson.o" -o "src/pearson.o" "../src/pearson.c"
+In file included from ../src/pearson.c:10:
+../../pearson_test_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+../src/pearson.c: In function 'pearson_sw':
+../src/pearson.c:66:6: warning: unused variable 'j' [-Wunused-variable]
+  int j;
+      ^
+../src/pearson.c:65:6: warning: unused variable 'i' [-Wunused-variable]
+  int i;
+      ^
+'Finished building: ../src/pearson.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../pearson_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: pearson_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../pearson_test_bsp/ps7_cortexa9_0/lib -o "pearson_test.elf"  ./src/helloworld.o ./src/pearson.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: pearson_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size pearson_test.elf  |tee "pearson_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  62196	   2592	  72480	 137268	  21834	pearson_test.elf
+'Finished building: pearson_test.elf.size'
+' '
+23:12:55 **** Auto Build of configuration Debug for project pearson_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../pearson_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:61:5: warning: implicit declaration of function 'peason_test' [-Wimplicit-function-declaration]
+     peason_test();
+     ^~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: pearson_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../pearson_test_bsp/ps7_cortexa9_0/lib -o "pearson_test.elf"  ./src/helloworld.o ./src/pearson.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: ./src/helloworld.o: in function `main':
+C:\A2_project\Vivado\Demo_IP_HLS\Demo_IP_HLS_pearson\Demo_IP_HLS_pearson.sdk\pearson_test\Debug/../src/helloworld.c:61: undefined reference to `peason_test'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:41: pearson_test.elf] Error 1
+23:13:02 **** Auto Build of configuration Debug for project pearson_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../pearson_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: pearson_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../pearson_test_bsp/ps7_cortexa9_0/lib -o "pearson_test.elf"  ./src/helloworld.o ./src/pearson.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: pearson_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size pearson_test.elf  |tee "pearson_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  62404	   2592	  72480	 137476	  21904	pearson_test.elf
+'Finished building: pearson_test.elf.size'
+' '
+23:13:56 **** Incremental Build of configuration Debug for project pearson_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/pearson.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/pearson.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../pearson_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pearson.d" -MT"src/pearson.o" -o "src/pearson.o" "../src/pearson.c"
+In file included from ../src/pearson.c:10:
+../../pearson_test_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+../src/pearson.c: In function 'pearson_sw':
+../src/pearson.c:66:6: warning: unused variable 'j' [-Wunused-variable]
+  int j;
+      ^
+../src/pearson.c:65:6: warning: unused variable 'i' [-Wunused-variable]
+  int i;
+      ^
+'Finished building: ../src/pearson.c'
+' '
+'Building target: pearson_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../pearson_test_bsp/ps7_cortexa9_0/lib -o "pearson_test.elf"  ./src/helloworld.o ./src/pearson.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: pearson_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size pearson_test.elf  |tee "pearson_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  62404	   2592	  72480	 137476	  21904	pearson_test.elf
+'Finished building: pearson_test.elf.size'
+' '
+23:14:31 **** Incremental Build of configuration Debug for project pearson_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/pearson.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/pearson.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../pearson_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pearson.d" -MT"src/pearson.o" -o "src/pearson.o" "../src/pearson.c"
+In file included from ../src/pearson.c:10:
+../../pearson_test_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+../src/pearson.c: In function 'pearson_sw':
+../src/pearson.c:66:6: warning: unused variable 'j' [-Wunused-variable]
+  int j;
+      ^
+../src/pearson.c:65:6: warning: unused variable 'i' [-Wunused-variable]
+  int i;
+      ^
+'Finished building: ../src/pearson.c'
+' '
+'Building target: pearson_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../pearson_test_bsp/ps7_cortexa9_0/lib -o "pearson_test.elf"  ./src/helloworld.o ./src/pearson.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: pearson_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size pearson_test.elf  |tee "pearson_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  62404	   2592	  72480	 137476	  21904	pearson_test.elf
+'Finished building: pearson_test.elf.size'
+' '
+23:15:01 **** Incremental Build of configuration Debug for project pearson_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+23:15:46 **** Incremental Build of configuration Debug for project pearson_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+23:16:32 **** Incremental Build of configuration Debug for project pearson_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+23:17:29 **** Auto Build of configuration Debug for project pearson_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/pearson.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/pearson.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../pearson_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pearson.d" -MT"src/pearson.o" -o "src/pearson.o" "../src/pearson.c"
+In file included from ../src/pearson.c:10:
+../../pearson_test_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+../src/pearson.c: In function 'pearson_sw':
+../src/pearson.c:66:6: warning: unused variable 'j' [-Wunused-variable]
+  int j;
+      ^
+../src/pearson.c:65:6: warning: unused variable 'i' [-Wunused-variable]
+  int i;
+      ^
+'Finished building: ../src/pearson.c'
+' '
+'Building target: pearson_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../pearson_test_bsp/ps7_cortexa9_0/lib -o "pearson_test.elf"  ./src/helloworld.o ./src/pearson.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: pearson_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size pearson_test.elf  |tee "pearson_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  62412	   2592	  72480	 137484	  2190c	pearson_test.elf
+'Finished building: pearson_test.elf.size'
+' '
+23:17:56 **** Auto Build of project pearson_test_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_5/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_9/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/gpio_v4_4/src"
+make -C ps7_cortexa9_0/libsrc/gpio_v4_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/pearson_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/pearson_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v4_0/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v4_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/sdps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v7_0/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v7_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ttcps_v3_9/src"
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_5/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling coresightps_dcc"
+arm-none-eabi-ar: creating ../../../lib/libxil.a
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_9/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_9/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling emacps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling gpiops"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpio_v4_4/src"
+make -C ps7_cortexa9_0/libsrc/gpio_v4_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling gpio"
+"Running Make libs in ps7_cortexa9_0/libsrc/pearson_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/pearson_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling pearson"
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling qspips"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v4_0/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v4_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/sdps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling sdps"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v7_0/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v7_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/ttcps_v3_9/src"
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_9/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling ttcps"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling usbps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling xadcps"
+'Finished building libraries'
+23:18:30 **** Auto Build of configuration Debug for project pearson_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../pearson_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/pearson.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/pearson.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../pearson_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pearson.d" -MT"src/pearson.o" -o "src/pearson.o" "../src/pearson.c"
+../src/pearson.c: In function 'pearson_sw':
+../src/pearson.c:66:6: warning: unused variable 'j' [-Wunused-variable]
+  int j;
+      ^
+../src/pearson.c:65:6: warning: unused variable 'i' [-Wunused-variable]
+  int i;
+      ^
+'Finished building: ../src/pearson.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../pearson_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: pearson_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../pearson_test_bsp/ps7_cortexa9_0/lib -o "pearson_test.elf"  ./src/helloworld.o ./src/pearson.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: pearson_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size pearson_test.elf  |tee "pearson_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  62412	   2592	  72480	 137484	  2190c	pearson_test.elf
+'Finished building: pearson_test.elf.size'
+' '
+23:18:47 **** Incremental Build of configuration Debug for project pearson_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+23:19:15 **** Incremental Build of configuration Debug for project pearson_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+23:20:11 **** Incremental Build of configuration Debug for project pearson_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+23:20:50 **** Incremental Build of configuration Debug for project pearson_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+23:21:30 **** Incremental Build of configuration Debug for project pearson_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+23:21:35 **** Incremental Build of configuration Debug for project pearson_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+23:21:56 **** Auto Build of configuration Debug for project pearson_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building target: pearson_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../pearson_test_bsp/ps7_cortexa9_0/lib -o "pearson_test.elf"  ./src/helloworld.o ./src/pearson.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: pearson_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size pearson_test.elf  |tee "pearson_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  62412	   2592	 129824	 194828	  2f90c	pearson_test.elf
+'Finished building: pearson_test.elf.size'
+' '
+23:21:57 **** Incremental Build of configuration Debug for project pearson_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+23:22:28 **** Auto Build of configuration Debug for project pearson_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/pearson.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/pearson.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../pearson_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pearson.d" -MT"src/pearson.o" -o "src/pearson.o" "../src/pearson.c"
+../src/pearson.c: In function 'pearson_sw':
+../src/pearson.c:66:6: warning: unused variable 'j' [-Wunused-variable]
+  int j;
+      ^
+../src/pearson.c:65:6: warning: unused variable 'i' [-Wunused-variable]
+  int i;
+      ^
+'Finished building: ../src/pearson.c'
+' '
+'Building target: pearson_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../pearson_test_bsp/ps7_cortexa9_0/lib -o "pearson_test.elf"  ./src/helloworld.o ./src/pearson.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: pearson_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size pearson_test.elf  |tee "pearson_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  62476	   2592	 129824	 194892	  2f94c	pearson_test.elf
+'Finished building: pearson_test.elf.size'
+' '
+23:22:31 **** Incremental Build of configuration Debug for project pearson_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+23:23:59 **** Auto Build of configuration Debug for project pearson_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/pearson.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/pearson.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../pearson_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pearson.d" -MT"src/pearson.o" -o "src/pearson.o" "../src/pearson.c"
+../src/pearson.c: In function 'pearson_sw':
+../src/pearson.c:66:6: warning: unused variable 'j' [-Wunused-variable]
+  int j;
+      ^
+../src/pearson.c:65:6: warning: unused variable 'i' [-Wunused-variable]
+  int i;
+      ^
+'Finished building: ../src/pearson.c'
+' '
+'Building target: pearson_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../pearson_test_bsp/ps7_cortexa9_0/lib -o "pearson_test.elf"  ./src/helloworld.o ./src/pearson.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: pearson_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size pearson_test.elf  |tee "pearson_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  62492	   2592	 129824	 194908	  2f95c	pearson_test.elf
+'Finished building: pearson_test.elf.size'
+' '
+23:24:04 **** Incremental Build of configuration Debug for project pearson_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+23:24:46 **** Auto Build of configuration Debug for project pearson_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/pearson.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/pearson.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../pearson_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pearson.d" -MT"src/pearson.o" -o "src/pearson.o" "../src/pearson.c"
+../src/pearson.c: In function 'pearson_sw':
+../src/pearson.c:66:6: warning: unused variable 'j' [-Wunused-variable]
+  int j;
+      ^
+../src/pearson.c:65:6: warning: unused variable 'i' [-Wunused-variable]
+  int i;
+      ^
+'Finished building: ../src/pearson.c'
+' '
+'Building target: pearson_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../pearson_test_bsp/ps7_cortexa9_0/lib -o "pearson_test.elf"  ./src/helloworld.o ./src/pearson.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: pearson_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size pearson_test.elf  |tee "pearson_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  62556	   2592	 129824	 194972	  2f99c	pearson_test.elf
+'Finished building: pearson_test.elf.size'
+' '
+23:24:48 **** Incremental Build of configuration Debug for project pearson_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+23:25:26 **** Auto Build of configuration Debug for project pearson_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/pearson.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/pearson.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../pearson_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pearson.d" -MT"src/pearson.o" -o "src/pearson.o" "../src/pearson.c"
+../src/pearson.c: In function 'pearson_sw':
+../src/pearson.c:67:6: warning: unused variable 'j' [-Wunused-variable]
+  int j;
+      ^
+../src/pearson.c:66:6: warning: unused variable 'i' [-Wunused-variable]
+  int i;
+      ^
+'Finished building: ../src/pearson.c'
+' '
+'Building target: pearson_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../pearson_test_bsp/ps7_cortexa9_0/lib -o "pearson_test.elf"  ./src/helloworld.o ./src/pearson.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: pearson_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size pearson_test.elf  |tee "pearson_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  62572	   2592	 129824	 194988	  2f9ac	pearson_test.elf
+'Finished building: pearson_test.elf.size'
+' '
+23:25:31 **** Incremental Build of configuration Debug for project pearson_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+23:26:20 **** Auto Build of configuration Debug for project pearson_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/pearson.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/pearson.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../pearson_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pearson.d" -MT"src/pearson.o" -o "src/pearson.o" "../src/pearson.c"
+../src/pearson.c: In function 'pearson_sw':
+../src/pearson.c:68:6: warning: unused variable 'j' [-Wunused-variable]
+  int j;
+      ^
+../src/pearson.c:67:6: warning: unused variable 'i' [-Wunused-variable]
+  int i;
+      ^
+'Finished building: ../src/pearson.c'
+' '
+'Building target: pearson_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../pearson_test_bsp/ps7_cortexa9_0/lib -o "pearson_test.elf"  ./src/helloworld.o ./src/pearson.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: pearson_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size pearson_test.elf  |tee "pearson_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  62580	   2592	 129824	 194996	  2f9b4	pearson_test.elf
+'Finished building: pearson_test.elf.size'
+' '
+23:26:23 **** Incremental Build of configuration Debug for project pearson_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+23:28:38 **** Auto Build of configuration Debug for project pearson_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building target: pearson_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../pearson_test_bsp/ps7_cortexa9_0/lib -o "pearson_test.elf"  ./src/helloworld.o ./src/pearson.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: pearson_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size pearson_test.elf  |tee "pearson_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  62580	   2592	 138016	 203188	  319b4	pearson_test.elf
+'Finished building: pearson_test.elf.size'
+' '
+23:28:45 **** Incremental Build of configuration Debug for project pearson_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/pearson.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/pearson.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../pearson_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pearson.d" -MT"src/pearson.o" -o "src/pearson.o" "../src/pearson.c"
+../src/pearson.c: In function 'pearson_sw':
+../src/pearson.c:68:6: warning: unused variable 'j' [-Wunused-variable]
+  int j;
+      ^
+../src/pearson.c:67:6: warning: unused variable 'i' [-Wunused-variable]
+  int i;
+      ^
+'Finished building: ../src/pearson.c'
+' '
+'Building target: pearson_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../pearson_test_bsp/ps7_cortexa9_0/lib -o "pearson_test.elf"  ./src/helloworld.o ./src/pearson.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: pearson_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size pearson_test.elf  |tee "pearson_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  62580	   2592	 138016	 203188	  319b4	pearson_test.elf
+'Finished building: pearson_test.elf.size'
+' '
+23:29:12 **** Auto Build of configuration Debug for project pearson_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building target: pearson_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../pearson_test_bsp/ps7_cortexa9_0/lib -o "pearson_test.elf"  ./src/helloworld.o ./src/pearson.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: pearson_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size pearson_test.elf  |tee "pearson_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  62580	   2592	 269088	 334260	  519b4	pearson_test.elf
+'Finished building: pearson_test.elf.size'
+' '
+23:29:23 **** Auto Build of configuration Debug for project pearson_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/pearson.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/pearson.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../pearson_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pearson.d" -MT"src/pearson.o" -o "src/pearson.o" "../src/pearson.c"
+../src/pearson.c: In function 'pearson_sw':
+../src/pearson.c:68:6: warning: unused variable 'j' [-Wunused-variable]
+  int j;
+      ^
+../src/pearson.c:67:6: warning: unused variable 'i' [-Wunused-variable]
+  int i;
+      ^
+'Finished building: ../src/pearson.c'
+' '
+'Building target: pearson_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../pearson_test_bsp/ps7_cortexa9_0/lib -o "pearson_test.elf"  ./src/helloworld.o ./src/pearson.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: pearson_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size pearson_test.elf  |tee "pearson_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  62420	   2752	 269088	 334260	  519b4	pearson_test.elf
+'Finished building: pearson_test.elf.size'
+' '
+23:29:26 **** Incremental Build of configuration Debug for project pearson_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+23:30:41 **** Auto Build of configuration Debug for project pearson_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/pearson.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/pearson.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../pearson_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pearson.d" -MT"src/pearson.o" -o "src/pearson.o" "../src/pearson.c"
+../src/pearson.c: In function 'moyenne':
+../src/pearson.c:21:16: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'long unsigned int' [-Wformat=]
+  printf("moy @%X\n",(u32)mat);
+               ~^    ~~~~~~~~
+               %lX
+../src/pearson.c:24:22: warning: format '%X' expects argument of type 'unsigned int', but argument 3 has type 'long unsigned int' [-Wformat=]
+   printf("moy:%i=> @%X \n",i, (u32)&mat[i][col]);
+                     ~^        ~~~~~~~~~~~~~~~~~
+                     %lX
+../src/pearson.c: In function 'pearson_sw':
+../src/pearson.c:68:6: warning: unused variable 'j' [-Wunused-variable]
+  int j;
+      ^
+../src/pearson.c:67:6: warning: unused variable 'i' [-Wunused-variable]
+  int i;
+      ^
+'Finished building: ../src/pearson.c'
+' '
+'Building target: pearson_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../pearson_test_bsp/ps7_cortexa9_0/lib -o "pearson_test.elf"  ./src/helloworld.o ./src/pearson.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: pearson_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size pearson_test.elf  |tee "pearson_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  62428	   2752	 269088	 334268	  519bc	pearson_test.elf
+'Finished building: pearson_test.elf.size'
+' '
+23:30:43 **** Incremental Build of configuration Debug for project pearson_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+23:31:36 **** Auto Build of configuration Debug for project pearson_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/pearson.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/pearson.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../pearson_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pearson.d" -MT"src/pearson.o" -o "src/pearson.o" "../src/pearson.c"
+../src/pearson.c: In function 'moyenne':
+../src/pearson.c:21:16: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'long unsigned int' [-Wformat=]
+  printf("moy @%X\n",(u32)mat);
+               ~^    ~~~~~~~~
+               %lX
+../src/pearson.c:24:22: warning: format '%X' expects argument of type 'unsigned int', but argument 3 has type 'long unsigned int' [-Wformat=]
+   printf("moy:%i=> @%X=>%i \n",i, (u32)&mat[i][col],(u32)&mat[i][col]-(u32)mat);
+                     ~^            ~~~~~~~~~~~~~~~~~
+                     %lX
+../src/pearson.c:24:26: warning: format '%i' expects argument of type 'int', but argument 4 has type 'long unsigned int' [-Wformat=]
+   printf("moy:%i=> @%X=>%i \n",i, (u32)&mat[i][col],(u32)&mat[i][col]-(u32)mat);
+                         ~^                          ~~~~~~~~~~~~~~~~~~~~~~~~~~
+                         %li
+../src/pearson.c: In function 'pearson_sw':
+../src/pearson.c:68:6: warning: unused variable 'j' [-Wunused-variable]
+  int j;
+      ^
+../src/pearson.c:67:6: warning: unused variable 'i' [-Wunused-variable]
+  int i;
+      ^
+'Finished building: ../src/pearson.c'
+' '
+'Building target: pearson_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../pearson_test_bsp/ps7_cortexa9_0/lib -o "pearson_test.elf"  ./src/helloworld.o ./src/pearson.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: pearson_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size pearson_test.elf  |tee "pearson_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  62500	   2752	 269088	 334340	  51a04	pearson_test.elf
+'Finished building: pearson_test.elf.size'
+' '
+23:31:39 **** Incremental Build of configuration Debug for project pearson_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+23:32:02 **** Incremental Build of configuration Debug for project pearson_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+23:34:12 **** Auto Build of configuration Debug for project pearson_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/pearson.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/pearson.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../pearson_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pearson.d" -MT"src/pearson.o" -o "src/pearson.o" "../src/pearson.c"
+../src/pearson.c: In function 'pearson_sw':
+../src/pearson.c:75:17: warning: passing argument 1 of 'moyenne' from incompatible pointer type [-Wincompatible-pointer-types]
+  moyX = moyenne(mat, 0);
+                 ^~~
+../src/pearson.c:16:22: note: expected 'float *' but argument is of type 'float **'
+ float moyenne(float* mat, int col)
+               ~~~~~~~^~~
+../src/pearson.c:76:17: warning: passing argument 1 of 'moyenne' from incompatible pointer type [-Wincompatible-pointer-types]
+  moyY = moyenne(mat, 1);;
+                 ^~~
+../src/pearson.c:16:22: note: expected 'float *' but argument is of type 'float **'
+ float moyenne(float* mat, int col)
+               ~~~~~~~^~~
+../src/pearson.c:77:20: warning: passing argument 1 of 'moyenneXY' from incompatible pointer type [-Wincompatible-pointer-types]
+  moyXY = moyenneXY(mat, 0, 1);;
+                    ^~~
+../src/pearson.c:33:24: note: expected 'float *' but argument is of type 'float **'
+ float moyenneXY(float* mat, int colX, int colY)
+                 ~~~~~~~^~~
+../src/pearson.c:78:19: warning: passing argument 1 of 'ecartType' from incompatible pointer type [-Wincompatible-pointer-types]
+  ectX = ecartType(mat, 0, moyX);
+                   ^~~
+../src/pearson.c:49:24: note: expected 'float *' but argument is of type 'float **'
+ float ecartType(float* mat, int col, float moy)
+                 ~~~~~~~^~~
+../src/pearson.c:79:19: warning: passing argument 1 of 'ecartType' from incompatible pointer type [-Wincompatible-pointer-types]
+  ectY = ecartType(mat, 1, moyY);
+                   ^~~
+../src/pearson.c:49:24: note: expected 'float *' but argument is of type 'float **'
+ float ecartType(float* mat, int col, float moy)
+                 ~~~~~~~^~~
+../src/pearson.c:67:6: warning: unused variable 'j' [-Wunused-variable]
+  int j;
+      ^
+../src/pearson.c:66:6: warning: unused variable 'i' [-Wunused-variable]
+  int i;
+      ^
+'Finished building: ../src/pearson.c'
+' '
+'Building target: pearson_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../pearson_test_bsp/ps7_cortexa9_0/lib -o "pearson_test.elf"  ./src/helloworld.o ./src/pearson.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: pearson_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size pearson_test.elf  |tee "pearson_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  62252	   2752	 269088	 334092	  5190c	pearson_test.elf
+'Finished building: pearson_test.elf.size'
+' '
+23:34:14 **** Incremental Build of configuration Debug for project pearson_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+23:34:36 **** Auto Build of configuration Debug for project pearson_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/pearson.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/pearson.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../pearson_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pearson.d" -MT"src/pearson.o" -o "src/pearson.o" "../src/pearson.c"
+../src/pearson.c: In function 'pearson_sw':
+../src/pearson.c:75:17: warning: passing argument 1 of 'moyenne' from incompatible pointer type [-Wincompatible-pointer-types]
+  moyX = moyenne(mat, 0);
+                 ^~~
+../src/pearson.c:16:22: note: expected 'float *' but argument is of type 'float **'
+ float moyenne(float* mat, int col)
+               ~~~~~~~^~~
+../src/pearson.c:76:17: warning: passing argument 1 of 'moyenne' from incompatible pointer type [-Wincompatible-pointer-types]
+  moyY = moyenne(mat, 1);;
+                 ^~~
+../src/pearson.c:16:22: note: expected 'float *' but argument is of type 'float **'
+ float moyenne(float* mat, int col)
+               ~~~~~~~^~~
+../src/pearson.c:77:20: warning: passing argument 1 of 'moyenneXY' from incompatible pointer type [-Wincompatible-pointer-types]
+  moyXY = moyenneXY(mat, 0, 1);;
+                    ^~~
+../src/pearson.c:33:24: note: expected 'float *' but argument is of type 'float **'
+ float moyenneXY(float* mat, int colX, int colY)
+                 ~~~~~~~^~~
+../src/pearson.c:78:19: warning: passing argument 1 of 'ecartType' from incompatible pointer type [-Wincompatible-pointer-types]
+  ectX = ecartType(mat, 0, moyX);
+                   ^~~
+../src/pearson.c:49:24: note: expected 'float *' but argument is of type 'float **'
+ float ecartType(float* mat, int col, float moy)
+                 ~~~~~~~^~~
+../src/pearson.c:79:19: warning: passing argument 1 of 'ecartType' from incompatible pointer type [-Wincompatible-pointer-types]
+  ectY = ecartType(mat, 1, moyY);
+                   ^~~
+../src/pearson.c:49:24: note: expected 'float *' but argument is of type 'float **'
+ float ecartType(float* mat, int col, float moy)
+                 ~~~~~~~^~~
+../src/pearson.c:67:6: warning: unused variable 'j' [-Wunused-variable]
+  int j;
+      ^
+../src/pearson.c:66:6: warning: unused variable 'i' [-Wunused-variable]
+  int i;
+      ^
+'Finished building: ../src/pearson.c'
+' '
+'Building target: pearson_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../pearson_test_bsp/ps7_cortexa9_0/lib -o "pearson_test.elf"  ./src/helloworld.o ./src/pearson.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: pearson_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size pearson_test.elf  |tee "pearson_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  62188	   2752	 269088	 334028	  518cc	pearson_test.elf
+'Finished building: pearson_test.elf.size'
+' '
+23:34:38 **** Incremental Build of configuration Debug for project pearson_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+23:38:55 **** Incremental Build of configuration Debug for project pearson_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+23:51:25 **** Incremental Build of configuration Debug for project pearson_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/pearson.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/pearson.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../pearson_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pearson.d" -MT"src/pearson.o" -o "src/pearson.o" "../src/pearson.c"
+../src/pearson.c: In function 'pearson_sw':
+../src/pearson.c:75:17: warning: passing argument 1 of 'moyenne' from incompatible pointer type [-Wincompatible-pointer-types]
+  moyX = moyenne(mat, 0);
+                 ^~~
+../src/pearson.c:16:22: note: expected 'float *' but argument is of type 'float **'
+ float moyenne(float* mat, int col)
+               ~~~~~~~^~~
+../src/pearson.c:76:17: warning: passing argument 1 of 'moyenne' from incompatible pointer type [-Wincompatible-pointer-types]
+  moyY = moyenne(mat, 1);;
+                 ^~~
+../src/pearson.c:16:22: note: expected 'float *' but argument is of type 'float **'
+ float moyenne(float* mat, int col)
+               ~~~~~~~^~~
+../src/pearson.c:77:20: warning: passing argument 1 of 'moyenneXY' from incompatible pointer type [-Wincompatible-pointer-types]
+  moyXY = moyenneXY(mat, 0, 1);;
+                    ^~~
+../src/pearson.c:33:24: note: expected 'float *' but argument is of type 'float **'
+ float moyenneXY(float* mat, int colX, int colY)
+                 ~~~~~~~^~~
+../src/pearson.c:78:19: warning: passing argument 1 of 'ecartType' from incompatible pointer type [-Wincompatible-pointer-types]
+  ectX = ecartType(mat, 0, moyX);
+                   ^~~
+../src/pearson.c:49:24: note: expected 'float *' but argument is of type 'float **'
+ float ecartType(float* mat, int col, float moy)
+                 ~~~~~~~^~~
+../src/pearson.c:79:19: warning: passing argument 1 of 'ecartType' from incompatible pointer type [-Wincompatible-pointer-types]
+  ectY = ecartType(mat, 1, moyY);
+                   ^~~
+../src/pearson.c:49:24: note: expected 'float *' but argument is of type 'float **'
+ float ecartType(float* mat, int col, float moy)
+                 ~~~~~~~^~~
+../src/pearson.c:67:6: warning: unused variable 'j' [-Wunused-variable]
+  int j;
+      ^
+../src/pearson.c:66:6: warning: unused variable 'i' [-Wunused-variable]
+  int i;
+      ^
+'Finished building: ../src/pearson.c'
+' '
+'Building target: pearson_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../pearson_test_bsp/ps7_cortexa9_0/lib -o "pearson_test.elf"  ./src/helloworld.o ./src/pearson.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: pearson_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size pearson_test.elf  |tee "pearson_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  62188	   2752	 269088	 334028	  518cc	pearson_test.elf
+'Finished building: pearson_test.elf.size'
+' '

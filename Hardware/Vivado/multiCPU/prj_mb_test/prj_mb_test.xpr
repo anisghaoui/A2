@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="40" Path="C:/A2_project/Vivado/multiCPU/prj_mb_test/prj_mb_test.xpr">
+<Project Version="7" Minor="40" Path="C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiCPU/prj_mb_test/prj_mb_test.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="57fd396cd7f942c2b1632986c5ecc2d5"/>
@@ -23,6 +23,7 @@
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
     <Option Name="ProjectType" Val="Default"/>
+    <Option Name="IPOutputRepo" Val="$PCACHEDIR/ip"/>
     <Option Name="IPCachePermission" Val="read"/>
     <Option Name="IPCachePermission" Val="write"/>
     <Option Name="EnableCoreContainer" Val="FALSE"/>
@@ -40,13 +41,13 @@
     <Option Name="WTVcsLaunchSim" Val="0"/>
     <Option Name="WTRivieraLaunchSim" Val="0"/>
     <Option Name="WTActivehdlLaunchSim" Val="0"/>
-    <Option Name="WTXSimExportSim" Val="0"/>
-    <Option Name="WTModelSimExportSim" Val="0"/>
-    <Option Name="WTQuestaExportSim" Val="0"/>
-    <Option Name="WTIesExportSim" Val="0"/>
-    <Option Name="WTVcsExportSim" Val="0"/>
-    <Option Name="WTRivieraExportSim" Val="0"/>
-    <Option Name="WTActivehdlExportSim" Val="0"/>
+    <Option Name="WTXSimExportSim" Val="1"/>
+    <Option Name="WTModelSimExportSim" Val="1"/>
+    <Option Name="WTQuestaExportSim" Val="1"/>
+    <Option Name="WTIesExportSim" Val="1"/>
+    <Option Name="WTVcsExportSim" Val="1"/>
+    <Option Name="WTRivieraExportSim" Val="1"/>
+    <Option Name="WTActivehdlExportSim" Val="1"/>
     <Option Name="GenerateIPUpgradeLog" Val="TRUE"/>
     <Option Name="XSimRadix" Val="hex"/>
     <Option Name="XSimTimeUnit" Val="ns"/>
@@ -69,50 +70,53 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="design_mb.bd" FileRelPathName="ip/design_mb_clk_wiz_0_0/design_mb_clk_wiz_0_0.xci">
-          <Proxy FileSetName="design_mb_clk_wiz_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="design_mb.bd" FileRelPathName="ip/design_mb_xbar_6/design_mb_xbar_6.xci">
-          <Proxy FileSetName="design_mb_xbar_6"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="design_mb.bd" FileRelPathName="ip/design_mb_microblaze_0_0/design_mb_microblaze_0_0.xci">
-          <Proxy FileSetName="design_mb_microblaze_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="design_mb.bd" FileRelPathName="ip/design_mb_dlmb_bram_if_cntlr_7/design_mb_dlmb_bram_if_cntlr_7.xci">
-          <Proxy FileSetName="design_mb_dlmb_bram_if_cntlr_7"/>
-        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="design_mb.bd" FileRelPathName="ip/design_mb_processing_system7_0_0/design_mb_processing_system7_0_0.xci">
           <Proxy FileSetName="design_mb_processing_system7_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="design_mb.bd" FileRelPathName="ip/design_mb_dlmb_v10_7/design_mb_dlmb_v10_7.xci">
           <Proxy FileSetName="design_mb_dlmb_v10_7"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="design_mb.bd" FileRelPathName="ip/design_mb_ilmb_v10_7/design_mb_ilmb_v10_7.xci">
-          <Proxy FileSetName="design_mb_ilmb_v10_7"/>
+        <CompFileExtendedInfo CompFileName="design_mb.bd" FileRelPathName="ip/design_mb_xbar_6/design_mb_xbar_6.xci">
+          <Proxy FileSetName="design_mb_xbar_6"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="design_mb.bd" FileRelPathName="ip/design_mb_mdm_1_7/design_mb_mdm_1_7.xci">
-          <Proxy FileSetName="design_mb_mdm_1_7"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="design_mb.bd" FileRelPathName="ip/design_mb_xbar_5/design_mb_xbar_5.xci">
-          <Proxy FileSetName="design_mb_xbar_5"/>
+        <CompFileExtendedInfo CompFileName="design_mb.bd" FileRelPathName="ip/design_mb_clk_wiz_0_0/design_mb_clk_wiz_0_0.xci">
+          <Proxy FileSetName="design_mb_clk_wiz_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="design_mb.bd" FileRelPathName="ip/design_mb_ilmb_bram_if_cntlr_7/design_mb_ilmb_bram_if_cntlr_7.xci">
           <Proxy FileSetName="design_mb_ilmb_bram_if_cntlr_7"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="design_mb.bd" FileRelPathName="ip/design_mb_rst_clk_wiz_0_100M_1_2/design_mb_rst_clk_wiz_0_100M_1_2.xci">
-          <Proxy FileSetName="design_mb_rst_clk_wiz_0_100M_1_2"/>
+        <CompFileExtendedInfo CompFileName="design_mb.bd" FileRelPathName="ip/design_mb_microblaze_0_axi_intc_5/design_mb_microblaze_0_axi_intc_5.xci">
+          <Proxy FileSetName="design_mb_microblaze_0_axi_intc_5"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="design_mb.bd" FileRelPathName="ip/design_mb_rst_clk_wiz_0_100M_7/design_mb_rst_clk_wiz_0_100M_7.xci">
-          <Proxy FileSetName="design_mb_rst_clk_wiz_0_100M_7"/>
+        <CompFileExtendedInfo CompFileName="design_mb.bd" FileRelPathName="ip/design_mb_mdm_1_7/design_mb_mdm_1_7.xci">
+          <Proxy FileSetName="design_mb_mdm_1_7"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="design_mb.bd" FileRelPathName="ip/design_mb_lmb_bram_7/design_mb_lmb_bram_7.xci">
           <Proxy FileSetName="design_mb_lmb_bram_7"/>
         </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="design_mb.bd" FileRelPathName="ip/design_mb_xbar_5/design_mb_xbar_5.xci">
+          <Proxy FileSetName="design_mb_xbar_5"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="design_mb.bd" FileRelPathName="ip/design_mb_rst_clk_wiz_0_100M_7/design_mb_rst_clk_wiz_0_100M_7.xci">
+          <Proxy FileSetName="design_mb_rst_clk_wiz_0_100M_7"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="design_mb.bd" FileRelPathName="ip/design_mb_microblaze_0_0/design_mb_microblaze_0_0.xci">
+          <Proxy FileSetName="design_mb_microblaze_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="design_mb.bd" FileRelPathName="ip/design_mb_rst_clk_wiz_0_100M_1_2/design_mb_rst_clk_wiz_0_100M_1_2.xci">
+          <Proxy FileSetName="design_mb_rst_clk_wiz_0_100M_1_2"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="design_mb.bd" FileRelPathName="ip/design_mb_ilmb_v10_7/design_mb_ilmb_v10_7.xci">
+          <Proxy FileSetName="design_mb_ilmb_v10_7"/>
+        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="design_mb.bd" FileRelPathName="ip/design_mb_xbar_7/design_mb_xbar_7.xci">
           <Proxy FileSetName="design_mb_xbar_7"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="design_mb.bd" FileRelPathName="ip/design_mb_microblaze_0_axi_intc_5/design_mb_microblaze_0_axi_intc_5.xci">
-          <Proxy FileSetName="design_mb_microblaze_0_axi_intc_5"/>
+        <CompFileExtendedInfo CompFileName="design_mb.bd" FileRelPathName="ip/design_mb_dlmb_bram_if_cntlr_7/design_mb_dlmb_bram_if_cntlr_7.xci">
+          <Proxy FileSetName="design_mb_dlmb_bram_if_cntlr_7"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="design_mb.bd" FileRelPathName="ip/design_mb_axi_timer_0_0/design_mb_axi_timer_0_0.xci">
+          <Proxy FileSetName="design_mb_axi_timer_0_0"/>
         </CompFileExtendedInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/bd/design_mb/hdl/design_mb_wrapper.vhd">
@@ -240,6 +244,12 @@
     <FileSet Name="design_mb_xbar_7" Type="BlockSrcs" RelSrcDir="$PSRCDIR/design_mb_xbar_7">
       <Config>
         <Option Name="TopModule" Val="design_mb_xbar_7"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="design_mb_axi_timer_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/design_mb_axi_timer_0_0">
+      <Config>
+        <Option Name="TopModule" Val="design_mb_axi_timer_0_0"/>
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
@@ -401,6 +411,17 @@
     <Run Id="design_mb_xbar_7_synth_1" Type="Ft3:Synth" SrcSet="design_mb_xbar_7" Part="xc7z020clg484-1" ConstrsSet="design_mb_xbar_7" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/design_mb_xbar_7_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2019"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="design_mb_axi_timer_0_0_synth_1" Type="Ft3:Synth" SrcSet="design_mb_axi_timer_0_0" Part="xc7z020clg484-1" ConstrsSet="design_mb_axi_timer_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/design_mb_axi_timer_0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -651,6 +672,24 @@
     <Run Id="design_mb_xbar_7_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-1" ConstrsSet="design_mb_xbar_7" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="design_mb_xbar_7_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2019"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="design_mb_axi_timer_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-1" ConstrsSet="design_mb_axi_timer_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="design_mb_axi_timer_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>

@@ -1,0 +1,59 @@
+/*
+ * pearson.c
+
+ *
+ *  Created on: 28 févr. 2020
+ *      Author: Qlala
+ */
+#include<stdio.h>
+#include"pearson.h"
+#include "xtime_l.h"
+
+int test_pearson()
+{
+
+	// allocation matrice de variables (row, col)
+	float Mat[N_ROWS][N_COLS] = {
+		{6, 14},
+		{1, 45},
+		{8, 18},
+		{1, 19},
+		{0, 27},
+		{5, 36},
+		{3, 28},
+		{10, 11},
+		{2, 17},
+		{8, 12},
+		{6, 14},
+		{1, 45},
+		{8, 18},
+		{1, 19},
+		{0, 27},
+		{5, 36},
+		{3, 28},
+		{10, 11},
+		{2, 17},
+		{8, 12}
+	};
+
+	//algorithm call
+	float result =	0;
+	pearson(Mat,&result);
+
+	printf("Le coefficient de Pearson vaut: %lf\n\n GOLDEN VALUE = -0.577739\n\n", result);
+	printf("temps mul64 (130MHZ):\r\n");
+	ExecTimeInTicks = End_Time - Start_Time;
+	double HWelapsedInUs = 1.0 * (End_Time - Start_Time) / (COUNTS_PER_SECOND/1000000);
+	printf("(main HW) ExecTime = %lld unit (%.5lf useconds)\r\n", ExecTimeInTicks,HWelapsedInUs);
+	printf("***************************\n vs SW\r\n \r\n");
+	XTime_GetTime((XTime *) &Start_Time);
+
+	multiply_block_sw((float**)A,(float**)B,(float**)result);
+	XTime_GetTime((XTime *) &End_Time);
+	ExecTimeInTicks = End_Time - Start_Time;
+	double SWelapsedInUs = 1.0 * (End_Time - Start_Time) / (COUNTS_PER_SECOND/1000000);
+	printf("(main SW) ExecTime = %lld unit (%.5f useconds)\r\n", ExecTimeInTicks,
+			SWelapsedInUs);
+	printf("fin du test\r\n");
+	return 0;
+}

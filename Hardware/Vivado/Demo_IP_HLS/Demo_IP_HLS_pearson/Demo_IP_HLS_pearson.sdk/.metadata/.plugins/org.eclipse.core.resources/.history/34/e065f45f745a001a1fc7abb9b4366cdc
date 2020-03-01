@@ -1,0 +1,45 @@
+/*
+ * pearson.c
+
+ *
+ *  Created on: 28 févr. 2020
+ *      Author: Qlala
+ */
+#include<stdio.h>
+#include"pearson.h"
+
+int test_pearson()
+{
+
+	// allocation matrice de variables (row, col)
+	float Mat[N_ROWS][N_COLS] = {
+		{6, 14},
+		{1, 45},
+		{8, 18},
+		{1, 19},
+		{0, 27},
+		{5, 36},
+		{3, 28},
+		{10, 11},
+		{2, 17},
+		{8, 12},
+		{6, 14},
+		{1, 45},
+		{8, 18},
+		{1, 19},
+		{0, 27},
+		{5, 36},
+		{3, 28},
+		{10, 11},
+		{2, 17},
+		{8, 12}
+	};
+
+	//algorithm call
+	float result =	0;
+	pearson(Mat,&result);
+
+	printf("Le coefficient de Pearson vaut: %lf\n\n GOLDEN VALUE = -0.577739\n\n", result);
+
+	return 0;
+}

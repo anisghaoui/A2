@@ -21,59 +21,59 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Device 21-403] Loading part xc7z020clg484-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 7020 
+INFO: Helper process launched with PID 18940 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 853.402 ; gain = 177.699
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 853.789 ; gain = 177.402
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'design_IP_wrapper' [C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.srcs/sources_1/bd/design_IP/hdl/design_IP_wrapper.vhd:41]
 INFO: [Synth 8-3491] module 'design_IP' declared at 'C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.srcs/sources_1/bd/design_IP/synth/design_IP.vhd:3808' bound to instance 'design_IP_i' of component 'design_IP' [C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.srcs/sources_1/bd/design_IP/hdl/design_IP_wrapper.vhd:69]
 INFO: [Synth 8-638] synthesizing module 'design_IP' [C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.srcs/sources_1/bd/design_IP/synth/design_IP.vhd:3839]
-INFO: [Synth 8-3491] module 'design_IP_axi_gpio_0_0' declared at 'C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.runs/synth_2/.Xil/Vivado-1704-Qlala-Blade/realtime/design_IP_axi_gpio_0_0_stub.vhdl:5' bound to instance 'axi_gpio_0' of component 'design_IP_axi_gpio_0_0' [C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.srcs/sources_1/bd/design_IP/synth/design_IP.vhd:4436]
-INFO: [Synth 8-638] synthesizing module 'design_IP_axi_gpio_0_0' [C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.runs/synth_2/.Xil/Vivado-1704-Qlala-Blade/realtime/design_IP_axi_gpio_0_0_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'design_IP_axi_gpio_0_0' declared at 'C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.runs/synth_2/.Xil/Vivado-14380-Qlala-Blade/realtime/design_IP_axi_gpio_0_0_stub.vhdl:5' bound to instance 'axi_gpio_0' of component 'design_IP_axi_gpio_0_0' [C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.srcs/sources_1/bd/design_IP/synth/design_IP.vhd:4436]
+INFO: [Synth 8-638] synthesizing module 'design_IP_axi_gpio_0_0' [C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.runs/synth_2/.Xil/Vivado-14380-Qlala-Blade/realtime/design_IP_axi_gpio_0_0_stub.vhdl:31]
 INFO: [Synth 8-638] synthesizing module 'design_IP_axi_interconnect_0_0' [C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.srcs/sources_1/bd/design_IP/synth/design_IP.vhd:2526]
 INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_HK7C4E' [C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.srcs/sources_1/bd/design_IP/synth/design_IP.vhd:100]
-INFO: [Synth 8-3491] module 'design_IP_auto_pc_1' declared at 'C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.runs/synth_2/.Xil/Vivado-1704-Qlala-Blade/realtime/design_IP_auto_pc_1_stub.vhdl:5' bound to instance 'auto_pc' of component 'design_IP_auto_pc_1' [C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.srcs/sources_1/bd/design_IP/synth/design_IP.vhd:343]
-INFO: [Synth 8-638] synthesizing module 'design_IP_auto_pc_1' [C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.runs/synth_2/.Xil/Vivado-1704-Qlala-Blade/realtime/design_IP_auto_pc_1_stub.vhdl:90]
+INFO: [Synth 8-3491] module 'design_IP_auto_pc_1' declared at 'C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.runs/synth_2/.Xil/Vivado-14380-Qlala-Blade/realtime/design_IP_auto_pc_1_stub.vhdl:5' bound to instance 'auto_pc' of component 'design_IP_auto_pc_1' [C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.srcs/sources_1/bd/design_IP/synth/design_IP.vhd:343]
+INFO: [Synth 8-638] synthesizing module 'design_IP_auto_pc_1' [C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.runs/synth_2/.Xil/Vivado-14380-Qlala-Blade/realtime/design_IP_auto_pc_1_stub.vhdl:90]
 INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_HK7C4E' (1#1) [C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.srcs/sources_1/bd/design_IP/synth/design_IP.vhd:100]
 INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_1AFXEMA' [C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.srcs/sources_1/bd/design_IP/synth/design_IP.vhd:819]
-INFO: [Synth 8-3491] module 'design_IP_auto_cc_0' declared at 'C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.runs/synth_2/.Xil/Vivado-1704-Qlala-Blade/realtime/design_IP_auto_cc_0_stub.vhdl:5' bound to instance 'auto_cc' of component 'design_IP_auto_cc_0' [C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.srcs/sources_1/bd/design_IP/synth/design_IP.vhd:1156]
-INFO: [Synth 8-638] synthesizing module 'design_IP_auto_cc_0' [C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.runs/synth_2/.Xil/Vivado-1704-Qlala-Blade/realtime/design_IP_auto_cc_0_stub.vhdl:85]
-INFO: [Synth 8-3491] module 'design_IP_auto_us_0' declared at 'C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.runs/synth_2/.Xil/Vivado-1704-Qlala-Blade/realtime/design_IP_auto_us_0_stub.vhdl:5' bound to instance 'auto_us' of component 'design_IP_auto_us_0' [C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.srcs/sources_1/bd/design_IP/synth/design_IP.vhd:1233]
-INFO: [Synth 8-638] synthesizing module 'design_IP_auto_us_0' [C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.runs/synth_2/.Xil/Vivado-1704-Qlala-Blade/realtime/design_IP_auto_us_0_stub.vhdl:83]
+INFO: [Synth 8-3491] module 'design_IP_auto_cc_0' declared at 'C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.runs/synth_2/.Xil/Vivado-14380-Qlala-Blade/realtime/design_IP_auto_cc_0_stub.vhdl:5' bound to instance 'auto_cc' of component 'design_IP_auto_cc_0' [C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.srcs/sources_1/bd/design_IP/synth/design_IP.vhd:1156]
+INFO: [Synth 8-638] synthesizing module 'design_IP_auto_cc_0' [C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.runs/synth_2/.Xil/Vivado-14380-Qlala-Blade/realtime/design_IP_auto_cc_0_stub.vhdl:85]
+INFO: [Synth 8-3491] module 'design_IP_auto_us_0' declared at 'C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.runs/synth_2/.Xil/Vivado-14380-Qlala-Blade/realtime/design_IP_auto_us_0_stub.vhdl:5' bound to instance 'auto_us' of component 'design_IP_auto_us_0' [C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.srcs/sources_1/bd/design_IP/synth/design_IP.vhd:1233]
+INFO: [Synth 8-638] synthesizing module 'design_IP_auto_us_0' [C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.runs/synth_2/.Xil/Vivado-14380-Qlala-Blade/realtime/design_IP_auto_us_0_stub.vhdl:83]
 INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_1AFXEMA' (2#1) [C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.srcs/sources_1/bd/design_IP/synth/design_IP.vhd:819]
 INFO: [Synth 8-638] synthesizing module 's01_couplers_imp_V7USKA' [C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.srcs/sources_1/bd/design_IP/synth/design_IP.vhd:1911]
-INFO: [Synth 8-3491] module 'design_IP_auto_cc_1' declared at 'C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.runs/synth_2/.Xil/Vivado-1704-Qlala-Blade/realtime/design_IP_auto_cc_1_stub.vhdl:5' bound to instance 'auto_cc' of component 'design_IP_auto_cc_1' [C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.srcs/sources_1/bd/design_IP/synth/design_IP.vhd:2248]
-INFO: [Synth 8-638] synthesizing module 'design_IP_auto_cc_1' [C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.runs/synth_2/.Xil/Vivado-1704-Qlala-Blade/realtime/design_IP_auto_cc_1_stub.vhdl:85]
-INFO: [Synth 8-3491] module 'design_IP_auto_us_1' declared at 'C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.runs/synth_2/.Xil/Vivado-1704-Qlala-Blade/realtime/design_IP_auto_us_1_stub.vhdl:5' bound to instance 'auto_us' of component 'design_IP_auto_us_1' [C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.srcs/sources_1/bd/design_IP/synth/design_IP.vhd:2325]
-INFO: [Synth 8-638] synthesizing module 'design_IP_auto_us_1' [C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.runs/synth_2/.Xil/Vivado-1704-Qlala-Blade/realtime/design_IP_auto_us_1_stub.vhdl:83]
+INFO: [Synth 8-3491] module 'design_IP_auto_cc_1' declared at 'C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.runs/synth_2/.Xil/Vivado-14380-Qlala-Blade/realtime/design_IP_auto_cc_1_stub.vhdl:5' bound to instance 'auto_cc' of component 'design_IP_auto_cc_1' [C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.srcs/sources_1/bd/design_IP/synth/design_IP.vhd:2248]
+INFO: [Synth 8-638] synthesizing module 'design_IP_auto_cc_1' [C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.runs/synth_2/.Xil/Vivado-14380-Qlala-Blade/realtime/design_IP_auto_cc_1_stub.vhdl:85]
+INFO: [Synth 8-3491] module 'design_IP_auto_us_1' declared at 'C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.runs/synth_2/.Xil/Vivado-14380-Qlala-Blade/realtime/design_IP_auto_us_1_stub.vhdl:5' bound to instance 'auto_us' of component 'design_IP_auto_us_1' [C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.srcs/sources_1/bd/design_IP/synth/design_IP.vhd:2325]
+INFO: [Synth 8-638] synthesizing module 'design_IP_auto_us_1' [C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.runs/synth_2/.Xil/Vivado-14380-Qlala-Blade/realtime/design_IP_auto_us_1_stub.vhdl:83]
 INFO: [Synth 8-256] done synthesizing module 's01_couplers_imp_V7USKA' (3#1) [C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.srcs/sources_1/bd/design_IP/synth/design_IP.vhd:1911]
-INFO: [Synth 8-3491] module 'design_IP_xbar_0' declared at 'C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.runs/synth_2/.Xil/Vivado-1704-Qlala-Blade/realtime/design_IP_xbar_0_stub.vhdl:5' bound to instance 'xbar' of component 'design_IP_xbar_0' [C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.srcs/sources_1/bd/design_IP/synth/design_IP.vhd:3183]
-INFO: [Synth 8-638] synthesizing module 'design_IP_xbar_0' [C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.runs/synth_2/.Xil/Vivado-1704-Qlala-Blade/realtime/design_IP_xbar_0_stub.vhdl:89]
+INFO: [Synth 8-3491] module 'design_IP_xbar_0' declared at 'C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.runs/synth_2/.Xil/Vivado-14380-Qlala-Blade/realtime/design_IP_xbar_0_stub.vhdl:5' bound to instance 'xbar' of component 'design_IP_xbar_0' [C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.srcs/sources_1/bd/design_IP/synth/design_IP.vhd:3183]
+INFO: [Synth 8-638] synthesizing module 'design_IP_xbar_0' [C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.runs/synth_2/.Xil/Vivado-14380-Qlala-Blade/realtime/design_IP_xbar_0_stub.vhdl:89]
 INFO: [Synth 8-256] done synthesizing module 'design_IP_axi_interconnect_0_0' (4#1) [C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.srcs/sources_1/bd/design_IP/synth/design_IP.vhd:2526]
-INFO: [Synth 8-3491] module 'design_IP_clk_wiz_0_0' declared at 'C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.runs/synth_2/.Xil/Vivado-1704-Qlala-Blade/realtime/design_IP_clk_wiz_0_0_stub.vhdl:5' bound to instance 'clk_wiz_0' of component 'design_IP_clk_wiz_0_0' [C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.srcs/sources_1/bd/design_IP/synth/design_IP.vhd:4578]
-INFO: [Synth 8-638] synthesizing module 'design_IP_clk_wiz_0_0' [C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.runs/synth_2/.Xil/Vivado-1704-Qlala-Blade/realtime/design_IP_clk_wiz_0_0_stub.vhdl:16]
-INFO: [Synth 8-3491] module 'design_IP_pearson_0_0' declared at 'C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.runs/synth_2/.Xil/Vivado-1704-Qlala-Blade/realtime/design_IP_pearson_0_0_stub.vhdl:5' bound to instance 'pearson_0' of component 'design_IP_pearson_0_0' [C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.srcs/sources_1/bd/design_IP/synth/design_IP.vhd:4586]
-INFO: [Synth 8-638] synthesizing module 'design_IP_pearson_0_0' [C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.runs/synth_2/.Xil/Vivado-1704-Qlala-Blade/realtime/design_IP_pearson_0_0_stub.vhdl:101]
-INFO: [Synth 8-3491] module 'design_IP_proc_sys_reset_0_0' declared at 'C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.runs/synth_2/.Xil/Vivado-1704-Qlala-Blade/realtime/design_IP_proc_sys_reset_0_0_stub.vhdl:5' bound to instance 'proc_sys_reset_0' of component 'design_IP_proc_sys_reset_0_0' [C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.srcs/sources_1/bd/design_IP/synth/design_IP.vhd:4679]
-INFO: [Synth 8-638] synthesizing module 'design_IP_proc_sys_reset_0_0' [C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.runs/synth_2/.Xil/Vivado-1704-Qlala-Blade/realtime/design_IP_proc_sys_reset_0_0_stub.vhdl:21]
-INFO: [Synth 8-3491] module 'design_IP_processing_system7_0_0' declared at 'C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.runs/synth_2/.Xil/Vivado-1704-Qlala-Blade/realtime/design_IP_processing_system7_0_0_stub.vhdl:5' bound to instance 'ps7_0' of component 'design_IP_processing_system7_0_0' [C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.srcs/sources_1/bd/design_IP/synth/design_IP.vhd:4692]
-INFO: [Synth 8-638] synthesizing module 'design_IP_processing_system7_0_0' [C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.runs/synth_2/.Xil/Vivado-1704-Qlala-Blade/realtime/design_IP_processing_system7_0_0_stub.vhdl:159]
+INFO: [Synth 8-3491] module 'design_IP_clk_wiz_0_0' declared at 'C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.runs/synth_2/.Xil/Vivado-14380-Qlala-Blade/realtime/design_IP_clk_wiz_0_0_stub.vhdl:5' bound to instance 'clk_wiz_0' of component 'design_IP_clk_wiz_0_0' [C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.srcs/sources_1/bd/design_IP/synth/design_IP.vhd:4578]
+INFO: [Synth 8-638] synthesizing module 'design_IP_clk_wiz_0_0' [C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.runs/synth_2/.Xil/Vivado-14380-Qlala-Blade/realtime/design_IP_clk_wiz_0_0_stub.vhdl:16]
+INFO: [Synth 8-3491] module 'design_IP_pearson_0_0' declared at 'C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.runs/synth_2/.Xil/Vivado-14380-Qlala-Blade/realtime/design_IP_pearson_0_0_stub.vhdl:5' bound to instance 'pearson_0' of component 'design_IP_pearson_0_0' [C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.srcs/sources_1/bd/design_IP/synth/design_IP.vhd:4586]
+INFO: [Synth 8-638] synthesizing module 'design_IP_pearson_0_0' [C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.runs/synth_2/.Xil/Vivado-14380-Qlala-Blade/realtime/design_IP_pearson_0_0_stub.vhdl:101]
+INFO: [Synth 8-3491] module 'design_IP_proc_sys_reset_0_0' declared at 'C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.runs/synth_2/.Xil/Vivado-14380-Qlala-Blade/realtime/design_IP_proc_sys_reset_0_0_stub.vhdl:5' bound to instance 'proc_sys_reset_0' of component 'design_IP_proc_sys_reset_0_0' [C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.srcs/sources_1/bd/design_IP/synth/design_IP.vhd:4679]
+INFO: [Synth 8-638] synthesizing module 'design_IP_proc_sys_reset_0_0' [C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.runs/synth_2/.Xil/Vivado-14380-Qlala-Blade/realtime/design_IP_proc_sys_reset_0_0_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'design_IP_processing_system7_0_0' declared at 'C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.runs/synth_2/.Xil/Vivado-14380-Qlala-Blade/realtime/design_IP_processing_system7_0_0_stub.vhdl:5' bound to instance 'ps7_0' of component 'design_IP_processing_system7_0_0' [C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.srcs/sources_1/bd/design_IP/synth/design_IP.vhd:4692]
+INFO: [Synth 8-638] synthesizing module 'design_IP_processing_system7_0_0' [C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.runs/synth_2/.Xil/Vivado-14380-Qlala-Blade/realtime/design_IP_processing_system7_0_0_stub.vhdl:159]
 INFO: [Synth 8-638] synthesizing module 'design_IP_ps7_0_axi_periph_0' [C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.srcs/sources_1/bd/design_IP/synth/design_IP.vhd:3368]
 INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_19D8OB0' [C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.srcs/sources_1/bd/design_IP/synth/design_IP.vhd:494]
-INFO: [Synth 8-3491] module 'design_IP_auto_pc_0' declared at 'C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.runs/synth_2/.Xil/Vivado-1704-Qlala-Blade/realtime/design_IP_auto_pc_0_stub.vhdl:5' bound to instance 'auto_pc' of component 'design_IP_auto_pc_0' [C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.srcs/sources_1/bd/design_IP/synth/design_IP.vhd:675]
-INFO: [Synth 8-638] synthesizing module 'design_IP_auto_pc_0' [C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.runs/synth_2/.Xil/Vivado-1704-Qlala-Blade/realtime/design_IP_auto_pc_0_stub.vhdl:70]
+INFO: [Synth 8-3491] module 'design_IP_auto_pc_0' declared at 'C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.runs/synth_2/.Xil/Vivado-14380-Qlala-Blade/realtime/design_IP_auto_pc_0_stub.vhdl:5' bound to instance 'auto_pc' of component 'design_IP_auto_pc_0' [C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.srcs/sources_1/bd/design_IP/synth/design_IP.vhd:675]
+INFO: [Synth 8-638] synthesizing module 'design_IP_auto_pc_0' [C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.runs/synth_2/.Xil/Vivado-14380-Qlala-Blade/realtime/design_IP_auto_pc_0_stub.vhdl:70]
 INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_19D8OB0' (5#1) [C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.srcs/sources_1/bd/design_IP/synth/design_IP.vhd:494]
 INFO: [Synth 8-256] done synthesizing module 'design_IP_ps7_0_axi_periph_0' (6#1) [C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.srcs/sources_1/bd/design_IP/synth/design_IP.vhd:3368]
 INFO: [Synth 8-638] synthesizing module 'design_IP_ps7_0_axi_periph_1_0' [C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.srcs/sources_1/bd/design_IP/synth/design_IP.vhd:3621]
 INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_U1Q3QN' [C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.srcs/sources_1/bd/design_IP/synth/design_IP.vhd:1377]
-INFO: [Synth 8-3491] module 'design_IP_auto_cc_2' declared at 'C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.runs/synth_2/.Xil/Vivado-1704-Qlala-Blade/realtime/design_IP_auto_cc_2_stub.vhdl:5' bound to instance 'auto_cc' of component 'design_IP_auto_cc_2' [C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.srcs/sources_1/bd/design_IP/synth/design_IP.vhd:1684]
-INFO: [Synth 8-638] synthesizing module 'design_IP_auto_cc_2' [C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.runs/synth_2/.Xil/Vivado-1704-Qlala-Blade/realtime/design_IP_auto_cc_2_stub.vhdl:91]
-INFO: [Synth 8-3491] module 'design_IP_auto_pc_2' declared at 'C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.runs/synth_2/.Xil/Vivado-1704-Qlala-Blade/realtime/design_IP_auto_pc_2_stub.vhdl:5' bound to instance 'auto_pc' of component 'design_IP_auto_pc_2' [C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.srcs/sources_1/bd/design_IP/synth/design_IP.vhd:1767]
-INFO: [Synth 8-638] synthesizing module 'design_IP_auto_pc_2' [C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.runs/synth_2/.Xil/Vivado-1704-Qlala-Blade/realtime/design_IP_auto_pc_2_stub.vhdl:70]
+INFO: [Synth 8-3491] module 'design_IP_auto_cc_2' declared at 'C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.runs/synth_2/.Xil/Vivado-14380-Qlala-Blade/realtime/design_IP_auto_cc_2_stub.vhdl:5' bound to instance 'auto_cc' of component 'design_IP_auto_cc_2' [C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.srcs/sources_1/bd/design_IP/synth/design_IP.vhd:1684]
+INFO: [Synth 8-638] synthesizing module 'design_IP_auto_cc_2' [C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.runs/synth_2/.Xil/Vivado-14380-Qlala-Blade/realtime/design_IP_auto_cc_2_stub.vhdl:91]
+INFO: [Synth 8-3491] module 'design_IP_auto_pc_2' declared at 'C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.runs/synth_2/.Xil/Vivado-14380-Qlala-Blade/realtime/design_IP_auto_pc_2_stub.vhdl:5' bound to instance 'auto_pc' of component 'design_IP_auto_pc_2' [C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.srcs/sources_1/bd/design_IP/synth/design_IP.vhd:1767]
+INFO: [Synth 8-638] synthesizing module 'design_IP_auto_pc_2' [C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.runs/synth_2/.Xil/Vivado-14380-Qlala-Blade/realtime/design_IP_auto_pc_2_stub.vhdl:70]
 INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_U1Q3QN' (7#1) [C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.srcs/sources_1/bd/design_IP/synth/design_IP.vhd:1377]
 INFO: [Synth 8-256] done synthesizing module 'design_IP_ps7_0_axi_periph_1_0' (8#1) [C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.srcs/sources_1/bd/design_IP/synth/design_IP.vhd:3621]
-INFO: [Synth 8-3491] module 'design_IP_rst_clk_wiz_0_100M_0' declared at 'C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.runs/synth_2/.Xil/Vivado-1704-Qlala-Blade/realtime/design_IP_rst_clk_wiz_0_100M_0_stub.vhdl:5' bound to instance 'rst_clk_wiz_0_100M' of component 'design_IP_rst_clk_wiz_0_100M_0' [C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.srcs/sources_1/bd/design_IP/synth/design_IP.vhd:4974]
-INFO: [Synth 8-638] synthesizing module 'design_IP_rst_clk_wiz_0_100M_0' [C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.runs/synth_2/.Xil/Vivado-1704-Qlala-Blade/realtime/design_IP_rst_clk_wiz_0_100M_0_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'design_IP_rst_clk_wiz_0_100M_0' declared at 'C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.runs/synth_2/.Xil/Vivado-14380-Qlala-Blade/realtime/design_IP_rst_clk_wiz_0_100M_0_stub.vhdl:5' bound to instance 'rst_clk_wiz_0_100M' of component 'design_IP_rst_clk_wiz_0_100M_0' [C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.srcs/sources_1/bd/design_IP/synth/design_IP.vhd:4974]
+INFO: [Synth 8-638] synthesizing module 'design_IP_rst_clk_wiz_0_100M_0' [C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.runs/synth_2/.Xil/Vivado-14380-Qlala-Blade/realtime/design_IP_rst_clk_wiz_0_100M_0_stub.vhdl:21]
 INFO: [Synth 8-256] done synthesizing module 'design_IP' (9#1) [C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.srcs/sources_1/bd/design_IP/synth/design_IP.vhd:3839]
 INFO: [Synth 8-256] done synthesizing module 'design_IP_wrapper' (10#1) [C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.srcs/sources_1/bd/design_IP/hdl/design_IP_wrapper.vhd:41]
 WARNING: [Synth 8-3331] design design_IP_ps7_0_axi_periph_1_0 has unconnected port ACLK
@@ -93,7 +93,7 @@ WARNING: [Synth 8-3331] design m00_couplers_imp_HK7C4E has unconnected port M_AX
 WARNING: [Synth 8-3331] design m00_couplers_imp_HK7C4E has unconnected port M_AXI_rid[2]
 WARNING: [Synth 8-3331] design m00_couplers_imp_HK7C4E has unconnected port M_AXI_rid[1]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 927.035 ; gain = 251.332
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 926.523 ; gain = 250.137
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -106,10 +106,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 927.035 ; gain = 251.332
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 926.523 ; gain = 250.137
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 927.035 ; gain = 251.332
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 926.523 ; gain = 250.137
 ---------------------------------------------------------------------------------
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
@@ -131,38 +131,39 @@ Parsing XDC File [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_H
 Finished Parsing XDC File [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.srcs/sources_1/bd/design_IP/ip/design_IP_pearson_0_0/design_IP_pearson_0_0/design_IP_pearson_0_0_in_context.xdc] for cell 'design_IP_i/pearson_0'
 Parsing XDC File [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.srcs/sources_1/bd/design_IP/ip/design_IP_auto_pc_0/design_IP_auto_pc_0/design_IP_auto_pc_0_in_context.xdc] for cell 'design_IP_i/ps7_0_axi_periph/s00_couplers/auto_pc'
 Finished Parsing XDC File [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.srcs/sources_1/bd/design_IP/ip/design_IP_auto_pc_0/design_IP_auto_pc_0/design_IP_auto_pc_0_in_context.xdc] for cell 'design_IP_i/ps7_0_axi_periph/s00_couplers/auto_pc'
-Parsing XDC File [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.srcs/sources_1/bd/design_IP/ip/design_IP_auto_us_0/design_IP_auto_us_0/design_IP_auto_us_1_in_context.xdc] for cell 'design_IP_i/axi_interconnect_0/s00_couplers/auto_us'
-Finished Parsing XDC File [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.srcs/sources_1/bd/design_IP/ip/design_IP_auto_us_0/design_IP_auto_us_0/design_IP_auto_us_1_in_context.xdc] for cell 'design_IP_i/axi_interconnect_0/s00_couplers/auto_us'
+Parsing XDC File [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.srcs/sources_1/bd/design_IP/ip/design_IP_auto_us_0/design_IP_auto_us_0/design_IP_auto_us_0_in_context.xdc] for cell 'design_IP_i/axi_interconnect_0/s00_couplers/auto_us'
+Finished Parsing XDC File [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.srcs/sources_1/bd/design_IP/ip/design_IP_auto_us_0/design_IP_auto_us_0/design_IP_auto_us_0_in_context.xdc] for cell 'design_IP_i/axi_interconnect_0/s00_couplers/auto_us'
 Parsing XDC File [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.srcs/sources_1/bd/design_IP/ip/design_IP_auto_cc_0/design_IP_auto_cc_0/design_IP_auto_cc_0_in_context.xdc] for cell 'design_IP_i/axi_interconnect_0/s00_couplers/auto_cc'
 Finished Parsing XDC File [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.srcs/sources_1/bd/design_IP/ip/design_IP_auto_cc_0/design_IP_auto_cc_0/design_IP_auto_cc_0_in_context.xdc] for cell 'design_IP_i/axi_interconnect_0/s00_couplers/auto_cc'
-Parsing XDC File [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.srcs/sources_1/bd/design_IP/ip/design_IP_auto_us_1/design_IP_auto_us_1/design_IP_auto_us_1_in_context.xdc] for cell 'design_IP_i/axi_interconnect_0/s01_couplers/auto_us'
-Finished Parsing XDC File [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.srcs/sources_1/bd/design_IP/ip/design_IP_auto_us_1/design_IP_auto_us_1/design_IP_auto_us_1_in_context.xdc] for cell 'design_IP_i/axi_interconnect_0/s01_couplers/auto_us'
+Parsing XDC File [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.srcs/sources_1/bd/design_IP/ip/design_IP_auto_us_1/design_IP_auto_us_1/design_IP_auto_us_0_in_context.xdc] for cell 'design_IP_i/axi_interconnect_0/s01_couplers/auto_us'
+Finished Parsing XDC File [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.srcs/sources_1/bd/design_IP/ip/design_IP_auto_us_1/design_IP_auto_us_1/design_IP_auto_us_0_in_context.xdc] for cell 'design_IP_i/axi_interconnect_0/s01_couplers/auto_us'
 Parsing XDC File [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.srcs/sources_1/bd/design_IP/ip/design_IP_auto_cc_1/design_IP_auto_cc_1/design_IP_auto_cc_0_in_context.xdc] for cell 'design_IP_i/axi_interconnect_0/s01_couplers/auto_cc'
 Finished Parsing XDC File [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.srcs/sources_1/bd/design_IP/ip/design_IP_auto_cc_1/design_IP_auto_cc_1/design_IP_auto_cc_0_in_context.xdc] for cell 'design_IP_i/axi_interconnect_0/s01_couplers/auto_cc'
 Parsing XDC File [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.srcs/sources_1/bd/design_IP/ip/design_IP_auto_pc_1/design_IP_auto_pc_1/design_IP_auto_pc_1_in_context.xdc] for cell 'design_IP_i/axi_interconnect_0/m00_couplers/auto_pc'
 Finished Parsing XDC File [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.srcs/sources_1/bd/design_IP/ip/design_IP_auto_pc_1/design_IP_auto_pc_1/design_IP_auto_pc_1_in_context.xdc] for cell 'design_IP_i/axi_interconnect_0/m00_couplers/auto_pc'
 Parsing XDC File [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.srcs/sources_1/bd/design_IP/ip/design_IP_auto_cc_2/design_IP_auto_cc_2/design_IP_auto_cc_2_in_context.xdc] for cell 'design_IP_i/ps7_0_axi_periph_1/s00_couplers/auto_cc'
 Finished Parsing XDC File [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.srcs/sources_1/bd/design_IP/ip/design_IP_auto_cc_2/design_IP_auto_cc_2/design_IP_auto_cc_2_in_context.xdc] for cell 'design_IP_i/ps7_0_axi_periph_1/s00_couplers/auto_cc'
-Parsing XDC File [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.srcs/sources_1/bd/design_IP/ip/design_IP_auto_pc_2/design_IP_auto_pc_2/design_IP_auto_pc_0_in_context.xdc] for cell 'design_IP_i/ps7_0_axi_periph_1/s00_couplers/auto_pc'
-Finished Parsing XDC File [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.srcs/sources_1/bd/design_IP/ip/design_IP_auto_pc_2/design_IP_auto_pc_2/design_IP_auto_pc_0_in_context.xdc] for cell 'design_IP_i/ps7_0_axi_periph_1/s00_couplers/auto_pc'
+Parsing XDC File [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.srcs/sources_1/bd/design_IP/ip/design_IP_auto_pc_2/design_IP_auto_pc_2/design_IP_auto_pc_2_in_context.xdc] for cell 'design_IP_i/ps7_0_axi_periph_1/s00_couplers/auto_pc'
+Finished Parsing XDC File [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.srcs/sources_1/bd/design_IP/ip/design_IP_auto_pc_2/design_IP_auto_pc_2/design_IP_auto_pc_2_in_context.xdc] for cell 'design_IP_i/ps7_0_axi_periph_1/s00_couplers/auto_pc'
 Parsing XDC File [C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.runs/synth_2/dont_touch.xdc]
 Finished Parsing XDC File [C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.runs/synth_2/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1039.996 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1036.664 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.210 . Memory (MB): peak = 1039.996 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.221 . Memory (MB): peak = 1036.664 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'design_IP_i/pearson_0' at clock pin 'ap_clk' is different from the actual clock period '8.696', this can lead to different synthesis results.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1039.996 ; gain = 364.293
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1036.773 ; gain = 360.387
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1039.996 ; gain = 364.293
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1036.773 ; gain = 360.387
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -447,10 +448,10 @@ Applied set_property DONT_TOUCH = true for design_IP_i/axi_interconnect_0/m00_co
 Applied set_property DONT_TOUCH = true for design_IP_i/ps7_0_axi_periph_1/s00_couplers/auto_cc. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_IP_i/ps7_0_axi_periph_1/s00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1039.996 ; gain = 364.293
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1036.773 ; gain = 360.387
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1039.996 ; gain = 364.293
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1036.773 ; gain = 360.387
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -502,7 +503,7 @@ WARNING: [Synth 8-3331] design design_IP_axi_interconnect_0_0 has unconnected po
 WARNING: [Synth 8-3331] design design_IP_axi_interconnect_0_0 has unconnected port S01_AXI_arlock[1]
 WARNING: [Synth 8-3331] design design_IP_axi_interconnect_0_0 has unconnected port S01_AXI_awlock[1]
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1039.996 ; gain = 364.293
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1036.773 ; gain = 360.387
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -521,13 +522,13 @@ INFO: [Synth 8-5578] Moved timing constraint from pin 'design_IP_i/clk_wiz_0/HLS
 INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'design_IP_i/clk_wiz_0/clk_in1' to 'design_IP_i/ps7_0/bbstub_FCLK_CLK0/O'
 INFO: [Synth 8-5819] Moved 4 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1039.996 ; gain = 364.293
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1036.773 ; gain = 360.387
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1039.996 ; gain = 364.293
+Finished Timing Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1036.773 ; gain = 360.387
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -539,7 +540,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 1039.996 ; gain = 364.293
+Finished Technology Mapping : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1036.773 ; gain = 360.387
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -563,7 +564,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1039.996 ; gain = 364.293
+Finished IO Insertion : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 1036.773 ; gain = 360.387
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -576,7 +577,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1039.996 ; gain = 364.293
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 1036.773 ; gain = 360.387
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -588,25 +589,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1039.996 ; gain = 364.293
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 1036.773 ; gain = 360.387
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1039.996 ; gain = 364.293
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 1036.773 ; gain = 360.387
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1039.996 ; gain = 364.293
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 1036.773 ; gain = 360.387
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1039.996 ; gain = 364.293
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 1036.773 ; gain = 360.387
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -671,25 +672,25 @@ Report Instance Areas:
 |10    |      s00_couplers     |s00_couplers_imp_U1Q3QN        |   429|
 +------+-----------------------+-------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1039.996 ; gain = 364.293
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 1036.773 ; gain = 360.387
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 16 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:34 . Memory (MB): peak = 1039.996 ; gain = 251.332
-Synthesis Optimization Complete : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1039.996 ; gain = 364.293
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:35 . Memory (MB): peak = 1036.773 ; gain = 250.137
+Synthesis Optimization Complete : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 1036.773 ; gain = 360.387
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1060.473 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1050.648 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-70 Infos, 34 Warnings, 0 Critical Warnings and 0 Errors encountered.
+70 Infos, 35 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:45 ; elapsed = 00:00:49 . Memory (MB): peak = 1060.473 ; gain = 667.203
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1060.473 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:49 ; elapsed = 00:00:53 . Memory (MB): peak = 1050.648 ; gain = 657.414
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1050.648 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.runs/synth_2/design_IP_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_IP_wrapper_utilization_synth.rpt -pb design_IP_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Feb 27 21:57:30 2020...
+INFO: [Common 17-206] Exiting Vivado at Sat Feb 29 00:53:53 2020...

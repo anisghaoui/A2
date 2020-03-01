@@ -1,0 +1,60 @@
+23:51:25 **** Incremental Build of configuration Debug for project pearson_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/pearson.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/pearson.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../pearson_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pearson.d" -MT"src/pearson.o" -o "src/pearson.o" "../src/pearson.c"
+../src/pearson.c: In function 'pearson_sw':
+../src/pearson.c:75:17: warning: passing argument 1 of 'moyenne' from incompatible pointer type [-Wincompatible-pointer-types]
+  moyX = moyenne(mat, 0);
+                 ^~~
+../src/pearson.c:16:22: note: expected 'float *' but argument is of type 'float **'
+ float moyenne(float* mat, int col)
+               ~~~~~~~^~~
+../src/pearson.c:76:17: warning: passing argument 1 of 'moyenne' from incompatible pointer type [-Wincompatible-pointer-types]
+  moyY = moyenne(mat, 1);;
+                 ^~~
+../src/pearson.c:16:22: note: expected 'float *' but argument is of type 'float **'
+ float moyenne(float* mat, int col)
+               ~~~~~~~^~~
+../src/pearson.c:77:20: warning: passing argument 1 of 'moyenneXY' from incompatible pointer type [-Wincompatible-pointer-types]
+  moyXY = moyenneXY(mat, 0, 1);;
+                    ^~~
+../src/pearson.c:33:24: note: expected 'float *' but argument is of type 'float **'
+ float moyenneXY(float* mat, int colX, int colY)
+                 ~~~~~~~^~~
+../src/pearson.c:78:19: warning: passing argument 1 of 'ecartType' from incompatible pointer type [-Wincompatible-pointer-types]
+  ectX = ecartType(mat, 0, moyX);
+                   ^~~
+../src/pearson.c:49:24: note: expected 'float *' but argument is of type 'float **'
+ float ecartType(float* mat, int col, float moy)
+                 ~~~~~~~^~~
+../src/pearson.c:79:19: warning: passing argument 1 of 'ecartType' from incompatible pointer type [-Wincompatible-pointer-types]
+  ectY = ecartType(mat, 1, moyY);
+                   ^~~
+../src/pearson.c:49:24: note: expected 'float *' but argument is of type 'float **'
+ float ecartType(float* mat, int col, float moy)
+                 ~~~~~~~^~~
+../src/pearson.c:67:6: warning: unused variable 'j' [-Wunused-variable]
+  int j;
+      ^
+../src/pearson.c:66:6: warning: unused variable 'i' [-Wunused-variable]
+  int i;
+      ^
+'Finished building: ../src/pearson.c'
+' '
+'Building target: pearson_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../pearson_test_bsp/ps7_cortexa9_0/lib -o "pearson_test.elf"  ./src/helloworld.o ./src/pearson.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: pearson_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size pearson_test.elf  |tee "pearson_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  62188	   2752	 269088	 334028	  518cc	pearson_test.elf
+'Finished building: pearson_test.elf.size'
+' '
+
+23:51:27 Build Finished (took 1s.601ms)
+

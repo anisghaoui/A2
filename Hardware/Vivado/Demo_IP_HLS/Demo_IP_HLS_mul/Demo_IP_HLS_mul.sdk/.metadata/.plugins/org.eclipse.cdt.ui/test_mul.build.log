@@ -1,0 +1,51 @@
+00:59:31 **** Auto Build of configuration Debug for project test_mul ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/block_matrix.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/block_matrix.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test_mul_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/block_matrix.d" -MT"src/block_matrix.o" -o "src/block_matrix.o" "../src/block_matrix.c"
+../src/block_matrix.c: In function 'multiply_block_sw':
+../src/block_matrix.c:51:3: warning: label 'kk_loop' defined but not used [-Wunused-label]
+   kk_loop:for(kk= 0 ; kk< BLOCK_SIZE; kk++){
+   ^~~~~~~
+../src/block_matrix.c:50:2: warning: label 'jj_loop' defined but not used [-Wunused-label]
+  jj_loop:for(jj=0; jj< BLOCK_SIZE; jj++){
+  ^~~~~~~
+../src/block_matrix.c:49:1: warning: label 'ii_loop' defined but not used [-Wunused-label]
+ ii_loop:for(ii=0; ii<BLOCK_SIZE; ii++){  //min(i+bloc, M) pour traiter le contour
+ ^~~~~~~
+../src/block_matrix.c:46:1: warning: label 'k_loop' defined but not used [-Wunused-label]
+ k_loop:for(k=0; k<P; k+=BLOCK_SIZE){ //indiquer une colonne de A et une ligne de B
+ ^~~~~~
+../src/block_matrix.c:45:1: warning: label 'j_loop' defined but not used [-Wunused-label]
+ j_loop:for(j=0; j<N; j+=BLOCK_SIZE){ //indiquer une colonne de C
+ ^~~~~~
+../src/block_matrix.c:44:1: warning: label 'i_loop' defined but not used [-Wunused-label]
+ i_loop:for(i=0; i<M; i+=BLOCK_SIZE){ //indiquer une ligne de C
+ ^~~~~~
+../src/block_matrix.c:38:5: warning: label 'multiply_block_label2' defined but not used [-Wunused-label]
+     multiply_block_label2:for (i = 0; i  < N ; i++)
+     ^~~~~~~~~~~~~~~~~~~~~
+../src/block_matrix.c:36:5: warning: label 'multiply_block_label1' defined but not used [-Wunused-label]
+     multiply_block_label1:for (i = 0; i  < P ; i++)
+     ^~~~~~~~~~~~~~~~~~~~~
+../src/block_matrix.c:34:5: warning: label 'multiply_block_label0' defined but not used [-Wunused-label]
+     multiply_block_label0:for (i = 0; i  < M ; i++)
+     ^~~~~~~~~~~~~~~~~~~~~
+'Finished building: ../src/block_matrix.c'
+' '
+'Building target: test_mul.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../test_mul_bsp/ps7_cortexa9_0/lib -o "test_mul.elf"  ./src/block_matrix.o ./src/busy_wait.o ./src/hello_zynq.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test_mul.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size test_mul.elf  |tee "test_mul.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  62900	   2584	  18208	  83692	  146ec	test_mul.elf
+'Finished building: test_mul.elf.size'
+' '
+
+00:59:33 Build Finished (took 2s.96ms)
+

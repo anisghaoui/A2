@@ -1,7 +1,7 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.1.3 (win64) Build 2644227 Wed Sep  4 09:45:24 MDT 2019
-// Date        : Thu Feb 27 20:55:32 2020
+// Date        : Sat Feb 29 22:58:10 2020
 // Host        : Qlala-Blade running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub -rename_top design_IP_auto_us_0 -prefix
 //               design_IP_auto_us_0_ design_IP_auto_us_1_stub.v

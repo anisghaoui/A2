@@ -2,26 +2,55 @@
 # Vivado v2019.1.3 (64-bit)
 # SW Build 2644227 on Wed Sep  4 09:45:24 MDT 2019
 # IP Build 2633630 on Wed Sep  4 12:30:14 MDT 2019
-# Start of session at: Thu Feb 27 20:29:04 2020
-# Process ID: 3028
-# Current directory: C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15632 C:\A2_project\Vivado\Demo_IP_HLS\Demo_IP_HLS_mul64\Demo_IP_HLS_mul64.xpr
-# Log file: C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/vivado.log
-# Journal file: C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64\vivado.jou
+# Start of session at: Fri Feb 28 21:23:48 2020
+# Process ID: 5700
+# Current directory: C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15172 C:\Users\Qlala\Documents\M2_SETI\A2\git\A2\Hardware\Vivado\Demo_IP_HLS\Demo_IP_HLS_mul64\Demo_IP_HLS_mul64.xpr
+# Log file: C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/vivado.log
+# Journal file: C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.xpr
+open_project C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.xpr
 update_compile_order -fileset sources_1
-open_bd_design {C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/design_IP.bd}
-delete_bd_objs [get_bd_intf_nets ps7_0_axi_periph_1_M00_AXI] [get_bd_intf_nets multiply_block_0_m_axi_INPUT_r] [get_bd_intf_nets multiply_block_0_m_axi_OUTPUT_r] [get_bd_cells multiply_block_0]
+file mkdir C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.sdk
+file copy -force C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.runs/impl_1/design_IP_wrapper.sysdef C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.sdk/design_IP_wrapper.hdf
+
+launch_sdk -workspace C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.sdk -hwspec C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.sdk/design_IP_wrapper.hdf
+open_run impl_1
+open_bd_design {C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/design_IP.bd}
 startgroup
-create_bd_cell -type ip -vlnv xilinx.com:hls:multiply_block_64:1.0 multiply_block_64_0
-endgroup
-startgroup
-apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz_0/AXI_CLK (100 MHz)} Clk_slave {/clk_wiz_0/HLS_CLK (100 MHz)} Clk_xbar {/clk_wiz_0/AXI_CLK (100 MHz)} Master {/processing_system7_0/M_AXI_GP1} Slave {/multiply_block_64_0/s_axi_CONTROL_BUS} intc_ip {/ps7_0_axi_periph_1} master_apm {0}}  [get_bd_intf_pins multiply_block_64_0/s_axi_CONTROL_BUS]
-apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz_0/HLS_CLK (100 MHz)} Clk_slave {/clk_wiz_0/AXI_CLK (100 MHz)} Clk_xbar {/clk_wiz_0/AXI_CLK (100 MHz)} Master {/multiply_block_64_0/m_axi_INPUT_r} Slave {/processing_system7_0/S_AXI_ACP} intc_ip {/axi_interconnect_0} master_apm {0}}  [get_bd_intf_pins multiply_block_64_0/m_axi_INPUT_r]
-apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz_0/HLS_CLK (100 MHz)} Clk_slave {/clk_wiz_0/AXI_CLK (100 MHz)} Clk_xbar {/clk_wiz_0/AXI_CLK (100 MHz)} Master {/multiply_block_64_0/m_axi_OUTPUT_r} Slave {/processing_system7_0/S_AXI_ACP} intc_ip {/axi_interconnect_0} master_apm {0}}  [get_bd_intf_pins multiply_block_64_0/m_axi_OUTPUT_r]
+set_property -dict [list CONFIG.CLKOUT2_REQUESTED_OUT_FREQ {120.000} CONFIG.MMCM_CLKFBOUT_MULT_F {6.000} CONFIG.MMCM_CLKIN1_PERIOD {10.0} CONFIG.MMCM_CLKIN2_PERIOD {10.0} CONFIG.MMCM_CLKOUT0_DIVIDE_F {6.000} CONFIG.MMCM_CLKOUT1_DIVIDE {5} CONFIG.CLKOUT1_JITTER {151.366} CONFIG.CLKOUT1_PHASE_ERROR {132.063} CONFIG.CLKOUT2_JITTER {145.728} CONFIG.CLKOUT2_PHASE_ERROR {132.063}] [get_bd_cells clk_wiz_0]
 endgroup
 save_bd_design
+reset_run synth_1
+reset_run design_IP_clk_wiz_0_0_synth_1
 launch_runs impl_1 -to_step write_bitstream -jobs 8
 wait_on_run impl_1
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/design_IP.bd]
+refresh_design
+open_bd_design {C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/design_IP.bd}
+file copy -force C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.runs/impl_1/design_IP_wrapper.sysdef C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.sdk/design_IP_wrapper.hdf
+
+startgroup
+set_property -dict [list CONFIG.CLKOUT2_REQUESTED_OUT_FREQ {123.000} CONFIG.MMCM_CLKFBOUT_MULT_F {7.375} CONFIG.MMCM_CLKIN1_PERIOD {10.000} CONFIG.MMCM_CLKIN2_PERIOD {10.000} CONFIG.MMCM_CLKOUT0_DIVIDE_F {7.375} CONFIG.MMCM_CLKOUT1_DIVIDE {6} CONFIG.CLKOUT1_JITTER {144.958} CONFIG.CLKOUT1_PHASE_ERROR {117.869} CONFIG.CLKOUT2_JITTER {138.899} CONFIG.CLKOUT2_PHASE_ERROR {117.869}] [get_bd_cells clk_wiz_0]
+endgroup
+save_bd_design
+reset_run synth_1
+reset_run design_IP_clk_wiz_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/design_IP.bd]
+refresh_design
+open_bd_design {C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/design_IP.bd}
+startgroup
+set_property -dict [list CONFIG.CLKOUT2_REQUESTED_OUT_FREQ {130.000} CONFIG.MMCM_CLKFBOUT_MULT_F {6.500} CONFIG.MMCM_CLKOUT0_DIVIDE_F {6.500} CONFIG.MMCM_CLKOUT1_DIVIDE {5} CONFIG.CLKOUT1_JITTER {145.553} CONFIG.CLKOUT1_PHASE_ERROR {124.502} CONFIG.CLKOUT2_JITTER {137.898} CONFIG.CLKOUT2_PHASE_ERROR {124.502}] [get_bd_cells clk_wiz_0]
+endgroup
+save_bd_design
+reset_run synth_1
+reset_run design_IP_clk_wiz_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/design_IP.bd]
+refresh_design
+file copy -force C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.runs/impl_1/design_IP_wrapper.sysdef C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.sdk/design_IP_wrapper.hdf
+

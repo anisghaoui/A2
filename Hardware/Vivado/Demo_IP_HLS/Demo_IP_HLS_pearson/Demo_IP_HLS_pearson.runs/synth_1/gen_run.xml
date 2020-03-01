@@ -45,13 +45,13 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
     <Step Id="synth_design"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="design_IP_proc_sys_reset_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_IP_processing_system7_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_IP_axi_gpio_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_IP_auto_pc_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_IP_axi_gpio_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_IP_processing_system7_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_IP_proc_sys_reset_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_IP_clk_wiz_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_IP_xbar_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_IP_rst_clk_wiz_0_100M_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_IP_xbar_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_IP_pearson_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_IP_auto_cc_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_IP_auto_cc_2"/>

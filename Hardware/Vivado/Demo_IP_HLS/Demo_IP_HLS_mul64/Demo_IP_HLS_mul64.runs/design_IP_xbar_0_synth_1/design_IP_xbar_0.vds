@@ -2,32 +2,33 @@
 # Vivado v2019.1.3 (64-bit)
 # SW Build 2644227 on Wed Sep  4 09:45:24 MDT 2019
 # IP Build 2633630 on Wed Sep  4 12:30:14 MDT 2019
-# Start of session at: Thu Feb 27 20:36:28 2020
-# Process ID: 18624
-# Current directory: C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.runs/design_IP_xbar_0_synth_1
+# Start of session at: Sun Mar  1 02:05:31 2020
+# Process ID: 9980
+# Current directory: C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.runs/design_IP_xbar_0_synth_1
 # Command line: vivado.exe -log design_IP_xbar_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_IP_xbar_0.tcl
-# Log file: C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.runs/design_IP_xbar_0_synth_1/design_IP_xbar_0.vds
-# Journal file: C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.runs/design_IP_xbar_0_synth_1\vivado.jou
+# Log file: C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.runs/design_IP_xbar_0_synth_1/design_IP_xbar_0.vds
+# Journal file: C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.runs/design_IP_xbar_0_synth_1\vivado.jou
 #-----------------------------------------------------------
 source design_IP_xbar_0.tcl -notrace
-create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:12 . Memory (MB): peak = 354.297 ; gain = 58.633
+create_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 353.781 ; gain = 60.500
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/A2_project/HLS'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/HLS'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
-WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:hls:multiply_block:1.0'. The one found in IP location 'c:/A2_project/HLS/xilinx_com_hls_multiply_block_1_0' will take precedence over the same IP in location c:/A2_project/HLS/Block_Matrix_HLS/block_matrix/solution2/impl/ip
-update_ip_catalog: Time (s): cpu = 00:00:02 ; elapsed = 00:00:13 . Memory (MB): peak = 378.133 ; gain = 23.836
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:hls:multiply_block:1.0'. The one found in IP location 'c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/HLS/xilinx_com_hls_multiply_block_1_0' will take precedence over the same IP in location c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/HLS/Block_Matrix_HLS/block_matrix/solution2/impl/ip
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.cache/ip 
 Command: synth_design -top design_IP_xbar_0 -part xc7z020clg484-1 -mode out_of_context
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Device 21-403] Loading part xc7z020clg484-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 17496 
+INFO: Helper process launched with PID 22152 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:18 ; elapsed = 00:00:56 . Memory (MB): peak = 840.754 ; gain = 177.969
+Starting RTL Elaboration : Time (s): cpu = 00:00:17 ; elapsed = 00:00:28 . Memory (MB): peak = 842.473 ; gain = 179.859
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'design_IP_xbar_0' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ip/design_IP_xbar_0/synth/design_IP_xbar_0.v:59]
-INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_20_axi_crossbar' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:4884]
+INFO: [Synth 8-6157] synthesizing module 'design_IP_xbar_0' [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ip/design_IP_xbar_0/synth/design_IP_xbar_0.v:59]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_20_axi_crossbar' [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:4884]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_NUM_SLAVE_SLOTS bound to: 2 - type: integer 
 	Parameter C_NUM_MASTER_SLOTS bound to: 1 - type: integer 
@@ -76,7 +77,7 @@ INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_20_axi_crossbar' [c:
 	Parameter P_LEN bound to: 8 - type: integer 
 	Parameter P_LOCK bound to: 1 - type: integer 
 	Parameter P_FAMILY bound to: zynq - type: string 
-INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_20_crossbar' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:2239]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_20_crossbar' [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:2239]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_NUM_SLAVE_SLOTS bound to: 2 - type: integer 
 	Parameter C_NUM_MASTER_SLOTS bound to: 1 - type: integer 
@@ -144,7 +145,7 @@ INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_20_crossbar' [c:/A2_
 	Parameter P_M_AXI_READ_ISSUING bound to: 64'b0000000000000000000000000000000100000000000000000000000000001000 
 	Parameter P_M_AXI_WRITE_ISSUING bound to: 64'b0000000000000000000000000000000100000000000000000000000000001000 
 	Parameter P_DECERR bound to: 2'b11 
-INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_20_si_transactor' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:3800]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_20_si_transactor' [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:3800]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_SI bound to: 0 - type: integer 
 	Parameter C_DIR bound to: 1 - type: integer 
@@ -182,7 +183,7 @@ INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_20_si_transactor' [c
 	Parameter P_NUM_ID_VAL bound to: 1 - type: integer 
 	Parameter P_NUM_THREADS bound to: 1 - type: integer 
 	Parameter P_M_SECURE_MASK bound to: 1'b0 
-INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_20_addr_decoder' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_20_addr_decoder' [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_NUM_TARGETS bound to: 1 - type: integer 
 	Parameter C_NUM_TARGETS_LOG bound to: 1 - type: integer 
@@ -196,27 +197,27 @@ INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_20_addr_decoder' [c:
 	Parameter C_TARGET_QUAL bound to: 2'b01 
 	Parameter C_RESOLUTION bound to: 2 - type: integer 
 	Parameter C_COMPARATOR_THRESHOLD bound to: 6 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
 	Parameter C_FAMILY bound to: rtl - type: string 
 	Parameter C_VALUE bound to: 30'b000000000000000000000000000000 
 	Parameter C_DATA_WIDTH bound to: 30 - type: integer 
 	Parameter C_BITS_PER_LUT bound to: 6 - type: integer 
 	Parameter C_NUM_LUT bound to: 5 - type: integer 
 	Parameter C_FIX_DATA_WIDTH bound to: 30 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_carry_and' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:62]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_carry_and' [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:62]
 	Parameter C_FAMILY bound to: rtl - type: string 
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_carry_and' (1#1) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:62]
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' (2#1) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
-INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized0' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_carry_and' (1#1) [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' (2#1) [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized0' [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
 	Parameter C_FAMILY bound to: rtl - type: string 
 	Parameter C_VALUE bound to: 30'b111111000000000000000000000000 
 	Parameter C_DATA_WIDTH bound to: 30 - type: integer 
 	Parameter C_BITS_PER_LUT bound to: 6 - type: integer 
 	Parameter C_NUM_LUT bound to: 5 - type: integer 
 	Parameter C_FIX_DATA_WIDTH bound to: 30 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized0' (2#1) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
-INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_20_addr_decoder' (3#1) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
-INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_18_axic_srl_fifo' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/5b9c/hdl/axi_data_fifo_v2_1_vl_rfs.v:698]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized0' (2#1) [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_20_addr_decoder' (3#1) [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
+INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_18_axic_srl_fifo' [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/5b9c/hdl/axi_data_fifo_v2_1_vl_rfs.v:698]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_FIFO_WIDTH bound to: 8 - type: integer 
 	Parameter C_MAX_CTRL_FANOUT bound to: 33 - type: integer 
@@ -228,7 +229,7 @@ INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_18_axic_srl_fifo' [
 	Parameter P_ALMOSTFULL_TEMP bound to: 5'b11110 
 	Parameter P_ALMOSTFULL bound to: 4'b1110 
 	Parameter P_NUM_REPS bound to: 1 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_18_ndeep_srl' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/5b9c/hdl/axi_data_fifo_v2_1_vl_rfs.v:1135]
+INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_18_ndeep_srl' [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/5b9c/hdl/axi_data_fifo_v2_1_vl_rfs.v:1135]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_A_WIDTH bound to: 4 - type: integer 
 	Parameter P_SRLASIZE bound to: 5 - type: integer 
@@ -239,20 +240,20 @@ INFO: [Synth 8-6157] synthesizing module 'SRLC32E' [C:/Xilinx/Vivado/2019.1/scri
 	Parameter INIT bound to: 32'b00000000000000000000000000000000 
 	Parameter IS_CLK_INVERTED bound to: 1'b0 
 INFO: [Synth 8-6155] done synthesizing module 'SRLC32E' (4#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:77850]
-INFO: [Synth 8-6155] done synthesizing module 'axi_data_fifo_v2_1_18_ndeep_srl' (5#1) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/5b9c/hdl/axi_data_fifo_v2_1_vl_rfs.v:1135]
-WARNING: [Synth 8-6014] Unused sequential element areset_d1_reg was removed.  [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/5b9c/hdl/axi_data_fifo_v2_1_vl_rfs.v:750]
-WARNING: [Synth 8-6014] Unused sequential element S_READY_i_reg was removed.  [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/5b9c/hdl/axi_data_fifo_v2_1_vl_rfs.v:789]
-INFO: [Synth 8-6155] done synthesizing module 'axi_data_fifo_v2_1_18_axic_srl_fifo' (6#1) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/5b9c/hdl/axi_data_fifo_v2_1_vl_rfs.v:698]
-INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6155] done synthesizing module 'axi_data_fifo_v2_1_18_ndeep_srl' (5#1) [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/5b9c/hdl/axi_data_fifo_v2_1_vl_rfs.v:1135]
+WARNING: [Synth 8-6014] Unused sequential element areset_d1_reg was removed.  [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/5b9c/hdl/axi_data_fifo_v2_1_vl_rfs.v:750]
+WARNING: [Synth 8-6014] Unused sequential element S_READY_i_reg was removed.  [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/5b9c/hdl/axi_data_fifo_v2_1_vl_rfs.v:789]
+INFO: [Synth 8-6155] done synthesizing module 'axi_data_fifo_v2_1_18_axic_srl_fifo' (6#1) [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/5b9c/hdl/axi_data_fifo_v2_1_vl_rfs.v:698]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_RATIO bound to: 2 - type: integer 
 	Parameter C_SEL_WIDTH bound to: 1 - type: integer 
 	Parameter C_DATA_WIDTH bound to: 69 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' (7#1) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
-WARNING: [Synth 8-6014] Unused sequential element gen_single_thread.debug_r_beat_cnt_i_reg was removed.  [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:4192]
-WARNING: [Synth 8-6014] Unused sequential element gen_single_thread.active_id_reg was removed.  [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:4150]
-INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_20_si_transactor' (8#1) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:3800]
-INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_20_si_transactor__parameterized0' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:3800]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' (7#1) [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+WARNING: [Synth 8-6014] Unused sequential element gen_single_thread.debug_r_beat_cnt_i_reg was removed.  [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:4192]
+WARNING: [Synth 8-6014] Unused sequential element gen_single_thread.active_id_reg was removed.  [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:4150]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_20_si_transactor' (8#1) [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:3800]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_20_si_transactor__parameterized0' [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:3800]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_SI bound to: 0 - type: integer 
 	Parameter C_DIR bound to: 0 - type: integer 
@@ -290,26 +291,26 @@ INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_20_si_transactor__pa
 	Parameter P_NUM_ID_VAL bound to: 1 - type: integer 
 	Parameter P_NUM_THREADS bound to: 1 - type: integer 
 	Parameter P_M_SECURE_MASK bound to: 1'b0 
-INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_RATIO bound to: 2 - type: integer 
 	Parameter C_SEL_WIDTH bound to: 1 - type: integer 
 	Parameter C_DATA_WIDTH bound to: 5 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' (8#1) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
-WARNING: [Synth 8-6014] Unused sequential element gen_single_thread.debug_r_beat_cnt_i_reg was removed.  [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:4192]
-WARNING: [Synth 8-6014] Unused sequential element gen_single_thread.active_id_reg was removed.  [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:4150]
-INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_20_si_transactor__parameterized0' (8#1) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:3800]
-INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_20_splitter' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' (8#1) [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+WARNING: [Synth 8-6014] Unused sequential element gen_single_thread.debug_r_beat_cnt_i_reg was removed.  [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:4192]
+WARNING: [Synth 8-6014] Unused sequential element gen_single_thread.active_id_reg was removed.  [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:4150]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_20_si_transactor__parameterized0' (8#1) [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:3800]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_20_splitter' [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
 	Parameter C_NUM_M bound to: 2 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_20_splitter' (9#1) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
-INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_20_wdata_router' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:4736]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_20_splitter' (9#1) [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_20_wdata_router' [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:4736]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_WMESG_WIDTH bound to: 74 - type: integer 
 	Parameter C_NUM_MASTER_SLOTS bound to: 2 - type: integer 
 	Parameter C_SELECT_WIDTH bound to: 1 - type: integer 
 	Parameter C_FIFO_DEPTH_LOG bound to: 3 - type: integer 
 	Parameter P_FIFO_DEPTH_LOG bound to: 3 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_18_axic_reg_srl_fifo' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/5b9c/hdl/axi_data_fifo_v2_1_vl_rfs.v:889]
+INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_18_axic_reg_srl_fifo' [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/5b9c/hdl/axi_data_fifo_v2_1_vl_rfs.v:889]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_FIFO_WIDTH bound to: 1 - type: integer 
 	Parameter C_MAX_CTRL_FANOUT bound to: 33 - type: integer 
@@ -324,18 +325,18 @@ INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_18_axic_reg_srl_fif
 	Parameter ZERO bound to: 2'b10 
 	Parameter ONE bound to: 2'b11 
 	Parameter TWO bound to: 2'b01 
-INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_18_ndeep_srl__parameterized0' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/5b9c/hdl/axi_data_fifo_v2_1_vl_rfs.v:1135]
+INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_18_ndeep_srl__parameterized0' [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/5b9c/hdl/axi_data_fifo_v2_1_vl_rfs.v:1135]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_A_WIDTH bound to: 3 - type: integer 
 	Parameter P_SRLASIZE bound to: 5 - type: integer 
 	Parameter P_SRLDEPTH bound to: 32 - type: integer 
 	Parameter P_NUMSRLS bound to: 1 - type: integer 
 	Parameter P_SHIFT_DEPTH bound to: 8 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'axi_data_fifo_v2_1_18_ndeep_srl__parameterized0' (9#1) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/5b9c/hdl/axi_data_fifo_v2_1_vl_rfs.v:1135]
-INFO: [Synth 8-155] case statement is not full and has no default [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/5b9c/hdl/axi_data_fifo_v2_1_vl_rfs.v:986]
-INFO: [Synth 8-6155] done synthesizing module 'axi_data_fifo_v2_1_18_axic_reg_srl_fifo' (10#1) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/5b9c/hdl/axi_data_fifo_v2_1_vl_rfs.v:889]
-INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_20_wdata_router' (11#1) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:4736]
-INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_20_si_transactor__parameterized1' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:3800]
+INFO: [Synth 8-6155] done synthesizing module 'axi_data_fifo_v2_1_18_ndeep_srl__parameterized0' (9#1) [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/5b9c/hdl/axi_data_fifo_v2_1_vl_rfs.v:1135]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/5b9c/hdl/axi_data_fifo_v2_1_vl_rfs.v:986]
+INFO: [Synth 8-6155] done synthesizing module 'axi_data_fifo_v2_1_18_axic_reg_srl_fifo' (10#1) [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/5b9c/hdl/axi_data_fifo_v2_1_vl_rfs.v:889]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_20_wdata_router' (11#1) [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:4736]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_20_si_transactor__parameterized1' [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:3800]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_SI bound to: 1 - type: integer 
 	Parameter C_DIR bound to: 1 - type: integer 
@@ -373,10 +374,10 @@ INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_20_si_transactor__pa
 	Parameter P_NUM_ID_VAL bound to: 1 - type: integer 
 	Parameter P_NUM_THREADS bound to: 1 - type: integer 
 	Parameter P_M_SECURE_MASK bound to: 1'b0 
-WARNING: [Synth 8-6014] Unused sequential element gen_single_thread.debug_r_beat_cnt_i_reg was removed.  [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:4192]
-WARNING: [Synth 8-6014] Unused sequential element gen_single_thread.active_id_reg was removed.  [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:4150]
-INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_20_si_transactor__parameterized1' (11#1) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:3800]
-INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_20_si_transactor__parameterized2' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:3800]
+WARNING: [Synth 8-6014] Unused sequential element gen_single_thread.debug_r_beat_cnt_i_reg was removed.  [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:4192]
+WARNING: [Synth 8-6014] Unused sequential element gen_single_thread.active_id_reg was removed.  [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:4150]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_20_si_transactor__parameterized1' (11#1) [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:3800]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_20_si_transactor__parameterized2' [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:3800]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_SI bound to: 1 - type: integer 
 	Parameter C_DIR bound to: 0 - type: integer 
@@ -414,10 +415,10 @@ INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_20_si_transactor__pa
 	Parameter P_NUM_ID_VAL bound to: 1 - type: integer 
 	Parameter P_NUM_THREADS bound to: 1 - type: integer 
 	Parameter P_M_SECURE_MASK bound to: 1'b0 
-WARNING: [Synth 8-6014] Unused sequential element gen_single_thread.debug_r_beat_cnt_i_reg was removed.  [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:4192]
-WARNING: [Synth 8-6014] Unused sequential element gen_single_thread.active_id_reg was removed.  [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:4150]
-INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_20_si_transactor__parameterized2' (11#1) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:3800]
-INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_20_addr_decoder__parameterized0' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
+WARNING: [Synth 8-6014] Unused sequential element gen_single_thread.debug_r_beat_cnt_i_reg was removed.  [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:4192]
+WARNING: [Synth 8-6014] Unused sequential element gen_single_thread.active_id_reg was removed.  [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:4150]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_20_si_transactor__parameterized2' (11#1) [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:3800]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_20_addr_decoder__parameterized0' [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_NUM_TARGETS bound to: 2 - type: integer 
 	Parameter C_NUM_TARGETS_LOG bound to: 1 - type: integer 
@@ -431,8 +432,8 @@ INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_20_addr_decoder__par
 	Parameter C_TARGET_QUAL bound to: 3'b011 
 	Parameter C_RESOLUTION bound to: 0 - type: integer 
 	Parameter C_COMPARATOR_THRESHOLD bound to: 6 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_20_addr_decoder__parameterized0' (11#1) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
-INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_18_axic_srl_fifo__parameterized0' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/5b9c/hdl/axi_data_fifo_v2_1_vl_rfs.v:698]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_20_addr_decoder__parameterized0' (11#1) [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
+INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_18_axic_srl_fifo__parameterized0' [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/5b9c/hdl/axi_data_fifo_v2_1_vl_rfs.v:698]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_FIFO_WIDTH bound to: 8 - type: integer 
 	Parameter C_MAX_CTRL_FANOUT bound to: 33 - type: integer 
@@ -444,17 +445,17 @@ INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_18_axic_srl_fifo__p
 	Parameter P_ALMOSTFULL_TEMP bound to: 4'b1110 
 	Parameter P_ALMOSTFULL bound to: 3'b110 
 	Parameter P_NUM_REPS bound to: 1 - type: integer 
-WARNING: [Synth 8-6014] Unused sequential element areset_d1_reg was removed.  [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/5b9c/hdl/axi_data_fifo_v2_1_vl_rfs.v:750]
-WARNING: [Synth 8-6014] Unused sequential element S_READY_i_reg was removed.  [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/5b9c/hdl/axi_data_fifo_v2_1_vl_rfs.v:789]
-INFO: [Synth 8-6155] done synthesizing module 'axi_data_fifo_v2_1_18_axic_srl_fifo__parameterized0' (11#1) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/5b9c/hdl/axi_data_fifo_v2_1_vl_rfs.v:698]
-INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_20_wdata_mux' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:4561]
+WARNING: [Synth 8-6014] Unused sequential element areset_d1_reg was removed.  [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/5b9c/hdl/axi_data_fifo_v2_1_vl_rfs.v:750]
+WARNING: [Synth 8-6014] Unused sequential element S_READY_i_reg was removed.  [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/5b9c/hdl/axi_data_fifo_v2_1_vl_rfs.v:789]
+INFO: [Synth 8-6155] done synthesizing module 'axi_data_fifo_v2_1_18_axic_srl_fifo__parameterized0' (11#1) [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/5b9c/hdl/axi_data_fifo_v2_1_vl_rfs.v:698]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_20_wdata_mux' [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:4561]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_WMESG_WIDTH bound to: 74 - type: integer 
 	Parameter C_NUM_SLAVE_SLOTS bound to: 2 - type: integer 
 	Parameter C_SELECT_WIDTH bound to: 1 - type: integer 
 	Parameter C_FIFO_DEPTH_LOG bound to: 3 - type: integer 
 	Parameter P_FIFO_DEPTH_LOG bound to: 3 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_18_axic_reg_srl_fifo__parameterized0' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/5b9c/hdl/axi_data_fifo_v2_1_vl_rfs.v:889]
+INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_18_axic_reg_srl_fifo__parameterized0' [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/5b9c/hdl/axi_data_fifo_v2_1_vl_rfs.v:889]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_FIFO_WIDTH bound to: 1 - type: integer 
 	Parameter C_MAX_CTRL_FANOUT bound to: 33 - type: integer 
@@ -469,17 +470,17 @@ INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_18_axic_reg_srl_fif
 	Parameter ZERO bound to: 2'b10 
 	Parameter ONE bound to: 2'b11 
 	Parameter TWO bound to: 2'b01 
-INFO: [Synth 8-155] case statement is not full and has no default [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/5b9c/hdl/axi_data_fifo_v2_1_vl_rfs.v:986]
-WARNING: [Synth 8-6014] Unused sequential element s_ready_i_reg was removed.  [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/5b9c/hdl/axi_data_fifo_v2_1_vl_rfs.v:1038]
-INFO: [Synth 8-6155] done synthesizing module 'axi_data_fifo_v2_1_18_axic_reg_srl_fifo__parameterized0' (11#1) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/5b9c/hdl/axi_data_fifo_v2_1_vl_rfs.v:889]
-INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized1' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/5b9c/hdl/axi_data_fifo_v2_1_vl_rfs.v:986]
+WARNING: [Synth 8-6014] Unused sequential element s_ready_i_reg was removed.  [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/5b9c/hdl/axi_data_fifo_v2_1_vl_rfs.v:1038]
+INFO: [Synth 8-6155] done synthesizing module 'axi_data_fifo_v2_1_18_axic_reg_srl_fifo__parameterized0' (11#1) [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/5b9c/hdl/axi_data_fifo_v2_1_vl_rfs.v:889]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized1' [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
 	Parameter C_FAMILY bound to: rtl - type: string 
 	Parameter C_RATIO bound to: 2 - type: integer 
 	Parameter C_SEL_WIDTH bound to: 1 - type: integer 
 	Parameter C_DATA_WIDTH bound to: 74 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized1' (11#1) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
-INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_20_wdata_mux' (12#1) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:4561]
-INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_19_axi_register_slice' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/4d88/hdl/axi_register_slice_v2_1_vl_rfs.v:2716]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized1' (11#1) [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_20_wdata_mux' (12#1) [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:4561]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_19_axi_register_slice' [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/4d88/hdl/axi_register_slice_v2_1_vl_rfs.v:2716]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_AXI_PROTOCOL bound to: 0 - type: integer 
 	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
@@ -590,27 +591,27 @@ INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_19_axi_registe
 	Parameter G_AXI_RUSER_INDEX bound to: 68 - type: integer 
 	Parameter G_AXI_RUSER_WIDTH bound to: 0 - type: integer 
 	Parameter G_AXI_RPAYLOAD_WIDTH bound to: 68 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_19_axic_register_slice' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/4d88/hdl/axi_register_slice_v2_1_vl_rfs.v:488]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_19_axic_register_slice' [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/4d88/hdl/axi_register_slice_v2_1_vl_rfs.v:488]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_DATA_WIDTH bound to: 31 - type: integer 
 	Parameter C_REG_CONFIG bound to: 0 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_19_axic_register_slice' (13#1) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/4d88/hdl/axi_register_slice_v2_1_vl_rfs.v:488]
-INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_19_axic_register_slice__parameterized0' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/4d88/hdl/axi_register_slice_v2_1_vl_rfs.v:488]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_19_axic_register_slice' (13#1) [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/4d88/hdl/axi_register_slice_v2_1_vl_rfs.v:488]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_19_axic_register_slice__parameterized0' [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/4d88/hdl/axi_register_slice_v2_1_vl_rfs.v:488]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_DATA_WIDTH bound to: 73 - type: integer 
 	Parameter C_REG_CONFIG bound to: 0 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_19_axic_register_slice__parameterized0' (13#1) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/4d88/hdl/axi_register_slice_v2_1_vl_rfs.v:488]
-INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_19_axic_register_slice__parameterized1' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/4d88/hdl/axi_register_slice_v2_1_vl_rfs.v:488]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_19_axic_register_slice__parameterized0' (13#1) [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/4d88/hdl/axi_register_slice_v2_1_vl_rfs.v:488]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_19_axic_register_slice__parameterized1' [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/4d88/hdl/axi_register_slice_v2_1_vl_rfs.v:488]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_DATA_WIDTH bound to: 3 - type: integer 
 	Parameter C_REG_CONFIG bound to: 7 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_19_axic_register_slice__parameterized1' (13#1) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/4d88/hdl/axi_register_slice_v2_1_vl_rfs.v:488]
-INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_19_axic_register_slice__parameterized2' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/4d88/hdl/axi_register_slice_v2_1_vl_rfs.v:488]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_19_axic_register_slice__parameterized1' (13#1) [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/4d88/hdl/axi_register_slice_v2_1_vl_rfs.v:488]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_19_axic_register_slice__parameterized2' [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/4d88/hdl/axi_register_slice_v2_1_vl_rfs.v:488]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_DATA_WIDTH bound to: 68 - type: integer 
 	Parameter C_REG_CONFIG bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_19_axic_register_slice__parameterized2' (13#1) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/4d88/hdl/axi_register_slice_v2_1_vl_rfs.v:488]
-INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_19_axic_register_slice__parameterized2' (13#1) [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/4d88/hdl/axi_register_slice_v2_1_vl_rfs.v:488]
+INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
 	Parameter C_AXI_PROTOCOL bound to: 0 - type: integer 
 	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
 	Parameter C_AXI_ADDR_WIDTH bound to: 1 - type: integer 
@@ -702,8 +703,8 @@ INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' 
 	Parameter G_AXI_RUSER_INDEX bound to: 68 - type: integer 
 	Parameter G_AXI_RUSER_WIDTH bound to: 0 - type: integer 
 	Parameter G_AXI_RPAYLOAD_WIDTH bound to: 68 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' (14#1) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
-INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
+INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' (14#1) [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
+INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
 	Parameter C_AXI_PROTOCOL bound to: 0 - type: integer 
 	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
 	Parameter C_AXI_ADDR_WIDTH bound to: 1 - type: integer 
@@ -795,10 +796,10 @@ INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' 
 	Parameter G_AXI_RUSER_INDEX bound to: 68 - type: integer 
 	Parameter G_AXI_RUSER_WIDTH bound to: 0 - type: integer 
 	Parameter G_AXI_RPAYLOAD_WIDTH bound to: 68 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' (15#1) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
-INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_19_axi_register_slice' (16#1) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/4d88/hdl/axi_register_slice_v2_1_vl_rfs.v:2716]
-WARNING: [Synth 8-7023] instance 'reg_slice_mi' of module 'axi_register_slice_v2_1_19_axi_register_slice' has 93 connections declared, but only 92 given [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:3122]
-INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_18_axic_srl_fifo__parameterized1' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/5b9c/hdl/axi_data_fifo_v2_1_vl_rfs.v:698]
+INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' (15#1) [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_19_axi_register_slice' (16#1) [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/4d88/hdl/axi_register_slice_v2_1_vl_rfs.v:2716]
+WARNING: [Synth 8-7023] instance 'reg_slice_mi' of module 'axi_register_slice_v2_1_19_axi_register_slice' has 93 connections declared, but only 92 given [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:3122]
+INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_18_axic_srl_fifo__parameterized1' [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/5b9c/hdl/axi_data_fifo_v2_1_vl_rfs.v:698]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_FIFO_WIDTH bound to: 8 - type: integer 
 	Parameter C_MAX_CTRL_FANOUT bound to: 33 - type: integer 
@@ -810,25 +811,25 @@ INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_18_axic_srl_fifo__p
 	Parameter P_ALMOSTFULL_TEMP bound to: 3'b110 
 	Parameter P_ALMOSTFULL bound to: 2'b10 
 	Parameter P_NUM_REPS bound to: 1 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_18_ndeep_srl__parameterized1' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/5b9c/hdl/axi_data_fifo_v2_1_vl_rfs.v:1135]
+INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_18_ndeep_srl__parameterized1' [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/5b9c/hdl/axi_data_fifo_v2_1_vl_rfs.v:1135]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_A_WIDTH bound to: 2 - type: integer 
 	Parameter P_SRLASIZE bound to: 5 - type: integer 
 	Parameter P_SRLDEPTH bound to: 32 - type: integer 
 	Parameter P_NUMSRLS bound to: 1 - type: integer 
 	Parameter P_SHIFT_DEPTH bound to: 4 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'axi_data_fifo_v2_1_18_ndeep_srl__parameterized1' (16#1) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/5b9c/hdl/axi_data_fifo_v2_1_vl_rfs.v:1135]
-WARNING: [Synth 8-6014] Unused sequential element areset_d1_reg was removed.  [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/5b9c/hdl/axi_data_fifo_v2_1_vl_rfs.v:750]
-WARNING: [Synth 8-6014] Unused sequential element S_READY_i_reg was removed.  [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/5b9c/hdl/axi_data_fifo_v2_1_vl_rfs.v:789]
-INFO: [Synth 8-6155] done synthesizing module 'axi_data_fifo_v2_1_18_axic_srl_fifo__parameterized1' (16#1) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/5b9c/hdl/axi_data_fifo_v2_1_vl_rfs.v:698]
-INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_20_wdata_mux__parameterized0' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:4561]
+INFO: [Synth 8-6155] done synthesizing module 'axi_data_fifo_v2_1_18_ndeep_srl__parameterized1' (16#1) [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/5b9c/hdl/axi_data_fifo_v2_1_vl_rfs.v:1135]
+WARNING: [Synth 8-6014] Unused sequential element areset_d1_reg was removed.  [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/5b9c/hdl/axi_data_fifo_v2_1_vl_rfs.v:750]
+WARNING: [Synth 8-6014] Unused sequential element S_READY_i_reg was removed.  [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/5b9c/hdl/axi_data_fifo_v2_1_vl_rfs.v:789]
+INFO: [Synth 8-6155] done synthesizing module 'axi_data_fifo_v2_1_18_axic_srl_fifo__parameterized1' (16#1) [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/5b9c/hdl/axi_data_fifo_v2_1_vl_rfs.v:698]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_20_wdata_mux__parameterized0' [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:4561]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_WMESG_WIDTH bound to: 74 - type: integer 
 	Parameter C_NUM_SLAVE_SLOTS bound to: 2 - type: integer 
 	Parameter C_SELECT_WIDTH bound to: 1 - type: integer 
 	Parameter C_FIFO_DEPTH_LOG bound to: 0 - type: integer 
 	Parameter P_FIFO_DEPTH_LOG bound to: 0 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_18_axic_reg_srl_fifo__parameterized1' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/5b9c/hdl/axi_data_fifo_v2_1_vl_rfs.v:889]
+INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_18_axic_reg_srl_fifo__parameterized1' [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/5b9c/hdl/axi_data_fifo_v2_1_vl_rfs.v:889]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_FIFO_WIDTH bound to: 1 - type: integer 
 	Parameter C_MAX_CTRL_FANOUT bound to: 33 - type: integer 
@@ -843,12 +844,12 @@ INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_18_axic_reg_srl_fif
 	Parameter ZERO bound to: 2'b10 
 	Parameter ONE bound to: 2'b11 
 	Parameter TWO bound to: 2'b01 
-INFO: [Synth 8-155] case statement is not full and has no default [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/5b9c/hdl/axi_data_fifo_v2_1_vl_rfs.v:986]
-WARNING: [Synth 8-6014] Unused sequential element s_ready_i_reg was removed.  [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/5b9c/hdl/axi_data_fifo_v2_1_vl_rfs.v:1038]
-INFO: [Synth 8-6155] done synthesizing module 'axi_data_fifo_v2_1_18_axic_reg_srl_fifo__parameterized1' (16#1) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/5b9c/hdl/axi_data_fifo_v2_1_vl_rfs.v:889]
-INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_20_wdata_mux__parameterized0' (16#1) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:4561]
-WARNING: [Synth 8-7023] instance 'reg_slice_mi' of module 'axi_register_slice_v2_1_19_axi_register_slice' has 93 connections declared, but only 92 given [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:3122]
-INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_20_decerr_slave' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:3501]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/5b9c/hdl/axi_data_fifo_v2_1_vl_rfs.v:986]
+WARNING: [Synth 8-6014] Unused sequential element s_ready_i_reg was removed.  [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/5b9c/hdl/axi_data_fifo_v2_1_vl_rfs.v:1038]
+INFO: [Synth 8-6155] done synthesizing module 'axi_data_fifo_v2_1_18_axic_reg_srl_fifo__parameterized1' (16#1) [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/5b9c/hdl/axi_data_fifo_v2_1_vl_rfs.v:889]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_20_wdata_mux__parameterized0' (16#1) [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:4561]
+WARNING: [Synth 8-7023] instance 'reg_slice_mi' of module 'axi_register_slice_v2_1_19_axi_register_slice' has 93 connections declared, but only 92 given [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:3122]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_20_decerr_slave' [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:3501]
 	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
 	Parameter C_AXI_DATA_WIDTH bound to: 64 - type: integer 
 	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
@@ -863,9 +864,9 @@ INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_20_decerr_slave' [c:
 	Parameter P_AXI4 bound to: 0 - type: integer 
 	Parameter P_AXI3 bound to: 1 - type: integer 
 	Parameter P_AXILITE bound to: 2 - type: integer 
-INFO: [Synth 8-155] case statement is not full and has no default [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:3633]
-INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_20_decerr_slave' (17#1) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:3501]
-INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_20_addr_arbiter' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:423]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:3633]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_20_decerr_slave' (17#1) [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:3501]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_20_addr_arbiter' [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:423]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_NUM_S bound to: 2 - type: integer 
 	Parameter C_NUM_S_LOG bound to: 1 - type: integer 
@@ -873,24 +874,24 @@ INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_20_addr_arbiter' [c:
 	Parameter C_MESG_WIDTH bound to: 64 - type: integer 
 	Parameter C_ARB_PRIORITY bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
 	Parameter P_PRIO_MASK bound to: 2'b00 
-INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized2' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized2' [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
 	Parameter C_FAMILY bound to: rtl - type: string 
 	Parameter C_RATIO bound to: 2 - type: integer 
 	Parameter C_SEL_WIDTH bound to: 1 - type: integer 
 	Parameter C_DATA_WIDTH bound to: 64 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized2' (17#1) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
-INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized3' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized2' (17#1) [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized3' [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
 	Parameter C_FAMILY bound to: rtl - type: string 
 	Parameter C_RATIO bound to: 2 - type: integer 
 	Parameter C_SEL_WIDTH bound to: 1 - type: integer 
 	Parameter C_DATA_WIDTH bound to: 2 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized3' (17#1) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
-INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_20_addr_arbiter' (18#1) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:423]
-WARNING: [Synth 8-6014] Unused sequential element gen_master_slots[0].gen_mi_write.gen_debug_w.debug_w_beat_cnt_i_reg was removed.  [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:2997]
-WARNING: [Synth 8-6014] Unused sequential element gen_master_slots[1].gen_mi_write.gen_debug_w.debug_w_beat_cnt_i_reg was removed.  [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:2997]
-INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_20_crossbar' (19#1) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:2239]
-INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_20_axi_crossbar' (20#1) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:4884]
-INFO: [Synth 8-6155] done synthesizing module 'design_IP_xbar_0' (21#1) [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ip/design_IP_xbar_0/synth/design_IP_xbar_0.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized3' (17#1) [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_20_addr_arbiter' (18#1) [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:423]
+WARNING: [Synth 8-6014] Unused sequential element gen_master_slots[0].gen_mi_write.gen_debug_w.debug_w_beat_cnt_i_reg was removed.  [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:2997]
+WARNING: [Synth 8-6014] Unused sequential element gen_master_slots[1].gen_mi_write.gen_debug_w.debug_w_beat_cnt_i_reg was removed.  [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:2997]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_20_crossbar' (19#1) [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:2239]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_20_axi_crossbar' (20#1) [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:4884]
+INFO: [Synth 8-6155] done synthesizing module 'design_IP_xbar_0' (21#1) [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ip/design_IP_xbar_0/synth/design_IP_xbar_0.v:59]
 WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_vector2axi has unconnected port m_axi_buser[0]
 WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_vector2axi has unconnected port m_axi_ruser[0]
 WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector has unconnected port s_axi_awuser[0]
@@ -933,7 +934,7 @@ WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected
 WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port m_axi_buser[0]
 WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port m_axi_ruser[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:30 ; elapsed = 00:01:33 . Memory (MB): peak = 1015.121 ; gain = 352.336
+Finished RTL Elaboration : Time (s): cpu = 00:00:30 ; elapsed = 00:00:48 . Memory (MB): peak = 1014.695 ; gain = 352.082
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -946,55 +947,55 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:01:35 . Memory (MB): peak = 1015.121 ; gain = 352.336
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:49 . Memory (MB): peak = 1014.695 ; gain = 352.082
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:31 ; elapsed = 00:01:35 . Memory (MB): peak = 1015.121 ; gain = 352.336
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:30 ; elapsed = 00:00:49 . Memory (MB): peak = 1014.695 ; gain = 352.082
 ---------------------------------------------------------------------------------
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ip/design_IP_xbar_0/design_IP_xbar_0_ooc.xdc] for cell 'inst'
-Finished Parsing XDC File [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ip/design_IP_xbar_0/design_IP_xbar_0_ooc.xdc] for cell 'inst'
-Parsing XDC File [C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.runs/design_IP_xbar_0_synth_1/dont_touch.xdc]
-Finished Parsing XDC File [C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.runs/design_IP_xbar_0_synth_1/dont_touch.xdc]
+Parsing XDC File [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ip/design_IP_xbar_0/design_IP_xbar_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ip/design_IP_xbar_0/design_IP_xbar_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.runs/design_IP_xbar_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.runs/design_IP_xbar_0_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1065.859 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1048.609 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.514 . Memory (MB): peak = 1065.859 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.257 . Memory (MB): peak = 1059.820 ; gain = 11.211
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:44 ; elapsed = 00:02:09 . Memory (MB): peak = 1065.859 ; gain = 403.074
+Finished Constraint Validation : Time (s): cpu = 00:00:44 ; elapsed = 00:01:06 . Memory (MB): peak = 1059.820 ; gain = 397.207
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:44 ; elapsed = 00:02:09 . Memory (MB): peak = 1065.859 ; gain = 403.074
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:44 ; elapsed = 00:01:07 . Memory (MB): peak = 1059.820 ; gain = 397.207
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property DONT_TOUCH = true for inst. (constraint file  C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.runs/design_IP_xbar_0_synth_1/dont_touch.xdc, line 9).
+Applied set_property DONT_TOUCH = true for inst. (constraint file  C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.runs/design_IP_xbar_0_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:44 ; elapsed = 00:02:09 . Memory (MB): peak = 1065.859 ; gain = 403.074
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:44 ; elapsed = 00:01:07 . Memory (MB): peak = 1059.820 ; gain = 397.207
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-4471] merging register 'gen_axi.s_axi_rvalid_i_reg' into 'gen_axi.read_cs_reg[0:0]' [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:3669]
+INFO: [Synth 8-4471] merging register 'gen_axi.s_axi_rvalid_i_reg' into 'gen_axi.read_cs_reg[0:0]' [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:3669]
 INFO: [Synth 8-802] inferred FSM for state register 'gen_axi.write_cs_reg' in module 'axi_crossbar_v2_1_20_decerr_slave'
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/5b9c/hdl/axi_data_fifo_v2_1_vl_rfs.v:759]
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:4155]
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:4155]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/5b9c/hdl/axi_data_fifo_v2_1_vl_rfs.v:759]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:4155]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:4155]
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'axi_data_fifo_v2_1_18_axic_reg_srl_fifo'
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:4155]
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:4155]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:4155]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:4155]
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'axi_data_fifo_v2_1_18_axic_reg_srl_fifo__parameterized0'
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'axi_data_fifo_v2_1_18_axic_reg_srl_fifo__parameterized1'
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:3092]
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:3087]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:3092]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.srcs/sources_1/bd/design_IP/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:3087]
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -1031,7 +1032,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'axi_data_fifo_v2_1_18_axic_reg_srl_fifo__parameterized1'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:46 ; elapsed = 00:02:14 . Memory (MB): peak = 1065.859 ; gain = 403.074
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:46 ; elapsed = 00:01:09 . Memory (MB): peak = 1059.820 ; gain = 397.207
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1352,7 +1353,7 @@ INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/gen_slave_slots[
 INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/gen_master_slots[0].gen_mi_write.wdata_mux_w/gen_wmux.wmux_aw_fifo/FSM_onehot_state_reg[2]) is unused and will be removed from module axi_crossbar_v2_1_20_axi_crossbar.
 INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/gen_master_slots[1].gen_mi_write.wdata_mux_w/gen_wmux.wmux_aw_fifo/FSM_onehot_state_reg[2]) is unused and will be removed from module axi_crossbar_v2_1_20_axi_crossbar.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:53 ; elapsed = 00:02:26 . Memory (MB): peak = 1065.859 ; gain = 403.074
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:54 ; elapsed = 00:01:17 . Memory (MB): peak = 1059.820 ; gain = 397.207
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1364,13 +1365,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:09 ; elapsed = 00:02:44 . Memory (MB): peak = 1065.859 ; gain = 403.074
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:08 ; elapsed = 00:01:31 . Memory (MB): peak = 1059.820 ; gain = 397.207
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:13 ; elapsed = 00:02:48 . Memory (MB): peak = 1083.047 ; gain = 420.262
+Finished Timing Optimization : Time (s): cpu = 00:01:12 ; elapsed = 00:01:36 . Memory (MB): peak = 1081.469 ; gain = 418.855
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1382,7 +1383,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:13 ; elapsed = 00:02:49 . Memory (MB): peak = 1083.047 ; gain = 420.262
+Finished Technology Mapping : Time (s): cpu = 00:01:13 ; elapsed = 00:01:37 . Memory (MB): peak = 1081.820 ; gain = 419.207
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1406,7 +1407,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:17 ; elapsed = 00:02:53 . Memory (MB): peak = 1087.477 ; gain = 424.691
+Finished IO Insertion : Time (s): cpu = 00:01:17 ; elapsed = 00:01:40 . Memory (MB): peak = 1084.633 ; gain = 422.020
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1419,7 +1420,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:17 ; elapsed = 00:02:54 . Memory (MB): peak = 1087.477 ; gain = 424.691
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:17 ; elapsed = 00:01:40 . Memory (MB): peak = 1084.633 ; gain = 422.020
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1431,25 +1432,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:18 ; elapsed = 00:02:54 . Memory (MB): peak = 1087.477 ; gain = 424.691
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:17 ; elapsed = 00:01:41 . Memory (MB): peak = 1084.633 ; gain = 422.020
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:18 ; elapsed = 00:02:54 . Memory (MB): peak = 1087.477 ; gain = 424.691
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:17 ; elapsed = 00:01:41 . Memory (MB): peak = 1084.633 ; gain = 422.020
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:18 ; elapsed = 00:02:54 . Memory (MB): peak = 1087.477 ; gain = 424.691
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:17 ; elapsed = 00:01:41 . Memory (MB): peak = 1084.633 ; gain = 422.020
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:18 ; elapsed = 00:02:54 . Memory (MB): peak = 1087.477 ; gain = 424.691
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:17 ; elapsed = 00:01:41 . Memory (MB): peak = 1084.633 ; gain = 422.020
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -1513,32 +1514,32 @@ Report Instance Areas:
 |31    |      splitter_aw_mi                                     |axi_crossbar_v2_1_20_splitter_4                                  |     5|
 +------+---------------------------------------------------------+-----------------------------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:18 ; elapsed = 00:02:54 . Memory (MB): peak = 1087.477 ; gain = 424.691
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:17 ; elapsed = 00:01:41 . Memory (MB): peak = 1084.633 ; gain = 422.020
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 35 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:41 ; elapsed = 00:02:38 . Memory (MB): peak = 1087.477 ; gain = 373.953
-Synthesis Optimization Complete : Time (s): cpu = 00:01:18 ; elapsed = 00:02:54 . Memory (MB): peak = 1087.477 ; gain = 424.691
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:40 ; elapsed = 00:01:33 . Memory (MB): peak = 1084.633 ; gain = 376.895
+Synthesis Optimization Complete : Time (s): cpu = 00:01:17 ; elapsed = 00:01:41 . Memory (MB): peak = 1084.633 ; gain = 422.020
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1089.676 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1100.707 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-149 Infos, 97 Warnings, 0 Critical Warnings and 0 Errors encountered.
+149 Infos, 98 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:31 ; elapsed = 00:03:33 . Memory (MB): peak = 1089.676 ; gain = 696.504
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1089.676 ; gain = 0.000
+synth_design: Time (s): cpu = 00:01:30 ; elapsed = 00:02:00 . Memory (MB): peak = 1100.707 ; gain = 708.344
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1100.707 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint 'C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.runs/design_IP_xbar_0_synth_1/design_IP_xbar_0.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.runs/design_IP_xbar_0_synth_1/design_IP_xbar_0.dcp' has been generated.
 WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_IP_xbar_0, cache-ID = d2e2354fa93a34ac
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_IP_xbar_0, cache-ID = d48a4e72f71343ed
 INFO: [Coretcl 2-1174] Renamed 30 cell refs.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1089.676 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1100.707 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint 'C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.runs/design_IP_xbar_0_synth_1/design_IP_xbar_0.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.runs/design_IP_xbar_0_synth_1/design_IP_xbar_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_IP_xbar_0_utilization_synth.rpt -pb design_IP_xbar_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Feb 27 20:40:45 2020...
+INFO: [Common 17-206] Exiting Vivado at Sun Mar  1 02:07:54 2020...

@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiprocessor/project_microblaze_test/project_microblaze_test.srcs/sources_1/bd/design_mb/ip/design_mb_microblaze_0_0/design_mb_microblaze_0_0.xdc rfile:../../../project_microblaze_test.srcs/sources_1/bd/design_mb/ip/design_mb_microblaze_0_0/design_mb_microblaze_0_0.xdc id:1 order:EARLY scoped_inst:U0} [current_design]
+set_property SRC_FILE_INFO {cfile:c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiCPU/prj_mb_test/prj_mb_test.srcs/sources_1/bd/design_mb/ip/design_mb_microblaze_0_0/design_mb_microblaze_0_0.xdc rfile:../../../prj_mb_test.srcs/sources_1/bd/design_mb/ip/design_mb_microblaze_0_0/design_mb_microblaze_0_0.xdc id:1 order:EARLY scoped_inst:U0} [current_design]
 current_instance U0
 set_property src_info {type:SCOPED_XDC file:1 line:2 export:INPUT save:INPUT read:READ} [current_design]
 create_waiver -internal -quiet -user microblaze -tags 12436 -type CDC -id CDC-26 -description "Invalid LUTRAM collision warning" -to [get_pins -quiet "LOCKSTEP_Out_reg\[*\]/R"]

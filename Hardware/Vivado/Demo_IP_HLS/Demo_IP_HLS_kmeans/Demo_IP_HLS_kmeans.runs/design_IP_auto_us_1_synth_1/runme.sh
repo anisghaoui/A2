@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_kmeans/Demo_IP_HLS_kmeans.runs/design_IP_auto_us_1_synth_1'
+HD_PWD='C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_kmeans/Demo_IP_HLS_kmeans.runs/design_IP_auto_us_1_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

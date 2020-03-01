@@ -1,16 +1,472 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.1.3 (win64) Build 2644227 Wed Sep  4 09:45:24 MDT 2019
-// Date        : Thu Feb 27 20:52:59 2020
+// Date        : Sat Feb 29 00:50:29 2020
 // Host        : Qlala-Blade running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim -rename_top design_IP_auto_cc_2 -prefix
-//               design_IP_auto_cc_2_ design_IP_auto_cc_2_sim_netlist.v
+// Command     : write_verilog -force -mode funcsim
+//               c:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_IP_HLS_pearson.srcs/sources_1/bd/design_IP/ip/design_IP_auto_cc_2/design_IP_auto_cc_2_sim_netlist.v
 // Design      : design_IP_auto_cc_2
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
 // Device      : xc7z020clg484-1
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
+
+(* CHECK_LICENSE_TYPE = "design_IP_auto_cc_2,axi_clock_converter_v2_1_18_axi_clock_converter,{}" *) (* DowngradeIPIdentifiedWarnings = "yes" *) (* X_CORE_INFO = "axi_clock_converter_v2_1_18_axi_clock_converter,Vivado 2019.1.3" *) 
+(* NotValidForBitStream *)
+module design_IP_auto_cc_2
+   (s_axi_aclk,
+    s_axi_aresetn,
+    s_axi_awid,
+    s_axi_awaddr,
+    s_axi_awlen,
+    s_axi_awsize,
+    s_axi_awburst,
+    s_axi_awlock,
+    s_axi_awcache,
+    s_axi_awprot,
+    s_axi_awqos,
+    s_axi_awvalid,
+    s_axi_awready,
+    s_axi_wid,
+    s_axi_wdata,
+    s_axi_wstrb,
+    s_axi_wlast,
+    s_axi_wvalid,
+    s_axi_wready,
+    s_axi_bid,
+    s_axi_bresp,
+    s_axi_bvalid,
+    s_axi_bready,
+    s_axi_arid,
+    s_axi_araddr,
+    s_axi_arlen,
+    s_axi_arsize,
+    s_axi_arburst,
+    s_axi_arlock,
+    s_axi_arcache,
+    s_axi_arprot,
+    s_axi_arqos,
+    s_axi_arvalid,
+    s_axi_arready,
+    s_axi_rid,
+    s_axi_rdata,
+    s_axi_rresp,
+    s_axi_rlast,
+    s_axi_rvalid,
+    s_axi_rready,
+    m_axi_aclk,
+    m_axi_aresetn,
+    m_axi_awid,
+    m_axi_awaddr,
+    m_axi_awlen,
+    m_axi_awsize,
+    m_axi_awburst,
+    m_axi_awlock,
+    m_axi_awcache,
+    m_axi_awprot,
+    m_axi_awqos,
+    m_axi_awvalid,
+    m_axi_awready,
+    m_axi_wid,
+    m_axi_wdata,
+    m_axi_wstrb,
+    m_axi_wlast,
+    m_axi_wvalid,
+    m_axi_wready,
+    m_axi_bid,
+    m_axi_bresp,
+    m_axi_bvalid,
+    m_axi_bready,
+    m_axi_arid,
+    m_axi_araddr,
+    m_axi_arlen,
+    m_axi_arsize,
+    m_axi_arburst,
+    m_axi_arlock,
+    m_axi_arcache,
+    m_axi_arprot,
+    m_axi_arqos,
+    m_axi_arvalid,
+    m_axi_arready,
+    m_axi_rid,
+    m_axi_rdata,
+    m_axi_rresp,
+    m_axi_rlast,
+    m_axi_rvalid,
+    m_axi_rready);
+  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 SI_CLK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME SI_CLK, FREQ_HZ 100000000, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1, ASSOCIATED_BUSIF S_AXI, ASSOCIATED_RESET S_AXI_ARESETN, INSERT_VIP 0" *) input s_axi_aclk;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 SI_RST RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME SI_RST, POLARITY ACTIVE_LOW, INSERT_VIP 0, TYPE INTERCONNECT" *) input s_axi_aresetn;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI AWID" *) input [11:0]s_axi_awid;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI AWADDR" *) input [31:0]s_axi_awaddr;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI AWLEN" *) input [3:0]s_axi_awlen;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI AWSIZE" *) input [2:0]s_axi_awsize;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI AWBURST" *) input [1:0]s_axi_awburst;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI AWLOCK" *) input [1:0]s_axi_awlock;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI AWCACHE" *) input [3:0]s_axi_awcache;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI AWPROT" *) input [2:0]s_axi_awprot;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI AWQOS" *) input [3:0]s_axi_awqos;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI AWVALID" *) input s_axi_awvalid;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI AWREADY" *) output s_axi_awready;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI WID" *) input [11:0]s_axi_wid;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI WDATA" *) input [31:0]s_axi_wdata;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI WSTRB" *) input [3:0]s_axi_wstrb;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI WLAST" *) input s_axi_wlast;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI WVALID" *) input s_axi_wvalid;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI WREADY" *) output s_axi_wready;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI BID" *) output [11:0]s_axi_bid;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI BRESP" *) output [1:0]s_axi_bresp;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI BVALID" *) output s_axi_bvalid;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI BREADY" *) input s_axi_bready;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI ARID" *) input [11:0]s_axi_arid;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI ARADDR" *) input [31:0]s_axi_araddr;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI ARLEN" *) input [3:0]s_axi_arlen;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI ARSIZE" *) input [2:0]s_axi_arsize;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI ARBURST" *) input [1:0]s_axi_arburst;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI ARLOCK" *) input [1:0]s_axi_arlock;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI ARCACHE" *) input [3:0]s_axi_arcache;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI ARPROT" *) input [2:0]s_axi_arprot;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI ARQOS" *) input [3:0]s_axi_arqos;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI ARVALID" *) input s_axi_arvalid;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI ARREADY" *) output s_axi_arready;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI RID" *) output [11:0]s_axi_rid;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI RDATA" *) output [31:0]s_axi_rdata;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI RRESP" *) output [1:0]s_axi_rresp;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI RLAST" *) output s_axi_rlast;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI RVALID" *) output s_axi_rvalid;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI RREADY" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME S_AXI, DATA_WIDTH 32, PROTOCOL AXI3, FREQ_HZ 100000000, ID_WIDTH 12, ADDR_WIDTH 32, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 1, HAS_LOCK 1, HAS_PROT 1, HAS_CACHE 1, HAS_QOS 1, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 8, NUM_WRITE_OUTSTANDING 8, MAX_BURST_LENGTH 16, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1, NUM_READ_THREADS 4, NUM_WRITE_THREADS 4, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *) input s_axi_rready;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 MI_CLK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME MI_CLK, FREQ_HZ 115000000, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1, ASSOCIATED_BUSIF M_AXI, ASSOCIATED_RESET M_AXI_ARESETN, INSERT_VIP 0" *) input m_axi_aclk;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 MI_RST RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME MI_RST, POLARITY ACTIVE_LOW, INSERT_VIP 0, TYPE INTERCONNECT" *) input m_axi_aresetn;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI AWID" *) output [11:0]m_axi_awid;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI AWADDR" *) output [31:0]m_axi_awaddr;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI AWLEN" *) output [3:0]m_axi_awlen;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI AWSIZE" *) output [2:0]m_axi_awsize;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI AWBURST" *) output [1:0]m_axi_awburst;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI AWLOCK" *) output [1:0]m_axi_awlock;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI AWCACHE" *) output [3:0]m_axi_awcache;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI AWPROT" *) output [2:0]m_axi_awprot;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI AWQOS" *) output [3:0]m_axi_awqos;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI AWVALID" *) output m_axi_awvalid;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI AWREADY" *) input m_axi_awready;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI WID" *) output [11:0]m_axi_wid;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI WDATA" *) output [31:0]m_axi_wdata;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI WSTRB" *) output [3:0]m_axi_wstrb;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI WLAST" *) output m_axi_wlast;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI WVALID" *) output m_axi_wvalid;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI WREADY" *) input m_axi_wready;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI BID" *) input [11:0]m_axi_bid;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI BRESP" *) input [1:0]m_axi_bresp;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI BVALID" *) input m_axi_bvalid;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI BREADY" *) output m_axi_bready;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI ARID" *) output [11:0]m_axi_arid;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI ARADDR" *) output [31:0]m_axi_araddr;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI ARLEN" *) output [3:0]m_axi_arlen;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI ARSIZE" *) output [2:0]m_axi_arsize;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI ARBURST" *) output [1:0]m_axi_arburst;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI ARLOCK" *) output [1:0]m_axi_arlock;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI ARCACHE" *) output [3:0]m_axi_arcache;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI ARPROT" *) output [2:0]m_axi_arprot;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI ARQOS" *) output [3:0]m_axi_arqos;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI ARVALID" *) output m_axi_arvalid;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI ARREADY" *) input m_axi_arready;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI RID" *) input [11:0]m_axi_rid;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI RDATA" *) input [31:0]m_axi_rdata;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI RRESP" *) input [1:0]m_axi_rresp;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI RLAST" *) input m_axi_rlast;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI RVALID" *) input m_axi_rvalid;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI RREADY" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME M_AXI, DATA_WIDTH 32, PROTOCOL AXI3, FREQ_HZ 115000000, ID_WIDTH 12, ADDR_WIDTH 32, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 1, HAS_LOCK 1, HAS_PROT 1, HAS_CACHE 1, HAS_QOS 1, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 8, NUM_WRITE_OUTSTANDING 8, MAX_BURST_LENGTH 16, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1, NUM_READ_THREADS 4, NUM_WRITE_THREADS 4, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *) output m_axi_rready;
+
+  wire m_axi_aclk;
+  wire [31:0]m_axi_araddr;
+  wire [1:0]m_axi_arburst;
+  wire [3:0]m_axi_arcache;
+  wire m_axi_aresetn;
+  wire [11:0]m_axi_arid;
+  wire [3:0]m_axi_arlen;
+  wire [1:0]m_axi_arlock;
+  wire [2:0]m_axi_arprot;
+  wire [3:0]m_axi_arqos;
+  wire m_axi_arready;
+  wire [2:0]m_axi_arsize;
+  wire m_axi_arvalid;
+  wire [31:0]m_axi_awaddr;
+  wire [1:0]m_axi_awburst;
+  wire [3:0]m_axi_awcache;
+  wire [11:0]m_axi_awid;
+  wire [3:0]m_axi_awlen;
+  wire [1:0]m_axi_awlock;
+  wire [2:0]m_axi_awprot;
+  wire [3:0]m_axi_awqos;
+  wire m_axi_awready;
+  wire [2:0]m_axi_awsize;
+  wire m_axi_awvalid;
+  wire [11:0]m_axi_bid;
+  wire m_axi_bready;
+  wire [1:0]m_axi_bresp;
+  wire m_axi_bvalid;
+  wire [31:0]m_axi_rdata;
+  wire [11:0]m_axi_rid;
+  wire m_axi_rlast;
+  wire m_axi_rready;
+  wire [1:0]m_axi_rresp;
+  wire m_axi_rvalid;
+  wire [31:0]m_axi_wdata;
+  wire [11:0]m_axi_wid;
+  wire m_axi_wlast;
+  wire m_axi_wready;
+  wire [3:0]m_axi_wstrb;
+  wire m_axi_wvalid;
+  wire s_axi_aclk;
+  wire [31:0]s_axi_araddr;
+  wire [1:0]s_axi_arburst;
+  wire [3:0]s_axi_arcache;
+  wire s_axi_aresetn;
+  wire [11:0]s_axi_arid;
+  wire [3:0]s_axi_arlen;
+  wire [1:0]s_axi_arlock;
+  wire [2:0]s_axi_arprot;
+  wire [3:0]s_axi_arqos;
+  wire s_axi_arready;
+  wire [2:0]s_axi_arsize;
+  wire s_axi_arvalid;
+  wire [31:0]s_axi_awaddr;
+  wire [1:0]s_axi_awburst;
+  wire [3:0]s_axi_awcache;
+  wire [11:0]s_axi_awid;
+  wire [3:0]s_axi_awlen;
+  wire [1:0]s_axi_awlock;
+  wire [2:0]s_axi_awprot;
+  wire [3:0]s_axi_awqos;
+  wire s_axi_awready;
+  wire [2:0]s_axi_awsize;
+  wire s_axi_awvalid;
+  wire [11:0]s_axi_bid;
+  wire s_axi_bready;
+  wire [1:0]s_axi_bresp;
+  wire s_axi_bvalid;
+  wire [31:0]s_axi_rdata;
+  wire [11:0]s_axi_rid;
+  wire s_axi_rlast;
+  wire s_axi_rready;
+  wire [1:0]s_axi_rresp;
+  wire s_axi_rvalid;
+  wire [31:0]s_axi_wdata;
+  wire [11:0]s_axi_wid;
+  wire s_axi_wlast;
+  wire s_axi_wready;
+  wire [3:0]s_axi_wstrb;
+  wire s_axi_wvalid;
+  wire [3:0]NLW_inst_m_axi_arregion_UNCONNECTED;
+  wire [0:0]NLW_inst_m_axi_aruser_UNCONNECTED;
+  wire [3:0]NLW_inst_m_axi_awregion_UNCONNECTED;
+  wire [0:0]NLW_inst_m_axi_awuser_UNCONNECTED;
+  wire [0:0]NLW_inst_m_axi_wuser_UNCONNECTED;
+  wire [0:0]NLW_inst_s_axi_buser_UNCONNECTED;
+  wire [0:0]NLW_inst_s_axi_ruser_UNCONNECTED;
+
+  (* C_ARADDR_RIGHT = "22" *) 
+  (* C_ARADDR_WIDTH = "32" *) 
+  (* C_ARBURST_RIGHT = "13" *) 
+  (* C_ARBURST_WIDTH = "2" *) 
+  (* C_ARCACHE_RIGHT = "7" *) 
+  (* C_ARCACHE_WIDTH = "4" *) 
+  (* C_ARID_RIGHT = "54" *) 
+  (* C_ARID_WIDTH = "12" *) 
+  (* C_ARLEN_RIGHT = "18" *) 
+  (* C_ARLEN_WIDTH = "4" *) 
+  (* C_ARLOCK_RIGHT = "11" *) 
+  (* C_ARLOCK_WIDTH = "2" *) 
+  (* C_ARPROT_RIGHT = "4" *) 
+  (* C_ARPROT_WIDTH = "3" *) 
+  (* C_ARQOS_RIGHT = "0" *) 
+  (* C_ARQOS_WIDTH = "4" *) 
+  (* C_ARREGION_RIGHT = "4" *) 
+  (* C_ARREGION_WIDTH = "0" *) 
+  (* C_ARSIZE_RIGHT = "15" *) 
+  (* C_ARSIZE_WIDTH = "3" *) 
+  (* C_ARUSER_RIGHT = "0" *) 
+  (* C_ARUSER_WIDTH = "0" *) 
+  (* C_AR_WIDTH = "66" *) 
+  (* C_AWADDR_RIGHT = "22" *) 
+  (* C_AWADDR_WIDTH = "32" *) 
+  (* C_AWBURST_RIGHT = "13" *) 
+  (* C_AWBURST_WIDTH = "2" *) 
+  (* C_AWCACHE_RIGHT = "7" *) 
+  (* C_AWCACHE_WIDTH = "4" *) 
+  (* C_AWID_RIGHT = "54" *) 
+  (* C_AWID_WIDTH = "12" *) 
+  (* C_AWLEN_RIGHT = "18" *) 
+  (* C_AWLEN_WIDTH = "4" *) 
+  (* C_AWLOCK_RIGHT = "11" *) 
+  (* C_AWLOCK_WIDTH = "2" *) 
+  (* C_AWPROT_RIGHT = "4" *) 
+  (* C_AWPROT_WIDTH = "3" *) 
+  (* C_AWQOS_RIGHT = "0" *) 
+  (* C_AWQOS_WIDTH = "4" *) 
+  (* C_AWREGION_RIGHT = "4" *) 
+  (* C_AWREGION_WIDTH = "0" *) 
+  (* C_AWSIZE_RIGHT = "15" *) 
+  (* C_AWSIZE_WIDTH = "3" *) 
+  (* C_AWUSER_RIGHT = "0" *) 
+  (* C_AWUSER_WIDTH = "0" *) 
+  (* C_AW_WIDTH = "66" *) 
+  (* C_AXI_ADDR_WIDTH = "32" *) 
+  (* C_AXI_ARUSER_WIDTH = "1" *) 
+  (* C_AXI_AWUSER_WIDTH = "1" *) 
+  (* C_AXI_BUSER_WIDTH = "1" *) 
+  (* C_AXI_DATA_WIDTH = "32" *) 
+  (* C_AXI_ID_WIDTH = "12" *) 
+  (* C_AXI_IS_ACLK_ASYNC = "1" *) 
+  (* C_AXI_PROTOCOL = "1" *) 
+  (* C_AXI_RUSER_WIDTH = "1" *) 
+  (* C_AXI_SUPPORTS_READ = "1" *) 
+  (* C_AXI_SUPPORTS_USER_SIGNALS = "0" *) 
+  (* C_AXI_SUPPORTS_WRITE = "1" *) 
+  (* C_AXI_WUSER_WIDTH = "1" *) 
+  (* C_BID_RIGHT = "2" *) 
+  (* C_BID_WIDTH = "12" *) 
+  (* C_BRESP_RIGHT = "0" *) 
+  (* C_BRESP_WIDTH = "2" *) 
+  (* C_BUSER_RIGHT = "0" *) 
+  (* C_BUSER_WIDTH = "0" *) 
+  (* C_B_WIDTH = "14" *) 
+  (* C_FAMILY = "zynq" *) 
+  (* C_FIFO_AR_WIDTH = "70" *) 
+  (* C_FIFO_AW_WIDTH = "70" *) 
+  (* C_FIFO_B_WIDTH = "14" *) 
+  (* C_FIFO_R_WIDTH = "47" *) 
+  (* C_FIFO_W_WIDTH = "49" *) 
+  (* C_M_AXI_ACLK_RATIO = "2" *) 
+  (* C_RDATA_RIGHT = "3" *) 
+  (* C_RDATA_WIDTH = "32" *) 
+  (* C_RID_RIGHT = "35" *) 
+  (* C_RID_WIDTH = "12" *) 
+  (* C_RLAST_RIGHT = "0" *) 
+  (* C_RLAST_WIDTH = "1" *) 
+  (* C_RRESP_RIGHT = "1" *) 
+  (* C_RRESP_WIDTH = "2" *) 
+  (* C_RUSER_RIGHT = "0" *) 
+  (* C_RUSER_WIDTH = "0" *) 
+  (* C_R_WIDTH = "47" *) 
+  (* C_SYNCHRONIZER_STAGE = "3" *) 
+  (* C_S_AXI_ACLK_RATIO = "1" *) 
+  (* C_WDATA_RIGHT = "5" *) 
+  (* C_WDATA_WIDTH = "32" *) 
+  (* C_WID_RIGHT = "37" *) 
+  (* C_WID_WIDTH = "12" *) 
+  (* C_WLAST_RIGHT = "0" *) 
+  (* C_WLAST_WIDTH = "1" *) 
+  (* C_WSTRB_RIGHT = "1" *) 
+  (* C_WSTRB_WIDTH = "4" *) 
+  (* C_WUSER_RIGHT = "0" *) 
+  (* C_WUSER_WIDTH = "0" *) 
+  (* C_W_WIDTH = "49" *) 
+  (* P_ACLK_RATIO = "2" *) 
+  (* P_AXI3 = "1" *) 
+  (* P_AXI4 = "0" *) 
+  (* P_AXILITE = "2" *) 
+  (* P_FULLY_REG = "1" *) 
+  (* P_LIGHT_WT = "0" *) 
+  (* P_LUTRAM_ASYNC = "12" *) 
+  (* P_ROUNDING_OFFSET = "0" *) 
+  (* P_SI_LT_MI = "1'b1" *) 
+  (* downgradeipidentifiedwarnings = "yes" *) 
+  design_IP_auto_cc_2_axi_clock_converter_v2_1_18_axi_clock_converter inst
+       (.m_axi_aclk(m_axi_aclk),
+        .m_axi_araddr(m_axi_araddr),
+        .m_axi_arburst(m_axi_arburst),
+        .m_axi_arcache(m_axi_arcache),
+        .m_axi_aresetn(m_axi_aresetn),
+        .m_axi_arid(m_axi_arid),
+        .m_axi_arlen(m_axi_arlen),
+        .m_axi_arlock(m_axi_arlock),
+        .m_axi_arprot(m_axi_arprot),
+        .m_axi_arqos(m_axi_arqos),
+        .m_axi_arready(m_axi_arready),
+        .m_axi_arregion(NLW_inst_m_axi_arregion_UNCONNECTED[3:0]),
+        .m_axi_arsize(m_axi_arsize),
+        .m_axi_aruser(NLW_inst_m_axi_aruser_UNCONNECTED[0]),
+        .m_axi_arvalid(m_axi_arvalid),
+        .m_axi_awaddr(m_axi_awaddr),
+        .m_axi_awburst(m_axi_awburst),
+        .m_axi_awcache(m_axi_awcache),
+        .m_axi_awid(m_axi_awid),
+        .m_axi_awlen(m_axi_awlen),
+        .m_axi_awlock(m_axi_awlock),
+        .m_axi_awprot(m_axi_awprot),
+        .m_axi_awqos(m_axi_awqos),
+        .m_axi_awready(m_axi_awready),
+        .m_axi_awregion(NLW_inst_m_axi_awregion_UNCONNECTED[3:0]),
+        .m_axi_awsize(m_axi_awsize),
+        .m_axi_awuser(NLW_inst_m_axi_awuser_UNCONNECTED[0]),
+        .m_axi_awvalid(m_axi_awvalid),
+        .m_axi_bid(m_axi_bid),
+        .m_axi_bready(m_axi_bready),
+        .m_axi_bresp(m_axi_bresp),
+        .m_axi_buser(1'b0),
+        .m_axi_bvalid(m_axi_bvalid),
+        .m_axi_rdata(m_axi_rdata),
+        .m_axi_rid(m_axi_rid),
+        .m_axi_rlast(m_axi_rlast),
+        .m_axi_rready(m_axi_rready),
+        .m_axi_rresp(m_axi_rresp),
+        .m_axi_ruser(1'b0),
+        .m_axi_rvalid(m_axi_rvalid),
+        .m_axi_wdata(m_axi_wdata),
+        .m_axi_wid(m_axi_wid),
+        .m_axi_wlast(m_axi_wlast),
+        .m_axi_wready(m_axi_wready),
+        .m_axi_wstrb(m_axi_wstrb),
+        .m_axi_wuser(NLW_inst_m_axi_wuser_UNCONNECTED[0]),
+        .m_axi_wvalid(m_axi_wvalid),
+        .s_axi_aclk(s_axi_aclk),
+        .s_axi_araddr(s_axi_araddr),
+        .s_axi_arburst(s_axi_arburst),
+        .s_axi_arcache(s_axi_arcache),
+        .s_axi_aresetn(s_axi_aresetn),
+        .s_axi_arid(s_axi_arid),
+        .s_axi_arlen(s_axi_arlen),
+        .s_axi_arlock(s_axi_arlock),
+        .s_axi_arprot(s_axi_arprot),
+        .s_axi_arqos(s_axi_arqos),
+        .s_axi_arready(s_axi_arready),
+        .s_axi_arregion({1'b0,1'b0,1'b0,1'b0}),
+        .s_axi_arsize(s_axi_arsize),
+        .s_axi_aruser(1'b0),
+        .s_axi_arvalid(s_axi_arvalid),
+        .s_axi_awaddr(s_axi_awaddr),
+        .s_axi_awburst(s_axi_awburst),
+        .s_axi_awcache(s_axi_awcache),
+        .s_axi_awid(s_axi_awid),
+        .s_axi_awlen(s_axi_awlen),
+        .s_axi_awlock(s_axi_awlock),
+        .s_axi_awprot(s_axi_awprot),
+        .s_axi_awqos(s_axi_awqos),
+        .s_axi_awready(s_axi_awready),
+        .s_axi_awregion({1'b0,1'b0,1'b0,1'b0}),
+        .s_axi_awsize(s_axi_awsize),
+        .s_axi_awuser(1'b0),
+        .s_axi_awvalid(s_axi_awvalid),
+        .s_axi_bid(s_axi_bid),
+        .s_axi_bready(s_axi_bready),
+        .s_axi_bresp(s_axi_bresp),
+        .s_axi_buser(NLW_inst_s_axi_buser_UNCONNECTED[0]),
+        .s_axi_bvalid(s_axi_bvalid),
+        .s_axi_rdata(s_axi_rdata),
+        .s_axi_rid(s_axi_rid),
+        .s_axi_rlast(s_axi_rlast),
+        .s_axi_rready(s_axi_rready),
+        .s_axi_rresp(s_axi_rresp),
+        .s_axi_ruser(NLW_inst_s_axi_ruser_UNCONNECTED[0]),
+        .s_axi_rvalid(s_axi_rvalid),
+        .s_axi_wdata(s_axi_wdata),
+        .s_axi_wid(s_axi_wid),
+        .s_axi_wlast(s_axi_wlast),
+        .s_axi_wready(s_axi_wready),
+        .s_axi_wstrb(s_axi_wstrb),
+        .s_axi_wuser(1'b0),
+        .s_axi_wvalid(s_axi_wvalid));
+endmodule
 
 (* C_ARADDR_RIGHT = "22" *) (* C_ARADDR_WIDTH = "32" *) (* C_ARBURST_RIGHT = "13" *) 
 (* C_ARBURST_WIDTH = "2" *) (* C_ARCACHE_RIGHT = "7" *) (* C_ARCACHE_WIDTH = "4" *) 
@@ -44,10 +500,10 @@
 (* C_WDATA_WIDTH = "32" *) (* C_WID_RIGHT = "37" *) (* C_WID_WIDTH = "12" *) 
 (* C_WLAST_RIGHT = "0" *) (* C_WLAST_WIDTH = "1" *) (* C_WSTRB_RIGHT = "1" *) 
 (* C_WSTRB_WIDTH = "4" *) (* C_WUSER_RIGHT = "0" *) (* C_WUSER_WIDTH = "0" *) 
-(* C_W_WIDTH = "49" *) (* DowngradeIPIdentifiedWarnings = "yes" *) (* P_ACLK_RATIO = "2" *) 
-(* P_AXI3 = "1" *) (* P_AXI4 = "0" *) (* P_AXILITE = "2" *) 
-(* P_FULLY_REG = "1" *) (* P_LIGHT_WT = "0" *) (* P_LUTRAM_ASYNC = "12" *) 
-(* P_ROUNDING_OFFSET = "0" *) (* P_SI_LT_MI = "1'b1" *) 
+(* C_W_WIDTH = "49" *) (* DowngradeIPIdentifiedWarnings = "yes" *) (* ORIG_REF_NAME = "axi_clock_converter_v2_1_18_axi_clock_converter" *) 
+(* P_ACLK_RATIO = "2" *) (* P_AXI3 = "1" *) (* P_AXI4 = "0" *) 
+(* P_AXILITE = "2" *) (* P_FULLY_REG = "1" *) (* P_LIGHT_WT = "0" *) 
+(* P_LUTRAM_ASYNC = "12" *) (* P_ROUNDING_OFFSET = "0" *) (* P_SI_LT_MI = "1'b1" *) 
 module design_IP_auto_cc_2_axi_clock_converter_v2_1_18_axi_clock_converter
    (s_axi_aclk,
     s_axi_aresetn,
@@ -866,465 +1322,9 @@ module design_IP_auto_cc_2_axi_clock_converter_v2_1_18_axi_clock_converter
         .O(\gen_clock_conv.async_conv_reset_n ));
 endmodule
 
-(* CHECK_LICENSE_TYPE = "design_IP_auto_cc_2,axi_clock_converter_v2_1_18_axi_clock_converter,{}" *) (* DowngradeIPIdentifiedWarnings = "yes" *) (* X_CORE_INFO = "axi_clock_converter_v2_1_18_axi_clock_converter,Vivado 2019.1.3" *) 
-(* NotValidForBitStream *)
-module design_IP_auto_cc_2
-   (s_axi_aclk,
-    s_axi_aresetn,
-    s_axi_awid,
-    s_axi_awaddr,
-    s_axi_awlen,
-    s_axi_awsize,
-    s_axi_awburst,
-    s_axi_awlock,
-    s_axi_awcache,
-    s_axi_awprot,
-    s_axi_awqos,
-    s_axi_awvalid,
-    s_axi_awready,
-    s_axi_wid,
-    s_axi_wdata,
-    s_axi_wstrb,
-    s_axi_wlast,
-    s_axi_wvalid,
-    s_axi_wready,
-    s_axi_bid,
-    s_axi_bresp,
-    s_axi_bvalid,
-    s_axi_bready,
-    s_axi_arid,
-    s_axi_araddr,
-    s_axi_arlen,
-    s_axi_arsize,
-    s_axi_arburst,
-    s_axi_arlock,
-    s_axi_arcache,
-    s_axi_arprot,
-    s_axi_arqos,
-    s_axi_arvalid,
-    s_axi_arready,
-    s_axi_rid,
-    s_axi_rdata,
-    s_axi_rresp,
-    s_axi_rlast,
-    s_axi_rvalid,
-    s_axi_rready,
-    m_axi_aclk,
-    m_axi_aresetn,
-    m_axi_awid,
-    m_axi_awaddr,
-    m_axi_awlen,
-    m_axi_awsize,
-    m_axi_awburst,
-    m_axi_awlock,
-    m_axi_awcache,
-    m_axi_awprot,
-    m_axi_awqos,
-    m_axi_awvalid,
-    m_axi_awready,
-    m_axi_wid,
-    m_axi_wdata,
-    m_axi_wstrb,
-    m_axi_wlast,
-    m_axi_wvalid,
-    m_axi_wready,
-    m_axi_bid,
-    m_axi_bresp,
-    m_axi_bvalid,
-    m_axi_bready,
-    m_axi_arid,
-    m_axi_araddr,
-    m_axi_arlen,
-    m_axi_arsize,
-    m_axi_arburst,
-    m_axi_arlock,
-    m_axi_arcache,
-    m_axi_arprot,
-    m_axi_arqos,
-    m_axi_arvalid,
-    m_axi_arready,
-    m_axi_rid,
-    m_axi_rdata,
-    m_axi_rresp,
-    m_axi_rlast,
-    m_axi_rvalid,
-    m_axi_rready);
-  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 SI_CLK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME SI_CLK, FREQ_HZ 100000000, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1, ASSOCIATED_BUSIF S_AXI, ASSOCIATED_RESET S_AXI_ARESETN, INSERT_VIP 0" *) input s_axi_aclk;
-  (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 SI_RST RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME SI_RST, POLARITY ACTIVE_LOW, INSERT_VIP 0, TYPE INTERCONNECT" *) input s_axi_aresetn;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI AWID" *) input [11:0]s_axi_awid;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI AWADDR" *) input [31:0]s_axi_awaddr;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI AWLEN" *) input [3:0]s_axi_awlen;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI AWSIZE" *) input [2:0]s_axi_awsize;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI AWBURST" *) input [1:0]s_axi_awburst;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI AWLOCK" *) input [1:0]s_axi_awlock;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI AWCACHE" *) input [3:0]s_axi_awcache;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI AWPROT" *) input [2:0]s_axi_awprot;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI AWQOS" *) input [3:0]s_axi_awqos;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI AWVALID" *) input s_axi_awvalid;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI AWREADY" *) output s_axi_awready;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI WID" *) input [11:0]s_axi_wid;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI WDATA" *) input [31:0]s_axi_wdata;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI WSTRB" *) input [3:0]s_axi_wstrb;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI WLAST" *) input s_axi_wlast;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI WVALID" *) input s_axi_wvalid;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI WREADY" *) output s_axi_wready;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI BID" *) output [11:0]s_axi_bid;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI BRESP" *) output [1:0]s_axi_bresp;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI BVALID" *) output s_axi_bvalid;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI BREADY" *) input s_axi_bready;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI ARID" *) input [11:0]s_axi_arid;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI ARADDR" *) input [31:0]s_axi_araddr;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI ARLEN" *) input [3:0]s_axi_arlen;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI ARSIZE" *) input [2:0]s_axi_arsize;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI ARBURST" *) input [1:0]s_axi_arburst;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI ARLOCK" *) input [1:0]s_axi_arlock;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI ARCACHE" *) input [3:0]s_axi_arcache;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI ARPROT" *) input [2:0]s_axi_arprot;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI ARQOS" *) input [3:0]s_axi_arqos;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI ARVALID" *) input s_axi_arvalid;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI ARREADY" *) output s_axi_arready;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI RID" *) output [11:0]s_axi_rid;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI RDATA" *) output [31:0]s_axi_rdata;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI RRESP" *) output [1:0]s_axi_rresp;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI RLAST" *) output s_axi_rlast;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI RVALID" *) output s_axi_rvalid;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI RREADY" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME S_AXI, DATA_WIDTH 32, PROTOCOL AXI3, FREQ_HZ 100000000, ID_WIDTH 12, ADDR_WIDTH 32, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 1, HAS_LOCK 1, HAS_PROT 1, HAS_CACHE 1, HAS_QOS 1, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 8, NUM_WRITE_OUTSTANDING 8, MAX_BURST_LENGTH 16, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1, NUM_READ_THREADS 4, NUM_WRITE_THREADS 4, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *) input s_axi_rready;
-  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 MI_CLK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME MI_CLK, FREQ_HZ 100000000, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1, ASSOCIATED_BUSIF M_AXI, ASSOCIATED_RESET M_AXI_ARESETN, INSERT_VIP 0" *) input m_axi_aclk;
-  (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 MI_RST RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME MI_RST, POLARITY ACTIVE_LOW, INSERT_VIP 0, TYPE INTERCONNECT" *) input m_axi_aresetn;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI AWID" *) output [11:0]m_axi_awid;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI AWADDR" *) output [31:0]m_axi_awaddr;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI AWLEN" *) output [3:0]m_axi_awlen;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI AWSIZE" *) output [2:0]m_axi_awsize;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI AWBURST" *) output [1:0]m_axi_awburst;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI AWLOCK" *) output [1:0]m_axi_awlock;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI AWCACHE" *) output [3:0]m_axi_awcache;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI AWPROT" *) output [2:0]m_axi_awprot;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI AWQOS" *) output [3:0]m_axi_awqos;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI AWVALID" *) output m_axi_awvalid;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI AWREADY" *) input m_axi_awready;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI WID" *) output [11:0]m_axi_wid;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI WDATA" *) output [31:0]m_axi_wdata;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI WSTRB" *) output [3:0]m_axi_wstrb;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI WLAST" *) output m_axi_wlast;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI WVALID" *) output m_axi_wvalid;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI WREADY" *) input m_axi_wready;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI BID" *) input [11:0]m_axi_bid;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI BRESP" *) input [1:0]m_axi_bresp;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI BVALID" *) input m_axi_bvalid;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI BREADY" *) output m_axi_bready;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI ARID" *) output [11:0]m_axi_arid;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI ARADDR" *) output [31:0]m_axi_araddr;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI ARLEN" *) output [3:0]m_axi_arlen;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI ARSIZE" *) output [2:0]m_axi_arsize;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI ARBURST" *) output [1:0]m_axi_arburst;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI ARLOCK" *) output [1:0]m_axi_arlock;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI ARCACHE" *) output [3:0]m_axi_arcache;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI ARPROT" *) output [2:0]m_axi_arprot;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI ARQOS" *) output [3:0]m_axi_arqos;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI ARVALID" *) output m_axi_arvalid;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI ARREADY" *) input m_axi_arready;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI RID" *) input [11:0]m_axi_rid;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI RDATA" *) input [31:0]m_axi_rdata;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI RRESP" *) input [1:0]m_axi_rresp;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI RLAST" *) input m_axi_rlast;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI RVALID" *) input m_axi_rvalid;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI RREADY" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME M_AXI, DATA_WIDTH 32, PROTOCOL AXI3, FREQ_HZ 100000000, ID_WIDTH 12, ADDR_WIDTH 32, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 1, HAS_LOCK 1, HAS_PROT 1, HAS_CACHE 1, HAS_QOS 1, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 8, NUM_WRITE_OUTSTANDING 8, MAX_BURST_LENGTH 16, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1, NUM_READ_THREADS 4, NUM_WRITE_THREADS 4, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *) output m_axi_rready;
-
-  wire m_axi_aclk;
-  wire [31:0]m_axi_araddr;
-  wire [1:0]m_axi_arburst;
-  wire [3:0]m_axi_arcache;
-  wire m_axi_aresetn;
-  wire [11:0]m_axi_arid;
-  wire [3:0]m_axi_arlen;
-  wire [1:0]m_axi_arlock;
-  wire [2:0]m_axi_arprot;
-  wire [3:0]m_axi_arqos;
-  wire m_axi_arready;
-  wire [2:0]m_axi_arsize;
-  wire m_axi_arvalid;
-  wire [31:0]m_axi_awaddr;
-  wire [1:0]m_axi_awburst;
-  wire [3:0]m_axi_awcache;
-  wire [11:0]m_axi_awid;
-  wire [3:0]m_axi_awlen;
-  wire [1:0]m_axi_awlock;
-  wire [2:0]m_axi_awprot;
-  wire [3:0]m_axi_awqos;
-  wire m_axi_awready;
-  wire [2:0]m_axi_awsize;
-  wire m_axi_awvalid;
-  wire [11:0]m_axi_bid;
-  wire m_axi_bready;
-  wire [1:0]m_axi_bresp;
-  wire m_axi_bvalid;
-  wire [31:0]m_axi_rdata;
-  wire [11:0]m_axi_rid;
-  wire m_axi_rlast;
-  wire m_axi_rready;
-  wire [1:0]m_axi_rresp;
-  wire m_axi_rvalid;
-  wire [31:0]m_axi_wdata;
-  wire [11:0]m_axi_wid;
-  wire m_axi_wlast;
-  wire m_axi_wready;
-  wire [3:0]m_axi_wstrb;
-  wire m_axi_wvalid;
-  wire s_axi_aclk;
-  wire [31:0]s_axi_araddr;
-  wire [1:0]s_axi_arburst;
-  wire [3:0]s_axi_arcache;
-  wire s_axi_aresetn;
-  wire [11:0]s_axi_arid;
-  wire [3:0]s_axi_arlen;
-  wire [1:0]s_axi_arlock;
-  wire [2:0]s_axi_arprot;
-  wire [3:0]s_axi_arqos;
-  wire s_axi_arready;
-  wire [2:0]s_axi_arsize;
-  wire s_axi_arvalid;
-  wire [31:0]s_axi_awaddr;
-  wire [1:0]s_axi_awburst;
-  wire [3:0]s_axi_awcache;
-  wire [11:0]s_axi_awid;
-  wire [3:0]s_axi_awlen;
-  wire [1:0]s_axi_awlock;
-  wire [2:0]s_axi_awprot;
-  wire [3:0]s_axi_awqos;
-  wire s_axi_awready;
-  wire [2:0]s_axi_awsize;
-  wire s_axi_awvalid;
-  wire [11:0]s_axi_bid;
-  wire s_axi_bready;
-  wire [1:0]s_axi_bresp;
-  wire s_axi_bvalid;
-  wire [31:0]s_axi_rdata;
-  wire [11:0]s_axi_rid;
-  wire s_axi_rlast;
-  wire s_axi_rready;
-  wire [1:0]s_axi_rresp;
-  wire s_axi_rvalid;
-  wire [31:0]s_axi_wdata;
-  wire [11:0]s_axi_wid;
-  wire s_axi_wlast;
-  wire s_axi_wready;
-  wire [3:0]s_axi_wstrb;
-  wire s_axi_wvalid;
-  wire [3:0]NLW_inst_m_axi_arregion_UNCONNECTED;
-  wire [0:0]NLW_inst_m_axi_aruser_UNCONNECTED;
-  wire [3:0]NLW_inst_m_axi_awregion_UNCONNECTED;
-  wire [0:0]NLW_inst_m_axi_awuser_UNCONNECTED;
-  wire [0:0]NLW_inst_m_axi_wuser_UNCONNECTED;
-  wire [0:0]NLW_inst_s_axi_buser_UNCONNECTED;
-  wire [0:0]NLW_inst_s_axi_ruser_UNCONNECTED;
-
-  (* C_ARADDR_RIGHT = "22" *) 
-  (* C_ARADDR_WIDTH = "32" *) 
-  (* C_ARBURST_RIGHT = "13" *) 
-  (* C_ARBURST_WIDTH = "2" *) 
-  (* C_ARCACHE_RIGHT = "7" *) 
-  (* C_ARCACHE_WIDTH = "4" *) 
-  (* C_ARID_RIGHT = "54" *) 
-  (* C_ARID_WIDTH = "12" *) 
-  (* C_ARLEN_RIGHT = "18" *) 
-  (* C_ARLEN_WIDTH = "4" *) 
-  (* C_ARLOCK_RIGHT = "11" *) 
-  (* C_ARLOCK_WIDTH = "2" *) 
-  (* C_ARPROT_RIGHT = "4" *) 
-  (* C_ARPROT_WIDTH = "3" *) 
-  (* C_ARQOS_RIGHT = "0" *) 
-  (* C_ARQOS_WIDTH = "4" *) 
-  (* C_ARREGION_RIGHT = "4" *) 
-  (* C_ARREGION_WIDTH = "0" *) 
-  (* C_ARSIZE_RIGHT = "15" *) 
-  (* C_ARSIZE_WIDTH = "3" *) 
-  (* C_ARUSER_RIGHT = "0" *) 
-  (* C_ARUSER_WIDTH = "0" *) 
-  (* C_AR_WIDTH = "66" *) 
-  (* C_AWADDR_RIGHT = "22" *) 
-  (* C_AWADDR_WIDTH = "32" *) 
-  (* C_AWBURST_RIGHT = "13" *) 
-  (* C_AWBURST_WIDTH = "2" *) 
-  (* C_AWCACHE_RIGHT = "7" *) 
-  (* C_AWCACHE_WIDTH = "4" *) 
-  (* C_AWID_RIGHT = "54" *) 
-  (* C_AWID_WIDTH = "12" *) 
-  (* C_AWLEN_RIGHT = "18" *) 
-  (* C_AWLEN_WIDTH = "4" *) 
-  (* C_AWLOCK_RIGHT = "11" *) 
-  (* C_AWLOCK_WIDTH = "2" *) 
-  (* C_AWPROT_RIGHT = "4" *) 
-  (* C_AWPROT_WIDTH = "3" *) 
-  (* C_AWQOS_RIGHT = "0" *) 
-  (* C_AWQOS_WIDTH = "4" *) 
-  (* C_AWREGION_RIGHT = "4" *) 
-  (* C_AWREGION_WIDTH = "0" *) 
-  (* C_AWSIZE_RIGHT = "15" *) 
-  (* C_AWSIZE_WIDTH = "3" *) 
-  (* C_AWUSER_RIGHT = "0" *) 
-  (* C_AWUSER_WIDTH = "0" *) 
-  (* C_AW_WIDTH = "66" *) 
-  (* C_AXI_ADDR_WIDTH = "32" *) 
-  (* C_AXI_ARUSER_WIDTH = "1" *) 
-  (* C_AXI_AWUSER_WIDTH = "1" *) 
-  (* C_AXI_BUSER_WIDTH = "1" *) 
-  (* C_AXI_DATA_WIDTH = "32" *) 
-  (* C_AXI_ID_WIDTH = "12" *) 
-  (* C_AXI_IS_ACLK_ASYNC = "1" *) 
-  (* C_AXI_PROTOCOL = "1" *) 
-  (* C_AXI_RUSER_WIDTH = "1" *) 
-  (* C_AXI_SUPPORTS_READ = "1" *) 
-  (* C_AXI_SUPPORTS_USER_SIGNALS = "0" *) 
-  (* C_AXI_SUPPORTS_WRITE = "1" *) 
-  (* C_AXI_WUSER_WIDTH = "1" *) 
-  (* C_BID_RIGHT = "2" *) 
-  (* C_BID_WIDTH = "12" *) 
-  (* C_BRESP_RIGHT = "0" *) 
-  (* C_BRESP_WIDTH = "2" *) 
-  (* C_BUSER_RIGHT = "0" *) 
-  (* C_BUSER_WIDTH = "0" *) 
-  (* C_B_WIDTH = "14" *) 
-  (* C_FAMILY = "zynq" *) 
-  (* C_FIFO_AR_WIDTH = "70" *) 
-  (* C_FIFO_AW_WIDTH = "70" *) 
-  (* C_FIFO_B_WIDTH = "14" *) 
-  (* C_FIFO_R_WIDTH = "47" *) 
-  (* C_FIFO_W_WIDTH = "49" *) 
-  (* C_M_AXI_ACLK_RATIO = "2" *) 
-  (* C_RDATA_RIGHT = "3" *) 
-  (* C_RDATA_WIDTH = "32" *) 
-  (* C_RID_RIGHT = "35" *) 
-  (* C_RID_WIDTH = "12" *) 
-  (* C_RLAST_RIGHT = "0" *) 
-  (* C_RLAST_WIDTH = "1" *) 
-  (* C_RRESP_RIGHT = "1" *) 
-  (* C_RRESP_WIDTH = "2" *) 
-  (* C_RUSER_RIGHT = "0" *) 
-  (* C_RUSER_WIDTH = "0" *) 
-  (* C_R_WIDTH = "47" *) 
-  (* C_SYNCHRONIZER_STAGE = "3" *) 
-  (* C_S_AXI_ACLK_RATIO = "1" *) 
-  (* C_WDATA_RIGHT = "5" *) 
-  (* C_WDATA_WIDTH = "32" *) 
-  (* C_WID_RIGHT = "37" *) 
-  (* C_WID_WIDTH = "12" *) 
-  (* C_WLAST_RIGHT = "0" *) 
-  (* C_WLAST_WIDTH = "1" *) 
-  (* C_WSTRB_RIGHT = "1" *) 
-  (* C_WSTRB_WIDTH = "4" *) 
-  (* C_WUSER_RIGHT = "0" *) 
-  (* C_WUSER_WIDTH = "0" *) 
-  (* C_W_WIDTH = "49" *) 
-  (* P_ACLK_RATIO = "2" *) 
-  (* P_AXI3 = "1" *) 
-  (* P_AXI4 = "0" *) 
-  (* P_AXILITE = "2" *) 
-  (* P_FULLY_REG = "1" *) 
-  (* P_LIGHT_WT = "0" *) 
-  (* P_LUTRAM_ASYNC = "12" *) 
-  (* P_ROUNDING_OFFSET = "0" *) 
-  (* P_SI_LT_MI = "1'b1" *) 
-  (* downgradeipidentifiedwarnings = "yes" *) 
-  design_IP_auto_cc_2_axi_clock_converter_v2_1_18_axi_clock_converter inst
-       (.m_axi_aclk(m_axi_aclk),
-        .m_axi_araddr(m_axi_araddr),
-        .m_axi_arburst(m_axi_arburst),
-        .m_axi_arcache(m_axi_arcache),
-        .m_axi_aresetn(m_axi_aresetn),
-        .m_axi_arid(m_axi_arid),
-        .m_axi_arlen(m_axi_arlen),
-        .m_axi_arlock(m_axi_arlock),
-        .m_axi_arprot(m_axi_arprot),
-        .m_axi_arqos(m_axi_arqos),
-        .m_axi_arready(m_axi_arready),
-        .m_axi_arregion(NLW_inst_m_axi_arregion_UNCONNECTED[3:0]),
-        .m_axi_arsize(m_axi_arsize),
-        .m_axi_aruser(NLW_inst_m_axi_aruser_UNCONNECTED[0]),
-        .m_axi_arvalid(m_axi_arvalid),
-        .m_axi_awaddr(m_axi_awaddr),
-        .m_axi_awburst(m_axi_awburst),
-        .m_axi_awcache(m_axi_awcache),
-        .m_axi_awid(m_axi_awid),
-        .m_axi_awlen(m_axi_awlen),
-        .m_axi_awlock(m_axi_awlock),
-        .m_axi_awprot(m_axi_awprot),
-        .m_axi_awqos(m_axi_awqos),
-        .m_axi_awready(m_axi_awready),
-        .m_axi_awregion(NLW_inst_m_axi_awregion_UNCONNECTED[3:0]),
-        .m_axi_awsize(m_axi_awsize),
-        .m_axi_awuser(NLW_inst_m_axi_awuser_UNCONNECTED[0]),
-        .m_axi_awvalid(m_axi_awvalid),
-        .m_axi_bid(m_axi_bid),
-        .m_axi_bready(m_axi_bready),
-        .m_axi_bresp(m_axi_bresp),
-        .m_axi_buser(1'b0),
-        .m_axi_bvalid(m_axi_bvalid),
-        .m_axi_rdata(m_axi_rdata),
-        .m_axi_rid(m_axi_rid),
-        .m_axi_rlast(m_axi_rlast),
-        .m_axi_rready(m_axi_rready),
-        .m_axi_rresp(m_axi_rresp),
-        .m_axi_ruser(1'b0),
-        .m_axi_rvalid(m_axi_rvalid),
-        .m_axi_wdata(m_axi_wdata),
-        .m_axi_wid(m_axi_wid),
-        .m_axi_wlast(m_axi_wlast),
-        .m_axi_wready(m_axi_wready),
-        .m_axi_wstrb(m_axi_wstrb),
-        .m_axi_wuser(NLW_inst_m_axi_wuser_UNCONNECTED[0]),
-        .m_axi_wvalid(m_axi_wvalid),
-        .s_axi_aclk(s_axi_aclk),
-        .s_axi_araddr(s_axi_araddr),
-        .s_axi_arburst(s_axi_arburst),
-        .s_axi_arcache(s_axi_arcache),
-        .s_axi_aresetn(s_axi_aresetn),
-        .s_axi_arid(s_axi_arid),
-        .s_axi_arlen(s_axi_arlen),
-        .s_axi_arlock(s_axi_arlock),
-        .s_axi_arprot(s_axi_arprot),
-        .s_axi_arqos(s_axi_arqos),
-        .s_axi_arready(s_axi_arready),
-        .s_axi_arregion({1'b0,1'b0,1'b0,1'b0}),
-        .s_axi_arsize(s_axi_arsize),
-        .s_axi_aruser(1'b0),
-        .s_axi_arvalid(s_axi_arvalid),
-        .s_axi_awaddr(s_axi_awaddr),
-        .s_axi_awburst(s_axi_awburst),
-        .s_axi_awcache(s_axi_awcache),
-        .s_axi_awid(s_axi_awid),
-        .s_axi_awlen(s_axi_awlen),
-        .s_axi_awlock(s_axi_awlock),
-        .s_axi_awprot(s_axi_awprot),
-        .s_axi_awqos(s_axi_awqos),
-        .s_axi_awready(s_axi_awready),
-        .s_axi_awregion({1'b0,1'b0,1'b0,1'b0}),
-        .s_axi_awsize(s_axi_awsize),
-        .s_axi_awuser(1'b0),
-        .s_axi_awvalid(s_axi_awvalid),
-        .s_axi_bid(s_axi_bid),
-        .s_axi_bready(s_axi_bready),
-        .s_axi_bresp(s_axi_bresp),
-        .s_axi_buser(NLW_inst_s_axi_buser_UNCONNECTED[0]),
-        .s_axi_bvalid(s_axi_bvalid),
-        .s_axi_rdata(s_axi_rdata),
-        .s_axi_rid(s_axi_rid),
-        .s_axi_rlast(s_axi_rlast),
-        .s_axi_rready(s_axi_rready),
-        .s_axi_rresp(s_axi_rresp),
-        .s_axi_ruser(NLW_inst_s_axi_ruser_UNCONNECTED[0]),
-        .s_axi_rvalid(s_axi_rvalid),
-        .s_axi_wdata(s_axi_wdata),
-        .s_axi_wid(s_axi_wid),
-        .s_axi_wlast(s_axi_wlast),
-        .s_axi_wready(s_axi_wready),
-        .s_axi_wstrb(s_axi_wstrb),
-        .s_axi_wuser(1'b0),
-        .s_axi_wvalid(s_axi_wvalid));
-endmodule
-
 (* DEF_VAL = "1'b0" *) (* DEST_SYNC_FF = "2" *) (* INIT_SYNC_FF = "0" *) 
-(* INV_DEF_VAL = "1'b1" *) (* RST_ACTIVE_HIGH = "1" *) (* VERSION = "0" *) 
-(* XPM_MODULE = "TRUE" *) (* xpm_cdc = "ASYNC_RST" *) 
+(* INV_DEF_VAL = "1'b1" *) (* ORIG_REF_NAME = "xpm_cdc_async_rst" *) (* RST_ACTIVE_HIGH = "1" *) 
+(* VERSION = "0" *) (* XPM_MODULE = "TRUE" *) (* xpm_cdc = "ASYNC_RST" *) 
 module design_IP_auto_cc_2_xpm_cdc_async_rst
    (src_arst,
     dest_clk,
@@ -1722,9 +1722,10 @@ module design_IP_auto_cc_2_xpm_cdc_async_rst__9
         .Q(arststages_ff[1]));
 endmodule
 
-(* DEST_SYNC_FF = "3" *) (* INIT_SYNC_FF = "0" *) (* REG_OUTPUT = "1" *) 
-(* SIM_ASSERT_CHK = "0" *) (* SIM_LOSSLESS_GRAY_CHK = "0" *) (* VERSION = "0" *) 
-(* WIDTH = "4" *) (* XPM_MODULE = "TRUE" *) (* xpm_cdc = "GRAY" *) 
+(* DEST_SYNC_FF = "3" *) (* INIT_SYNC_FF = "0" *) (* ORIG_REF_NAME = "xpm_cdc_gray" *) 
+(* REG_OUTPUT = "1" *) (* SIM_ASSERT_CHK = "0" *) (* SIM_LOSSLESS_GRAY_CHK = "0" *) 
+(* VERSION = "0" *) (* WIDTH = "4" *) (* XPM_MODULE = "TRUE" *) 
+(* xpm_cdc = "GRAY" *) 
 module design_IP_auto_cc_2_xpm_cdc_gray
    (src_clk,
     src_in_bin,
@@ -3961,9 +3962,9 @@ module design_IP_auto_cc_2_xpm_cdc_gray__18
         .R(1'b0));
 endmodule
 
-(* DEST_SYNC_FF = "4" *) (* INIT_SYNC_FF = "0" *) (* SIM_ASSERT_CHK = "0" *) 
-(* SRC_INPUT_REG = "1" *) (* VERSION = "0" *) (* XPM_MODULE = "TRUE" *) 
-(* xpm_cdc = "SINGLE" *) 
+(* DEST_SYNC_FF = "4" *) (* INIT_SYNC_FF = "0" *) (* ORIG_REF_NAME = "xpm_cdc_single" *) 
+(* SIM_ASSERT_CHK = "0" *) (* SRC_INPUT_REG = "1" *) (* VERSION = "0" *) 
+(* XPM_MODULE = "TRUE" *) (* xpm_cdc = "SINGLE" *) 
 module design_IP_auto_cc_2_xpm_cdc_single
    (src_clk,
     src_in,
@@ -4803,6 +4804,7 @@ module design_IP_auto_cc_2_xpm_cdc_single__parameterized1__18
         .R(1'b0));
 endmodule
 
+(* ORIG_REF_NAME = "clk_x_pntrs" *) 
 module design_IP_auto_cc_2_clk_x_pntrs
    (\dest_out_bin_ff_reg[2] ,
     WR_PNTR_RD,
@@ -5222,34 +5224,35 @@ module design_IP_auto_cc_2_clk_x_pntrs__xdcDup__4
         .src_in_bin(\src_gray_ff_reg[3] ));
 endmodule
 
+(* ORIG_REF_NAME = "dmem" *) 
 module design_IP_auto_cc_2_dmem
    (dout_i,
     s_aclk,
-    EN,
-    DI,
-    count_d1,
     \gpr1.dout_i_reg[5]_0 ,
-    \gpr1.dout_i_reg[69]_0 ,
+    DI,
+    \gpr1.dout_i_reg[5]_1 ,
+    \gpr1.dout_i_reg[5]_2 ,
+    \gpr1.dout_i_reg[4]_0 ,
     m_aclk);
   output [65:0]dout_i;
   input s_aclk;
-  input EN;
+  input [0:0]\gpr1.dout_i_reg[5]_0 ;
   input [65:0]DI;
-  input [3:0]count_d1;
-  input [3:0]\gpr1.dout_i_reg[5]_0 ;
-  input [0:0]\gpr1.dout_i_reg[69]_0 ;
+  input [3:0]\gpr1.dout_i_reg[5]_1 ;
+  input [3:0]\gpr1.dout_i_reg[5]_2 ;
+  input [0:0]\gpr1.dout_i_reg[4]_0 ;
   input m_aclk;
 
   wire [65:0]DI;
-  wire EN;
   wire RAM_reg_0_15_0_5_n_0;
   wire RAM_reg_0_15_0_5_n_1;
   wire RAM_reg_0_15_0_5_n_2;
   wire RAM_reg_0_15_0_5_n_3;
-  wire [3:0]count_d1;
   wire [65:0]dout_i;
-  wire [3:0]\gpr1.dout_i_reg[5]_0 ;
-  wire [0:0]\gpr1.dout_i_reg[69]_0 ;
+  wire [0:0]\gpr1.dout_i_reg[4]_0 ;
+  wire [0:0]\gpr1.dout_i_reg[5]_0 ;
+  wire [3:0]\gpr1.dout_i_reg[5]_1 ;
+  wire [3:0]\gpr1.dout_i_reg[5]_2 ;
   wire m_aclk;
   wire [69:4]p_0_out;
   wire s_aclk;
@@ -5276,10 +5279,10 @@ module design_IP_auto_cc_2_dmem
   (* ram_slice_begin = "0" *) 
   (* ram_slice_end = "5" *) 
   RAM32M RAM_reg_0_15_0_5
-       (.ADDRA({1'b0,count_d1}),
-        .ADDRB({1'b0,count_d1}),
-        .ADDRC({1'b0,count_d1}),
-        .ADDRD({1'b0,\gpr1.dout_i_reg[5]_0 }),
+       (.ADDRA({1'b0,\gpr1.dout_i_reg[5]_1 }),
+        .ADDRB({1'b0,\gpr1.dout_i_reg[5]_1 }),
+        .ADDRC({1'b0,\gpr1.dout_i_reg[5]_1 }),
+        .ADDRD({1'b0,\gpr1.dout_i_reg[5]_2 }),
         .DIA({1'b0,1'b0}),
         .DIB({1'b0,1'b0}),
         .DIC(DI[1:0]),
@@ -5289,7 +5292,7 @@ module design_IP_auto_cc_2_dmem
         .DOC(p_0_out[5:4]),
         .DOD(NLW_RAM_reg_0_15_0_5_DOD_UNCONNECTED[1:0]),
         .WCLK(s_aclk),
-        .WE(EN));
+        .WE(\gpr1.dout_i_reg[5]_0 ));
   (* METHODOLOGY_DRC_VIOS = "" *) 
   (* RTL_RAM_BITS = "1120" *) 
   (* RTL_RAM_NAME = "inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM" *) 
@@ -5299,10 +5302,10 @@ module design_IP_auto_cc_2_dmem
   (* ram_slice_begin = "12" *) 
   (* ram_slice_end = "17" *) 
   RAM32M RAM_reg_0_15_12_17
-       (.ADDRA({1'b0,count_d1}),
-        .ADDRB({1'b0,count_d1}),
-        .ADDRC({1'b0,count_d1}),
-        .ADDRD({1'b0,\gpr1.dout_i_reg[5]_0 }),
+       (.ADDRA({1'b0,\gpr1.dout_i_reg[5]_1 }),
+        .ADDRB({1'b0,\gpr1.dout_i_reg[5]_1 }),
+        .ADDRC({1'b0,\gpr1.dout_i_reg[5]_1 }),
+        .ADDRD({1'b0,\gpr1.dout_i_reg[5]_2 }),
         .DIA(DI[9:8]),
         .DIB(DI[11:10]),
         .DIC(DI[13:12]),
@@ -5312,7 +5315,7 @@ module design_IP_auto_cc_2_dmem
         .DOC(p_0_out[17:16]),
         .DOD(NLW_RAM_reg_0_15_12_17_DOD_UNCONNECTED[1:0]),
         .WCLK(s_aclk),
-        .WE(EN));
+        .WE(\gpr1.dout_i_reg[5]_0 ));
   (* METHODOLOGY_DRC_VIOS = "" *) 
   (* RTL_RAM_BITS = "1120" *) 
   (* RTL_RAM_NAME = "inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM" *) 
@@ -5322,10 +5325,10 @@ module design_IP_auto_cc_2_dmem
   (* ram_slice_begin = "18" *) 
   (* ram_slice_end = "23" *) 
   RAM32M RAM_reg_0_15_18_23
-       (.ADDRA({1'b0,count_d1}),
-        .ADDRB({1'b0,count_d1}),
-        .ADDRC({1'b0,count_d1}),
-        .ADDRD({1'b0,\gpr1.dout_i_reg[5]_0 }),
+       (.ADDRA({1'b0,\gpr1.dout_i_reg[5]_1 }),
+        .ADDRB({1'b0,\gpr1.dout_i_reg[5]_1 }),
+        .ADDRC({1'b0,\gpr1.dout_i_reg[5]_1 }),
+        .ADDRD({1'b0,\gpr1.dout_i_reg[5]_2 }),
         .DIA(DI[15:14]),
         .DIB(DI[17:16]),
         .DIC(DI[19:18]),
@@ -5335,7 +5338,7 @@ module design_IP_auto_cc_2_dmem
         .DOC(p_0_out[23:22]),
         .DOD(NLW_RAM_reg_0_15_18_23_DOD_UNCONNECTED[1:0]),
         .WCLK(s_aclk),
-        .WE(EN));
+        .WE(\gpr1.dout_i_reg[5]_0 ));
   (* METHODOLOGY_DRC_VIOS = "" *) 
   (* RTL_RAM_BITS = "1120" *) 
   (* RTL_RAM_NAME = "inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM" *) 
@@ -5345,10 +5348,10 @@ module design_IP_auto_cc_2_dmem
   (* ram_slice_begin = "24" *) 
   (* ram_slice_end = "29" *) 
   RAM32M RAM_reg_0_15_24_29
-       (.ADDRA({1'b0,count_d1}),
-        .ADDRB({1'b0,count_d1}),
-        .ADDRC({1'b0,count_d1}),
-        .ADDRD({1'b0,\gpr1.dout_i_reg[5]_0 }),
+       (.ADDRA({1'b0,\gpr1.dout_i_reg[5]_1 }),
+        .ADDRB({1'b0,\gpr1.dout_i_reg[5]_1 }),
+        .ADDRC({1'b0,\gpr1.dout_i_reg[5]_1 }),
+        .ADDRD({1'b0,\gpr1.dout_i_reg[5]_2 }),
         .DIA(DI[21:20]),
         .DIB(DI[23:22]),
         .DIC(DI[25:24]),
@@ -5358,7 +5361,7 @@ module design_IP_auto_cc_2_dmem
         .DOC(p_0_out[29:28]),
         .DOD(NLW_RAM_reg_0_15_24_29_DOD_UNCONNECTED[1:0]),
         .WCLK(s_aclk),
-        .WE(EN));
+        .WE(\gpr1.dout_i_reg[5]_0 ));
   (* METHODOLOGY_DRC_VIOS = "" *) 
   (* RTL_RAM_BITS = "1120" *) 
   (* RTL_RAM_NAME = "inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM" *) 
@@ -5368,10 +5371,10 @@ module design_IP_auto_cc_2_dmem
   (* ram_slice_begin = "30" *) 
   (* ram_slice_end = "35" *) 
   RAM32M RAM_reg_0_15_30_35
-       (.ADDRA({1'b0,count_d1}),
-        .ADDRB({1'b0,count_d1}),
-        .ADDRC({1'b0,count_d1}),
-        .ADDRD({1'b0,\gpr1.dout_i_reg[5]_0 }),
+       (.ADDRA({1'b0,\gpr1.dout_i_reg[5]_1 }),
+        .ADDRB({1'b0,\gpr1.dout_i_reg[5]_1 }),
+        .ADDRC({1'b0,\gpr1.dout_i_reg[5]_1 }),
+        .ADDRD({1'b0,\gpr1.dout_i_reg[5]_2 }),
         .DIA(DI[27:26]),
         .DIB(DI[29:28]),
         .DIC(DI[31:30]),
@@ -5381,7 +5384,7 @@ module design_IP_auto_cc_2_dmem
         .DOC(p_0_out[35:34]),
         .DOD(NLW_RAM_reg_0_15_30_35_DOD_UNCONNECTED[1:0]),
         .WCLK(s_aclk),
-        .WE(EN));
+        .WE(\gpr1.dout_i_reg[5]_0 ));
   (* METHODOLOGY_DRC_VIOS = "" *) 
   (* RTL_RAM_BITS = "1120" *) 
   (* RTL_RAM_NAME = "inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM" *) 
@@ -5391,10 +5394,10 @@ module design_IP_auto_cc_2_dmem
   (* ram_slice_begin = "36" *) 
   (* ram_slice_end = "41" *) 
   RAM32M RAM_reg_0_15_36_41
-       (.ADDRA({1'b0,count_d1}),
-        .ADDRB({1'b0,count_d1}),
-        .ADDRC({1'b0,count_d1}),
-        .ADDRD({1'b0,\gpr1.dout_i_reg[5]_0 }),
+       (.ADDRA({1'b0,\gpr1.dout_i_reg[5]_1 }),
+        .ADDRB({1'b0,\gpr1.dout_i_reg[5]_1 }),
+        .ADDRC({1'b0,\gpr1.dout_i_reg[5]_1 }),
+        .ADDRD({1'b0,\gpr1.dout_i_reg[5]_2 }),
         .DIA(DI[33:32]),
         .DIB(DI[35:34]),
         .DIC(DI[37:36]),
@@ -5404,7 +5407,7 @@ module design_IP_auto_cc_2_dmem
         .DOC(p_0_out[41:40]),
         .DOD(NLW_RAM_reg_0_15_36_41_DOD_UNCONNECTED[1:0]),
         .WCLK(s_aclk),
-        .WE(EN));
+        .WE(\gpr1.dout_i_reg[5]_0 ));
   (* METHODOLOGY_DRC_VIOS = "" *) 
   (* RTL_RAM_BITS = "1120" *) 
   (* RTL_RAM_NAME = "inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM" *) 
@@ -5414,10 +5417,10 @@ module design_IP_auto_cc_2_dmem
   (* ram_slice_begin = "42" *) 
   (* ram_slice_end = "47" *) 
   RAM32M RAM_reg_0_15_42_47
-       (.ADDRA({1'b0,count_d1}),
-        .ADDRB({1'b0,count_d1}),
-        .ADDRC({1'b0,count_d1}),
-        .ADDRD({1'b0,\gpr1.dout_i_reg[5]_0 }),
+       (.ADDRA({1'b0,\gpr1.dout_i_reg[5]_1 }),
+        .ADDRB({1'b0,\gpr1.dout_i_reg[5]_1 }),
+        .ADDRC({1'b0,\gpr1.dout_i_reg[5]_1 }),
+        .ADDRD({1'b0,\gpr1.dout_i_reg[5]_2 }),
         .DIA(DI[39:38]),
         .DIB(DI[41:40]),
         .DIC(DI[43:42]),
@@ -5427,7 +5430,7 @@ module design_IP_auto_cc_2_dmem
         .DOC(p_0_out[47:46]),
         .DOD(NLW_RAM_reg_0_15_42_47_DOD_UNCONNECTED[1:0]),
         .WCLK(s_aclk),
-        .WE(EN));
+        .WE(\gpr1.dout_i_reg[5]_0 ));
   (* METHODOLOGY_DRC_VIOS = "" *) 
   (* RTL_RAM_BITS = "1120" *) 
   (* RTL_RAM_NAME = "inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM" *) 
@@ -5437,10 +5440,10 @@ module design_IP_auto_cc_2_dmem
   (* ram_slice_begin = "48" *) 
   (* ram_slice_end = "53" *) 
   RAM32M RAM_reg_0_15_48_53
-       (.ADDRA({1'b0,count_d1}),
-        .ADDRB({1'b0,count_d1}),
-        .ADDRC({1'b0,count_d1}),
-        .ADDRD({1'b0,\gpr1.dout_i_reg[5]_0 }),
+       (.ADDRA({1'b0,\gpr1.dout_i_reg[5]_1 }),
+        .ADDRB({1'b0,\gpr1.dout_i_reg[5]_1 }),
+        .ADDRC({1'b0,\gpr1.dout_i_reg[5]_1 }),
+        .ADDRD({1'b0,\gpr1.dout_i_reg[5]_2 }),
         .DIA(DI[45:44]),
         .DIB(DI[47:46]),
         .DIC(DI[49:48]),
@@ -5450,7 +5453,7 @@ module design_IP_auto_cc_2_dmem
         .DOC(p_0_out[53:52]),
         .DOD(NLW_RAM_reg_0_15_48_53_DOD_UNCONNECTED[1:0]),
         .WCLK(s_aclk),
-        .WE(EN));
+        .WE(\gpr1.dout_i_reg[5]_0 ));
   (* METHODOLOGY_DRC_VIOS = "" *) 
   (* RTL_RAM_BITS = "1120" *) 
   (* RTL_RAM_NAME = "inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM" *) 
@@ -5460,10 +5463,10 @@ module design_IP_auto_cc_2_dmem
   (* ram_slice_begin = "54" *) 
   (* ram_slice_end = "59" *) 
   RAM32M RAM_reg_0_15_54_59
-       (.ADDRA({1'b0,count_d1}),
-        .ADDRB({1'b0,count_d1}),
-        .ADDRC({1'b0,count_d1}),
-        .ADDRD({1'b0,\gpr1.dout_i_reg[5]_0 }),
+       (.ADDRA({1'b0,\gpr1.dout_i_reg[5]_1 }),
+        .ADDRB({1'b0,\gpr1.dout_i_reg[5]_1 }),
+        .ADDRC({1'b0,\gpr1.dout_i_reg[5]_1 }),
+        .ADDRD({1'b0,\gpr1.dout_i_reg[5]_2 }),
         .DIA(DI[51:50]),
         .DIB(DI[53:52]),
         .DIC(DI[55:54]),
@@ -5473,7 +5476,7 @@ module design_IP_auto_cc_2_dmem
         .DOC(p_0_out[59:58]),
         .DOD(NLW_RAM_reg_0_15_54_59_DOD_UNCONNECTED[1:0]),
         .WCLK(s_aclk),
-        .WE(EN));
+        .WE(\gpr1.dout_i_reg[5]_0 ));
   (* METHODOLOGY_DRC_VIOS = "" *) 
   (* RTL_RAM_BITS = "1120" *) 
   (* RTL_RAM_NAME = "inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM" *) 
@@ -5483,10 +5486,10 @@ module design_IP_auto_cc_2_dmem
   (* ram_slice_begin = "60" *) 
   (* ram_slice_end = "65" *) 
   RAM32M RAM_reg_0_15_60_65
-       (.ADDRA({1'b0,count_d1}),
-        .ADDRB({1'b0,count_d1}),
-        .ADDRC({1'b0,count_d1}),
-        .ADDRD({1'b0,\gpr1.dout_i_reg[5]_0 }),
+       (.ADDRA({1'b0,\gpr1.dout_i_reg[5]_1 }),
+        .ADDRB({1'b0,\gpr1.dout_i_reg[5]_1 }),
+        .ADDRC({1'b0,\gpr1.dout_i_reg[5]_1 }),
+        .ADDRD({1'b0,\gpr1.dout_i_reg[5]_2 }),
         .DIA(DI[57:56]),
         .DIB(DI[59:58]),
         .DIC(DI[61:60]),
@@ -5496,7 +5499,7 @@ module design_IP_auto_cc_2_dmem
         .DOC(p_0_out[65:64]),
         .DOD(NLW_RAM_reg_0_15_60_65_DOD_UNCONNECTED[1:0]),
         .WCLK(s_aclk),
-        .WE(EN));
+        .WE(\gpr1.dout_i_reg[5]_0 ));
   (* METHODOLOGY_DRC_VIOS = "" *) 
   (* RTL_RAM_BITS = "1120" *) 
   (* RTL_RAM_NAME = "inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM" *) 
@@ -5506,10 +5509,10 @@ module design_IP_auto_cc_2_dmem
   (* ram_slice_begin = "66" *) 
   (* ram_slice_end = "69" *) 
   RAM32M RAM_reg_0_15_66_69
-       (.ADDRA({1'b0,count_d1}),
-        .ADDRB({1'b0,count_d1}),
-        .ADDRC({1'b0,count_d1}),
-        .ADDRD({1'b0,\gpr1.dout_i_reg[5]_0 }),
+       (.ADDRA({1'b0,\gpr1.dout_i_reg[5]_1 }),
+        .ADDRB({1'b0,\gpr1.dout_i_reg[5]_1 }),
+        .ADDRC({1'b0,\gpr1.dout_i_reg[5]_1 }),
+        .ADDRD({1'b0,\gpr1.dout_i_reg[5]_2 }),
         .DIA(DI[63:62]),
         .DIB(DI[65:64]),
         .DIC({1'b0,1'b0}),
@@ -5519,7 +5522,7 @@ module design_IP_auto_cc_2_dmem
         .DOC(NLW_RAM_reg_0_15_66_69_DOC_UNCONNECTED[1:0]),
         .DOD(NLW_RAM_reg_0_15_66_69_DOD_UNCONNECTED[1:0]),
         .WCLK(s_aclk),
-        .WE(EN));
+        .WE(\gpr1.dout_i_reg[5]_0 ));
   (* METHODOLOGY_DRC_VIOS = "" *) 
   (* RTL_RAM_BITS = "1120" *) 
   (* RTL_RAM_NAME = "inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM" *) 
@@ -5529,10 +5532,10 @@ module design_IP_auto_cc_2_dmem
   (* ram_slice_begin = "6" *) 
   (* ram_slice_end = "11" *) 
   RAM32M RAM_reg_0_15_6_11
-       (.ADDRA({1'b0,count_d1}),
-        .ADDRB({1'b0,count_d1}),
-        .ADDRC({1'b0,count_d1}),
-        .ADDRD({1'b0,\gpr1.dout_i_reg[5]_0 }),
+       (.ADDRA({1'b0,\gpr1.dout_i_reg[5]_1 }),
+        .ADDRB({1'b0,\gpr1.dout_i_reg[5]_1 }),
+        .ADDRC({1'b0,\gpr1.dout_i_reg[5]_1 }),
+        .ADDRD({1'b0,\gpr1.dout_i_reg[5]_2 }),
         .DIA(DI[3:2]),
         .DIB(DI[5:4]),
         .DIC(DI[7:6]),
@@ -5542,12 +5545,12 @@ module design_IP_auto_cc_2_dmem
         .DOC(p_0_out[11:10]),
         .DOD(NLW_RAM_reg_0_15_6_11_DOD_UNCONNECTED[1:0]),
         .WCLK(s_aclk),
-        .WE(EN));
+        .WE(\gpr1.dout_i_reg[5]_0 ));
   FDRE #(
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[10] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(p_0_out[10]),
         .Q(dout_i[6]),
         .R(1'b0));
@@ -5555,7 +5558,7 @@ module design_IP_auto_cc_2_dmem
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[11] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(p_0_out[11]),
         .Q(dout_i[7]),
         .R(1'b0));
@@ -5563,7 +5566,7 @@ module design_IP_auto_cc_2_dmem
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[12] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(p_0_out[12]),
         .Q(dout_i[8]),
         .R(1'b0));
@@ -5571,7 +5574,7 @@ module design_IP_auto_cc_2_dmem
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[13] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(p_0_out[13]),
         .Q(dout_i[9]),
         .R(1'b0));
@@ -5579,7 +5582,7 @@ module design_IP_auto_cc_2_dmem
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[14] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(p_0_out[14]),
         .Q(dout_i[10]),
         .R(1'b0));
@@ -5587,7 +5590,7 @@ module design_IP_auto_cc_2_dmem
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[15] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(p_0_out[15]),
         .Q(dout_i[11]),
         .R(1'b0));
@@ -5595,7 +5598,7 @@ module design_IP_auto_cc_2_dmem
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[16] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(p_0_out[16]),
         .Q(dout_i[12]),
         .R(1'b0));
@@ -5603,7 +5606,7 @@ module design_IP_auto_cc_2_dmem
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[17] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(p_0_out[17]),
         .Q(dout_i[13]),
         .R(1'b0));
@@ -5611,7 +5614,7 @@ module design_IP_auto_cc_2_dmem
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[18] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(p_0_out[18]),
         .Q(dout_i[14]),
         .R(1'b0));
@@ -5619,7 +5622,7 @@ module design_IP_auto_cc_2_dmem
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[19] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(p_0_out[19]),
         .Q(dout_i[15]),
         .R(1'b0));
@@ -5627,7 +5630,7 @@ module design_IP_auto_cc_2_dmem
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[20] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(p_0_out[20]),
         .Q(dout_i[16]),
         .R(1'b0));
@@ -5635,7 +5638,7 @@ module design_IP_auto_cc_2_dmem
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[21] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(p_0_out[21]),
         .Q(dout_i[17]),
         .R(1'b0));
@@ -5643,7 +5646,7 @@ module design_IP_auto_cc_2_dmem
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[22] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(p_0_out[22]),
         .Q(dout_i[18]),
         .R(1'b0));
@@ -5651,7 +5654,7 @@ module design_IP_auto_cc_2_dmem
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[23] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(p_0_out[23]),
         .Q(dout_i[19]),
         .R(1'b0));
@@ -5659,7 +5662,7 @@ module design_IP_auto_cc_2_dmem
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[24] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(p_0_out[24]),
         .Q(dout_i[20]),
         .R(1'b0));
@@ -5667,7 +5670,7 @@ module design_IP_auto_cc_2_dmem
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[25] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(p_0_out[25]),
         .Q(dout_i[21]),
         .R(1'b0));
@@ -5675,7 +5678,7 @@ module design_IP_auto_cc_2_dmem
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[26] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(p_0_out[26]),
         .Q(dout_i[22]),
         .R(1'b0));
@@ -5683,7 +5686,7 @@ module design_IP_auto_cc_2_dmem
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[27] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(p_0_out[27]),
         .Q(dout_i[23]),
         .R(1'b0));
@@ -5691,7 +5694,7 @@ module design_IP_auto_cc_2_dmem
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[28] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(p_0_out[28]),
         .Q(dout_i[24]),
         .R(1'b0));
@@ -5699,7 +5702,7 @@ module design_IP_auto_cc_2_dmem
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[29] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(p_0_out[29]),
         .Q(dout_i[25]),
         .R(1'b0));
@@ -5707,7 +5710,7 @@ module design_IP_auto_cc_2_dmem
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[30] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(p_0_out[30]),
         .Q(dout_i[26]),
         .R(1'b0));
@@ -5715,7 +5718,7 @@ module design_IP_auto_cc_2_dmem
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[31] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(p_0_out[31]),
         .Q(dout_i[27]),
         .R(1'b0));
@@ -5723,7 +5726,7 @@ module design_IP_auto_cc_2_dmem
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[32] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(p_0_out[32]),
         .Q(dout_i[28]),
         .R(1'b0));
@@ -5731,7 +5734,7 @@ module design_IP_auto_cc_2_dmem
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[33] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(p_0_out[33]),
         .Q(dout_i[29]),
         .R(1'b0));
@@ -5739,7 +5742,7 @@ module design_IP_auto_cc_2_dmem
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[34] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(p_0_out[34]),
         .Q(dout_i[30]),
         .R(1'b0));
@@ -5747,7 +5750,7 @@ module design_IP_auto_cc_2_dmem
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[35] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(p_0_out[35]),
         .Q(dout_i[31]),
         .R(1'b0));
@@ -5755,7 +5758,7 @@ module design_IP_auto_cc_2_dmem
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[36] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(p_0_out[36]),
         .Q(dout_i[32]),
         .R(1'b0));
@@ -5763,7 +5766,7 @@ module design_IP_auto_cc_2_dmem
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[37] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(p_0_out[37]),
         .Q(dout_i[33]),
         .R(1'b0));
@@ -5771,7 +5774,7 @@ module design_IP_auto_cc_2_dmem
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[38] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(p_0_out[38]),
         .Q(dout_i[34]),
         .R(1'b0));
@@ -5779,7 +5782,7 @@ module design_IP_auto_cc_2_dmem
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[39] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(p_0_out[39]),
         .Q(dout_i[35]),
         .R(1'b0));
@@ -5787,7 +5790,7 @@ module design_IP_auto_cc_2_dmem
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[40] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(p_0_out[40]),
         .Q(dout_i[36]),
         .R(1'b0));
@@ -5795,7 +5798,7 @@ module design_IP_auto_cc_2_dmem
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[41] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(p_0_out[41]),
         .Q(dout_i[37]),
         .R(1'b0));
@@ -5803,7 +5806,7 @@ module design_IP_auto_cc_2_dmem
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[42] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(p_0_out[42]),
         .Q(dout_i[38]),
         .R(1'b0));
@@ -5811,7 +5814,7 @@ module design_IP_auto_cc_2_dmem
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[43] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(p_0_out[43]),
         .Q(dout_i[39]),
         .R(1'b0));
@@ -5819,7 +5822,7 @@ module design_IP_auto_cc_2_dmem
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[44] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(p_0_out[44]),
         .Q(dout_i[40]),
         .R(1'b0));
@@ -5827,7 +5830,7 @@ module design_IP_auto_cc_2_dmem
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[45] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(p_0_out[45]),
         .Q(dout_i[41]),
         .R(1'b0));
@@ -5835,7 +5838,7 @@ module design_IP_auto_cc_2_dmem
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[46] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(p_0_out[46]),
         .Q(dout_i[42]),
         .R(1'b0));
@@ -5843,7 +5846,7 @@ module design_IP_auto_cc_2_dmem
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[47] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(p_0_out[47]),
         .Q(dout_i[43]),
         .R(1'b0));
@@ -5851,7 +5854,7 @@ module design_IP_auto_cc_2_dmem
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[48] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(p_0_out[48]),
         .Q(dout_i[44]),
         .R(1'b0));
@@ -5859,7 +5862,7 @@ module design_IP_auto_cc_2_dmem
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[49] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(p_0_out[49]),
         .Q(dout_i[45]),
         .R(1'b0));
@@ -5867,7 +5870,7 @@ module design_IP_auto_cc_2_dmem
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[4] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(p_0_out[4]),
         .Q(dout_i[0]),
         .R(1'b0));
@@ -5875,7 +5878,7 @@ module design_IP_auto_cc_2_dmem
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[50] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(p_0_out[50]),
         .Q(dout_i[46]),
         .R(1'b0));
@@ -5883,7 +5886,7 @@ module design_IP_auto_cc_2_dmem
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[51] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(p_0_out[51]),
         .Q(dout_i[47]),
         .R(1'b0));
@@ -5891,7 +5894,7 @@ module design_IP_auto_cc_2_dmem
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[52] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(p_0_out[52]),
         .Q(dout_i[48]),
         .R(1'b0));
@@ -5899,7 +5902,7 @@ module design_IP_auto_cc_2_dmem
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[53] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(p_0_out[53]),
         .Q(dout_i[49]),
         .R(1'b0));
@@ -5907,7 +5910,7 @@ module design_IP_auto_cc_2_dmem
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[54] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(p_0_out[54]),
         .Q(dout_i[50]),
         .R(1'b0));
@@ -5915,7 +5918,7 @@ module design_IP_auto_cc_2_dmem
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[55] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(p_0_out[55]),
         .Q(dout_i[51]),
         .R(1'b0));
@@ -5923,7 +5926,7 @@ module design_IP_auto_cc_2_dmem
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[56] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(p_0_out[56]),
         .Q(dout_i[52]),
         .R(1'b0));
@@ -5931,7 +5934,7 @@ module design_IP_auto_cc_2_dmem
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[57] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(p_0_out[57]),
         .Q(dout_i[53]),
         .R(1'b0));
@@ -5939,7 +5942,7 @@ module design_IP_auto_cc_2_dmem
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[58] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(p_0_out[58]),
         .Q(dout_i[54]),
         .R(1'b0));
@@ -5947,7 +5950,7 @@ module design_IP_auto_cc_2_dmem
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[59] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(p_0_out[59]),
         .Q(dout_i[55]),
         .R(1'b0));
@@ -5955,7 +5958,7 @@ module design_IP_auto_cc_2_dmem
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[5] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(p_0_out[5]),
         .Q(dout_i[1]),
         .R(1'b0));
@@ -5963,7 +5966,7 @@ module design_IP_auto_cc_2_dmem
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[60] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(p_0_out[60]),
         .Q(dout_i[56]),
         .R(1'b0));
@@ -5971,7 +5974,7 @@ module design_IP_auto_cc_2_dmem
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[61] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(p_0_out[61]),
         .Q(dout_i[57]),
         .R(1'b0));
@@ -5979,7 +5982,7 @@ module design_IP_auto_cc_2_dmem
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[62] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(p_0_out[62]),
         .Q(dout_i[58]),
         .R(1'b0));
@@ -5987,7 +5990,7 @@ module design_IP_auto_cc_2_dmem
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[63] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(p_0_out[63]),
         .Q(dout_i[59]),
         .R(1'b0));
@@ -5995,7 +5998,7 @@ module design_IP_auto_cc_2_dmem
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[64] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(p_0_out[64]),
         .Q(dout_i[60]),
         .R(1'b0));
@@ -6003,7 +6006,7 @@ module design_IP_auto_cc_2_dmem
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[65] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(p_0_out[65]),
         .Q(dout_i[61]),
         .R(1'b0));
@@ -6011,7 +6014,7 @@ module design_IP_auto_cc_2_dmem
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[66] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(p_0_out[66]),
         .Q(dout_i[62]),
         .R(1'b0));
@@ -6019,7 +6022,7 @@ module design_IP_auto_cc_2_dmem
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[67] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(p_0_out[67]),
         .Q(dout_i[63]),
         .R(1'b0));
@@ -6027,7 +6030,7 @@ module design_IP_auto_cc_2_dmem
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[68] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(p_0_out[68]),
         .Q(dout_i[64]),
         .R(1'b0));
@@ -6035,7 +6038,7 @@ module design_IP_auto_cc_2_dmem
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[69] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(p_0_out[69]),
         .Q(dout_i[65]),
         .R(1'b0));
@@ -6043,7 +6046,7 @@ module design_IP_auto_cc_2_dmem
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[6] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(p_0_out[6]),
         .Q(dout_i[2]),
         .R(1'b0));
@@ -6051,7 +6054,7 @@ module design_IP_auto_cc_2_dmem
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[7] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(p_0_out[7]),
         .Q(dout_i[3]),
         .R(1'b0));
@@ -6059,7 +6062,7 @@ module design_IP_auto_cc_2_dmem
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[8] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(p_0_out[8]),
         .Q(dout_i[4]),
         .R(1'b0));
@@ -6067,7 +6070,7 @@ module design_IP_auto_cc_2_dmem
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[9] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(p_0_out[9]),
         .Q(dout_i[5]),
         .R(1'b0));
@@ -6077,23 +6080,21 @@ endmodule
 module design_IP_auto_cc_2_dmem_24
    (dout_i,
     s_aclk,
-    I67,
-    I473,
-    count_d1,
     \gpr1.dout_i_reg[5]_0 ,
-    \gpr1.dout_i_reg[69]_0 ,
+    \gpr1.dout_i_reg[67]_0 ,
+    \gpr1.dout_i_reg[5]_1 ,
+    \gpr1.dout_i_reg[5]_2 ,
+    \gpr1.dout_i_reg[4]_0 ,
     m_aclk);
   output [65:0]dout_i;
   input s_aclk;
-  input I67;
-  input [65:0]I473;
-  input [3:0]count_d1;
-  input [3:0]\gpr1.dout_i_reg[5]_0 ;
-  input [0:0]\gpr1.dout_i_reg[69]_0 ;
+  input [0:0]\gpr1.dout_i_reg[5]_0 ;
+  input [65:0]\gpr1.dout_i_reg[67]_0 ;
+  input [3:0]\gpr1.dout_i_reg[5]_1 ;
+  input [3:0]\gpr1.dout_i_reg[5]_2 ;
+  input [0:0]\gpr1.dout_i_reg[4]_0 ;
   input m_aclk;
 
-  wire [65:0]I473;
-  wire I67;
   wire RAM_reg_0_15_0_5_n_0;
   wire RAM_reg_0_15_0_5_n_1;
   wire RAM_reg_0_15_0_5_n_2;
@@ -6164,10 +6165,12 @@ module design_IP_auto_cc_2_dmem_24
   wire RAM_reg_0_15_6_11_n_3;
   wire RAM_reg_0_15_6_11_n_4;
   wire RAM_reg_0_15_6_11_n_5;
-  wire [3:0]count_d1;
   wire [65:0]dout_i;
-  wire [3:0]\gpr1.dout_i_reg[5]_0 ;
-  wire [0:0]\gpr1.dout_i_reg[69]_0 ;
+  wire [0:0]\gpr1.dout_i_reg[4]_0 ;
+  wire [0:0]\gpr1.dout_i_reg[5]_0 ;
+  wire [3:0]\gpr1.dout_i_reg[5]_1 ;
+  wire [3:0]\gpr1.dout_i_reg[5]_2 ;
+  wire [65:0]\gpr1.dout_i_reg[67]_0 ;
   wire m_aclk;
   wire s_aclk;
   wire [1:0]NLW_RAM_reg_0_15_0_5_DOD_UNCONNECTED;
@@ -6193,20 +6196,20 @@ module design_IP_auto_cc_2_dmem_24
   (* ram_slice_begin = "0" *) 
   (* ram_slice_end = "5" *) 
   RAM32M RAM_reg_0_15_0_5
-       (.ADDRA({1'b0,count_d1}),
-        .ADDRB({1'b0,count_d1}),
-        .ADDRC({1'b0,count_d1}),
-        .ADDRD({1'b0,\gpr1.dout_i_reg[5]_0 }),
+       (.ADDRA({1'b0,\gpr1.dout_i_reg[5]_1 }),
+        .ADDRB({1'b0,\gpr1.dout_i_reg[5]_1 }),
+        .ADDRC({1'b0,\gpr1.dout_i_reg[5]_1 }),
+        .ADDRD({1'b0,\gpr1.dout_i_reg[5]_2 }),
         .DIA({1'b0,1'b0}),
         .DIB({1'b0,1'b0}),
-        .DIC(I473[1:0]),
+        .DIC(\gpr1.dout_i_reg[67]_0 [1:0]),
         .DID({1'b0,1'b0}),
         .DOA({RAM_reg_0_15_0_5_n_0,RAM_reg_0_15_0_5_n_1}),
         .DOB({RAM_reg_0_15_0_5_n_2,RAM_reg_0_15_0_5_n_3}),
         .DOC({RAM_reg_0_15_0_5_n_4,RAM_reg_0_15_0_5_n_5}),
         .DOD(NLW_RAM_reg_0_15_0_5_DOD_UNCONNECTED[1:0]),
         .WCLK(s_aclk),
-        .WE(I67));
+        .WE(\gpr1.dout_i_reg[5]_0 ));
   (* METHODOLOGY_DRC_VIOS = "" *) 
   (* RTL_RAM_BITS = "1120" *) 
   (* RTL_RAM_NAME = "inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM" *) 
@@ -6216,20 +6219,20 @@ module design_IP_auto_cc_2_dmem_24
   (* ram_slice_begin = "12" *) 
   (* ram_slice_end = "17" *) 
   RAM32M RAM_reg_0_15_12_17
-       (.ADDRA({1'b0,count_d1}),
-        .ADDRB({1'b0,count_d1}),
-        .ADDRC({1'b0,count_d1}),
-        .ADDRD({1'b0,\gpr1.dout_i_reg[5]_0 }),
-        .DIA(I473[9:8]),
-        .DIB(I473[11:10]),
-        .DIC(I473[13:12]),
+       (.ADDRA({1'b0,\gpr1.dout_i_reg[5]_1 }),
+        .ADDRB({1'b0,\gpr1.dout_i_reg[5]_1 }),
+        .ADDRC({1'b0,\gpr1.dout_i_reg[5]_1 }),
+        .ADDRD({1'b0,\gpr1.dout_i_reg[5]_2 }),
+        .DIA(\gpr1.dout_i_reg[67]_0 [9:8]),
+        .DIB(\gpr1.dout_i_reg[67]_0 [11:10]),
+        .DIC(\gpr1.dout_i_reg[67]_0 [13:12]),
         .DID({1'b0,1'b0}),
         .DOA({RAM_reg_0_15_12_17_n_0,RAM_reg_0_15_12_17_n_1}),
         .DOB({RAM_reg_0_15_12_17_n_2,RAM_reg_0_15_12_17_n_3}),
         .DOC({RAM_reg_0_15_12_17_n_4,RAM_reg_0_15_12_17_n_5}),
         .DOD(NLW_RAM_reg_0_15_12_17_DOD_UNCONNECTED[1:0]),
         .WCLK(s_aclk),
-        .WE(I67));
+        .WE(\gpr1.dout_i_reg[5]_0 ));
   (* METHODOLOGY_DRC_VIOS = "" *) 
   (* RTL_RAM_BITS = "1120" *) 
   (* RTL_RAM_NAME = "inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM" *) 
@@ -6239,20 +6242,20 @@ module design_IP_auto_cc_2_dmem_24
   (* ram_slice_begin = "18" *) 
   (* ram_slice_end = "23" *) 
   RAM32M RAM_reg_0_15_18_23
-       (.ADDRA({1'b0,count_d1}),
-        .ADDRB({1'b0,count_d1}),
-        .ADDRC({1'b0,count_d1}),
-        .ADDRD({1'b0,\gpr1.dout_i_reg[5]_0 }),
-        .DIA(I473[15:14]),
-        .DIB(I473[17:16]),
-        .DIC(I473[19:18]),
+       (.ADDRA({1'b0,\gpr1.dout_i_reg[5]_1 }),
+        .ADDRB({1'b0,\gpr1.dout_i_reg[5]_1 }),
+        .ADDRC({1'b0,\gpr1.dout_i_reg[5]_1 }),
+        .ADDRD({1'b0,\gpr1.dout_i_reg[5]_2 }),
+        .DIA(\gpr1.dout_i_reg[67]_0 [15:14]),
+        .DIB(\gpr1.dout_i_reg[67]_0 [17:16]),
+        .DIC(\gpr1.dout_i_reg[67]_0 [19:18]),
         .DID({1'b0,1'b0}),
         .DOA({RAM_reg_0_15_18_23_n_0,RAM_reg_0_15_18_23_n_1}),
         .DOB({RAM_reg_0_15_18_23_n_2,RAM_reg_0_15_18_23_n_3}),
         .DOC({RAM_reg_0_15_18_23_n_4,RAM_reg_0_15_18_23_n_5}),
         .DOD(NLW_RAM_reg_0_15_18_23_DOD_UNCONNECTED[1:0]),
         .WCLK(s_aclk),
-        .WE(I67));
+        .WE(\gpr1.dout_i_reg[5]_0 ));
   (* METHODOLOGY_DRC_VIOS = "" *) 
   (* RTL_RAM_BITS = "1120" *) 
   (* RTL_RAM_NAME = "inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM" *) 
@@ -6262,20 +6265,20 @@ module design_IP_auto_cc_2_dmem_24
   (* ram_slice_begin = "24" *) 
   (* ram_slice_end = "29" *) 
   RAM32M RAM_reg_0_15_24_29
-       (.ADDRA({1'b0,count_d1}),
-        .ADDRB({1'b0,count_d1}),
-        .ADDRC({1'b0,count_d1}),
-        .ADDRD({1'b0,\gpr1.dout_i_reg[5]_0 }),
-        .DIA(I473[21:20]),
-        .DIB(I473[23:22]),
-        .DIC(I473[25:24]),
+       (.ADDRA({1'b0,\gpr1.dout_i_reg[5]_1 }),
+        .ADDRB({1'b0,\gpr1.dout_i_reg[5]_1 }),
+        .ADDRC({1'b0,\gpr1.dout_i_reg[5]_1 }),
+        .ADDRD({1'b0,\gpr1.dout_i_reg[5]_2 }),
+        .DIA(\gpr1.dout_i_reg[67]_0 [21:20]),
+        .DIB(\gpr1.dout_i_reg[67]_0 [23:22]),
+        .DIC(\gpr1.dout_i_reg[67]_0 [25:24]),
         .DID({1'b0,1'b0}),
         .DOA({RAM_reg_0_15_24_29_n_0,RAM_reg_0_15_24_29_n_1}),
         .DOB({RAM_reg_0_15_24_29_n_2,RAM_reg_0_15_24_29_n_3}),
         .DOC({RAM_reg_0_15_24_29_n_4,RAM_reg_0_15_24_29_n_5}),
         .DOD(NLW_RAM_reg_0_15_24_29_DOD_UNCONNECTED[1:0]),
         .WCLK(s_aclk),
-        .WE(I67));
+        .WE(\gpr1.dout_i_reg[5]_0 ));
   (* METHODOLOGY_DRC_VIOS = "" *) 
   (* RTL_RAM_BITS = "1120" *) 
   (* RTL_RAM_NAME = "inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM" *) 
@@ -6285,20 +6288,20 @@ module design_IP_auto_cc_2_dmem_24
   (* ram_slice_begin = "30" *) 
   (* ram_slice_end = "35" *) 
   RAM32M RAM_reg_0_15_30_35
-       (.ADDRA({1'b0,count_d1}),
-        .ADDRB({1'b0,count_d1}),
-        .ADDRC({1'b0,count_d1}),
-        .ADDRD({1'b0,\gpr1.dout_i_reg[5]_0 }),
-        .DIA(I473[27:26]),
-        .DIB(I473[29:28]),
-        .DIC(I473[31:30]),
+       (.ADDRA({1'b0,\gpr1.dout_i_reg[5]_1 }),
+        .ADDRB({1'b0,\gpr1.dout_i_reg[5]_1 }),
+        .ADDRC({1'b0,\gpr1.dout_i_reg[5]_1 }),
+        .ADDRD({1'b0,\gpr1.dout_i_reg[5]_2 }),
+        .DIA(\gpr1.dout_i_reg[67]_0 [27:26]),
+        .DIB(\gpr1.dout_i_reg[67]_0 [29:28]),
+        .DIC(\gpr1.dout_i_reg[67]_0 [31:30]),
         .DID({1'b0,1'b0}),
         .DOA({RAM_reg_0_15_30_35_n_0,RAM_reg_0_15_30_35_n_1}),
         .DOB({RAM_reg_0_15_30_35_n_2,RAM_reg_0_15_30_35_n_3}),
         .DOC({RAM_reg_0_15_30_35_n_4,RAM_reg_0_15_30_35_n_5}),
         .DOD(NLW_RAM_reg_0_15_30_35_DOD_UNCONNECTED[1:0]),
         .WCLK(s_aclk),
-        .WE(I67));
+        .WE(\gpr1.dout_i_reg[5]_0 ));
   (* METHODOLOGY_DRC_VIOS = "" *) 
   (* RTL_RAM_BITS = "1120" *) 
   (* RTL_RAM_NAME = "inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM" *) 
@@ -6308,20 +6311,20 @@ module design_IP_auto_cc_2_dmem_24
   (* ram_slice_begin = "36" *) 
   (* ram_slice_end = "41" *) 
   RAM32M RAM_reg_0_15_36_41
-       (.ADDRA({1'b0,count_d1}),
-        .ADDRB({1'b0,count_d1}),
-        .ADDRC({1'b0,count_d1}),
-        .ADDRD({1'b0,\gpr1.dout_i_reg[5]_0 }),
-        .DIA(I473[33:32]),
-        .DIB(I473[35:34]),
-        .DIC(I473[37:36]),
+       (.ADDRA({1'b0,\gpr1.dout_i_reg[5]_1 }),
+        .ADDRB({1'b0,\gpr1.dout_i_reg[5]_1 }),
+        .ADDRC({1'b0,\gpr1.dout_i_reg[5]_1 }),
+        .ADDRD({1'b0,\gpr1.dout_i_reg[5]_2 }),
+        .DIA(\gpr1.dout_i_reg[67]_0 [33:32]),
+        .DIB(\gpr1.dout_i_reg[67]_0 [35:34]),
+        .DIC(\gpr1.dout_i_reg[67]_0 [37:36]),
         .DID({1'b0,1'b0}),
         .DOA({RAM_reg_0_15_36_41_n_0,RAM_reg_0_15_36_41_n_1}),
         .DOB({RAM_reg_0_15_36_41_n_2,RAM_reg_0_15_36_41_n_3}),
         .DOC({RAM_reg_0_15_36_41_n_4,RAM_reg_0_15_36_41_n_5}),
         .DOD(NLW_RAM_reg_0_15_36_41_DOD_UNCONNECTED[1:0]),
         .WCLK(s_aclk),
-        .WE(I67));
+        .WE(\gpr1.dout_i_reg[5]_0 ));
   (* METHODOLOGY_DRC_VIOS = "" *) 
   (* RTL_RAM_BITS = "1120" *) 
   (* RTL_RAM_NAME = "inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM" *) 
@@ -6331,20 +6334,20 @@ module design_IP_auto_cc_2_dmem_24
   (* ram_slice_begin = "42" *) 
   (* ram_slice_end = "47" *) 
   RAM32M RAM_reg_0_15_42_47
-       (.ADDRA({1'b0,count_d1}),
-        .ADDRB({1'b0,count_d1}),
-        .ADDRC({1'b0,count_d1}),
-        .ADDRD({1'b0,\gpr1.dout_i_reg[5]_0 }),
-        .DIA(I473[39:38]),
-        .DIB(I473[41:40]),
-        .DIC(I473[43:42]),
+       (.ADDRA({1'b0,\gpr1.dout_i_reg[5]_1 }),
+        .ADDRB({1'b0,\gpr1.dout_i_reg[5]_1 }),
+        .ADDRC({1'b0,\gpr1.dout_i_reg[5]_1 }),
+        .ADDRD({1'b0,\gpr1.dout_i_reg[5]_2 }),
+        .DIA(\gpr1.dout_i_reg[67]_0 [39:38]),
+        .DIB(\gpr1.dout_i_reg[67]_0 [41:40]),
+        .DIC(\gpr1.dout_i_reg[67]_0 [43:42]),
         .DID({1'b0,1'b0}),
         .DOA({RAM_reg_0_15_42_47_n_0,RAM_reg_0_15_42_47_n_1}),
         .DOB({RAM_reg_0_15_42_47_n_2,RAM_reg_0_15_42_47_n_3}),
         .DOC({RAM_reg_0_15_42_47_n_4,RAM_reg_0_15_42_47_n_5}),
         .DOD(NLW_RAM_reg_0_15_42_47_DOD_UNCONNECTED[1:0]),
         .WCLK(s_aclk),
-        .WE(I67));
+        .WE(\gpr1.dout_i_reg[5]_0 ));
   (* METHODOLOGY_DRC_VIOS = "" *) 
   (* RTL_RAM_BITS = "1120" *) 
   (* RTL_RAM_NAME = "inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM" *) 
@@ -6354,20 +6357,20 @@ module design_IP_auto_cc_2_dmem_24
   (* ram_slice_begin = "48" *) 
   (* ram_slice_end = "53" *) 
   RAM32M RAM_reg_0_15_48_53
-       (.ADDRA({1'b0,count_d1}),
-        .ADDRB({1'b0,count_d1}),
-        .ADDRC({1'b0,count_d1}),
-        .ADDRD({1'b0,\gpr1.dout_i_reg[5]_0 }),
-        .DIA(I473[45:44]),
-        .DIB(I473[47:46]),
-        .DIC(I473[49:48]),
+       (.ADDRA({1'b0,\gpr1.dout_i_reg[5]_1 }),
+        .ADDRB({1'b0,\gpr1.dout_i_reg[5]_1 }),
+        .ADDRC({1'b0,\gpr1.dout_i_reg[5]_1 }),
+        .ADDRD({1'b0,\gpr1.dout_i_reg[5]_2 }),
+        .DIA(\gpr1.dout_i_reg[67]_0 [45:44]),
+        .DIB(\gpr1.dout_i_reg[67]_0 [47:46]),
+        .DIC(\gpr1.dout_i_reg[67]_0 [49:48]),
         .DID({1'b0,1'b0}),
         .DOA({RAM_reg_0_15_48_53_n_0,RAM_reg_0_15_48_53_n_1}),
         .DOB({RAM_reg_0_15_48_53_n_2,RAM_reg_0_15_48_53_n_3}),
         .DOC({RAM_reg_0_15_48_53_n_4,RAM_reg_0_15_48_53_n_5}),
         .DOD(NLW_RAM_reg_0_15_48_53_DOD_UNCONNECTED[1:0]),
         .WCLK(s_aclk),
-        .WE(I67));
+        .WE(\gpr1.dout_i_reg[5]_0 ));
   (* METHODOLOGY_DRC_VIOS = "" *) 
   (* RTL_RAM_BITS = "1120" *) 
   (* RTL_RAM_NAME = "inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM" *) 
@@ -6377,20 +6380,20 @@ module design_IP_auto_cc_2_dmem_24
   (* ram_slice_begin = "54" *) 
   (* ram_slice_end = "59" *) 
   RAM32M RAM_reg_0_15_54_59
-       (.ADDRA({1'b0,count_d1}),
-        .ADDRB({1'b0,count_d1}),
-        .ADDRC({1'b0,count_d1}),
-        .ADDRD({1'b0,\gpr1.dout_i_reg[5]_0 }),
-        .DIA(I473[51:50]),
-        .DIB(I473[53:52]),
-        .DIC(I473[55:54]),
+       (.ADDRA({1'b0,\gpr1.dout_i_reg[5]_1 }),
+        .ADDRB({1'b0,\gpr1.dout_i_reg[5]_1 }),
+        .ADDRC({1'b0,\gpr1.dout_i_reg[5]_1 }),
+        .ADDRD({1'b0,\gpr1.dout_i_reg[5]_2 }),
+        .DIA(\gpr1.dout_i_reg[67]_0 [51:50]),
+        .DIB(\gpr1.dout_i_reg[67]_0 [53:52]),
+        .DIC(\gpr1.dout_i_reg[67]_0 [55:54]),
         .DID({1'b0,1'b0}),
         .DOA({RAM_reg_0_15_54_59_n_0,RAM_reg_0_15_54_59_n_1}),
         .DOB({RAM_reg_0_15_54_59_n_2,RAM_reg_0_15_54_59_n_3}),
         .DOC({RAM_reg_0_15_54_59_n_4,RAM_reg_0_15_54_59_n_5}),
         .DOD(NLW_RAM_reg_0_15_54_59_DOD_UNCONNECTED[1:0]),
         .WCLK(s_aclk),
-        .WE(I67));
+        .WE(\gpr1.dout_i_reg[5]_0 ));
   (* METHODOLOGY_DRC_VIOS = "" *) 
   (* RTL_RAM_BITS = "1120" *) 
   (* RTL_RAM_NAME = "inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM" *) 
@@ -6400,20 +6403,20 @@ module design_IP_auto_cc_2_dmem_24
   (* ram_slice_begin = "60" *) 
   (* ram_slice_end = "65" *) 
   RAM32M RAM_reg_0_15_60_65
-       (.ADDRA({1'b0,count_d1}),
-        .ADDRB({1'b0,count_d1}),
-        .ADDRC({1'b0,count_d1}),
-        .ADDRD({1'b0,\gpr1.dout_i_reg[5]_0 }),
-        .DIA(I473[57:56]),
-        .DIB(I473[59:58]),
-        .DIC(I473[61:60]),
+       (.ADDRA({1'b0,\gpr1.dout_i_reg[5]_1 }),
+        .ADDRB({1'b0,\gpr1.dout_i_reg[5]_1 }),
+        .ADDRC({1'b0,\gpr1.dout_i_reg[5]_1 }),
+        .ADDRD({1'b0,\gpr1.dout_i_reg[5]_2 }),
+        .DIA(\gpr1.dout_i_reg[67]_0 [57:56]),
+        .DIB(\gpr1.dout_i_reg[67]_0 [59:58]),
+        .DIC(\gpr1.dout_i_reg[67]_0 [61:60]),
         .DID({1'b0,1'b0}),
         .DOA({RAM_reg_0_15_60_65_n_0,RAM_reg_0_15_60_65_n_1}),
         .DOB({RAM_reg_0_15_60_65_n_2,RAM_reg_0_15_60_65_n_3}),
         .DOC({RAM_reg_0_15_60_65_n_4,RAM_reg_0_15_60_65_n_5}),
         .DOD(NLW_RAM_reg_0_15_60_65_DOD_UNCONNECTED[1:0]),
         .WCLK(s_aclk),
-        .WE(I67));
+        .WE(\gpr1.dout_i_reg[5]_0 ));
   (* METHODOLOGY_DRC_VIOS = "" *) 
   (* RTL_RAM_BITS = "1120" *) 
   (* RTL_RAM_NAME = "inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM" *) 
@@ -6423,12 +6426,12 @@ module design_IP_auto_cc_2_dmem_24
   (* ram_slice_begin = "66" *) 
   (* ram_slice_end = "69" *) 
   RAM32M RAM_reg_0_15_66_69
-       (.ADDRA({1'b0,count_d1}),
-        .ADDRB({1'b0,count_d1}),
-        .ADDRC({1'b0,count_d1}),
-        .ADDRD({1'b0,\gpr1.dout_i_reg[5]_0 }),
-        .DIA(I473[63:62]),
-        .DIB(I473[65:64]),
+       (.ADDRA({1'b0,\gpr1.dout_i_reg[5]_1 }),
+        .ADDRB({1'b0,\gpr1.dout_i_reg[5]_1 }),
+        .ADDRC({1'b0,\gpr1.dout_i_reg[5]_1 }),
+        .ADDRD({1'b0,\gpr1.dout_i_reg[5]_2 }),
+        .DIA(\gpr1.dout_i_reg[67]_0 [63:62]),
+        .DIB(\gpr1.dout_i_reg[67]_0 [65:64]),
         .DIC({1'b0,1'b0}),
         .DID({1'b0,1'b0}),
         .DOA({RAM_reg_0_15_66_69_n_0,RAM_reg_0_15_66_69_n_1}),
@@ -6436,7 +6439,7 @@ module design_IP_auto_cc_2_dmem_24
         .DOC(NLW_RAM_reg_0_15_66_69_DOC_UNCONNECTED[1:0]),
         .DOD(NLW_RAM_reg_0_15_66_69_DOD_UNCONNECTED[1:0]),
         .WCLK(s_aclk),
-        .WE(I67));
+        .WE(\gpr1.dout_i_reg[5]_0 ));
   (* METHODOLOGY_DRC_VIOS = "" *) 
   (* RTL_RAM_BITS = "1120" *) 
   (* RTL_RAM_NAME = "inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM" *) 
@@ -6446,25 +6449,25 @@ module design_IP_auto_cc_2_dmem_24
   (* ram_slice_begin = "6" *) 
   (* ram_slice_end = "11" *) 
   RAM32M RAM_reg_0_15_6_11
-       (.ADDRA({1'b0,count_d1}),
-        .ADDRB({1'b0,count_d1}),
-        .ADDRC({1'b0,count_d1}),
-        .ADDRD({1'b0,\gpr1.dout_i_reg[5]_0 }),
-        .DIA(I473[3:2]),
-        .DIB(I473[5:4]),
-        .DIC(I473[7:6]),
+       (.ADDRA({1'b0,\gpr1.dout_i_reg[5]_1 }),
+        .ADDRB({1'b0,\gpr1.dout_i_reg[5]_1 }),
+        .ADDRC({1'b0,\gpr1.dout_i_reg[5]_1 }),
+        .ADDRD({1'b0,\gpr1.dout_i_reg[5]_2 }),
+        .DIA(\gpr1.dout_i_reg[67]_0 [3:2]),
+        .DIB(\gpr1.dout_i_reg[67]_0 [5:4]),
+        .DIC(\gpr1.dout_i_reg[67]_0 [7:6]),
         .DID({1'b0,1'b0}),
         .DOA({RAM_reg_0_15_6_11_n_0,RAM_reg_0_15_6_11_n_1}),
         .DOB({RAM_reg_0_15_6_11_n_2,RAM_reg_0_15_6_11_n_3}),
         .DOC({RAM_reg_0_15_6_11_n_4,RAM_reg_0_15_6_11_n_5}),
         .DOD(NLW_RAM_reg_0_15_6_11_DOD_UNCONNECTED[1:0]),
         .WCLK(s_aclk),
-        .WE(I67));
+        .WE(\gpr1.dout_i_reg[5]_0 ));
   FDRE #(
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[10] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(RAM_reg_0_15_6_11_n_5),
         .Q(dout_i[6]),
         .R(1'b0));
@@ -6472,7 +6475,7 @@ module design_IP_auto_cc_2_dmem_24
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[11] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(RAM_reg_0_15_6_11_n_4),
         .Q(dout_i[7]),
         .R(1'b0));
@@ -6480,7 +6483,7 @@ module design_IP_auto_cc_2_dmem_24
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[12] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(RAM_reg_0_15_12_17_n_1),
         .Q(dout_i[8]),
         .R(1'b0));
@@ -6488,7 +6491,7 @@ module design_IP_auto_cc_2_dmem_24
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[13] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(RAM_reg_0_15_12_17_n_0),
         .Q(dout_i[9]),
         .R(1'b0));
@@ -6496,7 +6499,7 @@ module design_IP_auto_cc_2_dmem_24
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[14] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(RAM_reg_0_15_12_17_n_3),
         .Q(dout_i[10]),
         .R(1'b0));
@@ -6504,7 +6507,7 @@ module design_IP_auto_cc_2_dmem_24
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[15] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(RAM_reg_0_15_12_17_n_2),
         .Q(dout_i[11]),
         .R(1'b0));
@@ -6512,7 +6515,7 @@ module design_IP_auto_cc_2_dmem_24
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[16] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(RAM_reg_0_15_12_17_n_5),
         .Q(dout_i[12]),
         .R(1'b0));
@@ -6520,7 +6523,7 @@ module design_IP_auto_cc_2_dmem_24
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[17] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(RAM_reg_0_15_12_17_n_4),
         .Q(dout_i[13]),
         .R(1'b0));
@@ -6528,7 +6531,7 @@ module design_IP_auto_cc_2_dmem_24
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[18] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(RAM_reg_0_15_18_23_n_1),
         .Q(dout_i[14]),
         .R(1'b0));
@@ -6536,7 +6539,7 @@ module design_IP_auto_cc_2_dmem_24
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[19] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(RAM_reg_0_15_18_23_n_0),
         .Q(dout_i[15]),
         .R(1'b0));
@@ -6544,7 +6547,7 @@ module design_IP_auto_cc_2_dmem_24
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[20] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(RAM_reg_0_15_18_23_n_3),
         .Q(dout_i[16]),
         .R(1'b0));
@@ -6552,7 +6555,7 @@ module design_IP_auto_cc_2_dmem_24
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[21] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(RAM_reg_0_15_18_23_n_2),
         .Q(dout_i[17]),
         .R(1'b0));
@@ -6560,7 +6563,7 @@ module design_IP_auto_cc_2_dmem_24
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[22] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(RAM_reg_0_15_18_23_n_5),
         .Q(dout_i[18]),
         .R(1'b0));
@@ -6568,7 +6571,7 @@ module design_IP_auto_cc_2_dmem_24
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[23] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(RAM_reg_0_15_18_23_n_4),
         .Q(dout_i[19]),
         .R(1'b0));
@@ -6576,7 +6579,7 @@ module design_IP_auto_cc_2_dmem_24
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[24] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(RAM_reg_0_15_24_29_n_1),
         .Q(dout_i[20]),
         .R(1'b0));
@@ -6584,7 +6587,7 @@ module design_IP_auto_cc_2_dmem_24
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[25] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(RAM_reg_0_15_24_29_n_0),
         .Q(dout_i[21]),
         .R(1'b0));
@@ -6592,7 +6595,7 @@ module design_IP_auto_cc_2_dmem_24
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[26] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(RAM_reg_0_15_24_29_n_3),
         .Q(dout_i[22]),
         .R(1'b0));
@@ -6600,7 +6603,7 @@ module design_IP_auto_cc_2_dmem_24
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[27] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(RAM_reg_0_15_24_29_n_2),
         .Q(dout_i[23]),
         .R(1'b0));
@@ -6608,7 +6611,7 @@ module design_IP_auto_cc_2_dmem_24
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[28] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(RAM_reg_0_15_24_29_n_5),
         .Q(dout_i[24]),
         .R(1'b0));
@@ -6616,7 +6619,7 @@ module design_IP_auto_cc_2_dmem_24
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[29] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(RAM_reg_0_15_24_29_n_4),
         .Q(dout_i[25]),
         .R(1'b0));
@@ -6624,7 +6627,7 @@ module design_IP_auto_cc_2_dmem_24
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[30] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(RAM_reg_0_15_30_35_n_1),
         .Q(dout_i[26]),
         .R(1'b0));
@@ -6632,7 +6635,7 @@ module design_IP_auto_cc_2_dmem_24
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[31] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(RAM_reg_0_15_30_35_n_0),
         .Q(dout_i[27]),
         .R(1'b0));
@@ -6640,7 +6643,7 @@ module design_IP_auto_cc_2_dmem_24
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[32] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(RAM_reg_0_15_30_35_n_3),
         .Q(dout_i[28]),
         .R(1'b0));
@@ -6648,7 +6651,7 @@ module design_IP_auto_cc_2_dmem_24
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[33] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(RAM_reg_0_15_30_35_n_2),
         .Q(dout_i[29]),
         .R(1'b0));
@@ -6656,7 +6659,7 @@ module design_IP_auto_cc_2_dmem_24
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[34] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(RAM_reg_0_15_30_35_n_5),
         .Q(dout_i[30]),
         .R(1'b0));
@@ -6664,7 +6667,7 @@ module design_IP_auto_cc_2_dmem_24
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[35] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(RAM_reg_0_15_30_35_n_4),
         .Q(dout_i[31]),
         .R(1'b0));
@@ -6672,7 +6675,7 @@ module design_IP_auto_cc_2_dmem_24
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[36] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(RAM_reg_0_15_36_41_n_1),
         .Q(dout_i[32]),
         .R(1'b0));
@@ -6680,7 +6683,7 @@ module design_IP_auto_cc_2_dmem_24
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[37] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(RAM_reg_0_15_36_41_n_0),
         .Q(dout_i[33]),
         .R(1'b0));
@@ -6688,7 +6691,7 @@ module design_IP_auto_cc_2_dmem_24
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[38] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(RAM_reg_0_15_36_41_n_3),
         .Q(dout_i[34]),
         .R(1'b0));
@@ -6696,7 +6699,7 @@ module design_IP_auto_cc_2_dmem_24
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[39] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(RAM_reg_0_15_36_41_n_2),
         .Q(dout_i[35]),
         .R(1'b0));
@@ -6704,7 +6707,7 @@ module design_IP_auto_cc_2_dmem_24
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[40] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(RAM_reg_0_15_36_41_n_5),
         .Q(dout_i[36]),
         .R(1'b0));
@@ -6712,7 +6715,7 @@ module design_IP_auto_cc_2_dmem_24
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[41] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(RAM_reg_0_15_36_41_n_4),
         .Q(dout_i[37]),
         .R(1'b0));
@@ -6720,7 +6723,7 @@ module design_IP_auto_cc_2_dmem_24
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[42] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(RAM_reg_0_15_42_47_n_1),
         .Q(dout_i[38]),
         .R(1'b0));
@@ -6728,7 +6731,7 @@ module design_IP_auto_cc_2_dmem_24
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[43] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(RAM_reg_0_15_42_47_n_0),
         .Q(dout_i[39]),
         .R(1'b0));
@@ -6736,7 +6739,7 @@ module design_IP_auto_cc_2_dmem_24
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[44] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(RAM_reg_0_15_42_47_n_3),
         .Q(dout_i[40]),
         .R(1'b0));
@@ -6744,7 +6747,7 @@ module design_IP_auto_cc_2_dmem_24
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[45] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(RAM_reg_0_15_42_47_n_2),
         .Q(dout_i[41]),
         .R(1'b0));
@@ -6752,7 +6755,7 @@ module design_IP_auto_cc_2_dmem_24
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[46] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(RAM_reg_0_15_42_47_n_5),
         .Q(dout_i[42]),
         .R(1'b0));
@@ -6760,7 +6763,7 @@ module design_IP_auto_cc_2_dmem_24
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[47] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(RAM_reg_0_15_42_47_n_4),
         .Q(dout_i[43]),
         .R(1'b0));
@@ -6768,7 +6771,7 @@ module design_IP_auto_cc_2_dmem_24
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[48] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(RAM_reg_0_15_48_53_n_1),
         .Q(dout_i[44]),
         .R(1'b0));
@@ -6776,7 +6779,7 @@ module design_IP_auto_cc_2_dmem_24
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[49] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(RAM_reg_0_15_48_53_n_0),
         .Q(dout_i[45]),
         .R(1'b0));
@@ -6784,7 +6787,7 @@ module design_IP_auto_cc_2_dmem_24
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[4] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(RAM_reg_0_15_0_5_n_5),
         .Q(dout_i[0]),
         .R(1'b0));
@@ -6792,7 +6795,7 @@ module design_IP_auto_cc_2_dmem_24
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[50] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(RAM_reg_0_15_48_53_n_3),
         .Q(dout_i[46]),
         .R(1'b0));
@@ -6800,7 +6803,7 @@ module design_IP_auto_cc_2_dmem_24
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[51] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(RAM_reg_0_15_48_53_n_2),
         .Q(dout_i[47]),
         .R(1'b0));
@@ -6808,7 +6811,7 @@ module design_IP_auto_cc_2_dmem_24
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[52] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(RAM_reg_0_15_48_53_n_5),
         .Q(dout_i[48]),
         .R(1'b0));
@@ -6816,7 +6819,7 @@ module design_IP_auto_cc_2_dmem_24
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[53] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(RAM_reg_0_15_48_53_n_4),
         .Q(dout_i[49]),
         .R(1'b0));
@@ -6824,7 +6827,7 @@ module design_IP_auto_cc_2_dmem_24
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[54] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(RAM_reg_0_15_54_59_n_1),
         .Q(dout_i[50]),
         .R(1'b0));
@@ -6832,7 +6835,7 @@ module design_IP_auto_cc_2_dmem_24
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[55] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(RAM_reg_0_15_54_59_n_0),
         .Q(dout_i[51]),
         .R(1'b0));
@@ -6840,7 +6843,7 @@ module design_IP_auto_cc_2_dmem_24
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[56] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(RAM_reg_0_15_54_59_n_3),
         .Q(dout_i[52]),
         .R(1'b0));
@@ -6848,7 +6851,7 @@ module design_IP_auto_cc_2_dmem_24
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[57] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(RAM_reg_0_15_54_59_n_2),
         .Q(dout_i[53]),
         .R(1'b0));
@@ -6856,7 +6859,7 @@ module design_IP_auto_cc_2_dmem_24
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[58] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(RAM_reg_0_15_54_59_n_5),
         .Q(dout_i[54]),
         .R(1'b0));
@@ -6864,7 +6867,7 @@ module design_IP_auto_cc_2_dmem_24
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[59] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(RAM_reg_0_15_54_59_n_4),
         .Q(dout_i[55]),
         .R(1'b0));
@@ -6872,7 +6875,7 @@ module design_IP_auto_cc_2_dmem_24
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[5] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(RAM_reg_0_15_0_5_n_4),
         .Q(dout_i[1]),
         .R(1'b0));
@@ -6880,7 +6883,7 @@ module design_IP_auto_cc_2_dmem_24
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[60] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(RAM_reg_0_15_60_65_n_1),
         .Q(dout_i[56]),
         .R(1'b0));
@@ -6888,7 +6891,7 @@ module design_IP_auto_cc_2_dmem_24
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[61] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(RAM_reg_0_15_60_65_n_0),
         .Q(dout_i[57]),
         .R(1'b0));
@@ -6896,7 +6899,7 @@ module design_IP_auto_cc_2_dmem_24
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[62] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(RAM_reg_0_15_60_65_n_3),
         .Q(dout_i[58]),
         .R(1'b0));
@@ -6904,7 +6907,7 @@ module design_IP_auto_cc_2_dmem_24
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[63] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(RAM_reg_0_15_60_65_n_2),
         .Q(dout_i[59]),
         .R(1'b0));
@@ -6912,7 +6915,7 @@ module design_IP_auto_cc_2_dmem_24
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[64] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(RAM_reg_0_15_60_65_n_5),
         .Q(dout_i[60]),
         .R(1'b0));
@@ -6920,7 +6923,7 @@ module design_IP_auto_cc_2_dmem_24
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[65] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(RAM_reg_0_15_60_65_n_4),
         .Q(dout_i[61]),
         .R(1'b0));
@@ -6928,7 +6931,7 @@ module design_IP_auto_cc_2_dmem_24
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[66] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(RAM_reg_0_15_66_69_n_1),
         .Q(dout_i[62]),
         .R(1'b0));
@@ -6936,7 +6939,7 @@ module design_IP_auto_cc_2_dmem_24
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[67] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(RAM_reg_0_15_66_69_n_0),
         .Q(dout_i[63]),
         .R(1'b0));
@@ -6944,7 +6947,7 @@ module design_IP_auto_cc_2_dmem_24
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[68] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(RAM_reg_0_15_66_69_n_3),
         .Q(dout_i[64]),
         .R(1'b0));
@@ -6952,7 +6955,7 @@ module design_IP_auto_cc_2_dmem_24
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[69] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(RAM_reg_0_15_66_69_n_2),
         .Q(dout_i[65]),
         .R(1'b0));
@@ -6960,7 +6963,7 @@ module design_IP_auto_cc_2_dmem_24
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[6] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(RAM_reg_0_15_6_11_n_1),
         .Q(dout_i[2]),
         .R(1'b0));
@@ -6968,7 +6971,7 @@ module design_IP_auto_cc_2_dmem_24
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[7] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(RAM_reg_0_15_6_11_n_0),
         .Q(dout_i[3]),
         .R(1'b0));
@@ -6976,7 +6979,7 @@ module design_IP_auto_cc_2_dmem_24
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[8] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(RAM_reg_0_15_6_11_n_3),
         .Q(dout_i[4]),
         .R(1'b0));
@@ -6984,7 +6987,7 @@ module design_IP_auto_cc_2_dmem_24
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[9] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[69]_0 ),
+        .CE(\gpr1.dout_i_reg[4]_0 ),
         .D(RAM_reg_0_15_6_11_n_2),
         .Q(dout_i[5]),
         .R(1'b0));
@@ -6994,23 +6997,22 @@ endmodule
 module design_IP_auto_cc_2_dmem__parameterized0
    (dout_i,
     s_aclk,
-    I59,
-    I467,
-    count_d1,
     \gpr1.dout_i_reg[1]_0 ,
-    \gpr1.dout_i_reg[48]_0 ,
+    I78,
+    \gpr1.dout_i_reg[1]_1 ,
+    \gpr1.dout_i_reg[1]_2 ,
+    \gpr1.dout_i_reg[0]_0 ,
     m_aclk);
   output [48:0]dout_i;
   input s_aclk;
-  input I59;
-  input [48:0]I467;
-  input [3:0]count_d1;
-  input [3:0]\gpr1.dout_i_reg[1]_0 ;
-  input [0:0]\gpr1.dout_i_reg[48]_0 ;
+  input [0:0]\gpr1.dout_i_reg[1]_0 ;
+  input [48:0]I78;
+  input [3:0]\gpr1.dout_i_reg[1]_1 ;
+  input [3:0]\gpr1.dout_i_reg[1]_2 ;
+  input [0:0]\gpr1.dout_i_reg[0]_0 ;
   input m_aclk;
 
-  wire [48:0]I467;
-  wire I59;
+  wire [48:0]I78;
   wire RAM_reg_0_15_0_5_n_0;
   wire RAM_reg_0_15_0_5_n_1;
   wire RAM_reg_0_15_0_5_n_2;
@@ -7060,10 +7062,11 @@ module design_IP_auto_cc_2_dmem__parameterized0
   wire RAM_reg_0_15_6_11_n_3;
   wire RAM_reg_0_15_6_11_n_4;
   wire RAM_reg_0_15_6_11_n_5;
-  wire [3:0]count_d1;
   wire [48:0]dout_i;
-  wire [3:0]\gpr1.dout_i_reg[1]_0 ;
-  wire [0:0]\gpr1.dout_i_reg[48]_0 ;
+  wire [0:0]\gpr1.dout_i_reg[0]_0 ;
+  wire [0:0]\gpr1.dout_i_reg[1]_0 ;
+  wire [3:0]\gpr1.dout_i_reg[1]_1 ;
+  wire [3:0]\gpr1.dout_i_reg[1]_2 ;
   wire m_aclk;
   wire s_aclk;
   wire [1:0]NLW_RAM_reg_0_15_0_5_DOD_UNCONNECTED;
@@ -7088,20 +7091,20 @@ module design_IP_auto_cc_2_dmem__parameterized0
   (* ram_slice_begin = "0" *) 
   (* ram_slice_end = "5" *) 
   RAM32M RAM_reg_0_15_0_5
-       (.ADDRA({1'b0,count_d1}),
-        .ADDRB({1'b0,count_d1}),
-        .ADDRC({1'b0,count_d1}),
-        .ADDRD({1'b0,\gpr1.dout_i_reg[1]_0 }),
-        .DIA(I467[1:0]),
-        .DIB(I467[3:2]),
-        .DIC(I467[5:4]),
+       (.ADDRA({1'b0,\gpr1.dout_i_reg[1]_1 }),
+        .ADDRB({1'b0,\gpr1.dout_i_reg[1]_1 }),
+        .ADDRC({1'b0,\gpr1.dout_i_reg[1]_1 }),
+        .ADDRD({1'b0,\gpr1.dout_i_reg[1]_2 }),
+        .DIA(I78[1:0]),
+        .DIB(I78[3:2]),
+        .DIC(I78[5:4]),
         .DID({1'b0,1'b0}),
         .DOA({RAM_reg_0_15_0_5_n_0,RAM_reg_0_15_0_5_n_1}),
         .DOB({RAM_reg_0_15_0_5_n_2,RAM_reg_0_15_0_5_n_3}),
         .DOC({RAM_reg_0_15_0_5_n_4,RAM_reg_0_15_0_5_n_5}),
         .DOD(NLW_RAM_reg_0_15_0_5_DOD_UNCONNECTED[1:0]),
         .WCLK(s_aclk),
-        .WE(I59));
+        .WE(\gpr1.dout_i_reg[1]_0 ));
   (* METHODOLOGY_DRC_VIOS = "" *) 
   (* RTL_RAM_BITS = "784" *) 
   (* RTL_RAM_NAME = "inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM" *) 
@@ -7111,20 +7114,20 @@ module design_IP_auto_cc_2_dmem__parameterized0
   (* ram_slice_begin = "12" *) 
   (* ram_slice_end = "17" *) 
   RAM32M RAM_reg_0_15_12_17
-       (.ADDRA({1'b0,count_d1}),
-        .ADDRB({1'b0,count_d1}),
-        .ADDRC({1'b0,count_d1}),
-        .ADDRD({1'b0,\gpr1.dout_i_reg[1]_0 }),
-        .DIA(I467[13:12]),
-        .DIB(I467[15:14]),
-        .DIC(I467[17:16]),
+       (.ADDRA({1'b0,\gpr1.dout_i_reg[1]_1 }),
+        .ADDRB({1'b0,\gpr1.dout_i_reg[1]_1 }),
+        .ADDRC({1'b0,\gpr1.dout_i_reg[1]_1 }),
+        .ADDRD({1'b0,\gpr1.dout_i_reg[1]_2 }),
+        .DIA(I78[13:12]),
+        .DIB(I78[15:14]),
+        .DIC(I78[17:16]),
         .DID({1'b0,1'b0}),
         .DOA({RAM_reg_0_15_12_17_n_0,RAM_reg_0_15_12_17_n_1}),
         .DOB({RAM_reg_0_15_12_17_n_2,RAM_reg_0_15_12_17_n_3}),
         .DOC({RAM_reg_0_15_12_17_n_4,RAM_reg_0_15_12_17_n_5}),
         .DOD(NLW_RAM_reg_0_15_12_17_DOD_UNCONNECTED[1:0]),
         .WCLK(s_aclk),
-        .WE(I59));
+        .WE(\gpr1.dout_i_reg[1]_0 ));
   (* METHODOLOGY_DRC_VIOS = "" *) 
   (* RTL_RAM_BITS = "784" *) 
   (* RTL_RAM_NAME = "inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM" *) 
@@ -7134,20 +7137,20 @@ module design_IP_auto_cc_2_dmem__parameterized0
   (* ram_slice_begin = "18" *) 
   (* ram_slice_end = "23" *) 
   RAM32M RAM_reg_0_15_18_23
-       (.ADDRA({1'b0,count_d1}),
-        .ADDRB({1'b0,count_d1}),
-        .ADDRC({1'b0,count_d1}),
-        .ADDRD({1'b0,\gpr1.dout_i_reg[1]_0 }),
-        .DIA(I467[19:18]),
-        .DIB(I467[21:20]),
-        .DIC(I467[23:22]),
+       (.ADDRA({1'b0,\gpr1.dout_i_reg[1]_1 }),
+        .ADDRB({1'b0,\gpr1.dout_i_reg[1]_1 }),
+        .ADDRC({1'b0,\gpr1.dout_i_reg[1]_1 }),
+        .ADDRD({1'b0,\gpr1.dout_i_reg[1]_2 }),
+        .DIA(I78[19:18]),
+        .DIB(I78[21:20]),
+        .DIC(I78[23:22]),
         .DID({1'b0,1'b0}),
         .DOA({RAM_reg_0_15_18_23_n_0,RAM_reg_0_15_18_23_n_1}),
         .DOB({RAM_reg_0_15_18_23_n_2,RAM_reg_0_15_18_23_n_3}),
         .DOC({RAM_reg_0_15_18_23_n_4,RAM_reg_0_15_18_23_n_5}),
         .DOD(NLW_RAM_reg_0_15_18_23_DOD_UNCONNECTED[1:0]),
         .WCLK(s_aclk),
-        .WE(I59));
+        .WE(\gpr1.dout_i_reg[1]_0 ));
   (* METHODOLOGY_DRC_VIOS = "" *) 
   (* RTL_RAM_BITS = "784" *) 
   (* RTL_RAM_NAME = "inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM" *) 
@@ -7157,20 +7160,20 @@ module design_IP_auto_cc_2_dmem__parameterized0
   (* ram_slice_begin = "24" *) 
   (* ram_slice_end = "29" *) 
   RAM32M RAM_reg_0_15_24_29
-       (.ADDRA({1'b0,count_d1}),
-        .ADDRB({1'b0,count_d1}),
-        .ADDRC({1'b0,count_d1}),
-        .ADDRD({1'b0,\gpr1.dout_i_reg[1]_0 }),
-        .DIA(I467[25:24]),
-        .DIB(I467[27:26]),
-        .DIC(I467[29:28]),
+       (.ADDRA({1'b0,\gpr1.dout_i_reg[1]_1 }),
+        .ADDRB({1'b0,\gpr1.dout_i_reg[1]_1 }),
+        .ADDRC({1'b0,\gpr1.dout_i_reg[1]_1 }),
+        .ADDRD({1'b0,\gpr1.dout_i_reg[1]_2 }),
+        .DIA(I78[25:24]),
+        .DIB(I78[27:26]),
+        .DIC(I78[29:28]),
         .DID({1'b0,1'b0}),
         .DOA({RAM_reg_0_15_24_29_n_0,RAM_reg_0_15_24_29_n_1}),
         .DOB({RAM_reg_0_15_24_29_n_2,RAM_reg_0_15_24_29_n_3}),
         .DOC({RAM_reg_0_15_24_29_n_4,RAM_reg_0_15_24_29_n_5}),
         .DOD(NLW_RAM_reg_0_15_24_29_DOD_UNCONNECTED[1:0]),
         .WCLK(s_aclk),
-        .WE(I59));
+        .WE(\gpr1.dout_i_reg[1]_0 ));
   (* METHODOLOGY_DRC_VIOS = "" *) 
   (* RTL_RAM_BITS = "784" *) 
   (* RTL_RAM_NAME = "inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM" *) 
@@ -7180,20 +7183,20 @@ module design_IP_auto_cc_2_dmem__parameterized0
   (* ram_slice_begin = "30" *) 
   (* ram_slice_end = "35" *) 
   RAM32M RAM_reg_0_15_30_35
-       (.ADDRA({1'b0,count_d1}),
-        .ADDRB({1'b0,count_d1}),
-        .ADDRC({1'b0,count_d1}),
-        .ADDRD({1'b0,\gpr1.dout_i_reg[1]_0 }),
-        .DIA(I467[31:30]),
-        .DIB(I467[33:32]),
-        .DIC(I467[35:34]),
+       (.ADDRA({1'b0,\gpr1.dout_i_reg[1]_1 }),
+        .ADDRB({1'b0,\gpr1.dout_i_reg[1]_1 }),
+        .ADDRC({1'b0,\gpr1.dout_i_reg[1]_1 }),
+        .ADDRD({1'b0,\gpr1.dout_i_reg[1]_2 }),
+        .DIA(I78[31:30]),
+        .DIB(I78[33:32]),
+        .DIC(I78[35:34]),
         .DID({1'b0,1'b0}),
         .DOA({RAM_reg_0_15_30_35_n_0,RAM_reg_0_15_30_35_n_1}),
         .DOB({RAM_reg_0_15_30_35_n_2,RAM_reg_0_15_30_35_n_3}),
         .DOC({RAM_reg_0_15_30_35_n_4,RAM_reg_0_15_30_35_n_5}),
         .DOD(NLW_RAM_reg_0_15_30_35_DOD_UNCONNECTED[1:0]),
         .WCLK(s_aclk),
-        .WE(I59));
+        .WE(\gpr1.dout_i_reg[1]_0 ));
   (* METHODOLOGY_DRC_VIOS = "" *) 
   (* RTL_RAM_BITS = "784" *) 
   (* RTL_RAM_NAME = "inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM" *) 
@@ -7203,20 +7206,20 @@ module design_IP_auto_cc_2_dmem__parameterized0
   (* ram_slice_begin = "36" *) 
   (* ram_slice_end = "41" *) 
   RAM32M RAM_reg_0_15_36_41
-       (.ADDRA({1'b0,count_d1}),
-        .ADDRB({1'b0,count_d1}),
-        .ADDRC({1'b0,count_d1}),
-        .ADDRD({1'b0,\gpr1.dout_i_reg[1]_0 }),
-        .DIA(I467[37:36]),
-        .DIB(I467[39:38]),
-        .DIC(I467[41:40]),
+       (.ADDRA({1'b0,\gpr1.dout_i_reg[1]_1 }),
+        .ADDRB({1'b0,\gpr1.dout_i_reg[1]_1 }),
+        .ADDRC({1'b0,\gpr1.dout_i_reg[1]_1 }),
+        .ADDRD({1'b0,\gpr1.dout_i_reg[1]_2 }),
+        .DIA(I78[37:36]),
+        .DIB(I78[39:38]),
+        .DIC(I78[41:40]),
         .DID({1'b0,1'b0}),
         .DOA({RAM_reg_0_15_36_41_n_0,RAM_reg_0_15_36_41_n_1}),
         .DOB({RAM_reg_0_15_36_41_n_2,RAM_reg_0_15_36_41_n_3}),
         .DOC({RAM_reg_0_15_36_41_n_4,RAM_reg_0_15_36_41_n_5}),
         .DOD(NLW_RAM_reg_0_15_36_41_DOD_UNCONNECTED[1:0]),
         .WCLK(s_aclk),
-        .WE(I59));
+        .WE(\gpr1.dout_i_reg[1]_0 ));
   (* METHODOLOGY_DRC_VIOS = "" *) 
   (* RTL_RAM_BITS = "784" *) 
   (* RTL_RAM_NAME = "inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM" *) 
@@ -7226,20 +7229,20 @@ module design_IP_auto_cc_2_dmem__parameterized0
   (* ram_slice_begin = "42" *) 
   (* ram_slice_end = "47" *) 
   RAM32M RAM_reg_0_15_42_47
-       (.ADDRA({1'b0,count_d1}),
-        .ADDRB({1'b0,count_d1}),
-        .ADDRC({1'b0,count_d1}),
-        .ADDRD({1'b0,\gpr1.dout_i_reg[1]_0 }),
-        .DIA(I467[43:42]),
-        .DIB(I467[45:44]),
-        .DIC(I467[47:46]),
+       (.ADDRA({1'b0,\gpr1.dout_i_reg[1]_1 }),
+        .ADDRB({1'b0,\gpr1.dout_i_reg[1]_1 }),
+        .ADDRC({1'b0,\gpr1.dout_i_reg[1]_1 }),
+        .ADDRD({1'b0,\gpr1.dout_i_reg[1]_2 }),
+        .DIA(I78[43:42]),
+        .DIB(I78[45:44]),
+        .DIC(I78[47:46]),
         .DID({1'b0,1'b0}),
         .DOA({RAM_reg_0_15_42_47_n_0,RAM_reg_0_15_42_47_n_1}),
         .DOB({RAM_reg_0_15_42_47_n_2,RAM_reg_0_15_42_47_n_3}),
         .DOC({RAM_reg_0_15_42_47_n_4,RAM_reg_0_15_42_47_n_5}),
         .DOD(NLW_RAM_reg_0_15_42_47_DOD_UNCONNECTED[1:0]),
         .WCLK(s_aclk),
-        .WE(I59));
+        .WE(\gpr1.dout_i_reg[1]_0 ));
   (* METHODOLOGY_DRC_VIOS = "" *) 
   (* RTL_RAM_BITS = "784" *) 
   (* RTL_RAM_NAME = "inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM" *) 
@@ -7249,11 +7252,11 @@ module design_IP_auto_cc_2_dmem__parameterized0
   (* ram_slice_begin = "48" *) 
   (* ram_slice_end = "48" *) 
   RAM32M RAM_reg_0_15_48_48
-       (.ADDRA({1'b0,count_d1}),
-        .ADDRB({1'b0,count_d1}),
-        .ADDRC({1'b0,count_d1}),
-        .ADDRD({1'b0,\gpr1.dout_i_reg[1]_0 }),
-        .DIA({1'b0,I467[48]}),
+       (.ADDRA({1'b0,\gpr1.dout_i_reg[1]_1 }),
+        .ADDRB({1'b0,\gpr1.dout_i_reg[1]_1 }),
+        .ADDRC({1'b0,\gpr1.dout_i_reg[1]_1 }),
+        .ADDRD({1'b0,\gpr1.dout_i_reg[1]_2 }),
+        .DIA({1'b0,I78[48]}),
         .DIB({1'b0,1'b0}),
         .DIC({1'b0,1'b0}),
         .DID({1'b0,1'b0}),
@@ -7262,7 +7265,7 @@ module design_IP_auto_cc_2_dmem__parameterized0
         .DOC(NLW_RAM_reg_0_15_48_48_DOC_UNCONNECTED[1:0]),
         .DOD(NLW_RAM_reg_0_15_48_48_DOD_UNCONNECTED[1:0]),
         .WCLK(s_aclk),
-        .WE(I59));
+        .WE(\gpr1.dout_i_reg[1]_0 ));
   (* METHODOLOGY_DRC_VIOS = "" *) 
   (* RTL_RAM_BITS = "784" *) 
   (* RTL_RAM_NAME = "inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM" *) 
@@ -7272,25 +7275,25 @@ module design_IP_auto_cc_2_dmem__parameterized0
   (* ram_slice_begin = "6" *) 
   (* ram_slice_end = "11" *) 
   RAM32M RAM_reg_0_15_6_11
-       (.ADDRA({1'b0,count_d1}),
-        .ADDRB({1'b0,count_d1}),
-        .ADDRC({1'b0,count_d1}),
-        .ADDRD({1'b0,\gpr1.dout_i_reg[1]_0 }),
-        .DIA(I467[7:6]),
-        .DIB(I467[9:8]),
-        .DIC(I467[11:10]),
+       (.ADDRA({1'b0,\gpr1.dout_i_reg[1]_1 }),
+        .ADDRB({1'b0,\gpr1.dout_i_reg[1]_1 }),
+        .ADDRC({1'b0,\gpr1.dout_i_reg[1]_1 }),
+        .ADDRD({1'b0,\gpr1.dout_i_reg[1]_2 }),
+        .DIA(I78[7:6]),
+        .DIB(I78[9:8]),
+        .DIC(I78[11:10]),
         .DID({1'b0,1'b0}),
         .DOA({RAM_reg_0_15_6_11_n_0,RAM_reg_0_15_6_11_n_1}),
         .DOB({RAM_reg_0_15_6_11_n_2,RAM_reg_0_15_6_11_n_3}),
         .DOC({RAM_reg_0_15_6_11_n_4,RAM_reg_0_15_6_11_n_5}),
         .DOD(NLW_RAM_reg_0_15_6_11_DOD_UNCONNECTED[1:0]),
         .WCLK(s_aclk),
-        .WE(I59));
+        .WE(\gpr1.dout_i_reg[1]_0 ));
   FDRE #(
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[0] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[48]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_0_5_n_1),
         .Q(dout_i[0]),
         .R(1'b0));
@@ -7298,7 +7301,7 @@ module design_IP_auto_cc_2_dmem__parameterized0
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[10] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[48]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_6_11_n_5),
         .Q(dout_i[10]),
         .R(1'b0));
@@ -7306,7 +7309,7 @@ module design_IP_auto_cc_2_dmem__parameterized0
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[11] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[48]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_6_11_n_4),
         .Q(dout_i[11]),
         .R(1'b0));
@@ -7314,7 +7317,7 @@ module design_IP_auto_cc_2_dmem__parameterized0
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[12] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[48]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_12_17_n_1),
         .Q(dout_i[12]),
         .R(1'b0));
@@ -7322,7 +7325,7 @@ module design_IP_auto_cc_2_dmem__parameterized0
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[13] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[48]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_12_17_n_0),
         .Q(dout_i[13]),
         .R(1'b0));
@@ -7330,7 +7333,7 @@ module design_IP_auto_cc_2_dmem__parameterized0
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[14] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[48]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_12_17_n_3),
         .Q(dout_i[14]),
         .R(1'b0));
@@ -7338,7 +7341,7 @@ module design_IP_auto_cc_2_dmem__parameterized0
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[15] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[48]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_12_17_n_2),
         .Q(dout_i[15]),
         .R(1'b0));
@@ -7346,7 +7349,7 @@ module design_IP_auto_cc_2_dmem__parameterized0
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[16] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[48]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_12_17_n_5),
         .Q(dout_i[16]),
         .R(1'b0));
@@ -7354,7 +7357,7 @@ module design_IP_auto_cc_2_dmem__parameterized0
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[17] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[48]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_12_17_n_4),
         .Q(dout_i[17]),
         .R(1'b0));
@@ -7362,7 +7365,7 @@ module design_IP_auto_cc_2_dmem__parameterized0
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[18] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[48]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_18_23_n_1),
         .Q(dout_i[18]),
         .R(1'b0));
@@ -7370,7 +7373,7 @@ module design_IP_auto_cc_2_dmem__parameterized0
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[19] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[48]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_18_23_n_0),
         .Q(dout_i[19]),
         .R(1'b0));
@@ -7378,7 +7381,7 @@ module design_IP_auto_cc_2_dmem__parameterized0
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[1] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[48]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_0_5_n_0),
         .Q(dout_i[1]),
         .R(1'b0));
@@ -7386,7 +7389,7 @@ module design_IP_auto_cc_2_dmem__parameterized0
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[20] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[48]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_18_23_n_3),
         .Q(dout_i[20]),
         .R(1'b0));
@@ -7394,7 +7397,7 @@ module design_IP_auto_cc_2_dmem__parameterized0
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[21] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[48]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_18_23_n_2),
         .Q(dout_i[21]),
         .R(1'b0));
@@ -7402,7 +7405,7 @@ module design_IP_auto_cc_2_dmem__parameterized0
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[22] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[48]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_18_23_n_5),
         .Q(dout_i[22]),
         .R(1'b0));
@@ -7410,7 +7413,7 @@ module design_IP_auto_cc_2_dmem__parameterized0
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[23] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[48]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_18_23_n_4),
         .Q(dout_i[23]),
         .R(1'b0));
@@ -7418,7 +7421,7 @@ module design_IP_auto_cc_2_dmem__parameterized0
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[24] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[48]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_24_29_n_1),
         .Q(dout_i[24]),
         .R(1'b0));
@@ -7426,7 +7429,7 @@ module design_IP_auto_cc_2_dmem__parameterized0
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[25] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[48]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_24_29_n_0),
         .Q(dout_i[25]),
         .R(1'b0));
@@ -7434,7 +7437,7 @@ module design_IP_auto_cc_2_dmem__parameterized0
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[26] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[48]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_24_29_n_3),
         .Q(dout_i[26]),
         .R(1'b0));
@@ -7442,7 +7445,7 @@ module design_IP_auto_cc_2_dmem__parameterized0
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[27] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[48]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_24_29_n_2),
         .Q(dout_i[27]),
         .R(1'b0));
@@ -7450,7 +7453,7 @@ module design_IP_auto_cc_2_dmem__parameterized0
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[28] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[48]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_24_29_n_5),
         .Q(dout_i[28]),
         .R(1'b0));
@@ -7458,7 +7461,7 @@ module design_IP_auto_cc_2_dmem__parameterized0
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[29] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[48]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_24_29_n_4),
         .Q(dout_i[29]),
         .R(1'b0));
@@ -7466,7 +7469,7 @@ module design_IP_auto_cc_2_dmem__parameterized0
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[2] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[48]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_0_5_n_3),
         .Q(dout_i[2]),
         .R(1'b0));
@@ -7474,7 +7477,7 @@ module design_IP_auto_cc_2_dmem__parameterized0
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[30] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[48]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_30_35_n_1),
         .Q(dout_i[30]),
         .R(1'b0));
@@ -7482,7 +7485,7 @@ module design_IP_auto_cc_2_dmem__parameterized0
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[31] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[48]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_30_35_n_0),
         .Q(dout_i[31]),
         .R(1'b0));
@@ -7490,7 +7493,7 @@ module design_IP_auto_cc_2_dmem__parameterized0
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[32] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[48]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_30_35_n_3),
         .Q(dout_i[32]),
         .R(1'b0));
@@ -7498,7 +7501,7 @@ module design_IP_auto_cc_2_dmem__parameterized0
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[33] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[48]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_30_35_n_2),
         .Q(dout_i[33]),
         .R(1'b0));
@@ -7506,7 +7509,7 @@ module design_IP_auto_cc_2_dmem__parameterized0
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[34] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[48]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_30_35_n_5),
         .Q(dout_i[34]),
         .R(1'b0));
@@ -7514,7 +7517,7 @@ module design_IP_auto_cc_2_dmem__parameterized0
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[35] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[48]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_30_35_n_4),
         .Q(dout_i[35]),
         .R(1'b0));
@@ -7522,7 +7525,7 @@ module design_IP_auto_cc_2_dmem__parameterized0
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[36] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[48]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_36_41_n_1),
         .Q(dout_i[36]),
         .R(1'b0));
@@ -7530,7 +7533,7 @@ module design_IP_auto_cc_2_dmem__parameterized0
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[37] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[48]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_36_41_n_0),
         .Q(dout_i[37]),
         .R(1'b0));
@@ -7538,7 +7541,7 @@ module design_IP_auto_cc_2_dmem__parameterized0
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[38] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[48]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_36_41_n_3),
         .Q(dout_i[38]),
         .R(1'b0));
@@ -7546,7 +7549,7 @@ module design_IP_auto_cc_2_dmem__parameterized0
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[39] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[48]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_36_41_n_2),
         .Q(dout_i[39]),
         .R(1'b0));
@@ -7554,7 +7557,7 @@ module design_IP_auto_cc_2_dmem__parameterized0
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[3] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[48]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_0_5_n_2),
         .Q(dout_i[3]),
         .R(1'b0));
@@ -7562,7 +7565,7 @@ module design_IP_auto_cc_2_dmem__parameterized0
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[40] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[48]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_36_41_n_5),
         .Q(dout_i[40]),
         .R(1'b0));
@@ -7570,7 +7573,7 @@ module design_IP_auto_cc_2_dmem__parameterized0
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[41] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[48]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_36_41_n_4),
         .Q(dout_i[41]),
         .R(1'b0));
@@ -7578,7 +7581,7 @@ module design_IP_auto_cc_2_dmem__parameterized0
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[42] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[48]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_42_47_n_1),
         .Q(dout_i[42]),
         .R(1'b0));
@@ -7586,7 +7589,7 @@ module design_IP_auto_cc_2_dmem__parameterized0
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[43] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[48]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_42_47_n_0),
         .Q(dout_i[43]),
         .R(1'b0));
@@ -7594,7 +7597,7 @@ module design_IP_auto_cc_2_dmem__parameterized0
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[44] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[48]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_42_47_n_3),
         .Q(dout_i[44]),
         .R(1'b0));
@@ -7602,7 +7605,7 @@ module design_IP_auto_cc_2_dmem__parameterized0
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[45] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[48]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_42_47_n_2),
         .Q(dout_i[45]),
         .R(1'b0));
@@ -7610,7 +7613,7 @@ module design_IP_auto_cc_2_dmem__parameterized0
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[46] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[48]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_42_47_n_5),
         .Q(dout_i[46]),
         .R(1'b0));
@@ -7618,7 +7621,7 @@ module design_IP_auto_cc_2_dmem__parameterized0
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[47] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[48]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_42_47_n_4),
         .Q(dout_i[47]),
         .R(1'b0));
@@ -7626,7 +7629,7 @@ module design_IP_auto_cc_2_dmem__parameterized0
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[48] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[48]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_48_48_n_1),
         .Q(dout_i[48]),
         .R(1'b0));
@@ -7634,7 +7637,7 @@ module design_IP_auto_cc_2_dmem__parameterized0
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[4] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[48]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_0_5_n_5),
         .Q(dout_i[4]),
         .R(1'b0));
@@ -7642,7 +7645,7 @@ module design_IP_auto_cc_2_dmem__parameterized0
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[5] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[48]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_0_5_n_4),
         .Q(dout_i[5]),
         .R(1'b0));
@@ -7650,7 +7653,7 @@ module design_IP_auto_cc_2_dmem__parameterized0
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[6] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[48]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_6_11_n_1),
         .Q(dout_i[6]),
         .R(1'b0));
@@ -7658,7 +7661,7 @@ module design_IP_auto_cc_2_dmem__parameterized0
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[7] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[48]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_6_11_n_0),
         .Q(dout_i[7]),
         .R(1'b0));
@@ -7666,7 +7669,7 @@ module design_IP_auto_cc_2_dmem__parameterized0
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[8] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[48]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_6_11_n_3),
         .Q(dout_i[8]),
         .R(1'b0));
@@ -7674,7 +7677,7 @@ module design_IP_auto_cc_2_dmem__parameterized0
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[9] 
        (.C(m_aclk),
-        .CE(\gpr1.dout_i_reg[48]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_6_11_n_2),
         .Q(dout_i[9]),
         .R(1'b0));
@@ -7685,22 +7688,22 @@ module design_IP_auto_cc_2_dmem__parameterized1
    (dout_i,
     m_aclk,
     I63,
-    I470,
-    count_d1,
+    I82,
     \gpr1.dout_i_reg[1]_0 ,
-    \gpr1.dout_i_reg[13]_0 ,
+    \gpr1.dout_i_reg[1]_1 ,
+    \gpr1.dout_i_reg[0]_0 ,
     s_aclk);
   output [13:0]dout_i;
   input m_aclk;
   input I63;
-  input [13:0]I470;
-  input [3:0]count_d1;
+  input [13:0]I82;
   input [3:0]\gpr1.dout_i_reg[1]_0 ;
-  input [0:0]\gpr1.dout_i_reg[13]_0 ;
+  input [3:0]\gpr1.dout_i_reg[1]_1 ;
+  input [0:0]\gpr1.dout_i_reg[0]_0 ;
   input s_aclk;
 
-  wire [13:0]I470;
   wire I63;
+  wire [13:0]I82;
   wire RAM_reg_0_15_0_5_n_0;
   wire RAM_reg_0_15_0_5_n_1;
   wire RAM_reg_0_15_0_5_n_2;
@@ -7715,10 +7718,10 @@ module design_IP_auto_cc_2_dmem__parameterized1
   wire RAM_reg_0_15_6_11_n_3;
   wire RAM_reg_0_15_6_11_n_4;
   wire RAM_reg_0_15_6_11_n_5;
-  wire [3:0]count_d1;
   wire [13:0]dout_i;
-  wire [0:0]\gpr1.dout_i_reg[13]_0 ;
+  wire [0:0]\gpr1.dout_i_reg[0]_0 ;
   wire [3:0]\gpr1.dout_i_reg[1]_0 ;
+  wire [3:0]\gpr1.dout_i_reg[1]_1 ;
   wire m_aclk;
   wire s_aclk;
   wire [1:0]NLW_RAM_reg_0_15_0_5_DOD_UNCONNECTED;
@@ -7736,13 +7739,13 @@ module design_IP_auto_cc_2_dmem__parameterized1
   (* ram_slice_begin = "0" *) 
   (* ram_slice_end = "5" *) 
   RAM32M RAM_reg_0_15_0_5
-       (.ADDRA({1'b0,count_d1}),
-        .ADDRB({1'b0,count_d1}),
-        .ADDRC({1'b0,count_d1}),
-        .ADDRD({1'b0,\gpr1.dout_i_reg[1]_0 }),
-        .DIA(I470[1:0]),
-        .DIB(I470[3:2]),
-        .DIC(I470[5:4]),
+       (.ADDRA({1'b0,\gpr1.dout_i_reg[1]_0 }),
+        .ADDRB({1'b0,\gpr1.dout_i_reg[1]_0 }),
+        .ADDRC({1'b0,\gpr1.dout_i_reg[1]_0 }),
+        .ADDRD({1'b0,\gpr1.dout_i_reg[1]_1 }),
+        .DIA(I82[1:0]),
+        .DIB(I82[3:2]),
+        .DIC(I82[5:4]),
         .DID({1'b0,1'b0}),
         .DOA({RAM_reg_0_15_0_5_n_0,RAM_reg_0_15_0_5_n_1}),
         .DOB({RAM_reg_0_15_0_5_n_2,RAM_reg_0_15_0_5_n_3}),
@@ -7759,11 +7762,11 @@ module design_IP_auto_cc_2_dmem__parameterized1
   (* ram_slice_begin = "12" *) 
   (* ram_slice_end = "13" *) 
   RAM32M RAM_reg_0_15_12_13
-       (.ADDRA({1'b0,count_d1}),
-        .ADDRB({1'b0,count_d1}),
-        .ADDRC({1'b0,count_d1}),
-        .ADDRD({1'b0,\gpr1.dout_i_reg[1]_0 }),
-        .DIA(I470[13:12]),
+       (.ADDRA({1'b0,\gpr1.dout_i_reg[1]_0 }),
+        .ADDRB({1'b0,\gpr1.dout_i_reg[1]_0 }),
+        .ADDRC({1'b0,\gpr1.dout_i_reg[1]_0 }),
+        .ADDRD({1'b0,\gpr1.dout_i_reg[1]_1 }),
+        .DIA(I82[13:12]),
         .DIB({1'b0,1'b0}),
         .DIC({1'b0,1'b0}),
         .DID({1'b0,1'b0}),
@@ -7782,13 +7785,13 @@ module design_IP_auto_cc_2_dmem__parameterized1
   (* ram_slice_begin = "6" *) 
   (* ram_slice_end = "11" *) 
   RAM32M RAM_reg_0_15_6_11
-       (.ADDRA({1'b0,count_d1}),
-        .ADDRB({1'b0,count_d1}),
-        .ADDRC({1'b0,count_d1}),
-        .ADDRD({1'b0,\gpr1.dout_i_reg[1]_0 }),
-        .DIA(I470[7:6]),
-        .DIB(I470[9:8]),
-        .DIC(I470[11:10]),
+       (.ADDRA({1'b0,\gpr1.dout_i_reg[1]_0 }),
+        .ADDRB({1'b0,\gpr1.dout_i_reg[1]_0 }),
+        .ADDRC({1'b0,\gpr1.dout_i_reg[1]_0 }),
+        .ADDRD({1'b0,\gpr1.dout_i_reg[1]_1 }),
+        .DIA(I82[7:6]),
+        .DIB(I82[9:8]),
+        .DIC(I82[11:10]),
         .DID({1'b0,1'b0}),
         .DOA({RAM_reg_0_15_6_11_n_0,RAM_reg_0_15_6_11_n_1}),
         .DOB({RAM_reg_0_15_6_11_n_2,RAM_reg_0_15_6_11_n_3}),
@@ -7800,7 +7803,7 @@ module design_IP_auto_cc_2_dmem__parameterized1
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[0] 
        (.C(s_aclk),
-        .CE(\gpr1.dout_i_reg[13]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_0_5_n_1),
         .Q(dout_i[0]),
         .R(1'b0));
@@ -7808,7 +7811,7 @@ module design_IP_auto_cc_2_dmem__parameterized1
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[10] 
        (.C(s_aclk),
-        .CE(\gpr1.dout_i_reg[13]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_6_11_n_5),
         .Q(dout_i[10]),
         .R(1'b0));
@@ -7816,7 +7819,7 @@ module design_IP_auto_cc_2_dmem__parameterized1
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[11] 
        (.C(s_aclk),
-        .CE(\gpr1.dout_i_reg[13]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_6_11_n_4),
         .Q(dout_i[11]),
         .R(1'b0));
@@ -7824,7 +7827,7 @@ module design_IP_auto_cc_2_dmem__parameterized1
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[12] 
        (.C(s_aclk),
-        .CE(\gpr1.dout_i_reg[13]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_12_13_n_1),
         .Q(dout_i[12]),
         .R(1'b0));
@@ -7832,7 +7835,7 @@ module design_IP_auto_cc_2_dmem__parameterized1
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[13] 
        (.C(s_aclk),
-        .CE(\gpr1.dout_i_reg[13]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_12_13_n_0),
         .Q(dout_i[13]),
         .R(1'b0));
@@ -7840,7 +7843,7 @@ module design_IP_auto_cc_2_dmem__parameterized1
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[1] 
        (.C(s_aclk),
-        .CE(\gpr1.dout_i_reg[13]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_0_5_n_0),
         .Q(dout_i[1]),
         .R(1'b0));
@@ -7848,7 +7851,7 @@ module design_IP_auto_cc_2_dmem__parameterized1
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[2] 
        (.C(s_aclk),
-        .CE(\gpr1.dout_i_reg[13]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_0_5_n_3),
         .Q(dout_i[2]),
         .R(1'b0));
@@ -7856,7 +7859,7 @@ module design_IP_auto_cc_2_dmem__parameterized1
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[3] 
        (.C(s_aclk),
-        .CE(\gpr1.dout_i_reg[13]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_0_5_n_2),
         .Q(dout_i[3]),
         .R(1'b0));
@@ -7864,7 +7867,7 @@ module design_IP_auto_cc_2_dmem__parameterized1
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[4] 
        (.C(s_aclk),
-        .CE(\gpr1.dout_i_reg[13]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_0_5_n_5),
         .Q(dout_i[4]),
         .R(1'b0));
@@ -7872,7 +7875,7 @@ module design_IP_auto_cc_2_dmem__parameterized1
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[5] 
        (.C(s_aclk),
-        .CE(\gpr1.dout_i_reg[13]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_0_5_n_4),
         .Q(dout_i[5]),
         .R(1'b0));
@@ -7880,7 +7883,7 @@ module design_IP_auto_cc_2_dmem__parameterized1
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[6] 
        (.C(s_aclk),
-        .CE(\gpr1.dout_i_reg[13]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_6_11_n_1),
         .Q(dout_i[6]),
         .R(1'b0));
@@ -7888,7 +7891,7 @@ module design_IP_auto_cc_2_dmem__parameterized1
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[7] 
        (.C(s_aclk),
-        .CE(\gpr1.dout_i_reg[13]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_6_11_n_0),
         .Q(dout_i[7]),
         .R(1'b0));
@@ -7896,7 +7899,7 @@ module design_IP_auto_cc_2_dmem__parameterized1
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[8] 
        (.C(s_aclk),
-        .CE(\gpr1.dout_i_reg[13]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_6_11_n_3),
         .Q(dout_i[8]),
         .R(1'b0));
@@ -7904,7 +7907,7 @@ module design_IP_auto_cc_2_dmem__parameterized1
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[9] 
        (.C(s_aclk),
-        .CE(\gpr1.dout_i_reg[13]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_6_11_n_2),
         .Q(dout_i[9]),
         .R(1'b0));
@@ -7914,23 +7917,22 @@ endmodule
 module design_IP_auto_cc_2_dmem__parameterized2
    (dout_i,
     m_aclk,
-    I71,
-    I476,
-    count_d1,
     \gpr1.dout_i_reg[1]_0 ,
-    \gpr1.dout_i_reg[46]_0 ,
+    I89,
+    \gpr1.dout_i_reg[1]_1 ,
+    \gpr1.dout_i_reg[1]_2 ,
+    \gpr1.dout_i_reg[0]_0 ,
     s_aclk);
   output [46:0]dout_i;
   input m_aclk;
-  input I71;
-  input [46:0]I476;
-  input [3:0]count_d1;
-  input [3:0]\gpr1.dout_i_reg[1]_0 ;
-  input [0:0]\gpr1.dout_i_reg[46]_0 ;
+  input [0:0]\gpr1.dout_i_reg[1]_0 ;
+  input [46:0]I89;
+  input [3:0]\gpr1.dout_i_reg[1]_1 ;
+  input [3:0]\gpr1.dout_i_reg[1]_2 ;
+  input [0:0]\gpr1.dout_i_reg[0]_0 ;
   input s_aclk;
 
-  wire [46:0]I476;
-  wire I71;
+  wire [46:0]I89;
   wire RAM_reg_0_15_0_5_n_0;
   wire RAM_reg_0_15_0_5_n_1;
   wire RAM_reg_0_15_0_5_n_2;
@@ -7978,10 +7980,11 @@ module design_IP_auto_cc_2_dmem__parameterized2
   wire RAM_reg_0_15_6_11_n_3;
   wire RAM_reg_0_15_6_11_n_4;
   wire RAM_reg_0_15_6_11_n_5;
-  wire [3:0]count_d1;
   wire [46:0]dout_i;
-  wire [3:0]\gpr1.dout_i_reg[1]_0 ;
-  wire [0:0]\gpr1.dout_i_reg[46]_0 ;
+  wire [0:0]\gpr1.dout_i_reg[0]_0 ;
+  wire [0:0]\gpr1.dout_i_reg[1]_0 ;
+  wire [3:0]\gpr1.dout_i_reg[1]_1 ;
+  wire [3:0]\gpr1.dout_i_reg[1]_2 ;
   wire m_aclk;
   wire s_aclk;
   wire [1:0]NLW_RAM_reg_0_15_0_5_DOD_UNCONNECTED;
@@ -8003,20 +8006,20 @@ module design_IP_auto_cc_2_dmem__parameterized2
   (* ram_slice_begin = "0" *) 
   (* ram_slice_end = "5" *) 
   RAM32M RAM_reg_0_15_0_5
-       (.ADDRA({1'b0,count_d1}),
-        .ADDRB({1'b0,count_d1}),
-        .ADDRC({1'b0,count_d1}),
-        .ADDRD({1'b0,\gpr1.dout_i_reg[1]_0 }),
-        .DIA(I476[1:0]),
-        .DIB(I476[3:2]),
-        .DIC(I476[5:4]),
+       (.ADDRA({1'b0,\gpr1.dout_i_reg[1]_1 }),
+        .ADDRB({1'b0,\gpr1.dout_i_reg[1]_1 }),
+        .ADDRC({1'b0,\gpr1.dout_i_reg[1]_1 }),
+        .ADDRD({1'b0,\gpr1.dout_i_reg[1]_2 }),
+        .DIA(I89[1:0]),
+        .DIB(I89[3:2]),
+        .DIC(I89[5:4]),
         .DID({1'b0,1'b0}),
         .DOA({RAM_reg_0_15_0_5_n_0,RAM_reg_0_15_0_5_n_1}),
         .DOB({RAM_reg_0_15_0_5_n_2,RAM_reg_0_15_0_5_n_3}),
         .DOC({RAM_reg_0_15_0_5_n_4,RAM_reg_0_15_0_5_n_5}),
         .DOD(NLW_RAM_reg_0_15_0_5_DOD_UNCONNECTED[1:0]),
         .WCLK(m_aclk),
-        .WE(I71));
+        .WE(\gpr1.dout_i_reg[1]_0 ));
   (* METHODOLOGY_DRC_VIOS = "" *) 
   (* RTL_RAM_BITS = "752" *) 
   (* RTL_RAM_NAME = "inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM" *) 
@@ -8026,20 +8029,20 @@ module design_IP_auto_cc_2_dmem__parameterized2
   (* ram_slice_begin = "12" *) 
   (* ram_slice_end = "17" *) 
   RAM32M RAM_reg_0_15_12_17
-       (.ADDRA({1'b0,count_d1}),
-        .ADDRB({1'b0,count_d1}),
-        .ADDRC({1'b0,count_d1}),
-        .ADDRD({1'b0,\gpr1.dout_i_reg[1]_0 }),
-        .DIA(I476[13:12]),
-        .DIB(I476[15:14]),
-        .DIC(I476[17:16]),
+       (.ADDRA({1'b0,\gpr1.dout_i_reg[1]_1 }),
+        .ADDRB({1'b0,\gpr1.dout_i_reg[1]_1 }),
+        .ADDRC({1'b0,\gpr1.dout_i_reg[1]_1 }),
+        .ADDRD({1'b0,\gpr1.dout_i_reg[1]_2 }),
+        .DIA(I89[13:12]),
+        .DIB(I89[15:14]),
+        .DIC(I89[17:16]),
         .DID({1'b0,1'b0}),
         .DOA({RAM_reg_0_15_12_17_n_0,RAM_reg_0_15_12_17_n_1}),
         .DOB({RAM_reg_0_15_12_17_n_2,RAM_reg_0_15_12_17_n_3}),
         .DOC({RAM_reg_0_15_12_17_n_4,RAM_reg_0_15_12_17_n_5}),
         .DOD(NLW_RAM_reg_0_15_12_17_DOD_UNCONNECTED[1:0]),
         .WCLK(m_aclk),
-        .WE(I71));
+        .WE(\gpr1.dout_i_reg[1]_0 ));
   (* METHODOLOGY_DRC_VIOS = "" *) 
   (* RTL_RAM_BITS = "752" *) 
   (* RTL_RAM_NAME = "inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM" *) 
@@ -8049,20 +8052,20 @@ module design_IP_auto_cc_2_dmem__parameterized2
   (* ram_slice_begin = "18" *) 
   (* ram_slice_end = "23" *) 
   RAM32M RAM_reg_0_15_18_23
-       (.ADDRA({1'b0,count_d1}),
-        .ADDRB({1'b0,count_d1}),
-        .ADDRC({1'b0,count_d1}),
-        .ADDRD({1'b0,\gpr1.dout_i_reg[1]_0 }),
-        .DIA(I476[19:18]),
-        .DIB(I476[21:20]),
-        .DIC(I476[23:22]),
+       (.ADDRA({1'b0,\gpr1.dout_i_reg[1]_1 }),
+        .ADDRB({1'b0,\gpr1.dout_i_reg[1]_1 }),
+        .ADDRC({1'b0,\gpr1.dout_i_reg[1]_1 }),
+        .ADDRD({1'b0,\gpr1.dout_i_reg[1]_2 }),
+        .DIA(I89[19:18]),
+        .DIB(I89[21:20]),
+        .DIC(I89[23:22]),
         .DID({1'b0,1'b0}),
         .DOA({RAM_reg_0_15_18_23_n_0,RAM_reg_0_15_18_23_n_1}),
         .DOB({RAM_reg_0_15_18_23_n_2,RAM_reg_0_15_18_23_n_3}),
         .DOC({RAM_reg_0_15_18_23_n_4,RAM_reg_0_15_18_23_n_5}),
         .DOD(NLW_RAM_reg_0_15_18_23_DOD_UNCONNECTED[1:0]),
         .WCLK(m_aclk),
-        .WE(I71));
+        .WE(\gpr1.dout_i_reg[1]_0 ));
   (* METHODOLOGY_DRC_VIOS = "" *) 
   (* RTL_RAM_BITS = "752" *) 
   (* RTL_RAM_NAME = "inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM" *) 
@@ -8072,20 +8075,20 @@ module design_IP_auto_cc_2_dmem__parameterized2
   (* ram_slice_begin = "24" *) 
   (* ram_slice_end = "29" *) 
   RAM32M RAM_reg_0_15_24_29
-       (.ADDRA({1'b0,count_d1}),
-        .ADDRB({1'b0,count_d1}),
-        .ADDRC({1'b0,count_d1}),
-        .ADDRD({1'b0,\gpr1.dout_i_reg[1]_0 }),
-        .DIA(I476[25:24]),
-        .DIB(I476[27:26]),
-        .DIC(I476[29:28]),
+       (.ADDRA({1'b0,\gpr1.dout_i_reg[1]_1 }),
+        .ADDRB({1'b0,\gpr1.dout_i_reg[1]_1 }),
+        .ADDRC({1'b0,\gpr1.dout_i_reg[1]_1 }),
+        .ADDRD({1'b0,\gpr1.dout_i_reg[1]_2 }),
+        .DIA(I89[25:24]),
+        .DIB(I89[27:26]),
+        .DIC(I89[29:28]),
         .DID({1'b0,1'b0}),
         .DOA({RAM_reg_0_15_24_29_n_0,RAM_reg_0_15_24_29_n_1}),
         .DOB({RAM_reg_0_15_24_29_n_2,RAM_reg_0_15_24_29_n_3}),
         .DOC({RAM_reg_0_15_24_29_n_4,RAM_reg_0_15_24_29_n_5}),
         .DOD(NLW_RAM_reg_0_15_24_29_DOD_UNCONNECTED[1:0]),
         .WCLK(m_aclk),
-        .WE(I71));
+        .WE(\gpr1.dout_i_reg[1]_0 ));
   (* METHODOLOGY_DRC_VIOS = "" *) 
   (* RTL_RAM_BITS = "752" *) 
   (* RTL_RAM_NAME = "inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM" *) 
@@ -8095,20 +8098,20 @@ module design_IP_auto_cc_2_dmem__parameterized2
   (* ram_slice_begin = "30" *) 
   (* ram_slice_end = "35" *) 
   RAM32M RAM_reg_0_15_30_35
-       (.ADDRA({1'b0,count_d1}),
-        .ADDRB({1'b0,count_d1}),
-        .ADDRC({1'b0,count_d1}),
-        .ADDRD({1'b0,\gpr1.dout_i_reg[1]_0 }),
-        .DIA(I476[31:30]),
-        .DIB(I476[33:32]),
-        .DIC(I476[35:34]),
+       (.ADDRA({1'b0,\gpr1.dout_i_reg[1]_1 }),
+        .ADDRB({1'b0,\gpr1.dout_i_reg[1]_1 }),
+        .ADDRC({1'b0,\gpr1.dout_i_reg[1]_1 }),
+        .ADDRD({1'b0,\gpr1.dout_i_reg[1]_2 }),
+        .DIA(I89[31:30]),
+        .DIB(I89[33:32]),
+        .DIC(I89[35:34]),
         .DID({1'b0,1'b0}),
         .DOA({RAM_reg_0_15_30_35_n_0,RAM_reg_0_15_30_35_n_1}),
         .DOB({RAM_reg_0_15_30_35_n_2,RAM_reg_0_15_30_35_n_3}),
         .DOC({RAM_reg_0_15_30_35_n_4,RAM_reg_0_15_30_35_n_5}),
         .DOD(NLW_RAM_reg_0_15_30_35_DOD_UNCONNECTED[1:0]),
         .WCLK(m_aclk),
-        .WE(I71));
+        .WE(\gpr1.dout_i_reg[1]_0 ));
   (* METHODOLOGY_DRC_VIOS = "" *) 
   (* RTL_RAM_BITS = "752" *) 
   (* RTL_RAM_NAME = "inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM" *) 
@@ -8118,20 +8121,20 @@ module design_IP_auto_cc_2_dmem__parameterized2
   (* ram_slice_begin = "36" *) 
   (* ram_slice_end = "41" *) 
   RAM32M RAM_reg_0_15_36_41
-       (.ADDRA({1'b0,count_d1}),
-        .ADDRB({1'b0,count_d1}),
-        .ADDRC({1'b0,count_d1}),
-        .ADDRD({1'b0,\gpr1.dout_i_reg[1]_0 }),
-        .DIA(I476[37:36]),
-        .DIB(I476[39:38]),
-        .DIC(I476[41:40]),
+       (.ADDRA({1'b0,\gpr1.dout_i_reg[1]_1 }),
+        .ADDRB({1'b0,\gpr1.dout_i_reg[1]_1 }),
+        .ADDRC({1'b0,\gpr1.dout_i_reg[1]_1 }),
+        .ADDRD({1'b0,\gpr1.dout_i_reg[1]_2 }),
+        .DIA(I89[37:36]),
+        .DIB(I89[39:38]),
+        .DIC(I89[41:40]),
         .DID({1'b0,1'b0}),
         .DOA({RAM_reg_0_15_36_41_n_0,RAM_reg_0_15_36_41_n_1}),
         .DOB({RAM_reg_0_15_36_41_n_2,RAM_reg_0_15_36_41_n_3}),
         .DOC({RAM_reg_0_15_36_41_n_4,RAM_reg_0_15_36_41_n_5}),
         .DOD(NLW_RAM_reg_0_15_36_41_DOD_UNCONNECTED[1:0]),
         .WCLK(m_aclk),
-        .WE(I71));
+        .WE(\gpr1.dout_i_reg[1]_0 ));
   (* METHODOLOGY_DRC_VIOS = "" *) 
   (* RTL_RAM_BITS = "752" *) 
   (* RTL_RAM_NAME = "inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM" *) 
@@ -8141,20 +8144,20 @@ module design_IP_auto_cc_2_dmem__parameterized2
   (* ram_slice_begin = "42" *) 
   (* ram_slice_end = "46" *) 
   RAM32M RAM_reg_0_15_42_46
-       (.ADDRA({1'b0,count_d1}),
-        .ADDRB({1'b0,count_d1}),
-        .ADDRC({1'b0,count_d1}),
-        .ADDRD({1'b0,\gpr1.dout_i_reg[1]_0 }),
-        .DIA(I476[43:42]),
-        .DIB(I476[45:44]),
-        .DIC({1'b0,I476[46]}),
+       (.ADDRA({1'b0,\gpr1.dout_i_reg[1]_1 }),
+        .ADDRB({1'b0,\gpr1.dout_i_reg[1]_1 }),
+        .ADDRC({1'b0,\gpr1.dout_i_reg[1]_1 }),
+        .ADDRD({1'b0,\gpr1.dout_i_reg[1]_2 }),
+        .DIA(I89[43:42]),
+        .DIB(I89[45:44]),
+        .DIC({1'b0,I89[46]}),
         .DID({1'b0,1'b0}),
         .DOA({RAM_reg_0_15_42_46_n_0,RAM_reg_0_15_42_46_n_1}),
         .DOB({RAM_reg_0_15_42_46_n_2,RAM_reg_0_15_42_46_n_3}),
         .DOC({NLW_RAM_reg_0_15_42_46_DOC_UNCONNECTED[1],RAM_reg_0_15_42_46_n_5}),
         .DOD(NLW_RAM_reg_0_15_42_46_DOD_UNCONNECTED[1:0]),
         .WCLK(m_aclk),
-        .WE(I71));
+        .WE(\gpr1.dout_i_reg[1]_0 ));
   (* METHODOLOGY_DRC_VIOS = "" *) 
   (* RTL_RAM_BITS = "752" *) 
   (* RTL_RAM_NAME = "inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM" *) 
@@ -8164,25 +8167,25 @@ module design_IP_auto_cc_2_dmem__parameterized2
   (* ram_slice_begin = "6" *) 
   (* ram_slice_end = "11" *) 
   RAM32M RAM_reg_0_15_6_11
-       (.ADDRA({1'b0,count_d1}),
-        .ADDRB({1'b0,count_d1}),
-        .ADDRC({1'b0,count_d1}),
-        .ADDRD({1'b0,\gpr1.dout_i_reg[1]_0 }),
-        .DIA(I476[7:6]),
-        .DIB(I476[9:8]),
-        .DIC(I476[11:10]),
+       (.ADDRA({1'b0,\gpr1.dout_i_reg[1]_1 }),
+        .ADDRB({1'b0,\gpr1.dout_i_reg[1]_1 }),
+        .ADDRC({1'b0,\gpr1.dout_i_reg[1]_1 }),
+        .ADDRD({1'b0,\gpr1.dout_i_reg[1]_2 }),
+        .DIA(I89[7:6]),
+        .DIB(I89[9:8]),
+        .DIC(I89[11:10]),
         .DID({1'b0,1'b0}),
         .DOA({RAM_reg_0_15_6_11_n_0,RAM_reg_0_15_6_11_n_1}),
         .DOB({RAM_reg_0_15_6_11_n_2,RAM_reg_0_15_6_11_n_3}),
         .DOC({RAM_reg_0_15_6_11_n_4,RAM_reg_0_15_6_11_n_5}),
         .DOD(NLW_RAM_reg_0_15_6_11_DOD_UNCONNECTED[1:0]),
         .WCLK(m_aclk),
-        .WE(I71));
+        .WE(\gpr1.dout_i_reg[1]_0 ));
   FDRE #(
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[0] 
        (.C(s_aclk),
-        .CE(\gpr1.dout_i_reg[46]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_0_5_n_1),
         .Q(dout_i[0]),
         .R(1'b0));
@@ -8190,7 +8193,7 @@ module design_IP_auto_cc_2_dmem__parameterized2
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[10] 
        (.C(s_aclk),
-        .CE(\gpr1.dout_i_reg[46]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_6_11_n_5),
         .Q(dout_i[10]),
         .R(1'b0));
@@ -8198,7 +8201,7 @@ module design_IP_auto_cc_2_dmem__parameterized2
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[11] 
        (.C(s_aclk),
-        .CE(\gpr1.dout_i_reg[46]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_6_11_n_4),
         .Q(dout_i[11]),
         .R(1'b0));
@@ -8206,7 +8209,7 @@ module design_IP_auto_cc_2_dmem__parameterized2
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[12] 
        (.C(s_aclk),
-        .CE(\gpr1.dout_i_reg[46]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_12_17_n_1),
         .Q(dout_i[12]),
         .R(1'b0));
@@ -8214,7 +8217,7 @@ module design_IP_auto_cc_2_dmem__parameterized2
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[13] 
        (.C(s_aclk),
-        .CE(\gpr1.dout_i_reg[46]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_12_17_n_0),
         .Q(dout_i[13]),
         .R(1'b0));
@@ -8222,7 +8225,7 @@ module design_IP_auto_cc_2_dmem__parameterized2
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[14] 
        (.C(s_aclk),
-        .CE(\gpr1.dout_i_reg[46]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_12_17_n_3),
         .Q(dout_i[14]),
         .R(1'b0));
@@ -8230,7 +8233,7 @@ module design_IP_auto_cc_2_dmem__parameterized2
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[15] 
        (.C(s_aclk),
-        .CE(\gpr1.dout_i_reg[46]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_12_17_n_2),
         .Q(dout_i[15]),
         .R(1'b0));
@@ -8238,7 +8241,7 @@ module design_IP_auto_cc_2_dmem__parameterized2
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[16] 
        (.C(s_aclk),
-        .CE(\gpr1.dout_i_reg[46]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_12_17_n_5),
         .Q(dout_i[16]),
         .R(1'b0));
@@ -8246,7 +8249,7 @@ module design_IP_auto_cc_2_dmem__parameterized2
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[17] 
        (.C(s_aclk),
-        .CE(\gpr1.dout_i_reg[46]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_12_17_n_4),
         .Q(dout_i[17]),
         .R(1'b0));
@@ -8254,7 +8257,7 @@ module design_IP_auto_cc_2_dmem__parameterized2
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[18] 
        (.C(s_aclk),
-        .CE(\gpr1.dout_i_reg[46]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_18_23_n_1),
         .Q(dout_i[18]),
         .R(1'b0));
@@ -8262,7 +8265,7 @@ module design_IP_auto_cc_2_dmem__parameterized2
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[19] 
        (.C(s_aclk),
-        .CE(\gpr1.dout_i_reg[46]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_18_23_n_0),
         .Q(dout_i[19]),
         .R(1'b0));
@@ -8270,7 +8273,7 @@ module design_IP_auto_cc_2_dmem__parameterized2
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[1] 
        (.C(s_aclk),
-        .CE(\gpr1.dout_i_reg[46]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_0_5_n_0),
         .Q(dout_i[1]),
         .R(1'b0));
@@ -8278,7 +8281,7 @@ module design_IP_auto_cc_2_dmem__parameterized2
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[20] 
        (.C(s_aclk),
-        .CE(\gpr1.dout_i_reg[46]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_18_23_n_3),
         .Q(dout_i[20]),
         .R(1'b0));
@@ -8286,7 +8289,7 @@ module design_IP_auto_cc_2_dmem__parameterized2
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[21] 
        (.C(s_aclk),
-        .CE(\gpr1.dout_i_reg[46]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_18_23_n_2),
         .Q(dout_i[21]),
         .R(1'b0));
@@ -8294,7 +8297,7 @@ module design_IP_auto_cc_2_dmem__parameterized2
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[22] 
        (.C(s_aclk),
-        .CE(\gpr1.dout_i_reg[46]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_18_23_n_5),
         .Q(dout_i[22]),
         .R(1'b0));
@@ -8302,7 +8305,7 @@ module design_IP_auto_cc_2_dmem__parameterized2
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[23] 
        (.C(s_aclk),
-        .CE(\gpr1.dout_i_reg[46]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_18_23_n_4),
         .Q(dout_i[23]),
         .R(1'b0));
@@ -8310,7 +8313,7 @@ module design_IP_auto_cc_2_dmem__parameterized2
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[24] 
        (.C(s_aclk),
-        .CE(\gpr1.dout_i_reg[46]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_24_29_n_1),
         .Q(dout_i[24]),
         .R(1'b0));
@@ -8318,7 +8321,7 @@ module design_IP_auto_cc_2_dmem__parameterized2
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[25] 
        (.C(s_aclk),
-        .CE(\gpr1.dout_i_reg[46]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_24_29_n_0),
         .Q(dout_i[25]),
         .R(1'b0));
@@ -8326,7 +8329,7 @@ module design_IP_auto_cc_2_dmem__parameterized2
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[26] 
        (.C(s_aclk),
-        .CE(\gpr1.dout_i_reg[46]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_24_29_n_3),
         .Q(dout_i[26]),
         .R(1'b0));
@@ -8334,7 +8337,7 @@ module design_IP_auto_cc_2_dmem__parameterized2
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[27] 
        (.C(s_aclk),
-        .CE(\gpr1.dout_i_reg[46]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_24_29_n_2),
         .Q(dout_i[27]),
         .R(1'b0));
@@ -8342,7 +8345,7 @@ module design_IP_auto_cc_2_dmem__parameterized2
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[28] 
        (.C(s_aclk),
-        .CE(\gpr1.dout_i_reg[46]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_24_29_n_5),
         .Q(dout_i[28]),
         .R(1'b0));
@@ -8350,7 +8353,7 @@ module design_IP_auto_cc_2_dmem__parameterized2
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[29] 
        (.C(s_aclk),
-        .CE(\gpr1.dout_i_reg[46]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_24_29_n_4),
         .Q(dout_i[29]),
         .R(1'b0));
@@ -8358,7 +8361,7 @@ module design_IP_auto_cc_2_dmem__parameterized2
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[2] 
        (.C(s_aclk),
-        .CE(\gpr1.dout_i_reg[46]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_0_5_n_3),
         .Q(dout_i[2]),
         .R(1'b0));
@@ -8366,7 +8369,7 @@ module design_IP_auto_cc_2_dmem__parameterized2
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[30] 
        (.C(s_aclk),
-        .CE(\gpr1.dout_i_reg[46]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_30_35_n_1),
         .Q(dout_i[30]),
         .R(1'b0));
@@ -8374,7 +8377,7 @@ module design_IP_auto_cc_2_dmem__parameterized2
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[31] 
        (.C(s_aclk),
-        .CE(\gpr1.dout_i_reg[46]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_30_35_n_0),
         .Q(dout_i[31]),
         .R(1'b0));
@@ -8382,7 +8385,7 @@ module design_IP_auto_cc_2_dmem__parameterized2
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[32] 
        (.C(s_aclk),
-        .CE(\gpr1.dout_i_reg[46]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_30_35_n_3),
         .Q(dout_i[32]),
         .R(1'b0));
@@ -8390,7 +8393,7 @@ module design_IP_auto_cc_2_dmem__parameterized2
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[33] 
        (.C(s_aclk),
-        .CE(\gpr1.dout_i_reg[46]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_30_35_n_2),
         .Q(dout_i[33]),
         .R(1'b0));
@@ -8398,7 +8401,7 @@ module design_IP_auto_cc_2_dmem__parameterized2
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[34] 
        (.C(s_aclk),
-        .CE(\gpr1.dout_i_reg[46]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_30_35_n_5),
         .Q(dout_i[34]),
         .R(1'b0));
@@ -8406,7 +8409,7 @@ module design_IP_auto_cc_2_dmem__parameterized2
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[35] 
        (.C(s_aclk),
-        .CE(\gpr1.dout_i_reg[46]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_30_35_n_4),
         .Q(dout_i[35]),
         .R(1'b0));
@@ -8414,7 +8417,7 @@ module design_IP_auto_cc_2_dmem__parameterized2
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[36] 
        (.C(s_aclk),
-        .CE(\gpr1.dout_i_reg[46]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_36_41_n_1),
         .Q(dout_i[36]),
         .R(1'b0));
@@ -8422,7 +8425,7 @@ module design_IP_auto_cc_2_dmem__parameterized2
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[37] 
        (.C(s_aclk),
-        .CE(\gpr1.dout_i_reg[46]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_36_41_n_0),
         .Q(dout_i[37]),
         .R(1'b0));
@@ -8430,7 +8433,7 @@ module design_IP_auto_cc_2_dmem__parameterized2
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[38] 
        (.C(s_aclk),
-        .CE(\gpr1.dout_i_reg[46]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_36_41_n_3),
         .Q(dout_i[38]),
         .R(1'b0));
@@ -8438,7 +8441,7 @@ module design_IP_auto_cc_2_dmem__parameterized2
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[39] 
        (.C(s_aclk),
-        .CE(\gpr1.dout_i_reg[46]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_36_41_n_2),
         .Q(dout_i[39]),
         .R(1'b0));
@@ -8446,7 +8449,7 @@ module design_IP_auto_cc_2_dmem__parameterized2
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[3] 
        (.C(s_aclk),
-        .CE(\gpr1.dout_i_reg[46]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_0_5_n_2),
         .Q(dout_i[3]),
         .R(1'b0));
@@ -8454,7 +8457,7 @@ module design_IP_auto_cc_2_dmem__parameterized2
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[40] 
        (.C(s_aclk),
-        .CE(\gpr1.dout_i_reg[46]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_36_41_n_5),
         .Q(dout_i[40]),
         .R(1'b0));
@@ -8462,7 +8465,7 @@ module design_IP_auto_cc_2_dmem__parameterized2
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[41] 
        (.C(s_aclk),
-        .CE(\gpr1.dout_i_reg[46]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_36_41_n_4),
         .Q(dout_i[41]),
         .R(1'b0));
@@ -8470,7 +8473,7 @@ module design_IP_auto_cc_2_dmem__parameterized2
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[42] 
        (.C(s_aclk),
-        .CE(\gpr1.dout_i_reg[46]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_42_46_n_1),
         .Q(dout_i[42]),
         .R(1'b0));
@@ -8478,7 +8481,7 @@ module design_IP_auto_cc_2_dmem__parameterized2
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[43] 
        (.C(s_aclk),
-        .CE(\gpr1.dout_i_reg[46]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_42_46_n_0),
         .Q(dout_i[43]),
         .R(1'b0));
@@ -8486,7 +8489,7 @@ module design_IP_auto_cc_2_dmem__parameterized2
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[44] 
        (.C(s_aclk),
-        .CE(\gpr1.dout_i_reg[46]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_42_46_n_3),
         .Q(dout_i[44]),
         .R(1'b0));
@@ -8494,7 +8497,7 @@ module design_IP_auto_cc_2_dmem__parameterized2
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[45] 
        (.C(s_aclk),
-        .CE(\gpr1.dout_i_reg[46]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_42_46_n_2),
         .Q(dout_i[45]),
         .R(1'b0));
@@ -8502,7 +8505,7 @@ module design_IP_auto_cc_2_dmem__parameterized2
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[46] 
        (.C(s_aclk),
-        .CE(\gpr1.dout_i_reg[46]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_42_46_n_5),
         .Q(dout_i[46]),
         .R(1'b0));
@@ -8510,7 +8513,7 @@ module design_IP_auto_cc_2_dmem__parameterized2
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[4] 
        (.C(s_aclk),
-        .CE(\gpr1.dout_i_reg[46]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_0_5_n_5),
         .Q(dout_i[4]),
         .R(1'b0));
@@ -8518,7 +8521,7 @@ module design_IP_auto_cc_2_dmem__parameterized2
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[5] 
        (.C(s_aclk),
-        .CE(\gpr1.dout_i_reg[46]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_0_5_n_4),
         .Q(dout_i[5]),
         .R(1'b0));
@@ -8526,7 +8529,7 @@ module design_IP_auto_cc_2_dmem__parameterized2
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[6] 
        (.C(s_aclk),
-        .CE(\gpr1.dout_i_reg[46]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_6_11_n_1),
         .Q(dout_i[6]),
         .R(1'b0));
@@ -8534,7 +8537,7 @@ module design_IP_auto_cc_2_dmem__parameterized2
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[7] 
        (.C(s_aclk),
-        .CE(\gpr1.dout_i_reg[46]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_6_11_n_0),
         .Q(dout_i[7]),
         .R(1'b0));
@@ -8542,7 +8545,7 @@ module design_IP_auto_cc_2_dmem__parameterized2
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[8] 
        (.C(s_aclk),
-        .CE(\gpr1.dout_i_reg[46]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_6_11_n_3),
         .Q(dout_i[8]),
         .R(1'b0));
@@ -8550,12 +8553,13 @@ module design_IP_auto_cc_2_dmem__parameterized2
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[9] 
        (.C(s_aclk),
-        .CE(\gpr1.dout_i_reg[46]_0 ),
+        .CE(\gpr1.dout_i_reg[0]_0 ),
         .D(RAM_reg_0_15_6_11_n_2),
         .Q(dout_i[9]),
         .R(1'b0));
 endmodule
 
+(* ORIG_REF_NAME = "fifo_generator_ramfifo" *) 
 module design_IP_auto_cc_2_fifo_generator_ramfifo
    (src_in,
     s_axi_arready,
@@ -8566,7 +8570,7 @@ module design_IP_auto_cc_2_fifo_generator_ramfifo
     m_aclk,
     s_axi_arvalid,
     m_axi_arready,
-    I473);
+    \gpr1.dout_i_reg[67] );
   output src_in;
   output s_axi_arready;
   output m_axi_arvalid;
@@ -8576,13 +8580,13 @@ module design_IP_auto_cc_2_fifo_generator_ramfifo
   input m_aclk;
   input s_axi_arvalid;
   input m_axi_arready;
-  input [65:0]I473;
+  input [65:0]\gpr1.dout_i_reg[67] ;
 
-  wire [65:0]I473;
   wire \gntv_or_sync_fifo.gcx.clkx_n_0 ;
   wire \gntv_or_sync_fifo.gcx.clkx_n_5 ;
   wire \gntv_or_sync_fifo.gl0.rd_n_4 ;
   wire [65:0]\goreg_dm.dout_i_reg[69] ;
+  wire [65:0]\gpr1.dout_i_reg[67] ;
   wire m_aclk;
   wire m_axi_arready;
   wire m_axi_arvalid;
@@ -8640,12 +8644,12 @@ module design_IP_auto_cc_2_fifo_generator_ramfifo
         .s_axi_arvalid(s_axi_arvalid));
   design_IP_auto_cc_2_memory_23 \gntv_or_sync_fifo.mem 
        (.E(\gntv_or_sync_fifo.gl0.rd_n_4 ),
-        .I473(I473),
-        .I67(p_20_out),
-        .count_d1(p_0_out),
         .\goreg_dm.dout_i_reg[69]_0 (\goreg_dm.dout_i_reg[69] ),
-        .\gpr1.dout_i_reg[5] (p_13_out),
-        .\gpr1.dout_i_reg[69] (ram_rd_en_i),
+        .\gpr1.dout_i_reg[4] (ram_rd_en_i),
+        .\gpr1.dout_i_reg[5] (p_20_out),
+        .\gpr1.dout_i_reg[5]_0 (p_0_out),
+        .\gpr1.dout_i_reg[5]_1 (p_13_out),
+        .\gpr1.dout_i_reg[67] (\gpr1.dout_i_reg[67] ),
         .m_aclk(m_aclk),
         .s_aclk(s_aclk));
   design_IP_auto_cc_2_reset_blk_ramfifo__xdcDup__4 rstblk
@@ -8670,7 +8674,7 @@ module design_IP_auto_cc_2_fifo_generator_ramfifo__parameterized0
     m_aclk,
     s_axi_wvalid,
     m_axi_wready,
-    I467);
+    I78);
   output src_in;
   output s_axi_wready;
   output m_axi_wvalid;
@@ -8680,9 +8684,9 @@ module design_IP_auto_cc_2_fifo_generator_ramfifo__parameterized0
   input m_aclk;
   input s_axi_wvalid;
   input m_axi_wready;
-  input [48:0]I467;
+  input [48:0]I78;
 
-  wire [48:0]I467;
+  wire [48:0]I78;
   wire \gntv_or_sync_fifo.gcx.clkx_n_0 ;
   wire \gntv_or_sync_fifo.gcx.clkx_n_5 ;
   wire \gntv_or_sync_fifo.gl0.rd_n_4 ;
@@ -8744,12 +8748,12 @@ module design_IP_auto_cc_2_fifo_generator_ramfifo__parameterized0
         .s_axi_wvalid(s_axi_wvalid));
   design_IP_auto_cc_2_memory__parameterized0 \gntv_or_sync_fifo.mem 
        (.E(\gntv_or_sync_fifo.gl0.rd_n_4 ),
-        .I467(I467),
-        .I59(p_20_out),
-        .count_d1(p_0_out),
+        .I78(I78),
         .\goreg_dm.dout_i_reg[48]_0 (\goreg_dm.dout_i_reg[48] ),
-        .\gpr1.dout_i_reg[1] (p_13_out),
-        .\gpr1.dout_i_reg[48] (ram_rd_en_i),
+        .\gpr1.dout_i_reg[0] (ram_rd_en_i),
+        .\gpr1.dout_i_reg[1] (p_20_out),
+        .\gpr1.dout_i_reg[1]_0 (p_0_out),
+        .\gpr1.dout_i_reg[1]_1 (p_13_out),
         .m_aclk(m_aclk),
         .s_aclk(s_aclk));
   design_IP_auto_cc_2_reset_blk_ramfifo__xdcDup__2 rstblk
@@ -8773,7 +8777,7 @@ module design_IP_auto_cc_2_fifo_generator_ramfifo__parameterized1
     s_aclk,
     s_axi_bready,
     m_axi_bvalid,
-    I470);
+    I82);
   output s_axi_bvalid;
   output m_axi_bready;
   output [13:0]\goreg_dm.dout_i_reg[13] ;
@@ -8782,9 +8786,9 @@ module design_IP_auto_cc_2_fifo_generator_ramfifo__parameterized1
   input s_aclk;
   input s_axi_bready;
   input m_axi_bvalid;
-  input [13:0]I470;
+  input [13:0]I82;
 
-  wire [13:0]I470;
+  wire [13:0]I82;
   wire \gntv_or_sync_fifo.gcx.clkx_n_0 ;
   wire \gntv_or_sync_fifo.gcx.clkx_n_5 ;
   wire \gntv_or_sync_fifo.gl0.rd_n_4 ;
@@ -8845,12 +8849,12 @@ module design_IP_auto_cc_2_fifo_generator_ramfifo__parameterized1
         .ram_full_i_reg_0(rst_full_gen_i));
   design_IP_auto_cc_2_memory__parameterized1 \gntv_or_sync_fifo.mem 
        (.E(\gntv_or_sync_fifo.gl0.rd_n_4 ),
-        .I470(I470),
         .I63(p_20_out),
-        .count_d1(p_0_out),
+        .I82(I82),
         .\goreg_dm.dout_i_reg[13]_0 (\goreg_dm.dout_i_reg[13] ),
-        .\gpr1.dout_i_reg[13] (ram_rd_en_i),
-        .\gpr1.dout_i_reg[1] (p_13_out),
+        .\gpr1.dout_i_reg[0] (ram_rd_en_i),
+        .\gpr1.dout_i_reg[1] (p_0_out),
+        .\gpr1.dout_i_reg[1]_0 (p_13_out),
         .m_aclk(m_aclk),
         .s_aclk(s_aclk));
   design_IP_auto_cc_2_reset_blk_ramfifo__xdcDup__3 rstblk
@@ -8874,7 +8878,7 @@ module design_IP_auto_cc_2_fifo_generator_ramfifo__parameterized2
     s_axi_rready,
     m_axi_rvalid,
     s_aresetn,
-    I476);
+    I89);
   output src_arst;
   output s_axi_rvalid;
   output m_axi_rready;
@@ -8884,9 +8888,9 @@ module design_IP_auto_cc_2_fifo_generator_ramfifo__parameterized2
   input s_axi_rready;
   input m_axi_rvalid;
   input s_aresetn;
-  input [46:0]I476;
+  input [46:0]I89;
 
-  wire [46:0]I476;
+  wire [46:0]I89;
   wire \gntv_or_sync_fifo.gcx.clkx_n_0 ;
   wire \gntv_or_sync_fifo.gcx.clkx_n_5 ;
   wire \gntv_or_sync_fifo.gl0.rd_n_4 ;
@@ -8948,12 +8952,12 @@ module design_IP_auto_cc_2_fifo_generator_ramfifo__parameterized2
         .ram_full_i_reg_0(rst_full_gen_i));
   design_IP_auto_cc_2_memory__parameterized2 \gntv_or_sync_fifo.mem 
        (.E(\gntv_or_sync_fifo.gl0.rd_n_4 ),
-        .I476(I476),
-        .I71(p_20_out),
-        .count_d1(p_0_out),
+        .I89(I89),
         .\goreg_dm.dout_i_reg[46]_0 (\goreg_dm.dout_i_reg[46] ),
-        .\gpr1.dout_i_reg[1] (p_13_out),
-        .\gpr1.dout_i_reg[46] (ram_rd_en_i),
+        .\gpr1.dout_i_reg[0] (ram_rd_en_i),
+        .\gpr1.dout_i_reg[1] (p_20_out),
+        .\gpr1.dout_i_reg[1]_0 (p_0_out),
+        .\gpr1.dout_i_reg[1]_1 (p_13_out),
         .m_aclk(m_aclk),
         .s_aclk(s_aclk));
   design_IP_auto_cc_2_reset_blk_ramfifo rstblk
@@ -9053,11 +9057,11 @@ module design_IP_auto_cc_2_fifo_generator_ramfifo__xdcDup__1
   design_IP_auto_cc_2_memory \gntv_or_sync_fifo.mem 
        (.DI(DI),
         .E(\gntv_or_sync_fifo.gl0.rd_n_4 ),
-        .EN(p_20_out),
         .Q(Q),
-        .count_d1(p_0_out_0),
-        .\gpr1.dout_i_reg[5] (p_13_out),
-        .\gpr1.dout_i_reg[69] (ram_rd_en_i),
+        .\gpr1.dout_i_reg[4] (ram_rd_en_i),
+        .\gpr1.dout_i_reg[5] (p_20_out),
+        .\gpr1.dout_i_reg[5]_0 (p_0_out_0),
+        .\gpr1.dout_i_reg[5]_1 (p_13_out),
         .m_aclk(m_aclk),
         .s_aclk(s_aclk));
   design_IP_auto_cc_2_reset_blk_ramfifo__xdcDup__1 rstblk
@@ -9071,6 +9075,7 @@ module design_IP_auto_cc_2_fifo_generator_ramfifo__xdcDup__1
         .src_in(src_in));
 endmodule
 
+(* ORIG_REF_NAME = "fifo_generator_top" *) 
 module design_IP_auto_cc_2_fifo_generator_top
    (src_in,
     s_axi_arready,
@@ -9081,7 +9086,7 @@ module design_IP_auto_cc_2_fifo_generator_top
     m_aclk,
     s_axi_arvalid,
     m_axi_arready,
-    I473);
+    \gpr1.dout_i_reg[67] );
   output src_in;
   output s_axi_arready;
   output m_axi_arvalid;
@@ -9091,10 +9096,10 @@ module design_IP_auto_cc_2_fifo_generator_top
   input m_aclk;
   input s_axi_arvalid;
   input m_axi_arready;
-  input [65:0]I473;
+  input [65:0]\gpr1.dout_i_reg[67] ;
 
-  wire [65:0]I473;
   wire [65:0]\goreg_dm.dout_i_reg[69] ;
+  wire [65:0]\gpr1.dout_i_reg[67] ;
   wire m_aclk;
   wire m_axi_arready;
   wire m_axi_arvalid;
@@ -9105,8 +9110,8 @@ module design_IP_auto_cc_2_fifo_generator_top
   wire src_in;
 
   design_IP_auto_cc_2_fifo_generator_ramfifo \grf.rf 
-       (.I473(I473),
-        .\goreg_dm.dout_i_reg[69] (\goreg_dm.dout_i_reg[69] ),
+       (.\goreg_dm.dout_i_reg[69] (\goreg_dm.dout_i_reg[69] ),
+        .\gpr1.dout_i_reg[67] (\gpr1.dout_i_reg[67] ),
         .m_aclk(m_aclk),
         .m_axi_arready(m_axi_arready),
         .m_axi_arvalid(m_axi_arvalid),
@@ -9128,7 +9133,7 @@ module design_IP_auto_cc_2_fifo_generator_top__parameterized0
     m_aclk,
     s_axi_wvalid,
     m_axi_wready,
-    I467);
+    I78);
   output src_in;
   output s_axi_wready;
   output m_axi_wvalid;
@@ -9138,9 +9143,9 @@ module design_IP_auto_cc_2_fifo_generator_top__parameterized0
   input m_aclk;
   input s_axi_wvalid;
   input m_axi_wready;
-  input [48:0]I467;
+  input [48:0]I78;
 
-  wire [48:0]I467;
+  wire [48:0]I78;
   wire [48:0]\goreg_dm.dout_i_reg[48] ;
   wire m_aclk;
   wire m_axi_wready;
@@ -9152,7 +9157,7 @@ module design_IP_auto_cc_2_fifo_generator_top__parameterized0
   wire src_in;
 
   design_IP_auto_cc_2_fifo_generator_ramfifo__parameterized0 \grf.rf 
-       (.I467(I467),
+       (.I78(I78),
         .\goreg_dm.dout_i_reg[48] (\goreg_dm.dout_i_reg[48] ),
         .m_aclk(m_aclk),
         .m_axi_wready(m_axi_wready),
@@ -9174,7 +9179,7 @@ module design_IP_auto_cc_2_fifo_generator_top__parameterized1
     s_aclk,
     s_axi_bready,
     m_axi_bvalid,
-    I470);
+    I82);
   output s_axi_bvalid;
   output m_axi_bready;
   output [13:0]\goreg_dm.dout_i_reg[13] ;
@@ -9183,9 +9188,9 @@ module design_IP_auto_cc_2_fifo_generator_top__parameterized1
   input s_aclk;
   input s_axi_bready;
   input m_axi_bvalid;
-  input [13:0]I470;
+  input [13:0]I82;
 
-  wire [13:0]I470;
+  wire [13:0]I82;
   wire [13:0]\goreg_dm.dout_i_reg[13] ;
   wire m_aclk;
   wire m_axi_bready;
@@ -9196,7 +9201,7 @@ module design_IP_auto_cc_2_fifo_generator_top__parameterized1
   wire src_arst;
 
   design_IP_auto_cc_2_fifo_generator_ramfifo__parameterized1 \grf.rf 
-       (.I470(I470),
+       (.I82(I82),
         .\goreg_dm.dout_i_reg[13] (\goreg_dm.dout_i_reg[13] ),
         .m_aclk(m_aclk),
         .m_axi_bready(m_axi_bready),
@@ -9218,7 +9223,7 @@ module design_IP_auto_cc_2_fifo_generator_top__parameterized2
     s_axi_rready,
     m_axi_rvalid,
     s_aresetn,
-    I476);
+    I89);
   output src_arst;
   output s_axi_rvalid;
   output m_axi_rready;
@@ -9228,9 +9233,9 @@ module design_IP_auto_cc_2_fifo_generator_top__parameterized2
   input s_axi_rready;
   input m_axi_rvalid;
   input s_aresetn;
-  input [46:0]I476;
+  input [46:0]I89;
 
-  wire [46:0]I476;
+  wire [46:0]I89;
   wire [46:0]\goreg_dm.dout_i_reg[46] ;
   wire m_aclk;
   wire m_axi_rready;
@@ -9242,7 +9247,7 @@ module design_IP_auto_cc_2_fifo_generator_top__parameterized2
   wire src_arst;
 
   design_IP_auto_cc_2_fifo_generator_ramfifo__parameterized2 \grf.rf 
-       (.I476(I476),
+       (.I89(I89),
         .\goreg_dm.dout_i_reg[46] (\goreg_dm.dout_i_reg[46] ),
         .m_aclk(m_aclk),
         .m_axi_rready(m_axi_rready),
@@ -9368,7 +9373,7 @@ endmodule
 (* C_WR_DEPTH_WRCH = "16" *) (* C_WR_FREQ = "1" *) (* C_WR_PNTR_WIDTH = "10" *) 
 (* C_WR_PNTR_WIDTH_AXIS = "10" *) (* C_WR_PNTR_WIDTH_RACH = "4" *) (* C_WR_PNTR_WIDTH_RDCH = "4" *) 
 (* C_WR_PNTR_WIDTH_WACH = "4" *) (* C_WR_PNTR_WIDTH_WDCH = "4" *) (* C_WR_PNTR_WIDTH_WRCH = "4" *) 
-(* C_WR_RESPONSE_LATENCY = "1" *) 
+(* C_WR_RESPONSE_LATENCY = "1" *) (* ORIG_REF_NAME = "fifo_generator_v13_2_4" *) 
 module design_IP_auto_cc_2_fifo_generator_v13_2_4
    (backup,
     backup_marker,
@@ -10156,15 +10161,15 @@ module design_IP_auto_cc_2_fifo_generator_v13_2_4
        (.G(\<const0> ));
   design_IP_auto_cc_2_fifo_generator_v13_2_4_synth inst_fifo_gen
        (.DI({s_axi_awid,s_axi_awaddr,s_axi_awlen,s_axi_awsize,s_axi_awburst,s_axi_awlock,s_axi_awcache,s_axi_awprot,s_axi_awqos}),
-        .I467({s_axi_wid,s_axi_wdata,s_axi_wstrb,s_axi_wlast}),
-        .I470({m_axi_bid,m_axi_bresp}),
-        .I473({s_axi_arid,s_axi_araddr,s_axi_arlen,s_axi_arsize,s_axi_arburst,s_axi_arlock,s_axi_arcache,s_axi_arprot,s_axi_arqos}),
-        .I476({m_axi_rid,m_axi_rdata,m_axi_rresp,m_axi_rlast}),
+        .I78({s_axi_wid,s_axi_wdata,s_axi_wstrb,s_axi_wlast}),
+        .I82({m_axi_bid,m_axi_bresp}),
+        .I89({m_axi_rid,m_axi_rdata,m_axi_rresp,m_axi_rlast}),
         .Q({m_axi_awid,m_axi_awaddr,m_axi_awlen,m_axi_awsize,m_axi_awburst,m_axi_awlock,m_axi_awcache,m_axi_awprot,m_axi_awqos}),
         .\goreg_dm.dout_i_reg[13] ({s_axi_bid,s_axi_bresp}),
         .\goreg_dm.dout_i_reg[46] ({s_axi_rid,s_axi_rdata,s_axi_rresp,s_axi_rlast}),
         .\goreg_dm.dout_i_reg[48] ({m_axi_wid,m_axi_wdata,m_axi_wstrb,m_axi_wlast}),
         .\goreg_dm.dout_i_reg[69] ({m_axi_arid,m_axi_araddr,m_axi_arlen,m_axi_arsize,m_axi_arburst,m_axi_arlock,m_axi_arcache,m_axi_arprot,m_axi_arqos}),
+        .\gpr1.dout_i_reg[67] ({s_axi_arid,s_axi_araddr,s_axi_arlen,s_axi_arsize,s_axi_arburst,s_axi_arlock,s_axi_arcache,s_axi_arprot,s_axi_arqos}),
         .m_aclk(m_aclk),
         .m_axi_arready(m_axi_arready),
         .m_axi_arvalid(m_axi_arvalid),
@@ -10190,6 +10195,7 @@ module design_IP_auto_cc_2_fifo_generator_v13_2_4
         .s_axi_wvalid(s_axi_wvalid));
 endmodule
 
+(* ORIG_REF_NAME = "fifo_generator_v13_2_4_synth" *) 
 module design_IP_auto_cc_2_fifo_generator_v13_2_4_synth
    (Q,
     \goreg_dm.dout_i_reg[48] ,
@@ -10209,10 +10215,10 @@ module design_IP_auto_cc_2_fifo_generator_v13_2_4_synth
     s_aclk,
     m_aclk,
     DI,
-    I467,
-    I470,
-    I473,
-    I476,
+    I78,
+    I82,
+    \gpr1.dout_i_reg[67] ,
+    I89,
     s_axi_bready,
     s_axi_rready,
     s_axi_awvalid,
@@ -10242,10 +10248,10 @@ module design_IP_auto_cc_2_fifo_generator_v13_2_4_synth
   input s_aclk;
   input m_aclk;
   input [65:0]DI;
-  input [48:0]I467;
-  input [13:0]I470;
-  input [65:0]I473;
-  input [46:0]I476;
+  input [48:0]I78;
+  input [13:0]I82;
+  input [65:0]\gpr1.dout_i_reg[67] ;
+  input [46:0]I89;
   input s_axi_bready;
   input s_axi_rready;
   input s_axi_awvalid;
@@ -10259,10 +10265,9 @@ module design_IP_auto_cc_2_fifo_generator_v13_2_4_synth
   input s_aresetn;
 
   wire [65:0]DI;
-  wire [48:0]I467;
-  wire [13:0]I470;
-  wire [65:0]I473;
-  wire [46:0]I476;
+  wire [48:0]I78;
+  wire [13:0]I82;
+  wire [46:0]I89;
   wire [65:0]Q;
   wire dest_out;
   wire dest_out40_out;
@@ -10270,6 +10275,7 @@ module design_IP_auto_cc_2_fifo_generator_v13_2_4_synth
   wire [46:0]\goreg_dm.dout_i_reg[46] ;
   wire [48:0]\goreg_dm.dout_i_reg[48] ;
   wire [65:0]\goreg_dm.dout_i_reg[69] ;
+  wire [65:0]\gpr1.dout_i_reg[67] ;
   wire inverted_reset;
   wire m_aclk;
   wire m_axi_arready;
@@ -10300,8 +10306,8 @@ module design_IP_auto_cc_2_fifo_generator_v13_2_4_synth
   wire wr_rst_busy_wdch;
 
   design_IP_auto_cc_2_fifo_generator_top \gaxi_full_lite.gread_ch.grach2.axi_rach 
-       (.I473(I473),
-        .\goreg_dm.dout_i_reg[69] (\goreg_dm.dout_i_reg[69] ),
+       (.\goreg_dm.dout_i_reg[69] (\goreg_dm.dout_i_reg[69] ),
+        .\gpr1.dout_i_reg[67] (\gpr1.dout_i_reg[67] ),
         .m_aclk(m_aclk),
         .m_axi_arready(m_axi_arready),
         .m_axi_arvalid(m_axi_arvalid),
@@ -10323,7 +10329,7 @@ module design_IP_auto_cc_2_fifo_generator_v13_2_4_synth
         .src_clk(s_aclk),
         .src_in(wr_rst_busy_rach));
   design_IP_auto_cc_2_fifo_generator_top__parameterized2 \gaxi_full_lite.gread_ch.grdch2.axi_rdch 
-       (.I476(I476),
+       (.I89(I89),
         .\goreg_dm.dout_i_reg[46] (\goreg_dm.dout_i_reg[46] ),
         .m_aclk(m_aclk),
         .m_axi_rready(m_axi_rready),
@@ -10357,7 +10363,7 @@ module design_IP_auto_cc_2_fifo_generator_v13_2_4_synth
         .src_clk(s_aclk),
         .src_in(wr_rst_busy_wach));
   design_IP_auto_cc_2_fifo_generator_top__parameterized0 \gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch 
-       (.I467(I467),
+       (.I78(I78),
         .\goreg_dm.dout_i_reg[48] (\goreg_dm.dout_i_reg[48] ),
         .m_aclk(m_aclk),
         .m_axi_wready(m_axi_wready),
@@ -10380,7 +10386,7 @@ module design_IP_auto_cc_2_fifo_generator_v13_2_4_synth
         .src_clk(s_aclk),
         .src_in(wr_rst_busy_wdch));
   design_IP_auto_cc_2_fifo_generator_top__parameterized1 \gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch 
-       (.I470(I470),
+       (.I82(I82),
         .\goreg_dm.dout_i_reg[13] (\goreg_dm.dout_i_reg[13] ),
         .m_aclk(m_aclk),
         .m_axi_bready(m_axi_bready),
@@ -10391,31 +10397,30 @@ module design_IP_auto_cc_2_fifo_generator_v13_2_4_synth
         .src_arst(inverted_reset));
 endmodule
 
+(* ORIG_REF_NAME = "memory" *) 
 module design_IP_auto_cc_2_memory
    (Q,
     E,
     m_aclk,
     s_aclk,
-    EN,
-    DI,
-    count_d1,
     \gpr1.dout_i_reg[5] ,
-    \gpr1.dout_i_reg[69] );
+    DI,
+    \gpr1.dout_i_reg[5]_0 ,
+    \gpr1.dout_i_reg[5]_1 ,
+    \gpr1.dout_i_reg[4] );
   output [65:0]Q;
   input [0:0]E;
   input m_aclk;
   input s_aclk;
-  input EN;
+  input [0:0]\gpr1.dout_i_reg[5] ;
   input [65:0]DI;
-  input [3:0]count_d1;
-  input [3:0]\gpr1.dout_i_reg[5] ;
-  input [0:0]\gpr1.dout_i_reg[69] ;
+  input [3:0]\gpr1.dout_i_reg[5]_0 ;
+  input [3:0]\gpr1.dout_i_reg[5]_1 ;
+  input [0:0]\gpr1.dout_i_reg[4] ;
 
   wire [65:0]DI;
   wire [0:0]E;
-  wire EN;
   wire [65:0]Q;
-  wire [3:0]count_d1;
   wire \gdm.dm_gen.dm_n_0 ;
   wire \gdm.dm_gen.dm_n_1 ;
   wire \gdm.dm_gen.dm_n_10 ;
@@ -10482,18 +10487,20 @@ module design_IP_auto_cc_2_memory
   wire \gdm.dm_gen.dm_n_7 ;
   wire \gdm.dm_gen.dm_n_8 ;
   wire \gdm.dm_gen.dm_n_9 ;
-  wire [3:0]\gpr1.dout_i_reg[5] ;
-  wire [0:0]\gpr1.dout_i_reg[69] ;
+  wire [0:0]\gpr1.dout_i_reg[4] ;
+  wire [0:0]\gpr1.dout_i_reg[5] ;
+  wire [3:0]\gpr1.dout_i_reg[5]_0 ;
+  wire [3:0]\gpr1.dout_i_reg[5]_1 ;
   wire m_aclk;
   wire s_aclk;
 
   design_IP_auto_cc_2_dmem \gdm.dm_gen.dm 
        (.DI(DI),
-        .EN(EN),
-        .count_d1(count_d1),
         .dout_i({\gdm.dm_gen.dm_n_0 ,\gdm.dm_gen.dm_n_1 ,\gdm.dm_gen.dm_n_2 ,\gdm.dm_gen.dm_n_3 ,\gdm.dm_gen.dm_n_4 ,\gdm.dm_gen.dm_n_5 ,\gdm.dm_gen.dm_n_6 ,\gdm.dm_gen.dm_n_7 ,\gdm.dm_gen.dm_n_8 ,\gdm.dm_gen.dm_n_9 ,\gdm.dm_gen.dm_n_10 ,\gdm.dm_gen.dm_n_11 ,\gdm.dm_gen.dm_n_12 ,\gdm.dm_gen.dm_n_13 ,\gdm.dm_gen.dm_n_14 ,\gdm.dm_gen.dm_n_15 ,\gdm.dm_gen.dm_n_16 ,\gdm.dm_gen.dm_n_17 ,\gdm.dm_gen.dm_n_18 ,\gdm.dm_gen.dm_n_19 ,\gdm.dm_gen.dm_n_20 ,\gdm.dm_gen.dm_n_21 ,\gdm.dm_gen.dm_n_22 ,\gdm.dm_gen.dm_n_23 ,\gdm.dm_gen.dm_n_24 ,\gdm.dm_gen.dm_n_25 ,\gdm.dm_gen.dm_n_26 ,\gdm.dm_gen.dm_n_27 ,\gdm.dm_gen.dm_n_28 ,\gdm.dm_gen.dm_n_29 ,\gdm.dm_gen.dm_n_30 ,\gdm.dm_gen.dm_n_31 ,\gdm.dm_gen.dm_n_32 ,\gdm.dm_gen.dm_n_33 ,\gdm.dm_gen.dm_n_34 ,\gdm.dm_gen.dm_n_35 ,\gdm.dm_gen.dm_n_36 ,\gdm.dm_gen.dm_n_37 ,\gdm.dm_gen.dm_n_38 ,\gdm.dm_gen.dm_n_39 ,\gdm.dm_gen.dm_n_40 ,\gdm.dm_gen.dm_n_41 ,\gdm.dm_gen.dm_n_42 ,\gdm.dm_gen.dm_n_43 ,\gdm.dm_gen.dm_n_44 ,\gdm.dm_gen.dm_n_45 ,\gdm.dm_gen.dm_n_46 ,\gdm.dm_gen.dm_n_47 ,\gdm.dm_gen.dm_n_48 ,\gdm.dm_gen.dm_n_49 ,\gdm.dm_gen.dm_n_50 ,\gdm.dm_gen.dm_n_51 ,\gdm.dm_gen.dm_n_52 ,\gdm.dm_gen.dm_n_53 ,\gdm.dm_gen.dm_n_54 ,\gdm.dm_gen.dm_n_55 ,\gdm.dm_gen.dm_n_56 ,\gdm.dm_gen.dm_n_57 ,\gdm.dm_gen.dm_n_58 ,\gdm.dm_gen.dm_n_59 ,\gdm.dm_gen.dm_n_60 ,\gdm.dm_gen.dm_n_61 ,\gdm.dm_gen.dm_n_62 ,\gdm.dm_gen.dm_n_63 ,\gdm.dm_gen.dm_n_64 ,\gdm.dm_gen.dm_n_65 }),
+        .\gpr1.dout_i_reg[4]_0 (\gpr1.dout_i_reg[4] ),
         .\gpr1.dout_i_reg[5]_0 (\gpr1.dout_i_reg[5] ),
-        .\gpr1.dout_i_reg[69]_0 (\gpr1.dout_i_reg[69] ),
+        .\gpr1.dout_i_reg[5]_1 (\gpr1.dout_i_reg[5]_0 ),
+        .\gpr1.dout_i_reg[5]_2 (\gpr1.dout_i_reg[5]_1 ),
         .m_aclk(m_aclk),
         .s_aclk(s_aclk));
   FDRE #(
@@ -11032,25 +11039,22 @@ module design_IP_auto_cc_2_memory_23
     E,
     m_aclk,
     s_aclk,
-    I67,
-    I473,
-    count_d1,
     \gpr1.dout_i_reg[5] ,
-    \gpr1.dout_i_reg[69] );
+    \gpr1.dout_i_reg[67] ,
+    \gpr1.dout_i_reg[5]_0 ,
+    \gpr1.dout_i_reg[5]_1 ,
+    \gpr1.dout_i_reg[4] );
   output [65:0]\goreg_dm.dout_i_reg[69]_0 ;
   input [0:0]E;
   input m_aclk;
   input s_aclk;
-  input I67;
-  input [65:0]I473;
-  input [3:0]count_d1;
-  input [3:0]\gpr1.dout_i_reg[5] ;
-  input [0:0]\gpr1.dout_i_reg[69] ;
+  input [0:0]\gpr1.dout_i_reg[5] ;
+  input [65:0]\gpr1.dout_i_reg[67] ;
+  input [3:0]\gpr1.dout_i_reg[5]_0 ;
+  input [3:0]\gpr1.dout_i_reg[5]_1 ;
+  input [0:0]\gpr1.dout_i_reg[4] ;
 
   wire [0:0]E;
-  wire [65:0]I473;
-  wire I67;
-  wire [3:0]count_d1;
   wire \gdm.dm_gen.dm_n_0 ;
   wire \gdm.dm_gen.dm_n_1 ;
   wire \gdm.dm_gen.dm_n_10 ;
@@ -11118,18 +11122,21 @@ module design_IP_auto_cc_2_memory_23
   wire \gdm.dm_gen.dm_n_8 ;
   wire \gdm.dm_gen.dm_n_9 ;
   wire [65:0]\goreg_dm.dout_i_reg[69]_0 ;
-  wire [3:0]\gpr1.dout_i_reg[5] ;
-  wire [0:0]\gpr1.dout_i_reg[69] ;
+  wire [0:0]\gpr1.dout_i_reg[4] ;
+  wire [0:0]\gpr1.dout_i_reg[5] ;
+  wire [3:0]\gpr1.dout_i_reg[5]_0 ;
+  wire [3:0]\gpr1.dout_i_reg[5]_1 ;
+  wire [65:0]\gpr1.dout_i_reg[67] ;
   wire m_aclk;
   wire s_aclk;
 
   design_IP_auto_cc_2_dmem_24 \gdm.dm_gen.dm 
-       (.I473(I473),
-        .I67(I67),
-        .count_d1(count_d1),
-        .dout_i({\gdm.dm_gen.dm_n_0 ,\gdm.dm_gen.dm_n_1 ,\gdm.dm_gen.dm_n_2 ,\gdm.dm_gen.dm_n_3 ,\gdm.dm_gen.dm_n_4 ,\gdm.dm_gen.dm_n_5 ,\gdm.dm_gen.dm_n_6 ,\gdm.dm_gen.dm_n_7 ,\gdm.dm_gen.dm_n_8 ,\gdm.dm_gen.dm_n_9 ,\gdm.dm_gen.dm_n_10 ,\gdm.dm_gen.dm_n_11 ,\gdm.dm_gen.dm_n_12 ,\gdm.dm_gen.dm_n_13 ,\gdm.dm_gen.dm_n_14 ,\gdm.dm_gen.dm_n_15 ,\gdm.dm_gen.dm_n_16 ,\gdm.dm_gen.dm_n_17 ,\gdm.dm_gen.dm_n_18 ,\gdm.dm_gen.dm_n_19 ,\gdm.dm_gen.dm_n_20 ,\gdm.dm_gen.dm_n_21 ,\gdm.dm_gen.dm_n_22 ,\gdm.dm_gen.dm_n_23 ,\gdm.dm_gen.dm_n_24 ,\gdm.dm_gen.dm_n_25 ,\gdm.dm_gen.dm_n_26 ,\gdm.dm_gen.dm_n_27 ,\gdm.dm_gen.dm_n_28 ,\gdm.dm_gen.dm_n_29 ,\gdm.dm_gen.dm_n_30 ,\gdm.dm_gen.dm_n_31 ,\gdm.dm_gen.dm_n_32 ,\gdm.dm_gen.dm_n_33 ,\gdm.dm_gen.dm_n_34 ,\gdm.dm_gen.dm_n_35 ,\gdm.dm_gen.dm_n_36 ,\gdm.dm_gen.dm_n_37 ,\gdm.dm_gen.dm_n_38 ,\gdm.dm_gen.dm_n_39 ,\gdm.dm_gen.dm_n_40 ,\gdm.dm_gen.dm_n_41 ,\gdm.dm_gen.dm_n_42 ,\gdm.dm_gen.dm_n_43 ,\gdm.dm_gen.dm_n_44 ,\gdm.dm_gen.dm_n_45 ,\gdm.dm_gen.dm_n_46 ,\gdm.dm_gen.dm_n_47 ,\gdm.dm_gen.dm_n_48 ,\gdm.dm_gen.dm_n_49 ,\gdm.dm_gen.dm_n_50 ,\gdm.dm_gen.dm_n_51 ,\gdm.dm_gen.dm_n_52 ,\gdm.dm_gen.dm_n_53 ,\gdm.dm_gen.dm_n_54 ,\gdm.dm_gen.dm_n_55 ,\gdm.dm_gen.dm_n_56 ,\gdm.dm_gen.dm_n_57 ,\gdm.dm_gen.dm_n_58 ,\gdm.dm_gen.dm_n_59 ,\gdm.dm_gen.dm_n_60 ,\gdm.dm_gen.dm_n_61 ,\gdm.dm_gen.dm_n_62 ,\gdm.dm_gen.dm_n_63 ,\gdm.dm_gen.dm_n_64 ,\gdm.dm_gen.dm_n_65 }),
+       (.dout_i({\gdm.dm_gen.dm_n_0 ,\gdm.dm_gen.dm_n_1 ,\gdm.dm_gen.dm_n_2 ,\gdm.dm_gen.dm_n_3 ,\gdm.dm_gen.dm_n_4 ,\gdm.dm_gen.dm_n_5 ,\gdm.dm_gen.dm_n_6 ,\gdm.dm_gen.dm_n_7 ,\gdm.dm_gen.dm_n_8 ,\gdm.dm_gen.dm_n_9 ,\gdm.dm_gen.dm_n_10 ,\gdm.dm_gen.dm_n_11 ,\gdm.dm_gen.dm_n_12 ,\gdm.dm_gen.dm_n_13 ,\gdm.dm_gen.dm_n_14 ,\gdm.dm_gen.dm_n_15 ,\gdm.dm_gen.dm_n_16 ,\gdm.dm_gen.dm_n_17 ,\gdm.dm_gen.dm_n_18 ,\gdm.dm_gen.dm_n_19 ,\gdm.dm_gen.dm_n_20 ,\gdm.dm_gen.dm_n_21 ,\gdm.dm_gen.dm_n_22 ,\gdm.dm_gen.dm_n_23 ,\gdm.dm_gen.dm_n_24 ,\gdm.dm_gen.dm_n_25 ,\gdm.dm_gen.dm_n_26 ,\gdm.dm_gen.dm_n_27 ,\gdm.dm_gen.dm_n_28 ,\gdm.dm_gen.dm_n_29 ,\gdm.dm_gen.dm_n_30 ,\gdm.dm_gen.dm_n_31 ,\gdm.dm_gen.dm_n_32 ,\gdm.dm_gen.dm_n_33 ,\gdm.dm_gen.dm_n_34 ,\gdm.dm_gen.dm_n_35 ,\gdm.dm_gen.dm_n_36 ,\gdm.dm_gen.dm_n_37 ,\gdm.dm_gen.dm_n_38 ,\gdm.dm_gen.dm_n_39 ,\gdm.dm_gen.dm_n_40 ,\gdm.dm_gen.dm_n_41 ,\gdm.dm_gen.dm_n_42 ,\gdm.dm_gen.dm_n_43 ,\gdm.dm_gen.dm_n_44 ,\gdm.dm_gen.dm_n_45 ,\gdm.dm_gen.dm_n_46 ,\gdm.dm_gen.dm_n_47 ,\gdm.dm_gen.dm_n_48 ,\gdm.dm_gen.dm_n_49 ,\gdm.dm_gen.dm_n_50 ,\gdm.dm_gen.dm_n_51 ,\gdm.dm_gen.dm_n_52 ,\gdm.dm_gen.dm_n_53 ,\gdm.dm_gen.dm_n_54 ,\gdm.dm_gen.dm_n_55 ,\gdm.dm_gen.dm_n_56 ,\gdm.dm_gen.dm_n_57 ,\gdm.dm_gen.dm_n_58 ,\gdm.dm_gen.dm_n_59 ,\gdm.dm_gen.dm_n_60 ,\gdm.dm_gen.dm_n_61 ,\gdm.dm_gen.dm_n_62 ,\gdm.dm_gen.dm_n_63 ,\gdm.dm_gen.dm_n_64 ,\gdm.dm_gen.dm_n_65 }),
+        .\gpr1.dout_i_reg[4]_0 (\gpr1.dout_i_reg[4] ),
         .\gpr1.dout_i_reg[5]_0 (\gpr1.dout_i_reg[5] ),
-        .\gpr1.dout_i_reg[69]_0 (\gpr1.dout_i_reg[69] ),
+        .\gpr1.dout_i_reg[5]_1 (\gpr1.dout_i_reg[5]_0 ),
+        .\gpr1.dout_i_reg[5]_2 (\gpr1.dout_i_reg[5]_1 ),
+        .\gpr1.dout_i_reg[67]_0 (\gpr1.dout_i_reg[67] ),
         .m_aclk(m_aclk),
         .s_aclk(s_aclk));
   FDRE #(
@@ -11668,25 +11675,23 @@ module design_IP_auto_cc_2_memory__parameterized0
     E,
     m_aclk,
     s_aclk,
-    I59,
-    I467,
-    count_d1,
     \gpr1.dout_i_reg[1] ,
-    \gpr1.dout_i_reg[48] );
+    I78,
+    \gpr1.dout_i_reg[1]_0 ,
+    \gpr1.dout_i_reg[1]_1 ,
+    \gpr1.dout_i_reg[0] );
   output [48:0]\goreg_dm.dout_i_reg[48]_0 ;
   input [0:0]E;
   input m_aclk;
   input s_aclk;
-  input I59;
-  input [48:0]I467;
-  input [3:0]count_d1;
-  input [3:0]\gpr1.dout_i_reg[1] ;
-  input [0:0]\gpr1.dout_i_reg[48] ;
+  input [0:0]\gpr1.dout_i_reg[1] ;
+  input [48:0]I78;
+  input [3:0]\gpr1.dout_i_reg[1]_0 ;
+  input [3:0]\gpr1.dout_i_reg[1]_1 ;
+  input [0:0]\gpr1.dout_i_reg[0] ;
 
   wire [0:0]E;
-  wire [48:0]I467;
-  wire I59;
-  wire [3:0]count_d1;
+  wire [48:0]I78;
   wire \gdm.dm_gen.dm_n_0 ;
   wire \gdm.dm_gen.dm_n_1 ;
   wire \gdm.dm_gen.dm_n_10 ;
@@ -11737,18 +11742,20 @@ module design_IP_auto_cc_2_memory__parameterized0
   wire \gdm.dm_gen.dm_n_8 ;
   wire \gdm.dm_gen.dm_n_9 ;
   wire [48:0]\goreg_dm.dout_i_reg[48]_0 ;
-  wire [3:0]\gpr1.dout_i_reg[1] ;
-  wire [0:0]\gpr1.dout_i_reg[48] ;
+  wire [0:0]\gpr1.dout_i_reg[0] ;
+  wire [0:0]\gpr1.dout_i_reg[1] ;
+  wire [3:0]\gpr1.dout_i_reg[1]_0 ;
+  wire [3:0]\gpr1.dout_i_reg[1]_1 ;
   wire m_aclk;
   wire s_aclk;
 
   design_IP_auto_cc_2_dmem__parameterized0 \gdm.dm_gen.dm 
-       (.I467(I467),
-        .I59(I59),
-        .count_d1(count_d1),
+       (.I78(I78),
         .dout_i({\gdm.dm_gen.dm_n_0 ,\gdm.dm_gen.dm_n_1 ,\gdm.dm_gen.dm_n_2 ,\gdm.dm_gen.dm_n_3 ,\gdm.dm_gen.dm_n_4 ,\gdm.dm_gen.dm_n_5 ,\gdm.dm_gen.dm_n_6 ,\gdm.dm_gen.dm_n_7 ,\gdm.dm_gen.dm_n_8 ,\gdm.dm_gen.dm_n_9 ,\gdm.dm_gen.dm_n_10 ,\gdm.dm_gen.dm_n_11 ,\gdm.dm_gen.dm_n_12 ,\gdm.dm_gen.dm_n_13 ,\gdm.dm_gen.dm_n_14 ,\gdm.dm_gen.dm_n_15 ,\gdm.dm_gen.dm_n_16 ,\gdm.dm_gen.dm_n_17 ,\gdm.dm_gen.dm_n_18 ,\gdm.dm_gen.dm_n_19 ,\gdm.dm_gen.dm_n_20 ,\gdm.dm_gen.dm_n_21 ,\gdm.dm_gen.dm_n_22 ,\gdm.dm_gen.dm_n_23 ,\gdm.dm_gen.dm_n_24 ,\gdm.dm_gen.dm_n_25 ,\gdm.dm_gen.dm_n_26 ,\gdm.dm_gen.dm_n_27 ,\gdm.dm_gen.dm_n_28 ,\gdm.dm_gen.dm_n_29 ,\gdm.dm_gen.dm_n_30 ,\gdm.dm_gen.dm_n_31 ,\gdm.dm_gen.dm_n_32 ,\gdm.dm_gen.dm_n_33 ,\gdm.dm_gen.dm_n_34 ,\gdm.dm_gen.dm_n_35 ,\gdm.dm_gen.dm_n_36 ,\gdm.dm_gen.dm_n_37 ,\gdm.dm_gen.dm_n_38 ,\gdm.dm_gen.dm_n_39 ,\gdm.dm_gen.dm_n_40 ,\gdm.dm_gen.dm_n_41 ,\gdm.dm_gen.dm_n_42 ,\gdm.dm_gen.dm_n_43 ,\gdm.dm_gen.dm_n_44 ,\gdm.dm_gen.dm_n_45 ,\gdm.dm_gen.dm_n_46 ,\gdm.dm_gen.dm_n_47 ,\gdm.dm_gen.dm_n_48 }),
+        .\gpr1.dout_i_reg[0]_0 (\gpr1.dout_i_reg[0] ),
         .\gpr1.dout_i_reg[1]_0 (\gpr1.dout_i_reg[1] ),
-        .\gpr1.dout_i_reg[48]_0 (\gpr1.dout_i_reg[48] ),
+        .\gpr1.dout_i_reg[1]_1 (\gpr1.dout_i_reg[1]_0 ),
+        .\gpr1.dout_i_reg[1]_2 (\gpr1.dout_i_reg[1]_1 ),
         .m_aclk(m_aclk),
         .s_aclk(s_aclk));
   FDRE #(
@@ -12152,24 +12159,23 @@ module design_IP_auto_cc_2_memory__parameterized1
     s_aclk,
     m_aclk,
     I63,
-    I470,
-    count_d1,
+    I82,
     \gpr1.dout_i_reg[1] ,
-    \gpr1.dout_i_reg[13] );
+    \gpr1.dout_i_reg[1]_0 ,
+    \gpr1.dout_i_reg[0] );
   output [13:0]\goreg_dm.dout_i_reg[13]_0 ;
   input [0:0]E;
   input s_aclk;
   input m_aclk;
   input I63;
-  input [13:0]I470;
-  input [3:0]count_d1;
+  input [13:0]I82;
   input [3:0]\gpr1.dout_i_reg[1] ;
-  input [0:0]\gpr1.dout_i_reg[13] ;
+  input [3:0]\gpr1.dout_i_reg[1]_0 ;
+  input [0:0]\gpr1.dout_i_reg[0] ;
 
   wire [0:0]E;
-  wire [13:0]I470;
   wire I63;
-  wire [3:0]count_d1;
+  wire [13:0]I82;
   wire \gdm.dm_gen.dm_n_0 ;
   wire \gdm.dm_gen.dm_n_1 ;
   wire \gdm.dm_gen.dm_n_10 ;
@@ -12185,18 +12191,19 @@ module design_IP_auto_cc_2_memory__parameterized1
   wire \gdm.dm_gen.dm_n_8 ;
   wire \gdm.dm_gen.dm_n_9 ;
   wire [13:0]\goreg_dm.dout_i_reg[13]_0 ;
-  wire [0:0]\gpr1.dout_i_reg[13] ;
+  wire [0:0]\gpr1.dout_i_reg[0] ;
   wire [3:0]\gpr1.dout_i_reg[1] ;
+  wire [3:0]\gpr1.dout_i_reg[1]_0 ;
   wire m_aclk;
   wire s_aclk;
 
   design_IP_auto_cc_2_dmem__parameterized1 \gdm.dm_gen.dm 
-       (.I470(I470),
-        .I63(I63),
-        .count_d1(count_d1),
+       (.I63(I63),
+        .I82(I82),
         .dout_i({\gdm.dm_gen.dm_n_0 ,\gdm.dm_gen.dm_n_1 ,\gdm.dm_gen.dm_n_2 ,\gdm.dm_gen.dm_n_3 ,\gdm.dm_gen.dm_n_4 ,\gdm.dm_gen.dm_n_5 ,\gdm.dm_gen.dm_n_6 ,\gdm.dm_gen.dm_n_7 ,\gdm.dm_gen.dm_n_8 ,\gdm.dm_gen.dm_n_9 ,\gdm.dm_gen.dm_n_10 ,\gdm.dm_gen.dm_n_11 ,\gdm.dm_gen.dm_n_12 ,\gdm.dm_gen.dm_n_13 }),
-        .\gpr1.dout_i_reg[13]_0 (\gpr1.dout_i_reg[13] ),
+        .\gpr1.dout_i_reg[0]_0 (\gpr1.dout_i_reg[0] ),
         .\gpr1.dout_i_reg[1]_0 (\gpr1.dout_i_reg[1] ),
+        .\gpr1.dout_i_reg[1]_1 (\gpr1.dout_i_reg[1]_0 ),
         .m_aclk(m_aclk),
         .s_aclk(s_aclk));
   FDRE #(
@@ -12319,25 +12326,23 @@ module design_IP_auto_cc_2_memory__parameterized2
     E,
     s_aclk,
     m_aclk,
-    I71,
-    I476,
-    count_d1,
     \gpr1.dout_i_reg[1] ,
-    \gpr1.dout_i_reg[46] );
+    I89,
+    \gpr1.dout_i_reg[1]_0 ,
+    \gpr1.dout_i_reg[1]_1 ,
+    \gpr1.dout_i_reg[0] );
   output [46:0]\goreg_dm.dout_i_reg[46]_0 ;
   input [0:0]E;
   input s_aclk;
   input m_aclk;
-  input I71;
-  input [46:0]I476;
-  input [3:0]count_d1;
-  input [3:0]\gpr1.dout_i_reg[1] ;
-  input [0:0]\gpr1.dout_i_reg[46] ;
+  input [0:0]\gpr1.dout_i_reg[1] ;
+  input [46:0]I89;
+  input [3:0]\gpr1.dout_i_reg[1]_0 ;
+  input [3:0]\gpr1.dout_i_reg[1]_1 ;
+  input [0:0]\gpr1.dout_i_reg[0] ;
 
   wire [0:0]E;
-  wire [46:0]I476;
-  wire I71;
-  wire [3:0]count_d1;
+  wire [46:0]I89;
   wire \gdm.dm_gen.dm_n_0 ;
   wire \gdm.dm_gen.dm_n_1 ;
   wire \gdm.dm_gen.dm_n_10 ;
@@ -12386,18 +12391,20 @@ module design_IP_auto_cc_2_memory__parameterized2
   wire \gdm.dm_gen.dm_n_8 ;
   wire \gdm.dm_gen.dm_n_9 ;
   wire [46:0]\goreg_dm.dout_i_reg[46]_0 ;
-  wire [3:0]\gpr1.dout_i_reg[1] ;
-  wire [0:0]\gpr1.dout_i_reg[46] ;
+  wire [0:0]\gpr1.dout_i_reg[0] ;
+  wire [0:0]\gpr1.dout_i_reg[1] ;
+  wire [3:0]\gpr1.dout_i_reg[1]_0 ;
+  wire [3:0]\gpr1.dout_i_reg[1]_1 ;
   wire m_aclk;
   wire s_aclk;
 
   design_IP_auto_cc_2_dmem__parameterized2 \gdm.dm_gen.dm 
-       (.I476(I476),
-        .I71(I71),
-        .count_d1(count_d1),
+       (.I89(I89),
         .dout_i({\gdm.dm_gen.dm_n_0 ,\gdm.dm_gen.dm_n_1 ,\gdm.dm_gen.dm_n_2 ,\gdm.dm_gen.dm_n_3 ,\gdm.dm_gen.dm_n_4 ,\gdm.dm_gen.dm_n_5 ,\gdm.dm_gen.dm_n_6 ,\gdm.dm_gen.dm_n_7 ,\gdm.dm_gen.dm_n_8 ,\gdm.dm_gen.dm_n_9 ,\gdm.dm_gen.dm_n_10 ,\gdm.dm_gen.dm_n_11 ,\gdm.dm_gen.dm_n_12 ,\gdm.dm_gen.dm_n_13 ,\gdm.dm_gen.dm_n_14 ,\gdm.dm_gen.dm_n_15 ,\gdm.dm_gen.dm_n_16 ,\gdm.dm_gen.dm_n_17 ,\gdm.dm_gen.dm_n_18 ,\gdm.dm_gen.dm_n_19 ,\gdm.dm_gen.dm_n_20 ,\gdm.dm_gen.dm_n_21 ,\gdm.dm_gen.dm_n_22 ,\gdm.dm_gen.dm_n_23 ,\gdm.dm_gen.dm_n_24 ,\gdm.dm_gen.dm_n_25 ,\gdm.dm_gen.dm_n_26 ,\gdm.dm_gen.dm_n_27 ,\gdm.dm_gen.dm_n_28 ,\gdm.dm_gen.dm_n_29 ,\gdm.dm_gen.dm_n_30 ,\gdm.dm_gen.dm_n_31 ,\gdm.dm_gen.dm_n_32 ,\gdm.dm_gen.dm_n_33 ,\gdm.dm_gen.dm_n_34 ,\gdm.dm_gen.dm_n_35 ,\gdm.dm_gen.dm_n_36 ,\gdm.dm_gen.dm_n_37 ,\gdm.dm_gen.dm_n_38 ,\gdm.dm_gen.dm_n_39 ,\gdm.dm_gen.dm_n_40 ,\gdm.dm_gen.dm_n_41 ,\gdm.dm_gen.dm_n_42 ,\gdm.dm_gen.dm_n_43 ,\gdm.dm_gen.dm_n_44 ,\gdm.dm_gen.dm_n_45 ,\gdm.dm_gen.dm_n_46 }),
+        .\gpr1.dout_i_reg[0]_0 (\gpr1.dout_i_reg[0] ),
         .\gpr1.dout_i_reg[1]_0 (\gpr1.dout_i_reg[1] ),
-        .\gpr1.dout_i_reg[46]_0 (\gpr1.dout_i_reg[46] ),
+        .\gpr1.dout_i_reg[1]_1 (\gpr1.dout_i_reg[1]_0 ),
+        .\gpr1.dout_i_reg[1]_2 (\gpr1.dout_i_reg[1]_1 ),
         .m_aclk(m_aclk),
         .s_aclk(s_aclk));
   FDRE #(
@@ -12778,6 +12785,7 @@ module design_IP_auto_cc_2_memory__parameterized2
         .R(1'b0));
 endmodule
 
+(* ORIG_REF_NAME = "rd_bin_cntr" *) 
 module design_IP_auto_cc_2_rd_bin_cntr
    (\gc0.count_d1_reg[2]_0 ,
     Q,
@@ -13537,6 +13545,7 @@ module design_IP_auto_cc_2_rd_bin_cntr_6
         .O(ram_empty_i_i_3__2_n_0));
 endmodule
 
+(* ORIG_REF_NAME = "rd_fwft" *) 
 module design_IP_auto_cc_2_rd_fwft
    (\gpregsm1.curr_fwft_state_reg[1]_0 ,
     E,
@@ -14566,6 +14575,7 @@ module design_IP_auto_cc_2_rd_fwft_4
         .O(\gpregsm1.curr_fwft_state_reg[1]_0 ));
 endmodule
 
+(* ORIG_REF_NAME = "rd_logic" *) 
 module design_IP_auto_cc_2_rd_logic
    (Q,
     E,
@@ -14895,6 +14905,7 @@ module design_IP_auto_cc_2_rd_logic_7
         .ram_empty_i_reg_0(\gr1.gr1_int.rfwft_n_0 ));
 endmodule
 
+(* ORIG_REF_NAME = "rd_status_flags_as" *) 
 module design_IP_auto_cc_2_rd_status_flags_as
    (out,
     ram_empty_i_reg_0,
@@ -15104,6 +15115,7 @@ module design_IP_auto_cc_2_rd_status_flags_as_5
         .Q(ram_empty_i));
 endmodule
 
+(* ORIG_REF_NAME = "reset_blk_ramfifo" *) 
 module design_IP_auto_cc_2_reset_blk_ramfifo
    (src_arst,
     AR,
@@ -16231,6 +16243,7 @@ module design_IP_auto_cc_2_reset_blk_ramfifo__xdcDup__4
         .src_arst(src_arst));
 endmodule
 
+(* ORIG_REF_NAME = "wr_bin_cntr" *) 
 module design_IP_auto_cc_2_wr_bin_cntr
    (\dest_out_bin_ff_reg[3] ,
     Q,
@@ -17145,6 +17158,7 @@ module design_IP_auto_cc_2_wr_bin_cntr_3
         .O(ram_full_i_i_4__0_n_0));
 endmodule
 
+(* ORIG_REF_NAME = "wr_logic" *) 
 module design_IP_auto_cc_2_wr_logic
    (Q,
     E,
@@ -17459,6 +17473,7 @@ module design_IP_auto_cc_2_wr_logic_8
         .s_aclk(s_aclk));
 endmodule
 
+(* ORIG_REF_NAME = "wr_status_flags_as" *) 
 module design_IP_auto_cc_2_wr_status_flags_as
    (ram_full_fb_i_reg_0,
     E,

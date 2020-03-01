@@ -25,18 +25,18 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiprocessor/project_microblaze_test/project_microblaze_test.cache/wt [current_project]
-set_property parent.project_path C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiprocessor/project_microblaze_test/project_microblaze_test.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiCPU/prj_mb_test/prj_mb_test.cache/wt [current_project]
+set_property parent.project_path C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiCPU/prj_mb_test/prj_mb_test.xpr [current_project]
 set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 set_property board_part em.avnet.com:zed:part0:1.4 [current_project]
-set_property ip_output_repo c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiprocessor/project_microblaze_test/project_microblaze_test.cache/ip [current_project]
+set_property ip_output_repo c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiCPU/prj_mb_test/prj_mb_test.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-read_ip -quiet c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiprocessor/project_microblaze_test/project_microblaze_test.srcs/sources_1/bd/design_mb/ip/design_mb_microblaze_0_axi_intc_5/design_mb_microblaze_0_axi_intc_5.xci
-set_property used_in_implementation false [get_files -all c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiprocessor/project_microblaze_test/project_microblaze_test.srcs/sources_1/bd/design_mb/ip/design_mb_microblaze_0_axi_intc_5/design_mb_microblaze_0_axi_intc_5.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiprocessor/project_microblaze_test/project_microblaze_test.srcs/sources_1/bd/design_mb/ip/design_mb_microblaze_0_axi_intc_5/design_mb_microblaze_0_axi_intc_5_clocks.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiprocessor/project_microblaze_test/project_microblaze_test.srcs/sources_1/bd/design_mb/ip/design_mb_microblaze_0_axi_intc_5/design_mb_microblaze_0_axi_intc_5_ooc.xdc]
+read_ip -quiet C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiCPU/prj_mb_test/prj_mb_test.srcs/sources_1/bd/design_mb/ip/design_mb_microblaze_0_axi_intc_5/design_mb_microblaze_0_axi_intc_5.xci
+set_property used_in_implementation false [get_files -all c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiCPU/prj_mb_test/prj_mb_test.srcs/sources_1/bd/design_mb/ip/design_mb_microblaze_0_axi_intc_5/design_mb_microblaze_0_axi_intc_5.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiCPU/prj_mb_test/prj_mb_test.srcs/sources_1/bd/design_mb/ip/design_mb_microblaze_0_axi_intc_5/design_mb_microblaze_0_axi_intc_5_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiCPU/prj_mb_test/prj_mb_test.srcs/sources_1/bd/design_mb/ip/design_mb_microblaze_0_axi_intc_5/design_mb_microblaze_0_axi_intc_5_ooc.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -50,7 +50,7 @@ read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1
 
-set cached_ip [config_ip_cache -export -no_bom  -dir C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiprocessor/project_microblaze_test/project_microblaze_test.runs/design_mb_microblaze_0_axi_intc_5_synth_1 -new_name design_mb_microblaze_0_axi_intc_5 -ip [get_ips design_mb_microblaze_0_axi_intc_5]]
+set cached_ip [config_ip_cache -export -no_bom  -dir C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiCPU/prj_mb_test/prj_mb_test.runs/design_mb_microblaze_0_axi_intc_5_synth_1 -new_name design_mb_microblaze_0_axi_intc_5 -ip [get_ips design_mb_microblaze_0_axi_intc_5]]
 
 if { $cached_ip eq {} } {
 close [open __synthesis_is_running__ w]
@@ -91,32 +91,32 @@ write_checkpoint -force -noxdef design_mb_microblaze_0_axi_intc_5.dcp
 create_report "design_mb_microblaze_0_axi_intc_5_synth_1_synth_report_utilization_0" "report_utilization -file design_mb_microblaze_0_axi_intc_5_utilization_synth.rpt -pb design_mb_microblaze_0_axi_intc_5_utilization_synth.pb"
 
 if { [catch {
-  file copy -force C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiprocessor/project_microblaze_test/project_microblaze_test.runs/design_mb_microblaze_0_axi_intc_5_synth_1/design_mb_microblaze_0_axi_intc_5.dcp c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiprocessor/project_microblaze_test/project_microblaze_test.srcs/sources_1/bd/design_mb/ip/design_mb_microblaze_0_axi_intc_5/design_mb_microblaze_0_axi_intc_5.dcp
+  file copy -force C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiCPU/prj_mb_test/prj_mb_test.runs/design_mb_microblaze_0_axi_intc_5_synth_1/design_mb_microblaze_0_axi_intc_5.dcp C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiCPU/prj_mb_test/prj_mb_test.srcs/sources_1/bd/design_mb/ip/design_mb_microblaze_0_axi_intc_5/design_mb_microblaze_0_axi_intc_5.dcp
 } _RESULT ] } { 
   send_msg_id runtcl-3 error "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
   error "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
 }
 
 if { [catch {
-  write_verilog -force -mode synth_stub c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiprocessor/project_microblaze_test/project_microblaze_test.srcs/sources_1/bd/design_mb/ip/design_mb_microblaze_0_axi_intc_5/design_mb_microblaze_0_axi_intc_5_stub.v
+  write_verilog -force -mode synth_stub C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiCPU/prj_mb_test/prj_mb_test.srcs/sources_1/bd/design_mb/ip/design_mb_microblaze_0_axi_intc_5/design_mb_microblaze_0_axi_intc_5_stub.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a Verilog synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-  write_vhdl -force -mode synth_stub c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiprocessor/project_microblaze_test/project_microblaze_test.srcs/sources_1/bd/design_mb/ip/design_mb_microblaze_0_axi_intc_5/design_mb_microblaze_0_axi_intc_5_stub.vhdl
+  write_vhdl -force -mode synth_stub C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiCPU/prj_mb_test/prj_mb_test.srcs/sources_1/bd/design_mb/ip/design_mb_microblaze_0_axi_intc_5/design_mb_microblaze_0_axi_intc_5_stub.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a VHDL synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-  write_verilog -force -mode funcsim c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiprocessor/project_microblaze_test/project_microblaze_test.srcs/sources_1/bd/design_mb/ip/design_mb_microblaze_0_axi_intc_5/design_mb_microblaze_0_axi_intc_5_sim_netlist.v
+  write_verilog -force -mode funcsim C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiCPU/prj_mb_test/prj_mb_test.srcs/sources_1/bd/design_mb/ip/design_mb_microblaze_0_axi_intc_5/design_mb_microblaze_0_axi_intc_5_sim_netlist.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the Verilog functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
 
 if { [catch {
-  write_vhdl -force -mode funcsim c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiprocessor/project_microblaze_test/project_microblaze_test.srcs/sources_1/bd/design_mb/ip/design_mb_microblaze_0_axi_intc_5/design_mb_microblaze_0_axi_intc_5_sim_netlist.vhdl
+  write_vhdl -force -mode funcsim C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiCPU/prj_mb_test/prj_mb_test.srcs/sources_1/bd/design_mb/ip/design_mb_microblaze_0_axi_intc_5/design_mb_microblaze_0_axi_intc_5_sim_netlist.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the VHDL functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
@@ -126,47 +126,47 @@ if { [catch {
 
 
 if { [catch {
-  file copy -force C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiprocessor/project_microblaze_test/project_microblaze_test.runs/design_mb_microblaze_0_axi_intc_5_synth_1/design_mb_microblaze_0_axi_intc_5.dcp c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiprocessor/project_microblaze_test/project_microblaze_test.srcs/sources_1/bd/design_mb/ip/design_mb_microblaze_0_axi_intc_5/design_mb_microblaze_0_axi_intc_5.dcp
+  file copy -force C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiCPU/prj_mb_test/prj_mb_test.runs/design_mb_microblaze_0_axi_intc_5_synth_1/design_mb_microblaze_0_axi_intc_5.dcp C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiCPU/prj_mb_test/prj_mb_test.srcs/sources_1/bd/design_mb/ip/design_mb_microblaze_0_axi_intc_5/design_mb_microblaze_0_axi_intc_5.dcp
 } _RESULT ] } { 
   send_msg_id runtcl-3 error "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
   error "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
 }
 
 if { [catch {
-  file rename -force C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiprocessor/project_microblaze_test/project_microblaze_test.runs/design_mb_microblaze_0_axi_intc_5_synth_1/design_mb_microblaze_0_axi_intc_5_stub.v c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiprocessor/project_microblaze_test/project_microblaze_test.srcs/sources_1/bd/design_mb/ip/design_mb_microblaze_0_axi_intc_5/design_mb_microblaze_0_axi_intc_5_stub.v
+  file rename -force C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiCPU/prj_mb_test/prj_mb_test.runs/design_mb_microblaze_0_axi_intc_5_synth_1/design_mb_microblaze_0_axi_intc_5_stub.v C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiCPU/prj_mb_test/prj_mb_test.srcs/sources_1/bd/design_mb/ip/design_mb_microblaze_0_axi_intc_5/design_mb_microblaze_0_axi_intc_5_stub.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a Verilog synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-  file rename -force C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiprocessor/project_microblaze_test/project_microblaze_test.runs/design_mb_microblaze_0_axi_intc_5_synth_1/design_mb_microblaze_0_axi_intc_5_stub.vhdl c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiprocessor/project_microblaze_test/project_microblaze_test.srcs/sources_1/bd/design_mb/ip/design_mb_microblaze_0_axi_intc_5/design_mb_microblaze_0_axi_intc_5_stub.vhdl
+  file rename -force C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiCPU/prj_mb_test/prj_mb_test.runs/design_mb_microblaze_0_axi_intc_5_synth_1/design_mb_microblaze_0_axi_intc_5_stub.vhdl C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiCPU/prj_mb_test/prj_mb_test.srcs/sources_1/bd/design_mb/ip/design_mb_microblaze_0_axi_intc_5/design_mb_microblaze_0_axi_intc_5_stub.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a VHDL synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-  file rename -force C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiprocessor/project_microblaze_test/project_microblaze_test.runs/design_mb_microblaze_0_axi_intc_5_synth_1/design_mb_microblaze_0_axi_intc_5_sim_netlist.v c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiprocessor/project_microblaze_test/project_microblaze_test.srcs/sources_1/bd/design_mb/ip/design_mb_microblaze_0_axi_intc_5/design_mb_microblaze_0_axi_intc_5_sim_netlist.v
+  file rename -force C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiCPU/prj_mb_test/prj_mb_test.runs/design_mb_microblaze_0_axi_intc_5_synth_1/design_mb_microblaze_0_axi_intc_5_sim_netlist.v C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiCPU/prj_mb_test/prj_mb_test.srcs/sources_1/bd/design_mb/ip/design_mb_microblaze_0_axi_intc_5/design_mb_microblaze_0_axi_intc_5_sim_netlist.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the Verilog functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
 
 if { [catch {
-  file rename -force C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiprocessor/project_microblaze_test/project_microblaze_test.runs/design_mb_microblaze_0_axi_intc_5_synth_1/design_mb_microblaze_0_axi_intc_5_sim_netlist.vhdl c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiprocessor/project_microblaze_test/project_microblaze_test.srcs/sources_1/bd/design_mb/ip/design_mb_microblaze_0_axi_intc_5/design_mb_microblaze_0_axi_intc_5_sim_netlist.vhdl
+  file rename -force C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiCPU/prj_mb_test/prj_mb_test.runs/design_mb_microblaze_0_axi_intc_5_synth_1/design_mb_microblaze_0_axi_intc_5_sim_netlist.vhdl C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiCPU/prj_mb_test/prj_mb_test.srcs/sources_1/bd/design_mb/ip/design_mb_microblaze_0_axi_intc_5/design_mb_microblaze_0_axi_intc_5_sim_netlist.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the VHDL functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
 
 }; # end if cached_ip 
 
-if {[file isdir C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiprocessor/project_microblaze_test/project_microblaze_test.ip_user_files/ip/design_mb_microblaze_0_axi_intc_5]} {
+if {[file isdir C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiCPU/prj_mb_test/prj_mb_test.ip_user_files/ip/design_mb_microblaze_0_axi_intc_5]} {
   catch { 
-    file copy -force c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiprocessor/project_microblaze_test/project_microblaze_test.srcs/sources_1/bd/design_mb/ip/design_mb_microblaze_0_axi_intc_5/design_mb_microblaze_0_axi_intc_5_stub.v C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiprocessor/project_microblaze_test/project_microblaze_test.ip_user_files/ip/design_mb_microblaze_0_axi_intc_5
+    file copy -force C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiCPU/prj_mb_test/prj_mb_test.srcs/sources_1/bd/design_mb/ip/design_mb_microblaze_0_axi_intc_5/design_mb_microblaze_0_axi_intc_5_stub.v C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiCPU/prj_mb_test/prj_mb_test.ip_user_files/ip/design_mb_microblaze_0_axi_intc_5
   }
 }
 
-if {[file isdir C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiprocessor/project_microblaze_test/project_microblaze_test.ip_user_files/ip/design_mb_microblaze_0_axi_intc_5]} {
+if {[file isdir C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiCPU/prj_mb_test/prj_mb_test.ip_user_files/ip/design_mb_microblaze_0_axi_intc_5]} {
   catch { 
-    file copy -force c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiprocessor/project_microblaze_test/project_microblaze_test.srcs/sources_1/bd/design_mb/ip/design_mb_microblaze_0_axi_intc_5/design_mb_microblaze_0_axi_intc_5_stub.vhdl C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiprocessor/project_microblaze_test/project_microblaze_test.ip_user_files/ip/design_mb_microblaze_0_axi_intc_5
+    file copy -force C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiCPU/prj_mb_test/prj_mb_test.srcs/sources_1/bd/design_mb/ip/design_mb_microblaze_0_axi_intc_5/design_mb_microblaze_0_axi_intc_5_stub.vhdl C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiCPU/prj_mb_test/prj_mb_test.ip_user_files/ip/design_mb_microblaze_0_axi_intc_5
   }
 }
 file delete __synthesis_is_running__

@@ -6,6 +6,7 @@ BEGIN OS
  PARAMETER OS_NAME = standalone
  PARAMETER OS_VER = 7.0
  PARAMETER PROC_INSTANCE = microblaze_0
+ PARAMETER sleep_timer = axi_timer_0
  PARAMETER stdin = ps7_uart_1
  PARAMETER stdout = ps7_uart_1
 END
@@ -18,6 +19,12 @@ BEGIN PROCESSOR
  PARAMETER compiler_flags =  -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-mul -mno-xl-reorder -mcpu=v11.0
 END
 
+
+BEGIN DRIVER
+ PARAMETER DRIVER_NAME = tmrctr
+ PARAMETER DRIVER_VER = 4.5
+ PARAMETER HW_INSTANCE = axi_timer_0
+END
 
 BEGIN DRIVER
  PARAMETER DRIVER_NAME = uartlite

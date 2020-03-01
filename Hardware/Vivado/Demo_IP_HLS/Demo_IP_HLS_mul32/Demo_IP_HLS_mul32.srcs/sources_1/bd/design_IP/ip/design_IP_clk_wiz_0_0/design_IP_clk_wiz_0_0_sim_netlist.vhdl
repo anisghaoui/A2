@@ -1,10 +1,10 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.1.3 (win64) Build 2644227 Wed Sep  4 09:45:24 MDT 2019
--- Date        : Thu Feb 27 20:44:24 2020
+-- Date        : Fri Feb 28 21:02:19 2020
 -- Host        : Qlala-Blade running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
---               C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul32/Demo_IP_HLS_mul32.srcs/sources_1/bd/design_IP/ip/design_IP_clk_wiz_0_0/design_IP_clk_wiz_0_0_sim_netlist.vhdl
+--               C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul32/Demo_IP_HLS_mul32.srcs/sources_1/bd/design_IP/ip/design_IP_clk_wiz_0_0/design_IP_clk_wiz_0_0_sim_netlist.vhdl
 -- Design      : design_IP_clk_wiz_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -18,7 +18,7 @@ entity design_IP_clk_wiz_0_0_design_IP_clk_wiz_0_0_clk_wiz is
   port (
     AXI_CLK : out STD_LOGIC;
     HLS_CLK : out STD_LOGIC;
-    resetn : in STD_LOGIC;
+    reset : in STD_LOGIC;
     locked : out STD_LOGIC;
     clk_in1 : in STD_LOGIC
   );
@@ -32,7 +32,6 @@ architecture STRUCTURE of design_IP_clk_wiz_0_0_design_IP_clk_wiz_0_0_clk_wiz is
   signal clk_in1_design_IP_clk_wiz_0_0 : STD_LOGIC;
   signal clkfbout_buf_design_IP_clk_wiz_0_0 : STD_LOGIC;
   signal clkfbout_design_IP_clk_wiz_0_0 : STD_LOGIC;
-  signal reset_high : STD_LOGIC;
   signal NLW_mmcm_adv_inst_CLKFBOUTB_UNCONNECTED : STD_LOGIC;
   signal NLW_mmcm_adv_inst_CLKFBSTOPPED_UNCONNECTED : STD_LOGIC;
   signal NLW_mmcm_adv_inst_CLKINSTOPPED_UNCONNECTED : STD_LOGIC;
@@ -96,7 +95,7 @@ mmcm_adv_inst: unisim.vcomponents.MMCME2_ADV
       CLKOUT0_DUTY_CYCLE => 0.500000,
       CLKOUT0_PHASE => 0.000000,
       CLKOUT0_USE_FINE_PS => false,
-      CLKOUT1_DIVIDE => 10,
+      CLKOUT1_DIVIDE => 8,
       CLKOUT1_DUTY_CYCLE => 0.500000,
       CLKOUT1_PHASE => 0.000000,
       CLKOUT1_USE_FINE_PS => false,
@@ -168,15 +167,7 @@ mmcm_adv_inst: unisim.vcomponents.MMCME2_ADV
       PSEN => '0',
       PSINCDEC => '0',
       PWRDWN => '0',
-      RST => reset_high
-    );
-mmcm_adv_inst_i_1: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"1"
-    )
-        port map (
-      I0 => resetn,
-      O => reset_high
+      RST => reset
     );
 end STRUCTURE;
 library IEEE;
@@ -187,7 +178,7 @@ entity design_IP_clk_wiz_0_0 is
   port (
     AXI_CLK : out STD_LOGIC;
     HLS_CLK : out STD_LOGIC;
-    resetn : in STD_LOGIC;
+    reset : in STD_LOGIC;
     locked : out STD_LOGIC;
     clk_in1 : in STD_LOGIC
   );
@@ -203,6 +194,6 @@ inst: entity work.design_IP_clk_wiz_0_0_design_IP_clk_wiz_0_0_clk_wiz
       HLS_CLK => HLS_CLK,
       clk_in1 => clk_in1,
       locked => locked,
-      resetn => resetn
+      reset => reset
     );
 end STRUCTURE;

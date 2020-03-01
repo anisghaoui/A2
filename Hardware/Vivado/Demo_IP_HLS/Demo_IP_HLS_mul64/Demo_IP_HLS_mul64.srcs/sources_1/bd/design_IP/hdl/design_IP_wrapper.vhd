@@ -1,7 +1,7 @@
 --Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2019.1.3 (win64) Build 2644227 Wed Sep  4 09:45:24 MDT 2019
---Date        : Thu Feb 27 20:34:23 2020
+--Date        : Sun Mar  1 02:04:38 2020
 --Host        : Qlala-Blade running 64-bit major release  (build 9200)
 --Command     : generate_target design_IP_wrapper.bd
 --Design      : design_IP_wrapper
@@ -41,7 +41,6 @@ end design_IP_wrapper;
 architecture STRUCTURE of design_IP_wrapper is
   component design_IP is
   port (
-    leds_8bits_tri_o : out STD_LOGIC_VECTOR ( 7 downto 0 );
     DDR_cas_n : inout STD_LOGIC;
     DDR_cke : inout STD_LOGIC;
     DDR_ck_n : inout STD_LOGIC;
@@ -57,6 +56,7 @@ architecture STRUCTURE of design_IP_wrapper is
     DDR_dq : inout STD_LOGIC_VECTOR ( 31 downto 0 );
     DDR_dqs_n : inout STD_LOGIC_VECTOR ( 3 downto 0 );
     DDR_dqs_p : inout STD_LOGIC_VECTOR ( 3 downto 0 );
+    leds_8bits_tri_o : out STD_LOGIC_VECTOR ( 7 downto 0 );
     FIXED_IO_mio : inout STD_LOGIC_VECTOR ( 53 downto 0 );
     FIXED_IO_ddr_vrn : inout STD_LOGIC;
     FIXED_IO_ddr_vrp : inout STD_LOGIC;

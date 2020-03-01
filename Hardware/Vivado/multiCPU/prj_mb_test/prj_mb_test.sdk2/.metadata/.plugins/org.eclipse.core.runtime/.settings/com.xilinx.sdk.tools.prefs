@@ -1,0 +1,13 @@
+com.xilinx.sdk.linkgen.prefs.micro_hello\:.bss=ps7_ddr_0_HP0_AXI_BASENAME
+com.xilinx.sdk.linkgen.prefs.micro_hello\:.data=ps7_ddr_0_HP0_AXI_BASENAME
+com.xilinx.sdk.linkgen.prefs.micro_hello\:.rodata=ps7_ddr_0_HP0_AXI_BASENAME
+com.xilinx.sdk.linkgen.prefs.micro_hello\:.sbss=ps7_ddr_0_HP0_AXI_BASENAME
+com.xilinx.sdk.linkgen.prefs.micro_hello\:.sbss2=ps7_ddr_0_HP0_AXI_BASENAME
+com.xilinx.sdk.linkgen.prefs.micro_hello\:.sdata=ps7_ddr_0_HP0_AXI_BASENAME
+com.xilinx.sdk.linkgen.prefs.micro_hello\:.sdata2=ps7_ddr_0_HP0_AXI_BASENAME
+com.xilinx.sdk.linkgen.prefs.micro_hello\:.text=ps7_ddr_0_HP0_AXI_BASENAME
+com.xilinx.sdk.linkgen.prefs.micro_hello\:heap=ps7_ddr_0_HP0_AXI_BASENAME
+com.xilinx.sdk.linkgen.prefs.micro_hello\:heap-size=1024
+com.xilinx.sdk.linkgen.prefs.micro_hello\:stack=ps7_ddr_0_HP0_AXI_BASENAME
+com.xilinx.sdk.linkgen.prefs.micro_hello\:stack-size=1024
+eclipse.preferences.version=1

@@ -1,7 +1,7 @@
 --Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2019.1.3 (win64) Build 2644227 Wed Sep  4 09:45:24 MDT 2019
---Date        : Thu Feb 27 22:34:34 2020
+--Date        : Sat Feb 29 17:32:01 2020
 --Host        : Qlala-Blade running 64-bit major release  (build 9200)
 --Command     : generate_target design_mb_wrapper.bd
 --Design      : design_mb_wrapper

@@ -57,7 +57,7 @@
 //   Clock     Freq (MHz)  (degrees)    (%)     Jitter (ps)  Error (ps)
 //----------------------------------------------------------------------------
 // _AXI_CLK___100.000______0.000______50.0______130.958_____98.575
-// _HLS_CLK___100.000______0.000______50.0______130.958_____98.575
+// _HLS_CLK___125.000______0.000______50.0______125.247_____98.575
 //
 //----------------------------------------------------------------------------
 // Input Clock   Freq (MHz)    Input Jitter (UI)
@@ -73,7 +73,7 @@ module design_IP_clk_wiz_0_0_clk_wiz
   output        AXI_CLK,
   output        HLS_CLK,
   // Status and control signals
-  input         resetn,
+  input         reset,
   output        locked,
   input         clk_in1
  );
@@ -136,7 +136,7 @@ wire clk_in2_design_IP_clk_wiz_0_0;
     .CLKOUT0_PHASE        (0.000),
     .CLKOUT0_DUTY_CYCLE   (0.500),
     .CLKOUT0_USE_FINE_PS  ("FALSE"),
-    .CLKOUT1_DIVIDE       (10),
+    .CLKOUT1_DIVIDE       (8),
     .CLKOUT1_PHASE        (0.000),
     .CLKOUT1_DUTY_CYCLE   (0.500),
     .CLKOUT1_USE_FINE_PS  ("FALSE"),
@@ -182,7 +182,7 @@ wire clk_in2_design_IP_clk_wiz_0_0;
     .CLKFBSTOPPED        (clkfbstopped_unused),
     .PWRDWN              (1'b0),
     .RST                 (reset_high));
-  assign reset_high = ~resetn; 
+  assign reset_high = reset; 
 
   assign locked = locked_int;
 // Clock Monitor clock assigning

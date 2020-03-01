@@ -1,7 +1,7 @@
 connect -url tcp:127.0.0.1:3121
-source C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiprocessor/project_microblaze_test/project_microblaze_test.sdk/design_mb_wrapper_hw_platform_0/ps7_init.tcl
+source C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiCPU/prj_mb_test/prj_mb_test.sdk/design_mb_wrapper_hw_platform_0/ps7_init.tcl
 targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248686847"} -index 0
-loadhw -hw C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiprocessor/project_microblaze_test/project_microblaze_test.sdk/design_mb_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+loadhw -hw C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiCPU/prj_mb_test/prj_mb_test.sdk/design_mb_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
 configparams force-mem-access 1
 targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248686847"} -index 0
 stop
@@ -11,7 +11,7 @@ configparams mdm-detect-bscan-mask 2
 targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248686847"} -index 1
 rst -processor
 targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248686847"} -index 1
-dow C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiprocessor/project_microblaze_test/project_microblaze_test.sdk/micro_hello/Debug/micro_hello.elf
+dow C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiCPU/prj_mb_test/prj_mb_test.sdk/micro_hello/Debug/micro_hello.elf
 configparams force-mem-access 0
 targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248686847"} -index 1
 con

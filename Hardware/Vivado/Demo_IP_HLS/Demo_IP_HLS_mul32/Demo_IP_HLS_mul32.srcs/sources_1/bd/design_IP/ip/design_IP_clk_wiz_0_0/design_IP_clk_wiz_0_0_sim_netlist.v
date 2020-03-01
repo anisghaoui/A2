@@ -1,10 +1,10 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.1.3 (win64) Build 2644227 Wed Sep  4 09:45:24 MDT 2019
-// Date        : Thu Feb 27 20:44:24 2020
+// Date        : Fri Feb 28 21:02:19 2020
 // Host        : Qlala-Blade running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
-//               C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul32/Demo_IP_HLS_mul32.srcs/sources_1/bd/design_IP/ip/design_IP_clk_wiz_0_0/design_IP_clk_wiz_0_0_sim_netlist.v
+//               C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul32/Demo_IP_HLS_mul32.srcs/sources_1/bd/design_IP/ip/design_IP_clk_wiz_0_0/design_IP_clk_wiz_0_0_sim_netlist.v
 // Design      : design_IP_clk_wiz_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -16,12 +16,12 @@
 module design_IP_clk_wiz_0_0
    (AXI_CLK,
     HLS_CLK,
-    resetn,
+    reset,
     locked,
     clk_in1);
   output AXI_CLK;
   output HLS_CLK;
-  input resetn;
+  input reset;
   output locked;
   input clk_in1;
 
@@ -29,26 +29,26 @@ module design_IP_clk_wiz_0_0
   wire HLS_CLK;
   (* IBUF_LOW_PWR *) wire clk_in1;
   wire locked;
-  wire resetn;
+  wire reset;
 
   design_IP_clk_wiz_0_0_design_IP_clk_wiz_0_0_clk_wiz inst
        (.AXI_CLK(AXI_CLK),
         .HLS_CLK(HLS_CLK),
         .clk_in1(clk_in1),
         .locked(locked),
-        .resetn(resetn));
+        .reset(reset));
 endmodule
 
 (* ORIG_REF_NAME = "design_IP_clk_wiz_0_0_clk_wiz" *) 
 module design_IP_clk_wiz_0_0_design_IP_clk_wiz_0_0_clk_wiz
    (AXI_CLK,
     HLS_CLK,
-    resetn,
+    reset,
     locked,
     clk_in1);
   output AXI_CLK;
   output HLS_CLK;
-  input resetn;
+  input reset;
   output locked;
   input clk_in1;
 
@@ -61,8 +61,7 @@ module design_IP_clk_wiz_0_0_design_IP_clk_wiz_0_0_clk_wiz
   wire clkfbout_buf_design_IP_clk_wiz_0_0;
   wire clkfbout_design_IP_clk_wiz_0_0;
   wire locked;
-  wire reset_high;
-  wire resetn;
+  wire reset;
   wire NLW_mmcm_adv_inst_CLKFBOUTB_UNCONNECTED;
   wire NLW_mmcm_adv_inst_CLKFBSTOPPED_UNCONNECTED;
   wire NLW_mmcm_adv_inst_CLKINSTOPPED_UNCONNECTED;
@@ -112,7 +111,7 @@ module design_IP_clk_wiz_0_0_design_IP_clk_wiz_0_0_clk_wiz
     .CLKOUT0_DUTY_CYCLE(0.500000),
     .CLKOUT0_PHASE(0.000000),
     .CLKOUT0_USE_FINE_PS("FALSE"),
-    .CLKOUT1_DIVIDE(10),
+    .CLKOUT1_DIVIDE(8),
     .CLKOUT1_DUTY_CYCLE(0.500000),
     .CLKOUT1_PHASE(0.000000),
     .CLKOUT1_USE_FINE_PS("FALSE"),
@@ -183,12 +182,7 @@ module design_IP_clk_wiz_0_0_design_IP_clk_wiz_0_0_clk_wiz
         .PSEN(1'b0),
         .PSINCDEC(1'b0),
         .PWRDWN(1'b0),
-        .RST(reset_high));
-  LUT1 #(
-    .INIT(2'h1)) 
-    mmcm_adv_inst_i_1
-       (.I0(resetn),
-        .O(reset_high));
+        .RST(reset));
 endmodule
 `ifndef GLBL
 `define GLBL

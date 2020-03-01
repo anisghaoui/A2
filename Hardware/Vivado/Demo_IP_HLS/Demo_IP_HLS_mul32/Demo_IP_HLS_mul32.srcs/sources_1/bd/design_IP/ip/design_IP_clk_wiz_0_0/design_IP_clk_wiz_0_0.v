@@ -57,7 +57,7 @@
 //   Clock     Freq (MHz)  (degrees)    (%)     Jitter (ps)  Error (ps)
 //----------------------------------------------------------------------------
 // _AXI_CLK___100.000______0.000______50.0______130.958_____98.575
-// _HLS_CLK___100.000______0.000______50.0______130.958_____98.575
+// _HLS_CLK___125.000______0.000______50.0______125.247_____98.575
 //
 //----------------------------------------------------------------------------
 // Input Clock   Freq (MHz)    Input Jitter (UI)
@@ -74,7 +74,7 @@ module design_IP_clk_wiz_0_0
   output        AXI_CLK,
   output        HLS_CLK,
   // Status and control signals
-  input         resetn,
+  input         reset,
   output        locked,
  // Clock in ports
   input         clk_in1
@@ -86,7 +86,7 @@ module design_IP_clk_wiz_0_0
   .AXI_CLK(AXI_CLK),
   .HLS_CLK(HLS_CLK),
   // Status and control signals               
-  .resetn(resetn), 
+  .reset(reset), 
   .locked(locked),
  // Clock in ports
   .clk_in1(clk_in1)

@@ -1,89 +1,4 @@
-21:58:16 **** Build of project micro_hello_bsp ****
-make -k all 
-"Running Make include in microblaze_0/libsrc/bram_v4_3/src"
-make -C microblaze_0/libsrc/bram_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-"Running Make include in microblaze_0/libsrc/cpu_v2_9/src"
-make -C microblaze_0/libsrc/cpu_v2_9/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-"Running Make include in microblaze_0/libsrc/ddrps_v1_0/src"
-make -C microblaze_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-"Running Make include in microblaze_0/libsrc/intc_v3_9/src"
-make -C microblaze_0/libsrc/intc_v3_9/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-"Running Make include in microblaze_0/libsrc/standalone_v7_0/src"
-make -C microblaze_0/libsrc/standalone_v7_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
-make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-"Running Make libs in microblaze_0/libsrc/bram_v4_3/src"
-make -C microblaze_0/libsrc/bram_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-"Compiling bram"
-mb-ar: creating ../../../lib/libxil.a
-"Running Make libs in microblaze_0/libsrc/cpu_v2_9/src"
-make -C microblaze_0/libsrc/cpu_v2_9/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-"Compiling cpu"
-"Running Make libs in microblaze_0/libsrc/ddrps_v1_0/src"
-make -C microblaze_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-"Compiling ddrps"
-"Running Make libs in microblaze_0/libsrc/intc_v3_9/src"
-make -C microblaze_0/libsrc/intc_v3_9/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-"Compiling intc"
-"Running Make libs in microblaze_0/libsrc/standalone_v7_0/src"
-make -C microblaze_0/libsrc/standalone_v7_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-"Compiling standalone";
-microblaze_sleep.c:77:9: note: #pragma message: For the sleep routines, assembly instructions are used
- #pragma message ("For the sleep routines, assembly instructions are used")
-         ^~~~~~~
-"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
-make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-"Compiling uartlite"
-'Finished building libraries'
-21:58:26 **** Build of configuration Debug for project micro_hello ****
-make all 
-'Building file: ../src/helloworld.c'
-'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../micro_hello_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
-'Finished building: ../src/helloworld.c'
-' '
-'Building file: ../src/platform.c'
-'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../micro_hello_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
-'Finished building: ../src/platform.c'
-' '
-'Building target: micro_hello.elf'
-'Invoking: MicroBlaze gcc linker'
-mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../micro_hello_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "micro_hello.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: micro_hello.elf'
-' '
-'Invoking: MicroBlaze Print Size'
-mb-size micro_hello.elf  |tee "micro_hello.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-   2736	    320	   3104	   6160	   1810	micro_hello.elf
-'Finished building: micro_hello.elf.size'
-' '
-21:58:28 **** Auto Build of configuration Debug for project micro_hello ****
-make all 
-make: Nothing to be done for 'all'.
-22:01:05 **** Incremental Build of configuration Debug for project micro_hello ****
-make all 
-make: Nothing to be done for 'all'.
-22:45:37 **** Clean-only build of project micro_hello_bsp ****
-make -k clean 
-make -C microblaze_0/libsrc/bram_v4_3/src -s clean 
-make -C microblaze_0/libsrc/cpu_v2_9/src -s clean 
-make -C microblaze_0/libsrc/ddrps_v1_0/src -s clean 
-make -C microblaze_0/libsrc/emacps_v3_9/src -s clean 
-make -C microblaze_0/libsrc/gpiops_v3_5/src -s clean 
-make -C microblaze_0/libsrc/intc_v3_9/src -s clean 
-make -C microblaze_0/libsrc/qspips_v3_6/src -s clean 
-make -C microblaze_0/libsrc/sdps_v3_7/src -s clean 
-make -C microblaze_0/libsrc/standalone_v7_0/src -s clean 
-make -C microblaze_0/libsrc/uartlite_v3_2/src -s clean 
-make -C microblaze_0/libsrc/uartps_v3_7/src -s clean 
-make -C microblaze_0/libsrc/usbps_v2_4/src -s clean 
-rm -f microblaze_0/lib/libxil.a
-22:45:39 **** Clean-only build of configuration Debug for project micro_hello ****
-make clean 
-rm -rf  ./src/helloworld.o ./src/platform.o  ./src/helloworld.d ./src/platform.d  micro_hello.elf.size  micro_hello.elf
-' '
-22:45:39 **** Build of project micro_hello_bsp ****
+16:24:15 **** Build of project micro_hello_bsp ****
 make -k all 
 "Running Make include in microblaze_0/libsrc/bram_v4_3/src"
 make -C microblaze_0/libsrc/bram_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
@@ -103,6 +18,8 @@ make -C microblaze_0/libsrc/qspips_v3_6/src -s include  "SHELL=CMD" "COMPILER=mb
 make -C microblaze_0/libsrc/sdps_v3_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
 "Running Make include in microblaze_0/libsrc/standalone_v7_0/src"
 make -C microblaze_0/libsrc/standalone_v7_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/tmrctr_v4_5/src"
+make -C microblaze_0/libsrc/tmrctr_v4_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
 "Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
 make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
 "Running Make include in microblaze_0/libsrc/uartps_v3_7/src"
@@ -140,6 +57,9 @@ make -C microblaze_0/libsrc/standalone_v7_0/src -s libs  "SHELL=CMD" "COMPILER=m
 microblaze_sleep.c:77:9: note: #pragma message: For the sleep routines, assembly instructions are used
  #pragma message ("For the sleep routines, assembly instructions are used")
          ^~~~~~~
+"Running Make libs in microblaze_0/libsrc/tmrctr_v4_5/src"
+make -C microblaze_0/libsrc/tmrctr_v4_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling tmrctr"
 "Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
 make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
 "Compiling uartlite"
@@ -150,7 +70,7 @@ make -C microblaze_0/libsrc/uartps_v3_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gc
 make -C microblaze_0/libsrc/usbps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
 "Compiling usbps"
 'Finished building libraries'
-22:45:55 **** Build of configuration Debug for project micro_hello ****
+16:24:32 **** Build of configuration Debug for project micro_hello ****
 make all 
 'Building file: ../src/helloworld.c'
 'Invoking: MicroBlaze gcc compiler'
@@ -173,226 +93,10 @@ mb-size micro_hello.elf  |tee "micro_hello.elf.size"
    2736	    320	   3104	   6160	   1810	micro_hello.elf
 'Finished building: micro_hello.elf.size'
 ' '
-22:46:12 **** Auto Build of project micro_hello_bsp ****
-make -k all 
-"Running Make include in microblaze_0/libsrc/bram_v4_3/src"
-make -C microblaze_0/libsrc/bram_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-"Running Make include in microblaze_0/libsrc/cpu_v2_9/src"
-make -C microblaze_0/libsrc/cpu_v2_9/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-"Running Make include in microblaze_0/libsrc/ddrps_v1_0/src"
-make -C microblaze_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-"Running Make include in microblaze_0/libsrc/emacps_v3_9/src"
-make -C microblaze_0/libsrc/emacps_v3_9/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-"Running Make include in microblaze_0/libsrc/gpiops_v3_5/src"
-make -C microblaze_0/libsrc/gpiops_v3_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-"Running Make include in microblaze_0/libsrc/intc_v3_9/src"
-make -C microblaze_0/libsrc/intc_v3_9/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-"Running Make include in microblaze_0/libsrc/qspips_v3_6/src"
-make -C microblaze_0/libsrc/qspips_v3_6/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-"Running Make include in microblaze_0/libsrc/sdps_v3_7/src"
-make -C microblaze_0/libsrc/sdps_v3_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-"Running Make include in microblaze_0/libsrc/standalone_v7_0/src"
-make -C microblaze_0/libsrc/standalone_v7_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
-make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-"Running Make include in microblaze_0/libsrc/uartps_v3_7/src"
-make -C microblaze_0/libsrc/uartps_v3_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-"Running Make include in microblaze_0/libsrc/usbps_v2_4/src"
-make -C microblaze_0/libsrc/usbps_v2_4/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-"Running Make libs in microblaze_0/libsrc/bram_v4_3/src"
-make -C microblaze_0/libsrc/bram_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-"Compiling bram"
-mb-ar: creating ../../../lib/libxil.a
-"Running Make libs in microblaze_0/libsrc/cpu_v2_9/src"
-make -C microblaze_0/libsrc/cpu_v2_9/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-"Compiling cpu"
-"Running Make libs in microblaze_0/libsrc/ddrps_v1_0/src"
-make -C microblaze_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-"Compiling ddrps"
-"Running Make libs in microblaze_0/libsrc/emacps_v3_9/src"
-make -C microblaze_0/libsrc/emacps_v3_9/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-"Compiling emacps"
-"Running Make libs in microblaze_0/libsrc/gpiops_v3_5/src"
-make -C microblaze_0/libsrc/gpiops_v3_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-"Compiling gpiops"
-"Running Make libs in microblaze_0/libsrc/intc_v3_9/src"
-make -C microblaze_0/libsrc/intc_v3_9/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-"Compiling intc"
-"Running Make libs in microblaze_0/libsrc/qspips_v3_6/src"
-make -C microblaze_0/libsrc/qspips_v3_6/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-"Compiling qspips"
-"Running Make libs in microblaze_0/libsrc/sdps_v3_7/src"
-make -C microblaze_0/libsrc/sdps_v3_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-"Compiling sdps"
-"Running Make libs in microblaze_0/libsrc/standalone_v7_0/src"
-make -C microblaze_0/libsrc/standalone_v7_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-"Compiling standalone";
-microblaze_sleep.c:77:9: note: #pragma message: For the sleep routines, assembly instructions are used
- #pragma message ("For the sleep routines, assembly instructions are used")
-         ^~~~~~~
-"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
-make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-"Compiling uartlite"
-"Running Make libs in microblaze_0/libsrc/uartps_v3_7/src"
-make -C microblaze_0/libsrc/uartps_v3_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-"Compiling uartps"
-"Running Make libs in microblaze_0/libsrc/usbps_v2_4/src"
-make -C microblaze_0/libsrc/usbps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-"Compiling usbps"
-'Finished building libraries'
-22:46:26 **** Auto Build of configuration Debug for project micro_hello ****
-make all 
-'Building file: ../src/helloworld.c'
-'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../micro_hello_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
-'Finished building: ../src/helloworld.c'
-' '
-'Building file: ../src/platform.c'
-'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../micro_hello_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
-'Finished building: ../src/platform.c'
-' '
-'Building target: micro_hello.elf'
-'Invoking: MicroBlaze gcc linker'
-mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../micro_hello_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "micro_hello.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: micro_hello.elf'
-' '
-'Invoking: MicroBlaze Print Size'
-mb-size micro_hello.elf  |tee "micro_hello.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-   2736	    320	   3104	   6160	   1810	micro_hello.elf
-'Finished building: micro_hello.elf.size'
-' '
-22:47:34 **** Incremental Build of configuration Debug for project micro_hello ****
+16:24:35 **** Auto Build of configuration Debug for project micro_hello ****
 make all 
 make: Nothing to be done for 'all'.
-22:47:45 **** Incremental Build of configuration Debug for project micro_hello ****
-make all 
-make: Nothing to be done for 'all'.
-22:52:21 **** Clean-only build of configuration Debug for project micro_hello ****
-make clean 
-rm -rf  ./src/helloworld.o ./src/platform.o  ./src/helloworld.d ./src/platform.d  micro_hello.elf.size  micro_hello.elf
-' '
-22:52:22 **** Auto Build of configuration Debug for project micro_hello ****
-make all 
-'Building file: ../src/helloworld.c'
-'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../micro_hello_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
-'Finished building: ../src/helloworld.c'
-' '
-'Building file: ../src/platform.c'
-'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../micro_hello_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
-'Finished building: ../src/platform.c'
-' '
-'Building target: micro_hello.elf'
-'Invoking: MicroBlaze gcc linker'
-mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../micro_hello_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "micro_hello.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: micro_hello.elf'
-' '
-'Invoking: MicroBlaze Print Size'
-mb-size micro_hello.elf  |tee "micro_hello.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-   2736	    320	   2080	   5136	   1410	micro_hello.elf
-'Finished building: micro_hello.elf.size'
-' '
-22:52:24 **** Incremental Build of configuration Debug for project micro_hello ****
-make all 
-make: Nothing to be done for 'all'.
-22:55:04 **** Build of project zynq_hello_bsp ****
-make -k all 
-"Running Make include in microblaze_0/libsrc/bram_v4_3/src"
-make -C microblaze_0/libsrc/bram_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-"Running Make include in microblaze_0/libsrc/cpu_v2_9/src"
-make -C microblaze_0/libsrc/cpu_v2_9/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-"Running Make include in microblaze_0/libsrc/ddrps_v1_0/src"
-make -C microblaze_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-"Running Make include in microblaze_0/libsrc/emacps_v3_9/src"
-make -C microblaze_0/libsrc/emacps_v3_9/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-"Running Make include in microblaze_0/libsrc/gpiops_v3_5/src"
-make -C microblaze_0/libsrc/gpiops_v3_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-"Running Make include in microblaze_0/libsrc/intc_v3_9/src"
-make -C microblaze_0/libsrc/intc_v3_9/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-"Running Make include in microblaze_0/libsrc/qspips_v3_6/src"
-make -C microblaze_0/libsrc/qspips_v3_6/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-"Running Make include in microblaze_0/libsrc/sdps_v3_7/src"
-make -C microblaze_0/libsrc/sdps_v3_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-"Running Make include in microblaze_0/libsrc/standalone_v7_0/src"
-make -C microblaze_0/libsrc/standalone_v7_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
-make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-"Running Make include in microblaze_0/libsrc/uartps_v3_7/src"
-make -C microblaze_0/libsrc/uartps_v3_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-"Running Make include in microblaze_0/libsrc/usbps_v2_4/src"
-make -C microblaze_0/libsrc/usbps_v2_4/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-"Running Make libs in microblaze_0/libsrc/bram_v4_3/src"
-make -C microblaze_0/libsrc/bram_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-"Compiling bram"
-mb-ar: creating ../../../lib/libxil.a
-"Running Make libs in microblaze_0/libsrc/cpu_v2_9/src"
-make -C microblaze_0/libsrc/cpu_v2_9/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-"Compiling cpu"
-"Running Make libs in microblaze_0/libsrc/ddrps_v1_0/src"
-make -C microblaze_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-"Compiling ddrps"
-"Running Make libs in microblaze_0/libsrc/emacps_v3_9/src"
-make -C microblaze_0/libsrc/emacps_v3_9/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-"Compiling emacps"
-"Running Make libs in microblaze_0/libsrc/gpiops_v3_5/src"
-make -C microblaze_0/libsrc/gpiops_v3_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-"Compiling gpiops"
-"Running Make libs in microblaze_0/libsrc/intc_v3_9/src"
-make -C microblaze_0/libsrc/intc_v3_9/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-"Compiling intc"
-"Running Make libs in microblaze_0/libsrc/qspips_v3_6/src"
-make -C microblaze_0/libsrc/qspips_v3_6/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-"Compiling qspips"
-"Running Make libs in microblaze_0/libsrc/sdps_v3_7/src"
-make -C microblaze_0/libsrc/sdps_v3_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-"Compiling sdps"
-"Running Make libs in microblaze_0/libsrc/standalone_v7_0/src"
-make -C microblaze_0/libsrc/standalone_v7_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-"Compiling standalone";
-microblaze_sleep.c:77:9: note: #pragma message: For the sleep routines, assembly instructions are used
- #pragma message ("For the sleep routines, assembly instructions are used")
-         ^~~~~~~
-"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
-make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-"Compiling uartlite"
-"Running Make libs in microblaze_0/libsrc/uartps_v3_7/src"
-make -C microblaze_0/libsrc/uartps_v3_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-"Compiling uartps"
-"Running Make libs in microblaze_0/libsrc/usbps_v2_4/src"
-make -C microblaze_0/libsrc/usbps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-"Compiling usbps"
-'Finished building libraries'
-22:55:21 **** Build of configuration Debug for project zynq_hello ****
-make all 
-'Building file: ../src/helloworld.c'
-'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../zynq_hello_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
-'Finished building: ../src/helloworld.c'
-' '
-'Building file: ../src/platform.c'
-'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../zynq_hello_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
-'Finished building: ../src/platform.c'
-' '
-'Building target: zynq_hello.elf'
-'Invoking: MicroBlaze gcc linker'
-mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../zynq_hello_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "zynq_hello.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: zynq_hello.elf'
-' '
-'Invoking: MicroBlaze Print Size'
-mb-size zynq_hello.elf  |tee "zynq_hello.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-   2736	    320	   3104	   6160	   1810	zynq_hello.elf
-'Finished building: zynq_hello.elf.size'
-' '
-22:55:23 **** Auto Build of configuration Debug for project zynq_hello ****
-make all 
-make: Nothing to be done for 'all'.
-22:55:58 **** Build of project zynq_hello_bsp ****
+16:24:47 **** Build of project zynq_hello_bsp ****
 make -k all 
 "Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_5/src"
 make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
@@ -507,41 +211,215 @@ make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-
 make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
 "Compiling xadcps"
 'Finished building libraries'
-22:56:45 **** Build of configuration Debug for project zynq_hello ****
+16:25:28 **** Build of configuration Debug for project zynq_hello ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
-'Building file: ../src/helloworld.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../zynq_hello_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
-'Finished building: ../src/helloworld.c'
+make: *** No rule to make target 'src/helloworld.o', needed by 'zynq_hello.elf'.  Stop.
+16:26:10 **** Auto Build of configuration Debug for project zynq_hello ****
+make pre-build main-build 
+a9-linaro-pre-build-step
 ' '
 'Building file: ../src/platform.c'
 'Invoking: ARM v7 gcc compiler'
 arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../zynq_hello_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
 'Finished building: ../src/platform.c'
 ' '
+'Building file: ../src/zynq_hello.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/zynq_hello.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../zynq_hello_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/zynq_hello.d" -MT"src/zynq_hello.o" -o "src/zynq_hello.o" "../src/zynq_hello.c"
+In file included from ../src/zynq_hello.c:51:
+../../zynq_hello_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+'Finished building: ../src/zynq_hello.c'
+' '
 'Building target: zynq_hello.elf'
 'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../zynq_hello_bsp/ps7_cortexa9_0/lib -o "zynq_hello.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../zynq_hello_bsp/ps7_cortexa9_0/lib -o "zynq_hello.elf"  ./src/platform.o ./src/zynq_hello.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
 'Finished building target: zynq_hello.elf'
 ' '
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size zynq_hello.elf  |tee "zynq_hello.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  19064	   1144	  22568	  42776	   a718	zynq_hello.elf
+  57556	   2584	  23328	  83468	  1460c	zynq_hello.elf
 'Finished building: zynq_hello.elf.size'
 ' '
-22:56:47 **** Auto Build of configuration Debug for project zynq_hello ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-make: Nothing to be done for 'main-build'.
-22:56:56 **** Clean-only build of configuration Debug for project zynq_hello ****
-make clean 
-rm -rf  ./src/helloworld.o ./src/platform.o  ./src/helloworld.d ./src/platform.d  zynq_hello.elf.size  zynq_hello.elf
-' '
-22:56:57 **** Auto Build of configuration Debug for project zynq_hello ****
+16:26:48 **** Auto Build of project zynq_hello_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_5/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_9/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/intc_v3_9/src"
+make -C ps7_cortexa9_0/libsrc/intc_v3_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v4_0/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v4_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/sdps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v7_0/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v7_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ttcps_v3_9/src"
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/uartlite_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_5/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling coresightps_dcc"
+arm-none-eabi-ar: creating ../../../lib/libxil.a
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_9/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_9/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling emacps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling gpiops"
+"Running Make libs in ps7_cortexa9_0/libsrc/intc_v3_9/src"
+make -C ps7_cortexa9_0/libsrc/intc_v3_9/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling intc"
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling qspips"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v4_0/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v4_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/sdps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling sdps"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v7_0/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v7_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/ttcps_v3_9/src"
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_9/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling ttcps"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartlite_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling uartlite"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling usbps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling xadcps"
+'Finished building libraries'
+16:27:30 **** Auto Build of project micro_hello_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_3/src"
+make -C microblaze_0/libsrc/bram_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/cpu_v2_9/src"
+make -C microblaze_0/libsrc/cpu_v2_9/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/ddrps_v1_0/src"
+make -C microblaze_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/emacps_v3_9/src"
+make -C microblaze_0/libsrc/emacps_v3_9/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/gpiops_v3_5/src"
+make -C microblaze_0/libsrc/gpiops_v3_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/intc_v3_9/src"
+make -C microblaze_0/libsrc/intc_v3_9/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/qspips_v3_6/src"
+make -C microblaze_0/libsrc/qspips_v3_6/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/sdps_v3_7/src"
+make -C microblaze_0/libsrc/sdps_v3_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/standalone_v7_0/src"
+make -C microblaze_0/libsrc/standalone_v7_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/tmrctr_v4_5/src"
+make -C microblaze_0/libsrc/tmrctr_v4_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/uartps_v3_7/src"
+make -C microblaze_0/libsrc/uartps_v3_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/usbps_v2_4/src"
+make -C microblaze_0/libsrc/usbps_v2_4/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_0/libsrc/bram_v4_3/src"
+make -C microblaze_0/libsrc/bram_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_0/libsrc/cpu_v2_9/src"
+make -C microblaze_0/libsrc/cpu_v2_9/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/ddrps_v1_0/src"
+make -C microblaze_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling ddrps"
+"Running Make libs in microblaze_0/libsrc/emacps_v3_9/src"
+make -C microblaze_0/libsrc/emacps_v3_9/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling emacps"
+"Running Make libs in microblaze_0/libsrc/gpiops_v3_5/src"
+make -C microblaze_0/libsrc/gpiops_v3_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling gpiops"
+"Running Make libs in microblaze_0/libsrc/intc_v3_9/src"
+make -C microblaze_0/libsrc/intc_v3_9/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling intc"
+"Running Make libs in microblaze_0/libsrc/qspips_v3_6/src"
+make -C microblaze_0/libsrc/qspips_v3_6/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling qspips"
+"Running Make libs in microblaze_0/libsrc/sdps_v3_7/src"
+make -C microblaze_0/libsrc/sdps_v3_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling sdps"
+"Running Make libs in microblaze_0/libsrc/standalone_v7_0/src"
+make -C microblaze_0/libsrc/standalone_v7_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+microblaze_sleep.c:72:2: warning: #warning "May wait for more than the specified delay" [-Wcpp]
+ #warning "May wait for more than the specified delay"
+  ^~~~~~~
+"Running Make libs in microblaze_0/libsrc/tmrctr_v4_5/src"
+make -C microblaze_0/libsrc/tmrctr_v4_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling tmrctr"
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling uartlite"
+"Running Make libs in microblaze_0/libsrc/uartps_v3_7/src"
+make -C microblaze_0/libsrc/uartps_v3_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling uartps"
+"Running Make libs in microblaze_0/libsrc/usbps_v2_4/src"
+make -C microblaze_0/libsrc/usbps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling usbps"
+'Finished building libraries'
+16:27:46 **** Auto Build of configuration Debug for project micro_hello ****
+make all 
+make: *** No rule to make target '../src/helloworld.c', needed by 'src/helloworld.o'.  Stop.
+16:27:47 **** Auto Build of configuration Debug for project zynq_hello ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
@@ -563,43 +441,216 @@ arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=non
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size zynq_hello.elf  |tee "zynq_hello.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  19064	   1144	  22568	  42776	   a718	zynq_hello.elf
+  57556	   2584	  23328	  83468	  1460c	zynq_hello.elf
 'Finished building: zynq_hello.elf.size'
 ' '
-22:57:06 **** Auto Build of configuration Debug for project zynq_hello ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/zynq_hello.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/zynq_hello.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../zynq_hello_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/zynq_hello.d" -MT"src/zynq_hello.o" -o "src/zynq_hello.o" "../src/zynq_hello.c"
-'Finished building: ../src/zynq_hello.c'
-' '
-'Building target: zynq_hello.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../zynq_hello_bsp/ps7_cortexa9_0/lib -o "zynq_hello.elf"  ./src/platform.o ./src/zynq_hello.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: zynq_hello.elf'
-' '
-'Invoking: ARM v7 Print Size'
-arm-none-eabi-size zynq_hello.elf  |tee "zynq_hello.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  19068	   1144	  22568	  42780	   a71c	zynq_hello.elf
-'Finished building: zynq_hello.elf.size'
-' '
-22:57:32 **** Incremental Build of configuration Debug for project zynq_hello ****
+16:27:48 **** Auto Build of configuration Debug for project zynq_hello ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
 make: Nothing to be done for 'main-build'.
-22:57:57 **** Clean-only build of configuration Debug for project micro_hello ****
-make clean 
-rm -rf  ./src/helloworld.o ./src/platform.o  ./src/helloworld.d ./src/platform.d  micro_hello.elf.size  micro_hello.elf
+16:28:24 **** Auto Build of configuration Debug for project micro_hello ****
+make all 
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../micro_hello_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
 ' '
-22:57:58 **** Auto Build of configuration Debug for project micro_hello ****
+'Building file: ../src/micro_hello.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/micro_hello.o" -I../../micro_hello_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/micro_hello.d" -MT"src/micro_hello.o" -o "src/micro_hello.o" "../src/micro_hello.c"
+../src/micro_hello.c:51:10: fatal error: xtime_l.h: No such file or directory
+ #include "xtime_l.h"
+          ^~~~~~~~~~~
+compilation terminated.
+make: *** [src/subdir.mk:23: src/micro_hello.o] Error 1
+16:29:25 **** Auto Build of configuration Debug for project micro_hello ****
 make all 
 'Building file: ../src/micro_hello.c'
 'Invoking: MicroBlaze gcc compiler'
 mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/micro_hello.o" -I../../micro_hello_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/micro_hello.d" -MT"src/micro_hello.o" -o "src/micro_hello.o" "../src/micro_hello.c"
+../src/micro_hello.c: In function 'main':
+../src/micro_hello.c:55:2: error: unknown type name 'XTime'
+  XTime Start_Time, End_Time, ExecTimeInTicks;
+  ^~~~~
+../src/micro_hello.c:60:5: warning: implicit declaration of function 'XTime_GetTime' [-Wimplicit-function-declaration]
+     XTime_GetTime((XTime *) &Start_Time);
+     ^~~~~~~~~~~~~
+../src/micro_hello.c:60:20: error: 'XTime' undeclared (first use in this function); did you mean 'End_Time'?
+     XTime_GetTime((XTime *) &Start_Time);
+                    ^~~~~
+                    End_Time
+../src/micro_hello.c:60:20: note: each undeclared identifier is reported only once for each function it appears in
+../src/micro_hello.c:60:27: error: expected expression before ')' token
+     XTime_GetTime((XTime *) &Start_Time);
+                           ^
+../src/micro_hello.c:61:27: error: expected expression before ')' token
+     XTime_GetTime((XTime *) &End_Time);
+                           ^
+../src/micro_hello.c:65:61: error: 'COUNTS_PER_SECOND' undeclared (first use in this function)
+     double SWelapsedInUs = 1.0 * (End_Time - Start_Time) / (COUNTS_PER_SECOND/1000000);
+                                                             ^~~~~~~~~~~~~~~~~
+../src/micro_hello.c:66:37: warning: format '%lld' expects argument of type 'long long int', but argument 2 has type 'int' [-Wformat=]
+     printf("(main SW) ExecTime = %lld unit (%.5f useconds)\n", ExecTimeInTicks,
+                                  ~~~^                          ~~~~~~~~~~~~~~~
+                                  %d
+make: *** [src/subdir.mk:23: src/micro_hello.o] Error 1
+16:29:51 **** Auto Build of configuration Debug for project micro_hello ****
+make all 
+make: *** No rule to make target '../../micro_hello_bsp/microblaze_0/include/xtmrctr.h ../../micro_hello_bsp/microblaze_0/include/xil_assert.h', needed by 'src/micro_hello.o'.  Stop.
+16:30:04 **** Incremental Build of configuration Debug for project micro_hello ****
+make all 
+make: *** No rule to make target '../../micro_hello_bsp/microblaze_0/include/xtmrctr.h ../../micro_hello_bsp/microblaze_0/include/xil_assert.h', needed by 'src/micro_hello.o'.  Stop.
+16:30:04 **** Incremental Build of configuration Debug for project zynq_hello ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+16:30:58 **** Clean-only build of configuration Debug for project micro_hello ****
+make clean 
+rm -rf  ./src/micro_hello.o ./src/platform.o  ./src/micro_hello.d ./src/platform.d  micro_hello.elf.size  micro_hello.elf
+' '
+16:30:58 **** Auto Build of configuration Debug for project micro_hello ****
+make all 
+'Building file: ../src/micro_hello.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/micro_hello.o" -I../../micro_hello_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/micro_hello.d" -MT"src/micro_hello.o" -o "src/micro_hello.o" "../src/micro_hello.c"
+../src/micro_hello.c: In function 'main':
+../src/micro_hello.c:55:2: error: unknown type name 'XTime'
+  XTime Start_Time, End_Time, ExecTimeInTicks;
+  ^~~~~
+../src/micro_hello.c:60:5: warning: implicit declaration of function 'XTime_GetTime' [-Wimplicit-function-declaration]
+     XTime_GetTime((XTime *) &Start_Time);
+     ^~~~~~~~~~~~~
+../src/micro_hello.c:60:20: error: 'XTime' undeclared (first use in this function); did you mean 'End_Time'?
+     XTime_GetTime((XTime *) &Start_Time);
+                    ^~~~~
+                    End_Time
+../src/micro_hello.c:60:20: note: each undeclared identifier is reported only once for each function it appears in
+../src/micro_hello.c:60:27: error: expected expression before ')' token
+     XTime_GetTime((XTime *) &Start_Time);
+                           ^
+../src/micro_hello.c:61:27: error: expected expression before ')' token
+     XTime_GetTime((XTime *) &End_Time);
+                           ^
+../src/micro_hello.c:65:61: error: 'COUNTS_PER_SECOND' undeclared (first use in this function)
+     double SWelapsedInUs = 1.0 * (End_Time - Start_Time) / (COUNTS_PER_SECOND/1000000);
+                                                             ^~~~~~~~~~~~~~~~~
+../src/micro_hello.c:66:37: warning: format '%lld' expects argument of type 'long long int', but argument 2 has type 'int' [-Wformat=]
+     printf("(main SW) ExecTime = %lld unit (%.5f useconds)\n", ExecTimeInTicks,
+                                  ~~~^                          ~~~~~~~~~~~~~~~
+                                  %d
+make: *** [src/subdir.mk:26: src/micro_hello.o] Error 1
+16:31:13 **** Incremental Build of configuration Debug for project micro_hello ****
+make all 
+'Building file: ../src/micro_hello.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/micro_hello.o" -I../../micro_hello_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/micro_hello.d" -MT"src/micro_hello.o" -o "src/micro_hello.o" "../src/micro_hello.c"
+../src/micro_hello.c: In function 'main':
+../src/micro_hello.c:55:2: error: unknown type name 'XTime'
+  XTime Start_Time, End_Time, ExecTimeInTicks;
+  ^~~~~
+../src/micro_hello.c:60:5: warning: implicit declaration of function 'XTime_GetTime' [-Wimplicit-function-declaration]
+     XTime_GetTime((XTime *) &Start_Time);
+     ^~~~~~~~~~~~~
+../src/micro_hello.c:60:20: error: 'XTime' undeclared (first use in this function); did you mean 'End_Time'?
+     XTime_GetTime((XTime *) &Start_Time);
+                    ^~~~~
+                    End_Time
+../src/micro_hello.c:60:20: note: each undeclared identifier is reported only once for each function it appears in
+../src/micro_hello.c:60:27: error: expected expression before ')' token
+     XTime_GetTime((XTime *) &Start_Time);
+                           ^
+../src/micro_hello.c:61:27: error: expected expression before ')' token
+     XTime_GetTime((XTime *) &End_Time);
+                           ^
+../src/micro_hello.c:65:61: error: 'COUNTS_PER_SECOND' undeclared (first use in this function)
+     double SWelapsedInUs = 1.0 * (End_Time - Start_Time) / (COUNTS_PER_SECOND/1000000);
+                                                             ^~~~~~~~~~~~~~~~~
+../src/micro_hello.c:66:37: warning: format '%lld' expects argument of type 'long long int', but argument 2 has type 'int' [-Wformat=]
+     printf("(main SW) ExecTime = %lld unit (%.5f useconds)\n", ExecTimeInTicks,
+                                  ~~~^                          ~~~~~~~~~~~~~~~
+                                  %d
+make: *** [src/subdir.mk:26: src/micro_hello.o] Error 1
+16:31:13 **** Incremental Build of configuration Debug for project zynq_hello ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+16:31:55 **** Auto Build of configuration Debug for project micro_hello ****
+make all 
+'Building file: ../src/micro_hello.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/micro_hello.o" -I../../micro_hello_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/micro_hello.d" -MT"src/micro_hello.o" -o "src/micro_hello.o" "../src/micro_hello.c"
+../src/micro_hello.c:52:10: fatal error: xtime_l.h: No such file or directory
+ #include "xtime_l.h"
+          ^~~~~~~~~~~
+compilation terminated.
+make: *** [src/subdir.mk:26: src/micro_hello.o] Error 1
+16:32:15 **** Auto Build of configuration Debug for project micro_hello ****
+make all 
+'Building file: ../src/micro_hello.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/micro_hello.o" -I../../micro_hello_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/micro_hello.d" -MT"src/micro_hello.o" -o "src/micro_hello.o" "../src/micro_hello.c"
+../src/micro_hello.c: In function 'main':
+../src/micro_hello.c:56:2: error: unknown type name 'XTime'
+  XTime Start_Time, End_Time, ExecTimeInTicks;
+  ^~~~~
+../src/micro_hello.c:61:5: warning: implicit declaration of function 'XTime_GetTime' [-Wimplicit-function-declaration]
+     XTime_GetTime((XTime *) &Start_Time);
+     ^~~~~~~~~~~~~
+../src/micro_hello.c:61:20: error: 'XTime' undeclared (first use in this function); did you mean 'End_Time'?
+     XTime_GetTime((XTime *) &Start_Time);
+                    ^~~~~
+                    End_Time
+../src/micro_hello.c:61:20: note: each undeclared identifier is reported only once for each function it appears in
+../src/micro_hello.c:61:27: error: expected expression before ')' token
+     XTime_GetTime((XTime *) &Start_Time);
+                           ^
+../src/micro_hello.c:62:27: error: expected expression before ')' token
+     XTime_GetTime((XTime *) &End_Time);
+                           ^
+../src/micro_hello.c:66:61: error: 'COUNTS_PER_SECOND' undeclared (first use in this function)
+     double SWelapsedInUs = 1.0 * (End_Time - Start_Time) / (COUNTS_PER_SECOND/1000000);
+                                                             ^~~~~~~~~~~~~~~~~
+../src/micro_hello.c:67:37: warning: format '%lld' expects argument of type 'long long int', but argument 2 has type 'int' [-Wformat=]
+     printf("(main SW) ExecTime = %lld unit (%.5f useconds)\n", ExecTimeInTicks,
+                                  ~~~^                          ~~~~~~~~~~~~~~~
+                                  %d
+make: *** [src/subdir.mk:26: src/micro_hello.o] Error 1
+16:35:45 **** Auto Build of configuration Debug for project micro_hello ****
+make all 
+'Building file: ../src/micro_hello.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/micro_hello.o" -I../../micro_hello_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/micro_hello.d" -MT"src/micro_hello.o" -o "src/micro_hello.o" "../src/micro_hello.c"
+../src/micro_hello.c: In function 'main':
+../src/micro_hello.c:61:16: warning: implicit declaration of function 'XTmrCtr_mGetTimerCounterReg'; did you mean 'XTmrCtr_GetTimerCounterReg'? [-Wimplicit-function-declaration]
+     Start_Time=XTmrCtr_mGetTimerCounterReg(XPAR_TMRCTR_0_BASEADDR,1);
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+                XTmrCtr_GetTimerCounterReg
+../src/micro_hello.c:65:5: error: 'COUNTS_PER_SECOND' undeclared (first use in this function)
+     COUNTS_PER_SECOND=1000;
+     ^~~~~~~~~~~~~~~~~
+../src/micro_hello.c:65:5: note: each undeclared identifier is reported only once for each function it appears in
+../src/micro_hello.c:68:37: warning: format '%lld' expects argument of type 'long long int', but argument 2 has type 'u32' {aka 'long unsigned int'} [-Wformat=]
+     printf("(main SW) ExecTime = %lld unit (%.5f useconds)\n", ExecTimeInTicks,
+                                  ~~~^                          ~~~~~~~~~~~~~~~
+                                  %ld
+make: *** [src/subdir.mk:26: src/micro_hello.o] Error 1
+16:35:52 **** Auto Build of configuration Debug for project micro_hello ****
+make all 
+'Building file: ../src/micro_hello.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/micro_hello.o" -I../../micro_hello_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/micro_hello.d" -MT"src/micro_hello.o" -o "src/micro_hello.o" "../src/micro_hello.c"
+../src/micro_hello.c: In function 'main':
+../src/micro_hello.c:61:16: warning: implicit declaration of function 'XTmrCtr_mGetTimerCounterReg'; did you mean 'XTmrCtr_GetTimerCounterReg'? [-Wimplicit-function-declaration]
+     Start_Time=XTmrCtr_mGetTimerCounterReg(XPAR_TMRCTR_0_BASEADDR,1);
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+                XTmrCtr_GetTimerCounterReg
+../src/micro_hello.c:68:37: warning: format '%lld' expects argument of type 'long long int', but argument 2 has type 'u32' {aka 'long unsigned int'} [-Wformat=]
+     printf("(main SW) ExecTime = %lld unit (%.5f useconds)\n", ExecTimeInTicks,
+                                  ~~~^                          ~~~~~~~~~~~~~~~
+                                  %ld
 'Finished building: ../src/micro_hello.c'
 ' '
 'Building file: ../src/platform.c'
@@ -610,19 +661,327 @@ mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../micro_hel
 'Building target: micro_hello.elf'
 'Invoking: MicroBlaze gcc linker'
 mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../micro_hello_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "micro_hello.elf"  ./src/micro_hello.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: micro_hello.elf'
-' '
-'Invoking: MicroBlaze Print Size'
-mb-size micro_hello.elf  |tee "micro_hello.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-   2736	    320	   2080	   5136	   1410	micro_hello.elf
-'Finished building: micro_hello.elf.size'
-' '
-22:58:06 **** Auto Build of configuration Debug for project micro_hello ****
+c:/xilinx/sdk/2019.1/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/8.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: ./src/micro_hello.o: in function `main':
+C:\Users\Qlala\Documents\M2_SETI\A2\git\A2\Hardware\Vivado\multiCPU\prj_mb_test\prj_mb_test.sdk\micro_hello\Debug/../src/micro_hello.c:61: undefined reference to `XTmrCtr_mGetTimerCounterReg'
+c:/xilinx/sdk/2019.1/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/8.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: C:\Users\Qlala\Documents\M2_SETI\A2\git\A2\Hardware\Vivado\multiCPU\prj_mb_test\prj_mb_test.sdk\micro_hello\Debug/../src/micro_hello.c:62: undefined reference to `XTmrCtr_mGetTimerCounterReg'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:38: micro_hello.elf] Error 1
+16:36:10 **** Auto Build of configuration Debug for project micro_hello ****
 make all 
 'Building file: ../src/micro_hello.c'
 'Invoking: MicroBlaze gcc compiler'
 mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/micro_hello.o" -I../../micro_hello_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/micro_hello.d" -MT"src/micro_hello.o" -o "src/micro_hello.o" "../src/micro_hello.c"
+../src/micro_hello.c: In function 'main':
+../src/micro_hello.c:61:16: warning: implicit declaration of function 'XTmrCtr_mGetTimerCounterReg'; did you mean 'XTmrCtr_GetTimerCounterReg'? [-Wimplicit-function-declaration]
+     Start_Time=XTmrCtr_mGetTimerCounterReg(XPAR_TMRCTR_0_BASEADDR,1);
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+                XTmrCtr_GetTimerCounterReg
+../src/micro_hello.c:68:37: warning: format '%lld' expects argument of type 'long long int', but argument 2 has type 'u32' {aka 'long unsigned int'} [-Wformat=]
+     printf("(main SW) ExecTime = %lld unit (%.5f useconds)\n", ExecTimeInTicks,
+                                  ~~~^                          ~~~~~~~~~~~~~~~
+                                  %ld
+'Finished building: ../src/micro_hello.c'
+' '
+'Building target: micro_hello.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../micro_hello_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "micro_hello.elf"  ./src/micro_hello.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2019.1/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/8.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: ./src/micro_hello.o: in function `main':
+C:\Users\Qlala\Documents\M2_SETI\A2\git\A2\Hardware\Vivado\multiCPU\prj_mb_test\prj_mb_test.sdk\micro_hello\Debug/../src/micro_hello.c:61: undefined reference to `XTmrCtr_mGetTimerCounterReg'
+c:/xilinx/sdk/2019.1/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/8.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: C:\Users\Qlala\Documents\M2_SETI\A2\git\A2\Hardware\Vivado\multiCPU\prj_mb_test\prj_mb_test.sdk\micro_hello\Debug/../src/micro_hello.c:62: undefined reference to `XTmrCtr_mGetTimerCounterReg'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:38: micro_hello.elf] Error 1
+16:39:39 **** Auto Build of configuration Debug for project micro_hello ****
+make all 
+'Building file: ../src/micro_hello.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/micro_hello.o" -I../../micro_hello_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/micro_hello.d" -MT"src/micro_hello.o" -o "src/micro_hello.o" "../src/micro_hello.c"
+../src/micro_hello.c: In function 'main':
+../src/micro_hello.c:61:5: error: unknown type name 'XTmrCtr'
+     XTmrCtr xps_timer_0;
+     ^~~~~~~
+../src/micro_hello.c:62:9: error: unknown type name 'XTmrCtr'
+         XTmrCtr* timer_0 = &xps_timer_0;
+         ^~~~~~~
+../src/micro_hello.c:63:9: error: unknown type name 'XStatus'
+         XStatus Status;
+         ^~~~~~~
+../src/micro_hello.c:64:8: error: unknown type name 'Xuint32'; did you mean 'sint32'?
+        Xuint32 BeginTime;
+        ^~~~~~~
+        sint32
+../src/micro_hello.c:65:9: error: unknown type name 'Xuint32'; did you mean 'sint32'?
+         Xuint32 EndTime;
+         ^~~~~~~
+         sint32
+../src/micro_hello.c:66:9: error: unknown type name 'Xuint32'; did you mean 'sint32'?
+         Xuint32 Calibration;
+         ^~~~~~~
+         sint32
+../src/micro_hello.c:67:9: error: unknown type name 'Xuint32'; did you mean 'sint32'?
+         Xuint32 TimeRun;
+         ^~~~~~~
+         sint32
+../src/micro_hello.c:71:19: warning: implicit declaration of function 'XTmrCtr_GetValue'; did you mean 'XTmrCtr_GetLoadReg'? [-Wimplicit-function-declaration]
+       BeginTime = XTmrCtr_GetValue(timer_0, XPAR_XPS_TIMER_0_DEVICE_ID);
+                   ^~~~~~~~~~~~~~~~
+                   XTmrCtr_GetLoadReg
+../src/micro_hello.c:71:45: error: 'XPAR_XPS_TIMER_0_DEVICE_ID' undeclared (first use in this function); did you mean 'XPAR_AXI_TIMER_0_DEVICE_ID'?
+       BeginTime = XTmrCtr_GetValue(timer_0, XPAR_XPS_TIMER_0_DEVICE_ID);
+                                             ^~~~~~~~~~~~~~~~~~~~~~~~~~
+                                             XPAR_AXI_TIMER_0_DEVICE_ID
+../src/micro_hello.c:71:45: note: each undeclared identifier is reported only once for each function it appears in
+../src/micro_hello.c:76:37: warning: format '%lld' expects argument of type 'long long int', but argument 2 has type 'u32' {aka 'long unsigned int'} [-Wformat=]
+     printf("(main SW) ExecTime = %lld unit \n", ExecTimeInTicks);
+                                  ~~~^           ~~~~~~~~~~~~~~~
+                                  %ld
+../src/micro_hello.c:67:17: warning: unused variable 'TimeRun' [-Wunused-variable]
+         Xuint32 TimeRun;
+                 ^~~~~~~
+../src/micro_hello.c:66:17: warning: unused variable 'Calibration' [-Wunused-variable]
+         Xuint32 Calibration;
+                 ^~~~~~~~~~~
+../src/micro_hello.c:65:17: warning: variable 'EndTime' set but not used [-Wunused-but-set-variable]
+         Xuint32 EndTime;
+                 ^~~~~~~
+../src/micro_hello.c:64:16: warning: variable 'BeginTime' set but not used [-Wunused-but-set-variable]
+        Xuint32 BeginTime;
+                ^~~~~~~~~
+../src/micro_hello.c:63:17: warning: unused variable 'Status' [-Wunused-variable]
+         XStatus Status;
+                 ^~~~~~
+make: *** [src/subdir.mk:26: src/micro_hello.o] Error 1
+16:39:49 **** Auto Build of configuration Debug for project micro_hello ****
+make all 
+'Building file: ../src/micro_hello.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/micro_hello.o" -I../../micro_hello_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/micro_hello.d" -MT"src/micro_hello.o" -o "src/micro_hello.o" "../src/micro_hello.c"
+../src/micro_hello.c: In function 'main':
+../src/micro_hello.c:64:8: error: unknown type name 'Xuint32'; did you mean 'sint32'?
+        Xuint32 BeginTime;
+        ^~~~~~~
+        sint32
+../src/micro_hello.c:65:9: error: unknown type name 'Xuint32'; did you mean 'sint32'?
+         Xuint32 EndTime;
+         ^~~~~~~
+         sint32
+../src/micro_hello.c:66:9: error: unknown type name 'Xuint32'; did you mean 'sint32'?
+         Xuint32 Calibration;
+         ^~~~~~~
+         sint32
+../src/micro_hello.c:67:9: error: unknown type name 'Xuint32'; did you mean 'sint32'?
+         Xuint32 TimeRun;
+         ^~~~~~~
+         sint32
+../src/micro_hello.c:71:45: error: 'XPAR_XPS_TIMER_0_DEVICE_ID' undeclared (first use in this function); did you mean 'XPAR_AXI_TIMER_0_DEVICE_ID'?
+       BeginTime = XTmrCtr_GetValue(timer_0, XPAR_XPS_TIMER_0_DEVICE_ID);
+                                             ^~~~~~~~~~~~~~~~~~~~~~~~~~
+                                             XPAR_AXI_TIMER_0_DEVICE_ID
+../src/micro_hello.c:71:45: note: each undeclared identifier is reported only once for each function it appears in
+../src/micro_hello.c:76:37: warning: format '%lld' expects argument of type 'long long int', but argument 2 has type 'u32' {aka 'long unsigned int'} [-Wformat=]
+     printf("(main SW) ExecTime = %lld unit \n", ExecTimeInTicks);
+                                  ~~~^           ~~~~~~~~~~~~~~~
+                                  %ld
+../src/micro_hello.c:67:17: warning: unused variable 'TimeRun' [-Wunused-variable]
+         Xuint32 TimeRun;
+                 ^~~~~~~
+../src/micro_hello.c:66:17: warning: unused variable 'Calibration' [-Wunused-variable]
+         Xuint32 Calibration;
+                 ^~~~~~~~~~~
+../src/micro_hello.c:65:17: warning: variable 'EndTime' set but not used [-Wunused-but-set-variable]
+         Xuint32 EndTime;
+                 ^~~~~~~
+../src/micro_hello.c:64:16: warning: variable 'BeginTime' set but not used [-Wunused-but-set-variable]
+        Xuint32 BeginTime;
+                ^~~~~~~~~
+../src/micro_hello.c:63:17: warning: unused variable 'Status' [-Wunused-variable]
+         XStatus Status;
+                 ^~~~~~
+make: *** [src/subdir.mk:26: src/micro_hello.o] Error 1
+16:40:14 **** Auto Build of configuration Debug for project micro_hello ****
+make all 
+'Building file: ../src/micro_hello.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/micro_hello.o" -I../../micro_hello_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/micro_hello.d" -MT"src/micro_hello.o" -o "src/micro_hello.o" "../src/micro_hello.c"
+../src/micro_hello.c:53:10: fatal error: xtypes.h: No such file or directory
+ #include "xtypes.h"
+          ^~~~~~~~~~
+compilation terminated.
+make: *** [src/subdir.mk:26: src/micro_hello.o] Error 1
+16:40:18 **** Auto Build of configuration Debug for project micro_hello ****
+make all 
+'Building file: ../src/micro_hello.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/micro_hello.o" -I../../micro_hello_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/micro_hello.d" -MT"src/micro_hello.o" -o "src/micro_hello.o" "../src/micro_hello.c"
+../src/micro_hello.c:53:10: fatal error: xtype.h: No such file or directory
+ #include "xtype.h"
+          ^~~~~~~~~
+compilation terminated.
+make: *** [src/subdir.mk:26: src/micro_hello.o] Error 1
+16:40:34 **** Auto Build of configuration Debug for project micro_hello ****
+make all 
+'Building file: ../src/micro_hello.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/micro_hello.o" -I../../micro_hello_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/micro_hello.d" -MT"src/micro_hello.o" -o "src/micro_hello.o" "../src/micro_hello.c"
+../src/micro_hello.c: In function 'main':
+../src/micro_hello.c:65:8: error: unknown type name 'Xuint32'; did you mean 'sint32'?
+        Xuint32 BeginTime;
+        ^~~~~~~
+        sint32
+../src/micro_hello.c:66:9: error: unknown type name 'Xuint32'; did you mean 'sint32'?
+         Xuint32 EndTime;
+         ^~~~~~~
+         sint32
+../src/micro_hello.c:67:9: error: unknown type name 'Xuint32'; did you mean 'sint32'?
+         Xuint32 Calibration;
+         ^~~~~~~
+         sint32
+../src/micro_hello.c:68:9: error: unknown type name 'Xuint32'; did you mean 'sint32'?
+         Xuint32 TimeRun;
+         ^~~~~~~
+         sint32
+../src/micro_hello.c:72:45: error: 'XPAR_XPS_TIMER_0_DEVICE_ID' undeclared (first use in this function); did you mean 'XPAR_AXI_TIMER_0_DEVICE_ID'?
+       BeginTime = XTmrCtr_GetValue(timer_0, XPAR_XPS_TIMER_0_DEVICE_ID);
+                                             ^~~~~~~~~~~~~~~~~~~~~~~~~~
+                                             XPAR_AXI_TIMER_0_DEVICE_ID
+../src/micro_hello.c:72:45: note: each undeclared identifier is reported only once for each function it appears in
+../src/micro_hello.c:77:37: warning: format '%lld' expects argument of type 'long long int', but argument 2 has type 'u32' {aka 'long unsigned int'} [-Wformat=]
+     printf("(main SW) ExecTime = %lld unit \n", ExecTimeInTicks);
+                                  ~~~^           ~~~~~~~~~~~~~~~
+                                  %ld
+../src/micro_hello.c:68:17: warning: unused variable 'TimeRun' [-Wunused-variable]
+         Xuint32 TimeRun;
+                 ^~~~~~~
+../src/micro_hello.c:67:17: warning: unused variable 'Calibration' [-Wunused-variable]
+         Xuint32 Calibration;
+                 ^~~~~~~~~~~
+../src/micro_hello.c:66:17: warning: variable 'EndTime' set but not used [-Wunused-but-set-variable]
+         Xuint32 EndTime;
+                 ^~~~~~~
+../src/micro_hello.c:65:16: warning: variable 'BeginTime' set but not used [-Wunused-but-set-variable]
+        Xuint32 BeginTime;
+                ^~~~~~~~~
+../src/micro_hello.c:64:17: warning: unused variable 'Status' [-Wunused-variable]
+         XStatus Status;
+                 ^~~~~~
+make: *** [src/subdir.mk:26: src/micro_hello.o] Error 1
+16:41:50 **** Auto Build of configuration Debug for project micro_hello ****
+make all 
+'Building file: ../src/micro_hello.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/micro_hello.o" -I../../micro_hello_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/micro_hello.d" -MT"src/micro_hello.o" -o "src/micro_hello.o" "../src/micro_hello.c"
+../src/micro_hello.c: In function 'main':
+../src/micro_hello.c:65:8: error: unknown type name 'Xuint32'; did you mean 'sint32'?
+        Xuint32 BeginTime;
+        ^~~~~~~
+        sint32
+../src/micro_hello.c:66:9: error: unknown type name 'Xuint32'; did you mean 'sint32'?
+         Xuint32 EndTime;
+         ^~~~~~~
+         sint32
+../src/micro_hello.c:67:9: error: unknown type name 'Xuint32'; did you mean 'sint32'?
+         Xuint32 Calibration;
+         ^~~~~~~
+         sint32
+../src/micro_hello.c:68:9: error: unknown type name 'Xuint32'; did you mean 'sint32'?
+         Xuint32 TimeRun;
+         ^~~~~~~
+         sint32
+../src/micro_hello.c:72:45: error: 'XPAR_XPS_TIMER_0_DEVICE_ID' undeclared (first use in this function); did you mean 'XPAR_AXI_TIMER_0_DEVICE_ID'?
+       BeginTime = XTmrCtr_GetValue(timer_0, XPAR_XPS_TIMER_0_DEVICE_ID);
+                                             ^~~~~~~~~~~~~~~~~~~~~~~~~~
+                                             XPAR_AXI_TIMER_0_DEVICE_ID
+../src/micro_hello.c:72:45: note: each undeclared identifier is reported only once for each function it appears in
+../src/micro_hello.c:77:37: warning: format '%lld' expects argument of type 'long long int', but argument 2 has type 'u32' {aka 'long unsigned int'} [-Wformat=]
+     printf("(main SW) ExecTime = %lld unit \n", ExecTimeInTicks);
+                                  ~~~^           ~~~~~~~~~~~~~~~
+                                  %ld
+../src/micro_hello.c:68:17: warning: unused variable 'TimeRun' [-Wunused-variable]
+         Xuint32 TimeRun;
+                 ^~~~~~~
+../src/micro_hello.c:67:17: warning: unused variable 'Calibration' [-Wunused-variable]
+         Xuint32 Calibration;
+                 ^~~~~~~~~~~
+../src/micro_hello.c:66:17: warning: variable 'EndTime' set but not used [-Wunused-but-set-variable]
+         Xuint32 EndTime;
+                 ^~~~~~~
+../src/micro_hello.c:65:16: warning: variable 'BeginTime' set but not used [-Wunused-but-set-variable]
+        Xuint32 BeginTime;
+                ^~~~~~~~~
+../src/micro_hello.c:64:17: warning: unused variable 'Status' [-Wunused-variable]
+         XStatus Status;
+                 ^~~~~~
+make: *** [src/subdir.mk:26: src/micro_hello.o] Error 1
+16:42:37 **** Auto Build of configuration Debug for project micro_hello ****
+make all 
+'Building file: ../src/micro_hello.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/micro_hello.o" -I../../micro_hello_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/micro_hello.d" -MT"src/micro_hello.o" -o "src/micro_hello.o" "../src/micro_hello.c"
+../src/micro_hello.c: In function 'main':
+../src/micro_hello.c:65:8: error: unknown type name 'uint32'; did you mean 'sint32'?
+        uint32 BeginTime;
+        ^~~~~~
+        sint32
+../src/micro_hello.c:66:9: error: unknown type name 'uint32'; did you mean 'sint32'?
+         uint32 EndTime;
+         ^~~~~~
+         sint32
+../src/micro_hello.c:67:9: error: unknown type name 'uint32'; did you mean 'sint32'?
+         uint32 Calibration;
+         ^~~~~~
+         sint32
+../src/micro_hello.c:68:9: error: unknown type name 'uint32'; did you mean 'sint32'?
+         uint32 TimeRun;
+         ^~~~~~
+         sint32
+../src/micro_hello.c:77:37: warning: format '%lld' expects argument of type 'long long int', but argument 2 has type 'u32' {aka 'long unsigned int'} [-Wformat=]
+     printf("(main SW) ExecTime = %lld unit \n", ExecTimeInTicks);
+                                  ~~~^           ~~~~~~~~~~~~~~~
+                                  %ld
+../src/micro_hello.c:68:16: warning: unused variable 'TimeRun' [-Wunused-variable]
+         uint32 TimeRun;
+                ^~~~~~~
+../src/micro_hello.c:67:16: warning: unused variable 'Calibration' [-Wunused-variable]
+         uint32 Calibration;
+                ^~~~~~~~~~~
+../src/micro_hello.c:66:16: warning: variable 'EndTime' set but not used [-Wunused-but-set-variable]
+         uint32 EndTime;
+                ^~~~~~~
+../src/micro_hello.c:65:15: warning: variable 'BeginTime' set but not used [-Wunused-but-set-variable]
+        uint32 BeginTime;
+               ^~~~~~~~~
+../src/micro_hello.c:64:17: warning: unused variable 'Status' [-Wunused-variable]
+         XStatus Status;
+                 ^~~~~~
+make: *** [src/subdir.mk:26: src/micro_hello.o] Error 1
+16:42:48 **** Auto Build of configuration Debug for project micro_hello ****
+make all 
+'Building file: ../src/micro_hello.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/micro_hello.o" -I../../micro_hello_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/micro_hello.d" -MT"src/micro_hello.o" -o "src/micro_hello.o" "../src/micro_hello.c"
+../src/micro_hello.c: In function 'main':
+../src/micro_hello.c:77:37: warning: format '%lld' expects argument of type 'long long int', but argument 2 has type 'u32' {aka 'long unsigned int'} [-Wformat=]
+     printf("(main SW) ExecTime = %lld unit \n", ExecTimeInTicks);
+                                  ~~~^           ~~~~~~~~~~~~~~~
+                                  %ld
+../src/micro_hello.c:68:13: warning: unused variable 'TimeRun' [-Wunused-variable]
+         u32 TimeRun;
+             ^~~~~~~
+../src/micro_hello.c:67:13: warning: unused variable 'Calibration' [-Wunused-variable]
+         u32 Calibration;
+             ^~~~~~~~~~~
+../src/micro_hello.c:66:13: warning: variable 'EndTime' set but not used [-Wunused-but-set-variable]
+         u32 EndTime;
+             ^~~~~~~
+../src/micro_hello.c:65:12: warning: variable 'BeginTime' set but not used [-Wunused-but-set-variable]
+        u32 BeginTime;
+            ^~~~~~~~~
+../src/micro_hello.c:64:17: warning: unused variable 'Status' [-Wunused-variable]
+         XStatus Status;
+                 ^~~~~~
+../src/micro_hello.c:75:21: warning: 'End_Time' is used uninitialized in this function [-Wuninitialized]
+     ExecTimeInTicks = End_Time - Start_Time;
+     ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+../src/micro_hello.c:75:21: warning: 'Start_Time' is used uninitialized in this function [-Wuninitialized]
 'Finished building: ../src/micro_hello.c'
 ' '
 'Building target: micro_hello.elf'
@@ -633,36 +992,775 @@ mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../micro_hello_bsp/microblaze_0/lib -ml
 'Invoking: MicroBlaze Print Size'
 mb-size micro_hello.elf  |tee "micro_hello.elf.size"
    text	   data	    bss	    dec	    hex	filename
-   2740	    320	   2084	   5144	   1418	micro_hello.elf
+  62428	   1732	   2160	  66320	  10310	micro_hello.elf
 'Finished building: micro_hello.elf.size'
 ' '
-22:58:10 **** Incremental Build of configuration Debug for project micro_hello ****
+16:43:05 **** Auto Build of configuration Debug for project micro_hello ****
 make all 
-make: Nothing to be done for 'all'.
-22:58:21 **** Incremental Build of configuration Debug for project micro_hello ****
-make all 
-make: Nothing to be done for 'all'.
-22:58:22 **** Incremental Build of configuration Debug for project zynq_hello ****
-make pre-build main-build 
-a9-linaro-pre-build-step
+'Building file: ../src/micro_hello.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/micro_hello.o" -I../../micro_hello_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/micro_hello.d" -MT"src/micro_hello.o" -o "src/micro_hello.o" "../src/micro_hello.c"
+../src/micro_hello.c: In function 'main':
+../src/micro_hello.c:77:37: warning: format '%lld' expects argument of type 'long long int', but argument 2 has type 'u32' {aka 'long unsigned int'} [-Wformat=]
+     printf("(main SW) ExecTime = %lld unit \n", ExecTimeInTicks);
+                                  ~~~^           ~~~~~~~~~~~~~~~
+                                  %ld
+../src/micro_hello.c:68:13: warning: unused variable 'TimeRun' [-Wunused-variable]
+         u32 TimeRun;
+             ^~~~~~~
+../src/micro_hello.c:67:13: warning: unused variable 'Calibration' [-Wunused-variable]
+         u32 Calibration;
+             ^~~~~~~~~~~
+../src/micro_hello.c:64:17: warning: unused variable 'Status' [-Wunused-variable]
+         XStatus Status;
+                 ^~~~~~
+../src/micro_hello.c:57:18: warning: unused variable 'End_Time' [-Wunused-variable]
+  u32 Start_Time, End_Time, ExecTimeInTicks;
+                  ^~~~~~~~
+../src/micro_hello.c:57:6: warning: unused variable 'Start_Time' [-Wunused-variable]
+  u32 Start_Time, End_Time, ExecTimeInTicks;
+      ^~~~~~~~~~
+'Finished building: ../src/micro_hello.c'
 ' '
-make: Nothing to be done for 'main-build'.
-22:58:27 **** Incremental Build of configuration Debug for project micro_hello ****
-make all 
-make: Nothing to be done for 'all'.
-22:59:24 **** Incremental Build of configuration Debug for project micro_hello ****
-make all 
-make: Nothing to be done for 'all'.
-22:59:24 **** Incremental Build of configuration Debug for project zynq_hello ****
-make pre-build main-build 
-a9-linaro-pre-build-step
+'Building target: micro_hello.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../micro_hello_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "micro_hello.elf"  ./src/micro_hello.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: micro_hello.elf'
 ' '
-make: Nothing to be done for 'main-build'.
-22:59:41 **** Incremental Build of configuration Debug for project micro_hello ****
+'Invoking: MicroBlaze Print Size'
+mb-size micro_hello.elf  |tee "micro_hello.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  62428	   1732	   2160	  66320	  10310	micro_hello.elf
+'Finished building: micro_hello.elf.size'
+' '
+16:44:39 **** Incremental Build of configuration Debug for project micro_hello ****
 make all 
 make: Nothing to be done for 'all'.
-22:59:42 **** Incremental Build of configuration Debug for project zynq_hello ****
-make pre-build main-build 
-a9-linaro-pre-build-step
+16:45:04 **** Incremental Build of configuration Debug for project micro_hello ****
+make all 
+make: Nothing to be done for 'all'.
+16:48:38 **** Auto Build of configuration Debug for project micro_hello ****
+make all 
+'Building file: ../src/micro_hello.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/micro_hello.o" -I../../micro_hello_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/micro_hello.d" -MT"src/micro_hello.o" -o "src/micro_hello.o" "../src/micro_hello.c"
+../src/micro_hello.c: In function 'main':
+../src/micro_hello.c:70:9: warning: implicit declaration of function 'XTmrCtr_mEnable'; did you mean 'XTmrCtr_Enable'? [-Wimplicit-function-declaration]
+         XTmrCtr_mEnable(XPAR_TMRCTR_0_BASEADDR,XPAR_TMRCTR_0_DEVICE_ID);
+         ^~~~~~~~~~~~~~~
+         XTmrCtr_Enable
+../src/micro_hello.c:77:37: warning: format '%lld' expects argument of type 'long long int', but argument 2 has type 'u32' {aka 'long unsigned int'} [-Wformat=]
+     printf("(main SW) ExecTime = %lld unit \n", ExecTimeInTicks);
+                                  ~~~^           ~~~~~~~~~~~~~~~
+                                  %ld
+../src/micro_hello.c:68:13: warning: unused variable 'TimeRun' [-Wunused-variable]
+         u32 TimeRun;
+             ^~~~~~~
+../src/micro_hello.c:67:13: warning: unused variable 'Calibration' [-Wunused-variable]
+         u32 Calibration;
+             ^~~~~~~~~~~
+../src/micro_hello.c:64:17: warning: unused variable 'Status' [-Wunused-variable]
+         XStatus Status;
+                 ^~~~~~
+../src/micro_hello.c:57:18: warning: unused variable 'End_Time' [-Wunused-variable]
+  u32 Start_Time, End_Time, ExecTimeInTicks;
+                  ^~~~~~~~
+../src/micro_hello.c:57:6: warning: unused variable 'Start_Time' [-Wunused-variable]
+  u32 Start_Time, End_Time, ExecTimeInTicks;
+      ^~~~~~~~~~
+'Finished building: ../src/micro_hello.c'
 ' '
-make: Nothing to be done for 'main-build'.
+'Building target: micro_hello.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../micro_hello_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "micro_hello.elf"  ./src/micro_hello.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2019.1/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/8.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: ./src/micro_hello.o: in function `main':
+C:\Users\Qlala\Documents\M2_SETI\A2\git\A2\Hardware\Vivado\multiCPU\prj_mb_test\prj_mb_test.sdk\micro_hello\Debug/../src/micro_hello.c:70: undefined reference to `XTmrCtr_mEnable'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:38: micro_hello.elf] Error 1
+16:50:07 **** Auto Build of configuration Debug for project micro_hello ****
+make all 
+'Building file: ../src/micro_hello.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/micro_hello.o" -I../../micro_hello_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/micro_hello.d" -MT"src/micro_hello.o" -o "src/micro_hello.o" "../src/micro_hello.c"
+../src/micro_hello.c: In function 'main':
+../src/micro_hello.c:77:37: warning: format '%lld' expects argument of type 'long long int', but argument 2 has type 'u32' {aka 'long unsigned int'} [-Wformat=]
+     printf("(main SW) ExecTime = %lld unit \n", ExecTimeInTicks);
+                                  ~~~^           ~~~~~~~~~~~~~~~
+                                  %ld
+../src/micro_hello.c:68:13: warning: unused variable 'TimeRun' [-Wunused-variable]
+         u32 TimeRun;
+             ^~~~~~~
+../src/micro_hello.c:67:13: warning: unused variable 'Calibration' [-Wunused-variable]
+         u32 Calibration;
+             ^~~~~~~~~~~
+../src/micro_hello.c:64:17: warning: unused variable 'Status' [-Wunused-variable]
+         XStatus Status;
+                 ^~~~~~
+../src/micro_hello.c:57:18: warning: unused variable 'End_Time' [-Wunused-variable]
+  u32 Start_Time, End_Time, ExecTimeInTicks;
+                  ^~~~~~~~
+../src/micro_hello.c:57:6: warning: unused variable 'Start_Time' [-Wunused-variable]
+  u32 Start_Time, End_Time, ExecTimeInTicks;
+      ^~~~~~~~~~
+'Finished building: ../src/micro_hello.c'
+' '
+'Building target: micro_hello.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../micro_hello_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "micro_hello.elf"  ./src/micro_hello.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: micro_hello.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size micro_hello.elf  |tee "micro_hello.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  62616	   1732	   2156	  66504	  103c8	micro_hello.elf
+'Finished building: micro_hello.elf.size'
+' '
+16:50:12 **** Incremental Build of configuration Debug for project micro_hello ****
+make all 
+make: Nothing to be done for 'all'.
+16:50:43 **** Incremental Build of configuration Debug for project micro_hello ****
+make all 
+make: Nothing to be done for 'all'.
+16:53:51 **** Auto Build of configuration Debug for project micro_hello ****
+make all 
+'Building file: ../src/micro_hello.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/micro_hello.o" -I../../micro_hello_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/micro_hello.d" -MT"src/micro_hello.o" -o "src/micro_hello.o" "../src/micro_hello.c"
+In file included from ../src/micro_hello.c:51:
+../src/micro_hello.c: In function 'main':
+../../micro_hello_bsp/microblaze_0/include/xtmrctr_l.h:219:2: error: invalid initializer
+  Xil_Out32(((BaseAddress) + XTmrCtr_Offsets[(TmrCtrNumber)] + \
+  ^~~~~~~~~
+../../micro_hello_bsp/microblaze_0/include/xtmrctr_l.h:330:2: note: in expansion of macro 'XTmrCtr_WriteReg'
+  XTmrCtr_WriteReg((BaseAddress), (TmrCtrNumber), XTC_TCSR_OFFSET,   \
+  ^~~~~~~~~~~~~~~~
+../src/micro_hello.c:62:25: note: in expansion of macro 'XTmrCtr_Enable'
+     XTmrCtr xps_timer_0=XTmrCtr_Enable(XPAR_TMRCTR_0_BASEADDR,XPAR_TMRCTR_0_DEVICE_ID);
+                         ^~~~~~~~~~~~~~
+../src/micro_hello.c:77:37: warning: format '%lld' expects argument of type 'long long int', but argument 2 has type 'u32' {aka 'long unsigned int'} [-Wformat=]
+     printf("(main SW) ExecTime = %lld unit \n", ExecTimeInTicks);
+                                  ~~~^           ~~~~~~~~~~~~~~~
+                                  %ld
+../src/micro_hello.c:68:13: warning: unused variable 'TimeRun' [-Wunused-variable]
+         u32 TimeRun;
+             ^~~~~~~
+../src/micro_hello.c:67:13: warning: unused variable 'Calibration' [-Wunused-variable]
+         u32 Calibration;
+             ^~~~~~~~~~~
+../src/micro_hello.c:64:17: warning: unused variable 'Status' [-Wunused-variable]
+         XStatus Status;
+                 ^~~~~~
+../src/micro_hello.c:57:18: warning: unused variable 'End_Time' [-Wunused-variable]
+  u32 Start_Time, End_Time, ExecTimeInTicks;
+                  ^~~~~~~~
+../src/micro_hello.c:57:6: warning: unused variable 'Start_Time' [-Wunused-variable]
+  u32 Start_Time, End_Time, ExecTimeInTicks;
+      ^~~~~~~~~~
+make: *** [src/subdir.mk:26: src/micro_hello.o] Error 1
+16:54:17 **** Auto Build of configuration Debug for project micro_hello ****
+make all 
+'Building file: ../src/micro_hello.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/micro_hello.o" -I../../micro_hello_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/micro_hello.d" -MT"src/micro_hello.o" -o "src/micro_hello.o" "../src/micro_hello.c"
+../src/micro_hello.c: In function 'main':
+../src/micro_hello.c:64:9: error: expected expression before 'XTmrCtr'
+         XTmrCtr* timer_0 = &xps_timer_0;
+         ^~~~~~~
+../src/micro_hello.c:73:36: error: 'timer_0' undeclared (first use in this function); did you mean 'timer_t'?
+       BeginTime = XTmrCtr_GetValue(timer_0, XPAR_AXI_TIMER_0_DEVICE_ID);
+                                    ^~~~~~~
+                                    timer_t
+../src/micro_hello.c:73:36: note: each undeclared identifier is reported only once for each function it appears in
+../src/micro_hello.c:78:37: warning: format '%lld' expects argument of type 'long long int', but argument 2 has type 'u32' {aka 'long unsigned int'} [-Wformat=]
+     printf("(main SW) ExecTime = %lld unit \n", ExecTimeInTicks);
+                                  ~~~^           ~~~~~~~~~~~~~~~
+                                  %ld
+../src/micro_hello.c:69:13: warning: unused variable 'TimeRun' [-Wunused-variable]
+         u32 TimeRun;
+             ^~~~~~~
+../src/micro_hello.c:68:13: warning: unused variable 'Calibration' [-Wunused-variable]
+         u32 Calibration;
+             ^~~~~~~~~~~
+../src/micro_hello.c:65:17: warning: unused variable 'Status' [-Wunused-variable]
+         XStatus Status;
+                 ^~~~~~
+../src/micro_hello.c:63:13: warning: unused variable 'xps_timer_0' [-Wunused-variable]
+     XTmrCtr xps_timer_0=
+             ^~~~~~~~~~~
+../src/micro_hello.c:57:18: warning: unused variable 'End_Time' [-Wunused-variable]
+  u32 Start_Time, End_Time, ExecTimeInTicks;
+                  ^~~~~~~~
+../src/micro_hello.c:57:6: warning: unused variable 'Start_Time' [-Wunused-variable]
+  u32 Start_Time, End_Time, ExecTimeInTicks;
+      ^~~~~~~~~~
+make: *** [src/subdir.mk:26: src/micro_hello.o] Error 1
+16:56:36 **** Auto Build of configuration Debug for project micro_hello ****
+make all 
+'Building file: ../src/micro_hello.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/micro_hello.o" -I../../micro_hello_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/micro_hello.d" -MT"src/micro_hello.o" -o "src/micro_hello.o" "../src/micro_hello.c"
+../src/micro_hello.c: In function 'main':
+../src/micro_hello.c:78:37: warning: format '%lld' expects argument of type 'long long int', but argument 2 has type 'u32' {aka 'long unsigned int'} [-Wformat=]
+     printf("(main SW) ExecTime = %lld unit \n", ExecTimeInTicks);
+                                  ~~~^           ~~~~~~~~~~~~~~~
+                                  %ld
+../src/micro_hello.c:69:13: warning: unused variable 'TimeRun' [-Wunused-variable]
+         u32 TimeRun;
+             ^~~~~~~
+../src/micro_hello.c:68:13: warning: unused variable 'Calibration' [-Wunused-variable]
+         u32 Calibration;
+             ^~~~~~~~~~~
+../src/micro_hello.c:65:17: warning: unused variable 'Status' [-Wunused-variable]
+         XStatus Status;
+                 ^~~~~~
+../src/micro_hello.c:57:18: warning: unused variable 'End_Time' [-Wunused-variable]
+  u32 Start_Time, End_Time, ExecTimeInTicks;
+                  ^~~~~~~~
+../src/micro_hello.c:57:6: warning: unused variable 'Start_Time' [-Wunused-variable]
+  u32 Start_Time, End_Time, ExecTimeInTicks;
+      ^~~~~~~~~~
+'Finished building: ../src/micro_hello.c'
+' '
+'Building target: micro_hello.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../micro_hello_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "micro_hello.elf"  ./src/micro_hello.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: micro_hello.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size micro_hello.elf  |tee "micro_hello.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  63312	   1744	   2152	  67208	  10688	micro_hello.elf
+'Finished building: micro_hello.elf.size'
+' '
+16:56:44 **** Incremental Build of configuration Debug for project micro_hello ****
+make all 
+make: Nothing to be done for 'all'.
+16:57:32 **** Auto Build of configuration Debug for project micro_hello ****
+make all 
+'Building file: ../src/micro_hello.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/micro_hello.o" -I../../micro_hello_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/micro_hello.d" -MT"src/micro_hello.o" -o "src/micro_hello.o" "../src/micro_hello.c"
+../src/micro_hello.c: In function 'main':
+../src/micro_hello.c:78:37: warning: format '%lld' expects argument of type 'long long int', but argument 2 has type 'u32' {aka 'long unsigned int'} [-Wformat=]
+     printf("(main SW) ExecTime = %lld unit \n", ExecTimeInTicks);
+                                  ~~~^           ~~~~~~~~~~~~~~~
+                                  %ld
+../src/micro_hello.c:80:5: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+     for(int i=0;i<100;i++);
+     ^~~
+../src/micro_hello.c:81:8: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+        EndTime = XTmrCtr_GetValue(timer_0, XPAR_AXI_TIMER_0_DEVICE_ID);
+        ^~~~~~~
+../src/micro_hello.c:69:13: warning: unused variable 'TimeRun' [-Wunused-variable]
+         u32 TimeRun;
+             ^~~~~~~
+../src/micro_hello.c:68:13: warning: unused variable 'Calibration' [-Wunused-variable]
+         u32 Calibration;
+             ^~~~~~~~~~~
+../src/micro_hello.c:65:17: warning: unused variable 'Status' [-Wunused-variable]
+         XStatus Status;
+                 ^~~~~~
+../src/micro_hello.c:57:18: warning: unused variable 'End_Time' [-Wunused-variable]
+  u32 Start_Time, End_Time, ExecTimeInTicks;
+                  ^~~~~~~~
+../src/micro_hello.c:57:6: warning: unused variable 'Start_Time' [-Wunused-variable]
+  u32 Start_Time, End_Time, ExecTimeInTicks;
+      ^~~~~~~~~~
+'Finished building: ../src/micro_hello.c'
+' '
+'Building target: micro_hello.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../micro_hello_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "micro_hello.elf"  ./src/micro_hello.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: micro_hello.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size micro_hello.elf  |tee "micro_hello.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  63412	   1744	   2156	  67312	  106f0	micro_hello.elf
+'Finished building: micro_hello.elf.size'
+' '
+16:57:36 **** Incremental Build of configuration Debug for project micro_hello ****
+make all 
+make: Nothing to be done for 'all'.
+16:58:15 **** Auto Build of configuration Debug for project micro_hello ****
+make all 
+'Building file: ../src/micro_hello.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/micro_hello.o" -I../../micro_hello_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/micro_hello.d" -MT"src/micro_hello.o" -o "src/micro_hello.o" "../src/micro_hello.c"
+../src/micro_hello.c: In function 'main':
+../src/micro_hello.c:78:37: warning: format '%lld' expects argument of type 'long long int', but argument 2 has type 'u32' {aka 'long unsigned int'} [-Wformat=]
+     printf("(main SW) ExecTime = %lld unit \n", ExecTimeInTicks);
+                                  ~~~^           ~~~~~~~~~~~~~~~
+                                  %ld
+../src/micro_hello.c:80:5: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+     for(int i=0;i<100;i++);
+     ^~~
+../src/micro_hello.c:81:8: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+        EndTime = XTmrCtr_GetValue(timer_0, XPAR_AXI_TIMER_0_DEVICE_ID);
+        ^~~~~~~
+../src/micro_hello.c:84:35: warning: format '%lld' expects argument of type 'long long int', but argument 2 has type 'u32' {aka 'long unsigned int'} [-Wformat=]
+   printf("(main SW) ExecTime = %lld unit \n", ExecTimeInTicks);
+                                ~~~^           ~~~~~~~~~~~~~~~
+                                %ld
+../src/micro_hello.c:69:13: warning: unused variable 'TimeRun' [-Wunused-variable]
+         u32 TimeRun;
+             ^~~~~~~
+../src/micro_hello.c:68:13: warning: unused variable 'Calibration' [-Wunused-variable]
+         u32 Calibration;
+             ^~~~~~~~~~~
+../src/micro_hello.c:65:17: warning: unused variable 'Status' [-Wunused-variable]
+         XStatus Status;
+                 ^~~~~~
+../src/micro_hello.c:57:18: warning: unused variable 'End_Time' [-Wunused-variable]
+  u32 Start_Time, End_Time, ExecTimeInTicks;
+                  ^~~~~~~~
+../src/micro_hello.c:57:6: warning: unused variable 'Start_Time' [-Wunused-variable]
+  u32 Start_Time, End_Time, ExecTimeInTicks;
+      ^~~~~~~~~~
+'Finished building: ../src/micro_hello.c'
+' '
+'Building target: micro_hello.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../micro_hello_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "micro_hello.elf"  ./src/micro_hello.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: micro_hello.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size micro_hello.elf  |tee "micro_hello.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  63436	   1744	   2156	  67336	  10708	micro_hello.elf
+'Finished building: micro_hello.elf.size'
+' '
+16:58:16 **** Incremental Build of configuration Debug for project micro_hello ****
+make all 
+make: Nothing to be done for 'all'.
+16:58:47 **** Auto Build of configuration Debug for project micro_hello ****
+make all 
+'Building file: ../src/micro_hello.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/micro_hello.o" -I../../micro_hello_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/micro_hello.d" -MT"src/micro_hello.o" -o "src/micro_hello.o" "../src/micro_hello.c"
+../src/micro_hello.c: In function 'main':
+../src/micro_hello.c:78:37: warning: format '%lld' expects argument of type 'long long int', but argument 2 has type 'u32' {aka 'long unsigned int'} [-Wformat=]
+     printf("(main SW) ExecTime = %lld unit \n", ExecTimeInTicks);
+                                  ~~~^           ~~~~~~~~~~~~~~~
+                                  %ld
+../src/micro_hello.c:81:5: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+     for(int i=0;i<100;i++);
+     ^~~
+../src/micro_hello.c:82:8: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+        EndTime = XTmrCtr_GetValue(timer_0, XPAR_AXI_TIMER_0_DEVICE_ID);
+        ^~~~~~~
+../src/micro_hello.c:85:36: warning: format '%lld' expects argument of type 'long long int', but argument 2 has type 'u32' {aka 'long unsigned int'} [-Wformat=]
+   printf("(main SW2) ExecTime = %lld unit \n", ExecTimeInTicks);
+                                 ~~~^           ~~~~~~~~~~~~~~~
+                                 %ld
+../src/micro_hello.c:69:13: warning: unused variable 'TimeRun' [-Wunused-variable]
+         u32 TimeRun;
+             ^~~~~~~
+../src/micro_hello.c:68:13: warning: unused variable 'Calibration' [-Wunused-variable]
+         u32 Calibration;
+             ^~~~~~~~~~~
+../src/micro_hello.c:65:17: warning: unused variable 'Status' [-Wunused-variable]
+         XStatus Status;
+                 ^~~~~~
+../src/micro_hello.c:57:18: warning: unused variable 'End_Time' [-Wunused-variable]
+  u32 Start_Time, End_Time, ExecTimeInTicks;
+                  ^~~~~~~~
+../src/micro_hello.c:57:6: warning: unused variable 'Start_Time' [-Wunused-variable]
+  u32 Start_Time, End_Time, ExecTimeInTicks;
+      ^~~~~~~~~~
+'Finished building: ../src/micro_hello.c'
+' '
+'Building target: micro_hello.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../micro_hello_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "micro_hello.elf"  ./src/micro_hello.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: micro_hello.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size micro_hello.elf  |tee "micro_hello.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  63472	   1744	   2152	  67368	  10728	micro_hello.elf
+'Finished building: micro_hello.elf.size'
+' '
+16:58:58 **** Auto Build of configuration Debug for project micro_hello ****
+make all 
+'Building file: ../src/micro_hello.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/micro_hello.o" -I../../micro_hello_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/micro_hello.d" -MT"src/micro_hello.o" -o "src/micro_hello.o" "../src/micro_hello.c"
+../src/micro_hello.c: In function 'main':
+../src/micro_hello.c:71:9: warning: implicit declaration of function 'XtmCtr_Start'; did you mean 'XTmrCtr_Start'? [-Wimplicit-function-declaration]
+         XtmCtr_Start(timer_0);
+         ^~~~~~~~~~~~
+         XTmrCtr_Start
+../src/micro_hello.c:78:37: warning: format '%lld' expects argument of type 'long long int', but argument 2 has type 'u32' {aka 'long unsigned int'} [-Wformat=]
+     printf("(main SW) ExecTime = %lld unit \n", ExecTimeInTicks);
+                                  ~~~^           ~~~~~~~~~~~~~~~
+                                  %ld
+../src/micro_hello.c:81:5: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+     for(int i=0;i<100;i++);
+     ^~~
+../src/micro_hello.c:82:8: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+        EndTime = XTmrCtr_GetValue(timer_0, XPAR_AXI_TIMER_0_DEVICE_ID);
+        ^~~~~~~
+../src/micro_hello.c:85:36: warning: format '%lld' expects argument of type 'long long int', but argument 2 has type 'u32' {aka 'long unsigned int'} [-Wformat=]
+   printf("(main SW2) ExecTime = %lld unit \n", ExecTimeInTicks);
+                                 ~~~^           ~~~~~~~~~~~~~~~
+                                 %ld
+../src/micro_hello.c:69:13: warning: unused variable 'TimeRun' [-Wunused-variable]
+         u32 TimeRun;
+             ^~~~~~~
+../src/micro_hello.c:68:13: warning: unused variable 'Calibration' [-Wunused-variable]
+         u32 Calibration;
+             ^~~~~~~~~~~
+../src/micro_hello.c:65:17: warning: unused variable 'Status' [-Wunused-variable]
+         XStatus Status;
+                 ^~~~~~
+../src/micro_hello.c:57:18: warning: unused variable 'End_Time' [-Wunused-variable]
+  u32 Start_Time, End_Time, ExecTimeInTicks;
+                  ^~~~~~~~
+../src/micro_hello.c:57:6: warning: unused variable 'Start_Time' [-Wunused-variable]
+  u32 Start_Time, End_Time, ExecTimeInTicks;
+      ^~~~~~~~~~
+'Finished building: ../src/micro_hello.c'
+' '
+'Building target: micro_hello.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../micro_hello_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "micro_hello.elf"  ./src/micro_hello.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2019.1/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/8.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: ./src/micro_hello.o: in function `main':
+C:\Users\Qlala\Documents\M2_SETI\A2\git\A2\Hardware\Vivado\multiCPU\prj_mb_test\prj_mb_test.sdk\micro_hello\Debug/../src/micro_hello.c:71: undefined reference to `XtmCtr_Start'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:38: micro_hello.elf] Error 1
+16:59:35 **** Auto Build of configuration Debug for project micro_hello ****
+make all 
+'Building file: ../src/micro_hello.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/micro_hello.o" -I../../micro_hello_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/micro_hello.d" -MT"src/micro_hello.o" -o "src/micro_hello.o" "../src/micro_hello.c"
+../src/micro_hello.c: In function 'main':
+../src/micro_hello.c:71:9: warning: implicit declaration of function 'XtmCtr_Start'; did you mean 'XTmrCtr_Start'? [-Wimplicit-function-declaration]
+         XtmCtr_Start(timer_0,0);
+         ^~~~~~~~~~~~
+         XTmrCtr_Start
+../src/micro_hello.c:78:37: warning: format '%lld' expects argument of type 'long long int', but argument 2 has type 'u32' {aka 'long unsigned int'} [-Wformat=]
+     printf("(main SW) ExecTime = %lld unit \n", ExecTimeInTicks);
+                                  ~~~^           ~~~~~~~~~~~~~~~
+                                  %ld
+../src/micro_hello.c:81:5: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+     for(int i=0;i<100;i++);
+     ^~~
+../src/micro_hello.c:82:8: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+        EndTime = XTmrCtr_GetValue(timer_0, XPAR_AXI_TIMER_0_DEVICE_ID);
+        ^~~~~~~
+../src/micro_hello.c:85:36: warning: format '%lld' expects argument of type 'long long int', but argument 2 has type 'u32' {aka 'long unsigned int'} [-Wformat=]
+   printf("(main SW2) ExecTime = %lld unit \n", ExecTimeInTicks);
+                                 ~~~^           ~~~~~~~~~~~~~~~
+                                 %ld
+../src/micro_hello.c:69:13: warning: unused variable 'TimeRun' [-Wunused-variable]
+         u32 TimeRun;
+             ^~~~~~~
+../src/micro_hello.c:68:13: warning: unused variable 'Calibration' [-Wunused-variable]
+         u32 Calibration;
+             ^~~~~~~~~~~
+../src/micro_hello.c:65:17: warning: unused variable 'Status' [-Wunused-variable]
+         XStatus Status;
+                 ^~~~~~
+../src/micro_hello.c:57:18: warning: unused variable 'End_Time' [-Wunused-variable]
+  u32 Start_Time, End_Time, ExecTimeInTicks;
+                  ^~~~~~~~
+../src/micro_hello.c:57:6: warning: unused variable 'Start_Time' [-Wunused-variable]
+  u32 Start_Time, End_Time, ExecTimeInTicks;
+      ^~~~~~~~~~
+'Finished building: ../src/micro_hello.c'
+' '
+'Building target: micro_hello.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../micro_hello_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "micro_hello.elf"  ./src/micro_hello.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2019.1/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/8.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: ./src/micro_hello.o: in function `main':
+C:\Users\Qlala\Documents\M2_SETI\A2\git\A2\Hardware\Vivado\multiCPU\prj_mb_test\prj_mb_test.sdk\micro_hello\Debug/../src/micro_hello.c:71: undefined reference to `XtmCtr_Start'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:38: micro_hello.elf] Error 1
+16:59:48 **** Auto Build of configuration Debug for project micro_hello ****
+make all 
+'Building file: ../src/micro_hello.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/micro_hello.o" -I../../micro_hello_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/micro_hello.d" -MT"src/micro_hello.o" -o "src/micro_hello.o" "../src/micro_hello.c"
+../src/micro_hello.c: In function 'main':
+../src/micro_hello.c:78:37: warning: format '%lld' expects argument of type 'long long int', but argument 2 has type 'u32' {aka 'long unsigned int'} [-Wformat=]
+     printf("(main SW) ExecTime = %lld unit \n", ExecTimeInTicks);
+                                  ~~~^           ~~~~~~~~~~~~~~~
+                                  %ld
+../src/micro_hello.c:81:5: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+     for(int i=0;i<100;i++);
+     ^~~
+../src/micro_hello.c:82:8: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+        EndTime = XTmrCtr_GetValue(timer_0, XPAR_AXI_TIMER_0_DEVICE_ID);
+        ^~~~~~~
+../src/micro_hello.c:85:36: warning: format '%lld' expects argument of type 'long long int', but argument 2 has type 'u32' {aka 'long unsigned int'} [-Wformat=]
+   printf("(main SW2) ExecTime = %lld unit \n", ExecTimeInTicks);
+                                 ~~~^           ~~~~~~~~~~~~~~~
+                                 %ld
+../src/micro_hello.c:69:13: warning: unused variable 'TimeRun' [-Wunused-variable]
+         u32 TimeRun;
+             ^~~~~~~
+../src/micro_hello.c:68:13: warning: unused variable 'Calibration' [-Wunused-variable]
+         u32 Calibration;
+             ^~~~~~~~~~~
+../src/micro_hello.c:65:17: warning: unused variable 'Status' [-Wunused-variable]
+         XStatus Status;
+                 ^~~~~~
+../src/micro_hello.c:57:18: warning: unused variable 'End_Time' [-Wunused-variable]
+  u32 Start_Time, End_Time, ExecTimeInTicks;
+                  ^~~~~~~~
+../src/micro_hello.c:57:6: warning: unused variable 'Start_Time' [-Wunused-variable]
+  u32 Start_Time, End_Time, ExecTimeInTicks;
+      ^~~~~~~~~~
+'Finished building: ../src/micro_hello.c'
+' '
+'Building target: micro_hello.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../micro_hello_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "micro_hello.elf"  ./src/micro_hello.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: micro_hello.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size micro_hello.elf  |tee "micro_hello.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  63760	   1744	   2152	  67656	  10848	micro_hello.elf
+'Finished building: micro_hello.elf.size'
+' '
+16:59:53 **** Incremental Build of configuration Debug for project micro_hello ****
+make all 
+make: Nothing to be done for 'all'.
+17:00:24 **** Auto Build of configuration Debug for project micro_hello ****
+make all 
+'Building file: ../src/micro_hello.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/micro_hello.o" -I../../micro_hello_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/micro_hello.d" -MT"src/micro_hello.o" -o "src/micro_hello.o" "../src/micro_hello.c"
+../src/micro_hello.c: In function 'main':
+../src/micro_hello.c:78:37: warning: format '%lld' expects argument of type 'long long int', but argument 2 has type 'u32' {aka 'long unsigned int'} [-Wformat=]
+     printf("(main SW) ExecTime = %lld unit \n", ExecTimeInTicks);
+                                  ~~~^           ~~~~~~~~~~~~~~~
+                                  %ld
+../src/micro_hello.c:80:24: error: expected ';' before 'BeginTime'
+     printf("exec 2 \n")
+                        ^
+                        ;
+     BeginTime = XTmrCtr_GetValue(timer_0, XPAR_AXI_TIMER_0_DEVICE_ID);
+     ~~~~~~~~~           
+../src/micro_hello.c:82:5: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+     for(int i=0;i<100;i++);
+     ^~~
+../src/micro_hello.c:83:8: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+        EndTime = XTmrCtr_GetValue(timer_0, XPAR_AXI_TIMER_0_DEVICE_ID);
+        ^~~~~~~
+../src/micro_hello.c:86:36: warning: format '%lld' expects argument of type 'long long int', but argument 2 has type 'u32' {aka 'long unsigned int'} [-Wformat=]
+   printf("(main SW2) ExecTime = %lld unit \n", ExecTimeInTicks);
+                                 ~~~^           ~~~~~~~~~~~~~~~
+                                 %ld
+../src/micro_hello.c:69:13: warning: unused variable 'TimeRun' [-Wunused-variable]
+         u32 TimeRun;
+             ^~~~~~~
+../src/micro_hello.c:68:13: warning: unused variable 'Calibration' [-Wunused-variable]
+         u32 Calibration;
+             ^~~~~~~~~~~
+../src/micro_hello.c:65:17: warning: unused variable 'Status' [-Wunused-variable]
+         XStatus Status;
+                 ^~~~~~
+../src/micro_hello.c:57:18: warning: unused variable 'End_Time' [-Wunused-variable]
+  u32 Start_Time, End_Time, ExecTimeInTicks;
+                  ^~~~~~~~
+../src/micro_hello.c:57:6: warning: unused variable 'Start_Time' [-Wunused-variable]
+  u32 Start_Time, End_Time, ExecTimeInTicks;
+      ^~~~~~~~~~
+make: *** [src/subdir.mk:26: src/micro_hello.o] Error 1
+17:00:27 **** Auto Build of configuration Debug for project micro_hello ****
+make all 
+'Building file: ../src/micro_hello.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/micro_hello.o" -I../../micro_hello_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/micro_hello.d" -MT"src/micro_hello.o" -o "src/micro_hello.o" "../src/micro_hello.c"
+../src/micro_hello.c: In function 'main':
+../src/micro_hello.c:78:37: warning: format '%lld' expects argument of type 'long long int', but argument 2 has type 'u32' {aka 'long unsigned int'} [-Wformat=]
+     printf("(main SW) ExecTime = %lld unit \n", ExecTimeInTicks);
+                                  ~~~^           ~~~~~~~~~~~~~~~
+                                  %ld
+../src/micro_hello.c:82:5: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+     for(int i=0;i<100;i++);
+     ^~~
+../src/micro_hello.c:83:8: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+        EndTime = XTmrCtr_GetValue(timer_0, XPAR_AXI_TIMER_0_DEVICE_ID);
+        ^~~~~~~
+../src/micro_hello.c:86:36: warning: format '%lld' expects argument of type 'long long int', but argument 2 has type 'u32' {aka 'long unsigned int'} [-Wformat=]
+   printf("(main SW2) ExecTime = %lld unit \n", ExecTimeInTicks);
+                                 ~~~^           ~~~~~~~~~~~~~~~
+                                 %ld
+../src/micro_hello.c:69:13: warning: unused variable 'TimeRun' [-Wunused-variable]
+         u32 TimeRun;
+             ^~~~~~~
+../src/micro_hello.c:68:13: warning: unused variable 'Calibration' [-Wunused-variable]
+         u32 Calibration;
+             ^~~~~~~~~~~
+../src/micro_hello.c:65:17: warning: unused variable 'Status' [-Wunused-variable]
+         XStatus Status;
+                 ^~~~~~
+../src/micro_hello.c:57:18: warning: unused variable 'End_Time' [-Wunused-variable]
+  u32 Start_Time, End_Time, ExecTimeInTicks;
+                  ^~~~~~~~
+../src/micro_hello.c:57:6: warning: unused variable 'Start_Time' [-Wunused-variable]
+  u32 Start_Time, End_Time, ExecTimeInTicks;
+      ^~~~~~~~~~
+'Finished building: ../src/micro_hello.c'
+' '
+'Building target: micro_hello.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../micro_hello_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "micro_hello.elf"  ./src/micro_hello.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: micro_hello.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size micro_hello.elf  |tee "micro_hello.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  64152	   1744	   2152	  68048	  109d0	micro_hello.elf
+'Finished building: micro_hello.elf.size'
+' '
+17:00:30 **** Incremental Build of configuration Debug for project micro_hello ****
+make all 
+make: Nothing to be done for 'all'.
+17:00:49 **** Auto Build of configuration Debug for project micro_hello ****
+make all 
+'Building file: ../src/micro_hello.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/micro_hello.o" -I../../micro_hello_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/micro_hello.d" -MT"src/micro_hello.o" -o "src/micro_hello.o" "../src/micro_hello.c"
+../src/micro_hello.c: In function 'main':
+../src/micro_hello.c:78:37: warning: format '%lld' expects argument of type 'long long int', but argument 2 has type 'u32' {aka 'long unsigned int'} [-Wformat=]
+     printf("(main SW) ExecTime = %lld unit \n", ExecTimeInTicks);
+                                  ~~~^           ~~~~~~~~~~~~~~~
+                                  %ld
+../src/micro_hello.c:82:5: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+     for(int i=0;i<100;i++);
+     ^~~
+../src/micro_hello.c:83:8: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+        EndTime = XTmrCtr_GetValue(timer_0, XPAR_AXI_TIMER_0_DEVICE_ID);
+        ^~~~~~~
+../src/micro_hello.c:86:36: warning: format '%lld' expects argument of type 'long long int', but argument 2 has type 'u32' {aka 'long unsigned int'} [-Wformat=]
+   printf("(main SW2) ExecTime = %lld unit \n", ExecTimeInTicks);
+                                 ~~~^           ~~~~~~~~~~~~~~~
+                                 %ld
+../src/micro_hello.c:69:13: warning: unused variable 'TimeRun' [-Wunused-variable]
+         u32 TimeRun;
+             ^~~~~~~
+../src/micro_hello.c:68:13: warning: unused variable 'Calibration' [-Wunused-variable]
+         u32 Calibration;
+             ^~~~~~~~~~~
+../src/micro_hello.c:65:17: warning: unused variable 'Status' [-Wunused-variable]
+         XStatus Status;
+                 ^~~~~~
+../src/micro_hello.c:57:18: warning: unused variable 'End_Time' [-Wunused-variable]
+  u32 Start_Time, End_Time, ExecTimeInTicks;
+                  ^~~~~~~~
+../src/micro_hello.c:57:6: warning: unused variable 'Start_Time' [-Wunused-variable]
+  u32 Start_Time, End_Time, ExecTimeInTicks;
+      ^~~~~~~~~~
+'Finished building: ../src/micro_hello.c'
+' '
+'Building target: micro_hello.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../micro_hello_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "micro_hello.elf"  ./src/micro_hello.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: micro_hello.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size micro_hello.elf  |tee "micro_hello.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  64156	   1744	   2156	  68056	  109d8	micro_hello.elf
+'Finished building: micro_hello.elf.size'
+' '
+17:00:53 **** Incremental Build of configuration Debug for project micro_hello ****
+make all 
+make: Nothing to be done for 'all'.
+20:09:52 **** Auto Build of configuration Debug for project micro_hello ****
+make all 
+'Building file: ../src/micro_hello.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/micro_hello.o" -I../../micro_hello_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/micro_hello.d" -MT"src/micro_hello.o" -o "src/micro_hello.o" "../src/micro_hello.c"
+../src/micro_hello.c: In function 'main':
+../src/micro_hello.c:78:37: warning: format '%lld' expects argument of type 'long long int', but argument 2 has type 'u32' {aka 'long unsigned int'} [-Wformat=]
+     printf("(main SW) ExecTime = %lld unit \n", ExecTimeInTicks);
+                                  ~~~^           ~~~~~~~~~~~~~~~
+                                  %ld
+../src/micro_hello.c:82:5: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+     for(int i=0;i<100;i++);
+     ^~~
+../src/micro_hello.c:83:8: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+        EndTime = XTmrCtr_GetValue(timer_0, XPAR_AXI_TIMER_0_DEVICE_ID);
+        ^~~~~~~
+../src/micro_hello.c:86:36: warning: format '%lld' expects argument of type 'long long int', but argument 2 has type 'u32' {aka 'long unsigned int'} [-Wformat=]
+   printf("(main SW2) ExecTime = %lld unit \n", ExecTimeInTicks);
+                                 ~~~^           ~~~~~~~~~~~~~~~
+                                 %ld
+../src/micro_hello.c:69:13: warning: unused variable 'TimeRun' [-Wunused-variable]
+         u32 TimeRun;
+             ^~~~~~~
+../src/micro_hello.c:68:13: warning: unused variable 'Calibration' [-Wunused-variable]
+         u32 Calibration;
+             ^~~~~~~~~~~
+../src/micro_hello.c:65:17: warning: unused variable 'Status' [-Wunused-variable]
+         XStatus Status;
+                 ^~~~~~
+../src/micro_hello.c:57:18: warning: unused variable 'End_Time' [-Wunused-variable]
+  u32 Start_Time, End_Time, ExecTimeInTicks;
+                  ^~~~~~~~
+../src/micro_hello.c:57:6: warning: unused variable 'Start_Time' [-Wunused-variable]
+  u32 Start_Time, End_Time, ExecTimeInTicks;
+      ^~~~~~~~~~
+'Finished building: ../src/micro_hello.c'
+' '
+'Building target: micro_hello.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../micro_hello_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "micro_hello.elf"  ./src/micro_hello.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: micro_hello.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size micro_hello.elf  |tee "micro_hello.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  64156	   1744	   2156	  68056	  109d8	micro_hello.elf
+'Finished building: micro_hello.elf.size'
+' '
+20:25:35 **** Incremental Build of configuration Debug for project micro_hello ****
+make all 
+make: Nothing to be done for 'all'.
+21:48:19 **** Auto Build of configuration Debug for project micro_hello ****
+make all 
+'Building file: ../src/micro_hello.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/micro_hello.o" -I../../micro_hello_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/micro_hello.d" -MT"src/micro_hello.o" -o "src/micro_hello.o" "../src/micro_hello.c"
+../src/micro_hello.c: In function 'main':
+../src/micro_hello.c:57:28: warning: unused variable 'ExecTimeInTicks' [-Wunused-variable]
+  u32 Start_Time, End_Time, ExecTimeInTicks;
+                            ^~~~~~~~~~~~~~~
+../src/micro_hello.c:57:18: warning: unused variable 'End_Time' [-Wunused-variable]
+  u32 Start_Time, End_Time, ExecTimeInTicks;
+                  ^~~~~~~~
+../src/micro_hello.c:57:6: warning: unused variable 'Start_Time' [-Wunused-variable]
+  u32 Start_Time, End_Time, ExecTimeInTicks;
+      ^~~~~~~~~~
+'Finished building: ../src/micro_hello.c'
+' '
+'Building target: micro_hello.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../micro_hello_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "micro_hello.elf"  ./src/micro_hello.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: micro_hello.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size micro_hello.elf  |tee "micro_hello.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2744	    320	   2080	   5144	   1418	micro_hello.elf
+'Finished building: micro_hello.elf.size'
+' '
+21:49:02 **** Auto Build of configuration Debug for project micro_hello ****
+make all 
+'Building target: micro_hello.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../micro_hello_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "micro_hello.elf"  ./src/micro_hello.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: micro_hello.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size micro_hello.elf  |tee "micro_hello.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2744	    320	  32800	  35864	   8c18	micro_hello.elf
+'Finished building: micro_hello.elf.size'
+' '
