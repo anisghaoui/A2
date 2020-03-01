@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.1.29)  27 FEB 2020 18:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.1.29)  1 MAR 2020 13:15
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -954,12 +954,12 @@ LaTeX Info: Redefining \nameref on input line 54.
 \openout2 = `titlepage.aux'.
 
  (./titlepage.tex
-<logo.jpg, id=44, 188.20313pt x 188.20313pt>
+<logo.jpg, id=96, 188.20313pt x 188.20313pt>
 File: logo.jpg Graphic file (type jpg)
 <use logo.jpg>
 Package pdftex.def Info: logo.jpg  used on input line 28.
 (pdftex.def)             Requested size: 193.47578pt x 193.48953pt.
-<logo2.jpeg, id=45, 401.5pt x 401.5pt>
+<logo2.jpeg, id=97, 401.5pt x 401.5pt>
 File: logo2.jpeg Graphic file (type jpg)
 <use logo2.jpeg>
 Package pdftex.def Info: logo2.jpeg  used on input line 29.
@@ -969,20 +969,25 @@ Package pdftex.def Info: logo2.jpeg  used on input line 29.
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./logo.jpg> <./logo2.jpeg>
 ])
-Overfull \hbox (7.2691pt too wide) in paragraph at lines 65--66
-\OT1/cmr/m/n/12 cielles ^^Ra impl^^Sementer. i.e. Choi-sir les al-go-rithmes ^^
-Ra ^^Setudier, choi-sir le stra-tag^^Reme d'impl^^Sementation
+Overfull \hbox (5.16333pt too wide) in paragraph at lines 62--63
+\OT1/cmr/m/n/12 consis-tant et par-fois moins d^^Setermin^^Ses quand ils sont e
+x^^Secut^^Ses de mani^^Rere to-ta-le-ment s^^Sequentielle.
  []
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 70.
+LaTeX Font Info:    Try loading font information for U+msa on input line 71.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 70.
+LaTeX Font Info:    Try loading font information for U+msb on input line 71.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
+Overfull \hbox (7.2691pt too wide) in paragraph at lines 71--72
+\OT1/cmr/m/n/12 cielles ^^Ra impl^^Sementer. i.e. Choi-sir les al-go-rithmes ^^
+Ra ^^Setudier, choi-sir le stra-tag^^Reme d'impl^^Sementation
+ []
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 15.71667pt.
@@ -993,79 +998,163 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.92 \paragraph
-               {Pipeline} : Applicable aux boucles, fonctions et opérateurs...
-[1
+l.80 
+      [1
 
 ]
 
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 106.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\pi' on input line 106.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 106.
+
+<soft/screenshot002.png, id=112, 186.2595pt x 143.226pt>
+File: soft/screenshot002.png Graphic file (type png)
+<use soft/screenshot002.png>
+Package pdftex.def Info: soft/screenshot002.png  used on input line 112.
+(pdftex.def)             Requested size: 241.84843pt x 185.97958pt.
+
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 15.71667pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[2]
-<hls_fig/screenshot001.png, id=79, 323.70938pt x 182.93344pt>
+[2 <./soft/screenshot002.png (PNG copy)>]
+<soft/screenshot003.png, id=124, 1088.56688pt x 337.26pt>
+File: soft/screenshot003.png Graphic file (type png)
+<use soft/screenshot003.png>
+Package pdftex.def Info: soft/screenshot003.png  used on input line 134.
+(pdftex.def)             Requested size: 386.95897pt x 119.88509pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.71667pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[3 <./soft/screenshot003.png>]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 178.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\mu' on input line 178.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 178.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.71667pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[4]
+<soft/screenshot004.png, id=143, 400.49625pt x 253.69781pt>
+File: soft/screenshot004.png Graphic file (type png)
+<use soft/screenshot004.png>
+Package pdftex.def Info: soft/screenshot004.png  used on input line 187.
+(pdftex.def)             Requested size: 386.95897pt x 225.74043pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.71667pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[5 <./soft/screenshot004.png>]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.71667pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[6]
+<hls_fig/screenshot001.png, id=172, 323.70938pt x 182.93344pt>
 File: hls_fig/screenshot001.png Graphic file (type png)
 <use hls_fig/screenshot001.png>
-Package pdftex.def Info: hls_fig/screenshot001.png  used on input line 122.
-(pdftex.def)             Requested size: 145.11053pt x 82.00386pt.
-<hls_fig/screenshot002.png, id=81, 326.72063pt x 182.93344pt>
+Package pdftex.def Info: hls_fig/screenshot001.png  used on input line 240.
+(pdftex.def)             Requested size: 149.94484pt x 84.73657pt.
+<hls_fig/screenshot002.png, id=173, 326.72063pt x 182.93344pt>
 File: hls_fig/screenshot002.png Graphic file (type png)
 <use hls_fig/screenshot002.png>
-Package pdftex.def Info: hls_fig/screenshot002.png  used on input line 127.
-(pdftex.def)             Requested size: 145.11053pt x 81.2474pt.
-<hls_fig/screenshot003.png, id=82, 327.47343pt x 190.46156pt>
+Package pdftex.def Info: hls_fig/screenshot002.png  used on input line 245.
+(pdftex.def)             Requested size: 149.94484pt x 83.955pt.
+<hls_fig/screenshot003.png, id=174, 327.47343pt x 190.46156pt>
 File: hls_fig/screenshot003.png Graphic file (type png)
 <use hls_fig/screenshot003.png>
-Package pdftex.def Info: hls_fig/screenshot003.png  used on input line 132.
-(pdftex.def)             Requested size: 145.11053pt x 84.3962pt.
- 
-AED: lastpage setting LastPage
+Package pdftex.def Info: hls_fig/screenshot003.png  used on input line 250.
+(pdftex.def)             Requested size: 149.94484pt x 87.2094pt.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 15.71667pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[3 <./hls_fig/screenshot001.png> <./hls_fig/screenshot002.png> <./hls_fig/scree
-nshot003.png>]
+[7]
+<soft/screenshot005.png, id=182, 583.416pt x 309.35086pt>
+File: soft/screenshot005.png Graphic file (type png)
+<use soft/screenshot005.png>
+Package pdftex.def Info: soft/screenshot005.png  used on input line 278.
+(pdftex.def)             Requested size: 483.69687pt x 256.47792pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.71667pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[8 <./hls_fig/screenshot001.png> <./hls_fig/screenshot002.png> <./hls_fig/scree
+nshot003.png> <./soft/screenshot005.png>] 
+AED: lastpage setting LastPage
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[4]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 154.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 154.
+[9]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 288.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 288.
  (./main.aux (./titlepage.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 154.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 154.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 288.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 288.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: DFF9F56761B9C36C08657603E46617A1;714.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 154.
+(rerunfilecheck)             Checksum: E7FE2300EA24F39C163F745CFD32DCCC;1787.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 288.
  ) 
 Here is how much of TeX's memory you used:
- 12401 strings out of 492982
- 196143 string characters out of 6134896
- 358366 words of memory out of 5000000
- 15745 multiletter control sequences out of 15000+600000
- 10920 words of font info for 41 fonts, out of 8000000 for 9000
+ 12473 strings out of 492982
+ 197395 string characters out of 6134896
+ 359367 words of memory out of 5000000
+ 15789 multiletter control sequences out of 15000+600000
+ 13221 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,12n,43p,1008b,487s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,13n,43p,1008b,487s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmtt12.pfb>
-Output written on main.pdf (5 pages, 191962 bytes).
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmtt12.pfb>
+Output written on main.pdf (10 pages, 859945 bytes).
 PDF statistics:
- 131 PDF objects out of 1000 (max. 8388607)
- 106 compressed objects within 2 object streams
- 23 named destinations out of 1000 (max. 500000)
- 106 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 247 PDF objects out of 1000 (max. 8388607)
+ 205 compressed objects within 3 object streams
+ 48 named destinations out of 1000 (max. 500000)
+ 236 words of extra memory for PDF output out of 10000 (max. 10000000)
 

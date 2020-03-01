@@ -26,7 +26,7 @@
 \usepackage{lastpage}
 \fancyhf{}
 \lhead{\leftmark}
-\rfoot{Page \thepage\ of \pageref{LastPage}}
+\rfoot{Page \thepage\ sur \pageref{LastPage}}
 
 
 %hypersetup
@@ -59,21 +59,137 @@
 %\listoftables
 \pagestyle{fancy}
 \section{Introduction}
+Durant le siècle dernier, les algorithmes sont passés d'une sombre idée à la base de toutes choses faites. Ces algorithmes traitent les données à leur entrée dans des temps parfois constant, consistant et parfois moins déterminés quand ils sont exécutés de manière totalement séquentielle. Avec la récente explosion du Big Data, ces algorithmes doivent traiter de plus en plus des données de plus en plus volumineuse et multi-dimensionnelles. Il est évident qu'une solution parallèle doit être déployée afin de répondre à une telle demande. 
 
+On propose alors de concevoir des architectures pouvant effectuer un calcul parallèle utilisant le principe simple qu'une implémentation matérielle est toujours plus rapide, à fréquence égale, qu'une implémentation logicielle. Le problème est que la conception de ces implémentation par des outils de synthèse demande beaucoup de ressources humaine et de réflexions afin de produire un résultat correct et performant. On pense alors à faire usage des outils de synthèse automatisée qui eux vont générer l'implémentation logique de transfert par registres (RTL).
+
+On se place sur une architecture dite hétérogène du fait qu'elle comporte un noyau CPU-ARM et un noyau FPGA sur la même puce, d'où l'appellation \textit{System on Chip}. Ce système est sur la carte \textit{ZedBoard} développer par \textit{Xilinx}. En utilisant les outils proposés par \textit{Xilinix}, on peut effectuer le développement des algorithmes logiciellement ou/et matériellement.
+
+Dans ce document, on procède à l'explication de la méthode et l'approche qu'on a suivi durant l'étude et la conception des algorithmes, la conception des IP HLS qui seront la traduction de ces algorithmes en RTL,  l'implémentation matérielle sur la carte et enfin on procède à l'exposition des résultats et une conclusion. On ne présentera pas en détail toutes les implémentations effectués.
 
 \section{Méthodologie et approche}
-L'équipe consistant en 4 personnes, 2 personnes sont confiés la tâche de conception des logicielles à implémenter. i.e. Choisir les algorithmes à étudier, choisir le stratagème d'implémentation et la définition des besoins en terme de mécanisme C/C++, de jeu de données  et de tests à valider. Ensuite, Ils passent à une première implémentation qui n'est pas nécessairement optimisée afin de ne pas bloquer les autres parties de l'équipe. Une fois une première implémentation proposée au HLS, l'optimisation de cette implémentation pour ARM commence. Ce processus itératif consiste en l'analyse de l'architecture et contraintes de l'architecture cible comparée à l'architecture des ordinateurs usuels (PC bureau).
+L'équipe consistant en 4 personnes, 2 personnes sont confiées la tâche de conception des logicielles à implémenter. i.e. Choisir les algorithmes à étudier, choisir le stratagème d'implémentation et la définition des besoins en terme de mécanisme C/C++, de jeu de données  et de tests à valider sur PC, ARM et $\mu$blaze. Elles passent par une première implémentation qui n'est pas nécessairement optimisée afin de ne pas bloquer les autres parties de l'équipe. Une fois une première implémentation proposée au HLS, l'optimisation de cette implémentation pour ARM commence. Ce processus itératif consiste en l'analyse de l'architecture cible comparée à l'architecture des ordinateurs usuels (PC bureau).
 
-%parler de Spark et des algo
-%%ajouter des trucs sur ça, mentioner les personnes?
+En essayant de maximiser le parallélisme potentiel de l'équipe, Le concepteur HLS procède à l'analyse les implémentations C/C++ proposées par la partie logicielle embarquée, l'adaptation de ces implémentations d'algorithme aux contraintes matérielles sur la carte Zboard. En effet, certains mécanismes logiciels sont simplement impossibles à réaliser en matériel et donc la conception HLS sera une version modifiée afin de créer une IP implémentable et interfaçable dans un premier par ARM puis par $\mu$blaze.
 
-La partie HLS consiste à analyser les implémentations C/C++ proposées par la partie logicielle embarquée, d'adapter ces implémentations d'algorithme aux contraintes matérielles sur la carte Zboard. En effet, certains mécanismes logiciels sont simplement impossibles à réaliser en matériel et donc la conception HLS sera une version modifiée afin de créer une IP implémentable et interfaçable dans un premier par ARM puis par $\mu$blaze.
+En parallèle, le concepteur matériel effectue le développement de projets et cartes modèles : des projets contenant des exemples d'exécution sur ARM, des implémentation d'IP ne faisant rien à part communiquer et de l'implémentation du $\mu$blaze.
+
+Enfin, l'équipe logicielle utilisera les cartes développer pour exécuter leurs codes C. Le concepteur HLS se met en cycle de développement itératif pour optimiser les IP HLS. Le concepteur matériel fera un système temporellement hétérogène (multi-horloges).
+
+Il est important de comprendre cette méthodologie car elle est plus importante que les résultats en eux même. En effet, les dépendances inter-équipe sont l'un des goulots les plus contraignant dans le monde de la recherche et l'industrie. On passe trop de temps à communiquer inefficacement et à être bloqué par les autres parties si cette méthodologie n'est pas respectée. Cet effet est encore plus important dans une équipe aux compétences variées et de domaine hétérogène.
 
 \section{Conception logicielle embarquée}
-%Quentin
+On a choisi plusieurs algorithmes de la série Apprentissage Automatique dans SPARK. On les a en début implémenté en C sur PC avec différentes tailles des ensembles de données. Puis, on passe à l'exécution sur ARM et enfin sur $\mu$blaze. On citera ces algorithmes sans trop détailler leur implémentations. Les informations complémentaires seront présentées devant le jury lors de la présentation finale.
+
+\subsection{Présentations des algorithmes}
+\subsubsection{Multiplication de Matrice de Bloc (BMM)}
+Cet algorithme vise à optimiser la multiplication de matrices en décomposant les grandes matrices en petites sous-matrices. Supposons que l’on va calculer la multiplication de A (MxP) et B (MxP) :
+$$
+\begin{bmatrix}
+A_{11} & A_{12}\\
+A_{21} & A_{22}\\
+\end{bmatrix}
+\begin{bmatrix}
+B_{11} & B_{12}\\
+B_{21} & B_{22}\\
+\end{bmatrix}
+=
+\begin{bmatrix}
+C_{11} & C_{12}\\
+C_{21} & C_{22}\\
+\end{bmatrix}
+$$
+avec $ C_{11} = A_{11}.B_{11} + A_{12}.B_{21}$
+
+Dans le cas général sans utiliser de blocs, on utilise trois boucles pour faire la multiplication. Donc avec une taille du bloc fixée, il faut ajouter trois autres boucles pour exécuter le calcul à l’intérieur de chaque bloc. On a testé avec différentes dimensions des matrices et différentes tailles de bloc. 
+
+\subsubsection{Estimateur de $\pi$}
+On souhaite calculer la valeur assez précise du nombre irrationnel $\pi$ par l'estimation de Monte-Carlo. Comme montré sur la figure ci-dessous, on génère des points aléatoires dans d’un carré de côté 2. Ensuite on compte le nombre de points à l’intérieur du cercle encastré dans ce carré. Alors le rapport de la surface de ce cercle à celle de ce carré peut être approximé comme :
+
+$$ \dfrac{S_{cercle}}{S_{carre}} = \dfrac{\pi R^2}{4R^4} \approx \dfrac{N_{cercle}}{N_{carre}}$$
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\linewidth]{soft/screenshot002}
+	\caption{Illustration de l'estimation de $\pi$ par la méthode Monte-Carlo}
+	\label{fig:screenshot002}
+\end{figure}
+Donc, la valeur approximative peut être calculée comme :
+$$ \pi \approx 4 \times \dfrac{N_{cercle}}{N_{carre}}$$
+
+\subsubsection{K-means}
+K-means est un algorithme de clustering qui vise à partitionner un nombre de données en un nombre spécifié de clusters, en fonction de la proximité spatiale des valeurs moyennes. Il y a trois étapes principales :
+\begin{enumerate}
+\item Choisir arbitrairement K centres de clusters.
+\item Calculer la distance entre chaque donnée et chaque centre, et assigner les données aux clusters adaptés.
+\item Mettre à jour chaque centre selon la moyenne des données dans chaque cluster.
+\end{enumerate}
+On fait l’itération de ces trois étapes jusqu’à convergence. Mais en pratique, il est mieux de fixer le nombre des itérations afin de pouvoir converger en un temps constant. On commence le programme avec les données à 2 dimensions, après on l’optimise à dimension quelque afin de s’adapter aux datasets différents. Pour les tests sur PC, on fixe le nombre des itérations à 10.
+
+\subsubsection{Analyse par Composantes Principales}
+PCA est un algorithme d'apprentissage automatique qui est utilisé afin de réduire la dimensionnalité au sein d'un ensemble de données tout en conservant autant d'informations que possible. Cette action s'effectue en recherchant un nouvel ensemble de variables appelées composantes, qui constituent les composés des caractéristiques originales décorrélées les unes les autres. Les composants sont également contraints de telle sorte que le premier composant représente la plus grande variabilité possible dans les données, le deuxième composant la deuxième variabilité la plus importante, et ainsi de suite.
+
+La représentation ci-dessous est un exemple d’application de l’algorithme afin de passer d’un espace 3D à un espace 2D:
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\linewidth]{soft/screenshot003}
+	\caption{Représentation des projections de PCA}
+	\label{fig:screenshot003}
+\end{figure}
+\subsubsection{Coefficient de Pearson}
+La corrélation est une quantification de la relation linéaire entre des variables continues. Le calcul du coefficient de corrélation de Pearson repose sur le calcul de la covariance entre deux variables continues. 
+Le coefficient de corrélation est ainsi exprimé de la manière suivante :
+$$ r = \dfrac{Cov(X,Y)}{\sigma _X \sigma _Y}$$
+
+Avec Cov(X,Y) la covariance entre les variables X et Y, et $\sigma _X$ et $\sigma _Y$ les écarts types respectifs de X et Y.L’algorithme a été testé avec plusieurs jeux de données avec un nombre d’observations allant de 10 à 20 pour deux variables.
+\subsubsection{Décomposition par valeur singulière}
+SVD est similaire à PCA.  Les deux algorithmes sont utilisés pour la réduction de la dimension de données. Mais avec SVD, on peut obtenir la décomposition de la matrice (données) dans deux directions. Il décompose une matrice A sous la forme suivante :
+$$ A = U . \Sigma . V^T$$ 
+avec :
+\begin{itemize}
+\item A: une matrice de dimension MxN
+\item U : une matrice de dimension MxM, chaque colonne Ui est un vecteur propre de ($AA^T$)
+\item $\Sigma$ : une matrice diagonale de dimension MxN, les éléments diagonaux sont $\sqrt (\lambda_i)$, avec $\lambda_i$ la valeur propre correspondante à $U_i$ . Les éléments sont dans l’ordre décroissant.
+\item $V^T$: une matrice de dimension NxN, chaque ligne est un vecteur propre de ($A^TA$).
+\end{itemize} 
+
+\subsection{Implémentation et tests des algorithmes sur ARM}
+Afin d'exécuter les algorithmes sur la carte Zynq, il faut configurer la carte comme le permettent les outils de Vivado. On ne détaillera pas ces configurations (en terme de zone mémoire attribué au code et aux données) sur ce rapport ni les binaires compilés obtenus.
+
+\subsection{Optimisation des algorithmes sur ARM}
+En général, il y a trois aspects qui seront pris en compte pour l’optimisation logicielle :
+\begin{itemize}
+\item Délais de branchement
+\item Utilisation de cache
+\item Dépendances de données
+\end{itemize}
+Maintenant, la plupart des optimisations sont effectuées par le compilateur avec différentes options. Ici pour GNU, il y a quatre niveaux d’optimisation :
+\begin{itemize}
+\item O0 : pas d’optimisation
+\item O1 : l’optimisation par défaut, qui est faite sur les branchements et les constantes des grandes fonctions qui occupent beaucoup de mémoire
+\item  O2 : l’optimisation au niveau du registre et de l’instruction 
+\item O3 : l’optimisation en déroulant les boucles, utilisant la vectorisation SIMD, faisant \texttt{inline} les fonctions, mais prend plus de mémoire et de temps pendant la compilation
+\item Os : l’optimisation sur la taille du code
+\end{itemize}
+
+Par exemple, BMM est déjà une optimisation pour calculer la multiplication des matrices. Si les blocs sont de taille suffisamment petite pour tenir entièrement dans le cache, il y aura d’échec de cache quelle que soit la méthode de multiplication.
+
+On peut conclure que toutes les options d'optimisation (-O1, -O2, -O3, -Os) par le compilateur peuvent réduire considérablement le temps d'exécution. En comparant la taille du code (segment “text”) après les différentes optimisations, on peut voir que la taille du code sera toujours la plus petite si l’on choisit l’option “-Os” qui est spéciale pour l’optimisation de taille. En plus avec “-O3”, la taille du code sera plus longue par rapport à d'autres options même si son niveau d’optimisation est le plus haut.
+
+\subsection{Implémentation sur $\mu$blaze}
+Les processeurs Hardcore ont de bonnes performances, mais ne peuvent être utilisés que dans des cartes spécifiques. Les processeurs Softcore (par exemple MicroBlaze ici), en revanche, ont de faibles performances, mais sont très portables sur FPGA.
+
+Le MicroBlaze est un microprocesseur softcore RISC, d'architecture Harvard, entièrement 32 bits. Il présente ainsi 32 registres internes de 32 bits, des bus instructions et données internes, et externes.
+Le processeur possède 70 options de configuration, parmi lesquelles on trouve : un pipeline (3 ou 5 niveaux), opérateur de division, de décalage, FPU, logique de débug, mémoires cache instructions et données.
+
+L’architecture du cœur Microblaze est représentée par la figure \ref{fig:screenshot004} :
+\begin{figure}[H]
+	\centering
+	\includegraphics[trim= 0  20 0 0,clip,width=0.8\linewidth]{soft/screenshot004}
+	\caption{Schéma bloc de l'architecture du $\mu$blaze}
+	\label{fig:screenshot004}
+\end{figure}
 
 
-% Parler du fait qu'on choisit d'implémenter la totalité dun algo ,  parole d'AUDREY
 \section{Conception Synthèse Haut Niveau}
 Cette conception dite HLS consiste à convertir un code C/C++ en une implémentation RTL d'un code VHDL ou Verilog. La difficulté de cette étape est de comprendre que tout ce qui est en C/C++ n'est pas forcement implémentable ou mal effectué par le trans-compilateur. En effet, on tente de passer d'un schéma de flot de contrôle vers un schéma de flot de données. Par exemple, le fonctions récursives sont simplement impossibles à implémenter matériellement. Certains algorithmes itératif à critères d'arrêt dynamique doivent subir une reconversion. Au final, le but est de générer une IP matérielle dite HLS et quelle soit implémentable par l'équipe gérant le matériel.
 
@@ -104,30 +220,32 @@ Il est possible d'interfacer une IP matériellement grâce à une panoplie de po
 Dans les faits, On copie les entrées depuis l'interface du Axi dans des blocs mémoires locaux. Ceci fait que HLS infère des copies en rafale à la place de \textit{memcpy}.Donc, on travaille sur des pointeurs locaux puis on exporte le résultat par Axi output. Il ya donc une abstraction totale de l'interaction mémoire entre une IP HLS et le reste de l'architecture.
 
 \subsection{Approche d'implémentation des algorithmes}
-Afin de pourvoir transcrire les algorithmes discutés avec l'équipe logicielle, il d'abord effectuer une analyse de faisabilité en HLS. Car, on implémente pas un algorithme qui ne vaut pas le coût d'être accéléré. Ensuite, on procède à une analyse des besoins matériels pour en déduire les points d'apparition de goulots. Choisir entre la réinterprétation de l'algorithme ou la fragmentation en opérateurs.
+Afin de pourvoir transcrire les algorithmes discutés avec l'équipe logicielle, il d'abord effectuer une analyse de faisabilité en HLS. Car, on ne synthétise  pas un algorithme qui ne vaut pas le coût d'être accéléré. Ensuite, on procède à une analyse des besoins matériels pour en déduire les points d'apparition de goulots. Choisir entre la réinterprétation de l'algorithme ou la fragmentation en sous-opérateurs. 
 
 Dans la première, on doit réétudier le processus de l'algorithme. Puis, décider si celui-ci est modifiable sans corrompre les résultats ou bien possède une autre implémentation qui puisse satisfaire au mieux les contraintes matérielles. Deux exemples : l'estimation du nombre $\pi$ par la méthode Monte-Carlo qui ne peut être effectué simplement car la fonction \texttt{rand()} n'existe pas en matériel. Il faut alors concevoir un générateur de nombre aléatoire matériel qu'il soit à base d'oscillateur en anneau ou autre. Un deuxième exemple est de modifier le critère d'arrêt de K-means i.e. changer la boucle \texttt{while} qui est d'une durée d'exécution indéterminé en boucle \texttt{for} qui elle est finie en terme de nombre d'itérations. Plusieurs autres optimisations sont faisables mais il n'y a pas de règles évidentes pour ceci. Il faut soit mener des recherches sur la documentation et les forums ou se fier à son intuition et expérience.
+
+Dans la fragmentation en sous-opérateurs, si un algorithme a des parties non dissociables, donc dépendantes au sein d'une boucle, on peut imaginer à le séparer en sous-opérateurs afin d'optimiser ces entités là. Ceci peut offrir un grand gain en performance temporelle mais a deux inconvénients majeurs : Plus de surface par opérateur sera requis à cause de l'implémentation de blocs mémoires "dupliqués" et elle nécessite que la partie développement matériel écrive un protocole d'appel de l'IP plus complexe à développer. Après plusieurs tests, on estime que cette méthode d'optimisation ne sera pas utilisée à cause de contraintes temporelles.
 
 \subsubsection{Critères de conception d'IP}
 Il existe un nombre assez élevé d'optimisation effectuées automatiquement ou manuellement par le logiciel HLS. Un premier facteur limitant lors de la conception est la surface FPGA occupée par l'IP (éléments logiques,DSP,...). Il est simplement impossible d'implémenter une IP qui ne peut pas être portée sur la carte. Donc, il faut limiter l'usage des directive \texttt{pipeline} et \texttt{unroll} mais aussi les blocs RAM internes.
 
-Le deuxième paramètres limitant l'implémentation de l'IP est la fréquence de fonctionnement. HLS prend une période (donc fréquence) objective et "essayera" de synthétiser l'IP demandée à cette fréquence. Il est possible de le forcer à relaxer la synthèse afin de respecter ce critère.
+Le deuxième paramètre limitant l'implémentation de l'IP est la fréquence de fonctionnement. HLS prend une période (donc fréquence) objective et "essayera" de synthétiser l'IP demandée à cette fréquence. Il est possible de le forcer à relaxer la synthèse afin de respecter ce critère.
 
 Une solution possible à cette contrainte est d'utiliser des horloges différentes sur la carte qui ce soit par le Zynq ou le \texttt{SmartClock} (voir \ref{SmartClock}). La figure \ref{fig-hls} montre un résumé de quelques IPs implémentées. Toutes les IP ont pour période de fonctionnement objective : \textbf{10} ns.
 
 \begin{figure}[H]
 	\centering
-	\begin{subfigure}[H]{.3\linewidth}
+	\begin{subfigure}[H]{.31\linewidth}
 		\centering
 		\includegraphics[width=\linewidth]{hls_fig/screenshot001}
-		\caption{Peason}
+		\caption{Pearson}
 	\end{subfigure}
-	\begin{subfigure}[H]{.3\linewidth}
+	\begin{subfigure}[H]{.31\linewidth}
 		\centering
 		\includegraphics[width=\linewidth]{hls_fig/screenshot002}
 		\caption{Kmeans}
 	\end{subfigure}
-	\begin{subfigure}[H]{.3\linewidth}
+	\begin{subfigure}[H]{.31\linewidth}
 		\centering
 		\includegraphics[width=\linewidth]{hls_fig/screenshot003}
 		\caption{Matrix Block Mult.}
@@ -135,6 +253,8 @@ Une solution possible à cette contrainte est d'utiliser des horloges différent
 	\caption{Occupation des ressources FPGA pour différentes IP}
 	\label{fig-hls}
 \end{figure}
+
+Les algorithmes SVD et PCA ne sont pas implémentées à cause de la présence de plusieurs séquences de contrôle durs à optimiser dans les contraintes temporelles données.
 
 \section{Implémentation matérielle}
 
@@ -149,6 +269,20 @@ Une solution possible à cette contrainte est d'utiliser des horloges différent
 \label{SmartClock}
 Multi-horloge
 
-\section{Conclusion}
+\section{Performances Mesurées}
+Dans cette section, on présente les résultats obtenu et validé pour les exécution sur PC standard, ARM, ARM+HLS et $\mu$blaze.
+\subsection{Performances ARM}
+L'exécution sur ARM donne les résultats montré en figure \ref{fig:screenshot005}. On retrouve bien la complexité algorithmique théoriques et que ces algorithmes sont proportionnels à la taille des données sauf pour Bloc-Matrix-Multiplication. qui lui dépend du formatage de ces données.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\linewidth]{soft/screenshot005}
+	\caption {Temps d'exécution sur ARM des différents algorithmes}
+	\label{fig:screenshot005}
+\end{figure}
 
+\subsection{Performances HLS}
+Les exécutions utilisant les 3 IP réalisées, on obtient les temps d'exécution  suivants:
+
+\section{Conclusion et perspectives}
+Ce projet aura permis de découvrir une architecture hétérogène CPU+FPGA ainsi que les outils de développement qui lui dédié et d'y implémenter
 \end{document}

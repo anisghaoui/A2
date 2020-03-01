@@ -1,10 +1,23 @@
 \BOOKMARK [1][-]{section.1}{Introduction}{}% 1
 \BOOKMARK [1][-]{section.2}{M\351thodologie et approche}{}% 2
 \BOOKMARK [1][-]{section.3}{Conception logicielle embarqu\351e}{}% 3
-\BOOKMARK [1][-]{section.4}{Conception Synth\350se Haut Niveau}{}% 4
-\BOOKMARK [2][-]{subsection.4.1}{Conception d'une IP avec directives}{section.4}% 5
-\BOOKMARK [2][-]{subsection.4.2}{Interfa\347age d'une IP avec Axi/Axilite}{section.4}% 6
-\BOOKMARK [2][-]{subsection.4.3}{Approche d'impl\351mentation des algorithmes}{section.4}% 7
-\BOOKMARK [3][-]{subsubsection.4.3.1}{Crit\350res de conception d'IP}{subsection.4.3}% 8
-\BOOKMARK [1][-]{section.5}{Impl\351mentation mat\351rielle}{}% 9
-\BOOKMARK [1][-]{section.6}{Conclusion}{}% 10
+\BOOKMARK [2][-]{subsection.3.1}{Pr\351sentations des algorithmes}{section.3}% 4
+\BOOKMARK [3][-]{subsubsection.3.1.1}{Multiplication de Matrice de Bloc \(BMM\)}{subsection.3.1}% 5
+\BOOKMARK [3][-]{subsubsection.3.1.2}{Estimateur de }{subsection.3.1}% 6
+\BOOKMARK [3][-]{subsubsection.3.1.3}{K-means}{subsection.3.1}% 7
+\BOOKMARK [3][-]{subsubsection.3.1.4}{Analyse par Composantes Principales}{subsection.3.1}% 8
+\BOOKMARK [3][-]{subsubsection.3.1.5}{Coefficient de Pearson}{subsection.3.1}% 9
+\BOOKMARK [3][-]{subsubsection.3.1.6}{D\351composition par valeur singuli\350re}{subsection.3.1}% 10
+\BOOKMARK [2][-]{subsection.3.2}{Impl\351mentation et tests des algorithmes sur ARM}{section.3}% 11
+\BOOKMARK [2][-]{subsection.3.3}{Optimisation des algorithmes sur ARM}{section.3}% 12
+\BOOKMARK [2][-]{subsection.3.4}{Impl\351mentation sur blaze}{section.3}% 13
+\BOOKMARK [1][-]{section.4}{Conception Synth\350se Haut Niveau}{}% 14
+\BOOKMARK [2][-]{subsection.4.1}{Conception d'une IP avec directives}{section.4}% 15
+\BOOKMARK [2][-]{subsection.4.2}{Interfa\347age d'une IP avec Axi/Axilite}{section.4}% 16
+\BOOKMARK [2][-]{subsection.4.3}{Approche d'impl\351mentation des algorithmes}{section.4}% 17
+\BOOKMARK [3][-]{subsubsection.4.3.1}{Crit\350res de conception d'IP}{subsection.4.3}% 18
+\BOOKMARK [1][-]{section.5}{Impl\351mentation mat\351rielle}{}% 19
+\BOOKMARK [1][-]{section.6}{Performances Mesur\351es}{}% 20
+\BOOKMARK [2][-]{subsection.6.1}{Performances ARM}{section.6}% 21
+\BOOKMARK [2][-]{subsection.6.2}{Performances HLS}{section.6}% 22
+\BOOKMARK [1][-]{section.7}{Conclusion et perspectives}{}% 23
