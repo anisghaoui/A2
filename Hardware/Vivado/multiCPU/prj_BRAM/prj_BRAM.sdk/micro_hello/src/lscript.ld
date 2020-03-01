@@ -10,7 +10,7 @@
 /*                                                                 */
 /*******************************************************************/
 
-_STACK_SIZE = DEFINED(_STACK_SIZE) ? _STACK_SIZE : 0x800;
+_STACK_SIZE = DEFINED(_STACK_SIZE) ? _STACK_SIZE : 0x400;
 _HEAP_SIZE = DEFINED(_HEAP_SIZE) ? _HEAP_SIZE : 0x400;
 
 /* Define Memories in the system */
@@ -18,8 +18,8 @@ _HEAP_SIZE = DEFINED(_HEAP_SIZE) ? _HEAP_SIZE : 0x400;
 MEMORY
 {
    microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem : ORIGIN = 0x80000050, LENGTH = 0x1FB0
-   ps7_ddr_0_ACP_AXI_BASENAME : ORIGIN = 0x10100000, LENGTH = 0x0FF00000
-   ps7_ram_0_ACP_AXI_BASENAME : ORIGIN = 0x0, LENGTH = 0x40000
+   ps7_ddr_0_HP1_AXI_BASENAME : ORIGIN = 0x100000, LENGTH = 0x1FF00000
+   ps7_ram_0_HP1_AXI_BASENAME : ORIGIN = 0x0, LENGTH = 0x40000
    axi_bram_ctrl_0_Mem0 : ORIGIN = 0x42000000, LENGTH = 0x2000
 }
 
@@ -51,15 +51,15 @@ SECTIONS
    *(.text)
    *(.text.*)
    *(.gnu.linkonce.t.*)
-} > ps7_ddr_0_ACP_AXI_BASENAME
+} > ps7_ddr_0_HP1_AXI_BASENAME
 
 .init : {
    KEEP (*(.init))
-} > ps7_ddr_0_ACP_AXI_BASENAME
+} > ps7_ddr_0_HP1_AXI_BASENAME
 
 .fini : {
    KEEP (*(.fini))
-} > ps7_ddr_0_ACP_AXI_BASENAME
+} > ps7_ddr_0_HP1_AXI_BASENAME
 
 .ctors : {
    __CTOR_LIST__ = .;

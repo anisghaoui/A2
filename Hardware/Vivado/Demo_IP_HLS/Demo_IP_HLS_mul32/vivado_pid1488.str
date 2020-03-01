@@ -3708,3 +3708,5 @@ dismissDialog("Settings"); // D (cl)
 // WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 7910 ms. Increasing delay to 23730 ms.
 // WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 610 ms. Decreasing delay to 2610 ms.
 // WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1795 ms. Increasing delay to 5385 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4247 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,406 MB. GUI used memory: 424 MB. Current time: 3/1/20, 5:24:45 PM CET

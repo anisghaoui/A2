@@ -847,3 +847,5 @@ selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Address
 // WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 8058 ms. Increasing delay to 24174 ms.
 // WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 304 ms. Decreasing delay to 2304 ms.
 // WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1269 ms. Increasing delay to 3807 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2129 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,306 MB. GUI used memory: 170 MB. Current time: 3/1/20, 5:22:40 PM CET

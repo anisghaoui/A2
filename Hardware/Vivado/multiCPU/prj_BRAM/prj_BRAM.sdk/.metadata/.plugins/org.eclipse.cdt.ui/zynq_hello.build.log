@@ -1,4 +1,4 @@
-17:02:31 **** Build of configuration Debug for project zynq_hello ****
+17:25:47 **** Build of configuration Debug for project zynq_hello ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
@@ -32,5 +32,5 @@ arm-none-eabi-size zynq_hello.elf  |tee "zynq_hello.elf.size"
 'Finished building: zynq_hello.elf.size'
 ' '
 
-17:02:32 Build Finished (took 1s.347ms)
+17:25:49 Build Finished (took 1s.738ms)
 

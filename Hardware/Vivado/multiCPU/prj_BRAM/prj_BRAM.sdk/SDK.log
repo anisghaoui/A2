@@ -6408,3 +6408,25 @@ configparams force-mem-access 0
 17:01:33 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
 17:01:36 WARN  : Linker script will not be updated automatically. Users need to update it manually.
 17:03:00 INFO  : Inferring section assignments and sizes from elf file: C:\Users\Qlala\Documents\M2_SETI\A2\git\A2\Hardware\Vivado\multiCPU\prj_BRAM\prj_BRAM.sdk\micro_hello\Debug\micro_hello.elf
+17:24:12 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1583079839250,  Project:1583076604634
+17:24:12 INFO  : Project design_mb_wrapper_hw_platform_0's source hardware specification located at C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiCPU/prj_BRAM/prj_BRAM.sdk/design_mb_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+17:24:17 INFO  : Copied contents of C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiCPU/prj_BRAM/prj_BRAM.sdk/design_mb_wrapper.hdf into \design_mb_wrapper_hw_platform_0\system.hdf.
+17:24:25 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+17:24:31 INFO  : 
+17:24:35 INFO  : 
+17:24:36 INFO  : Updating hardware inferred compiler options for micro_hello.
+17:24:37 INFO  : Updating hardware inferred compiler options for zynq_hello.
+17:24:37 INFO  : Clearing existing target manager status.
+17:24:37 INFO  : Closing and re-opening the MSS file of ther project micro_hello_bsp
+17:24:39 INFO  : Closing and re-opening the MSS file of ther project zynq_hello_bsp
+17:24:40 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+17:24:45 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+17:26:39 INFO  : Inferring section assignments and sizes from elf file: C:\Users\Qlala\Documents\M2_SETI\A2\git\A2\Hardware\Vivado\multiCPU\prj_BRAM\prj_BRAM.sdk\micro_hello\Debug\micro_hello.elf
+17:26:54 INFO  : Successfully generated C:\Users\Qlala\Documents\M2_SETI\A2\git\A2\Hardware\Vivado\multiCPU\prj_BRAM\prj_BRAM.sdk\micro_hello\src\lscript.ld.
+17:26:54 INFO  : Applying linker script to all configurations of project micro_hello.
+17:26:54 INFO  : Setting rebuild state to true for all configurations of project micro_hello.
+17:27:16 INFO  : mb-objcopy -I elf32-microblazeel -O elf32-microblazeel --change-section-address .boot=0x0000000080000000 C:/Xilinx/SDK/2019.1/data/embeddedsw/lib/microblaze/mb_bootloop_le.elf C:\Users\Qlala\Documents\M2_SETI\A2\git\A2\Hardware\Vivado\multiCPU\prj_BRAM\prj_BRAM.sdk\design_mb_wrapper_hw_platform_0\new0.elf
+17:27:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:27:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248686847" && level==0} -index 1' command is executed.
+17:27:38 INFO  : FPGA configured successfully with bitstream "C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiCPU/prj_BRAM/prj_BRAM.sdk/design_mb_wrapper_hw_platform_0/download.bit"
