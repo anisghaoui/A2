@@ -1,1 +1,18 @@
 \babel@toc {french}{}
+\contentsline {figure}{\numberline {1}{\ignorespaces Illustration de l'estimation de $\pi $ par la m\IeC {\'e}thode Monte-Carlo\relax }}{5}{figure.caption.3}
+\contentsline {figure}{\numberline {2}{\ignorespaces Repr\IeC {\'e}sentation des projections de PCA\relax }}{6}{figure.caption.4}
+\contentsline {figure}{\numberline {3}{\ignorespaces Sch\IeC {\'e}ma bloc de l'architecture du $\mu $blaze\relax }}{7}{figure.caption.5}
+\contentsline {figure}{\numberline {4}{\ignorespaces Occupation des ressources FPGA pour diff\IeC {\'e}rentes IP\relax }}{10}{figure.caption.12}
+\contentsline {figure}{\numberline {5}{\ignorespaces Exemple de design pour le Multi CPU pouvant ex\IeC {\'e}cuter un programme sur le FPGA et sur le microblaze. \relax }}{11}{figure.caption.13}
+\contentsline {figure}{\numberline {6}{\ignorespaces Linker script du microblaze : ex\IeC {\'e}cution depuis la DDR et stack et heap \IeC {\'e}tendus\relax }}{12}{figure.caption.14}
+\contentsline {figure}{\numberline {7}{\ignorespaces Block design pour tester la BRAM :\relax }}{13}{figure.caption.15}
+\contentsline {figure}{\numberline {8}{\ignorespaces Code du microblaze(droite) et du zynq(gauche) pour l'envoie et la r\IeC {\'e}ception de message\relax }}{13}{figure.caption.16}
+\contentsline {figure}{\numberline {9}{\ignorespaces D\IeC {\'e}monstration de la BRAM : le microblaze affiche un message envoy\IeC {\'e} depuis le Zynq\relax }}{14}{figure.caption.17}
+\contentsline {figure}{\numberline {10}{\ignorespaces Exemple d'IP avec ses diff\IeC {\'e}rents ports\relax }}{15}{figure.caption.19}
+\contentsline {figure}{\numberline {11}{\ignorespaces Param\IeC {\`e}tre du Zynq: ce qu'il faut cocher pour avoir l'interface ACP et la coh\IeC {\'e}rence des caches\relax }}{16}{figure.caption.20}
+\contentsline {figure}{\numberline {12}{\ignorespaces Exemple de design pour l'IP multiply\_block\_32\relax }}{16}{figure.caption.21}
+\contentsline {figure}{\numberline {13}{\ignorespaces \IeC {\'E}cran du timing report permettant de conna\IeC {\^\i }tre le clock skew\relax }}{18}{figure.caption.24}
+\contentsline {figure}{\numberline {14}{\ignorespaces Temps d'ex\IeC {\'e}cution sur ARM des diff\IeC {\'e}rents algorithmes\relax }}{19}{figure.caption.25}
+\contentsline {figure}{\numberline {15}{\ignorespaces Un exemple des tailles de codes produit par l'optimisation\relax }}{19}{figure.caption.26}
+\contentsline {figure}{\numberline {16}{\ignorespaces Un exemple des temps d'ex\IeC {\'e}cution des codes produit par l'optimisation\relax }}{20}{figure.caption.27}
+\contentsline {figure}{\numberline {17}{\ignorespaces Temps d'ex\IeC {\'e}cution sur PC\relax }}{21}{figure.caption.28}
