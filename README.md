@@ -3,9 +3,9 @@ Systèmes électroniques embarqués
 * [Rapport](https://github.com/anisghaoui/A2/blob/master/Rapport/main.pdf)
 * [Présentation](https://github.com/anisghaoui/A2/blob/master/presentation_finale/prensent_A2_group_1.pdf)
 
-#Design Software
+# Design Software
 Audrey Terracher & Yuhan Dou
-#Design HLS
+# Design HLS
 Anis Ghaoui  @anisghaoui
 # Design Hardware
 ## Ce qu'il faut savoir
