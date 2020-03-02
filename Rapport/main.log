@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.1.29)  1 MAR 2020 20:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.1.29)  2 MAR 2020 10:30
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1269,7 +1269,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 153.
 
-<soft/screenshot002.png, id=240, 186.2595pt x 143.226pt>
+<soft/screenshot002.png, id=242, 186.2595pt x 143.226pt>
 File: soft/screenshot002.png Graphic file (type png)
 <use soft/screenshot002.png>
 Package pdftex.def Info: soft/screenshot002.png  used on input line 159.
@@ -1281,7 +1281,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [4]
-<soft/screenshot003.png, id=252, 1088.56688pt x 337.26pt>
+<soft/screenshot003.png, id=254, 1088.56688pt x 337.26pt>
 File: soft/screenshot003.png Graphic file (type png)
 <use soft/screenshot003.png>
 Package pdftex.def Info: soft/screenshot003.png  used on input line 181.
@@ -1319,7 +1319,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 225.
 
-<soft/screenshot004.png, id=271, 400.49625pt x 253.69781pt>
+<soft/screenshot004.png, id=273, 400.49625pt x 253.69781pt>
 File: soft/screenshot004.png Graphic file (type png)
 <use soft/screenshot004.png>
 Package pdftex.def Info: soft/screenshot004.png  used on input line 234.
@@ -1345,21 +1345,48 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [9]
-<hls_fig/screenshot001.png, id=304, 323.70938pt x 182.93344pt>
+<hls_fig/screenshot005.png, id=305, 574.39594pt x 191.9672pt>
+File: hls_fig/screenshot005.png Graphic file (type png)
+<use hls_fig/screenshot005.png>
+Package pdftex.def Info: hls_fig/screenshot005.png  used on input line 283.
+(pdftex.def)             Requested size: 340.54715pt x 113.81102pt.
+<hls_fig/screenshot004.png, id=306, 218.31563pt x 246.1697pt>
+File: hls_fig/screenshot004.png Graphic file (type png)
+<use hls_fig/screenshot004.png>
+Package pdftex.def Info: hls_fig/screenshot004.png  used on input line 289.
+(pdftex.def)             Requested size: 100.93274pt x 113.81102pt.
+
+Overfull \hbox (4.19485pt too wide) in paragraph at lines 289--290
+ [][] 
+ []
+
+<hls_fig/screenshot001.png, id=310, 323.70938pt x 182.93344pt>
 File: hls_fig/screenshot001.png Graphic file (type png)
 <use hls_fig/screenshot001.png>
-Package pdftex.def Info: hls_fig/screenshot001.png  used on input line 289.
+Package pdftex.def Info: hls_fig/screenshot001.png  used on input line 306.
 (pdftex.def)             Requested size: 149.94484pt x 84.73657pt.
-<hls_fig/screenshot002.png, id=305, 326.72063pt x 182.93344pt>
+<hls_fig/screenshot002.png, id=311, 326.72063pt x 182.93344pt>
 File: hls_fig/screenshot002.png Graphic file (type png)
 <use hls_fig/screenshot002.png>
-Package pdftex.def Info: hls_fig/screenshot002.png  used on input line 294.
+Package pdftex.def Info: hls_fig/screenshot002.png  used on input line 311.
 (pdftex.def)             Requested size: 149.94484pt x 83.955pt.
-<hls_fig/screenshot003.png, id=306, 327.47343pt x 190.46156pt>
+<hls_fig/screenshot003.png, id=312, 327.47343pt x 190.46156pt>
 File: hls_fig/screenshot003.png Graphic file (type png)
 <use hls_fig/screenshot003.png>
-Package pdftex.def Info: hls_fig/screenshot003.png  used on input line 299.
+Package pdftex.def Info: hls_fig/screenshot003.png  used on input line 316.
 (pdftex.def)             Requested size: 149.94484pt x 87.2094pt.
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.61858pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[10 <./hls_fig/screenshot005.png> <./hls_fig/screenshot004.png>]
+<im/mb1.png, id=323, 1445.4pt x 782.925pt>
+File: im/mb1.png Graphic file (type png)
+<use im/mb1.png>
+Package pdftex.def Info: im/mb1.png  used on input line 335.
+(pdftex.def)             Requested size: 483.69687pt x 261.99777pt.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1367,17 +1394,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[10 <./hls_fig/screenshot001.png> <./hls_fig/screenshot002.png> <./hls_fig/scre
+[11 <./hls_fig/screenshot001.png> <./hls_fig/screenshot002.png> <./hls_fig/scre
 enshot003.png>]
-<im/mb1.png, id=318, 1445.4pt x 782.925pt>
-File: im/mb1.png Graphic file (type png)
-<use im/mb1.png>
-Package pdftex.def Info: im/mb1.png  used on input line 318.
-(pdftex.def)             Requested size: 483.69687pt x 261.99777pt.
-<im/mb2.png, id=319, 603.75563pt x 487.8225pt>
+<im/mb2.png, id=332, 603.75563pt x 487.8225pt>
 File: im/mb2.png Graphic file (type png)
 <use im/mb2.png>
-Package pdftex.def Info: im/mb2.png  used on input line 326.
+Package pdftex.def Info: im/mb2.png  used on input line 343.
 (pdftex.def)             Requested size: 483.69687pt x 390.81679pt.
 
 
@@ -1386,11 +1408,11 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[11 <./im/mb1.png>]
-<im/bram1.png, id=326, 1445.4pt x 782.925pt>
+[12 <./im/mb1.png>]
+<im/bram1.png, id=340, 1445.4pt x 782.925pt>
 File: im/bram1.png Graphic file (type png)
 <use im/bram1.png>
-Package pdftex.def Info: im/bram1.png  used on input line 338.
+Package pdftex.def Info: im/bram1.png  used on input line 355.
 (pdftex.def)             Requested size: 483.69687pt x 261.99777pt.
 
 
@@ -1399,7 +1421,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[12 <./im/mb2.png>]
+[13 <./im/mb2.png>]
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
@@ -1412,10 +1434,10 @@ File: latin1.def 2015/03/17 v1.2c Input encoding file
 (/usr/share/texlive/texmf-dist/tex/latex/base/latin1.def
 File: latin1.def 2015/03/17 v1.2c Input encoding file
 )
-<im/bram2.png, id=335, 497.60907pt x 314.67563pt>
+<im/bram2.png, id=348, 497.60907pt x 314.67563pt>
 File: im/bram2.png Graphic file (type png)
 <use im/bram2.png>
-Package pdftex.def Info: im/bram2.png  used on input line 396.
+Package pdftex.def Info: im/bram2.png  used on input line 413.
 (pdftex.def)             Requested size: 483.69687pt x 305.8832pt.
 
 
@@ -1424,11 +1446,11 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[13 <./im/bram1.png>]
-<im/ip1.png, id=382, 535.2497pt x 242.40562pt>
+[14 <./im/bram1.png>]
+<im/ip1.png, id=395, 535.2497pt x 242.40562pt>
 File: im/ip1.png Graphic file (type png)
 <use im/ip1.png>
-Package pdftex.def Info: im/ip1.png  used on input line 414.
+Package pdftex.def Info: im/ip1.png  used on input line 431.
 (pdftex.def)             Requested size: 483.69687pt x 128.3571pt.
 
 
@@ -1437,7 +1459,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[14 <./im/bram2.png>]
+[15 <./im/bram2.png>]
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
@@ -1471,10 +1493,10 @@ File: latin1.def 2015/03/17 v1.2c Input encoding file
 (/usr/share/texlive/texmf-dist/tex/latex/base/latin1.def
 File: latin1.def 2015/03/17 v1.2c Input encoding file
 )
-<im/ip2.png, id=392, 734.745pt x 564.60938pt>
+<im/ip2.png, id=405, 734.745pt x 564.60938pt>
 File: im/ip2.png Graphic file (type png)
 <use im/ip2.png>
-Package pdftex.def Info: im/ip2.png  used on input line 437.
+Package pdftex.def Info: im/ip2.png  used on input line 454.
 (pdftex.def)             Requested size: 483.69687pt x 371.70427pt.
 
 
@@ -1483,11 +1505,11 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[15 <./im/ip1.png>]
-<im/ip3.png, id=401, 1445.4pt x 782.925pt>
+[16 <./im/ip1.png>]
+<im/ip3.png, id=414, 1445.4pt x 782.925pt>
 File: im/ip3.png Graphic file (type png)
 <use im/ip3.png>
-Package pdftex.def Info: im/ip3.png  used on input line 444.
+Package pdftex.def Info: im/ip3.png  used on input line 461.
 (pdftex.def)             Requested size: 483.69687pt x 261.99777pt.
 
 
@@ -1496,7 +1518,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[16 <./im/ip2.png> <./im/ip3.png>]
+[17 <./im/ip2.png> <./im/ip3.png>]
 (/usr/share/texlive/texmf-dist/tex/latex/base/latin1.def
 File: latin1.def 2015/03/17 v1.2c Input encoding file
 )
@@ -1509,16 +1531,16 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[17]
-<im/timing.png, id=454, 1445.4pt x 782.925pt>
+[18]
+<im/timing.png, id=468, 1445.4pt x 782.925pt>
 File: im/timing.png Graphic file (type png)
 <use im/timing.png>
-Package pdftex.def Info: im/timing.png  used on input line 510.
+Package pdftex.def Info: im/timing.png  used on input line 527.
 (pdftex.def)             Requested size: 483.69687pt x 246.99356pt.
-<soft/screenshot005.png, id=457, 583.416pt x 309.35086pt>
+<soft/screenshot005.png, id=471, 583.416pt x 309.35086pt>
 File: soft/screenshot005.png Graphic file (type png)
 <use soft/screenshot005.png>
-Package pdftex.def Info: soft/screenshot005.png  used on input line 528.
+Package pdftex.def Info: soft/screenshot005.png  used on input line 545.
 (pdftex.def)             Requested size: 483.69687pt x 256.47792pt.
 
 
@@ -1527,16 +1549,16 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[18 <./im/timing.png>]
-<soft/screenshot006.png, id=469, 267.8507pt x 234.42581pt>
+[19 <./im/timing.png>]
+<soft/screenshot006.png, id=482, 267.8507pt x 234.42581pt>
 File: soft/screenshot006.png Graphic file (type png)
 <use soft/screenshot006.png>
-Package pdftex.def Info: soft/screenshot006.png  used on input line 535.
+Package pdftex.def Info: soft/screenshot006.png  used on input line 552.
 (pdftex.def)             Requested size: 290.22107pt x 254.00955pt.
-<soft/screenshot007.png, id=470, 424.9476pt x 238.69748pt>
+<soft/screenshot007.png, id=483, 424.9476pt x 238.69748pt>
 File: soft/screenshot007.png Graphic file (type png)
 <use soft/screenshot007.png>
-Package pdftex.def Info: soft/screenshot007.png  used on input line 541.
+Package pdftex.def Info: soft/screenshot007.png  used on input line 558.
 (pdftex.def)             Requested size: 483.69687pt x 271.70273pt.
 
 
@@ -1545,11 +1567,11 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[19 <./soft/screenshot005.png> <./soft/screenshot006.png>]
-<soft/time_pc.jpg, id=479, 557.95549pt x 376.11484pt>
+[20 <./soft/screenshot005.png> <./soft/screenshot006.png>]
+<soft/time_pc.jpg, id=492, 557.95549pt x 376.11484pt>
 File: soft/time_pc.jpg Graphic file (type jpg)
 <use soft/time_pc.jpg>
-Package pdftex.def Info: soft/time_pc.jpg  used on input line 580.
+Package pdftex.def Info: soft/time_pc.jpg  used on input line 597.
 (pdftex.def)             Requested size: 386.95897pt x 260.85097pt.
 
 
@@ -1558,15 +1580,15 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[20 <./soft/screenshot007.png>]
+[21 <./soft/screenshot007.png>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[21 <./soft/time_pc.jpg>]
-Overfull \hbox (11.63733pt too wide) in paragraph at lines 599--600
+[22 <./soft/time_pc.jpg>]
+Overfull \hbox (11.63733pt too wide) in paragraph at lines 616--617
 []\T1/cmr/bx/n/12 HLS multi-IPs \T1/cmr/m/n/12 : même si théo-ri-que-ment une i
 m-plé-men-ta-tion multi-IPs de sous-opérateurs
  []
@@ -1579,21 +1601,21 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[22]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 606.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 606.
+[23]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 623.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 623.
  (./main.aux (./titlepage.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 606.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 606.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 623.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 623.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 05E31DB78546799E5D9D4ED6D5C68A4E;2604.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 606.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 623.
  ) 
 Here is how much of TeX's memory you used:
- 15180 strings out of 492982
- 237158 string characters out of 6134896
- 650469 words of memory out of 5000000
- 18256 multiletter control sequences out of 15000+600000
+ 15194 strings out of 492982
+ 237498 string characters out of 6134896
+ 650843 words of memory out of 5000000
+ 18268 multiletter control sequences out of 15000+600000
  21563 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,12n,51p,1153b,1759s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1616,10 +1638,10 @@ uper/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1095.pfb></
 usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/font
 s/type1/public/cm-super/sfti1200.pfb></usr/share/texmf/fonts/type1/public/cm-su
 per/sftt1200.pfb>
-Output written on main.pdf (23 pages, 1655311 bytes).
+Output written on main.pdf (24 pages, 1695761 bytes).
 PDF statistics:
- 592 PDF objects out of 1000 (max. 8388607)
- 505 compressed objects within 6 object streams
- 166 named destinations out of 1000 (max. 500000)
- 391 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 605 PDF objects out of 1000 (max. 8388607)
+ 513 compressed objects within 6 object streams
+ 168 named destinations out of 1000 (max. 500000)
+ 401 words of extra memory for PDF output out of 10000 (max. 10000000)
 

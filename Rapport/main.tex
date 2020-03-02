@@ -274,13 +274,30 @@ Dans la première, on doit réétudier le processus de l'algorithme. Puis, déci
 Dans la fragmentation en sous-opérateurs, si un algorithme a des parties non dissociables, donc dépendantes au sein d'une boucle, on peut imaginer à le séparer en sous-opérateurs afin d'optimiser ces entités là. Ceci peut offrir un grand gain en performance temporelle mais a deux inconvénients majeurs : Plus de surface par opérateur sera requis à cause de l'implémentation de blocs mémoires "dupliqués" et elle nécessite que la partie développement matériel écrive un protocole d'appel de l'IP plus complexe à développer. Après plusieurs tests, on estime que cette méthode d'optimisation ne sera pas utilisée à cause de contraintes temporelles.
 
 \subsubsection{Critères de conception d'IP}
-Il existe un nombre assez élevé d'optimisation effectuées automatiquement ou manuellement par le logiciel HLS. Un premier facteur limitant lors de la conception est la surface FPGA occupée par l'IP (éléments logiques,DSP,...). Il est simplement impossible d'implémenter une IP qui ne peut pas être portée sur la carte. Donc, il faut limiter l'usage des directive \texttt{pipeline} et \texttt{unroll} mais aussi les blocs RAM internes.
+Il existe un nombre assez élevé d'optimisation effectuées automatiquement ou manuellement par le logiciel HLS. Un premier facteur limitant lors de la conception est la surface FPGA occupée par l'IP (éléments logiques,DSP,...). Il est simplement impossible d'implémenter une IP qui ne peut pas être portée sur la carte. Donc, il faut limiter l'usage des directive \texttt{pipeline} et \texttt{unroll} mais aussi les blocs RAM internes. Le \textit{pipeline} possède un critère important qui est l'intervalle d'initialisation. i.e. combien de cycles il y a entre la consommation d'une donnée. Celui-ci est limité par les load/store comem on eput le voir sur la figure \ref{fig:scheduler}, load prend 2 cycles et donc le pipeline est bloqué pend cela. il est difficile de masqué ces chargements et comme pour un CPU, on doit payer le prix soit en temps soi ou bien  en surface FPGA.
+
+\begin{figure}[H]
+	\centering
+\begin{subfigure}{.75\textwidth}
+	\centering
+	\includegraphics[height=4cm]{hls_fig/screenshot005}
+	\caption{Ordonnancement temporel d'une boucle dans une IP}
+	\label{fig:scheduler}
+\end{subfigure}
+\begin{subfigure}{.20\textwidth}
+	\centering
+	\includegraphics[height=4cm]{hls_fig/screenshot004}
+	\caption{Implémentation}
+	\label{fig:timing_met}
+\end{subfigure}
+\caption{Conception de l'IP :}
+\end{figure}
 
 Le deuxième paramètre limitant l'implémentation de l'IP est la fréquence de fonctionnement. HLS prend une période (donc fréquence) objective et "essayera" de synthétiser l'IP demandée à cette fréquence. Il est possible de le forcer à relaxer la synthèse afin de respecter ce critère.
 
 Une solution possible à cette contrainte est d'utiliser des horloges différentes sur la carte qui ce soit par le Zynq ou le \texttt{SmartClock} (voir \ref{SmartClock}). Les algorithmes SVD et PCA ne sont pas implémentées à cause de la présence de plusieurs séquences de contrôle durs à optimiser dans les contraintes temporelles données. Il est aussi important de noter qu'une IP agit comme un accélérateur matériel non-bloquant pour le CPU. i.e. le CPU est libre pendant tout le temps d'exécution.
 
-La figure \ref{fig-hls} montre un résumé de quelques IPs implémentées. Toutes les IP ont pour période de fonctionnement objective : \textbf{10} ns.
+La figure \ref{fig-hls} montre un résumé de quelques IPs implémentées. Toutes les IP ont pour période de fonctionnement objective : \textbf{10} ns. La figure \ref{fig:timing_met} indique que l'Ip a était synthétisée avec succès et qu'elle respecte les contraintes temporelles imposées.
 
 \begin{figure}[H]
 	\centering
@@ -399,7 +416,7 @@ On peut ainsi facilement passer des adresses du Zynq au microblaze grâce à la 
 \end{figure}
 
 \subsection{IP HLS}
-Dès que la première IP HLS a été finalisée, il a été question de les intégrer dans un design. Donc, un design a été conçu pour tester.
+Dès que la première IP HLS a été finalisée, il a été question de les intégrer dans un design. Donc, un design a été conçu pour les tester.
 \subsubsection{Concept}
 Pour accélérer, les programmes que l'on fait tourner sur les \textit{Zynq}, la partie HLS à réaliser des accélérateurs matériels à l'aide des outils \textit{Xilinx}. Ces accélérateurs se présentent comme des IP que l'on peut rajouter dans un bloc design. Il faudra envoyer des donnés à ces IP pour quelle fasse les calculs à la place du \textit{Zynq} : Beaucoup plus rapidement mais aussi non bloquant pour le CPU.
 
@@ -407,7 +424,7 @@ Ces IP sont commandées par le \textit{Zynq} qui leur donne également des empla
 
 \subsubsection{Implémentation et clocking}
 Une fois les IP mises dans un répertoire communs et que ce répertoire est signalé à \textit{ Vivado} comme contenant des IPs, On peut les utiliser dans un block design classique.
-\paragraph{Relier les IP aux Zynq}
+\paragraph{Relier les IPs au Zynq}
 Les IPs HLS se présentent comme suivant:
 \begin{figure}[H]
 	\centering
