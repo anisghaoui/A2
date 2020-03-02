@@ -2,13 +2,17 @@
 Systèmes électroniques embarqués
 * [Rapport](https://github.com/anisghaoui/A2/blob/master/Rapport/main.pdf)
 * [Présentation](https://github.com/anisghaoui/A2/blob/master/presentation_finale/prensent_A2_group_1.pdf)
+Un exemple de design materiel et logiciel abouti :
+* [mul64](https://github.com/anisghaoui/A2/tree/master/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64).
 
 # Design Software
-Audrey Terracher & Yuhan Dou
+
+Partie réalisé par Audrey Terracher & Yuhan Dou.
 # Design HLS
-Anis Ghaoui  @anisghaoui
+
+Partie réalisé par Anis Ghaoui  @anisghaoui
 # Design Hardware
-## Ce qu'il faut savoir
+
 Cette partie a été réalisé par Quentin Forcioli @Qlala  
 Le Design sur lequel j'ai le plus travaillé est [mul64](https://github.com/anisghaoui/A2/tree/master/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64).
 <br/>J'y ai dévéloppé plusieur runs et j'ai essayé d'aller chercher le plus de performance.  
