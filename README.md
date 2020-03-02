@@ -1,7 +1,7 @@
 # A2
 Systèmes électroniques embarqués
 * [Rapport](https://github.com/anisghaoui/A2/blob/master/Rapport/main.pdf)
-* [Présentation](https://github.com/anisghaoui/A2/blob/master/presentation_finale/prensent_A2_group_1.pdf)
+* [Présentation](https://github.com/anisghaoui/A2/blob/master/presentation_finale/prensent_A2_group_1.pdf)  
 Un exemple de design materiel et logiciel abouti :
 * [mul64](https://github.com/anisghaoui/A2/tree/master/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64).
 
