@@ -8,16 +8,17 @@ Un exemple de design materiel et logiciel abouti :
 
 # Design Software
 
-Partie réalisé par Audrey Terracher & Yuhan Dou.
+Partie réalisée par Audrey Terracher & Yuhan Dou.
 # Design HLS
 
-Partie réalisé par Anis Ghaoui  @anisghaoui
+[IPs]](https://github.com/anisghaoui/A2/master/Hardware/HLS) 
+Partie réaliseé par Anis Ghaoui  @anisghaoui
 # Design Hardware
 
-Cette partie a été réalisé par Quentin Forcioli @Qlala  
+Cette partie a été réalisée par Quentin Forcioli @Qlala  
 Le Design sur lequel j'ai le plus travaillé est [mul64](https://github.com/anisghaoui/A2/tree/master/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64).
-<br/>J'y ai dévéloppé plusieur runs et j'ai essayé d'aller chercher le plus de performance.  
-Les autres design sont aussi intéréssant mais ne sont pas aussi avancer.
+<br/>J'y ai dévéloppé plusieurs runs et j'ai essayé d'aller chercher le plus de performance.  
+Les autres designs sont aussi intéréssants mais ne sont pas aussi avancés.
 ## Board avec des IP
 * [Exemple avec le Multiply block 64](https://github.com/anisghaoui/A2/tree/master/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64)
 * [Exemple avec le Multiply block 32](https://github.com/anisghaoui/A2/tree/master/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul32)
