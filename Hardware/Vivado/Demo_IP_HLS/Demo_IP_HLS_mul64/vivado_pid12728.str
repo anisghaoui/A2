@@ -148,3 +148,5 @@ Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 dismissDialog("Open Project"); // by (cl)
 // Tcl Message: update_compile_order -fileset sources_1 
 // [GUI Memory]: 129 MB (+6544kb) [00:01:34]
+// [Engine Memory]: 1,314 MB (+287kb) [00:15:13]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,314 MB. GUI used memory: 73 MB. Current time: 3/2/20, 7:23:43 PM CET

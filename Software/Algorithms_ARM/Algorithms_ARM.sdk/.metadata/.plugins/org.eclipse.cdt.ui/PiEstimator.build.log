@@ -1,0 +1,32 @@
+12:28:48 **** Build of configuration Debug for project PiEstimator ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/Pi_main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Pi_main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PiEstimator_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/Pi_main.d" -MT"src/Pi_main.o" -o "src/Pi_main.o" "../src/Pi_main.c"
+In file included from ../src/Pi_main.c:57:
+../../PiEstimator_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+'Finished building: ../src/Pi_main.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PiEstimator_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: PiEstimator.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PiEstimator_bsp/ps7_cortexa9_0/lib -o "PiEstimator.elf"  ./src/Pi_main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: PiEstimator.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size PiEstimator.elf  |tee "PiEstimator.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  57940	   2584	524294944	524355468	1f41078c	PiEstimator.elf
+'Finished building: PiEstimator.elf.size'
+' '
+
+12:28:50 Build Finished (took 1s.727ms)
+

@@ -1,0 +1,54 @@
+12:26:33 **** Build of configuration Debug for project Kmeans_2D ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/Kmeans2_main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Kmeans2_main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Kmeans_2D_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/Kmeans2_main.d" -MT"src/Kmeans2_main.o" -o "src/Kmeans2_main.o" "../src/Kmeans2_main.c"
+In file included from ../src/Kmeans2_main.c:57:
+../../Kmeans_2D_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+../src/Kmeans2_main.c: In function 'main':
+../src/Kmeans2_main.c:83:8: warning: unused variable 'y' [-Wunused-variable]
+  float y;
+        ^
+../src/Kmeans2_main.c:82:8: warning: unused variable 'x' [-Wunused-variable]
+  float x;
+        ^
+../src/Kmeans2_main.c:81:8: warning: unused variable 'j' [-Wunused-variable]
+  int i,j;
+        ^
+../src/Kmeans2_main.c:80:8: warning: unused variable 'ord_moy' [-Wunused-variable]
+  float ord_moy;
+        ^~~~~~~
+../src/Kmeans2_main.c:79:8: warning: unused variable 'abs_moy' [-Wunused-variable]
+  float abs_moy;
+        ^~~~~~~
+../src/Kmeans2_main.c:78:8: warning: unused variable 'ord_clus' [-Wunused-variable]
+  float ord_clus;
+        ^~~~~~~~
+../src/Kmeans2_main.c:77:8: warning: unused variable 'abs_clus' [-Wunused-variable]
+  float abs_clus;
+        ^~~~~~~~
+'Finished building: ../src/Kmeans2_main.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Kmeans_2D_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: Kmeans_2D.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Kmeans_2D_bsp/ps7_cortexa9_0/lib -o "Kmeans_2D.elf"  ./src/Kmeans2_main.o ./src/kmeans2.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Kmeans_2D.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Kmeans_2D.elf  |tee "Kmeans_2D.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 102516	   2584	524294944	524400044	1f41b5ac	Kmeans_2D.elf
+'Finished building: Kmeans_2D.elf.size'
+' '
+
+12:26:35 Build Finished (took 1s.790ms)
+

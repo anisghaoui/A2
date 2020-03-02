@@ -1,0 +1,53 @@
+17:10:22 **** Incremental Build of configuration Debug for project Pearson ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+17:10:40 **** Incremental Build of configuration Debug for project Pearson ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+17:11:35 **** Clean-only build of configuration Debug for project Pearson ****
+make clean 
+rm -rf  ./src/Pearson_functions.o ./src/Pearson_main.o ./src/platform.o  ./src/Pearson_functions.d ./src/Pearson_main.d ./src/platform.d  Pearson.elf.size  Pearson.elf
+' '
+17:11:36 **** Auto Build of configuration Debug for project Pearson ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/Pearson_functions.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -Os -g3 -c -fmessage-length=0 -MT"src/Pearson_functions.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Pearson_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/Pearson_functions.d" -MT"src/Pearson_functions.o" -o "src/Pearson_functions.o" "../src/Pearson_functions.c"
+'Finished building: ../src/Pearson_functions.c'
+' '
+'Building file: ../src/Pearson_main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -Os -g3 -c -fmessage-length=0 -MT"src/Pearson_main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Pearson_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/Pearson_main.d" -MT"src/Pearson_main.o" -o "src/Pearson_main.o" "../src/Pearson_main.c"
+In file included from ../src/Pearson_main.c:58:
+../../Pearson_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+'Finished building: ../src/Pearson_main.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -Os -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Pearson_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: Pearson.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Pearson_bsp/ps7_cortexa9_0/lib -o "Pearson.elf"  ./src/Pearson_functions.o ./src/Pearson_main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Pearson.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Pearson.elf  |tee "Pearson.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  58436	   2584	524294944	524355964	1f41097c	Pearson.elf
+'Finished building: Pearson.elf.size'
+' '
+17:12:18 **** Incremental Build of configuration Debug for project Pearson ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
