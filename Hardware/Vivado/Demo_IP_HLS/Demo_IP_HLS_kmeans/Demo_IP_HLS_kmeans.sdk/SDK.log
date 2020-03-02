@@ -1112,3 +1112,4 @@ con
 ----------------End of Script----------------
 
 23:40:33 INFO  : Launch script is exported to file 'C:\A2_project\Vivado\Demo_IP_HLS\Demo_IP_HLS_kmeans\Demo_IP_HLS_kmeans.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_kmeans_test.elf_on_local.tcl'
+23:12:45 INFO  : Disconnected from the channel tcfchan#6.

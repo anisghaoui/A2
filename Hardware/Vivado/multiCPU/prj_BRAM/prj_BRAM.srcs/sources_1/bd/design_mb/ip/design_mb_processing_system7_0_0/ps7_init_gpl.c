@@ -3813,28 +3813,8 @@ unsigned long ps7_post_config_3_0[] = {
     // .. FINISH: FPGA RESETS TO 0
     // .. START: AFI REGISTERS
     // .. .. START: AFI0 REGISTERS
-    // .. .. n32BitEn = 1
-    // .. .. ==> 0XF8008000[0:0] = 0x00000001U
-    // .. ..     ==> MASK : 0x00000001U    VAL : 0x00000001U
-    // .. .. 
-    EMIT_MASKWRITE(0XF8008000, 0x00000001U ,0x00000001U),
-    // .. .. n32BitEn = 1
-    // .. .. ==> 0XF8008014[0:0] = 0x00000001U
-    // .. ..     ==> MASK : 0x00000001U    VAL : 0x00000001U
-    // .. .. 
-    EMIT_MASKWRITE(0XF8008014, 0x00000001U ,0x00000001U),
     // .. .. FINISH: AFI0 REGISTERS
     // .. .. START: AFI1 REGISTERS
-    // .. .. n32BitEn = 1
-    // .. .. ==> 0XF8009000[0:0] = 0x00000001U
-    // .. ..     ==> MASK : 0x00000001U    VAL : 0x00000001U
-    // .. .. 
-    EMIT_MASKWRITE(0XF8009000, 0x00000001U ,0x00000001U),
-    // .. .. n32BitEn = 1
-    // .. .. ==> 0XF8009014[0:0] = 0x00000001U
-    // .. ..     ==> MASK : 0x00000001U    VAL : 0x00000001U
-    // .. .. 
-    EMIT_MASKWRITE(0XF8009014, 0x00000001U ,0x00000001U),
     // .. .. FINISH: AFI1 REGISTERS
     // .. .. START: AFI2 REGISTERS
     // .. .. n32BitEn = 1
@@ -7850,28 +7830,8 @@ unsigned long ps7_post_config_2_0[] = {
     // .. FINISH: FPGA RESETS TO 0
     // .. START: AFI REGISTERS
     // .. .. START: AFI0 REGISTERS
-    // .. .. n32BitEn = 1
-    // .. .. ==> 0XF8008000[0:0] = 0x00000001U
-    // .. ..     ==> MASK : 0x00000001U    VAL : 0x00000001U
-    // .. .. 
-    EMIT_MASKWRITE(0XF8008000, 0x00000001U ,0x00000001U),
-    // .. .. n32BitEn = 1
-    // .. .. ==> 0XF8008014[0:0] = 0x00000001U
-    // .. ..     ==> MASK : 0x00000001U    VAL : 0x00000001U
-    // .. .. 
-    EMIT_MASKWRITE(0XF8008014, 0x00000001U ,0x00000001U),
     // .. .. FINISH: AFI0 REGISTERS
     // .. .. START: AFI1 REGISTERS
-    // .. .. n32BitEn = 1
-    // .. .. ==> 0XF8009000[0:0] = 0x00000001U
-    // .. ..     ==> MASK : 0x00000001U    VAL : 0x00000001U
-    // .. .. 
-    EMIT_MASKWRITE(0XF8009000, 0x00000001U ,0x00000001U),
-    // .. .. n32BitEn = 1
-    // .. .. ==> 0XF8009014[0:0] = 0x00000001U
-    // .. ..     ==> MASK : 0x00000001U    VAL : 0x00000001U
-    // .. .. 
-    EMIT_MASKWRITE(0XF8009014, 0x00000001U ,0x00000001U),
     // .. .. FINISH: AFI1 REGISTERS
     // .. .. START: AFI2 REGISTERS
     // .. .. n32BitEn = 1
@@ -11818,28 +11778,8 @@ unsigned long ps7_post_config_1_0[] = {
     // .. FINISH: FPGA RESETS TO 0
     // .. START: AFI REGISTERS
     // .. .. START: AFI0 REGISTERS
-    // .. .. n32BitEn = 1
-    // .. .. ==> 0XF8008000[0:0] = 0x00000001U
-    // .. ..     ==> MASK : 0x00000001U    VAL : 0x00000001U
-    // .. .. 
-    EMIT_MASKWRITE(0XF8008000, 0x00000001U ,0x00000001U),
-    // .. .. n32BitEn = 1
-    // .. .. ==> 0XF8008014[0:0] = 0x00000001U
-    // .. ..     ==> MASK : 0x00000001U    VAL : 0x00000001U
-    // .. .. 
-    EMIT_MASKWRITE(0XF8008014, 0x00000001U ,0x00000001U),
     // .. .. FINISH: AFI0 REGISTERS
     // .. .. START: AFI1 REGISTERS
-    // .. .. n32BitEn = 1
-    // .. .. ==> 0XF8009000[0:0] = 0x00000001U
-    // .. ..     ==> MASK : 0x00000001U    VAL : 0x00000001U
-    // .. .. 
-    EMIT_MASKWRITE(0XF8009000, 0x00000001U ,0x00000001U),
-    // .. .. n32BitEn = 1
-    // .. .. ==> 0XF8009014[0:0] = 0x00000001U
-    // .. ..     ==> MASK : 0x00000001U    VAL : 0x00000001U
-    // .. .. 
-    EMIT_MASKWRITE(0XF8009014, 0x00000001U ,0x00000001U),
     // .. .. FINISH: AFI1 REGISTERS
     // .. .. START: AFI2 REGISTERS
     // .. .. n32BitEn = 1

@@ -1,7 +1,7 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.1.3 (win64) Build 2644227 Wed Sep  4 09:45:24 MDT 2019
-// Date        : Sun Mar  1 14:22:48 2020
+// Date        : Sun Mar  1 23:40:42 2020
 // Host        : Qlala-Blade running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
 //               C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiCPU/prj_BRAM/prj_BRAM.srcs/sources_1/bd/design_mb/ip/design_mb_microblaze_0_axi_intc_5/design_mb_microblaze_0_axi_intc_5_sim_netlist.v
@@ -109,7 +109,7 @@ module design_mb_microblaze_0_axi_intc_5
   (* C_INSTANCE = "design_mb_microblaze_0_axi_intc_5" *) 
   (* C_IRQ_ACTIVE = "1'b1" *) 
   (* C_IRQ_IS_LEVEL = "1" *) 
-  (* C_IVAR_RESET_VALUE = "64'b0000000000000000000000000000000010000000000000000000000000010000" *) 
+  (* C_IVAR_RESET_VALUE = "64'b0000000000000000000000000000000000000000000000000000000000010000" *) 
   (* C_KIND_OF_EDGE = "-1" *) 
   (* C_KIND_OF_INTR = "-1" *) 
   (* C_KIND_OF_LVL = "-1" *) 
@@ -1228,7 +1228,7 @@ endmodule
 (* C_FAMILY = "zynq" *) (* C_HAS_CIE = "1" *) (* C_HAS_FAST = "1" *) 
 (* C_HAS_ILR = "0" *) (* C_HAS_IPR = "1" *) (* C_HAS_IVR = "1" *) 
 (* C_HAS_SIE = "1" *) (* C_INSTANCE = "design_mb_microblaze_0_axi_intc_5" *) (* C_IRQ_ACTIVE = "1'b1" *) 
-(* C_IRQ_IS_LEVEL = "1" *) (* C_IVAR_RESET_VALUE = "64'b0000000000000000000000000000000010000000000000000000000000010000" *) (* C_KIND_OF_EDGE = "-1" *) 
+(* C_IRQ_IS_LEVEL = "1" *) (* C_IVAR_RESET_VALUE = "64'b0000000000000000000000000000000000000000000000000000000000010000" *) (* C_KIND_OF_EDGE = "-1" *) 
 (* C_KIND_OF_INTR = "-1" *) (* C_KIND_OF_LVL = "-1" *) (* C_MB_CLK_NOT_CONNECTED = "1" *) 
 (* C_NUM_INTR_INPUTS = "2" *) (* C_NUM_SW_INTR = "0" *) (* C_NUM_SYNC_FF = "2" *) 
 (* C_S_AXI_ADDR_WIDTH = "9" *) (* C_S_AXI_DATA_WIDTH = "32" *) (* ORIG_REF_NAME = "axi_intc" *) 
@@ -3443,7 +3443,7 @@ module design_mb_microblaze_0_axi_intc_5_shared_ram_ivar
   (* ram_slice_begin = "31" *) 
   (* ram_slice_end = "31" *) 
   RAM32X1D #(
-    .INIT(32'h0000FFFF)) 
+    .INIT(32'h00000000)) 
     \ram_i[0].ram_reg_0_15_31_31 
        (.A0(\ram_i[0].Doutb_reg[0]_0 [0]),
         .A1(\ram_i[0].Doutb_reg[0]_0 [1]),

@@ -1,10 +1,10 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.1.3 (win64) Build 2644227 Wed Sep  4 09:45:24 MDT 2019
-// Date        : Fri Feb 28 15:34:30 2020
+// Date        : Sun Mar  1 20:51:55 2020
 // Host        : Qlala-Blade running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim
-//               C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiCPU/prj_mb_test/prj_mb_test.srcs/sources_1/bd/design_mb/ip/design_mb_ilmb_v10_7/design_mb_ilmb_v10_7_sim_netlist.v
+// Command     : write_verilog -force -mode funcsim -rename_top design_mb_ilmb_v10_7 -prefix
+//               design_mb_ilmb_v10_7_ design_mb_ilmb_v10_7_sim_netlist.v
 // Design      : design_mb_ilmb_v10_7
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -125,7 +125,7 @@ module design_mb_ilmb_v10_7
 endmodule
 
 (* C_EXT_RESET_HIGH = "1" *) (* C_LMB_AWIDTH = "32" *) (* C_LMB_DWIDTH = "32" *) 
-(* C_LMB_NUM_SLAVES = "1" *) (* ORIG_REF_NAME = "lmb_v10" *) 
+(* C_LMB_NUM_SLAVES = "1" *) 
 module design_mb_ilmb_v10_7_lmb_v10
    (LMB_Clk,
     SYS_Rst,

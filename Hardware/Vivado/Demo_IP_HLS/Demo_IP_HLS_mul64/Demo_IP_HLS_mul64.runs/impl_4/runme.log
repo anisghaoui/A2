@@ -1813,3 +1813,448 @@ INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 
 Checksum: PlaceDB: cf73da9b ConstDB: 0 ShapeSum: 5991b3f9 RouteDB: 0
 
 Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 1e6176ee4
+
+Time (s): cpu = 00:00:58 ; elapsed = 00:00:48 . Memory (MB): peak = 1904.391 ; gain = 30.449
+Post Restoration Checksum: NetGraph: eb051244 NumContArr: fb125ca0 Constraints: 0 Timing: 0
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 1e6176ee4
+
+Time (s): cpu = 00:00:58 ; elapsed = 00:00:48 . Memory (MB): peak = 1904.391 ; gain = 30.449
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: 1e6176ee4
+
+Time (s): cpu = 00:00:59 ; elapsed = 00:00:48 . Memory (MB): peak = 1909.895 ; gain = 35.953
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: 1e6176ee4
+
+Time (s): cpu = 00:00:59 ; elapsed = 00:00:48 . Memory (MB): peak = 1909.895 ; gain = 35.953
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 1621e5dfb
+
+Time (s): cpu = 00:01:10 ; elapsed = 00:00:56 . Memory (MB): peak = 1933.859 ; gain = 59.918
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.174 | TNS=-0.410 | WHS=-0.341 | THS=-256.417|
+
+
+Phase 2.5 Update Timing for Bus Skew
+
+Phase 2.5.1 Update Timing
+Phase 2.5.1 Update Timing | Checksum: 10bd875c3
+
+Time (s): cpu = 00:01:18 ; elapsed = 00:01:00 . Memory (MB): peak = 2024.957 ; gain = 151.016
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.174 | TNS=-0.106 | WHS=N/A    | THS=N/A    |
+
+Phase 2.5 Update Timing for Bus Skew | Checksum: 15b44f42b
+
+Time (s): cpu = 00:01:18 ; elapsed = 00:01:01 . Memory (MB): peak = 2024.957 ; gain = 151.016
+Phase 2 Router Initialization | Checksum: 1485897e8
+
+Time (s): cpu = 00:01:18 ; elapsed = 00:01:01 . Memory (MB): peak = 2024.957 ; gain = 151.016
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0 %
+  Global Horizontal Routing Utilization  = 0 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 20348
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 20348
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 11bcc42be
+
+Time (s): cpu = 00:01:27 ; elapsed = 00:01:06 . Memory (MB): peak = 2024.957 ; gain = 151.016
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 3234
+ Number of Nodes with overlaps = 1181
+ Number of Nodes with overlaps = 471
+ Number of Nodes with overlaps = 250
+ Number of Nodes with overlaps = 86
+ Number of Nodes with overlaps = 28
+ Number of Nodes with overlaps = 12
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.236 | TNS=-1.246 | WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 1af988777
+
+Time (s): cpu = 00:02:35 ; elapsed = 00:01:50 . Memory (MB): peak = 2024.957 ; gain = 151.016
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 188
+ Number of Nodes with overlaps = 42
+ Number of Nodes with overlaps = 13
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.359 | TNS=-1.214 | WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 221c6f019
+
+Time (s): cpu = 00:02:42 ; elapsed = 00:01:56 . Memory (MB): peak = 2024.957 ; gain = 151.016
+Phase 4 Rip-up And Reroute | Checksum: 221c6f019
+
+Time (s): cpu = 00:02:42 ; elapsed = 00:01:56 . Memory (MB): peak = 2024.957 ; gain = 151.016
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 1c95a860f
+
+Time (s): cpu = 00:02:44 ; elapsed = 00:01:57 . Memory (MB): peak = 2024.957 ; gain = 151.016
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.121 | TNS=-0.181 | WHS=N/A    | THS=N/A    |
+
+ Number of Nodes with overlaps = 0
+Phase 5.1 Delay CleanUp | Checksum: 24facda14
+
+Time (s): cpu = 00:02:44 ; elapsed = 00:01:57 . Memory (MB): peak = 2024.957 ; gain = 151.016
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 24facda14
+
+Time (s): cpu = 00:02:44 ; elapsed = 00:01:57 . Memory (MB): peak = 2024.957 ; gain = 151.016
+Phase 5 Delay and Skew Optimization | Checksum: 24facda14
+
+Time (s): cpu = 00:02:44 ; elapsed = 00:01:57 . Memory (MB): peak = 2024.957 ; gain = 151.016
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 211a24096
+
+Time (s): cpu = 00:02:47 ; elapsed = 00:01:59 . Memory (MB): peak = 2024.957 ; gain = 151.016
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.109 | TNS=-0.169 | WHS=-0.033 | THS=-0.033 |
+
+
+Phase 6.1.2 Lut RouteThru Assignment for hold
+Phase 6.1.2 Lut RouteThru Assignment for hold | Checksum: 1765f520c
+
+Time (s): cpu = 00:02:47 ; elapsed = 00:01:59 . Memory (MB): peak = 2024.957 ; gain = 151.016
+Phase 6.1 Hold Fix Iter | Checksum: 1765f520c
+
+Time (s): cpu = 00:02:47 ; elapsed = 00:01:59 . Memory (MB): peak = 2024.957 ; gain = 151.016
+Phase 6 Post Hold Fix | Checksum: e2c15af5
+
+Time (s): cpu = 00:02:47 ; elapsed = 00:01:59 . Memory (MB): peak = 2024.957 ; gain = 151.016
+
+Phase 7 Timing Verification
+
+Phase 7.1 Update Timing
+Phase 7.1 Update Timing | Checksum: 111dd98f2
+
+Time (s): cpu = 00:02:51 ; elapsed = 00:02:02 . Memory (MB): peak = 2024.957 ; gain = 151.016
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.109 | TNS=-0.169 | WHS=N/A    | THS=N/A    |
+
+Phase 7 Timing Verification | Checksum: 111dd98f2
+
+Time (s): cpu = 00:02:51 ; elapsed = 00:02:02 . Memory (MB): peak = 2024.957 ; gain = 151.016
+
+Phase 8 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 4.48498 %
+  Global Horizontal Routing Utilization  = 5.67681 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Congestion Report
+North Dir 1x1 Area, Max Cong = 59.4595%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 65.7658%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 75%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 76.4706%, No Congested Regions.
+
+------------------------------
+Reporting congestion hotspots
+------------------------------
+Direction: North
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: South
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: East
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: West
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+
+Phase 8 Route finalize | Checksum: 111dd98f2
+
+Time (s): cpu = 00:02:52 ; elapsed = 00:02:02 . Memory (MB): peak = 2024.957 ; gain = 151.016
+
+Phase 9 Verifying routed nets
+
+ Verification completed successfully
+Phase 9 Verifying routed nets | Checksum: 111dd98f2
+
+Time (s): cpu = 00:02:52 ; elapsed = 00:02:02 . Memory (MB): peak = 2024.957 ; gain = 151.016
+
+Phase 10 Depositing Routes
+Phase 10 Depositing Routes | Checksum: 152f1acad
+
+Time (s): cpu = 00:02:55 ; elapsed = 00:02:06 . Memory (MB): peak = 2024.957 ; gain = 151.016
+
+Phase 11 Incr Placement Change
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 2024.957 ; gain = 0.000
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-0.106. For the most accurate timing information please run report_timing.
+Ending IncrPlace Task | Checksum: 16f232312
+
+Time (s): cpu = 00:00:48 ; elapsed = 00:00:39 . Memory (MB): peak = 2024.957 ; gain = 0.000
+Google Cpuprofiler is only supported on Linux.
+Phase 11 Incr Placement Change | Checksum: 152f1acad
+
+Time (s): cpu = 00:03:44 ; elapsed = 00:02:46 . Memory (MB): peak = 2024.957 ; gain = 151.016
+
+Phase 12 Build RT Design
+Phase 12 Build RT Design | Checksum: 177d5f483
+
+Time (s): cpu = 00:03:56 ; elapsed = 00:02:58 . Memory (MB): peak = 2024.957 ; gain = 151.016
+Post Restoration Checksum: NetGraph: db5656ea NumContArr: 6f99ac32 Constraints: 0 Timing: 0
+
+Phase 13 Router Initialization
+
+Phase 13.1 Create Timer
+Phase 13.1 Create Timer | Checksum: 14af0031c
+
+Time (s): cpu = 00:03:57 ; elapsed = 00:03:00 . Memory (MB): peak = 2024.957 ; gain = 151.016
+
+Phase 13.2 Fix Topology Constraints
+Phase 13.2 Fix Topology Constraints | Checksum: 14af0031c
+
+Time (s): cpu = 00:03:58 ; elapsed = 00:03:00 . Memory (MB): peak = 2024.957 ; gain = 151.016
+
+Phase 13.3 Pre Route Cleanup
+Phase 13.3 Pre Route Cleanup | Checksum: 14af0031c
+
+Time (s): cpu = 00:03:58 ; elapsed = 00:03:00 . Memory (MB): peak = 2024.957 ; gain = 151.016
+
+Phase 13.4 Timing Verification
+
+Phase 13.4.1 Update Timing
+Phase 13.4.1 Update Timing | Checksum: 9dc78065
+
+Time (s): cpu = 00:04:12 ; elapsed = 00:03:08 . Memory (MB): peak = 2024.957 ; gain = 151.016
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.106 | TNS=-0.164 | WHS=0.051  | THS=0.000  |
+
+Phase 13.4 Timing Verification | Checksum: 9dc78065
+
+Time (s): cpu = 00:04:12 ; elapsed = 00:03:08 . Memory (MB): peak = 2024.957 ; gain = 151.016
+ Number of Nodes with overlaps = 0
+
+Phase 13.5 Update Timing
+Phase 13.5 Update Timing | Checksum: 11374d134
+
+Time (s): cpu = 00:04:29 ; elapsed = 00:03:19 . Memory (MB): peak = 2031.578 ; gain = 157.637
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.225 | TNS=-1.244 | WHS=-0.341 | THS=-255.204|
+
+
+Phase 13.6 Update Timing for Bus Skew
+
+Phase 13.6.1 Update Timing
+Phase 13.6.1 Update Timing | Checksum: be782759
+
+Time (s): cpu = 00:04:37 ; elapsed = 00:03:24 . Memory (MB): peak = 2090.766 ; gain = 216.824
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.225 | TNS=-0.168 | WHS=N/A    | THS=N/A    |
+
+Phase 13.6 Update Timing for Bus Skew | Checksum: 87d03aee
+
+Time (s): cpu = 00:04:37 ; elapsed = 00:03:24 . Memory (MB): peak = 2090.766 ; gain = 216.824
+Phase 13 Router Initialization | Checksum: 6328f521
+
+Time (s): cpu = 00:04:38 ; elapsed = 00:03:24 . Memory (MB): peak = 2090.766 ; gain = 216.824
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 4.48498 %
+  Global Horizontal Routing Utilization  = 5.67681 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+
+Phase 14 Initial Routing
+ Number of Nodes with overlaps = 0
+Phase 14 Initial Routing | Checksum: 52847c63
+
+Time (s): cpu = 00:04:38 ; elapsed = 00:03:25 . Memory (MB): peak = 2090.766 ; gain = 216.824
+
+Phase 15 Rip-up And Reroute
+
+Phase 15.1 Global Iteration 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.224 | TNS=-1.222 | WHS=N/A    | THS=N/A    |
+
+Phase 15.1 Global Iteration 0 | Checksum: 135fd6387
+
+Time (s): cpu = 00:04:46 ; elapsed = 00:03:30 . Memory (MB): peak = 2090.766 ; gain = 216.824
+
+Phase 15.2 Global Iteration 1
+ Number of Nodes with overlaps = 550
+ Number of Nodes with overlaps = 294
+ Number of Nodes with overlaps = 171
+ Number of Nodes with overlaps = 104
+ Number of Nodes with overlaps = 63
+ Number of Nodes with overlaps = 38
+ Number of Nodes with overlaps = 22
+ Number of Nodes with overlaps = 11
+ Number of Nodes with overlaps = 6
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.375 | TNS=-1.774 | WHS=N/A    | THS=N/A    |
+
+Phase 15.2 Global Iteration 1 | Checksum: 9b6a5ddb
+
+Time (s): cpu = 00:05:09 ; elapsed = 00:03:48 . Memory (MB): peak = 2090.766 ; gain = 216.824
+Phase 15 Rip-up And Reroute | Checksum: 9b6a5ddb
+
+Time (s): cpu = 00:05:09 ; elapsed = 00:03:48 . Memory (MB): peak = 2090.766 ; gain = 216.824
+
+Phase 16 Delay and Skew Optimization
+
+Phase 16.1 Delay CleanUp
+
+Phase 16.1.1 Update Timing
+Phase 16.1.1 Update Timing | Checksum: a3743997
+
+Time (s): cpu = 00:05:12 ; elapsed = 00:03:49 . Memory (MB): peak = 2090.766 ; gain = 216.824
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.109 | TNS=-0.169 | WHS=N/A    | THS=N/A    |
+
+ Number of Nodes with overlaps = 0
+Phase 16.1 Delay CleanUp | Checksum: 5c237961
+
+Time (s): cpu = 00:05:12 ; elapsed = 00:03:50 . Memory (MB): peak = 2090.766 ; gain = 216.824
+
+Phase 16.2 Clock Skew Optimization
+Phase 16.2 Clock Skew Optimization | Checksum: 5c237961
+
+Time (s): cpu = 00:05:12 ; elapsed = 00:03:50 . Memory (MB): peak = 2090.766 ; gain = 216.824
+Phase 16 Delay and Skew Optimization | Checksum: 5c237961
+
+Time (s): cpu = 00:05:12 ; elapsed = 00:03:50 . Memory (MB): peak = 2090.766 ; gain = 216.824
+
+Phase 17 Post Hold Fix
+
+Phase 17.1 Hold Fix Iter
+
+Phase 17.1.1 Update Timing
+Phase 17.1.1 Update Timing | Checksum: da66a238
+
+Time (s): cpu = 00:05:15 ; elapsed = 00:03:51 . Memory (MB): peak = 2090.766 ; gain = 216.824
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.109 | TNS=-0.169 | WHS=0.050  | THS=0.000  |
+
+Phase 17.1 Hold Fix Iter | Checksum: 48c7797f
+
+Time (s): cpu = 00:05:15 ; elapsed = 00:03:51 . Memory (MB): peak = 2090.766 ; gain = 216.824
+Phase 17 Post Hold Fix | Checksum: 48c7797f
+
+Time (s): cpu = 00:05:15 ; elapsed = 00:03:51 . Memory (MB): peak = 2090.766 ; gain = 216.824
+
+Phase 18 Timing Verification
+
+Phase 18.1 Update Timing
+Phase 18.1 Update Timing | Checksum: 146d98a84
+
+Time (s): cpu = 00:05:19 ; elapsed = 00:03:54 . Memory (MB): peak = 2090.766 ; gain = 216.824
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.109 | TNS=-0.169 | WHS=N/A    | THS=N/A    |
+
+Phase 18 Timing Verification | Checksum: 146d98a84
+
+Time (s): cpu = 00:05:19 ; elapsed = 00:03:54 . Memory (MB): peak = 2090.766 ; gain = 216.824
+
+Phase 19 Reset Design
+INFO: [Route 35-307] 20358 nets already restored were skipped.
+Post Restoration Checksum: NetGraph: 4d6e4be6 NumContArr: 856d1599 Constraints: 0 Timing: 954639bb
+Phase 19 Reset Design | Checksum: 168219b3a
+
+Time (s): cpu = 00:05:25 ; elapsed = 00:03:58 . Memory (MB): peak = 2090.766 ; gain = 216.824
+
+Phase 20 Post Router Timing
+INFO: [Route 35-62] Timer settings changed to match sign-off timing analysis. Setup and Hold analysis on slow, fast Corners with nearest common node skew is enabled.
+INFO: [Route 35-20] Post Routing Timing Summary | WNS=-0.106 | TNS=-0.164 | WHS=0.051  | THS=0.000  |
+
+CRITICAL WARNING: [Route 35-39] The design did not meet timing requirements. Please run report_timing_summary for detailed reports.
+Resolution: Verify that the timing was met or had small violations at all previous steps (synthesis, placement, power_opt, and phys_opt). Run report_timing_summary and analyze individual timing paths.
+INFO: [Route 35-253] TNS is the sum of the worst slack violation on every endpoint in the design. Review the paths with the biggest WNS violations in the timing reports and modify your constraints or your design to improve both WNS and TNS.
+Phase 20 Post Router Timing | Checksum: 1c64a42b8
+
+Time (s): cpu = 00:05:39 ; elapsed = 00:04:05 . Memory (MB): peak = 2090.766 ; gain = 216.824
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:05:39 ; elapsed = 00:04:05 . Memory (MB): peak = 2090.766 ; gain = 216.824
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+1030 Infos, 17 Warnings, 1 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:05:45 ; elapsed = 00:04:09 . Memory (MB): peak = 2090.766 ; gain = 216.824
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 2090.766 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:13 ; elapsed = 00:00:04 . Memory (MB): peak = 2090.766 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.runs/impl_4/design_IP_wrapper_routed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:17 ; elapsed = 00:00:08 . Memory (MB): peak = 2090.766 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_clock_utilization -file route_report_clock_utilization_0.rpt
+INFO: [runtcl-4] Executing : report_drc -file route_report_drc_0.rpt -pb route_report_drc_0.pb -rpx route_report_drc_0.rpx
+Command: report_drc -file route_report_drc_0.rpt -pb route_report_drc_0.pb -rpx route_report_drc_0.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/Demo_IP_HLS/Demo_IP_HLS_mul64/Demo_IP_HLS_mul64.runs/impl_4/route_report_drc_0.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:14 ; elapsed = 00:00:08 . Memory (MB): peak = 2090.766 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_power -file route_report_power_0.rpt -pb route_report_power_summary_0.pb -rpx route_report_power_0.rpx
+Command: report_power -file route_report_power_0.rpt -pb route_report_power_summary_0.pb -rpx route_report_power_0.rpx
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+1038 Infos, 17 Warnings, 1 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:24 ; elapsed = 00:00:14 . Memory (MB): peak = 2090.766 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_route_status -file route_report_route_status_0.rpt -pb route_report_route_status_0.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -warn_on_violation -file route_report_timing_summary_0.rpt -pb route_report_timing_summary_0.pb -rpx route_report_timing_summary_0.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+INFO: [runtcl-4] Executing : report_incremental_reuse -file route_report_incremental_reuse_0.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file route_report_bus_skew_0.rpt -pb route_report_bus_skew_0.pb -rpx route_report_bus_skew_0.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Common 17-206] Exiting Vivado at Sun Mar  1 19:33:49 2020...

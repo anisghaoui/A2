@@ -1,10 +1,10 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.1.3 (win64) Build 2644227 Wed Sep  4 09:45:24 MDT 2019
--- Date        : Fri Feb 28 15:37:01 2020
+-- Date        : Sun Mar  1 20:57:05 2020
 -- Host        : Qlala-Blade running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiCPU/prj_mb_test/prj_mb_test.srcs/sources_1/bd/design_mb/ip/design_mb_mdm_1_7/design_mb_mdm_1_7_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top design_mb_mdm_1_7 -prefix
+--               design_mb_mdm_1_7_ design_mb_mdm_1_7_sim_netlist.vhdl
 -- Design      : design_mb_mdm_1_7
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -35,8 +35,6 @@ entity design_mb_mdm_1_7_MB_BSCANE2 is
     dbgreg_select : in STD_LOGIC;
     jtag_busy : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_mb_mdm_1_7_MB_BSCANE2 : entity is "MB_BSCANE2";
 end design_mb_mdm_1_7_MB_BSCANE2;
 
 architecture STRUCTURE of design_mb_mdm_1_7_MB_BSCANE2 is
@@ -125,8 +123,6 @@ entity design_mb_mdm_1_7_MB_BUFGCTRL is
     S0 : in STD_LOGIC;
     dbgreg_select : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_mb_mdm_1_7_MB_BUFGCTRL : entity is "MB_BUFGCTRL";
 end design_mb_mdm_1_7_MB_BUFGCTRL;
 
 architecture STRUCTURE of design_mb_mdm_1_7_MB_BUFGCTRL is
@@ -299,8 +295,6 @@ entity design_mb_mdm_1_7_MB_FDC_1 is
     Ext_NM_BRK : in STD_LOGIC;
     \Use_Serial_Unified_Completion.count_reg[0]_2\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_mb_mdm_1_7_MB_FDC_1 : entity is "MB_FDC_1";
 end design_mb_mdm_1_7_MB_FDC_1;
 
 architecture STRUCTURE of design_mb_mdm_1_7_MB_FDC_1 is
@@ -1012,8 +1006,6 @@ entity design_mb_mdm_1_7_MB_FDRE_1 is
     \Use_Serial_Unified_Completion.mb_instr_overrun_reg_1\ : in STD_LOGIC;
     SHIFT : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_mb_mdm_1_7_MB_FDRE_1 : entity is "MB_FDRE_1";
 end design_mb_mdm_1_7_MB_FDRE_1;
 
 architecture STRUCTURE of design_mb_mdm_1_7_MB_FDRE_1 is
@@ -1060,8 +1052,6 @@ entity design_mb_mdm_1_7_MB_SRL16E is
     Q : in STD_LOGIC_VECTOR ( 3 downto 0 );
     \Use_Dbg_Reg_Access.reg_data[31]_i_22\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_mb_mdm_1_7_MB_SRL16E : entity is "MB_SRL16E";
 end design_mb_mdm_1_7_MB_SRL16E;
 
 architecture STRUCTURE of design_mb_mdm_1_7_MB_SRL16E is
@@ -1969,8 +1959,6 @@ entity design_mb_mdm_1_7_pselect_f is
     ce_expnd_i_7 : out STD_LOGIC;
     \GEN_BKEND_CE_REGISTERS[0].ce_out_i_reg[0]\ : in STD_LOGIC_VECTOR ( 2 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_mb_mdm_1_7_pselect_f : entity is "pselect_f";
 end design_mb_mdm_1_7_pselect_f;
 
 architecture STRUCTURE of design_mb_mdm_1_7_pselect_f is
@@ -2352,8 +2340,6 @@ entity design_mb_mdm_1_7_JTAG_CONTROL is
     \Use_Dbg_Reg_Access.reg_data_reg[0]_4\ : in STD_LOGIC;
     \Use_Dbg_Reg_Access.reg_data_reg[0]_5\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_mb_mdm_1_7_JTAG_CONTROL : entity is "JTAG_CONTROL";
 end design_mb_mdm_1_7_JTAG_CONTROL;
 
 architecture STRUCTURE of design_mb_mdm_1_7_JTAG_CONTROL is
@@ -4410,8 +4396,6 @@ entity design_mb_mdm_1_7_address_decoder is
     bus2ip_rnw_i : in STD_LOGIC;
     \GEN_BKEND_CE_REGISTERS[6].ce_out_i_reg[6]_0\ : in STD_LOGIC_VECTOR ( 2 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_mb_mdm_1_7_address_decoder : entity is "address_decoder";
 end design_mb_mdm_1_7_address_decoder;
 
 architecture STRUCTURE of design_mb_mdm_1_7_address_decoder is
@@ -5261,8 +5245,6 @@ entity design_mb_mdm_1_7_MDM_Core is
     \Use_Dbg_Reg_Access.reg_data_reg[0]_0\ : in STD_LOGIC;
     AR : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_mb_mdm_1_7_MDM_Core : entity is "MDM_Core";
 end design_mb_mdm_1_7_MDM_Core;
 
 architecture STRUCTURE of design_mb_mdm_1_7_MDM_Core is
@@ -10580,8 +10562,6 @@ entity design_mb_mdm_1_7_slave_attachment is
     \Use_Dbg_Reg_Access.reg_data_reg[1]_0\ : in STD_LOGIC;
     D : in STD_LOGIC_VECTOR ( 31 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_mb_mdm_1_7_slave_attachment : entity is "slave_attachment";
 end design_mb_mdm_1_7_slave_attachment;
 
 architecture STRUCTURE of design_mb_mdm_1_7_slave_attachment is
@@ -11355,8 +11335,6 @@ entity design_mb_mdm_1_7_axi_lite_ipif is
     \Use_Dbg_Reg_Access.reg_data_reg[1]_0\ : in STD_LOGIC;
     D : in STD_LOGIC_VECTOR ( 31 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_mb_mdm_1_7_axi_lite_ipif : entity is "axi_lite_ipif";
 end design_mb_mdm_1_7_axi_lite_ipif;
 
 architecture STRUCTURE of design_mb_mdm_1_7_axi_lite_ipif is
@@ -13059,8 +13037,6 @@ entity design_mb_mdm_1_7_MDM is
   attribute C_USE_CROSS_TRIGGER of design_mb_mdm_1_7_MDM : entity is 0;
   attribute C_USE_UART : integer;
   attribute C_USE_UART of design_mb_mdm_1_7_MDM : entity is 0;
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_mb_mdm_1_7_MDM : entity is "MDM";
 end design_mb_mdm_1_7_MDM;
 
 architecture STRUCTURE of design_mb_mdm_1_7_MDM is

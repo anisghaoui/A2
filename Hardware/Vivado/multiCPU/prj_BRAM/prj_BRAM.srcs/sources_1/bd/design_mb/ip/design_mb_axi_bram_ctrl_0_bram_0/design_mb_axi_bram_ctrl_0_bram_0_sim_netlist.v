@@ -3,8 +3,8 @@
 // Tool Version: Vivado v.2019.1.3 (win64) Build 2644227 Wed Sep  4 09:45:24 MDT 2019
 // Date        : Sun Mar  1 10:17:41 2020
 // Host        : Qlala-Blade running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim
-//               c:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiCPU/prj_BRAM/prj_BRAM.srcs/sources_1/bd/design_mb/ip/design_mb_axi_bram_ctrl_0_bram_0/design_mb_axi_bram_ctrl_0_bram_0_sim_netlist.v
+// Command     : write_verilog -force -mode funcsim -rename_top design_mb_axi_bram_ctrl_0_bram_0 -prefix
+//               design_mb_axi_bram_ctrl_0_bram_0_ design_mb_axi_bram_ctrl_0_bram_0_sim_netlist.v
 // Design      : design_mb_axi_bram_ctrl_0_bram_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -202,7 +202,6 @@ module design_mb_axi_bram_ctrl_0_bram_0
         .web({1'b0,1'b0,1'b0,1'b0}));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_generic_cstr" *) 
 module design_mb_axi_bram_ctrl_0_bram_0_blk_mem_gen_generic_cstr
    (douta,
     rsta_busy,
@@ -253,7 +252,6 @@ module design_mb_axi_bram_ctrl_0_bram_0_blk_mem_gen_generic_cstr
         .wea(wea[3:2]));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_prim_width" *) 
 module design_mb_axi_bram_ctrl_0_bram_0_blk_mem_gen_prim_width
    (douta,
     clka,
@@ -417,7 +415,6 @@ module design_mb_axi_bram_ctrl_0_bram_0_blk_mem_gen_prim_width__parameterized0
         .wea(wea));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_prim_wrapper" *) 
 module design_mb_axi_bram_ctrl_0_bram_0_blk_mem_gen_prim_wrapper
    (douta,
     clka,
@@ -941,7 +938,6 @@ module design_mb_axi_bram_ctrl_0_bram_0_blk_mem_gen_prim_wrapper__parameterized0
         .O(ram_rstram_a));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_top" *) 
 module design_mb_axi_bram_ctrl_0_bram_0_blk_mem_gen_top
    (douta,
     rsta_busy,
@@ -1005,7 +1001,7 @@ endmodule
 (* C_WEA_WIDTH = "4" *) (* C_WEB_WIDTH = "4" *) (* C_WRITE_DEPTH_A = "2048" *) 
 (* C_WRITE_DEPTH_B = "2048" *) (* C_WRITE_MODE_A = "WRITE_FIRST" *) (* C_WRITE_MODE_B = "WRITE_FIRST" *) 
 (* C_WRITE_WIDTH_A = "32" *) (* C_WRITE_WIDTH_B = "32" *) (* C_XDEVICEFAMILY = "zynq" *) 
-(* ORIG_REF_NAME = "blk_mem_gen_v8_4_3" *) (* downgradeipidentifiedwarnings = "yes" *) 
+(* downgradeipidentifiedwarnings = "yes" *) 
 module design_mb_axi_bram_ctrl_0_bram_0_blk_mem_gen_v8_4_3
    (clka,
     rsta,
@@ -1308,7 +1304,6 @@ module design_mb_axi_bram_ctrl_0_bram_0_blk_mem_gen_v8_4_3
         .wea(wea));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_v8_4_3_synth" *) 
 module design_mb_axi_bram_ctrl_0_bram_0_blk_mem_gen_v8_4_3_synth
    (douta,
     rsta_busy,

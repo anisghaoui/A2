@@ -2,11 +2,11 @@
 # Webtalk v2019.1.3 (64-bit)
 # SW Build 2644227 on Wed Sep  4 09:45:24 MDT 2019
 # 
-# Start of session at: Fri Feb 28 21:29:59 2020
-# Process ID: 15280
-# Current directory: C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiCPU/prj_mb_test/prj_mb_test.sdk/webtalk
+# Start of session at: Mon Mar  2 00:03:32 2020
+# Process ID: 8604
+# Current directory: C:/A2_project/Vivado/multiCPU/prj_mb_test/prj_mb_test.sdk/webtalk
 # Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
-# Log file: C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiCPU/prj_mb_test/prj_mb_test.sdk/webtalk/webtalk.log
-# Journal file: C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiCPU/prj_mb_test/prj_mb_test.sdk/webtalk\webtalk.jou
+# Log file: C:/A2_project/Vivado/multiCPU/prj_mb_test/prj_mb_test.sdk/webtalk/webtalk.log
+# Journal file: C:/A2_project/Vivado/multiCPU/prj_mb_test/prj_mb_test.sdk/webtalk\webtalk.jou
 #-----------------------------------------------------------
 source sdk_webtalk.tcl

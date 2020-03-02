@@ -1,8 +1,28 @@
-16:31:13 **** Incremental Build of configuration Debug for project zynq_hello ****
+22:36:34 **** Auto Build of configuration Debug for project zynq_hello ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
-make: Nothing to be done for 'main-build'.
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../zynq_hello_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building file: ../src/zynq_hello.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/zynq_hello.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../zynq_hello_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/zynq_hello.d" -MT"src/zynq_hello.o" -o "src/zynq_hello.o" "../src/zynq_hello.c"
+'Finished building: ../src/zynq_hello.c'
+' '
+'Building target: zynq_hello.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../zynq_hello_bsp/ps7_cortexa9_0/lib -o "zynq_hello.elf"  ./src/platform.o ./src/zynq_hello.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: zynq_hello.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size zynq_hello.elf  |tee "zynq_hello.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  57556	   2584	  23328	  83468	  1460c	zynq_hello.elf
+'Finished building: zynq_hello.elf.size'
+' '
 
-16:31:14 Build Finished (took 277ms)
+22:36:36 Build Finished (took 1s.977ms)
 

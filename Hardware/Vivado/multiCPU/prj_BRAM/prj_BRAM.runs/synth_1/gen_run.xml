@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1583081480">
+<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1583105092">
   <File Type="PA-TCL" Name="design_mb_wrapper.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="design_mb_wrapper_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="design_mb_wrapper_reports.tcl"/>
@@ -50,23 +50,21 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
     <Step Id="synth_design"/>
   </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="design_mb_mdm_1_7"/>
   <BlockFileSet Type="BlockSrcs" Name="design_mb_processing_system7_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_mb_dlmb_bram_if_cntlr_7"/>
   <BlockFileSet Type="BlockSrcs" Name="design_mb_ilmb_v10_7"/>
   <BlockFileSet Type="BlockSrcs" Name="design_mb_rst_clk_wiz_0_100M_7"/>
   <BlockFileSet Type="BlockSrcs" Name="design_mb_clk_wiz_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_mb_dlmb_v10_7"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_mb_ilmb_bram_if_cntlr_7"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_mb_axi_bram_ctrl_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_mb_xbar_5"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_mb_axi_timer_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_mb_rst_clk_wiz_0_100M_1_2"/>
   <BlockFileSet Type="BlockSrcs" Name="design_mb_lmb_bram_7"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_mb_mdm_1_7"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_mb_microblaze_0_axi_intc_5"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_mb_auto_pc_6"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_mb_axi_timer_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_mb_axi_smc_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_mb_axi_bram_ctrl_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_mb_xbar_5"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_mb_xbar_7"/>
   <BlockFileSet Type="BlockSrcs" Name="design_mb_axi_bram_ctrl_0_bram_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_mb_auto_us_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_mb_auto_cc_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_mb_auto_cc_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_mb_microblaze_0_axi_intc_5"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_mb_ilmb_bram_if_cntlr_7"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_mb_microblaze_0_0"/>
 </GenRun>

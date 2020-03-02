@@ -1,10 +1,10 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.1.3 (win64) Build 2644227 Wed Sep  4 09:45:24 MDT 2019
-// Date        : Fri Feb 28 15:34:25 2020
+// Date        : Sun Mar  1 20:52:05 2020
 // Host        : Qlala-Blade running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode synth_stub
-//               C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiCPU/prj_mb_test/prj_mb_test.srcs/sources_1/bd/design_mb/ip/design_mb_clk_wiz_0_0/design_mb_clk_wiz_0_0_stub.v
+// Command     : write_verilog -force -mode synth_stub -rename_top design_mb_clk_wiz_0_0 -prefix
+//               design_mb_clk_wiz_0_0_ design_mb_clk_wiz_0_0_stub.v
 // Design      : design_mb_clk_wiz_0_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7z020clg484-1

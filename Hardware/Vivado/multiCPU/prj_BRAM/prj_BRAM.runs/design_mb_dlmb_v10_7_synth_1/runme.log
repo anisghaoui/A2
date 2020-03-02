@@ -9,6 +9,6 @@
     ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 
 source design_mb_dlmb_v10_7.tcl -notrace
-create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 354.977 ; gain = 59.609
+create_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 354.727 ; gain = 57.492
 INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP design_mb_dlmb_v10_7, cache-ID = d22145f4f081dc46.
-INFO: [Common 17-206] Exiting Vivado at Fri Feb 28 15:34:58 2020...
+INFO: [Common 17-206] Exiting Vivado at Sun Mar  1 22:40:51 2020...

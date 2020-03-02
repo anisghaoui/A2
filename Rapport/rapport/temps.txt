@@ -1,0 +1,73 @@
+temps mul32 (100MHZ):
+(main HW) ExecTime = 803045 unit (2411.54655 useconds)
+***************************
+ vs SW
+
+(main SW) ExecTime = 1092851 unit (3281.83483 useconds)
+fin du test
+
+
+temps mul32 (125MHZ):
+(main HW) ExecTime = 602695 unit (1809.89489 useconds)
+***************************
+ vs SW
+
+(main SW) ExecTime = 1092608 unit (3281.10511 useconds)
+fin du test
+
+
+
+temps mul64(100MHZ):
+(main HW) ExecTime = 3423298 unit (10280.17417 useconds)
+***************************
+ vs SW
+
+(main SW) ExecTime = 8702064 unit (26132.32432 useconds)
+fin du test
+temps mul64 (120MHZ):
+(main HW) ExecTime = 2644201 unit (7940.54354 useconds)
+***************************
+ vs SW
+
+(main SW) ExecTime = 8704142 unit (26138.56456 useconds)
+fin du test
+
+temps mul64 (130MHZ):
+(main HW) ExecTime = 2551167 unit (7661.16216 useconds)
+***************************
+ vs SW
+
+(main SW) ExecTime = 8703997 unit (26138.12913 useconds)
+fin du test
+
+
+temps kmeans (100MHZ):
+(main HW) ExecTime = 508864 unit (1297.45646 useconds)
+(main SW) ExecTime = 508864 unit (1528.12012 useconds)
+temps kmeans (120MHZ):
+(main HW) ExecTime = 508792 unit (1082.07808 useconds)
+(main SW) ExecTime = 508792 unit (1527.90390 useconds)
+fin du test
+temps pearson (115MHZ):
+(main HW) ExecTime = 7059 unit (21.19820 useconds)
+***************************
+ vs SW
+
+(main SW) ExecTime = 1751 unit (5.25826 useconds)
+fin du test
+temps mul64(AXI OC) (130MHZ):
+(main HW) ExecTime = 2345025 unit (7042.11712 useconds)
+***************************
+ vs SW
+
+(main SW) ExecTime = 8704369 unit (26139.24625 useconds)
+fin du test
+
+
+temps mul64(AXI=180) (131MHZ):
+(main HW) ExecTime = 2069842 unit (6215.74174 useconds)
+***************************
+ vs SW
+
+(main SW) ExecTime = 8704344 unit (26139.17117 useconds)
+fin du test

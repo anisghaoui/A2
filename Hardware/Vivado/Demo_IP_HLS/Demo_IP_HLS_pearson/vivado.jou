@@ -41,3 +41,4 @@ launch_sdk -workspace C:/A2_project/Vivado/Demo_IP_HLS/Demo_IP_HLS_pearson/Demo_
 startgroup
 set_property -dict [list CONFIG.CLKOUT2_REQUESTED_OUT_FREQ {100.000} CONFIG.MMCM_CLKFBOUT_MULT_F {10.000} CONFIG.MMCM_CLKOUT0_DIVIDE_F {10.000} CONFIG.CLKOUT1_JITTER {130.958} CONFIG.CLKOUT1_PHASE_ERROR {98.575} CONFIG.CLKOUT2_JITTER {130.958} CONFIG.CLKOUT2_PHASE_ERROR {98.575}] [get_bd_cells clk_wiz_0]
 endgroup
+save_bd_design

@@ -1,7 +1,7 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.1.3 (win64) Build 2644227 Wed Sep  4 09:45:24 MDT 2019
--- Date        : Sun Mar  1 14:22:48 2020
+-- Date        : Sun Mar  1 23:40:42 2020
 -- Host        : Qlala-Blade running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
 --               C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiCPU/prj_BRAM/prj_BRAM.srcs/sources_1/bd/design_mb/ip/design_mb_microblaze_0_axi_intc_5/design_mb_microblaze_0_axi_intc_5_sim_netlist.vhdl
@@ -2525,7 +2525,7 @@ begin
     );
 \ram_i[0].ram_reg_0_15_31_31\: unisim.vcomponents.RAM32X1D
     generic map(
-      INIT => X"0000FFFF"
+      INIT => X"00000000"
     )
         port map (
       A0 => \ram_i[0].Doutb_reg[0]_0\(0),
@@ -4991,7 +4991,7 @@ entity design_mb_microblaze_0_axi_intc_5_axi_intc is
   attribute C_IRQ_IS_LEVEL : integer;
   attribute C_IRQ_IS_LEVEL of design_mb_microblaze_0_axi_intc_5_axi_intc : entity is 1;
   attribute C_IVAR_RESET_VALUE : string;
-  attribute C_IVAR_RESET_VALUE of design_mb_microblaze_0_axi_intc_5_axi_intc : entity is "64'b0000000000000000000000000000000010000000000000000000000000010000";
+  attribute C_IVAR_RESET_VALUE of design_mb_microblaze_0_axi_intc_5_axi_intc : entity is "64'b0000000000000000000000000000000000000000000000000000000000010000";
   attribute C_KIND_OF_EDGE : integer;
   attribute C_KIND_OF_EDGE of design_mb_microblaze_0_axi_intc_5_axi_intc : entity is -1;
   attribute C_KIND_OF_INTR : integer;
@@ -5301,7 +5301,7 @@ architecture STRUCTURE of design_mb_microblaze_0_axi_intc_5 is
   attribute C_IRQ_IS_LEVEL : integer;
   attribute C_IRQ_IS_LEVEL of U0 : label is 1;
   attribute C_IVAR_RESET_VALUE : string;
-  attribute C_IVAR_RESET_VALUE of U0 : label is "64'b0000000000000000000000000000000010000000000000000000000000010000";
+  attribute C_IVAR_RESET_VALUE of U0 : label is "64'b0000000000000000000000000000000000000000000000000000000000010000";
   attribute C_KIND_OF_EDGE : integer;
   attribute C_KIND_OF_EDGE of U0 : label is -1;
   attribute C_KIND_OF_INTR : integer;

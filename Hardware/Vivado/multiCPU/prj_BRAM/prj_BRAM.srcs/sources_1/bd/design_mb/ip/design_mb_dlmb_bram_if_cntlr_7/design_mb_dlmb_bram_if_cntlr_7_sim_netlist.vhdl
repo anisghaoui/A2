@@ -1,10 +1,10 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.1.3 (win64) Build 2644227 Wed Sep  4 09:45:24 MDT 2019
--- Date        : Sun Mar  1 14:22:55 2020
+-- Date        : Sun Mar  1 13:49:57 2020
 -- Host        : Qlala-Blade running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiCPU/prj_BRAM/prj_BRAM.srcs/sources_1/bd/design_mb/ip/design_mb_dlmb_bram_if_cntlr_7/design_mb_dlmb_bram_if_cntlr_7_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top design_mb_dlmb_bram_if_cntlr_7 -prefix
+--               design_mb_dlmb_bram_if_cntlr_7_ design_mb_dlmb_bram_if_cntlr_7_sim_netlist.vhdl
 -- Design      : design_mb_dlmb_bram_if_cntlr_7
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -93,7 +93,7 @@ entity design_mb_dlmb_bram_if_cntlr_7_lmb_bram_if_cntlr is
     Interrupt : out STD_LOGIC
   );
   attribute C_BASEADDR : string;
-  attribute C_BASEADDR of design_mb_dlmb_bram_if_cntlr_7_lmb_bram_if_cntlr : entity is "64'b0000000000000000000000000000000010000000000000000000000000000000";
+  attribute C_BASEADDR of design_mb_dlmb_bram_if_cntlr_7_lmb_bram_if_cntlr : entity is "64'b0000000000000000000000000000000000000000000000000000000000000000";
   attribute C_BRAM_AWIDTH : integer;
   attribute C_BRAM_AWIDTH of design_mb_dlmb_bram_if_cntlr_7_lmb_bram_if_cntlr : entity is 32;
   attribute C_CE_COUNTER_WIDTH : integer;
@@ -113,7 +113,7 @@ entity design_mb_dlmb_bram_if_cntlr_7_lmb_bram_if_cntlr is
   attribute C_FAULT_INJECT : integer;
   attribute C_FAULT_INJECT of design_mb_dlmb_bram_if_cntlr_7_lmb_bram_if_cntlr : entity is 0;
   attribute C_HIGHADDR : string;
-  attribute C_HIGHADDR of design_mb_dlmb_bram_if_cntlr_7_lmb_bram_if_cntlr : entity is "64'b0000000000000000000000000000000010000000000000000001111111111111";
+  attribute C_HIGHADDR of design_mb_dlmb_bram_if_cntlr_7_lmb_bram_if_cntlr : entity is "64'b0000000000000000000000000000000000000000000000000001111111111111";
   attribute C_INTERCONNECT : integer;
   attribute C_INTERCONNECT of design_mb_dlmb_bram_if_cntlr_7_lmb_bram_if_cntlr : entity is 0;
   attribute C_LMB_AWIDTH : integer;
@@ -121,7 +121,7 @@ entity design_mb_dlmb_bram_if_cntlr_7_lmb_bram_if_cntlr is
   attribute C_LMB_DWIDTH : integer;
   attribute C_LMB_DWIDTH of design_mb_dlmb_bram_if_cntlr_7_lmb_bram_if_cntlr : entity is 32;
   attribute C_MASK : string;
-  attribute C_MASK of design_mb_dlmb_bram_if_cntlr_7_lmb_bram_if_cntlr : entity is "64'b0000000000000000000000000000000010100000000000000000000000000000";
+  attribute C_MASK of design_mb_dlmb_bram_if_cntlr_7_lmb_bram_if_cntlr : entity is "64'b0000000000000000000000000000000001010000000000000000000000000000";
   attribute C_MASK1 : string;
   attribute C_MASK1 of design_mb_dlmb_bram_if_cntlr_7_lmb_bram_if_cntlr : entity is "64'b0000000000000000000000000000000000000000100000000000000000000000";
   attribute C_MASK2 : string;
@@ -142,8 +142,6 @@ entity design_mb_dlmb_bram_if_cntlr_7_lmb_bram_if_cntlr is
   attribute C_UE_FAILING_REGISTERS of design_mb_dlmb_bram_if_cntlr_7_lmb_bram_if_cntlr : entity is 0;
   attribute C_WRITE_ACCESS : integer;
   attribute C_WRITE_ACCESS of design_mb_dlmb_bram_if_cntlr_7_lmb_bram_if_cntlr : entity is 2;
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_mb_dlmb_bram_if_cntlr_7_lmb_bram_if_cntlr : entity is "lmb_bram_if_cntlr";
 end design_mb_dlmb_bram_if_cntlr_7_lmb_bram_if_cntlr;
 
 architecture STRUCTURE of design_mb_dlmb_bram_if_cntlr_7_lmb_bram_if_cntlr is
@@ -333,44 +331,44 @@ begin
   \^lmb_writedbus\(0 to 31) <= LMB_WriteDBus(0 to 31);
 \BRAM_WEN_A[0]_INST_0\: unisim.vcomponents.LUT4
     generic map(
-      INIT => X"0800"
+      INIT => X"0200"
     )
         port map (
       I0 => LMB_BE(0),
-      I1 => \^lmb_abus\(0),
-      I2 => \^lmb_abus\(2),
+      I1 => \^lmb_abus\(3),
+      I2 => \^lmb_abus\(1),
       I3 => LMB_WriteStrobe,
       O => BRAM_WEN_A(0)
     );
 \BRAM_WEN_A[1]_INST_0\: unisim.vcomponents.LUT4
     generic map(
-      INIT => X"2000"
+      INIT => X"1000"
     )
         port map (
-      I0 => \^lmb_abus\(0),
-      I1 => \^lmb_abus\(2),
+      I0 => \^lmb_abus\(3),
+      I1 => \^lmb_abus\(1),
       I2 => LMB_WriteStrobe,
       I3 => LMB_BE(1),
       O => BRAM_WEN_A(1)
     );
 \BRAM_WEN_A[2]_INST_0\: unisim.vcomponents.LUT4
     generic map(
-      INIT => X"2000"
+      INIT => X"1000"
     )
         port map (
-      I0 => \^lmb_abus\(0),
-      I1 => \^lmb_abus\(2),
+      I0 => \^lmb_abus\(3),
+      I1 => \^lmb_abus\(1),
       I2 => LMB_WriteStrobe,
       I3 => LMB_BE(2),
       O => BRAM_WEN_A(2)
     );
 \BRAM_WEN_A[3]_INST_0\: unisim.vcomponents.LUT4
     generic map(
-      INIT => X"2000"
+      INIT => X"1000"
     )
         port map (
-      I0 => \^lmb_abus\(0),
-      I1 => \^lmb_abus\(2),
+      I0 => \^lmb_abus\(3),
+      I1 => \^lmb_abus\(1),
       I2 => LMB_WriteStrobe,
       I3 => LMB_BE(3),
       O => BRAM_WEN_A(3)
@@ -381,11 +379,11 @@ GND: unisim.vcomponents.GND
     );
 \No_ECC.Sl_Rdy_i_1\: unisim.vcomponents.LUT3
     generic map(
-      INIT => X"04"
+      INIT => X"01"
     )
         port map (
-      I0 => \^lmb_abus\(2),
-      I1 => \^lmb_abus\(0),
+      I0 => \^lmb_abus\(1),
+      I1 => \^lmb_abus\(3),
       I2 => LMB_Rst,
       O => \No_ECC.Sl_Rdy_i_1_n_0\
     );
@@ -489,7 +487,7 @@ architecture STRUCTURE of design_mb_dlmb_bram_if_cntlr_7 is
   signal NLW_U0_Sl2_DBus_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 31 );
   signal NLW_U0_Sl3_DBus_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 31 );
   attribute C_BASEADDR : string;
-  attribute C_BASEADDR of U0 : label is "64'b0000000000000000000000000000000010000000000000000000000000000000";
+  attribute C_BASEADDR of U0 : label is "64'b0000000000000000000000000000000000000000000000000000000000000000";
   attribute C_BRAM_AWIDTH : integer;
   attribute C_BRAM_AWIDTH of U0 : label is 32;
   attribute C_CE_COUNTER_WIDTH : integer;
@@ -509,7 +507,7 @@ architecture STRUCTURE of design_mb_dlmb_bram_if_cntlr_7 is
   attribute C_FAULT_INJECT : integer;
   attribute C_FAULT_INJECT of U0 : label is 0;
   attribute C_HIGHADDR : string;
-  attribute C_HIGHADDR of U0 : label is "64'b0000000000000000000000000000000010000000000000000001111111111111";
+  attribute C_HIGHADDR of U0 : label is "64'b0000000000000000000000000000000000000000000000000001111111111111";
   attribute C_INTERCONNECT : integer;
   attribute C_INTERCONNECT of U0 : label is 0;
   attribute C_LMB_AWIDTH : integer;
@@ -517,7 +515,7 @@ architecture STRUCTURE of design_mb_dlmb_bram_if_cntlr_7 is
   attribute C_LMB_DWIDTH : integer;
   attribute C_LMB_DWIDTH of U0 : label is 32;
   attribute C_MASK : string;
-  attribute C_MASK of U0 : label is "64'b0000000000000000000000000000000010100000000000000000000000000000";
+  attribute C_MASK of U0 : label is "64'b0000000000000000000000000000000001010000000000000000000000000000";
   attribute C_MASK1 : string;
   attribute C_MASK1 of U0 : label is "64'b0000000000000000000000000000000000000000100000000000000000000000";
   attribute C_MASK2 : string;

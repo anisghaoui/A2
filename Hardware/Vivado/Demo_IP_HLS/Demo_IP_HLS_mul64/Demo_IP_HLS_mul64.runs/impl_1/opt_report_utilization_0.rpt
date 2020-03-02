@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1.3 (win64) Build 2644227 Wed Sep  4 09:45:24 MDT 2019
-| Date         : Sun Mar  1 18:47:10 2020
+| Date         : Sun Mar  1 19:49:20 2020
 | Host         : Qlala-Blade running 64-bit major release  (build 9200)
 | Command      : report_utilization -file opt_report_utilization_0.rpt -pb opt_report_utilization_0.pb
 | Design       : design_IP_wrapper
@@ -30,8 +30,8 @@ Table of Contents
 +----------------------------+-------+-------+-----------+-------+
 |          Site Type         |  Used | Fixed | Available | Util% |
 +----------------------------+-------+-------+-----------+-------+
-| Slice LUTs*                |  8782 |     0 |     53200 | 16.51 |
-|   LUT as Logic             |  7885 |     0 |     53200 | 14.82 |
+| Slice LUTs*                |  8765 |     0 |     53200 | 16.48 |
+|   LUT as Logic             |  7868 |     0 |     53200 | 14.79 |
 |   LUT as Memory            |   897 |     0 |     17400 |  5.16 |
 |     LUT as Distributed RAM |   514 |     0 |           |       |
 |     LUT as Shift Register  |   383 |     0 |           |       |
@@ -154,11 +154,11 @@ Table of Contents
 |  Ref Name  |  Used |  Functional Category |
 +------------+-------+----------------------+
 | FDRE       | 11915 |         Flop & Latch |
-| LUT6       |  2660 |                  LUT |
-| LUT3       |  2362 |                  LUT |
-| LUT2       |  1545 |                  LUT |
-| LUT5       |  1441 |                  LUT |
-| LUT4       |  1145 |                  LUT |
+| LUT6       |  2669 |                  LUT |
+| LUT3       |  2358 |                  LUT |
+| LUT2       |  1541 |                  LUT |
+| LUT5       |  1430 |                  LUT |
+| LUT4       |  1138 |                  LUT |
 | RAMD32     |   770 |   Distributed Memory |
 | CARRY4     |   732 |           CarryLogic |
 | FDCE       |   459 |         Flop & Latch |

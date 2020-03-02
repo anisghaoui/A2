@@ -1,6 +1,6 @@
-19:23:25 **** Incremental Build of configuration Debug for project micro_hello ****
+09:00:22 **** Incremental Build of configuration Debug for project micro_hello ****
 make all 
 make: Nothing to be done for 'all'.
 
-19:23:26 Build Finished (took 902ms)
+09:00:22 Build Finished (took 184ms)
 

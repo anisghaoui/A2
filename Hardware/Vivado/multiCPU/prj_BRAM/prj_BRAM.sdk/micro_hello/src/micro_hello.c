@@ -55,14 +55,15 @@
 #include "xparameters.h"
 #include "xil_cache.h"
 
+
 int main()
 {
 	u32 Start_Time, End_Time, ExecTimeInTicks;
 
 	char* test=(char*)XPAR_AXI_BRAM_CTRL_0_S_AXI_BASEADDR;
     init_platform();
+    printf("micro:Hello World 2\n\r");
 
-    xil_printf("micro:Hello World 2\n\r");
 /*
     XTmrCtr xps_timer_0;
         XTmrCtr* timer_0 = &xps_timer_0;
@@ -90,9 +91,9 @@ int main()
   printf("(main SW2) ExecTime = %lld unit \n", ExecTimeInTicks);
 */
     sleep(3);
-    //Xil_DCacheDisable();
+    Xil_DCacheDisable();
     while(1){
-    	 char* ad_buff=(char*)(*(u32*)test);
+    	 char* ad_buff=(char*)(*(u32*)test+ XPAR_PS7_DDR_0_HP0_AXI_BASENAME );
     	printf("micro:@%lx=>@%lx=>@%lx=>%s\n",(u32)test,*(u32*)test,(u32)ad_buff,ad_buff);
     	//Xil_DCacheFlush();
     	sleep(1);

@@ -1,7 +1,7 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.1.3 (win64) Build 2644227 Wed Sep  4 09:45:24 MDT 2019
-// Date        : Sun Mar  1 14:22:54 2020
+// Date        : Mon Mar  2 00:25:53 2020
 // Host        : Qlala-Blade running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
 //               C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiCPU/prj_BRAM/prj_BRAM.srcs/sources_1/bd/design_mb/ip/design_mb_ilmb_bram_if_cntlr_7/design_mb_ilmb_bram_if_cntlr_7_sim_netlist.v
@@ -103,7 +103,7 @@ module design_mb_ilmb_bram_if_cntlr_7
   wire [0:31]NLW_U0_Sl2_DBus_UNCONNECTED;
   wire [0:31]NLW_U0_Sl3_DBus_UNCONNECTED;
 
-  (* C_BASEADDR = "64'b0000000000000000000000000000000010000000000000000000000000000000" *) 
+  (* C_BASEADDR = "64'b0000000000000000000000000000000000000000000000000000000000000000" *) 
   (* C_BRAM_AWIDTH = "32" *) 
   (* C_CE_COUNTER_WIDTH = "0" *) 
   (* C_CE_FAILING_REGISTERS = "0" *) 
@@ -113,11 +113,11 @@ module design_mb_ilmb_bram_if_cntlr_7
   (* C_ECC_STATUS_REGISTERS = "0" *) 
   (* C_FAMILY = "zynq" *) 
   (* C_FAULT_INJECT = "0" *) 
-  (* C_HIGHADDR = "64'b0000000000000000000000000000000010000000000000000001111111111111" *) 
+  (* C_HIGHADDR = "64'b0000000000000000000000000000000000000000000000000001111111111111" *) 
   (* C_INTERCONNECT = "0" *) 
   (* C_LMB_AWIDTH = "32" *) 
   (* C_LMB_DWIDTH = "32" *) 
-  (* C_MASK = "64'b0000000000000000000000000000000010000000000000000000000000000000" *) 
+  (* C_MASK = "64'b0000000000000000000000000000000000110000000000000000000000000000" *) 
   (* C_MASK1 = "64'b0000000000000000000000000000000000000000100000000000000000000000" *) 
   (* C_MASK2 = "64'b0000000000000000000000000000000000000000100000000000000000000000" *) 
   (* C_MASK3 = "64'b0000000000000000000000000000000000000000100000000000000000000000" *) 
@@ -206,11 +206,11 @@ module design_mb_ilmb_bram_if_cntlr_7
         .UE(NLW_U0_UE_UNCONNECTED));
 endmodule
 
-(* C_BASEADDR = "64'b0000000000000000000000000000000010000000000000000000000000000000" *) (* C_BRAM_AWIDTH = "32" *) (* C_CE_COUNTER_WIDTH = "0" *) 
+(* C_BASEADDR = "64'b0000000000000000000000000000000000000000000000000000000000000000" *) (* C_BRAM_AWIDTH = "32" *) (* C_CE_COUNTER_WIDTH = "0" *) 
 (* C_CE_FAILING_REGISTERS = "0" *) (* C_ECC = "0" *) (* C_ECC_ONOFF_REGISTER = "0" *) 
 (* C_ECC_ONOFF_RESET_VALUE = "1" *) (* C_ECC_STATUS_REGISTERS = "0" *) (* C_FAMILY = "zynq" *) 
-(* C_FAULT_INJECT = "0" *) (* C_HIGHADDR = "64'b0000000000000000000000000000000010000000000000000001111111111111" *) (* C_INTERCONNECT = "0" *) 
-(* C_LMB_AWIDTH = "32" *) (* C_LMB_DWIDTH = "32" *) (* C_MASK = "64'b0000000000000000000000000000000010000000000000000000000000000000" *) 
+(* C_FAULT_INJECT = "0" *) (* C_HIGHADDR = "64'b0000000000000000000000000000000000000000000000000001111111111111" *) (* C_INTERCONNECT = "0" *) 
+(* C_LMB_AWIDTH = "32" *) (* C_LMB_DWIDTH = "32" *) (* C_MASK = "64'b0000000000000000000000000000000000110000000000000000000000000000" *) 
 (* C_MASK1 = "64'b0000000000000000000000000000000000000000100000000000000000000000" *) (* C_MASK2 = "64'b0000000000000000000000000000000000000000100000000000000000000000" *) (* C_MASK3 = "64'b0000000000000000000000000000000000000000100000000000000000000000" *) 
 (* C_NUM_LMB = "1" *) (* C_S_AXI_CTRL_ADDR_WIDTH = "32" *) (* C_S_AXI_CTRL_BASEADDR = "32'b11111111111111111111111111111111" *) 
 (* C_S_AXI_CTRL_DATA_WIDTH = "32" *) (* C_S_AXI_CTRL_HIGHADDR = "32'b00000000000000000000000000000000" *) (* C_UE_FAILING_REGISTERS = "0" *) 
@@ -545,45 +545,50 @@ module design_mb_ilmb_bram_if_cntlr_7_lmb_bram_if_cntlr
   assign Sl_Wait = \<const0> ;
   assign UE = \<const0> ;
   (* SOFT_HLUTNM = "soft_lutpair1" *) 
-  LUT3 #(
-    .INIT(8'h80)) 
+  LUT4 #(
+    .INIT(16'h0200)) 
     \BRAM_WEN_A[0]_INST_0 
        (.I0(LMB_BE[0]),
-        .I1(LMB_ABus[0]),
-        .I2(LMB_WriteStrobe),
+        .I1(LMB_ABus[3]),
+        .I2(LMB_ABus[2]),
+        .I3(LMB_WriteStrobe),
         .O(BRAM_WEN_A[0]));
   (* SOFT_HLUTNM = "soft_lutpair0" *) 
-  LUT3 #(
-    .INIT(8'h80)) 
+  LUT4 #(
+    .INIT(16'h1000)) 
     \BRAM_WEN_A[1]_INST_0 
-       (.I0(LMB_ABus[0]),
-        .I1(LMB_WriteStrobe),
-        .I2(LMB_BE[1]),
+       (.I0(LMB_ABus[3]),
+        .I1(LMB_ABus[2]),
+        .I2(LMB_WriteStrobe),
+        .I3(LMB_BE[1]),
         .O(BRAM_WEN_A[1]));
   (* SOFT_HLUTNM = "soft_lutpair1" *) 
-  LUT3 #(
-    .INIT(8'h80)) 
+  LUT4 #(
+    .INIT(16'h1000)) 
     \BRAM_WEN_A[2]_INST_0 
-       (.I0(LMB_ABus[0]),
-        .I1(LMB_WriteStrobe),
-        .I2(LMB_BE[2]),
+       (.I0(LMB_ABus[3]),
+        .I1(LMB_ABus[2]),
+        .I2(LMB_WriteStrobe),
+        .I3(LMB_BE[2]),
         .O(BRAM_WEN_A[2]));
   (* SOFT_HLUTNM = "soft_lutpair0" *) 
-  LUT3 #(
-    .INIT(8'h80)) 
+  LUT4 #(
+    .INIT(16'h1000)) 
     \BRAM_WEN_A[3]_INST_0 
-       (.I0(LMB_ABus[0]),
-        .I1(LMB_WriteStrobe),
-        .I2(LMB_BE[3]),
+       (.I0(LMB_ABus[3]),
+        .I1(LMB_ABus[2]),
+        .I2(LMB_WriteStrobe),
+        .I3(LMB_BE[3]),
         .O(BRAM_WEN_A[3]));
   GND GND
        (.G(\<const0> ));
   (* SOFT_HLUTNM = "soft_lutpair2" *) 
-  LUT2 #(
-    .INIT(4'h2)) 
+  LUT3 #(
+    .INIT(8'h01)) 
     \No_ECC.Sl_Rdy_i_1 
-       (.I0(LMB_ABus[0]),
-        .I1(LMB_Rst),
+       (.I0(LMB_ABus[2]),
+        .I1(LMB_ABus[3]),
+        .I2(LMB_Rst),
         .O(\No_ECC.Sl_Rdy_i_1_n_0 ));
   FDRE \No_ECC.Sl_Rdy_reg 
        (.C(LMB_Clk),

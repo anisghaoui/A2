@@ -100,7 +100,7 @@ start_step opt_design
 set ACTIVE_STEP opt_design
 set rc [catch {
   create_msg_db opt_design.pb
-  opt_design 
+  opt_design -directive ExploreWithRemap
   write_checkpoint -force design_IP_wrapper_opt.dcp
   create_report "impl_1_opt_report_drc_0" "report_drc -file opt_report_drc_0.rpt -pb opt_report_drc_0.pb -rpx opt_report_drc_0.rpx"
   create_report "impl_1_opt_report_utilization_0" "report_utilization -file opt_report_utilization_0.rpt -pb opt_report_utilization_0.pb"
@@ -123,7 +123,7 @@ set rc [catch {
   if { [llength [get_debug_cores -quiet] ] > 0 }  { 
     implement_debug_core 
   } 
-  place_design -directive ExtraPostPlacementOpt
+  place_design -directive Explore
   write_checkpoint -force design_IP_wrapper_placed.dcp
   create_report "impl_1_place_report_io_0" "report_io -file place_report_io_0.rpt"
   create_report "impl_1_place_report_incremental_reuse_0" "report_incremental_reuse -file place_report_incremental_reuse_0.rpt"
@@ -141,7 +141,7 @@ start_step phys_opt_design
 set ACTIVE_STEP phys_opt_design
 set rc [catch {
   create_msg_db phys_opt_design.pb
-  phys_opt_design -directive AlternateFlowWithRetiming
+  phys_opt_design -directive Explore
   write_checkpoint -force design_IP_wrapper_physopt.dcp
   create_report "impl_1_phys_opt_report_timing_summary_0" "report_timing_summary -max_paths 10 -file phys_opt_report_timing_summary_0.rpt -pb phys_opt_report_timing_summary_0.pb -rpx phys_opt_report_timing_summary_0.rpx"
   create_report "impl_1_phys_opt_report_design_analysis_0" "report_design_analysis -congestion -file phys_opt_report_design_analysis_0.rpt"
@@ -155,11 +155,12 @@ if {$rc} {
   unset ACTIVE_STEP 
 }
 
+  set_msg_config -source 4 -id {Route 35-39} -severity "critical warning" -new_severity warning
 start_step route_design
 set ACTIVE_STEP route_design
 set rc [catch {
   create_msg_db route_design.pb
-  route_design -directive Explore
+  route_design -directive NoTimingRelaxation -tns_cleanup
   write_checkpoint -force design_IP_wrapper_routed.dcp
   create_report "impl_1_route_report_utilization_0" "report_utilization -file route_report_utilization_0.rpt -pb route_report_utilization_0.pb"
   create_report "impl_1_route_report_drc_0" "report_drc -file route_report_drc_0.rpt -pb route_report_drc_0.pb -rpx route_report_drc_0.rpx"
@@ -176,6 +177,28 @@ if {$rc} {
   return -code error $RESULT
 } else {
   end_step route_design
+  unset ACTIVE_STEP 
+}
+
+start_step post_route_phys_opt_design
+set ACTIVE_STEP post_route_phys_opt_design
+set rc [catch {
+  set tool_flow [get_property -quiet TOOL_FLOW [current_project -quiet]]
+  if {$tool_flow eq {SDx}} {send_msg_id {101-1} {status} {Starting optional post-route physical design optimization.} }
+  create_msg_db post_route_phys_opt_design.pb
+  phys_opt_design -directive Explore
+  write_checkpoint -force design_IP_wrapper_postroute_physopt.dcp
+  create_report "impl_1_post_route_phys_opt_report_timing_summary_0" "report_timing_summary -max_paths 10 -warn_on_violation -file post_route_phys_opt_report_timing_summary_0.rpt -pb post_route_phys_opt_report_timing_summary_0.pb -rpx post_route_phys_opt_report_timing_summary_0.rpx"
+  create_report "impl_1_post_route_phys_opt_report_bus_skew_0" "report_bus_skew -warn_on_violation -file post_route_phys_opt_report_bus_skew_0.rpt -pb post_route_phys_opt_report_bus_skew_0.pb -rpx post_route_phys_opt_report_bus_skew_0.rpx"
+  close_msg_db -file post_route_phys_opt_design.pb
+  set tool_flow [get_property TOOL_FLOW [current_project]]
+  if {$tool_flow eq {SDx}} {send_msg_id {101-1} {status} {Finished optional post-route physical design optimization.} }
+} RESULT]
+if {$rc} {
+  step_failed post_route_phys_opt_design
+  return -code error $RESULT
+} else {
+  end_step post_route_phys_opt_design
   unset ACTIVE_STEP 
 }
 

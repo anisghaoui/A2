@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_3" LaunchPart="xc7z020clg484-1" LaunchTime="1583084598">
+<GenRun Id="impl_3" LaunchPart="xc7z020clg484-1" LaunchTime="1583088352">
   <File Type="BITSTR-BMM" Name="design_IP_wrapper_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="opt_report_methodology_0.rpt"/>
   <File Type="INIT-TIMING" Name="init_report_timing_summary_0.rpt"/>
@@ -107,23 +107,21 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Performance_Explore" Flow="Vivado Implementation 2019">
-      <Desc>Uses multiple algorithms for optimization, placement, and routing to get potentially better results.</Desc>
+    <StratHandle Name="Performance_ExtraTimingOpt" Flow="Vivado Implementation 2019">
+      <Desc>Includes alternate algorithms for timing-driven optimization</Desc>
     </StratHandle>
     <Step Id="init_design"/>
-    <Step Id="opt_design">
-      <Option Id="Directive">0</Option>
-    </Step>
+    <Step Id="opt_design"/>
     <Step Id="power_opt_design"/>
     <Step Id="place_design">
-      <Option Id="Directive">0</Option>
+      <Option Id="Directive">8</Option>
     </Step>
     <Step Id="post_place_power_opt_design"/>
     <Step Id="phys_opt_design" EnableStepBool="1">
       <Option Id="Directive">0</Option>
     </Step>
     <Step Id="route_design">
-      <Option Id="Directive">0</Option>
+      <Option Id="Directive">1</Option>
     </Step>
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>

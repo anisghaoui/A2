@@ -46,6 +46,7 @@
  */
 
 #include <stdio.h>
+#include <stdlib.h>
 #include "platform.h"
 #include "xil_printf.h"
 #include "xtime_l.h"
@@ -54,7 +55,7 @@
 #include "sleep.h"
 #include "xil_cache.h"
 
-char buff[100]
+char* buff;
 ;char* init_bram(u32 id){
 	char* output;
 	XBram bram;
@@ -83,7 +84,7 @@ char buff[100]
 int main()
 {
 	XTime Start_Time, End_Time, ExecTimeInTicks;
-
+	buff=(char*)malloc(100);
     init_platform();
 
     print("Zynq:Hello World\n\r");
@@ -98,7 +99,7 @@ int main()
     char * test =(char*)XPAR_AXI_BRAM_CTRL_0_S_AXI_BASEADDR;
 
 
-    char* ad_buff=&buff[0];
+    u32 ad_buff=(u32)buff;
     memcpy(test,&ad_buff,4);
 
     printf("buffer @%lx => @%lx\n",(u32)buff,*((u32*)test));

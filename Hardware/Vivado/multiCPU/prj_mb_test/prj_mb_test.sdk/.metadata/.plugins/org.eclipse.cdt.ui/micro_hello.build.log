@@ -1,5 +1,25 @@
-21:49:02 **** Auto Build of configuration Debug for project micro_hello ****
+22:35:47 **** Auto Build of configuration Debug for project micro_hello ****
 make all 
+'Building file: ../src/micro_hello.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/micro_hello.o" -I../../micro_hello_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/micro_hello.d" -MT"src/micro_hello.o" -o "src/micro_hello.o" "../src/micro_hello.c"
+../src/micro_hello.c: In function 'main':
+../src/micro_hello.c:57:28: warning: unused variable 'ExecTimeInTicks' [-Wunused-variable]
+  u32 Start_Time, End_Time, ExecTimeInTicks;
+                            ^~~~~~~~~~~~~~~
+../src/micro_hello.c:57:18: warning: unused variable 'End_Time' [-Wunused-variable]
+  u32 Start_Time, End_Time, ExecTimeInTicks;
+                  ^~~~~~~~
+../src/micro_hello.c:57:6: warning: unused variable 'Start_Time' [-Wunused-variable]
+  u32 Start_Time, End_Time, ExecTimeInTicks;
+      ^~~~~~~~~~
+'Finished building: ../src/micro_hello.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../micro_hello_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
 'Building target: micro_hello.elf'
 'Invoking: MicroBlaze gcc linker'
 mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../micro_hello_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "micro_hello.elf"  ./src/micro_hello.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
@@ -12,5 +32,5 @@ mb-size micro_hello.elf  |tee "micro_hello.elf.size"
 'Finished building: micro_hello.elf.size'
 ' '
 
-21:49:03 Build Finished (took 599ms)
+22:35:49 Build Finished (took 1s.929ms)
 

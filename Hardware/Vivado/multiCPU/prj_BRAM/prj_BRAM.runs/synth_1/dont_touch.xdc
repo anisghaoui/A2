@@ -49,9 +49,6 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_mb_ps7_0
 # IP: bd/design_mb/ip/design_mb_rst_clk_wiz_0_100M_1_2/design_mb_rst_clk_wiz_0_100M_1_2.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_mb_rst_clk_wiz_0_100M_1_2 || ORIG_REF_NAME==design_mb_rst_clk_wiz_0_100M_1_2} -quiet] -quiet
 
-# IP: bd/design_mb/ip/design_mb_axi_mem_intercon_0/design_mb_axi_mem_intercon_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_mb_axi_mem_intercon_0 || ORIG_REF_NAME==design_mb_axi_mem_intercon_0} -quiet] -quiet
-
 # IP: bd/design_mb/ip/design_mb_xbar_7/design_mb_xbar_7.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_mb_xbar_7 || ORIG_REF_NAME==design_mb_xbar_7} -quiet] -quiet
 
@@ -67,8 +64,8 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_mb_axi_b
 # IP: bd/design_mb/ip/design_mb_axi_bram_ctrl_0_bram_0/design_mb_axi_bram_ctrl_0_bram_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_mb_axi_bram_ctrl_0_bram_0 || ORIG_REF_NAME==design_mb_axi_bram_ctrl_0_bram_0} -quiet] -quiet
 
-# IP: bd/design_mb/ip/design_mb_axi_interconnect_1_0/design_mb_axi_interconnect_1_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_mb_axi_interconnect_1_0 || ORIG_REF_NAME==design_mb_axi_interconnect_1_0} -quiet] -quiet
+# IP: bd/design_mb/ip/design_mb_axi_smc_1/design_mb_axi_smc_1.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_mb_axi_smc_1 || ORIG_REF_NAME==design_mb_axi_smc_1} -quiet] -quiet
 
 # IP: bd/design_mb/ip/design_mb_auto_pc_2/design_mb_auto_pc_2.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_mb_auto_pc_2 || ORIG_REF_NAME==design_mb_auto_pc_2} -quiet] -quiet
@@ -84,20 +81,5 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_mb_auto_
 
 # IP: bd/design_mb/ip/design_mb_auto_pc_4/design_mb_auto_pc_4.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_mb_auto_pc_4 || ORIG_REF_NAME==design_mb_auto_pc_4} -quiet] -quiet
-
-# IP: bd/design_mb/ip/design_mb_auto_us_0/design_mb_auto_us_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_mb_auto_us_0 || ORIG_REF_NAME==design_mb_auto_us_0} -quiet] -quiet
-
-# IP: bd/design_mb/ip/design_mb_auto_cc_0/design_mb_auto_cc_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_mb_auto_cc_0 || ORIG_REF_NAME==design_mb_auto_cc_0} -quiet] -quiet
-
-# IP: bd/design_mb/ip/design_mb_auto_pc_5/design_mb_auto_pc_5.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_mb_auto_pc_5 || ORIG_REF_NAME==design_mb_auto_pc_5} -quiet] -quiet
-
-# IP: bd/design_mb/ip/design_mb_auto_cc_1/design_mb_auto_cc_1.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_mb_auto_cc_1 || ORIG_REF_NAME==design_mb_auto_cc_1} -quiet] -quiet
-
-# IP: bd/design_mb/ip/design_mb_auto_pc_6/design_mb_auto_pc_6.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_mb_auto_pc_6 || ORIG_REF_NAME==design_mb_auto_pc_6} -quiet] -quiet
 
 # XDC: bd/design_mb/design_mb_ooc.xdc

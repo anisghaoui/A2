@@ -104,7 +104,7 @@ start_step opt_design
 set ACTIVE_STEP opt_design
 set rc [catch {
   create_msg_db opt_design.pb
-  opt_design -directive Explore
+  opt_design 
   write_checkpoint -force design_IP_wrapper_opt.dcp
   create_report "impl_3_opt_report_drc_0" "report_drc -file opt_report_drc_0.rpt -pb opt_report_drc_0.pb -rpx opt_report_drc_0.rpx"
   create_report "impl_3_opt_report_utilization_0" "report_utilization -file opt_report_utilization_0.rpt -pb opt_report_utilization_0.pb"
@@ -130,7 +130,7 @@ set rc [catch {
   if { [llength [get_debug_cores -quiet] ] > 0 }  { 
     implement_debug_core 
   } 
-  place_design -directive Explore
+  place_design -directive ExtraTimingOpt
   write_checkpoint -force design_IP_wrapper_placed.dcp
   create_report "impl_3_place_report_io_0" "report_io -file place_report_io_0.rpt"
   create_report "impl_3_place_report_utilization_0" "report_utilization -file place_report_utilization_0.rpt -pb place_report_utilization_0.pb"
@@ -167,7 +167,7 @@ start_step route_design
 set ACTIVE_STEP route_design
 set rc [catch {
   create_msg_db route_design.pb
-  route_design -directive Explore
+  route_design -directive NoTimingRelaxation
   write_checkpoint -force design_IP_wrapper_routed.dcp
   create_report "impl_3_route_report_clock_utilization_0" "report_clock_utilization -file route_report_clock_utilization_0.rpt"
   create_report "impl_3_route_report_drc_0" "report_drc -file route_report_drc_0.rpt -pb route_report_drc_0.pb -rpx route_report_drc_0.rpx"

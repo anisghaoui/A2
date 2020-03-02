@@ -15,28 +15,28 @@ ADDRESS_MAP design_mb_i_microblaze_0 MICROBLAZE-LE 100 design_mb_i/microblaze_0
 
     ///////////////////////////////////////////////////////////////////////////////
     //
-    // Processor 'design_mb_i_microblaze_0' address space 'design_mb_i_axi_bram_ctrl_0' 0X0000000042000000:0X0000000042001FFF (8 KBytes).
+    // Processor 'design_mb_i_microblaze_0' address space 'design_mb_i_microblaze_0_local_memory_dlmb_bram_if_cntlr' 0X0000000000000000:0X0000000000001FFF (8 KBytes).
     //
     ///////////////////////////////////////////////////////////////////////////////
 
-    ADDRESS_SPACE design_mb_i_axi_bram_ctrl_0 RAMB32 [0X0000000042000000:0X0000000042001FFF] design_mb_i/axi_bram_ctrl_0
+    ADDRESS_SPACE design_mb_i_microblaze_0_local_memory_dlmb_bram_if_cntlr RAMB32 [0X0000000000000000:0X0000000000001FFF] design_mb_i/microblaze_0_local_memory/dlmb_bram_if_cntlr
         BUS_BLOCK
-            design_mb_i/axi_bram_ctrl_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.SP.SIMPLE_PRIM36.SP_NO_ECC_ATTR.ram RAMB32 [31:16] [0:2047] PLACED = X3Y20;
-            design_mb_i/axi_bram_ctrl_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.SP.SIMPLE_PRIM36.SP_NO_ECC_ATTR.ram RAMB32 [15:0] [0:2047] PLACED = X3Y19;
+            design_mb_i/microblaze_0_local_memory/lmb_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram RAMB32 [31:16] [0:2047] PLACED = X2Y16;
+            design_mb_i/microblaze_0_local_memory/lmb_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram RAMB32 [15:0] [0:2047] PLACED = X2Y15;
         END_BUS_BLOCK;
     END_ADDRESS_SPACE;
 
 
     ///////////////////////////////////////////////////////////////////////////////
     //
-    // Processor 'design_mb_i_microblaze_0' address space 'design_mb_i_microblaze_0_local_memory_dlmb_bram_if_cntlr' 0X0000000080000000:0X0000000080001FFF (8 KBytes).
+    // Processor 'design_mb_i_microblaze_0' address space 'design_mb_i_axi_bram_ctrl_0' 0X0000000042000000:0X0000000042001FFF (8 KBytes).
     //
     ///////////////////////////////////////////////////////////////////////////////
 
-    ADDRESS_SPACE design_mb_i_microblaze_0_local_memory_dlmb_bram_if_cntlr RAMB32 [0X0000000080000000:0X0000000080001FFF] design_mb_i/microblaze_0_local_memory/dlmb_bram_if_cntlr
+    ADDRESS_SPACE design_mb_i_axi_bram_ctrl_0 RAMB32 [0X0000000042000000:0X0000000042001FFF] design_mb_i/axi_bram_ctrl_0
         BUS_BLOCK
-            design_mb_i/microblaze_0_local_memory/lmb_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram RAMB32 [31:16] [0:2047] PLACED = X2Y17;
-            design_mb_i/microblaze_0_local_memory/lmb_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram RAMB32 [15:0] [0:2047] PLACED = X2Y16;
+            design_mb_i/axi_bram_ctrl_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.SP.SIMPLE_PRIM36.SP_NO_ECC_ATTR.ram RAMB32 [31:16] [0:2047] PLACED = X3Y19;
+            design_mb_i/axi_bram_ctrl_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.SP.SIMPLE_PRIM36.SP_NO_ECC_ATTR.ram RAMB32 [15:0] [0:2047] PLACED = X3Y18;
         END_BUS_BLOCK;
     END_ADDRESS_SPACE;
 

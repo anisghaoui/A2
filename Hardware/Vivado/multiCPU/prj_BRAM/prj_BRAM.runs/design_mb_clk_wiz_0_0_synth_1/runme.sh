@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiCPU/prj_mb_test/prj_mb_test.runs/design_mb_clk_wiz_0_0_synth_1'
+HD_PWD='C:/Users/Qlala/Documents/M2_SETI/A2/git/A2/Hardware/Vivado/multiCPU/prj_BRAM/prj_BRAM.runs/design_mb_clk_wiz_0_0_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

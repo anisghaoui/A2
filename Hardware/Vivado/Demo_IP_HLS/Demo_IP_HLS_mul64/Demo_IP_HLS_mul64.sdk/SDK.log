@@ -438,3 +438,4 @@ con
 ----------------End of Script----------------
 
 09:57:31 INFO  : Launch script is exported to file 'C:\Users\Qlala\Documents\M2_SETI\A2\git\A2\Hardware\Vivado\Demo_IP_HLS\Demo_IP_HLS_mul64\Demo_IP_HLS_mul64.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_test_mul64.elf_on_local.tcl'
+23:12:36 INFO  : Disconnected from the channel tcfchan#2.

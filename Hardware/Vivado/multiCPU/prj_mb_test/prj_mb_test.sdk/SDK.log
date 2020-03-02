@@ -546,3 +546,36 @@ targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag
 17:57:14 INFO  : Successfully done setting XSCT server connection channel  
 17:57:14 INFO  : Successfully done setting SDK workspace  
 17:57:14 INFO  : Checking for hwspec changes in the project design_mb_wrapper_hw_platform_0.
+22:35:17 INFO  : Registering command handlers for SDK TCF services
+22:35:18 INFO  : Launching XSCT server: xsct.bat -interactive C:\A2_project\Vivado\multiCPU\prj_mb_test\prj_mb_test.sdk\temp_xsdb_launch_script.tcl
+22:35:25 INFO  : XSCT server has started successfully.
+22:35:25 INFO  : Successfully done setting XSCT server connection channel  
+22:35:30 INFO  : Processing command line option -hwspec C:/A2_project/Vivado/multiCPU/prj_mb_test/prj_mb_test.sdk/design_mb_wrapper.hdf.
+22:35:30 INFO  : Successfully done setting SDK workspace  
+22:36:45 INFO  : Inferring section assignments and sizes from elf file: C:\A2_project\Vivado\multiCPU\prj_mb_test\prj_mb_test.sdk\micro_hello\Debug\micro_hello.elf
+23:11:22 INFO  : The new hardware specification file contains the same information as the current specification file. No changes were done to the workspace.
+23:11:55 INFO  : Copied contents of C:\A2_project\Vivado\multiCPU\prj_BRAM\prj_BRAM.sdk\design_mb_wrapper.hdf into \design_mb_wrapper_hw_platform_0\system.hdf.
+23:12:02 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+23:12:08 INFO  : 
+23:12:13 INFO  : 
+23:12:14 INFO  : Updating hardware inferred compiler options for micro_hello.
+23:12:15 INFO  : Updating hardware inferred compiler options for zynq_hello.
+23:12:15 INFO  : Clearing existing target manager status.
+23:13:28 INFO  : Inferring section assignments and sizes from elf file: C:\A2_project\Vivado\multiCPU\prj_mb_test\prj_mb_test.sdk\micro_hello\Debug\micro_hello.elf
+23:28:44 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1583101542278,  Project:1583100498513
+23:28:44 INFO  : Project design_mb_wrapper_hw_platform_0's source hardware specification located at C:\A2_project\Vivado\multiCPU\prj_BRAM\prj_BRAM.sdk\design_mb_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+23:49:07 INFO  : Copied contents of C:\A2_project\Vivado\multiCPU\prj_BRAM\prj_BRAM.sdk\design_mb_wrapper.hdf into \design_mb_wrapper_hw_platform_0\system.hdf.
+23:49:13 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+23:49:17 INFO  : 
+23:49:20 INFO  : 
+23:49:21 INFO  : Updating hardware inferred compiler options for micro_hello.
+23:49:22 INFO  : Updating hardware inferred compiler options for zynq_hello.
+23:49:22 INFO  : Clearing existing target manager status.
+23:49:50 INFO  : Copied contents of C:\A2_project\Vivado\multiCPU\prj_mb_test\prj_mb_test.sdk\design_mb_wrapper.hdf into \design_mb_wrapper_hw_platform_0\system.hdf.
+23:49:56 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+23:49:59 INFO  : 
+23:50:02 INFO  : 
+23:50:03 INFO  : Updating hardware inferred compiler options for micro_hello.
+23:50:04 INFO  : Updating hardware inferred compiler options for zynq_hello.
+23:50:04 INFO  : Clearing existing target manager status.
