@@ -12,6 +12,12 @@ Partie réalisée par Audrey Terracher & Yuhan Dou.
 # Design HLS
 
 [IPs](https://github.com/anisghaoui/A2/tree/master/Hardware/HLS) 
+- Produit Matrice par Blocs 16
+- Produit Matrice par Blocs 32
+- Produit Matrice par Blocs 64
+- Kmeans 2D
+- Coefficient de Pearson 
+
 Partie réaliseé par Anis Ghaoui  @anisghaoui
 # Design Hardware
 
