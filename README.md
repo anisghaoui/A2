@@ -1,5 +1,7 @@
 # A2
 Systèmes électroniques embarqués
+* [Rapport](https://github.com/anisghaoui/A2/blob/master/Rapport/main.pdf)
+* [Présentation](https://github.com/anisghaoui/A2/blob/master/presentation_finale/prensent_A2_group_1.pdf)
 
 # Design
 ## Ce qu'il faut savoir
