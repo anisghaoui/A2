@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="design_mb_lmb_bram_7_synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1582835813">
   <File Type="PA-TCL" Name="design_mb_lmb_bram_7.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="design_mb_lmb_bram_7_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="design_mb_lmb_bram_7_reports.tcl"/>
   <File Type="RDS-RDS" Name="design_mb_lmb_bram_7.vds"/>
   <File Type="RDS-UTIL" Name="design_mb_lmb_bram_7_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="design_mb_lmb_bram_7_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="design_mb_lmb_bram_7.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="design_mb_lmb_bram_7_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="design_mb_lmb_bram_7_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/design_mb_lmb_bram_7">
     <File Path="$PSRCDIR/sources_1/bd/design_mb/ip/design_mb_lmb_bram_7/design_mb_lmb_bram_7.xci">
       <FileInfo>
@@ -46,9 +43,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>
