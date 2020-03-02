@@ -11,7 +11,7 @@ Un exemple de design materiel et logiciel abouti :
 Partie réalisée par Audrey Terracher & Yuhan Dou.
 # Design HLS
 
-[IPs]](https://github.com/anisghaoui/A2/master/Hardware/HLS) 
+[IPs](https://github.com/anisghaoui/A2/master/Hardware/HLS) 
 Partie réaliseé par Anis Ghaoui  @anisghaoui
 # Design Hardware
 
